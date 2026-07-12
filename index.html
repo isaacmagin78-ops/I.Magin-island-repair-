@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I.Magin Island Repair — Lead Capture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>I.Magin Island Repair</h1>
+    <p>Handyman &amp; contractor lead capture</p>
+  </header>
+
+  <main>
+    <section id="lead-form-section">
+      <h2>Request a Quote</h2>
+      <form id="lead-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Service Needed</label>
+        <select id="service" name="service">
+          <option value="general-repair">General Repair</option>
+          <option value="plumbing">Plumbing</option>
+          <option value="electrical">Electrical</option>
+          <option value="carpentry">Carpentry</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Details</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+      <p id="form-success" class="hidden">Thanks! We'll be in touch soon.</p>
+    </section>
+
+    <section id="checklist-section">
+      <h2>Job Checklist</h2>
+      <ul id="checklist">
+        <li><label><input type="checkbox" data-item="assess"> Assess the job site</label></li>
+        <li><label><input type="checkbox" data-item="materials"> Confirm materials on hand</label></li>
+        <li><label><input type="checkbox" data-item="schedule"> Schedule the visit</label></li>
+        <li><label><input type="checkbox" data-item="repair"> Complete the repair</label></li>
+        <li><label><input type="checkbox" data-item="cleanup"> Clean up work area</label></li>
+        <li><label><input type="checkbox" data-item="invoice"> Send invoice</label></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
