@@ -21,7 +21,7 @@ const NAV_ITEMS: { id: Section; label: string; icon: string }[] = [
   { id: 'timeline', label: 'Timeline', icon: '📅' },
   { id: 'budget', label: 'Budget', icon: '💰' },
   { id: 'documents', label: 'Documents', icon: '📄' },
-  { id: 'concierge', label: 'Concierge', icon: '🎓' },
+  { id: 'concierge', label: 'Guide', icon: '✨' },
   { id: 'personalize', label: 'Profile', icon: '👤' },
   { id: 'settings', label: 'Settings', icon: '⚙️' },
 ];
@@ -163,14 +163,14 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-cream">
       {/* Header */}
-      <header className="bg-navy text-white sticky top-0 z-50 shadow-lg">
+      <header className="bg-gradient-to-r from-ink to-ink-secondary text-cream sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-2xl font-bold">🎓 College Launch OS</h1>
+            <h1 className="text-2xl font-bold">→ Send-Off</h1>
             <button
-              className="md:hidden p-2 hover:bg-navy-light rounded"
+              className="md:hidden p-2 hover:bg-ink-secondary rounded"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               ☰
@@ -189,7 +189,7 @@ export default function Home() {
         <nav
           className={`${
             isMobileMenuOpen ? 'block' : 'hidden'
-          } md:block w-full md:w-64 bg-white border-r border-gray-200 overflow-y-auto`}
+          } md:block w-full md:w-64 bg-cream border-r border-gold-light overflow-y-auto`}
         >
           <div className="p-4 space-y-2">
             {NAV_ITEMS.map(item => (
@@ -201,8 +201,8 @@ export default function Home() {
                 }}
                 className={`w-full text-left px-4 py-3 rounded-lg font-semibold transition flex items-center gap-3 ${
                   currentSection === item.id
-                    ? 'bg-navy text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
+                    ? 'bg-ink text-cream'
+                    : 'text-ink hover:bg-gold-light hover:bg-opacity-40'
                 }`}
               >
                 <span className="text-xl">{item.icon}</span>
@@ -219,7 +219,7 @@ export default function Home() {
       </div>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-cream border-t border-gold-light z-50">
         <div className="flex overflow-x-auto">
           {NAV_ITEMS.map(item => (
             <button
@@ -229,8 +229,8 @@ export default function Home() {
               }}
               className={`flex-1 py-2 px-2 text-center text-xs font-semibold transition ${
                 currentSection === item.id
-                  ? 'text-navy border-t-2 border-navy'
-                  : 'text-gray-600'
+                  ? 'text-gold border-t-2 border-gold'
+                  : 'text-ink-secondary'
               }`}
             >
               <div className="text-xl">{item.icon}</div>

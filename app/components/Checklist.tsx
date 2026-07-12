@@ -35,17 +35,17 @@ export default function Checklist({ state, role, onTaskToggle, onTaskSelect, sel
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-2xl font-bold text-navy mb-2">College Preparation Checklist</h1>
-        <p className="text-gray-600">
+      <div className="bg-cream rounded-lg shadow p-6 border border-gold-light">
+        <h1 className="text-2xl font-bold text-ink mb-2">College Preparation Checklist</h1>
+        <p className="text-ink-secondary">
           {incompleteCount} tasks remaining • {visibleTasks.filter(t => t.completed).length} completed
         </p>
       </div>
 
       {/* Filters */}
-      <div className="bg-white rounded-lg shadow p-4 space-y-4">
+      <div className="bg-cream rounded-lg shadow p-4 space-y-4 border border-gold-light">
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-2">Filter by Category</label>
+          <label className="block text-sm font-semibold text-ink mb-2">Filter by Category</label>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setFilterCategory(null)}
