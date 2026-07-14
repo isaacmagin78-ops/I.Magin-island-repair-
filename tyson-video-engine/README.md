@@ -5,7 +5,8 @@ Tyson photos/videos into a finished **1080×1920** vertical MP4 — captions, an
 thought bubbles, Ken Burns pans, transitions, background music, and a logo/watermark, all
 rendered locally with no paid APIs.
 
-Status: under active development. See `TEST_LOG.md` for what has been verified so far.
+All 9 milestones are complete and verified — see `TEST_LOG.md` for the full test history,
+including the end-to-end acceptance test.
 
 ## Requirements
 
@@ -18,6 +19,21 @@ Status: under active development. See `TEST_LOG.md` for what has been verified s
 cd tyson-video-engine
 npm install
 ```
+
+## One-command render
+
+1. Drop your Tyson photos/videos into `assets/photos/` and/or `assets/video/`.
+2. Optionally drop a caption file into `assets/captions/`, a music track into `assets/music/`,
+   and a logo into `assets/logo/`.
+3. Run:
+
+   ```bash
+   npm run render
+   ```
+
+That's it — it scans `/assets`, prints a summary of what it found, and renders a finished
+**1080×1920** MP4 to `output/tyson-reel.mp4`. Pass a custom output path with
+`npm run render -- path/to/output.mp4`.
 
 ## Development
 
@@ -64,7 +80,7 @@ tyson-video-engine/
 6. [x] Transitions
 7. [x] Background music support
 8. [x] Logo/watermark support
-9. [ ] One-command `/assets` → `/output` vertical-video render pipeline
+9. [x] One-command `/assets` → `/output` vertical-video render pipeline
 
 ## The `TysonReel` template
 

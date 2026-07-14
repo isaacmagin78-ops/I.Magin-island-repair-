@@ -134,3 +134,24 @@
   appears correctly sized and positioned in the bottom-right corner with the expected margin,
   over the red photo background. **PASS**.
 - Result: **PASS**. Logo/watermark support confirmed working.
+
+## Milestone 9: One-command /assets to /output pipeline
+- Date: 2026-07-14
+- Built `scripts/render.mjs` (`npm run render`): scans each `assets/` subfolder, prints a
+  summary of what was found (photo/video counts, whether captions/music/logo are present),
+  warns (without failing) if no photos or videos are present, ensures `output/` exists, then
+  shells out to `npx remotion render src/index.ts TysonReel output/tyson-reel.mp4` (or a
+  custom path via `npm run render -- <path>`).
+
+### Full acceptance test
+- Populated `/assets` with sample media standing in for real Tyson photos/videos (no real
+  Tyson footage available in this environment, so representative local test media was
+  generated): 2 photos, 1 video clip, a timed `.srt` caption file, a music track, and a logo.
+- Ran the documented one-command pipeline: `npm run render`.
+- Result: `output/tyson-reel.mp4` created. `ffprobe` confirms **H.264, 1080×1920, 30fps, AAC
+  audio, 8.06s** — exactly the required vertical format.
+- Extracted frames at 1.0s and 5.0s: both show the correct synced caption text ("Tyson's big
+  day at the beach" / "He wouldn't stop running"), the watermark logo in the bottom-right
+  corner, and the Ken Burns-zoomed photo content, all composited together correctly.
+- Result: **PASS**. The full pipeline — photos/video in, captions + music + logo optional,
+  one command, finished vertical MP4 out — works end to end.
