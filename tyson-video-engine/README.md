@@ -63,7 +63,7 @@ tyson-video-engine/
 5. [x] Ken Burns effects
 6. [x] Transitions
 7. [x] Background music support
-8. [ ] Logo/watermark support
+8. [x] Logo/watermark support
 9. [ ] One-command `/assets` → `/output` vertical-video render pipeline
 
 ## The `TysonReel` template
@@ -96,6 +96,12 @@ automatically mixed in under the video with a fade-in/fade-out envelope
 - Shorter than the video? It loops seamlessly to fill the full duration.
 - Longer than the video? It's simply trimmed.
 - No music file present? The rendered video is just silent — no crash.
+
+## Logo / watermark
+
+Drop one image into `assets/logo/` and it's shown as a persistent corner watermark for the
+whole video (`src/components/Watermark.tsx`, default bottom-right, ~85% opacity). No logo
+file present? No watermark is rendered.
 
 ## Automatic captions
 

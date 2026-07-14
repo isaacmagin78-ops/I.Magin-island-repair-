@@ -9,6 +9,7 @@ import {THEME} from '../config/theme';
 import {Captions} from '../components/Captions';
 import {KenBurnsImage, type KenBurnsImageProps} from '../components/KenBurnsImage';
 import {BackgroundMusic} from '../components/BackgroundMusic';
+import {Watermark} from '../components/Watermark';
 import {computeTransitionFrames, PRESENTATION_CYCLE} from '../lib/transitions';
 
 const PAN_CYCLE: NonNullable<KenBurnsImageProps['pan']>[] = ['left', 'right', 'up', 'down'];
@@ -17,6 +18,7 @@ export type TysonReelProps = {
   scenes: Scene[];
   cues: CaptionCue[];
   musicSrc?: string;
+  logoSrc?: string;
 } & Record<string, unknown>;
 
 const EmptyState: React.FC = () => (
@@ -34,7 +36,7 @@ const presentationFor = (name: 'fade' | 'slide' | 'wipe'): any => {
   return fade();
 };
 
-export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues, musicSrc}) => {
+export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues, musicSrc, logoSrc}) => {
   const {durationInFrames} = useVideoConfig();
 
   if (scenes.length === 0) {
@@ -86,6 +88,7 @@ export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues, musicSrc}) =>
         })}
       </TransitionSeries>
       <Captions cues={cues} />
+      {logoSrc ? <Watermark src={logoSrc} /> : null}
       {musicSrc ? <BackgroundMusic src={musicSrc} durationInFrames={durationInFrames} /> : null}
     </AbsoluteFill>
   );

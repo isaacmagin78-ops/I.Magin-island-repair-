@@ -122,3 +122,15 @@
   with the overall fade envelope still intact at the true start/end of the full timeline.
   **PASS**.
 - Result: **PASS**. Background music (loop-or-trim + fade envelope) confirmed working.
+
+## Milestone 8: Logo/watermark support
+- Date: 2026-07-14
+- Built `src/components/Watermark.tsx`: persistent corner overlay (`top-left`/`top-right`/
+  `bottom-left`/`bottom-right`, default `bottom-right`), configurable width/opacity/margin.
+  Wired into `TysonReel`/`Root.tsx`: the first file found in `assets/logo/` is picked up
+  automatically and passed as `logoSrc`; if the folder is empty, no watermark is rendered.
+- Test: rendered a single-photo `TysonReel` with a distinctive solid-yellow test logo PNG in
+  `assets/logo/`, extracted a frame with `ffmpeg -ss`, visually confirmed the yellow square
+  appears correctly sized and positioned in the bottom-right corner with the expected margin,
+  over the red photo background. **PASS**.
+- Result: **PASS**. Logo/watermark support confirmed working.
