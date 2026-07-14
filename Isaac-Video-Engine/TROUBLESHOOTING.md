@@ -108,3 +108,76 @@ apt-get update && apt-get install -y \
 ```
 
 (Package names may differ slightly on non-Debian/Ubuntu systems.)
+
+## `npm run render:short` says "No media found in assets/images/ or assets/videos/"
+
+Nothing usable was found. Confirm:
+- Files are directly inside `assets/images/` or `assets/videos/` (not a
+  subfolder — the pipeline doesn't recurse).
+- File extensions are recognized: images `.jpg`/`.jpeg`/`.png`/`.webp`,
+  videos `.mp4`/`.mov`/`.webm`/`.m4v`.
+- Filenames don't start with `test-pattern`, `test-music`, or
+  `test-voiceover` — those prefixes are reserved for the engine's own
+  diagnostic fixtures and are always excluded from auto-discovery.
+- `assets/` still resolves as a symlink to `public/assets/`:
+  `ls -la Isaac-Video-Engine | grep assets` should show
+  `assets -> public/assets`. If it's a real (non-symlink) empty directory,
+  something recreated it — remove it and re-run
+  `ln -s public/assets assets` from the project root.
+
+## `npm run render:short` fails with an image/logo 404 or `CancelledError`
+
+A referenced file (usually a logo) doesn't exist under `public/assets/`.
+`LogoWatermark` already falls back to the brand's watermark text if
+`theme.logo` (or `logoOverride`) 404s — see "Logo image fails to load"
+below. If a *scene* image/video 404s instead, the file was likely deleted
+or renamed after the pipeline discovered it but before the render finished
+reading it; just re-run `npm run render:short`.
+
+## Logo image fails to load
+
+`src/components/LogoWatermark.tsx` catches the image's `onError` and falls
+back to rendering `theme.watermarkText` instead, so a missing/broken logo
+file never fails a render. If you see the brand name as text instead of
+your logo image, check that the file path in `theme.logo`
+(`src/branding/themes.ts`) or the `logoOverride` prop actually exists
+under `public/assets/logos/` and is a format the browser can decode (PNG/
+JPG/WebP — not SVG with unusual features, not a corrupted file).
+
+## Captions from `assets/script.txt` don't match the narration timing
+
+This is expected — see CLAUDE.md "Captions without a transcription API".
+The auto pipeline distributes words evenly across the total scene
+duration; it does not listen to any audio. If you need captions that
+actually track spoken narration timing, that requires a transcription
+step this project intentionally does not include (no paid APIs). Either
+accept the approximate timing, hand-time captions by constructing a
+`Caption[]` directly in a hand-authored composition (see
+`src/components/AnimatedCaptions.tsx`), or add a local (non-paid)
+transcription tool as an explicit, separate decision.
+
+## Background music doesn't ducking during narration in a hand-authored composition
+
+`BackgroundMusic` only ducks during frame ranges you tell it about via
+`duckDuringRanges`. If you added a `VoiceoverTrack` inside a `<Sequence>`
+but didn't pass that Sequence's `[from, from + durationInFrames]` into the
+`BackgroundMusic`'s `duckDuringRanges` prop, nothing will duck — see
+`src/compositions/AudioTest.tsx` for a working example.
+
+## How a render is verified in this project (reference)
+
+`ffprobe`/frame-inspection alone doesn't prove *audio* behavior (fades,
+ducking) — volume curves don't show up in a still frame. The audio system
+was verified two ways, and either is reusable for future audio work:
+
+```bash
+# Isolate a time segment and read its measured loudness
+ffmpeg -y -ss <start_seconds> -t <duration_seconds> -i out/<name>.mp4 \
+  -af volumedetect -f null - 2>&1 | grep -E "mean_volume|max_volume"
+
+# Or evaluate the pure volume-curve function directly (fast, exact, no audio ambiguity)
+npx tsx -e "
+import { computeTrackVolume } from './src/lib/audio';
+console.log(computeTrackVolume({ frame: 150, durationInFrames: 360, track: { volume: 0.8, duckToVolume: 0.2 }, isDucked: true }));
+"
+```
