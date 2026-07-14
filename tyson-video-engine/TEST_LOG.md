@@ -61,3 +61,19 @@
   slide-up caption (`startFrame=20`) is still hidden; at ~1.17s the slide-up caption has also
   animated in. Animation timing and visual placement all correct. **PASS**.
 - Result: **PASS**. Reusable animated text and thought bubble components confirmed working.
+
+## Milestone 5: Ken Burns effects
+- Date: 2026-07-14
+- Built `src/components/KenBurnsImage.tsx`: frame-driven pan/zoom wrapper around Remotion's
+  `Img`, configurable `direction` (`in`/`out`), `pan` (`left`/`right`/`up`/`down`/`none`), and
+  scale range. Wired into `TysonReel` — every image scene now cycles through
+  left/right/up/down pan with alternating zoom-in/zoom-out per scene index, so a multi-photo
+  reel doesn't look static or repetitive. Video scenes are left untouched (no Ken Burns
+  needed, they already have motion).
+- Test: generated a local `ffmpeg testsrc2` pattern image (grid/checkerboard/diagonal line —
+  chosen specifically so zoom and pan are visually obvious), rendered a single-photo
+  `TysonReel`, extracted frames at the scene's first and last frame with `ffmpeg -ss`.
+  Confirmed visually: the left black border present at frame 0 is fully cropped out by the
+  final frame, and the checkerboard region in the bottom-right has visibly grown — proof the
+  zoom+pan transform is animating correctly over the scene's duration. **PASS**.
+- Result: **PASS**. Ken Burns pan/zoom confirmed working and wired into the main template.

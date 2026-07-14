@@ -60,7 +60,7 @@ tyson-video-engine/
 2. [x] Tyson video templates
 3. [x] Automatic captions
 4. [x] Animated text and thought bubbles
-5. [ ] Ken Burns effects
+5. [x] Ken Burns effects
 6. [ ] Transitions
 7. [ ] Background music support
 8. [ ] Logo/watermark support
@@ -81,6 +81,9 @@ npx remotion render src/index.ts TysonReel output/tysonreel.mp4
 - Assets are ordered photos-first, then videos, each group sorted by filename — prefix files
   like `01-`, `02-` to control order within a folder.
 - If `/assets` is empty, `TysonReel` renders a 1-second placeholder instead of failing.
+- Every photo automatically gets a Ken Burns pan/zoom (`src/components/KenBurnsImage.tsx`),
+  cycling through left/right/up/down pan and alternating zoom-in/zoom-out per scene so a
+  multi-photo reel stays visually dynamic.
 
 ## Automatic captions
 

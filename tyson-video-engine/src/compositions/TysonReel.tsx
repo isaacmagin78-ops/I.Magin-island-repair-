@@ -1,8 +1,11 @@
 import React from 'react';
-import {AbsoluteFill, Series, Img, Video} from 'remotion';
+import {AbsoluteFill, Series, Video} from 'remotion';
 import type {CaptionCue, Scene} from '../lib/types';
 import {THEME} from '../config/theme';
 import {Captions} from '../components/Captions';
+import {KenBurnsImage, type KenBurnsImageProps} from '../components/KenBurnsImage';
+
+const PAN_CYCLE: NonNullable<KenBurnsImageProps['pan']>[] = ['left', 'right', 'up', 'down'];
 
 export type TysonReelProps = {
   scenes: Scene[];
@@ -25,11 +28,16 @@ export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues}) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       <Series>
-        {scenes.map((scene) => (
+        {scenes.map((scene, index) => (
           <Series.Sequence key={scene.asset.name} durationInFrames={scene.durationInFrames} layout="none">
             <AbsoluteFill>
               {scene.asset.kind === 'image' ? (
-                <Img src={scene.asset.src} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <KenBurnsImage
+                  src={scene.asset.src}
+                  durationInFrames={scene.durationInFrames}
+                  direction={index % 2 === 0 ? 'in' : 'out'}
+                  pan={PAN_CYCLE[index % PAN_CYCLE.length]}
+                />
               ) : (
                 <Video
                   src={scene.asset.src}
