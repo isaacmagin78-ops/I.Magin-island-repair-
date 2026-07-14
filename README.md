@@ -171,6 +171,22 @@ Fully responsive on:
 
 ## Testing Coverage
 
+### Automated Tests
+
+Run the Jest + React Testing Library suite:
+
+```bash
+npm test
+```
+
+Coverage includes:
+- `app/utils/storage.ts` — state initialization, localStorage persistence, corrupt-data fallback, JSON export summaries
+- `app/utils/concierge.ts` — keyword matching, category fallbacks, and the generic fallback response
+- `app/data/seed.ts` — task/document/budget data integrity (unique ids, category coverage, default states)
+- `RoleToggle` and `Dashboard` components — role-based task filtering, progress calculation, priority sorting, navigation callbacks
+
+### Manual Testing
+
 The following interactions have been manually tested:
 
 ✓ Application loads without errors
