@@ -61,7 +61,7 @@ tyson-video-engine/
 3. [x] Automatic captions
 4. [x] Animated text and thought bubbles
 5. [x] Ken Burns effects
-6. [ ] Transitions
+6. [x] Transitions
 7. [ ] Background music support
 8. [ ] Logo/watermark support
 9. [ ] One-command `/assets` → `/output` vertical-video render pipeline
@@ -84,6 +84,8 @@ npx remotion render src/index.ts TysonReel output/tysonreel.mp4
 - Every photo automatically gets a Ken Burns pan/zoom (`src/components/KenBurnsImage.tsx`),
   cycling through left/right/up/down pan and alternating zoom-in/zoom-out per scene so a
   multi-photo reel stays visually dynamic.
+- Scenes transition into each other with `@remotion/transitions`, cycling through
+  fade/slide/wipe (`src/lib/transitions.ts`).
 
 ## Automatic captions
 

@@ -77,3 +77,24 @@
   final frame, and the checkerboard region in the bottom-right has visibly grown — proof the
   zoom+pan transform is animating correctly over the scene's duration. **PASS**.
 - Result: **PASS**. Ken Burns pan/zoom confirmed working and wired into the main template.
+
+## Milestone 6: Transitions
+- Date: 2026-07-14
+- Switched `TysonReel` from Remotion's plain `<Series>` to `@remotion/transitions`'
+  `<TransitionSeries>`, inserting a `<TransitionSeries.Transition>` between every pair of
+  scenes. Presentation cycles through `fade` / `slide` / `wipe` per boundary
+  (`PRESENTATION_CYCLE` in `src/lib/transitions.ts`) so a multi-scene reel doesn't feel
+  repetitive.
+- `computeTransitionFrames` clamps each transition to `min(15 frames, half of either
+  neighboring scene's duration)` so a transition never eats more of a scene than it has, then
+  `totalDurationWithTransitions` accounts for the overlap when computing the composition's
+  real total length (`TransitionSeries` overlaps neighboring sequences by the transition
+  duration, so total = sum(scene durations) − sum(overlaps)).
+- Test: rendered a 3-scene `TysonReel` (red photo, blue photo, video clip) with sample assets.
+  `ffprobe` confirmed the new shorter total duration exactly matches
+  `sum(durations) - overlaps` (270 → 240 frames / 8.0s for a 15-frame overlap on each of 2
+  boundaries). Extracted stills at t=1.0s (pure red, scene 1 solo), t=3.23s (inside the first
+  transition window), and t=4.0s (pure blue, scene 2 solo). The mid-transition frame rendered
+  as **purple** — the exact expected blend of red and blue during a fade — objectively
+  confirming the crossfade is compositing both scenes correctly. **PASS**.
+- Result: **PASS**. Transitions confirmed working and wired into the main template.

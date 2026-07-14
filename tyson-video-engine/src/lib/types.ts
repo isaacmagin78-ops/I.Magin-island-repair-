@@ -7,6 +7,8 @@ export interface Scene {
   durationInFrames: number;
 }
 
+export type TransitionPresentation = 'fade' | 'slide' | 'wipe';
+
 export interface CaptionCue {
   startFrame: number;
   endFrame: number;
