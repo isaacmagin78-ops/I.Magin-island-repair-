@@ -11,6 +11,10 @@ import {
   MotionTest,
   MOTION_TEST_DURATION_IN_FRAMES,
 } from "./compositions/MotionTest";
+import {
+  AudioTest,
+  AUDIO_TEST_DURATION_IN_FRAMES,
+} from "./compositions/AudioTest";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -39,6 +43,14 @@ export const MyComposition = () => {
         id="MotionTest"
         component={MotionTest}
         durationInFrames={MOTION_TEST_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+      />
+      <Composition
+        id="AudioTest"
+        component={AudioTest}
+        durationInFrames={AUDIO_TEST_DURATION_IN_FRAMES}
         fps={VIDEO_FPS}
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
