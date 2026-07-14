@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import {CANVAS_WIDTH, CANVAS_HEIGHT, FPS} from './config/theme';
 import {EngineTest} from './compositions/EngineTest';
 import {TysonReel, type TysonReelProps} from './compositions/TysonReel';
+import {ComponentsDemo} from './compositions/ComponentsDemo';
 import {buildTimeline} from './lib/timeline';
 import {listCaptionAssets} from './lib/assetLoader';
 import {buildCaptionCues} from './lib/captions';
@@ -15,6 +16,14 @@ export const RemotionRoot: React.FC = () => {
         id="EngineTest"
         component={EngineTest}
         durationInFrames={90}
+        fps={FPS}
+        width={CANVAS_WIDTH}
+        height={CANVAS_HEIGHT}
+      />
+      <Composition
+        id="ComponentsDemo"
+        component={ComponentsDemo}
+        durationInFrames={60}
         fps={FPS}
         width={CANVAS_WIDTH}
         height={CANVAS_HEIGHT}

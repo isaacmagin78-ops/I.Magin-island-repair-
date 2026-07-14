@@ -47,3 +47,17 @@
 - Test 3 — no caption file present: confirmed no crash, `Captions` renders nothing (`cues: []`,
   from Milestone 2 empty-state/asset tests). **PASS**.
 - Result: **PASS**. Local automatic captioning confirmed for timed and untimed input.
+
+## Milestone 4: Animated text and thought bubbles
+- Date: 2026-07-14
+- Built `src/components/AnimatedText.tsx` (spring-driven fade/pop/slideUp text, reusable in
+  any composition/Sequence, configurable `startFrame`) and `src/components/ThoughtBubble.tsx`
+  (spring pop-in cloud-style bubble with a trailing dot tail, configurable position/text).
+- Added `ComponentsDemo` composition (`src/compositions/ComponentsDemo.tsx`, registered in
+  `Root.tsx`) as both a visual reference and a test harness for the two components together.
+- Test: rendered `ComponentsDemo` (60 frames), extracted stills at 0.0s / 0.5s / ~1.17s with
+  `ffmpeg -ss`. Confirmed: at frame 0 nothing has animated in yet; at 0.5s the thought bubble
+  (`startFrame=10`) and pop title (`startFrame=0`) are both fully visible/settled while the
+  slide-up caption (`startFrame=20`) is still hidden; at ~1.17s the slide-up caption has also
+  animated in. Animation timing and visual placement all correct. **PASS**.
+- Result: **PASS**. Reusable animated text and thought bubble components confirmed working.

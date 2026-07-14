@@ -59,7 +59,7 @@ tyson-video-engine/
 1. [x] Reusable Remotion video engine scaffold
 2. [x] Tyson video templates
 3. [x] Automatic captions
-4. [ ] Animated text and thought bubbles
+4. [x] Animated text and thought bubbles
 5. [ ] Ken Burns effects
 6. [ ] Transitions
 7. [ ] Background music support
@@ -97,6 +97,22 @@ This is local, file-driven auto-captioning, not speech-to-text transcription —
 or a bundled local model that's a heavy, risky addition for a single milestone. If you want
 ASR later, run a local tool (e.g. `whisper.cpp`) yourself and drop the resulting `.srt` into
 `assets/captions/` — the engine will pick it up automatically.
+
+## Animated text & thought bubbles
+
+Reusable components in `src/components/` for use in any composition:
+
+- `AnimatedText` — spring-driven `fade` / `pop` / `slideUp` text, e.g.
+  `<AnimatedText text="Tyson's Big Day" animation="pop" startFrame={0} />`.
+- `ThoughtBubble` — a pop-in cloud-style bubble with a trailing dot tail, e.g.
+  `<ThoughtBubble text="Is that a treat?!" startFrame={10} />`.
+
+See `src/compositions/ComponentsDemo.tsx` (composition id `ComponentsDemo`) for a live example
+of both, or render it yourself:
+
+```bash
+npx remotion render src/index.ts ComponentsDemo output/components-demo.mp4
+```
 
 ## Design notes
 
