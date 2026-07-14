@@ -20,6 +20,7 @@ import {
   SOCIAL_PRESET_PREVIEW_DURATION_IN_FRAMES,
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
+import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -72,6 +73,16 @@ export const MyComposition = () => {
           defaultProps={{ preset }}
         />
       ))}
+      <Composition
+        id="AutoShort"
+        component={AutoShort}
+        calculateMetadata={calculateAutoShortMetadata}
+        durationInFrames={1}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={{ scenes: [] }}
+      />
     </>
   );
 };
