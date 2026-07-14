@@ -4,7 +4,9 @@ import {CANVAS_WIDTH, CANVAS_HEIGHT, FPS} from './config/theme';
 import {EngineTest} from './compositions/EngineTest';
 import {TysonReel, type TysonReelProps} from './compositions/TysonReel';
 import {buildTimeline} from './lib/timeline';
-import type {Scene} from './lib/types';
+import {listCaptionAssets} from './lib/assetLoader';
+import {buildCaptionCues} from './lib/captions';
+import type {CaptionCue, Scene} from './lib/types';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -24,13 +26,17 @@ export const RemotionRoot: React.FC = () => {
         width={CANVAS_WIDTH}
         height={CANVAS_HEIGHT}
         durationInFrames={FPS * 3}
-        defaultProps={{scenes: [] as Scene[]}}
+        defaultProps={{scenes: [] as Scene[], cues: [] as CaptionCue[]}}
         calculateMetadata={async () => {
           const scenes = await buildTimeline(FPS);
-          const totalFrames = scenes.reduce((sum, s) => sum + s.durationInFrames, 0);
+          const totalFrames = Math.max(
+            scenes.reduce((sum, s) => sum + s.durationInFrames, 0),
+            FPS,
+          );
+          const cues = await buildCaptionCues(listCaptionAssets()[0], totalFrames, FPS);
           return {
-            durationInFrames: Math.max(totalFrames, FPS),
-            props: {scenes},
+            durationInFrames: totalFrames,
+            props: {scenes, cues},
           };
         }}
       />

@@ -16,3 +16,4 @@ export const listPhotoAssets = () => listByFolder('photos', IMAGE_EXTENSIONS);
 export const listVideoAssets = () => listByFolder('video', VIDEO_EXTENSIONS);
 export const listMusicAssets = () => listByFolder('music', ['.mp3', '.wav', '.m4a', '.aac']);
 export const listLogoAssets = () => listByFolder('logo', IMAGE_EXTENSIONS.concat(['.svg']));
+export const listCaptionAssets = () => listByFolder('captions', ['.srt', '.txt', '.json']);

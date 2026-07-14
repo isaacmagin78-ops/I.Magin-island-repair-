@@ -6,9 +6,11 @@ assets/photos/*
 assets/video/*
 assets/music/*
 assets/logo/*
+assets/captions/*
 !assets/photos/.gitkeep
 !assets/video/.gitkeep
 !assets/music/.gitkeep
 !assets/logo/.gitkeep
+!assets/captions/.gitkeep
 *.log
 .DS_Store

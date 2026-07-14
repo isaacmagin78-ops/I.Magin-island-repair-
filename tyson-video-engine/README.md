@@ -58,7 +58,7 @@ tyson-video-engine/
 
 1. [x] Reusable Remotion video engine scaffold
 2. [x] Tyson video templates
-3. [ ] Automatic captions
+3. [x] Automatic captions
 4. [ ] Animated text and thought bubbles
 5. [ ] Ken Burns effects
 6. [ ] Transitions
@@ -82,9 +82,23 @@ npx remotion render src/index.ts TysonReel output/tysonreel.mp4
   like `01-`, `02-` to control order within a folder.
 - If `/assets` is empty, `TysonReel` renders a 1-second placeholder instead of failing.
 
+## Automatic captions
+
+Drop **one** caption file into `assets/captions/` and it's automatically parsed, timed, and
+burned into the video — no manual keyframing needed:
+
+- `captions.srt` — standard SRT with real timestamps (`00:00:01,500 --> 00:00:03,000`).
+- `captions.json` — `[{"start": 0, "end": 3, "text": "..."}]`, times in seconds.
+- `captions.txt` — plain text, no timestamps. Sentences/lines are automatically spread evenly
+  across the video's total duration.
+
+This is local, file-driven auto-captioning, not speech-to-text transcription — see
+`TEST_LOG.md` (Milestone 3) for why: real ASR needs either a paid cloud API (not allowed here)
+or a bundled local model that's a heavy, risky addition for a single milestone. If you want
+ASR later, run a local tool (e.g. `whisper.cpp`) yourself and drop the resulting `.srt` into
+`assets/captions/` — the engine will pick it up automatically.
+
 ## Design notes
 
 - Everything runs locally: Remotion's headless Chromium renderer + system `ffmpeg`. No paid
   transcription/TTS/cloud rendering APIs are used anywhere in this engine.
-- Captions are driven by a local cue file you provide alongside your assets (`.srt`, or a
-  simple JSON/text cue format) — see the captions section below once Milestone 3 lands.

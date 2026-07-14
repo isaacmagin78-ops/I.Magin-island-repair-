@@ -1,10 +1,12 @@
 import React from 'react';
 import {AbsoluteFill, Series, Img, Video} from 'remotion';
-import type {Scene} from '../lib/types';
+import type {CaptionCue, Scene} from '../lib/types';
 import {THEME} from '../config/theme';
+import {Captions} from '../components/Captions';
 
 export type TysonReelProps = {
   scenes: Scene[];
+  cues: CaptionCue[];
 } & Record<string, unknown>;
 
 const EmptyState: React.FC = () => (
@@ -15,7 +17,7 @@ const EmptyState: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const TysonReel: React.FC<TysonReelProps> = ({scenes}) => {
+export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues}) => {
   if (scenes.length === 0) {
     return <EmptyState />;
   }
@@ -39,6 +41,7 @@ export const TysonReel: React.FC<TysonReelProps> = ({scenes}) => {
           </Series.Sequence>
         ))}
       </Series>
+      <Captions cues={cues} />
     </AbsoluteFill>
   );
 };
