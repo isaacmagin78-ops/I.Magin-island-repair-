@@ -98,3 +98,27 @@
   as **purple** — the exact expected blend of red and blue during a fade — objectively
   confirming the crossfade is compositing both scenes correctly. **PASS**.
 - Result: **PASS**. Transitions confirmed working and wired into the main template.
+
+## Milestone 7: Background music support
+- Date: 2026-07-14
+- Built `src/components/BackgroundMusic.tsx`: wraps Remotion's `<Audio loop>` with a
+  frame-driven volume envelope (fade in over `fadeFrames`, fade out over the last
+  `fadeFrames`, default 30 frames / 1s, default 40% volume) so a track never cuts in/out
+  abruptly. `loop` means a short track automatically repeats to fill the video; a long track
+  is simply trimmed to the video's length. Wired into `TysonReel`/`Root.tsx`: the first file
+  found in `assets/music/` is picked up automatically and passed as `musicSrc`; if the folder
+  is empty, no `<Audio>` is rendered at all (silent video, no crash).
+- Debugging note: initial verification via `ffmpeg volumedetect` on short time-windows gave
+  misleading flat readings near the fade-out tail. Cross-checked by (1) logging the actual
+  per-frame `fadeIn`/`fadeOut`/`result` values computed inside the volume callback during a
+  real render — confirmed the values correctly ramp down to ~0.013 by the final frames — and
+  (2) rendering the audio waveform directly with `ffmpeg ... showwavespic` and visually
+  inspecting it. The waveform image is unambiguous: thin/near-silent at both the very start
+  and very end, full amplitude in the middle — proof the envelope is really being applied in
+  the final mixed-down audio, not just computed in React.
+- Test 1 — long (8s) non-looping WAV under a 6.5s video: waveform shows a clean taper in and
+  taper out. **PASS**.
+- Test 2 — short (2s) WAV under the same 6.5s video: waveform shows 3 repeated loop cycles
+  with the overall fade envelope still intact at the true start/end of the full timeline.
+  **PASS**.
+- Result: **PASS**. Background music (loop-or-trim + fade envelope) confirmed working.

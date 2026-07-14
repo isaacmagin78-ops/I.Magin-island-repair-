@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Video} from 'remotion';
+import {AbsoluteFill, Video, useVideoConfig} from 'remotion';
 import {TransitionSeries, linearTiming} from '@remotion/transitions';
 import {fade} from '@remotion/transitions/fade';
 import {slide} from '@remotion/transitions/slide';
@@ -8,6 +8,7 @@ import type {CaptionCue, Scene} from '../lib/types';
 import {THEME} from '../config/theme';
 import {Captions} from '../components/Captions';
 import {KenBurnsImage, type KenBurnsImageProps} from '../components/KenBurnsImage';
+import {BackgroundMusic} from '../components/BackgroundMusic';
 import {computeTransitionFrames, PRESENTATION_CYCLE} from '../lib/transitions';
 
 const PAN_CYCLE: NonNullable<KenBurnsImageProps['pan']>[] = ['left', 'right', 'up', 'down'];
@@ -15,6 +16,7 @@ const PAN_CYCLE: NonNullable<KenBurnsImageProps['pan']>[] = ['left', 'right', 'u
 export type TysonReelProps = {
   scenes: Scene[];
   cues: CaptionCue[];
+  musicSrc?: string;
 } & Record<string, unknown>;
 
 const EmptyState: React.FC = () => (
@@ -32,7 +34,9 @@ const presentationFor = (name: 'fade' | 'slide' | 'wipe'): any => {
   return fade();
 };
 
-export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues}) => {
+export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues, musicSrc}) => {
+  const {durationInFrames} = useVideoConfig();
+
   if (scenes.length === 0) {
     return <EmptyState />;
   }
@@ -82,6 +86,7 @@ export const TysonReel: React.FC<TysonReelProps> = ({scenes, cues}) => {
         })}
       </TransitionSeries>
       <Captions cues={cues} />
+      {musicSrc ? <BackgroundMusic src={musicSrc} durationInFrames={durationInFrames} /> : null}
     </AbsoluteFill>
   );
 };
