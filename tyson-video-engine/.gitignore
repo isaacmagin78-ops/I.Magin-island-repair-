@@ -1,0 +1,14 @@
+node_modules
+.remotion
+output/*
+!output/.gitkeep
+assets/photos/*
+assets/video/*
+assets/music/*
+assets/logo/*
+!assets/photos/.gitkeep
+!assets/video/.gitkeep
+!assets/music/.gitkeep
+!assets/logo/.gitkeep
+*.log
+.DS_Store
