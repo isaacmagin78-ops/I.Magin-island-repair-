@@ -57,7 +57,7 @@ tyson-video-engine/
 ## Milestones
 
 1. [x] Reusable Remotion video engine scaffold
-2. [ ] Tyson video templates
+2. [x] Tyson video templates
 3. [ ] Automatic captions
 4. [ ] Animated text and thought bubbles
 5. [ ] Ken Burns effects
@@ -65,6 +65,22 @@ tyson-video-engine/
 7. [ ] Background music support
 8. [ ] Logo/watermark support
 9. [ ] One-command `/assets` → `/output` vertical-video render pipeline
+
+## The `TysonReel` template
+
+Drop photos into `assets/photos/` and/or video clips into `assets/video/` and render the
+`TysonReel` composition:
+
+```bash
+npx remotion render src/index.ts TysonReel output/tysonreel.mp4
+```
+
+- Photos are shown for a fixed duration (3.5s by default, `DEFAULT_IMAGE_DURATION_SECONDS` in
+  `src/lib/timeline.ts`).
+- Video clips keep their real duration (probed locally, no external service).
+- Assets are ordered photos-first, then videos, each group sorted by filename — prefix files
+  like `01-`, `02-` to control order within a folder.
+- If `/assets` is empty, `TysonReel` renders a 1-second placeholder instead of failing.
 
 ## Design notes
 
