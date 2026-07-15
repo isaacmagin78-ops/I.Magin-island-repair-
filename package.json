@@ -1,7 +1,7 @@
 {
   "name": "madison-moves",
   "version": "1.0.0",
-  "description": "Madison Moves — South Florida home concierge: cleaning, organizing, pet care, home watch, move-in concierge, airport assistance, grocery restocking, and senior assistance.",
+  "description": "Madison Moves — Madison's personal South Florida house cleaning, organizing, and home assistant service.",
   "private": true,
   "scripts": {
     "dev": "next dev",

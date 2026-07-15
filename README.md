@@ -1,12 +1,11 @@
-# Madison Moves — South Florida Home Concierge
+# Madison Moves — South Florida House Cleaning & Organizing
 
-A production-ready marketing + booking site for Madison Moves, a South
-Florida home concierge business serving condo and island communities.
+A production-ready personal-brand site for Madison, a South Florida house
+cleaner, organizer, and home assistant (and pilot-in-training).
 
 ## Services
 
-Home Cleaning · Organizing · Pet Care · Home Watch · Move-in Concierge ·
-Airport Assistance · Grocery Restocking · Senior Assistance
+House Cleaning · Organizing · Home Assistant
 
 ## Quick Start
 
@@ -75,8 +74,8 @@ app/
 
 ## SEO
 
-- Metadata + Open Graph + Twitter card tags targeting "South Florida Home
-  Concierge"
+- Metadata + Open Graph + Twitter card tags targeting South Florida house
+  cleaning and organizing search terms
 - `LocalBusiness` JSON-LD structured data
 - `sitemap.xml` and `robots.txt` generated automatically
 
