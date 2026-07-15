@@ -25,20 +25,20 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-navy to-navy-light rounded-lg p-6 text-white">
+      <div className="bg-gradient-to-r from-ink to-ink-secondary rounded-2xl p-6 text-cream">
         <h1 className="text-3xl font-bold">Document Readiness Center</h1>
-        <p className="text-blue-100 mt-2">Track important documents needed for college.</p>
+        <p className="text-cream/80 mt-2">Track important documents needed for college.</p>
       </div>
 
       {/* Progress */}
       <div className="bg-white rounded-lg shadow p-6">
-        <h2 className="text-xl font-bold text-navy mb-4">Overall Readiness</h2>
+        <h2 className="text-xl font-bold text-ink mb-4">Overall Readiness</h2>
         <div className="mb-4">
           <div className="flex justify-between mb-2">
             <span className="text-sm font-semibold text-gray-700">
               {readyCount} of {documents.length} documents ready
             </span>
-            <span className="text-lg font-bold text-brand-blue">{readyPercent}%</span>
+            <span className="text-lg font-bold text-gold">{readyPercent}%</span>
           </div>
           <div className="w-full bg-gray-200 rounded-full h-3">
             <div
@@ -50,8 +50,8 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
       </div>
 
       {/* Important Notice */}
-      <div className="bg-blue-50 border-l-4 border-brand-blue rounded-lg p-6">
-        <h3 className="font-bold text-navy mb-2">🔒 Privacy & Security</h3>
+      <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
+        <h3 className="font-bold text-ink mb-2">🔒 Privacy & Security</h3>
         <p className="text-sm text-gray-700">
           College Launch OS is a planning tool. In the production version, sensitive documents will be encrypted
           and securely stored. For now, this tracker helps you remember which documents you need to gather. Do not
@@ -71,7 +71,7 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
             <div key={groupName} className="bg-white rounded-lg shadow overflow-hidden">
               <div className="bg-gray-50 px-6 py-4 border-b">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-bold text-navy capitalize">{formatGroupName(groupName)}</h3>
+                  <h3 className="font-bold text-ink capitalize">{formatGroupName(groupName)}</h3>
                   <span className="text-sm font-semibold text-gray-600">
                     {groupReady}/{docs.length} ({groupPercent}%)
                   </span>
@@ -93,8 +93,8 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
       </div>
 
       {/* Checklist Tips */}
-      <div className="bg-amber-50 border-l-4 border-brand-warm rounded-lg p-6">
-        <h3 className="font-bold text-navy mb-3">📋 Document Gathering Tips</h3>
+      <div className="bg-amber-50 border-l-4 border-teal rounded-lg p-6">
+        <h3 className="font-bold text-ink mb-3">📋 Document Gathering Tips</h3>
         <ul className="space-y-2 text-sm text-gray-700">
           <li>
             <strong>Health Records:</strong> Request immunization records from your doctor's office early.
@@ -118,8 +118,8 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
       </div>
 
       {/* Document Preparation Timeline */}
-      <div className="bg-blue-50 border-l-4 border-brand-blue rounded-lg p-6">
-        <h3 className="font-bold text-navy mb-3">⏰ When to Gather Each Document</h3>
+      <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
+        <h3 className="font-bold text-ink mb-3">⏰ When to Gather Each Document</h3>
         <div className="space-y-2 text-sm text-gray-700">
           <p>
             <strong>3 Months Before:</strong> Request immunization records, start passport application if needed.
@@ -155,7 +155,7 @@ function DocumentRow({ doc, onUpdate }: DocumentRowProps) {
         className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center transition ${
           doc.isReady
             ? 'bg-status-success border-status-success text-white'
-            : 'border-gray-400 hover:border-brand-blue'
+            : 'border-gray-400 hover:border-gold'
         }`}
       >
         {doc.isReady && '✓'}

@@ -1,71 +1,100 @@
-import { AppState, FamilyProfile, Task, Reminder, BudgetData, DocumentItem } from '../types';
-import { DEFAULT_FAMILY_PROFILE, DEFAULT_TASKS, DEFAULT_DOCUMENTS, DEFAULT_BUDGET, SAMPLE_FAMILY_PROFILE } from '../data/seed';
+import { AppState } from '../types';
+import {
+  DEFAULT_FAMILY_PROFILE,
+  DEFAULT_TASKS,
+  DEFAULT_DOCUMENTS,
+  DEFAULT_BUDGET,
+  SAMPLE_FAMILY_PROFILE,
+  SAMPLE_TASKS,
+  SAMPLE_BUDGET,
+  SAMPLE_COLLEGE_LIST,
+  SAMPLE_ESSAYS,
+  SAMPLE_SCHOLARSHIPS,
+  SAMPLE_READY_DOCUMENT_IDS,
+  buildSampleActivity,
+} from '../data/seed';
 
 const STORAGE_KEY = 'college-launch-os-state';
 
+/** A fresh, empty plan (used by "Reset all data"). */
 export function getInitialState(): AppState {
   return {
     profile: { ...DEFAULT_FAMILY_PROFILE },
-    tasks: DEFAULT_TASKS.map(t => ({ ...t })),
+    tasks: DEFAULT_TASKS.map((t) => ({ ...t })),
     reminders: [],
-    budget: { categories: DEFAULT_BUDGET.categories.map(c => ({ ...c })) },
-    documents: DEFAULT_DOCUMENTS.map(d => ({ ...d })),
+    budget: { categories: DEFAULT_BUDGET.categories.map((c) => ({ ...c })) },
+    documents: DEFAULT_DOCUMENTS.map((d) => ({ ...d })),
+    collegeList: [],
+    essays: [],
+    scholarships: [],
+    activity: [],
     currentRole: 'parent',
   };
 }
 
+/** The "alive" showcase plan for Jordan Carter. Also shown on first visit. */
 export function getSampleState(): AppState {
   return {
     profile: { ...SAMPLE_FAMILY_PROFILE },
-    tasks: DEFAULT_TASKS.map(t => ({ ...t })),
+    tasks: SAMPLE_TASKS.map((t) => ({ ...t })),
     reminders: [
       {
         id: 'r1',
-        title: 'Schedule Taylor\'s physical exam',
-        date: getDateDaysFromNow(60),
+        title: 'FAFSA opens — file as early as possible',
+        date: nDaysFromNowISO(20),
         assignedTo: 'parent',
-        notes: 'Need to complete before college',
+        notes: 'Aid is often first-come, first-served.',
       },
       {
         id: 'r2',
-        title: 'Order Taylor\'s textbooks',
-        date: getDateDaysFromNow(30),
+        title: 'UF early-action deadline',
+        date: nDaysFromNowISO(24),
         assignedTo: 'student',
-        notes: 'Check course syllabus for required books',
+        notes: 'Submit application + supplemental essay.',
       },
     ],
-    budget: {
-      categories: [
-        { id: 'b1', name: 'Bedding and Bath', planned: 150, actual: 120 },
-        { id: 'b2', name: 'Dorm Supplies', planned: 200, actual: 180 },
-        { id: 'b3', name: 'Technology', planned: 800, actual: 1200 },
-        { id: 'b4', name: 'Travel', planned: 400, actual: 350 },
-        { id: 'b5', name: 'Clothing', planned: 300, actual: 250 },
-        { id: 'b6', name: 'Food/Meal Plan', planned: 2000, actual: 0 },
-        { id: 'b7', name: 'Books & Academic Supplies', planned: 300, actual: 0 },
-        { id: 'b8', name: 'Transportation', planned: 200, actual: 0 },
-        { id: 'b9', name: 'Medical Supplies', planned: 100, actual: 75 },
-        { id: 'b10', name: 'Emergency Fund', planned: 500, actual: 0 },
-      ],
-    },
-    documents: DEFAULT_DOCUMENTS.map((d, idx) => ({
+    budget: { categories: SAMPLE_BUDGET.categories.map((c) => ({ ...c })) },
+    documents: DEFAULT_DOCUMENTS.map((d) => ({
       ...d,
-      isReady: idx < 5,
+      isReady: SAMPLE_READY_DOCUMENT_IDS.includes(d.id),
     })),
+    collegeList: SAMPLE_COLLEGE_LIST.map((c) => ({ ...c })),
+    essays: SAMPLE_ESSAYS.map((e) => ({ ...e })),
+    scholarships: SAMPLE_SCHOLARSHIPS.map((s) => ({ ...s })),
+    activity: buildSampleActivity(),
     currentRole: 'parent',
+  };
+}
+
+/** Ensure a parsed/older state has every field the current app expects. */
+function normalize(parsed: Partial<AppState>): AppState {
+  const base = getInitialState();
+  return {
+    ...base,
+    ...parsed,
+    profile: { ...base.profile, ...(parsed.profile ?? {}) },
+    budget: parsed.budget && parsed.budget.categories ? parsed.budget : base.budget,
+    tasks: parsed.tasks ?? base.tasks,
+    reminders: parsed.reminders ?? base.reminders,
+    documents: parsed.documents ?? base.documents,
+    collegeList: parsed.collegeList ?? base.collegeList,
+    essays: parsed.essays ?? base.essays,
+    scholarships: parsed.scholarships ?? base.scholarships,
+    activity: parsed.activity ?? base.activity,
+    currentRole: parsed.currentRole ?? base.currentRole,
   };
 }
 
 export function loadState(): AppState {
-  if (typeof window === 'undefined') return getInitialState();
+  if (typeof window === 'undefined') return getSampleState();
 
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (!stored) return getInitialState();
+  if (!stored) return getSampleState();
 
   try {
-    return JSON.parse(stored);
+    return normalize(JSON.parse(stored));
   } catch {
-    return getInitialState();
+    return getSampleState();
   }
 }
 
@@ -85,15 +114,13 @@ export function exportState(state: AppState): string {
     profile: state.profile,
     tasksSummary: {
       total: state.tasks.length,
-      completed: state.tasks.filter(t => t.completed).length,
+      completed: state.tasks.filter((t) => t.completed).length,
       byCategory: groupBy(state.tasks, 'category'),
       byOwner: groupBy(state.tasks, 'owner'),
     },
-    completedTasks: state.tasks.filter(t => t.completed).map(t => ({
-      title: t.title,
-      category: t.category,
-      owner: t.owner,
-    })),
+    completedTasks: state.tasks
+      .filter((t) => t.completed)
+      .map((t) => ({ title: t.title, category: t.category, owner: t.owner })),
     reminders: state.reminders,
     budget: {
       categories: state.budget.categories,
@@ -102,9 +129,12 @@ export function exportState(state: AppState): string {
     },
     documents: {
       total: state.documents.length,
-      ready: state.documents.filter(d => d.isReady).length,
+      ready: state.documents.filter((d) => d.isReady).length,
       items: state.documents,
     },
+    collegeList: state.collegeList,
+    essays: state.essays,
+    scholarships: state.scholarships,
   };
 
   return JSON.stringify(exportData, null, 2);
@@ -122,4 +152,11 @@ export function getDateDaysFromNow(days: number): string {
   const date = new Date();
   date.setDate(date.getDate() + days);
   return date.toISOString().split('T')[0];
+}
+
+function nDaysFromNowISO(days: number): string {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + days);
+  return d.toISOString().split('T')[0];
 }

@@ -35,26 +35,26 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-navy to-navy-light rounded-lg p-6 text-white">
+      <div className="bg-gradient-to-r from-ink to-ink-secondary rounded-2xl p-6 text-cream">
         <h1 className="text-3xl font-bold">Settings & Tools</h1>
-        <p className="text-blue-100 mt-2">Manage your college launch data and preferences</p>
+        <p className="text-cream/80 mt-2">Manage your college launch data and preferences</p>
       </div>
 
       {/* Data Management */}
       <div className="bg-white rounded-lg shadow p-6 space-y-4">
-        <h2 className="text-xl font-bold text-navy border-b pb-3">Data Management</h2>
+        <h2 className="text-xl font-bold text-ink border-b pb-3">Data Management</h2>
 
         <div className="space-y-3">
           {/* Export Button */}
           <div className="p-4 bg-blue-50 rounded-lg">
-            <h3 className="font-semibold text-navy mb-2">📥 Export Your Progress</h3>
+            <h3 className="font-semibold text-ink mb-2">📥 Export Your Progress</h3>
             <p className="text-sm text-gray-700 mb-3">
               Download your profile, tasks, budget, and progress as a JSON file. You can use this to back up your data
               or share your progress.
             </p>
             <button
               onClick={handleExport}
-              className="bg-brand-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+              className="bg-ink text-cream px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               Download Progress (JSON)
             </button>
@@ -62,10 +62,10 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
 
           {/* Load Sample Data */}
           <div className="p-4 bg-green-50 rounded-lg">
-            <h3 className="font-semibold text-navy mb-2">🎓 Load Sample Family</h3>
+            <h3 className="font-semibold text-ink mb-2">🎓 Load Sample Family</h3>
             <p className="text-sm text-gray-700 mb-3">
-              Load a pre-populated example with Taylor Morgan and her family. This shows how the app looks with real
-              data and some completed tasks. Great for understanding the app flow.
+              Load the pre-populated example with Jordan Carter (a rising senior) and family. This shows how the app
+              looks with real data and some completed tasks. Great for understanding the app flow.
             </p>
             <button
               onClick={onLoadSampleFamily}
@@ -77,7 +77,7 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
 
           {/* Reset Data */}
           <div className="p-4 bg-red-50 rounded-lg">
-            <h3 className="font-semibold text-navy mb-2">🔄 Reset All Data</h3>
+            <h3 className="font-semibold text-ink mb-2">🔄 Reset All Data</h3>
             <p className="text-sm text-gray-700 mb-3">
               Clear all data and reset to a fresh, empty state. Your family profile will be reset to default values,
               and all tasks will be marked incomplete. This action cannot be undone.
@@ -94,7 +94,7 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
 
       {/* Current Data Summary */}
       <div className="bg-white rounded-lg shadow p-6">
-        <h2 className="text-xl font-bold text-navy border-b pb-3 mb-4">Current Data Summary</h2>
+        <h2 className="text-xl font-bold text-ink border-b pb-3 mb-4">Current Data Summary</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <StatCard label="Tasks" value={state.tasks.length.toString()} icon="📋" />
@@ -122,8 +122,8 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
       </div>
 
       {/* App Information */}
-      <div className="bg-blue-50 border-l-4 border-brand-blue rounded-lg p-6">
-        <h2 className="font-bold text-navy mb-3">ℹ️ About College Launch OS</h2>
+      <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
+        <h2 className="font-bold text-ink mb-3">ℹ️ About College Launch OS</h2>
         <div className="space-y-2 text-sm text-gray-700">
           <p>
             <strong>Version:</strong> 1.0.0 - Prototype
@@ -145,7 +145,7 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
 
       {/* Privacy & Security */}
       <div className="bg-purple-50 border-l-4 border-purple-600 rounded-lg p-6">
-        <h2 className="font-bold text-navy mb-3">🔐 Privacy & Security</h2>
+        <h2 className="font-bold text-ink mb-3">🔐 Privacy & Security</h2>
         <div className="space-y-2 text-sm text-gray-700">
           <p>
             ✓ <strong>Local Storage:</strong> All your data stays on your device. We never store it on our servers.
@@ -164,15 +164,15 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
       </div>
 
       {/* Support & Feedback */}
-      <div className="bg-amber-50 border-l-4 border-brand-warm rounded-lg p-6">
-        <h2 className="font-bold text-navy mb-3">📞 Support & Feedback</h2>
+      <div className="bg-amber-50 border-l-4 border-teal rounded-lg p-6">
+        <h2 className="font-bold text-ink mb-3">📞 Support & Feedback</h2>
         <p className="text-sm text-gray-700 mb-4">
           Have questions or feedback about College Launch OS? We'd love to hear from you!
         </p>
         <div className="space-y-2 text-sm">
           <p>
             📧 <strong>Email:</strong>{' '}
-            <a href="mailto:support@collegelaunch.app" className="text-brand-blue hover:underline">
+            <a href="mailto:support@collegelaunch.app" className="text-gold hover:underline">
               support@collegelaunch.app
             </a>
           </p>
@@ -199,7 +199,7 @@ function StatCard({ label, value, icon }: StatCardProps) {
     <div className="bg-gray-50 rounded-lg p-4 text-center">
       <p className="text-3xl mb-2">{icon}</p>
       <p className="text-gray-600 text-sm font-semibold">{label}</p>
-      <p className="text-2xl font-bold text-navy">{value}</p>
+      <p className="text-2xl font-bold text-ink">{value}</p>
     </div>
   );
 }

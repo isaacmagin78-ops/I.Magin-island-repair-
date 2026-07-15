@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: '#001f3f',
-        'navy-light': '#003d7a',
-        'brand-blue': '#0066cc',
-        'brand-warm': '#ff6b35',
-        'brand-accent': '#ff6b35',
+        gold: '#D4B057',
+        'gold-light': '#F2D078',
+        ink: '#0A0C10',
+        'ink-secondary': '#14171F',
+        cream: '#FAF6EC',
+        teal: '#7BBFB5',
         'status-success': '#28a745',
         'status-warning': '#ffc107',
         'status-danger': '#dc3545',

@@ -18,22 +18,22 @@ export default function Budget({ state, onUpdateBudget, onAddCategory }: BudgetP
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-navy to-navy-light rounded-lg p-6 text-white">
+      <div className="bg-gradient-to-r from-ink to-ink-secondary rounded-2xl p-6 text-cream">
         <h1 className="text-3xl font-bold">College Budget Planner</h1>
-        <p className="text-blue-100 mt-2">Track your college expenses and stay within budget.</p>
+        <p className="text-cream/80 mt-2">Track your college expenses and stay within budget.</p>
       </div>
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <SummaryCard title="Planned Budget" amount={plannedTotal} color="bg-blue-50 border-brand-blue" />
-        <SummaryCard title="Actual Spending" amount={actualTotal} color="bg-orange-50 border-brand-warm" />
+        <SummaryCard title="Planned Budget" amount={plannedTotal} color="bg-blue-50 border-gold" />
+        <SummaryCard title="Actual Spending" amount={actualTotal} color="bg-orange-50 border-teal" />
         <SummaryCard title="Remaining Budget" amount={remaining} color={remaining > 0 ? 'bg-green-50 border-status-success' : 'bg-red-50 border-status-danger'} />
       </div>
 
       {/* Budget Table */}
       <div className="bg-white rounded-lg shadow overflow-hidden">
         <div className="p-6 border-b border-gray-200">
-          <h2 className="text-xl font-bold text-navy">Expense Categories</h2>
+          <h2 className="text-xl font-bold text-ink">Expense Categories</h2>
         </div>
 
         <div className="overflow-x-auto">
@@ -116,7 +116,7 @@ export default function Budget({ state, onUpdateBudget, onAddCategory }: BudgetP
 
       {/* Progress Bar */}
       <div className="bg-white rounded-lg shadow p-6">
-        <h2 className="text-lg font-bold text-navy mb-4">Budget Utilization</h2>
+        <h2 className="text-lg font-bold text-ink mb-4">Budget Utilization</h2>
         <div className="space-y-4">
           <div>
             <div className="flex justify-between mb-2">
@@ -146,8 +146,8 @@ export default function Budget({ state, onUpdateBudget, onAddCategory }: BudgetP
       </div>
 
       {/* Tips */}
-      <div className="bg-blue-50 border-l-4 border-brand-blue rounded-lg p-6">
-        <h3 className="font-bold text-navy mb-3">💡 Budget Tips</h3>
+      <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
+        <h3 className="font-bold text-ink mb-3">💡 Budget Tips</h3>
         <ul className="space-y-2 text-sm text-gray-700">
           <li>• Budget extra for unexpected expenses</li>
           <li>• Compare prices for textbooks and supplies</li>
