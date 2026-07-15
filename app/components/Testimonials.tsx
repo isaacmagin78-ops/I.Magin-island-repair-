@@ -15,9 +15,9 @@ export default function Testimonials() {
             Customer Testimonials
           </h2>
           <p className="text-ink/70 text-lg">
-            This section is reserved for real feedback from real Madison
-            Moves clients. Nothing below is a fabricated quote — reviews will
-            be added here as they come in.
+            This section is reserved for real feedback from Madison&rsquo;s
+            actual clients. Nothing below is a fabricated quote — reviews
+            will be added here as they come in.
           </p>
         </Reveal>
 
@@ -35,7 +35,7 @@ export default function Testimonials() {
                 </div>
                 <p className="text-ink/50 italic flex-1">
                   &ldquo;Customer Testimonial &mdash; placeholder space reserved
-                  for a real review from a Madison Moves customer.&rdquo;
+                  for a real review from one of Madison&rsquo;s customers.&rdquo;
                 </p>
                 <p className="mt-4 text-sm font-semibold text-deepsea/60">
                   Customer Testimonial

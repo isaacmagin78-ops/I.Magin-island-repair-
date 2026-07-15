@@ -12,7 +12,21 @@ export default function Footer() {
             {siteConfig.businessName}
           </p>
           <p className="text-sm mb-4">{siteConfig.tagline}</p>
-          <p className="text-sm leading-relaxed">{siteConfig.description}</p>
+          <p className="text-sm leading-relaxed mb-4">{siteConfig.description}</p>
+          {(siteConfig.social.instagram || siteConfig.social.tiktok || siteConfig.social.facebook) && (
+            <div className="flex items-center gap-3">
+              {siteConfig.social.instagram && (
+                <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-cream/10 flex items-center justify-center hover:bg-brass hover:text-deepsea transition-colors">
+                  <Icon name="instagram" className="w-4 h-4" />
+                </a>
+              )}
+              {siteConfig.social.tiktok && (
+                <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="w-9 h-9 rounded-full bg-cream/10 flex items-center justify-center hover:bg-brass hover:text-deepsea transition-colors">
+                  <Icon name="tiktok" className="w-4 h-4" />
+                </a>
+              )}
+            </div>
+          )}
         </div>
 
         <div>
@@ -53,7 +67,7 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-cream mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#about" className="hover:text-brass transition-colors">About Us</a></li>
+            <li><a href="#about" className="hover:text-brass transition-colors">Meet Madison</a></li>
             <li><a href="#testimonials" className="hover:text-brass transition-colors">Testimonials</a></li>
             <li><a href="#service-area" className="hover:text-brass transition-colors">Service Area</a></li>
             <li><a href="#booking" className="hover:text-brass transition-colors">Book Now</a></li>

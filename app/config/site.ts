@@ -10,9 +10,22 @@
 
 export const siteConfig = {
   businessName: 'Madison Moves',
-  tagline: 'South Florida Home Concierge',
+  founderName: 'Madison',
+  tagline: 'South Florida House Cleaning & Home Organizing',
   description:
-    'Madison Moves is a South Florida home concierge service for condo and island communities — home cleaning, organizing, pet care, home watch, move-in concierge, airport assistance, grocery restocking, and senior assistance.',
+    'Madison Moves is Madison’s personal house cleaning, organizing, and home assistant service for South Florida condos and homes — detail-obsessed, dependable, and easy to book.',
+
+  /**
+   * MADISON'S STORY
+   * Shown in the "Meet Madison" section. This is real background provided by
+   * the business owner, not marketing fabrication — edit freely as her story
+   * evolves.
+   */
+  founderBio: [
+    'I’m Madison — 29, born and raised with a strong work ethic and an eye for detail that doesn’t switch off.',
+    'By day (and sometimes by night), I’m building flight hours toward a career as a commercial pilot. The same discipline that goes into a pre-flight checklist is what I bring into your home: nothing skipped, nothing out of place.',
+    'House cleaning and organizing started as a way to fund my flight hours — it turned into something I genuinely love. I treat every home like it’s the only one on my schedule that day.',
+  ],
 
   // Update to your live domain once deployed (used for canonical URLs & schema.org data).
   siteUrl: 'https://madisonmoves.vercel.app',
@@ -33,10 +46,16 @@ export const siteConfig = {
     },
   },
 
+  /**
+   * SOCIAL LINKS
+   * Leave blank to hide. Fill in to show a "Follow Madison" row in the hero
+   * and footer — good for turning site visitors into social followers (and
+   * vice versa).
+   */
   social: {
-    facebook: '',
     instagram: '',
-    google: '',
+    tiktok: '',
+    facebook: '',
   },
 
   /**
@@ -64,12 +83,7 @@ export const siteConfig = {
     depositGeneral: 'PASTE_STRIPE_LINK_HERE',
     homeCleaning: 'PASTE_STRIPE_LINK_HERE',
     organizing: 'PASTE_STRIPE_LINK_HERE',
-    petCare: 'PASTE_STRIPE_LINK_HERE',
-    homeWatch: 'PASTE_STRIPE_LINK_HERE',
-    moveInConcierge: 'PASTE_STRIPE_LINK_HERE',
-    airportAssistance: 'PASTE_STRIPE_LINK_HERE',
-    groceryRestocking: 'PASTE_STRIPE_LINK_HERE',
-    seniorAssistance: 'PASTE_STRIPE_LINK_HERE',
+    homeAssistant: 'PASTE_STRIPE_LINK_HERE',
   },
 
   /**
@@ -99,7 +113,7 @@ export function isPlaceholder(value: string): boolean {
 export const services = [
   {
     id: 'home-cleaning',
-    name: 'Home Cleaning',
+    name: 'House Cleaning',
     stripeKey: 'homeCleaning' as StripeServiceKey,
     description:
       'Detailed, reliable cleaning for condos and homes — recurring or one-time, always to a five-star standard.',
@@ -110,55 +124,15 @@ export const services = [
     name: 'Organizing',
     stripeKey: 'organizing' as StripeServiceKey,
     description:
-      'Closets, pantries, garages and whole-home organizing systems designed to actually stick.',
+      'Closets, pantries, garages, and whole-home organizing systems designed to actually stick.',
     icon: 'grid',
   },
   {
-    id: 'pet-care',
-    name: 'Pet Care',
-    stripeKey: 'petCare' as StripeServiceKey,
+    id: 'home-assistant',
+    name: 'Home Assistant',
+    stripeKey: 'homeAssistant' as StripeServiceKey,
     description:
-      'Trusted in-home pet sitting, dog walking, and check-ins so your companions are never alone.',
-    icon: 'paw',
-  },
-  {
-    id: 'home-watch',
-    name: 'Home Watch',
-    stripeKey: 'homeWatch' as StripeServiceKey,
-    description:
-      'Scheduled interior and exterior checks for seasonal residents — with photo reports after every visit.',
-    icon: 'shield',
-  },
-  {
-    id: 'move-in-concierge',
-    name: 'Move-in Concierge',
-    stripeKey: 'moveInConcierge' as StripeServiceKey,
-    description:
-      'Unpacking, setup, and settling-in support so your new condo feels like home from day one.',
-    icon: 'key',
-  },
-  {
-    id: 'airport-assistance',
-    name: 'Airport Assistance',
-    stripeKey: 'airportAssistance' as StripeServiceKey,
-    description:
-      'Reliable airport pickups and drop-offs for residents, guests, and family flying into South Florida.',
-    icon: 'plane',
-  },
-  {
-    id: 'grocery-restocking',
-    name: 'Grocery Restocking',
-    stripeKey: 'groceryRestocking' as StripeServiceKey,
-    description:
-      'Fridge and pantry stocked with your preferences before you even walk through the door.',
-    icon: 'cart',
-  },
-  {
-    id: 'senior-assistance',
-    name: 'Senior Assistance',
-    stripeKey: 'seniorAssistance' as StripeServiceKey,
-    description:
-      'Compassionate errands, companionship, and light assistance that help seniors stay independent at home.',
+      'The extra pair of hands around the house — errands, grocery restocking, pet check-ins, and getting things done.',
     icon: 'heart',
   },
 ] as const;

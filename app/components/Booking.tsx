@@ -5,17 +5,17 @@ import Reveal from './Reveal';
 
 export default function Booking() {
   return (
-    <section id="booking" className="py-20 md:py-28 bg-sand">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="booking" className="relative pt-20 pb-0 md:pt-28 bg-sand">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 md:pb-28">
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <p className="uppercase tracking-[0.3em] text-brass text-xs font-semibold mb-3">
             Get Started
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-deepsea mb-4">
-            Book Your Concierge Service
+            Book Madison
           </h2>
           <p className="text-ink/70 text-lg">
-            Prefer to talk it through first? Call, text, or email us directly.
+            Prefer to talk it through first? Call, text, or email me directly.
           </p>
         </Reveal>
 
@@ -32,6 +32,18 @@ export default function Booking() {
           </Reveal>
         </div>
       </div>
+
+      <svg
+        aria-hidden="true"
+        className="block w-full text-deepsea"
+        viewBox="0 0 1440 80"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="currentColor"
+          d="M0,48 C240,0 480,80 720,56 C960,32 1200,0 1440,48 L1440,80 L0,80 Z"
+        />
+      </svg>
     </section>
   );
 }

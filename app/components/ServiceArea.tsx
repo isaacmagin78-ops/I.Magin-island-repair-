@@ -8,15 +8,15 @@ export default function ServiceArea() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
         <Reveal>
           <p className="uppercase tracking-[0.3em] text-brass text-xs font-semibold mb-3">
-            Where We Work
+            Where I Work
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-deepsea mb-4">
             Proudly Serving {siteConfig.contact.areaServed}
           </h2>
           <p className="text-ink/70 text-lg leading-relaxed mb-6">
-            From waterfront high-rises to gated island communities, our team
-            covers condos and homes throughout South Florida. Not sure if
-            we&rsquo;re in your area? Reach out &mdash; we&rsquo;re always
+            From waterfront high-rises to gated island communities, I cover
+            condos and homes throughout South Florida. Not sure if
+            I&rsquo;m in your area? Reach out &mdash; I&rsquo;m always
             expanding.
           </p>
           <div className="flex items-start gap-3 text-ink/70">

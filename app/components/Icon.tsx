@@ -14,7 +14,10 @@ export type IconName =
   | 'menu'
   | 'close'
   | 'star'
-  | 'check';
+  | 'check'
+  | 'instagram'
+  | 'tiktok'
+  | 'wings';
 
 const paths: Record<IconName, React.ReactNode> = {
   sparkles: (
@@ -59,6 +62,15 @@ const paths: Record<IconName, React.ReactNode> = {
     <path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.1 6.6L12 17.6l-5.8 3 1.1-6.6L2.5 9.4l6.6-.9L12 2.5z" />
   ),
   check: <path d="M5 13l4 4L19 7" />,
+  instagram: (
+    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.8 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+  ),
+  tiktok: (
+    <path d="M14 2h3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1.1V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.2a3 3 0 1 0 2 2.8V2z" />
+  ),
+  wings: (
+    <path d="M12 3a2 2 0 0 1 2 2v2.2l7.2 4.1a1 1 0 0 1 0 1.7L14 16.6V19l2.5 1.5a.6.6 0 0 1-.3 1.1h-8.4a.6.6 0 0 1-.3-1.1L10 19v-2.4l-7.2-3.6a1 1 0 0 1 0-1.7L10 7.2V5a2 2 0 0 1 2-2z" />
+  ),
 };
 
 export default function Icon({
