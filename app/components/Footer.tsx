@@ -75,7 +75,24 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-cream/10 py-6">
+      <div className="border-t border-cream/10 py-6 space-y-2">
+        {siteConfig.partner.name && (
+          <p className="text-center text-xs text-cream/50 px-4">
+            In partnership with{' '}
+            {siteConfig.partner.url ? (
+              <a
+                href={siteConfig.partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brass hover:underline"
+              >
+                {siteConfig.partner.name}
+              </a>
+            ) : (
+              <span className="text-cream/70">{siteConfig.partner.name}</span>
+            )}
+          </p>
+        )}
         <p className="text-center text-xs text-cream/50 px-4">
           &copy; {year} {siteConfig.businessName}. All rights reserved.
         </p>

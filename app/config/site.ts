@@ -30,6 +30,17 @@ export const siteConfig = {
   // Update to your live domain once deployed (used for canonical URLs & schema.org data).
   siteUrl: 'https://madisonmoves.vercel.app',
 
+  /**
+   * PARTNER / AFFILIATE CREDIT
+   * Madison Moves is independent but works with iMagin Concierge. Shown as a
+   * small credit line in the footer. Leave `url` blank to show plain text
+   * instead of a link. Clear `name` entirely to hide the line.
+   */
+  partner: {
+    name: 'iMagin Concierge',
+    url: '',
+  },
+
   contact: {
     // Real phone number in E.164-ish display format. Used for tel:/sms: links.
     phoneDisplay: '(555) 123-4567',
