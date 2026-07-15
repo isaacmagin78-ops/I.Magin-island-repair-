@@ -3,5 +3,12 @@ dist
 .DS_Store
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
+# Ignore the output video from Git.
 out
+
+# Personal/source video clips dropped into assets/ for rendering (e.g. via
+# the render:short pipeline) stay local by default — they're often personal
+# footage and can be large. Images, music, and logos are still tracked
+# normally; commit a specific video explicitly with `git add -f` if needed.
+public/assets/videos/*
+!public/assets/videos/.gitkeep
