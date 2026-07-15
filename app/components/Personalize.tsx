@@ -26,9 +26,9 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-navy to-navy-light rounded-lg p-6 text-white">
+      <div className="bg-gradient-to-r from-ink to-ink-secondary rounded-2xl p-6 text-cream">
         <h1 className="text-3xl font-bold">Family Profile</h1>
-        <p className="text-blue-100 mt-2">Personalize your college preparation experience</p>
+        <p className="text-cream/80 mt-2">Personalize your college preparation experience</p>
       </div>
 
       {/* Success Message */}
@@ -42,7 +42,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
       <div className="bg-white rounded-lg shadow p-6 space-y-6">
         {/* Personal Information */}
         <fieldset className="space-y-4">
-          <legend className="text-lg font-bold text-navy border-b pb-3">Personal Information</legend>
+          <legend className="text-lg font-bold text-ink border-b pb-3">Personal Information</legend>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -51,7 +51,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="text"
                 value={formData.studentName}
                 onChange={(e) => handleChange('studentName', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="e.g., Taylor Morgan"
               />
             </div>
@@ -62,7 +62,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="text"
                 value={formData.parentName}
                 onChange={(e) => handleChange('parentName', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="e.g., Sarah Morgan"
               />
             </div>
@@ -71,7 +71,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
 
         {/* College Information */}
         <fieldset className="space-y-4">
-          <legend className="text-lg font-bold text-navy border-b pb-3">College Information</legend>
+          <legend className="text-lg font-bold text-ink border-b pb-3">College Information</legend>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -80,7 +80,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="text"
                 value={formData.collegeName}
                 onChange={(e) => handleChange('collegeName', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="e.g., University of Florida"
               />
             </div>
@@ -91,7 +91,18 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="date"
                 value={formData.moveInDate}
                 onChange={(e) => handleChange('moveInDate', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">Graduation / Enrollment Year</label>
+              <input
+                type="number"
+                value={formData.graduationYear ?? ''}
+                onChange={(e) => handleChange('graduationYear', e.target.value ? Number(e.target.value) : undefined)}
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
+                placeholder="e.g., 2027"
               />
             </div>
 
@@ -100,7 +111,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
               <select
                 value={formData.housingType}
                 onChange={(e) => handleChange('housingType', e.target.value as HousingType)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
               >
                 <option value="dorm">On-Campus Dorm</option>
                 <option value="apartment">Off-Campus Apartment</option>
@@ -115,7 +126,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
               <select
                 value={formData.studentType}
                 onChange={(e) => handleChange('studentType', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
               >
                 <option value="First-year">First-year</option>
                 <option value="Transfer">Transfer Student</option>
@@ -127,7 +138,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
 
         {/* Location Information */}
         <fieldset className="space-y-4">
-          <legend className="text-lg font-bold text-navy border-b pb-3">Location Information</legend>
+          <legend className="text-lg font-bold text-ink border-b pb-3">Location Information</legend>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -136,7 +147,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="text"
                 value={formData.homeState}
                 onChange={(e) => handleChange('homeState', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="e.g., FL, CA"
                 maxLength={2}
               />
@@ -148,7 +159,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
                 type="text"
                 value={formData.collegeState}
                 onChange={(e) => handleChange('collegeState', e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="e.g., FL, CA"
                 maxLength={2}
               />
@@ -158,7 +169,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
 
         {/* Special Circumstances */}
         <fieldset className="space-y-4">
-          <legend className="text-lg font-bold text-navy border-b pb-3">Special Circumstances</legend>
+          <legend className="text-lg font-bold text-ink border-b pb-3">Special Circumstances</legend>
 
           <div className="space-y-3">
             <label className="flex items-center gap-3 cursor-pointer">
@@ -197,7 +208,7 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
         <div className="pt-4">
           <button
             onClick={handleSave}
-            className="w-full bg-brand-blue text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition text-lg"
+            className="w-full bg-ink text-cream py-3 rounded-lg font-bold hover:bg-ink-secondary transition text-lg"
           >
             Save Profile
           </button>
@@ -205,8 +216,8 @@ export default function Personalize({ profile, onProfileUpdate }: PersonalizePro
       </div>
 
       {/* Information Display */}
-      <div className="bg-blue-50 border-l-4 border-brand-blue rounded-lg p-6">
-        <h2 className="font-bold text-navy mb-3">💡 How We Use This Information</h2>
+      <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
+        <h2 className="font-bold text-ink mb-3">💡 How We Use This Information</h2>
         <ul className="space-y-2 text-sm text-gray-700">
           <li>
             <strong>Personalized Recommendations:</strong> Your profile helps us tailor tasks and suggestions to your

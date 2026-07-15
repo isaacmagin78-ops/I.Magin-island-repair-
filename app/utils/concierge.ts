@@ -1,237 +1,271 @@
-interface ConciergeResponse {
+import { AppState } from '../types';
+import {
+  isOverdue,
+  isDueSoon,
+  nextMission,
+  upcomingDeadlines,
+  resolveDueDate,
+  relativeDue,
+  currentPhase,
+  PHASE_META,
+  ownerLabel,
+} from './derive';
+import { computeReadiness } from './readiness';
+
+export interface ConciergeReply {
   answer: string;
-  category: string;
-  suggestedTasks?: string[];
+  suggestions: string[];
 }
 
-export const CONCIERGE_KNOWLEDGE_BASE: Record<string, ConciergeResponse> = {
-  'renter insurance': {
-    category: 'finances',
-    answer:
-      'Renter\'s insurance protects your belongings in the dorm from theft, fire, and other damage. It typically costs $10-20/month and covers personal property, liability, and additional living expenses. Many insurance companies offer student rates. Your college may even have a recommended provider.',
-    suggestedTasks: ['Plan renter\'s insurance'],
-  },
-  "renter's insurance": {
-    category: 'finances',
-    answer:
-      'Renter\'s insurance protects your belongings in the dorm from theft, fire, and other damage. It typically costs $10-20/month and covers personal property, liability, and additional living expenses. Many insurance companies offer student rates. Your college may even have a recommended provider.',
-    suggestedTasks: ['Plan renter\'s insurance'],
-  },
-  'mattress size': {
-    category: 'housing',
-    answer:
-      'Most college dorms use Twin XL mattresses, which are 38" wide by 80" long. This is longer than a standard twin bed but narrower than a full bed. When shopping for sheets and a mattress pad, specifically look for "Twin XL" to ensure proper fit. Some colleges have different sizes, so check with your housing office.',
-    suggestedTasks: ['Measure dorm room', 'Purchase bedding for dorm'],
-  },
-  'roommate': {
-    category: 'housing',
-    answer:
-      'Great question! Here are key topics to discuss with your roommate: who brings major items (fridge, microwave, rug), sleep schedules, guest policies, cleaning expectations, temperature preferences, and noise levels. Exchange contact info, maybe use a group chat, and create a roommate agreement. Most colleges provide templates. Try to get to know each other before move-in to build trust.',
-    suggestedTasks: ['Coordinate with roommate'],
-  },
-  'prescription': {
-    category: 'medical',
-    answer:
-      'Before college, ensure you have enough medication to last through your first term. Get prescriptions refilled and bring them in their original bottles with your name and dosage clearly labeled. Set up a relationship with your campus health center and pharmacy. Many colleges have mail-order pharmacy services. If traveling, keep medication in carry-on luggage.',
-    suggestedTasks: ['Refill prescriptions', 'Find campus health center'],
-  },
-  'medication': {
-    category: 'medical',
-    answer:
-      'Before college, ensure you have enough medication to last through your first term. Get prescriptions refilled and bring them in their original bottles with your name and dosage clearly labeled. Set up a relationship with your campus health center and pharmacy. Many colleges have mail-order pharmacy services. If traveling, keep medication in carry-on luggage.',
-    suggestedTasks: ['Refill prescriptions', 'Find campus health center'],
-  },
-  'meningitis vaccine': {
-    category: 'medical',
-    answer:
-      'Most colleges require or strongly recommend the meningitis vaccine (especially meningococcal B vaccine). This is typically given by your doctor or at a local health clinic. Check your college\'s specific requirements and get it done during your physical exam. Many students get it during their pre-college health appointment.',
-    suggestedTasks: ['Schedule physical exam', 'Verify immunizations'],
-  },
-  'immunization': {
-    category: 'medical',
-    answer:
-      'Colleges typically require proof of vaccinations including MMR (measles, mumps, rubella), meningitis, tetanus, and polio. Some require COVID-19 vaccination. Check your college\'s specific requirements on their website and get your records from your doctor. You\'ll need these before move-in.',
-    suggestedTasks: ['Verify immunizations', 'Get health insurance card'],
-  },
-  'budget': {
-    category: 'finances',
-    answer:
-      'A typical first-year student budget includes: tuition/room/board (varies widely), books ($300-500), personal supplies ($200-300), clothing ($300+), and entertainment ($200+). Beyond tuition, expect $3,000-5,000 for the year. Create a detailed budget with your family and decide together how much spending money is appropriate. Use our budget planner to track expenses.',
-    suggestedTasks: ['Set college budget', 'Plan renter\'s insurance'],
-  },
-  'move-in day': {
-    category: 'housing',
-    answer:
-      'Move-in day is typically during the few days before classes begin. Your housing office will assign a specific time slot. Arrive early to avoid lines. Bring essential items (bedding, toiletries, important documents) and plan to complete most moving within a few hours. Your roommate and parent can help. Leave decorating for after, and avoid parking problems by coordinating timing.',
-    suggestedTasks: ['Confirm arrival date with housing', 'Pack for move-in'],
-  },
-  'first aid kit': {
-    category: 'medical',
-    answer:
-      'Pack a basic dorm first-aid kit with: bandages (various sizes), pain relievers (ibuprofen, acetaminophen), cold medicine, antibiotic ointment, hydrocortisone cream, tweezers, medical tape, and a small thermometer. Add anything specific to you (allergy meds, asthma inhaler, etc.). Keep it in an accessible container. Most of these items are inexpensive and available at any drugstore.',
-    suggestedTasks: ['Build first-aid kit'],
-  },
-  'packing': {
-    category: 'packing',
-    answer:
-      'Pack for college by starting with essentials: important documents, prescriptions, identification. Then add: seasonal clothing, undergarments, socks, shoes, toiletries, bedding, and a few comfort items. Remember you\'ll have limited space, so be strategic. Many students ship items later in the year. Check with your college about prohibited items (candles, hot plates, etc.). Create a packing list to stay organized.',
-    suggestedTasks: ['Pack for move-in'],
-  },
-  'technology': {
-    category: 'technology',
-    answer:
-      'Check your major\'s specific tech requirements on the college website. Minimum needs: a laptop (check if Mac or PC preferred by your program), phone with reliable service, charging cables and a power strip. Consider a laptop stand for ergonomics. Most students also bring headphones, a webcam for Zoom classes, and a portable charger. Don\'t overbuy—you can add tech later if needed.',
-    suggestedTasks: ['Check college tech requirements', 'Purchase phone plan'],
-  },
-  'laptop': {
-    category: 'technology',
-    answer:
-      'For college, choose a laptop that\'s portable and meets your major\'s requirements. Most programs prefer either Mac or PC—check with your department. Budget $800-1,500. Popular options: MacBook Air, Dell XPS, or Lenovo ThinkPad. Make sure it has good battery life and can run required software. Visit the college bookstore for recommendations and potential student discounts.',
-    suggestedTasks: ['Purchase laptop if needed'],
-  },
-  'laundry': {
-    category: 'laundry',
-    answer:
-      'Help your student learn to do laundry before college. Key lessons: sort colors from whites, use cold water for darks, don\'t overload machines, use appropriate detergent amounts, clean the lint trap in dryers. Bring laundry detergent, stain remover, and dryer sheets. Get a collapsible hamper to save space. Some dorms have laundry rooms, others require paying per machine. Budget a small amount monthly for laundry costs.',
-    suggestedTasks: ['Buy laundry supplies', 'Learn laundry basics'],
-  },
-  'campus safety': {
-    category: 'safety',
-    answer:
-      'Research your college\'s safety resources: emergency alert system, campus police, emergency phones, safe escort services, and counseling. Walk the campus to identify well-lit areas. Avoid isolated spots late at night. Know the campus emergency number and location of security offices. Many colleges offer self-defense training. Share this info with family.',
-    suggestedTasks: ['Research campus safety'],
-  },
-  'vehicle': {
-    category: 'travel',
-    answer:
-      'If bringing a vehicle to college, ensure it\'s properly maintained: oil change, tire check, battery test. Verify auto insurance covers your college location and get proof of coverage. Register the vehicle in the state where college is located. Some colleges have limited parking or charge parking fees. Check your college\'s vehicle policies and parking permit process before arriving.',
-    suggestedTasks: ['Prepare car if driving'],
-  },
-  'car': {
-    category: 'travel',
-    answer:
-      'If bringing a vehicle to college, ensure it\'s properly maintained: oil change, tire check, battery test. Verify auto insurance covers your college location and get proof of coverage. Register the vehicle in the state where college is located. Some colleges have limited parking or charge parking fees. Check your college\'s vehicle policies and parking permit process before arriving.',
-    suggestedTasks: ['Prepare car if driving'],
-  },
-  'textbook': {
-    category: 'academics',
-    answer:
-      'Wait until the first day of class before buying textbooks—many professors have alternatives like library copies, online access codes, or make them optional. When you do buy, compare prices: college bookstore, Amazon, Chegg, ThriftBooks. Consider renting if available to save money. Some classes need books immediately, others you can borrow. Check the syllabus or ask your professor.',
-    suggestedTasks: ['Get course textbooks'],
-  },
-  'class registration': {
-    category: 'academics',
-    answer:
-      'Most colleges assign an orientation and registration date based on your class year. Registration happens online through your college portal. Popular classes fill quickly, so register promptly at your assigned time. Balance hard and easier classes, consider your preferred class times, and review course requirements. Talk to your academic advisor if unsure. Attend orientation first to get guidance.',
-    suggestedTasks: ['Register for classes'],
-  },
-  'financial aid': {
-    category: 'finances',
-    answer:
-      'Complete FAFSA (Free Application for Federal Student Aid) early, even if you think you won\'t qualify. This determines eligibility for federal loans, grants, and work-study. Many colleges also require CSS Profile. Check deadlines at your college\'s financial aid website. Keep important documents organized and respond promptly to any aid office requests. Meet with your financial aid advisor to understand your package.',
-    suggestedTasks: ['Get financial aid paperwork'],
-  },
-  'meal plan': {
-    category: 'food',
-    answer:
-      'Most colleges require first-year students to purchase a meal plan. Plans typically offer 7-21 meals per week plus dining dollars. Visit the college\'s dining website to see options and pricing. Start with a standard plan—you can usually adjust after first semester. Consider your eating habits and dietary restrictions. Meal plans usually cover breakfast, lunch, and dinner.',
-    suggestedTasks: ['Purchase meal plan'],
-  },
-  'orientation': {
-    category: 'academics',
-    answer:
-      'Orientation is typically 1-3 days of events, workshops, and social activities before classes start. You\'ll register for classes, learn campus resources, meet advisors, and connect with peers. Attendance is usually required and invaluable for finding your way around, making friends, and understanding college life. It\'s a great time to ask questions and get your bearings.',
-    suggestedTasks: ['Attend orientation'],
-  },
-};
+export interface QuickAction {
+  key: string;
+  label: string;
+}
 
-export function findConciergeResponse(question: string): { answer: string; category: string; suggestedTasks?: string[] } {
-  const lowerQuestion = question.toLowerCase().trim();
+/** High-value one-tap prompts shown above the chat. */
+export const QUICK_ACTIONS: QuickAction[] = [
+  { key: 'week', label: 'What should I do this week?' },
+  { key: 'score', label: 'Explain my readiness score' },
+  { key: 'deadlines', label: 'Check upcoming deadlines' },
+  { key: 'fafsa', label: 'Prepare for FAFSA' },
+  { key: 'essays', label: 'Review my essay plan' },
+  { key: 'list', label: 'Build my college list' },
+  { key: 'scholarships', label: 'Find scholarship opportunities' },
+  { key: 'documents', label: 'Review missing documents' },
+];
 
-  // Try exact match with keywords
-  for (const [key, response] of Object.entries(CONCIERGE_KNOWLEDGE_BASE)) {
-    if (lowerQuestion.includes(key)) {
-      return response;
+/* ------------------------------------------------------------------ */
+/* Data-aware answers                                                  */
+/* ------------------------------------------------------------------ */
+
+function thisWeek(state: AppState): ConciergeReply {
+  const due = state.tasks.filter((t) => !t.completed && isDueSoon(t, state.profile, 7));
+  const overdue = state.tasks.filter((t) => isOverdue(t, state.profile));
+  const lines: string[] = [];
+  if (overdue.length) {
+    lines.push(`⚠️ ${overdue.length} overdue: ${overdue.slice(0, 3).map((t) => t.title).join('; ')}.`);
+  }
+  if (due.length) {
+    lines.push(
+      `📌 Due within 7 days:\n` +
+        due
+          .slice(0, 5)
+          .map((t) => `• ${t.title} — ${relativeDue(resolveDueDate(t, state.profile))} (${ownerLabel(t.owner)})`)
+          .join('\n'),
+    );
+  }
+  if (!overdue.length && !due.length) {
+    lines.push('Nothing is due in the next 7 days — a great time to get ahead on essays or scholarships.');
+  }
+  return {
+    answer: `Here’s your focus for this week:\n\n${lines.join('\n\n')}`,
+    suggestions: ['Explain my readiness score', 'Review my essay plan', 'Find scholarship opportunities'],
+  };
+}
+
+function explainScore(state: AppState): ConciergeReply {
+  const r = computeReadiness(state);
+  const weak = r.sections
+    .filter((s) => s.total > 0)
+    .sort((a, b) => a.percent - b.percent)
+    .slice(0, 2);
+  const contribLines = r.contributions
+    .map((c) => `• ${c.label}: ${c.score}/100 (weight ${c.weight}%)`)
+    .join('\n');
+  return {
+    answer:
+      `Your College Readiness Score is ${r.overall}/100 — “${r.label}”.\n\n` +
+      `It’s a weighted average of:\n${contribLines}\n\n` +
+      `Biggest opportunities right now: ${weak.map((s) => `${s.label} (${s.percent}%)`).join(' and ')}.`,
+    suggestions: ['What should I do this week?', 'Check upcoming deadlines', 'Review missing documents'],
+  };
+}
+
+function deadlines(state: AppState): ConciergeReply {
+  const list = upcomingDeadlines(state, 5);
+  if (!list.length) {
+    return { answer: 'No dated tasks are coming up. Add due dates in the Checklist to track deadlines here.', suggestions: ['What should I do this week?'] };
+  }
+  return {
+    answer:
+      `Your next deadlines:\n\n` +
+      list
+        .map((d) => `• ${d.task.title} — ${relativeDue(d.due)} (${ownerLabel(d.task.owner)})`)
+        .join('\n'),
+    suggestions: ['What should I do this week?', 'Prepare for FAFSA'],
+  };
+}
+
+function fafsa(state: AppState): ConciergeReply {
+  const fa = state.tasks.filter((t) => t.category === 'finances');
+  const open = fa.filter((t) => !t.completed);
+  return {
+    answer:
+      `Prototype College Concierge — FAFSA plan:\n\n` +
+      `1) Create an FSA ID for both parent and student (takes a few days to verify).\n` +
+      `2) Gather last year’s tax return, W-2s, and current bank balances.\n` +
+      `3) File as early as possible — some aid is first-come, first-served.\n\n` +
+      (open.length
+        ? `In your plan, these financial-aid tasks are still open: ${open.map((t) => t.title).join('; ')}.`
+        : `Nice — your financial-aid tasks are all complete!`),
+    suggestions: ['Find scholarship opportunities', 'Check upcoming deadlines'],
+  };
+}
+
+function essaysPlan(state: AppState): ConciergeReply {
+  const open = state.essays.filter((e) => e.status !== 'complete');
+  const body = open.length
+    ? open.map((e) => `• ${e.title} — ${e.status}${e.dueDate ? `, ${relativeDue(e.dueDate)}` : ''}`).join('\n')
+    : 'All your tracked essays are complete. 🎉';
+  return {
+    answer: `Your essay plan:\n\n${body}\n\nTip: finish your personal statement first — you can reuse pieces of it across supplements.`,
+    suggestions: ['What should I do this week?', 'Build my college list'],
+  };
+}
+
+function collegeListReply(state: AppState): ConciergeReply {
+  const byTier = (tier: string) => state.collegeList.filter((c) => c.tier === tier).length;
+  return {
+    answer:
+      `Your college list has ${state.collegeList.length} schools: ` +
+      `${byTier('reach')} reach, ${byTier('target')} target, ${byTier('safety')} safety.\n\n` +
+      `A balanced list is roughly 2 reach, 2–3 target, and 2 safety schools you’d be genuinely happy to attend. ` +
+      `Open the College List tab to add schools, set tiers, and track each application’s status.`,
+    suggestions: ['Review my essay plan', 'Check upcoming deadlines'],
+  };
+}
+
+function scholarshipsReply(state: AppState): ConciergeReply {
+  const active = state.scholarships.filter((s) => s.status !== 'not-awarded');
+  const potential = state.scholarships.reduce((sum, s) => sum + s.amount, 0);
+  return {
+    answer:
+      `You’re tracking ${state.scholarships.length} scholarships worth up to $${potential.toLocaleString()}.\n\n` +
+      `Focus first on ones with the nearest deadlines, and write one reusable essay you can adapt. ` +
+      `Local scholarships (community groups, employers) often have the best odds.` +
+      (active.length ? `` : ''),
+    suggestions: ['Check upcoming deadlines', 'Review my essay plan'],
+  };
+}
+
+function documentsReply(state: AppState): ConciergeReply {
+  const missing = state.documents.filter((d) => !d.isReady);
+  return {
+    answer: missing.length
+      ? `You still need ${missing.length} documents:\n\n${missing.map((d) => `• ${d.name}`).join('\n')}`
+      : `All your tracked documents are ready. 🎉`,
+    suggestions: ['What should I do this week?', 'Prepare for FAFSA'],
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/* Curated knowledge base (fallback for typed questions)               */
+/* ------------------------------------------------------------------ */
+
+const KNOWLEDGE: { keys: string[]; answer: string; suggestions?: string[] }[] = [
+  {
+    keys: ['recommendation', 'rec letter', 'teacher letter'],
+    answer:
+      'Ask recommenders at least 3–4 weeks before your first deadline. Choose teachers who know you well (often junior-year core subjects), give them your resume and a short note on what to highlight, and follow up politely a week before the due date.',
+    suggestions: ['Review missing documents', 'Check upcoming deadlines'],
+  },
+  {
+    keys: ['common app', 'application'],
+    answer:
+      'The Common App lets you apply to many schools with one core application plus school-specific supplements. Complete your profile and activities section once, then add each college’s supplements and deadlines. Submit a few days early to avoid last-minute issues.',
+    suggestions: ['Review my essay plan', 'Check upcoming deadlines'],
+  },
+  {
+    keys: ['essay', 'personal statement'],
+    answer:
+      'A strong personal statement is specific and reflective — a small, true story that shows how you think. Finish it first (it anchors your supplements), keep it under the word limit, and get one round of feedback from a teacher or mentor.',
+    suggestions: ['Review my essay plan'],
+  },
+  {
+    keys: ['scholarship', 'merit'],
+    answer:
+      'Apply broadly and start local — community organizations, employers, and your school counselor’s list often have the best odds. Track deadlines, and reuse one flexible essay you can tailor quickly.',
+    suggestions: ['Find scholarship opportunities'],
+  },
+  {
+    keys: ['fafsa', 'financial aid', 'aid'],
+    answer:
+      'File the FAFSA as early as you can. Create an FSA ID for parent and student ahead of time, gather tax documents, and submit — many aid programs are first-come, first-served.',
+    suggestions: ['Prepare for FAFSA'],
+  },
+  {
+    keys: ['roommate', 'dorm', 'housing', 'mattress'],
+    answer:
+      'Most dorms use Twin XL mattresses. Once you have a housing assignment, coordinate with your roommate on who brings shared items (fridge, microwave, rug) and align on sleep and guest preferences.',
+    suggestions: ['What should I do this week?'],
+  },
+  {
+    keys: ['budget', 'cost', 'money'],
+    answer:
+      'Build a budget covering tuition, housing/meal plan, books, technology, travel, and personal spending. Use each college’s net price calculator for a realistic estimate, and revisit it once aid offers arrive.',
+    suggestions: ['Prepare for FAFSA'],
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/* Dispatcher                                                          */
+/* ------------------------------------------------------------------ */
+
+export function respondByKey(key: string, state: AppState): ConciergeReply {
+  switch (key) {
+    case 'week':
+      return thisWeek(state);
+    case 'score':
+      return explainScore(state);
+    case 'deadlines':
+      return deadlines(state);
+    case 'fafsa':
+      return fafsa(state);
+    case 'essays':
+      return essaysPlan(state);
+    case 'list':
+      return collegeListReply(state);
+    case 'scholarships':
+      return scholarshipsReply(state);
+    case 'documents':
+      return documentsReply(state);
+    default:
+      return respond(key, state);
+  }
+}
+
+export function respond(question: string, state: AppState): ConciergeReply {
+  const q = question.toLowerCase().trim();
+
+  // Match a quick action typed as free text.
+  const qa = QUICK_ACTIONS.find((a) => a.label.toLowerCase() === q);
+  if (qa) return respondByKey(qa.key, state);
+
+  // Data-aware keyword routing.
+  if (/(this week|today|what.*do)/.test(q)) return thisWeek(state);
+  if (/(score|readiness|on track)/.test(q)) return explainScore(state);
+  if (/(deadline|due|upcoming)/.test(q)) return deadlines(state);
+  if (/(fafsa|financial aid)/.test(q)) return fafsa(state);
+  if (/(essay|personal statement)/.test(q)) return essaysPlan(state);
+  if (/(college list|reach|safety|target school)/.test(q)) return collegeListReply(state);
+  if (/(scholarship|merit)/.test(q)) return scholarshipsReply(state);
+  if (/(document|transcript|records)/.test(q)) return documentsReply(state);
+
+  // Curated knowledge base.
+  for (const entry of KNOWLEDGE) {
+    if (entry.keys.some((k) => q.includes(k))) {
+      return { answer: entry.answer, suggestions: entry.suggestions ?? ['What should I do this week?'] };
     }
   }
 
-  // Categorize by keywords
-  if (lowerQuestion.includes('room') || lowerQuestion.includes('dorm') || lowerQuestion.includes('housing')) {
-    return {
-      category: 'housing',
-      answer:
-        'This question relates to your housing and dorm preparation. Housing is a key part of college readiness! Check our Housing section for tasks like measuring your room, coordinating with your roommate, purchasing bedding, and confirming your move-in details. If you need specific housing advice, check your college\'s housing website or contact the housing office.',
-      suggestedTasks: ['Select and confirm housing', 'Coordinate with roommate'],
-    };
-  }
-
-  if (lowerQuestion.includes('medical') || lowerQuestion.includes('health') || lowerQuestion.includes('doctor')) {
-    return {
-      category: 'medical',
-      answer:
-        'This relates to your health and medical preparation. Before college, schedule a physical, verify your immunizations, and gather health records. If you take medication, refill prescriptions and build a first-aid kit. Set up a relationship with your campus health center early. Check our Medical section for a complete checklist.',
-      suggestedTasks: ['Schedule physical exam', 'Find campus health center'],
-    };
-  }
-
-  if (lowerQuestion.includes('money') || lowerQuestion.includes('budget') || lowerQuestion.includes('cost') || lowerQuestion.includes('pay')) {
-    return {
-      category: 'finances',
-      answer:
-        'Financial planning is essential for college. Set a realistic budget, open a student bank account, understand your financial aid, and discuss spending expectations with your student. Consider renter\'s insurance and other costs. Use our Budget Planner to track expenses. Meet with your college\'s financial aid office to understand your aid package.',
-      suggestedTasks: ['Set college budget', 'Plan renter\'s insurance'],
-    };
-  }
-
-  if (lowerQuestion.includes('travel') || lowerQuestion.includes('drive') || lowerQuestion.includes('flight') || lowerQuestion.includes('transport')) {
-    return {
-      category: 'travel',
-      answer:
-        'Travel planning for move-in is important. Book flights or transportation early if needed, plan your route, and if bringing a car, ensure it\'s maintained and insured. Coordinate timing with your college\'s move-in schedule. Check our Travel section for preparation tasks.',
-      suggestedTasks: ['Book move-in travel', 'Plan travel to college'],
-    };
-  }
-
-  if (lowerQuestion.includes('safe') || lowerQuestion.includes('security') || lowerQuestion.includes('emergency')) {
-    return {
-      category: 'safety',
-      answer:
-        'Safety is paramount. Research your college\'s safety resources, establish a regular check-in routine with your family, and share emergency contacts. Learn about campus security, well-lit areas, and emergency procedures. Discuss personal safety strategies together. Our Safety section has a complete preparation checklist.',
-      suggestedTasks: ['Research campus safety', 'Establish check-in routine'],
-    };
-  }
-
-  if (lowerQuestion.includes('tech') || lowerQuestion.includes('computer') || lowerQuestion.includes('laptop') || lowerQuestion.includes('phone')) {
-    return {
-      category: 'technology',
-      answer:
-        'Technology is essential for college success. Check your major\'s specific tech requirements, purchase or confirm you have a suitable laptop, ensure a reliable phone plan, and gather cables and chargers. Set up your college email and test portal access. See our Technology section for the complete tech checklist.',
-      suggestedTasks: ['Check college tech requirements', 'Purchase laptop if needed'],
-    };
-  }
-
-  if (lowerQuestion.includes('document') || lowerQuestion.includes('paperwork') || lowerQuestion.includes('id') || lowerQuestion.includes('record')) {
-    return {
-      category: 'documents',
-      answer:
-        'Important documents include: government ID, health insurance card, immunization records, prescription list, housing agreement, and financial aid paperwork. Start gathering these early—some take time to obtain. Keep copies organized in one place. Our Documents section has a complete tracking list.',
-      suggestedTasks: ['Get financial aid paperwork', 'Create emergency contacts list'],
-    };
-  }
-
-  if (lowerQuestion.includes('class') || lowerQuestion.includes('academic') || lowerQuestion.includes('course') || lowerQuestion.includes('textbook')) {
-    return {
-      category: 'academics',
-      answer:
-        'Academic preparation includes registering for classes, getting textbooks, and attending orientation. Register on your assigned date to get better course selections. Wait on textbooks until the first day. Orientation is invaluable. Check our Academics section for all preparation tasks.',
-      suggestedTasks: ['Register for classes', 'Attend orientation'],
-    };
-  }
-
-  // Fallback
+  // Fallback that still references the family's real state.
+  const mission = nextMission(state);
+  const phase = PHASE_META.find((p) => p.id === currentPhase(state.profile));
   return {
-    category: 'general',
     answer:
-      'That\'s a great question! While our College Concierge is still learning, this seems like an important topic to explore. Consider checking your college\'s website, contacting the admissions office, or checking the relevant section of your checklist. You might also want to turn this into a task so you remember to follow up. What topic does this fall under?',
+      `I’m your Prototype College Concierge — I use your plan to guide you (curated responses, not live AI).\n\n` +
+      `You’re in the “${phase?.label}” phase. ` +
+      (mission ? `The most useful next step is: “${mission.title}”.` : `Nice — your plan is all caught up!`),
+    suggestions: ['What should I do this week?', 'Explain my readiness score', 'Check upcoming deadlines'],
   };
 }

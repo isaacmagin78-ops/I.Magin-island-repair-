@@ -14,7 +14,7 @@ export default function RoleToggle({ role, onRoleChange }: RoleToggleProps) {
         onClick={() => onRoleChange('parent')}
         className={`px-4 py-2 rounded-lg font-semibold transition ${
           role === 'parent'
-            ? 'bg-navy text-white shadow-lg'
+            ? 'bg-ink text-cream shadow-lg'
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
         }`}
         aria-pressed={role === 'parent'}
@@ -25,7 +25,7 @@ export default function RoleToggle({ role, onRoleChange }: RoleToggleProps) {
         onClick={() => onRoleChange('student')}
         className={`px-4 py-2 rounded-lg font-semibold transition ${
           role === 'student'
-            ? 'bg-navy text-white shadow-lg'
+            ? 'bg-ink text-cream shadow-lg'
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
         }`}
         aria-pressed={role === 'student'}

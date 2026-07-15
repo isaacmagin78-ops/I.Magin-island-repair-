@@ -32,6 +32,26 @@ button {
   font-family: inherit;
 }
 
+/* Shared form input used across the College List forms. */
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font: inherit;
+  color: #0A0C10;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #D4B057;
+  border-color: #D4B057;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, 8px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
