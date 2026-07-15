@@ -13,9 +13,13 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  background-color: #f3f4f6;
-  color: #1f2937;
+  background-color: #fbf7ef;
+  color: #1e2a2e;
+}
+
+section[id],
+div#booking-form {
+  scroll-margin-top: 5rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -32,10 +36,26 @@ button {
   font-family: inherit;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }
