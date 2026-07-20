@@ -1,14 +1,11 @@
 import { AppState, FamilyProfile, PhaseId, Task, TaskStatus, TaskOwner } from '../types';
 
-/* ----------------------------- dates ----------------------------- */
-
 export function startOfToday(): Date {
   const d = new Date();
   d.setHours(0, 0, 0, 0);
   return d;
 }
 
-/** Parse a yyyy-mm-dd string as a *local* date (avoids timezone drift). */
 export function parseLocalDate(s?: string): Date | null {
   if (!s) return null;
   const parts = s.split('-').map(Number);
@@ -19,7 +16,7 @@ export function parseLocalDate(s?: string): Date | null {
 export function daysUntil(dateStr?: string): number | null {
   const d = parseLocalDate(dateStr);
   if (!d) return null;
-  return Math.round((d.getTime() - startOfToday().getTime()) / 86_400_000);
+  return Math.round((d.getTime() - startOfToday().getTime()) / 86400000);
 }
 
 export function formatDate(dateStr?: string): string {
@@ -37,13 +34,6 @@ export function relativeDue(dateStr?: string): string {
   return `Due in ${n} days`;
 }
 
-/* ------------------------- task derivations ------------------------ */
-
-/**
- * Resolve a concrete due date for a task. Uses the explicit `dueDate` when
- * present, otherwise derives one from the "N days before" completion window
- * relative to the move-in date.
- */
 export function resolveDueDate(task: Task, profile: FamilyProfile): string | undefined {
   if (task.dueDate) return task.dueDate;
   const move = parseLocalDate(profile.moveInDate);
@@ -80,7 +70,6 @@ export function isDueSoon(task: Task, profile: FamilyProfile, withinDays = 7): b
 
 const PRIORITY_RANK: Record<string, number> = { high: 0, medium: 1, low: 2 };
 
-/** The single most important next action for the family. */
 export function nextMission(state: AppState): Task | null {
   const open = state.tasks.filter((t) => !t.completed);
   if (open.length === 0) return null;
@@ -115,17 +104,10 @@ export function upcomingDeadlines(state: AppState, limit = 5): DeadlineEntry[] {
     .slice(0, limit);
 }
 
-/** Tasks visible to a given role. */
-export function tasksForRole(tasks: Task[], role: 'parent' | 'student'): Task[] {
-  return tasks.filter((t) => t.owner === role || t.owner === 'shared');
-}
-
 export function ownerLabel(owner: TaskOwner): string {
   if (owner === 'shared') return 'Family';
   return owner.charAt(0).toUpperCase() + owner.slice(1);
 }
-
-/* ----------------------------- phases ----------------------------- */
 
 export const PHASE_ORDER: PhaseId[] = [
   'freshman',
@@ -145,41 +127,34 @@ export interface PhaseMeta {
 }
 
 export const PHASE_META: PhaseMeta[] = [
-  { id: 'freshman', label: 'Freshman Year', subtitle: 'Build the foundation', goals: ['Strong grades & study habits', 'Explore activities and interests'] },
-  { id: 'sophomore', label: 'Sophomore Year', subtitle: 'Explore & grow', goals: ['Deepen 1–2 activities', 'Take a PSAT / practice test'] },
+  { id: 'freshman', label: 'Freshman Year', subtitle: 'Build the foundation', goals: ['Strong grades', 'Explore activities'] },
+  { id: 'sophomore', label: 'Sophomore Year', subtitle: 'Explore & grow', goals: ['Deepen activities', 'Take a PSAT'] },
   { id: 'junior', label: 'Junior Year', subtitle: 'Get serious', goals: ['Take the SAT/ACT', 'Start a college list', 'Line up recommenders'] },
   { id: 'senior', label: 'Senior Year', subtitle: 'Finalize your plan', goals: ['Finalize college list', 'Meet your counselor', 'Prep the FAFSA'] },
   { id: 'applications', label: 'Application Season', subtitle: 'Apply with confidence', goals: ['Finish essays', 'Submit applications', 'File the FAFSA', 'Apply for scholarships'] },
-  { id: 'decisions', label: 'Decision Season', subtitle: 'Compare & choose', goals: ['Compare aid offers', 'Decide by May 1', 'Submit enrollment deposit'] },
+  { id: 'decisions', label: 'Decision Season', subtitle: 'Compare & choose', goals: ['Compare aid offers', 'Decide by May 1', 'Submit deposit'] },
   { id: 'enrollment', label: 'Enrollment & Move-In', subtitle: 'Get ready for campus', goals: ['Housing & orientation', 'Health & documents', 'Pack and move in'] },
 ];
 
-/**
- * Determine the current phase from the graduation (enrollment) year, using a
- * "rising" convention so summer counts toward the upcoming grade.
- */
 export function currentPhase(profile: FamilyProfile): PhaseId {
   const g =
     profile.graduationYear ??
     (parseLocalDate(profile.moveInDate)?.getFullYear() ?? new Date().getFullYear());
   const today = startOfToday();
   const at = (year: number, monthIndex: number) => new Date(year, monthIndex, 1);
-
   const boundaries: { id: PhaseId; start: Date }[] = [
-    { id: 'freshman', start: at(g - 4, 5) }, // Jun G-4
+    { id: 'freshman', start: at(g - 4, 5) },
     { id: 'sophomore', start: at(g - 3, 5) },
     { id: 'junior', start: at(g - 2, 5) },
-    { id: 'senior', start: at(g - 1, 5) }, // Jun G-1
-    { id: 'applications', start: at(g - 1, 10) }, // Nov G-1
-    { id: 'decisions', start: at(g, 1) }, // Feb G
-    { id: 'enrollment', start: at(g, 4) }, // May G
+    { id: 'senior', start: at(g - 1, 5) },
+    { id: 'applications', start: at(g - 1, 10) },
+    { id: 'decisions', start: at(g, 1) },
+    { id: 'enrollment', start: at(g, 4) },
   ];
-
   let current: PhaseId = 'freshman';
   for (const b of boundaries) {
     if (today >= b.start) current = b.id;
   }
-  // Before freshman start, still show freshman.
   return current;
 }
 
