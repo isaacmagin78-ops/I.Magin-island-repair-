@@ -7,7 +7,7 @@ Last updated: 2026-07-21. This is the compact operating record for the launch.
 | Thing | Where |
 | --- | --- |
 | Sales page | https://tysons-time-kit.vercel.app/ |
-| Checkout | `/buy.html` interim page — swaps to the Stripe Payment Link (see "Single next action" in the handoff) |
+| Checkout | **LIVE**: https://buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00 ($19 → redirects to the access page) |
 | Delivery / access page | https://tysons-time-kit.vercel.app/access-tyk30-8f4d2/ (unlisted, noindex) |
 | Product file (PDF, 15 pages) | served from this repo: `kit-site/files/first-30-days-kit.pdf` (public raw URL wired into the access page) |
 | Product source | `kit-site/product/first-30-days-kit.html` (edit → re-render PDF with headless Chromium `--print-to-pdf`) |

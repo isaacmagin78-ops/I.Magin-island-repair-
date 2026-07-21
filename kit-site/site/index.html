@@ -146,7 +146,7 @@
   /* CHECKOUT SWAP POINT — replace the placeholder below with the live
      Stripe Payment Link URL (e.g. https://buy.stripe.com/xxxx) and
      redeploy. Until then, buy buttons fall back to /buy.html. */
-  var PAYMENT_LINK = "PASTE_STRIPE_PAYMENT_LINK_HERE";
+  var PAYMENT_LINK = "https://buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00";
   if (PAYMENT_LINK.indexOf("https://") === 0) {
     document.querySelectorAll('a.btn[href="/buy.html"]').forEach(function (a) {
       a.href = PAYMENT_LINK;
