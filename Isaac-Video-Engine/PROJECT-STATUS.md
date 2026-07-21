@@ -1,6 +1,6 @@
 # Project Status
 
-Last verified: **2026-07-15** (Phases 1–6 of the production video engine)
+Last verified: **2026-07-21** (fresh cloud session: `npm ci` from lockfile, lint + `tsc` clean, `IsaacVideoEngineTest` re-rendered and inspected — see "Latest verification run" below)
 
 ## Status: ✅ Operational
 
@@ -9,6 +9,27 @@ component library, motion system, audio system, brand theming, social
 presets, and a one-command auto render pipeline. Every phase below was
 implemented, rendered, and verified before moving to the next, per the
 project's build order.
+
+## Latest verification run (2026-07-21, Claude-hosted cloud environment)
+
+Portability check on a brand-new Linux x86_64 container (Node v22.22.2,
+npm 10.9.7, pre-installed Chromium headless shell build 1194):
+
+1. `npm ci` — clean install from the committed lockfile, no manual steps.
+2. `npm run lint` (eslint + `tsc`) — clean (one pre-existing informational
+   warning in `AnimatedCaptions.tsx`).
+3. `npx remotion compositions` — all 11 compositions enumerate, proving the
+   bundle builds and the browser launches.
+4. `npm run render` — `out/isaac-video-engine-test.mp4` rendered (300/300
+   frames encoded, 1.1 MB).
+5. `ffprobe` — h264 1080×1920 SAR 1:1 DAR 9:16, 30 fps, 10.05 s, plus the
+   expected aac audio stream.
+6. Frame 150 rendered as a still and visually inspected — title, subtitle,
+   and progress bar all correct.
+
+Structure additions in this run: `briefs/` (with its own README),
+`out/.gitkeep`, `src/config/videoFormats.ts` (canonical format presets),
+`src/utils/assets.ts` (portable `staticFile`-based asset resolution).
 
 ## Phase-by-phase build record
 

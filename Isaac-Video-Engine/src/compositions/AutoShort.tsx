@@ -83,7 +83,7 @@ export const AutoShort: React.FC<AutoShortProps> = ({
       {music ? <BackgroundMusic track={music} /> : null}
 
       {captions && captions.length > 0 ? (
-        <Sequence from={0} durationInFrames={scenesDuration}>
+        <Sequence  durationInFrames={scenesDuration}>
           <AnimatedCaptions captions={captions} theme={theme} position="bottom" />
         </Sequence>
       ) : null}

@@ -39,7 +39,7 @@ export const ComponentShowcase: React.FC = () => {
       <LogoWatermark theme={theme} position="bottom-right" />
 
       {/* Title + Subtitle */}
-      <Sequence from={0} durationInFrames={80}>
+      <Sequence  durationInFrames={80}>
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 24, flexDirection: "column" }}>
           <Title text="Title Component" theme={theme} exitStart={60} />
           <Subtitle text="Subtitle Component" theme={theme} startFrame={10} exitStart={60} />
