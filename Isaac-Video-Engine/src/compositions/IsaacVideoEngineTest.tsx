@@ -19,7 +19,7 @@ export const IsaacVideoEngineTest: React.FC = () => {
     <AbsoluteFill>
       <DarkBackground />
 
-      <Sequence from={0} durationInFrames={VERIFIED_START}>
+      <Sequence  durationInFrames={VERIFIED_START}>
         <AbsoluteFill
           style={{
             alignItems: "center",
