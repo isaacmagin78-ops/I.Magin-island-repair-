@@ -24,6 +24,7 @@ import { LogoWatermark } from "../components/LogoWatermark";
 import { BackgroundMusic } from "../components/BackgroundMusic";
 import { VoiceoverTrack } from "../components/VoiceoverTrack";
 import { buildCueCaptions } from "../lib/captions";
+import { pickKenBurnsDirection } from "../lib/motion";
 import { getBrandTheme } from "../branding/themes";
 import { getSocialPreset } from "../presets/social";
 import type {
@@ -155,6 +156,7 @@ const BEAT_TRANSITION_FRAMES = 8;
 const buildBeatScenes = (beatId: KitBeatId, media: MediaAsset[]): Scene[] => {
   const beat = KIT_BEATS[beatId];
   const perScene = Math.floor(beat.durationInFrames / media.length);
+  const beatOrdinal = (Object.keys(KIT_BEATS) as KitBeatId[]).indexOf(beatId);
 
   return media.map((asset, index) => {
     const isLast = index === media.length - 1;
@@ -165,10 +167,15 @@ const buildBeatScenes = (beatId: KitBeatId, media: MediaAsset[]): Scene[] => {
       durationInFrames: isLast
         ? beat.durationInFrames - perScene * (media.length - 1)
         : perScene,
-      // Stills get a gentle push-in; real clips carry their own motion.
+      // Stills get Ken Burns motion, direction varied per shot like the
+      // auto pipeline so an all-stills cut doesn't repeat the same move;
+      // real clips carry their own motion.
       kenBurns:
         asset.kind === "image"
-          ? { direction: "in" as const, scaleAmount: 1.08 }
+          ? {
+              direction: pickKenBurnsDirection(beatOrdinal * 3 + index),
+              scaleAmount: 1.15,
+            }
           : undefined,
       // The opening frame cuts in hard — raw, no ease — per the brief.
       transitionIn: isVeryFirstShot
@@ -349,12 +356,16 @@ export const FirstThirtyDaysKit: React.FC<FirstThirtyDaysKitProps> = ({
             durationInFrames={
               FIRST_THIRTY_DAYS_KIT_DURATION_IN_FRAMES - MUSIC_START_FRAME
             }
-            duckDuringRanges={[
-              {
-                startFrame: VO_START_FRAME - MUSIC_START_FRAME,
-                endFrame: VO_END_FRAME - MUSIC_START_FRAME,
-              },
-            ]}
+            duckDuringRanges={
+              voiceover
+                ? [
+                    {
+                      startFrame: VO_START_FRAME - MUSIC_START_FRAME,
+                      endFrame: VO_END_FRAME - MUSIC_START_FRAME,
+                    },
+                  ]
+                : []
+            }
           />
         </Sequence>
       ) : null}
