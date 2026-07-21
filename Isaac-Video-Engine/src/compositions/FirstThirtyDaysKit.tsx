@@ -19,7 +19,6 @@ import { FootageSlot, type FootageSlotLayout } from "../components/FootageSlot";
 import { StackedStatement } from "../components/StackedStatement";
 import { AnimatedCaptions } from "../components/AnimatedCaptions";
 import { CTAScreen } from "../components/CTAScreen";
-import { EndCard } from "../components/EndCard";
 import { LogoWatermark } from "../components/LogoWatermark";
 import { BackgroundMusic } from "../components/BackgroundMusic";
 import { VoiceoverTrack } from "../components/VoiceoverTrack";
@@ -51,6 +50,10 @@ export type FirstThirtyDaysKitProps = {
   /** The recorded VO read; starts at the first spoken line (beat 2). */
   voiceover?: AudioTrackSpec;
   music?: AudioTrackSpec;
+  /** Override the two hook statement lines (A/B hook testing). */
+  hookLines?: string[];
+  /** Burn word-timed captions into the render. Default true (mute-first). */
+  showCaptions?: boolean;
 };
 
 type BeatSpec = {
@@ -234,6 +237,8 @@ export const FirstThirtyDaysKit: React.FC<FirstThirtyDaysKitProps> = ({
   logoOverride,
   voiceover,
   music,
+  hookLines,
+  showCaptions = true,
 }) => {
   const baseTheme = getBrandTheme(brandId ?? "tysons-time");
   const theme = logoOverride ? { ...baseTheme, logo: logoOverride } : baseTheme;
@@ -261,10 +266,10 @@ export const FirstThirtyDaysKit: React.FC<FirstThirtyDaysKitProps> = ({
       >
         <StackedStatement
           theme={theme}
-          lines={[
-            { text: "He didn't need a perfect system." },
-            { text: "He just needed safety." },
-          ]}
+          lines={(hookLines ?? [
+            "He didn't need a perfect system.",
+            "He just needed safety.",
+          ]).map((text) => ({ text }))}
           staggerFrames={30}
         />
       </Sequence>
@@ -306,25 +311,32 @@ export const FirstThirtyDaysKit: React.FC<FirstThirtyDaysKitProps> = ({
         from={endCardStart}
         durationInFrames={END_CARD_DURATION_IN_FRAMES}
       >
-        <AbsoluteFill
-          style={{
-            backgroundColor: theme.colors.background,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <EndCard theme={theme} text="Tyson's Time" icon="none" />
+        <AbsoluteFill style={{ backgroundColor: theme.colors.background }}>
+          <StackedStatement
+            theme={theme}
+            headlineSize={58}
+            lines={[
+              { text: "THE FIRST 30 DAYS KIT" },
+              {
+                text: "A day-by-day plan for your rescue dog's first month home.",
+                kind: "support",
+              },
+              { text: "Get it — link in bio" },
+            ]}
+          />
         </AbsoluteFill>
       </Sequence>
 
       {/* Above the end card so the VO's final words stay captioned through
           the closing beat — the video must work with sound off. */}
-      <Sequence
-        name="Captions"
-        durationInFrames={FIRST_THIRTY_DAYS_KIT_DURATION_IN_FRAMES}
-      >
-        <AnimatedCaptions captions={captions} theme={theme} position="bottom" />
-      </Sequence>
+      {showCaptions ? (
+        <Sequence
+          name="Captions"
+          durationInFrames={FIRST_THIRTY_DAYS_KIT_DURATION_IN_FRAMES}
+        >
+          <AnimatedCaptions captions={captions} theme={theme} position="bottom" />
+        </Sequence>
+      ) : null}
 
       <LogoWatermark theme={theme} safeZone={preset.safeZone} />
 

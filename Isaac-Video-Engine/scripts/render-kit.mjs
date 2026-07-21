@@ -113,7 +113,25 @@ function main() {
   const logoFile = listMediaFiles(join(ASSETS_DIR, "logos"), IMAGE_EXTENSIONS)[0];
   const logoOverride = logoFile ? `assets/logos/${logoFile}` : undefined;
 
-  const props = { footage, brandId, preset, logoOverride, voiceover, music };
+  // HOOK=b renders the alternate opening; CAPTIONS=off renders a clean cut.
+  const hookLines =
+    process.env.HOOK === "b"
+      ? ["A rescue dog's first 30 days", "can change everything."]
+      : process.env.HOOK === "c"
+        ? ["Bringing a rescue home is overwhelming.", "It doesn't have to be."]
+        : undefined;
+  const showCaptions = process.env.CAPTIONS !== "off";
+
+  const props = {
+    footage,
+    brandId,
+    preset,
+    logoOverride,
+    voiceover,
+    music,
+    hookLines,
+    showCaptions,
+  };
 
   const placeholderBeats = BEATS.filter((b) => footage[b.id].length === 0);
   console.log(
