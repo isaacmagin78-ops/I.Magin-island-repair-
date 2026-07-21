@@ -20,6 +20,7 @@ import {
   SOCIAL_PRESET_PREVIEW_DURATION_IN_FRAMES,
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
+import { TysonVsMiss, TYSON_VS_MISS_DURATION } from "./compositions/TysonVsMiss";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
 
 export const VIDEO_FPS = 30;
@@ -33,6 +34,14 @@ export const MyComposition = () => {
         id="IsaacVideoEngineTest"
         component={IsaacVideoEngineTest}
         durationInFrames={TOTAL_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+      />
+      <Composition
+        id="TysonVsMiss"
+        component={TysonVsMiss}
+        durationInFrames={TYSON_VS_MISS_DURATION}
         fps={VIDEO_FPS}
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
