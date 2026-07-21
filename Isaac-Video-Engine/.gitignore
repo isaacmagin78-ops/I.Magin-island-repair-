@@ -3,8 +3,9 @@ dist
 .DS_Store
 .env
 
-# Ignore the output video from Git.
-out
+# Ignore rendered videos from Git, but keep the out/ folder itself.
+out/*
+!out/.gitkeep
 
 # Personal/source video clips dropped into assets/ for rendering (e.g. via
 # the render:short pipeline) stay local by default — they're often personal
