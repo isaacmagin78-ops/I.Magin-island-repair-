@@ -28,6 +28,7 @@
     "build": "remotion bundle",
     "render": "remotion render IsaacVideoEngineTest out/isaac-video-engine-test.mp4",
     "render:short": "node scripts/render-short.mjs",
+    "render:kit": "node scripts/render-kit.mjs",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },

@@ -161,36 +161,57 @@ beats 4-5. No generic AI imagery, no stock-footage look, no text outside
 platform safe zones, no watermark artifacts.
 ```
 
-## Rendering the non-generative cut with this engine
+## Rendering this video with the engine
 
-The same brief maps directly onto the auto pipeline (Workflow A in
-`CLAUDE.md`) once the real clips exist:
+This brief is implemented as a hand-authored composition:
+`src/compositions/FirstThirtyDaysKit.tsx` (30s, 900 frames @ 30fps,
+1080×1920) with beat timings, hook statement, cue-timed captions, kit
+lockup, CTA, and end card all built in. Render it with:
 
-1. Drop the Tyson clips into `assets/videos/` (and stills into
-   `assets/images/`), named in beat order: `01-hook-corner.mp4`,
-   `02-food-bowl.mp4`, … `09-kit-scroll.mp4`.
-2. Put the VO script above in `assets/script.txt` (word-timed captions),
-   the recorded read in `assets/voiceover/`, and the acoustic track in
-   `assets/music/`.
-3. Set `assets/cta.txt` to `Get the First 30 Days Kit → Link in bio` and
-   `assets/endcard.txt` to `Tyson's Time`.
-4. Render:
-   `BRAND=tysons-time PRESET=tiktok OUTPUT=out/first-30-days-kit-launch.mp4 npm run render:short`
+```bash
+npm run render:kit
+# or: BRAND=tysons-time PRESET=instagram-reels OUTPUT=out/kit.mp4 npm run render:kit
+```
 
-Note: the pipeline's captions are evenly word-timed, and voiceover
-placement requires the hand-authored path (`VoiceoverTrack`) — if VO
-timing must hit the beat boundaries exactly, use Workflow B with the
-timings in this brief.
+`scripts/render-kit.mjs` fills the storyboard from `assets/` by filename
+prefix (alphabetical within a beat), in `assets/videos/` and/or
+`assets/images/`:
+
+| Prefix | Beat |
+| --- | --- |
+| `hook-*` | Beat 1 — day-one corner footage |
+| `problem-*` | Beat 2 — the hard first days |
+| `turning-*` | Beat 3 — the turning point |
+| `solution-*` | Beat 4 — kit UI on a phone |
+| `cta-*` | Beat 5 — rapid kit scroll |
+
+A recorded VO in `assets/voiceover/` (the read starts at the first spoken
+line — playback begins at 0:03) and a music bed in `assets/music/` are
+picked up automatically. Any beat with no matching files renders as a
+labeled FOOTAGE SLOT placeholder, so the same command produces a
+shot-listed **animatic** with an empty `assets/` and the **real cut**
+with a full one.
+
+The auto pipeline (`npm run render:short`) also stays aligned:
+`assets/script.txt` carries the VO script and `assets/cta.txt` /
+`assets/endcard.txt` the CTA and closing line, for quick slideshow-style
+variants from the same footage.
 
 ## Shot checklist (pull from camera roll)
 
-- [ ] Day-one footage: Tyson withdrawn/corner/crate (hook — the rawer the better)
-- [ ] Untouched food bowl
-- [ ] Chewed leash/blanket or similar evidence of the hard days
-- [ ] Late-night pacing or restless clip
-- [ ] Isaac sitting on the floor at a distance
-- [ ] First tail wag / treat from hand
-- [ ] Sleeping belly-up
-- [ ] Calm walk (Tyson & Walker clip works)
-- [ ] Product UI: kit checklist, decompression schedule, printables (screen
-      recording or clean mockup)
+Save each clip into `assets/videos/` under the listed name (any of
+.mp4/.mov/.webm/.m4v; stills go in `assets/images/` with the same
+prefixes):
+
+- [ ] `hook-01` — Day-one footage: Tyson withdrawn/corner/crate (the rawer the better)
+- [ ] `problem-01` — Untouched food bowl
+- [ ] `problem-02` — Chewed leash/blanket or similar evidence of the hard days
+- [ ] `problem-03` — Late-night pacing or restless clip
+- [ ] `problem-04` — Isaac sitting on the floor at a distance
+- [ ] `turning-01` — First tail wag / treat from hand
+- [ ] `turning-02` — Sleeping belly-up
+- [ ] `turning-03` — Calm walk (Tyson & Walker clip works)
+- [ ] `solution-01` — Product UI: scrolling the kit on a phone (screen recording or clean mockup)
+- [ ] `cta-01` — Rapid clean scroll of the toolkit
+- [ ] `assets/voiceover/` — Isaac's recorded VO read (starts at the first spoken line)
+- [ ] `assets/music/` — warm acoustic bed (felt piano / fingerpicked guitar, 80–95 BPM)

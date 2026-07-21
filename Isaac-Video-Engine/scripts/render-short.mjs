@@ -147,8 +147,12 @@ function buildCaptionsFromScript(totalDurationInFrames) {
   const totalDurationMs = (totalDurationInFrames / FPS) * 1000;
   const perWordMs = totalDurationMs / words.length;
 
+  // Leading space, matching Whisper's token convention:
+  // createTikTokStyleCaptions only starts a new page at a token that
+  // begins with a space, so trailing-space tokens collapse the whole
+  // script into a single page shown for ~1.2s.
   return words.map((word, index) => ({
-    text: `${word} `,
+    text: ` ${word}`,
     startMs: Math.round(index * perWordMs),
     endMs: Math.round((index + 1) * perWordMs),
     timestampMs: null,

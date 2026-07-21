@@ -33,6 +33,17 @@ export type CaptionWord = {
   endFrame: number;
 };
 
+/**
+ * One spoken line pinned to the frame window in which it is heard.
+ * `lib/captions.ts` turns a cue list into word-timed `Caption[]` for
+ * AnimatedCaptions — per-line timing without a transcription API.
+ */
+export type CaptionCue = {
+  text: string;
+  fromFrame: number;
+  toFrame: number;
+};
+
 export type CaptionLine = {
   words: CaptionWord[];
 };

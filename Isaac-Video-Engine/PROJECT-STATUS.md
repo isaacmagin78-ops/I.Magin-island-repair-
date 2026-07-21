@@ -1,6 +1,7 @@
 # Project Status
 
-Last verified: **2026-07-15** (Phases 1–6 of the production video engine)
+Last verified: **2026-07-21** (Phases 1–6 of the production video engine,
+plus the First 30 Days Kit launch composition)
 
 ## Status: ✅ Operational
 
@@ -136,8 +137,39 @@ CTA, and end card all render correctly from auto-discovered media.
 | `AudioTest` | Exercises fade in/out + ducking — standing audio regression test |
 | `SocialPreset-<name>` × 6 | One per social preset, proves preset data drives real dimensions |
 | `AutoShort` | The render target for `npm run render:short` — takes discovered-media props |
+| `FirstThirtyDaysKit` | First production video: Tyson's Time launch short for the First 30 Days Kit (`npm run render:kit`) — see `briefs/first-30-days-kit-launch.md` |
 
 All are safe to re-render at any time as a smoke test of the whole engine.
+
+## First production video — First 30 Days Kit launch (2026-07-21)
+
+`src/compositions/FirstThirtyDaysKit.tsx` implements the five-beat
+storyboard in `briefs/first-30-days-kit-launch.md` (30s, 900 frames,
+1080×1920): silent hook with staggered statement, three story beats with
+cue-timed captions, product lockup, CTA screen, brand end card, plus
+voiceover/music tracks with ducking when the audio files exist.
+`scripts/render-kit.mjs` (`npm run render:kit`) fills beats from
+beat-prefixed files in `assets/` (`hook-*`, `problem-*`, `turning-*`,
+`solution-*`, `cta-*`); beats without footage render as labeled
+FOOTAGE SLOT placeholders, so the composition doubles as a shot-listed
+animatic until real clips arrive.
+
+New reusable pieces added along the way: `FootageSlot` (placeholder slots
+with layout modes), `StackedStatement` (staggered multi-line statements /
+lockups), `lib/captions.ts` (`buildCueCaptions` — per-line caption timing
+without a transcription API), and an optional `durationInFrames` override
+on `BackgroundMusic` for late-mounted music beds.
+
+Verified by rendering the full animatic and inspecting 10+ frames across
+every beat. Two real caption bugs found and fixed during verification,
+both also affecting the auto pipeline: caption tokens needed *leading*
+spaces (`createTikTokStyleCaptions` only splits pages on
+space-prefixed tokens, so trailing-space tokens collapsed the whole
+script into one page), and `AnimatedCaptions` pinned pages to the
+top-left because the per-page `<Sequence>` wrapper is an AbsoluteFill
+that escaped the component's flex positioning (fixed with
+`layout="none"`, plus a display window that no longer cuts long pages
+mid-highlight).
 
 ## Known environment-specific detail
 

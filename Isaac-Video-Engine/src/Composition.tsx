@@ -21,6 +21,10 @@ import {
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
+import {
+  FirstThirtyDaysKit,
+  FIRST_THIRTY_DAYS_KIT_DURATION_IN_FRAMES,
+} from "./compositions/FirstThirtyDaysKit";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -82,6 +86,25 @@ export const MyComposition = () => {
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
         defaultProps={{ scenes: [] }}
+      />
+      {/* Default props render the full shot-listed animatic; render via
+          scripts/render-kit.mjs to fill beats from assets/ footage. */}
+      <Composition
+        id="FirstThirtyDaysKit"
+        component={FirstThirtyDaysKit}
+        durationInFrames={FIRST_THIRTY_DAYS_KIT_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={{
+          footage: {
+            hook: [],
+            problem: [],
+            turningPoint: [],
+            solution: [],
+            cta: [],
+          },
+        }}
       />
     </>
   );

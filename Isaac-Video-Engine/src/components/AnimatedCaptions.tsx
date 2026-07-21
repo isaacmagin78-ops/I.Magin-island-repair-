@@ -55,16 +55,31 @@ export const AnimatedCaptions: React.FC<Props> = ({
       {pages.map((page, index) => {
         const nextPage = pages[index + 1] ?? null;
         const startFrame = Math.round((page.startMs / 1000) * fps);
+        // A page stays up until its last token has been spoken (pages can
+        // run longer than switchCaptionsEveryMs — the grouper only splits
+        // once a page *exceeds* that length), plus a short linger before
+        // hiding during silence. Capping at startFrame + switch window cut
+        // long pages mid-highlight and left gaps between contiguous pages.
+        const lastTokenEndMs = page.tokens[page.tokens.length - 1]?.toMs ?? page.startMs;
         const endFrame = Math.min(
           nextPage ? Math.round((nextPage.startMs / 1000) * fps) : Infinity,
-          startFrame + Math.round((switchCaptionsEveryMs / 1000) * fps),
+          Math.round((lastTokenEndMs / 1000) * fps) +
+            Math.round((switchCaptionsEveryMs / 1000) * fps),
         );
         const durationInFrames = endFrame - startFrame;
 
         if (durationInFrames <= 0) return null;
 
+        // layout="none": the default Sequence wrapper is an AbsoluteFill,
+        // which would escape this component's flex positioning and pin
+        // every page (and its backdrop blur) to the top-left corner.
         return (
-          <Sequence key={page.startMs} from={startFrame} durationInFrames={durationInFrames}>
+          <Sequence
+            key={page.startMs}
+            from={startFrame}
+            durationInFrames={durationInFrames}
+            layout="none"
+          >
             <CaptionPage page={page} theme={theme} fontSize={fontSize} />
           </Sequence>
         );
