@@ -29,9 +29,34 @@ const FPS = 30;
 // C: Tyson walks straight into the camera — his exit line.
 const SEGMENTS = [
   { from: 0.0, to: 5.5 },
-  { from: 8.0, to: 12.0 },
-  { from: 15.6, to: 18.55 },
+  { from: 7.5, to: 11.45 },
+  { from: 15.95, to: 18.6 },
 ] as const;
+
+// Camera-holder noises (coughs etc.) in SOURCE seconds, found by energy
+// analysis of the audio track. Segment boundaries above already dodge the
+// two loudest (11.5-11.75s, 15.5-15.9s); the rest are ducked to near-zero
+// with fast ramps so room ambience continues underneath.
+const AUDIO_DUCKS: ReadonlyArray<readonly [number, number]> = [
+  [0.0, 0.12],
+  [0.55, 0.8],
+  [1.38, 1.57],
+  [4.73, 5.17],
+  [8.38, 8.62],
+  [16.98, 17.17],
+];
+const DUCK_RAMP = 0.06; // seconds
+const duckVolumeAt = (sourceTime: number): number => {
+  let v = 1;
+  for (const [d0, d1] of AUDIO_DUCKS) {
+    if (sourceTime > d0 - DUCK_RAMP && sourceTime < d1 + DUCK_RAMP) {
+      const edge = Math.min(sourceTime - (d0 - DUCK_RAMP), d1 + DUCK_RAMP - sourceTime);
+      const inRamp = Math.min(1, Math.max(0, edge / DUCK_RAMP));
+      v = Math.min(v, 1 - inRamp * 0.97); // duck to 3%, not dead silence
+    }
+  }
+  return v;
+};
 
 export const TYSON_VS_MISS_DURATION = Math.round(
   SEGMENTS.reduce((acc, s) => acc + (s.to - s.from), 0) * FPS,
@@ -118,14 +143,15 @@ const SegmentScene: React.FC<{
       <Audio
         src={SRC}
         startFrom={startFrom}
-        volume={(f) =>
-          fadeOutAudio
+        volume={(f) => {
+          const fade = fadeOutAudio
             ? interpolate(f, [durationInFrames - 14, durationInFrames - 2], [1, 0], {
                 extrapolateLeft: "clamp",
                 extrapolateRight: "clamp",
               })
-            : 1
-        }
+            : 1;
+          return fade * duckVolumeAt(from + f / FPS);
+        }}
       />
     </AbsoluteFill>
   );
