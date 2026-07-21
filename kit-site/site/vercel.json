@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/first-30-days-kit.pdf",
+      "destination": "https://raw.githubusercontent.com/isaacmagin78-ops/I.Magin-island-repair-/claude/fable-video-prompt-refine-b21x3t/kit-site/files/first-30-days-kit.pdf",
+      "permanent": false
+    }
+  ]
+}

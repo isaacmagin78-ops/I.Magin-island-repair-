@@ -13,7 +13,7 @@ Last updated: 2026-07-21. This is the compact operating record for the launch.
 | Product source | `kit-site/product/first-30-days-kit.html` (edit → re-render PDF with headless Chromium `--print-to-pdf`) |
 | Launch videos | `Isaac-Video-Engine/out/first-30-days-kit-launch{,-hook-b,-clean}[-hq].mp4` + thumbnail (delivered in chat; re-render any time with `npm run render:kit`, `HOOK=b`, `CAPTIONS=off`) |
 | Price | **$19**, one product, one price, instant digital delivery |
-| Support | Instagram DMs — https://www.instagram.com/tysons_time/ |
+| Support | Instagram DMs — https://www.instagram.com/tysonstime/ |
 | Analytics | none configured (known limitation — Vercel Analytics is a one-toggle add later) |
 
 **Checkout design (2-minute setup in Stripe):** Payment Links → New → product
