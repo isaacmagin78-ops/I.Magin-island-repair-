@@ -13,15 +13,17 @@ Last updated: 2026-07-21. This is the compact operating record for the launch.
 | Product source | `kit-site/product/first-30-days-kit.html` (edit → re-render PDF with headless Chromium `--print-to-pdf`) |
 | Launch videos | `Isaac-Video-Engine/out/first-30-days-kit-launch{,-hook-b,-clean}[-hq].mp4` + thumbnail (delivered in chat; re-render any time with `npm run render:kit`, `HOOK=b`, `CAPTIONS=off`) |
 | Price | **$19**, one product, one price, instant digital delivery |
-| Support | Tyson's Time DMs (Instagram / TikTok) |
+| Support | Instagram DMs — https://www.instagram.com/tysons_time/ |
 | Analytics | none configured (known limitation — Vercel Analytics is a one-toggle add later) |
 
 **Checkout design (2-minute setup in Stripe):** Payment Links → New → product
 "The First 30 Days Kit", $19 one-time → Confirmation: "Don't show confirmation
 page — redirect customers" → paste the access URL above. Stripe emails the
-receipt; the redirect IS the delivery. Then replace both `/buy.html` hrefs in
-the sales page with the payment-link URL and redeploy (or ask Claude to —
-one message).
+receipt; the redirect IS the delivery. Then paste the payment-link URL into
+the clearly-marked `PAYMENT_LINK` constant at the bottom of
+`kit-site/site/index.html` (search "CHECKOUT SWAP POINT") and redeploy — or
+paste the link to Claude in one message and it's swapped and redeployed for
+you. Until then, buy buttons route to the honest interim `/buy.html`.
 
 ## Positioning (use everywhere)
 
@@ -103,9 +105,6 @@ Frame 2: kit page previews + text "the plan we wish we'd had" + link sticker →
   account; approval-gated Zapier), music sources blocked by network policy.
   Drop a recorded VO in `Isaac-Video-Engine/assets/voiceover/` + a licensed
   track in `assets/music/` and re-render to add sound.
-- Social support handle: captions/pages say "Message Tyson's Time on
-  Instagram or TikTok" — confirm the exact @handle and update `buy.html`'s
-  Instagram button to the real profile URL.
 - No analytics; the 10–15s retargeting cut was deferred (splicing the
   master mid-caption reads badly; render a dedicated short variant later).
 - Sales-page SEO: served with Vercel's team-URL noindex on non-production
