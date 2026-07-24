@@ -1,24 +1,25 @@
 LEGENDS RANCH WEBSITE — WHERE THINGS STAND (July 24, 2026)
 
-- Good news: the film on the website PLAYS. We tested it on an iPhone
-  and watched it run — screenshots are saved as proof. The video is not
-  broken on the device we tried.
+- We found the real problem. The homepage spot that promises the
+  five-minute Legends Ranch film ("Watch the brand anthem, then call
+  the ranch") is playing the WRONG video — a generic Vimeo sample clip
+  of hands doing crafts, with a purple "vimeo" logo on it. Not ranch
+  footage. Screenshots prove it.
 
-- The film starts SILENT with an "Unmute" button. Every phone does this
-  to every website video; it is normal, not a defect. Someone may have
-  mistaken the silent start for "not loading."
+- The good news: the video player itself is fine, and the Presidential
+  Hunt film elsewhere on the site plays correctly. Only the anthem spot
+  has the wrong film plugged in. This is a small, cheap fix.
 
-- Whoever reported the broken video should be asked what phone or
-  computer they saw it on. If they can show it happening, the developer
-  checklist (FIX-INSTRUCTIONS.md) tells the website company exactly how
-  to trace and fix it. Until then, nothing should be changed.
+- The fix: the website company (Fish and Hunt USA) needs to swap the
+  wrong video for the real five-minute ranch film. If that film was
+  never uploaded to the ranch's Vimeo account, they need the master
+  copy from the ranch or the videographer first.
 
 - Still untested: whether the contact form actually delivers messages
-  to the ranch's email. For a business where one booking is worth many
-  thousands of dollars, this is now the most important remaining check.
-  It needs your OK because the test sends one clearly-labeled fake
-  message.
+  to the ranch's email. This remains the most important remaining
+  check, and it needs your OK because the test sends one clearly
+  labeled fake message.
 
-- Next step: send FIX-INSTRUCTIONS.md and audit.py to Fish and Hunt USA
-  and ask them to (1) run the form delivery test, and (2) run the full
-  site check from their computer.
+- Next step: send FIX-INSTRUCTIONS.md to Fish and Hunt USA. The exact
+  steps for the video swap are in section 1-B, with the screenshots as
+  proof.

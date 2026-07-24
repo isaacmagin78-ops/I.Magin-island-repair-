@@ -73,6 +73,43 @@ Merge these into the existing policy; do not replace the entire CSP blindly.
 - **Overlay/button JS error:** inspect the click handler and modal selector. Confirm the trigger targets the existing modal ID and that the Vimeo iframe is inserted before playback is called.
 - **Mixed content:** replace every http://player.vimeo.com/... reference with https://player.vimeo.com/....
 
+## 1-B. CONFIRMED DEFECT — homepage brand-anthem embed plays a placeholder video
+
+Owner-supplied iPhone screenshots (2026-07-24, in `screenshots/`:
+`owner-iphone-06…07`) show the homepage section reading "Five minutes of
+grounds, lodge, hunts… Watch the brand anthem, then call the ranch"
+playing **non-ranch content**: a craft/sketching demo film with a purple
+"vimeo" logo watermark. The player itself functions; the embedded video
+ID is wrong (apparently a Vimeo demo/placeholder that was never swapped
+for the real film).
+
+Developer steps:
+
+1. On the homepage, run the DOM console snippet from §1 and record the
+   iframe src of the anthem-section player. Note the numeric Vimeo ID.
+2. Log into the ranch's Vimeo account and check whether that ID belongs
+   to the account. Expected result: it does not.
+3. Locate the correct ~5-minute brand anthem film:
+   - Check the ranch's Vimeo library for the anthem master.
+   - If absent, obtain the master file from the ranch/videographer and
+     upload it to the ranch's Vimeo account (privacy: allow embedding on
+     legendsranch.com and www.legendsranch.com).
+   - The ranch's Facebook Reels library (screenshot
+     `owner-iphone-08`) confirms real footage exists if a recut is
+     needed, but do not substitute a vertical Reel for the anthem slot
+     without owner approval.
+4. Replace the placeholder video ID in the homepage anthem section
+   (WordPress Admin → Pages → Home, or the theme/ACF location found in
+   §1) with the correct film's ID.
+5. While in the section, verify the "WATCH THE FILM" and "MORE FILMS"
+   links point at real destinations (not # or a placeholder page).
+6. Purge caches and retest per §6, including one mobile device.
+7. Sweep every other page containing a Vimeo embed for the same
+   placeholder ID (site-wide search of post content and ACF fields for
+   the ID recorded in step 1) — placeholders tend to be pasted more
+   than once. The Presidential Hunt film embed is confirmed correct
+   (screenshots `owner-iphone-02…05`) and must not be changed.
+
 ## 2. Run the complete read-only crawl
 
 From a machine with unrestricted outbound HTTPS:
