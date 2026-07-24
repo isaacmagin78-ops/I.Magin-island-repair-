@@ -7,6 +7,7 @@
 import {
   AbsoluteFill,
   Easing,
+  Img,
   interpolate,
   OffthreadVideo,
   Sequence,
@@ -23,40 +24,72 @@ const FADE_FRAMES = 14;
 const LETTERBOX_HEIGHT = 104;
 
 type AnthemScene = {
+  kind: "video" | "image";
   src: string;
   durationInFrames: number;
   title: string;
   subtitle?: string;
 };
 
+/**
+ * Mix of licensed stock motion (scene-setting) and real Legends Ranch
+ * photos supplied by the owner (fawn program, family, shooting center,
+ * Purple Heart Hunt tribute).
+ */
 const SCENES: AnthemScene[] = [
   {
+    kind: "video",
     src: "assets/videos/clip1-fog.mp4",
-    durationInFrames: 190,
+    durationInFrames: 165,
     title: "Deep in Michigan's Northwoods",
     subtitle: "Est. 1998 — Bitely, Michigan",
   },
   {
+    kind: "video",
     src: "assets/videos/clip2-aerial.mp4",
-    durationInFrames: 190,
+    durationInFrames: 165,
     title: "2,000 Acres of Managed Habitat",
     subtitle: "One standard of stewardship",
   },
   {
+    kind: "video",
     src: "assets/videos/clip3-buck.mp4",
-    durationInFrames: 220,
+    durationInFrames: 200,
     title: "Where 200-Inch Bucks Are the Standard",
     subtitle: "— not the exception",
   },
   {
-    src: "assets/videos/clip4-cabins.mp4",
-    durationInFrames: 160,
-    title: "Rustic Five-Star Lodge Living",
-    subtitle: "Chef dining • The Wildlife Center • 24,000 sq ft of conservation",
+    kind: "image",
+    src: "assets/images/real-fawns-group.jpg",
+    durationInFrames: 130,
+    title: "Raised Here. Cared for Daily.",
+    subtitle: "The Legends Ranch deer program",
   },
   {
+    kind: "image",
+    src: "assets/images/real-family-fawn.jpg",
+    durationInFrames: 130,
+    title: "Family-Run Since 1998",
+    subtitle: "The people behind the ranch",
+  },
+  {
+    kind: "image",
+    src: "assets/images/real-shooting-range.jpg",
+    durationInFrames: 130,
+    title: "A World-Class Shooting Center",
+    subtitle: "Sight in before your hunt — guided one-on-one",
+  },
+  {
+    kind: "image",
+    src: "assets/images/real-purple-heart.jpg",
+    durationInFrames: 150,
+    title: "Honoring Our Nation's Heroes",
+    subtitle: "Home of the Purple Heart Hunt",
+  },
+  {
+    kind: "video",
     src: "assets/videos/clip5-fire.mp4",
-    durationInFrames: 205,
+    durationInFrames: 200,
     title: "This Is More Than a Hunt.",
     subtitle: "It's a legacy.",
   },
@@ -99,11 +132,18 @@ const SceneBlock: React.FC<{
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", opacity: fadeIn * fadeOut }}>
       <AbsoluteFill style={{ transform: `scale(${scale})` }}>
-        <OffthreadVideo
-          src={staticFile(scene.src)}
-          muted
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
+        {scene.kind === "video" ? (
+          <OffthreadVideo
+            src={staticFile(scene.src)}
+            muted
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        ) : (
+          <Img
+            src={staticFile(scene.src)}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        )}
       </AbsoluteFill>
       {/* Bottom gradient keeps titles readable over bright footage. */}
       <AbsoluteFill
