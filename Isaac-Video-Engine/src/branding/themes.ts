@@ -67,6 +67,20 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/legends-ranch.png",
     watermarkText: "Legends Ranch",
   },
+  "wildlife-center": {
+    id: "wildlife-center",
+    displayName: "The Wildlife Center at Legends Ranch",
+    colors: {
+      background: "#0b1710",
+      primary: "#d4af5f",
+      secondary: "#1d3325",
+      accent: "#e8d6a8",
+      text: "#f2eddc",
+      textMuted: "#b9c4ae",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    watermarkText: "The Wildlife Center",
+  },
   "imagin-concierge": {
     id: "imagin-concierge",
     displayName: "IMagin Concierge",

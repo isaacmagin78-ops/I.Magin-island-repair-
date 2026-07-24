@@ -26,6 +26,11 @@ import {
   ANTHEM_DURATION_IN_FRAMES,
   ANTHEM_FPS,
 } from "./compositions/LegendsAnthem";
+import {
+  WildlifeCenterFilm,
+  WILDLIFE_DURATION_IN_FRAMES,
+  WILDLIFE_FPS,
+} from "./compositions/WildlifeCenterFilm";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -83,6 +88,14 @@ export const MyComposition = () => {
         component={LegendsAnthem}
         durationInFrames={ANTHEM_DURATION_IN_FRAMES}
         fps={ANTHEM_FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="WildlifeCenterFilm"
+        component={WildlifeCenterFilm}
+        durationInFrames={WILDLIFE_DURATION_IN_FRAMES}
+        fps={WILDLIFE_FPS}
         width={1920}
         height={1080}
       />
