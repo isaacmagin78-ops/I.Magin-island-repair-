@@ -79,6 +79,16 @@ export const SOCIAL_PRESETS: Record<SocialPresetName, SocialPreset> = {
     recommendedMaxDurationInSeconds: 15,
     export: verticalExport,
   },
+  widescreen: {
+    name: "widescreen",
+    label: "Widescreen (YouTube / Website Hero)",
+    width: 1920,
+    height: 1080,
+    fps: 30,
+    safeZone: { top: 60, bottom: 120, left: 60, right: 60 },
+    recommendedMaxDurationInSeconds: 60,
+    export: verticalExport,
+  },
 };
 
 export const getSocialPreset = (name: SocialPresetName): SocialPreset =>

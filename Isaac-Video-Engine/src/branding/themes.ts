@@ -52,6 +52,21 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/tysons-picks.png",
     watermarkText: "Tyson's Picks",
   },
+  "legends-ranch": {
+    id: "legends-ranch",
+    displayName: "Legends Ranch",
+    colors: {
+      background: "#14110b",
+      primary: "#c9a15a",
+      secondary: "#2f3d2a",
+      accent: "#e8d6a8",
+      text: "#f5efe0",
+      textMuted: "#c9bfa4",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/logos/legends-ranch.png",
+    watermarkText: "Legends Ranch",
+  },
   "imagin-concierge": {
     id: "imagin-concierge",
     displayName: "IMagin Concierge",
