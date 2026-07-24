@@ -1,0 +1,21 @@
+LEGENDS RANCH WEBSITE — WHERE THINGS STAND (July 2026)
+
+- Someone reported the film on the homepage ("Why hunt at Legends Ranch?")
+  won't play. Nobody has been able to confirm or disprove this yet — it is
+  a report, not a proven problem.
+
+- Our checking tools could not reach the website from where they run, so
+  no test results exist yet. Nothing in this folder claims the site is
+  broken; anything unproven is marked "unverified."
+
+- We prepared a complete step-by-step checklist (FIX-INSTRUCTIONS.md) for
+  the website company, Fish and Hunt USA. It tells their developer exactly
+  how to test the film, the contact form, the phone buttons, and old web
+  addresses — and how to fix only what actually turns out to be broken.
+
+- One item needs your OK first: testing the contact form sends a real
+  (clearly labeled) test message. The developer should ask before doing it.
+
+- Next step: send FIX-INSTRUCTIONS.md and audit.py from this folder to
+  Fish and Hunt USA and ask them to run the checks and report back with
+  screenshots.
