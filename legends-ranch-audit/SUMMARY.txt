@@ -1,21 +1,24 @@
-LEGENDS RANCH WEBSITE — WHERE THINGS STAND (July 2026)
+LEGENDS RANCH WEBSITE — WHERE THINGS STAND (July 24, 2026)
 
-- Someone reported the film on the homepage ("Why hunt at Legends Ranch?")
-  won't play. Nobody has been able to confirm or disprove this yet — it is
-  a report, not a proven problem.
+- Good news: the film on the website PLAYS. We tested it on an iPhone
+  and watched it run — screenshots are saved as proof. The video is not
+  broken on the device we tried.
 
-- Our checking tools could not reach the website from where they run, so
-  no test results exist yet. Nothing in this folder claims the site is
-  broken; anything unproven is marked "unverified."
+- The film starts SILENT with an "Unmute" button. Every phone does this
+  to every website video; it is normal, not a defect. Someone may have
+  mistaken the silent start for "not loading."
 
-- We prepared a complete step-by-step checklist (FIX-INSTRUCTIONS.md) for
-  the website company, Fish and Hunt USA. It tells their developer exactly
-  how to test the film, the contact form, the phone buttons, and old web
-  addresses — and how to fix only what actually turns out to be broken.
+- Whoever reported the broken video should be asked what phone or
+  computer they saw it on. If they can show it happening, the developer
+  checklist (FIX-INSTRUCTIONS.md) tells the website company exactly how
+  to trace and fix it. Until then, nothing should be changed.
 
-- One item needs your OK first: testing the contact form sends a real
-  (clearly labeled) test message. The developer should ask before doing it.
+- Still untested: whether the contact form actually delivers messages
+  to the ranch's email. For a business where one booking is worth many
+  thousands of dollars, this is now the most important remaining check.
+  It needs your OK because the test sends one clearly-labeled fake
+  message.
 
-- Next step: send FIX-INSTRUCTIONS.md and audit.py from this folder to
-  Fish and Hunt USA and ask them to run the checks and report back with
-  screenshots.
+- Next step: send FIX-INSTRUCTIONS.md and audit.py to Fish and Hunt USA
+  and ask them to (1) run the form delivery test, and (2) run the full
+  site check from their computer.
