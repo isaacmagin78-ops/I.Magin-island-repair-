@@ -1,4 +1,4 @@
-# College Launch OS
+# Magin
 
 A guided family launch system that helps parents and first-time college students prepare for the college transition without forgetting important responsibilities.
 

@@ -123,7 +123,7 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
 
       {/* App Information */}
       <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
-        <h2 className="font-bold text-ink mb-3">ℹ️ About College Launch OS</h2>
+        <h2 className="font-bold text-ink mb-3">ℹ️ About Magin</h2>
         <div className="space-y-2 text-sm text-gray-700">
           <p>
             <strong>Version:</strong> 1.0.0 - Prototype
@@ -167,7 +167,7 @@ export default function Settings({ state, onLoadSampleFamily, onResetData }: Set
       <div className="bg-amber-50 border-l-4 border-teal rounded-lg p-6">
         <h2 className="font-bold text-ink mb-3">📞 Support & Feedback</h2>
         <p className="text-sm text-gray-700 mb-4">
-          Have questions or feedback about College Launch OS? We'd love to hear from you!
+          Have questions or feedback about Magin? We'd love to hear from you!
         </p>
         <div className="space-y-2 text-sm">
           <p>

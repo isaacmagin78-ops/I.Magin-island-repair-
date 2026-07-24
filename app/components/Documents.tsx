@@ -53,7 +53,7 @@ export default function Documents({ state, onUpdateDocument }: DocumentsProps) {
       <div className="bg-blue-50 border-l-4 border-gold rounded-lg p-6">
         <h3 className="font-bold text-ink mb-2">🔒 Privacy & Security</h3>
         <p className="text-sm text-gray-700">
-          College Launch OS is a planning tool. In the production version, sensitive documents will be encrypted
+          Magin is a planning tool. In the production version, sensitive documents will be encrypted
           and securely stored. For now, this tracker helps you remember which documents you need to gather. Do not
           upload actual documents or sensitive personal information into this prototype.
         </p>
