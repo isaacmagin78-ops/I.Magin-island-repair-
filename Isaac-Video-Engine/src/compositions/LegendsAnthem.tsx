@@ -16,6 +16,7 @@ import {
 } from "remotion";
 import { BackgroundMusic } from "../components/BackgroundMusic";
 import { CinematicTitle } from "../components/CinematicTitle";
+import { VoiceoverTrack } from "../components/VoiceoverTrack";
 import { getBrandTheme } from "../branding/themes";
 
 export const ANTHEM_FPS = 30;
@@ -47,7 +48,7 @@ const SCENES: AnthemScene[] = [
     kind: "video",
     fit: "cover",
     src: "assets/videos/clip1-fog.mp4",
-    durationInFrames: 135,
+    durationInFrames: 175,
     title: "Deep in Michigan's Northwoods",
     subtitle: "Est. 1998 — Bitely, Michigan",
   },
@@ -55,7 +56,7 @@ const SCENES: AnthemScene[] = [
     kind: "video",
     fit: "cover",
     src: "assets/videos/clip2-aerial.mp4",
-    durationInFrames: 135,
+    durationInFrames: 195,
     title: "2,000 Acres of Managed Habitat",
     subtitle: "One standard of stewardship",
   },
@@ -63,7 +64,7 @@ const SCENES: AnthemScene[] = [
     kind: "video",
     fit: "cover",
     src: "assets/videos/clip3-buck.mp4",
-    durationInFrames: 165,
+    durationInFrames: 200,
     title: "Where 200-Inch Bucks Are the Standard",
     subtitle: "— not the exception",
   },
@@ -71,7 +72,7 @@ const SCENES: AnthemScene[] = [
     kind: "video",
     fit: "frame",
     src: "assets/videos/real-newborn-fawn.mp4",
-    durationInFrames: 150,
+    durationInFrames: 140,
     title: "Born on the Ranch",
     subtitle: "New life in the pens every spring",
   },
@@ -79,7 +80,7 @@ const SCENES: AnthemScene[] = [
     kind: "image",
     fit: "frame",
     src: "assets/images/real-fawns-group.jpg",
-    durationInFrames: 115,
+    durationInFrames: 100,
     title: "Raised Here. Cared for Daily.",
     subtitle: "The Legends Ranch deer program",
   },
@@ -87,7 +88,7 @@ const SCENES: AnthemScene[] = [
     kind: "video",
     fit: "frame",
     src: "assets/videos/real-fawn-care.mp4",
-    durationInFrames: 140,
+    durationInFrames: 130,
     title: "Family-Run Since 1998",
     subtitle: "Hands-on, every single day",
   },
@@ -95,7 +96,7 @@ const SCENES: AnthemScene[] = [
     kind: "image",
     fit: "frame",
     src: "assets/images/real-lodge-interior.jpg",
-    durationInFrames: 115,
+    durationInFrames: 110,
     title: "Rustic Luxury, Northwoods Character",
     subtitle: "The lodge at Legends",
   },
@@ -129,6 +130,24 @@ export const ANTHEM_DURATION_IN_FRAMES = SCENES.reduce(
   (sum, scene) => sum + scene.durationInFrames,
   0,
 );
+
+/**
+ * Narration lines (local Piper TTS, en-us-ryan-high — a stand-in for a
+ * professionally recorded VO). Each line starts shortly after its scene
+ * cuts in; durations were measured from the rendered WAVs and each line
+ * fits inside its scene.
+ */
+const VO_LINES: Array<{ src: string; from: number; durationInFrames: number }> =
+  (() => {
+    const sceneStart = (index: number) =>
+      SCENES.slice(0, index).reduce((sum, s) => sum + s.durationInFrames, 0);
+    const measured = [145, 167, 174, 110, 70, 100, 80, 84, 83, 128];
+    return measured.map((frames, i) => ({
+      src: `assets/voiceover/vo-${String(i + 1).padStart(2, "0")}.wav`,
+      from: sceneStart(i) + (i === SCENES.length - 1 ? 20 : 12),
+      durationInFrames: frames + 6,
+    }));
+  })();
 
 const BRAND_LOCKUP_LEAD_FRAMES = 95;
 
@@ -338,13 +357,31 @@ export const LegendsAnthem: React.FC = () => {
         }}
       />
 
+      {VO_LINES.map((line) => (
+        <Sequence
+          key={line.src}
+          from={line.from}
+          durationInFrames={line.durationInFrames}
+        >
+          <VoiceoverTrack
+            track={{ src: line.src, volume: 1 }}
+            durationInFrames={line.durationInFrames}
+          />
+        </Sequence>
+      ))}
+
       <BackgroundMusic
         track={{
           src: "assets/music/legends-ranch-piano-score.wav",
-          volume: 0.55,
+          volume: 0.5,
           fadeInFrames: 30,
           fadeOutFrames: 60,
+          duckToVolume: 0.16,
         }}
+        duckDuringRanges={VO_LINES.map((line) => ({
+          startFrame: line.from,
+          endFrame: line.from + line.durationInFrames,
+        }))}
       />
     </AbsoluteFill>
   );
