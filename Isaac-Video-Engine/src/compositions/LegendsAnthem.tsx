@@ -25,6 +25,12 @@ const LETTERBOX_HEIGHT = 104;
 
 type AnthemScene = {
   kind: "video" | "image";
+  /**
+   * cover: full-bleed (16:9 media). frame: media shown WHOLE, centered
+   * over a blurred copy of itself — for portrait/square photos and phone
+   * video so nothing gets cropped away.
+   */
+  fit: "cover" | "frame";
   src: string;
   durationInFrames: number;
   title: string;
@@ -33,63 +39,87 @@ type AnthemScene = {
 
 /**
  * Mix of licensed stock motion (scene-setting) and real Legends Ranch
- * photos supplied by the owner (fawn program, family, shooting center,
- * Purple Heart Hunt tribute).
+ * media supplied by the owner (fawn program photos/video, lodge
+ * interior, shooting center, Purple Heart Hunt tribute).
  */
 const SCENES: AnthemScene[] = [
   {
     kind: "video",
+    fit: "cover",
     src: "assets/videos/clip1-fog.mp4",
-    durationInFrames: 165,
+    durationInFrames: 135,
     title: "Deep in Michigan's Northwoods",
     subtitle: "Est. 1998 — Bitely, Michigan",
   },
   {
     kind: "video",
+    fit: "cover",
     src: "assets/videos/clip2-aerial.mp4",
-    durationInFrames: 165,
+    durationInFrames: 135,
     title: "2,000 Acres of Managed Habitat",
     subtitle: "One standard of stewardship",
   },
   {
     kind: "video",
+    fit: "cover",
     src: "assets/videos/clip3-buck.mp4",
-    durationInFrames: 200,
+    durationInFrames: 165,
     title: "Where 200-Inch Bucks Are the Standard",
     subtitle: "— not the exception",
   },
   {
+    kind: "video",
+    fit: "frame",
+    src: "assets/videos/real-newborn-fawn.mp4",
+    durationInFrames: 150,
+    title: "Born on the Ranch",
+    subtitle: "New life in the pens every spring",
+  },
+  {
     kind: "image",
+    fit: "frame",
     src: "assets/images/real-fawns-group.jpg",
-    durationInFrames: 130,
+    durationInFrames: 115,
     title: "Raised Here. Cared for Daily.",
     subtitle: "The Legends Ranch deer program",
   },
   {
-    kind: "image",
-    src: "assets/images/real-family-fawn.jpg",
-    durationInFrames: 130,
+    kind: "video",
+    fit: "frame",
+    src: "assets/videos/real-fawn-care.mp4",
+    durationInFrames: 140,
     title: "Family-Run Since 1998",
-    subtitle: "The people behind the ranch",
+    subtitle: "Hands-on, every single day",
   },
   {
     kind: "image",
+    fit: "frame",
+    src: "assets/images/real-lodge-interior.jpg",
+    durationInFrames: 115,
+    title: "Rustic Luxury, Northwoods Character",
+    subtitle: "The lodge at Legends",
+  },
+  {
+    kind: "image",
+    fit: "frame",
     src: "assets/images/real-shooting-range.jpg",
-    durationInFrames: 130,
+    durationInFrames: 115,
     title: "A World-Class Shooting Center",
     subtitle: "Sight in before your hunt — guided one-on-one",
   },
   {
     kind: "image",
+    fit: "frame",
     src: "assets/images/real-purple-heart.jpg",
-    durationInFrames: 150,
+    durationInFrames: 140,
     title: "Honoring Our Nation's Heroes",
     subtitle: "Home of the Purple Heart Hunt",
   },
   {
     kind: "video",
+    fit: "cover",
     src: "assets/videos/clip5-fire.mp4",
-    durationInFrames: 200,
+    durationInFrames: 195,
     title: "This Is More Than a Hunt.",
     subtitle: "It's a legacy.",
   },
@@ -101,6 +131,23 @@ export const ANTHEM_DURATION_IN_FRAMES = SCENES.reduce(
 );
 
 const BRAND_LOCKUP_LEAD_FRAMES = 95;
+
+const SceneMedia: React.FC<{
+  scene: AnthemScene;
+  objectFit: "cover" | "contain";
+}> = ({ scene, objectFit }) =>
+  scene.kind === "video" ? (
+    <OffthreadVideo
+      src={staticFile(scene.src)}
+      muted
+      style={{ width: "100%", height: "100%", objectFit }}
+    />
+  ) : (
+    <Img
+      src={staticFile(scene.src)}
+      style={{ width: "100%", height: "100%", objectFit }}
+    />
+  );
 
 const SceneBlock: React.FC<{
   scene: AnthemScene;
@@ -131,20 +178,34 @@ const SceneBlock: React.FC<{
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", opacity: fadeIn * fadeOut }}>
-      <AbsoluteFill style={{ transform: `scale(${scale})` }}>
-        {scene.kind === "video" ? (
-          <OffthreadVideo
-            src={staticFile(scene.src)}
-            muted
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-        ) : (
-          <Img
-            src={staticFile(scene.src)}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-        )}
-      </AbsoluteFill>
+      {scene.fit === "cover" ? (
+        <AbsoluteFill style={{ transform: `scale(${scale})` }}>
+          <SceneMedia scene={scene} objectFit="cover" />
+        </AbsoluteFill>
+      ) : (
+        <>
+          {/* Blurred, darkened copy fills the frame behind the whole media. */}
+          <AbsoluteFill
+            style={{
+              transform: `scale(${scale * 1.12})`,
+              filter: "blur(42px) brightness(0.45)",
+            }}
+          >
+            <SceneMedia scene={scene} objectFit="cover" />
+          </AbsoluteFill>
+          {/* The actual photo/video, fully visible between the letterbox bars. */}
+          <AbsoluteFill
+            style={{
+              top: LETTERBOX_HEIGHT + 16,
+              bottom: LETTERBOX_HEIGHT + 16,
+              height: "auto",
+              transform: `scale(${1 + (scale - 1) * 0.4})`,
+            }}
+          >
+            <SceneMedia scene={scene} objectFit="contain" />
+          </AbsoluteFill>
+        </>
+      )}
       {/* Bottom gradient keeps titles readable over bright footage. */}
       <AbsoluteFill
         style={{
