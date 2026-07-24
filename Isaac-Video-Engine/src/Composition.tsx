@@ -21,6 +21,11 @@ import {
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
+import {
+  LegendsAnthem,
+  ANTHEM_DURATION_IN_FRAMES,
+  ANTHEM_FPS,
+} from "./compositions/LegendsAnthem";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -73,6 +78,14 @@ export const MyComposition = () => {
           defaultProps={{ preset }}
         />
       ))}
+      <Composition
+        id="LegendsAnthem"
+        component={LegendsAnthem}
+        durationInFrames={ANTHEM_DURATION_IN_FRAMES}
+        fps={ANTHEM_FPS}
+        width={1920}
+        height={1080}
+      />
       <Composition
         id="AutoShort"
         component={AutoShort}
