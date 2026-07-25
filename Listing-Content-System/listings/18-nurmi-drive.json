@@ -1,0 +1,35 @@
+{
+  "slug": "18-nurmi-drive",
+  "address": "18 Nurmi Drive",
+  "neighborhood": "Nurmi Isles",
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "price": "$5,750,000",
+  "beds": 4,
+  "baths": 4,
+  "sqft": "3,529",
+  "lotOrWaterfrontage": "110' on the water",
+  "yearBuiltOrRenovated": "Extensively updated — new roof, floors, kitchen and baths",
+  "headlineFeature": "110 feet on the water with concrete dock and 17,000 lb boatlift, off Las Olas Boulevard",
+  "features": [
+    "110' of water frontage with concrete dock and 17,000 lb boatlift",
+    "One-story waterfront layout with waterfront primary suite",
+    "Heated pool and spa with covered patio and gas grill",
+    "Marble floors across the living areas, formal living and dining plus family room and bar",
+    "New flat roof, updated kitchen cabinets, countertops, baths and appliances",
+    "Optional $18M presale of a 2027 custom modern build: 6 bed / 8.5 bath / 9,000 SF"
+  ],
+  "lifestyle": "Single-story living where the primary suite, the pool, and the dock all share the same water view — Las Olas Boulevard a short ride away.",
+  "agentProfile": "imagin-demo",
+  "brand": "luxury-coastal",
+  "provenance": {
+    "status": "ACTIVE as of 2026-07-25",
+    "mls": "F10483517",
+    "listedBy": "See MLS F10483517 (syndicated on Douglas Elliman, Redfin)",
+    "sources": [
+      "https://www.redfin.com/FL/Fort-Lauderdale/18-Nurmi-Dr-33301/home/41785621",
+      "https://www.elliman.com/listing/11955890"
+    ],
+    "note": "Real property, real public listing data. Demo package only — do not publish marketing for it without a listing agreement or the listing brokerage's authorization."
+  }
+}

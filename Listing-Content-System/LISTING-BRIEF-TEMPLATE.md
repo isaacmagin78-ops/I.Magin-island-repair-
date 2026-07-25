@@ -49,5 +49,11 @@ then run `node scripts/generate-package.mjs listings/<slug>.json`.
   to the Intracoastal" sells; "5 bedrooms" doesn't.
 - **`openHouse`** — omit the whole object if none is scheduled. Set
   `isPast: true` after the event to also generate `open-house-recap.md`.
+- **`agentProfile`** — instead of the inline `agent` object you can set
+  `"agentProfile": "<id>"` to load `agents/<id>.json` (e.g. `linda-hoyt`,
+  `imagin-demo`). Inline `agent` fields override profile fields.
+- **`provenance`** — required for briefs built from someone else's real
+  listing: `{ "status", "mls", "listedBy", "sources": [], "note" }`. It is
+  printed in the generated package README as a publish-gate warning.
 - **`brand`** — Isaac Video Engine theme id used in the render command
   (`luxury-coastal` is the default luxury look).

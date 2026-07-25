@@ -1,0 +1,36 @@
+{
+  "slug": "709-isle-of-palms",
+  "address": "709 Isle of Palms Drive",
+  "neighborhood": "Las Olas Isles",
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "price": "$7,999,999",
+  "beds": 5,
+  "baths": 8,
+  "sqft": "7,130",
+  "lotOrWaterfrontage": "100' of deepwater dockage",
+  "yearBuiltOrRenovated": "Custom built 2004",
+  "headlineFeature": "100 feet of deepwater dockage with direct ocean access — no fixed bridges",
+  "features": [
+    "100' of deepwater dockage with floating dock and direct ocean access",
+    "Waterfront pool with full cabana bath",
+    "Chef's kitchen with butler's pantry and dedicated catering area",
+    "Top-of-the-line outdoor kitchen on the waterway",
+    "7,130 SF custom estate near the point of the island",
+    "One of Fort Lauderdale's most exclusive Las Olas isles, minutes to Las Olas Blvd"
+  ],
+  "lifestyle": "Pull the boat off your own floating dock and be in the Atlantic in minutes — then back for dinner from the outdoor kitchen as the sun drops over the canal.",
+  "agentProfile": "imagin-demo",
+  "brand": "luxury-coastal",
+  "provenance": {
+    "status": "ACTIVE as of 2026-07-25",
+    "mls": "A11695657",
+    "listedBy": "Premier Estate Properties",
+    "sources": [
+      "https://premierestateproperties.com/homes-for-sale-details/709-ISLE-OF-PALMS-DR-FORT-LAUDERDALE-FL-33301/A11695657/39/",
+      "https://www.elliman.com/listing/709-isle-of-palms-dr-fort-lauderdale-fl-33301/8985379",
+      "https://www.remax.com/fl/fort-lauderdale/home-details/709-isle-of-palms-dr-fort-lauderdale-fl-33301/14192882354855491812/M00000151/A11695657"
+    ],
+    "note": "Real property, real public listing data. Demo package only — the listing belongs to the brokerage above; do not publish marketing for it without a listing agreement or their authorization."
+  }
+}
