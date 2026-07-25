@@ -402,8 +402,9 @@ const openHouseRecap = (b) => {
   const oh = b.openHouse;
   return `# Open-House Recap — ${b.address}
 
-Post 24–48h after the event (${oh.date}). Goal: make the property feel active
-and in demand for buyers who missed it.
+Best posted within a few days of the event (${oh.date}) — but it works weeks
+later as a "still in demand" follow-up too. Goal: make the property feel
+active and in demand for buyers who missed it.
 
 ## Format
 15–20s vertical clip from event b-roll (arrivals, tour moments, dock/pool
