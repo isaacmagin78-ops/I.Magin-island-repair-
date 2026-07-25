@@ -52,6 +52,10 @@ then run `node scripts/generate-package.mjs listings/<slug>.json`.
 - **`agentProfile`** — instead of the inline `agent` object you can set
   `"agentProfile": "<id>"` to load `agents/<id>.json` (e.g. `linda-hoyt`,
   `imagin-demo`). Inline `agent` fields override profile fields.
+- **`listingUrl`** — the public listing page URL. When present, the
+  generator also produces `signage/`: print-ready QR codes (yard sign,
+  open-house signs, flyers), each UTM-tagged by placement so scans are
+  attributable in analytics. Omit and the kit is skipped with a note.
 - **`provenance`** — required for briefs built from someone else's real
   listing: `{ "status", "mls", "listedBy", "sources": [], "note" }`. It is
   printed in the generated package README as a publish-gate warning.

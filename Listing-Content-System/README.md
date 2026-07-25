@@ -25,6 +25,8 @@ text/markdown file you can edit before publishing.
 | `seller-value-summary.md` | Seller-facing report on the campaign and why it drives the sale |
 | `under-contract-template.md` | Follow-up post that converts the win into new seller leads |
 | `video-engine/` | `script.txt`, `cta.txt`, `endcard.txt` — drop-ins for the Isaac Video Engine auto pipeline |
+| `agent-pitch.md` | Agent-facing one-pager: what this package proves, and the ask for their next listing |
+| `signage/` | QR signage kit (needs `listingUrl` in the brief): print-ready SVG codes for yard sign, open-house signs, and flyers, each UTM-tagged per placement |
 | `README.md` | Package launch-order checklist |
 
 Every asset includes a hook, the shots or visuals it needs, on-screen text,

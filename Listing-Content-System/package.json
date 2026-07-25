@@ -1,0 +1,14 @@
+{
+  "name": "listing-content-system",
+  "version": "1.0.0",
+  "description": "Luxury Listing Content System — one listing brief in, full marketing package out",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-package.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

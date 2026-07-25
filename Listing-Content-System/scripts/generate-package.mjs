@@ -25,6 +25,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import QRCode from "qrcode";
 
 const SYSTEM_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -350,6 +351,7 @@ content system — not just photos on the MLS:
 | Open-house promo + recap | Event turnout and post-event urgency |
 | Just-listed ad creative | Paid social targeting active buyers |
 | Twilight & aerial stills | Print, brochures, broker outreach |
+| QR signage kit (tracked codes) | Yard sign, open-house signs, flyers — measurable drive-by traffic |
 
 ## Why this matters for your sale
 
@@ -432,6 +434,55 @@ ${hashtags(b)}
 `;
 };
 
+// ---------------------------------------------------------------------------
+// QR signage — physical signs → digital campaign, with measurable scans
+// ---------------------------------------------------------------------------
+
+// One QR per placement, each with its own utm_content, so the agent can see
+// exactly which sign drove traffic in their analytics (or a link shortener).
+const QR_PLACEMENTS = [
+  { id: "yard-sign", label: "Yard / listing sign rider" },
+  { id: "open-house-sign", label: "Open-house directional + A-frame signs" },
+  { id: "flyer", label: "Feature sheets / flyers handed out at showings" },
+];
+
+const qrUrl = (b, placement) => {
+  const base = b.listingUrl;
+  const sep = base.includes("?") ? "&" : "?";
+  return `${base}${sep}utm_source=qr&utm_medium=print&utm_campaign=${b.slug}&utm_content=${placement}`;
+};
+
+const signageGuide = (b) => `# QR Signage Kit — ${b.address}
+
+Physical signs are the one marketing channel that runs 24/7 on-site — a QR
+code turns every drive-by and open-house visitor into a tracked digital
+lead instead of a hope. Each code below points at the listing page with its
+own tracking tag, so analytics show exactly which sign produced the scan.
+
+| File | Where it goes | Tagged as |
+|---|---|---|
+${QR_PLACEMENTS.map((p) => `| \`qr-${p.id}.svg\` | ${p.label} | \`utm_content=${p.id}\` |`).join("\n")}
+
+Destination: ${b.listingUrl}
+
+## Print specs
+
+- SVGs scale losslessly — print at any size. Minimum QR size ≈ 1/10 of the
+  intended scan distance (a rider scanned from 6 ft needs a ~7" code).
+- High contrast only: dark code on white. Never print the code over a photo.
+- Always pair with a call-to-action line, e.g.:
+  - Yard rider: **"Scan for the full video tour"**
+  - Open-house sign: **"Can't make it in? Scan to tour it now"**
+  - Flyer: **"Scan to save this listing + book a private showing"**
+- Test-scan a printed proof from actual distance before ordering the run.
+
+## Why this sells the seller (put it in the listing report)
+
+Scans are measurable exposure: "your sign generated [N] scans this week"
+turns the yard sign into data for the weekly seller report — something
+listing photos alone can never do.
+`;
+
 const agentPitch = (b) => `# For ${b.agent.name.split(" ")[0]} — what one listing shoot just produced
 
 This entire package was generated from a single brief for **${b.address}**,
@@ -452,6 +503,9 @@ matched to your listing and your branding:
   appointments, because it shows sellers a campaign, not just photos
 - Drop-in files that render an actual **branded vertical video** from the
   shoot's photos through a local video engine — no editor on retainer
+- A **QR signage kit** — print-ready codes for your yard sign rider,
+  open-house signs, and flyers, each individually tracked so you can tell
+  a seller exactly how many people their sign sent to the listing page
 
 ## Why this matters for your book of business
 
@@ -523,6 +577,24 @@ const brief = loadBrief(process.argv[2]);
 const outDir = join(SYSTEM_ROOT, "out", brief.slug);
 mkdirSync(join(outDir, "video-engine"), { recursive: true });
 
+const signageAssets = [];
+if (brief.listingUrl) {
+  mkdirSync(join(outDir, "signage"), { recursive: true });
+  signageAssets.push(["signage/README.md", signageGuide(brief)]);
+  for (const placement of QR_PLACEMENTS) {
+    const svg = await QRCode.toString(qrUrl(brief, placement.id), {
+      type: "svg",
+      errorCorrectionLevel: "H",
+      margin: 2,
+    });
+    signageAssets.push([`signage/qr-${placement.id}.svg`, svg]);
+  }
+} else {
+  console.log(
+    "Note: no `listingUrl` in the brief — skipping the QR signage kit. Add the listing page URL to generate it.",
+  );
+}
+
 const assets = [
   ["cinematic-listing-video.md", cinematicVideo(brief)],
   ...REEL_ANGLES.map((r) => [r.file, `# ${r.title} — ${brief.address}\n\n${r.build(brief)}\n`]),
@@ -540,6 +612,7 @@ const assets = [
 if (brief.openHouse?.isPast) {
   assets.push(["open-house-recap.md", openHouseRecap(brief)]);
 }
+assets.push(...signageAssets);
 
 const fileNames = assets.map(([name]) => name);
 assets.push(["README.md", packageReadme(brief, fileNames)]);
