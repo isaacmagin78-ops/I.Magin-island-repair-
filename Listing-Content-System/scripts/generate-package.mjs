@@ -524,8 +524,9 @@ const videoEngineScript = (b) =>
 
 const videoEngineCta = (b) => `Private showings now booking — ${b.agent.phone}`;
 
+// The auto pipeline reads only the first line of endcard.txt — keep it to one.
 const videoEngineEndcard = (b) =>
-  `${b.address} · ${b.price}\n${b.agent.name} · ${b.agent.brokerage}`;
+  `${b.address} · ${b.price} — ${b.agent.name}, ${b.agent.brokerage}`;
 
 const provenanceSection = (b) => {
   const p = b.provenance;
