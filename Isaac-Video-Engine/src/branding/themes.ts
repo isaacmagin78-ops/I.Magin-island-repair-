@@ -52,6 +52,20 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/tysons-picks.png",
     watermarkText: "Tyson's Picks",
   },
+  "luxury-coastal": {
+    id: "luxury-coastal",
+    displayName: "Luxury Coastal Listings",
+    colors: {
+      background: "#0a1220",
+      primary: "#d4b26a",
+      secondary: "#3d6b8f",
+      accent: "#f0e2c4",
+      text: "#ffffff",
+      textMuted: "#b8c4d4",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    watermarkText: "Luxury Coastal Listings",
+  },
   "imagin-concierge": {
     id: "imagin-concierge",
     displayName: "IMagin Concierge",

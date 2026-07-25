@@ -1,0 +1,37 @@
+{
+  "slug": "harborage-isle",
+  "address": "1712 Harborage Isle Drive",
+  "neighborhood": "Harborage Isles",
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "price": "$4,295,000",
+  "beds": 5,
+  "baths": 4.5,
+  "sqft": "4,860",
+  "lotOrWaterfrontage": "100' of deepwater frontage",
+  "yearBuiltOrRenovated": "Fully reimagined 2024",
+  "headlineFeature": "Deepwater estate with no fixed bridges to the Intracoastal",
+  "features": [
+    "Private dock with 24,000 lb boat lift",
+    "Resort pool and summer kitchen overlooking the canal",
+    "Chef's kitchen with double islands and Sub-Zero/Wolf package",
+    "Primary suite with water-view terrace and spa bath",
+    "Whole-home automation, impact glass, and full-house generator",
+    "Gated community minutes to Las Olas and the beach"
+  ],
+  "lifestyle": "Boat out for sunset, back before dinner on the terrace — this is the South Florida waterfront life buyers move here for.",
+  "agent": {
+    "name": "Isaac Magin",
+    "title": "Luxury Waterfront Specialist",
+    "brokerage": "IMagin Realty Group",
+    "phone": "(954) 555-0142",
+    "instagram": "@imagin.listings",
+    "website": "imaginlistings.com"
+  },
+  "openHouse": {
+    "date": "Sunday, August 9",
+    "time": "1:00–4:00 PM",
+    "isPast": false
+  },
+  "brand": "luxury-coastal"
+}
