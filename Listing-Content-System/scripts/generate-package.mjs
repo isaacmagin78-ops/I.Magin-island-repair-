@@ -432,6 +432,38 @@ ${hashtags(b)}
 `;
 };
 
+const agentPitch = (b) => `# For ${b.agent.name.split(" ")[0]} — what one listing shoot just produced
+
+This entire package was generated from a single brief for **${b.address}**,
+your ${b.beds} bed / ${b.baths} bath at ${b.price}. No agency retainer, no
+per-asset fees — one shoot, one brief, and every asset below comes out
+matched to your listing and your branding:
+
+- A **cinematic listing film plan** ready to hand to any videographer —
+  hook, shot list, on-screen text, and voiceover already written
+- **Three reels** with three different buyer angles (lifestyle POV,
+  feature countdown, urgency) — hooks, text beats, captions, CTAs done
+- A **5-slide story launch sequence** with poll and countdown stickers
+- **Open-house promo and recap** engineered to make the property read as
+  in-demand
+- A **just-listed caption** ready to post, and an **under-contract post**
+  that converts the sale into your next seller lead
+- A **seller-facing marketing report** — the piece that wins listing
+  appointments, because it shows sellers a campaign, not just photos
+- Drop-in files that render an actual **branded vertical video** from the
+  shoot's photos through a local video engine — no editor on retainer
+
+## Why this matters for your book of business
+
+Every listing you take gets the full launch treatment in minutes instead
+of hours — consistent, luxury-toned, and conversion-focused. The recap and
+under-contract assets keep working after the event, turning each sale into
+proof for the next seller pitch.
+
+**The ask:** pick your next listing, send over the details and the shoot,
+and compare this launch against what you'd normally run.
+`;
+
 // Handoff files for Isaac-Video-Engine/assets/ → `npm run render:short`.
 const videoEngineScript = (b) =>
   `Welcome to ${b.address} in ${shortLocation(b)}. ${b.headlineFeature}. ${top(b, 3).join(". ")}. ${b.lifestyle} Offered at ${b.price}.`;
@@ -498,6 +530,7 @@ const assets = [
   ["open-house-promo.md", openHousePromo(brief)],
   ["just-listed-caption.txt", justListedCaption(brief)],
   ["seller-value-summary.md", sellerValueSummary(brief)],
+  ["agent-pitch.md", agentPitch(brief)],
   ["under-contract-template.md", underContractTemplate(brief)],
   ["video-engine/script.txt", videoEngineScript(brief)],
   ["video-engine/cta.txt", videoEngineCta(brief)],
