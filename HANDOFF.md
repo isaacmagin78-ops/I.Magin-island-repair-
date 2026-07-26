@@ -5,38 +5,66 @@
 ## Current state (as of 2026-07-26)
 
 - **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
-- **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, and `npm run render:short` pipeline all verified. Demo fixtures replaced with real content; personal clips gitignored. Merged via PR #4.
+- **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
 
-## Marketing / Tyson's Time state (checked live via Blotato, 2026-07-26)
+## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
 
-- ~40 posts published in the last 2 weeks across TikTok (@tysons_time), Instagram (@tysonstime), YouTube, Threads (@tysonstravels_rescuepitslife). Tyson vs. Kitten series is the main content line.
-- Monetization live in captions: First 30 Days Kit ($19) Stripe link `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`, landing page `tysons-time-kit.vercel.app`, Amazon Associates disclosure + "gear picks link in bio".
+### Channels
 
-### Verified working
+| Platform | Account ID | Status |
+|---|---|---|
+| Instagram @tysonstime | 61044 | ✅ working — **best channel by ~10x** |
+| Threads @tysonstravels_rescuepitslife | 8305 | ✅ working |
+| YouTube (Tyson's Time) | 42110 | ✅ working |
+| TikTok @tysons_time | 49211 | ✅ working |
+| Facebook | 43069 | ❌ no Page linked (empty subaccounts) — cannot post |
 
-- **All 5 platforms connected and publishing**: Facebook, YouTube, Instagram, Threads, TikTok. Instagram had a token failure Jul 24 10am but published successfully Jul 25 9pm — it is FINE. (Lesson learned: check post dates after an error before declaring something broken.)
+### Performance reality (drives all decisions)
 
-### Actually broken (verified)
+- Instagram: **~2,200 views / 1,500 reach** per reel. TikTok: 42–275 views. YouTube: ~234.
+- **Always cross-post to Instagram.** Historically several videos went TikTok-only — that was the single biggest miss.
 
-1. **6 failed posts never retried.** Causes: Google Drive media URLs don't work with Blotato (media must be uploaded to Blotato instead — posts 626938, 596052, 596051), TikTok photo-size limit (600139), IG story alt_text error (600138), and one IG post (625534, the "Comment KIT" reel) that failed only because of the now-resolved Jul 24 token blip — it can be reposted as-is.
-2. **Bios unverified** — captions say "Amazon gear picks: link in bio". Whether TikTok/IG/YouTube bios actually contain the Amazon Associates link cannot be checked or edited via any connected tool; only Isaac can confirm/set bios.
+### Monetization (must appear in every caption)
 
-### Shipped 2026-07-26 (this session)
+- First 30 Days Kit $19 — landing `https://tysons-time-kit.vercel.app/`, Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`
+- Amazon Associates: "Tyson's gear picks — link in bio" + required disclosure line.
+- ⚠️ A Jul 26 post used a DIFFERENT domain: `tysons-kit-link.vercel.app?s=yt`. Confirm with Isaac which is canonical.
 
-- Reposted the failed "Comment KIT" money reel to Instagram → LIVE: instagram.com/reel/DbRccyMEUlG
-- Cross-posted the "my name was Titan" adoption story to Threads (was TikTok/IG only) → LIVE: threads.com/@tysonstravels_rescuepitslife/post/DbRcndWHQuJ
+### Platform rules learned the hard way
 
-### Blocked (verified, with reasons)
+- **Instagram: max 5 hashtags** (hard API error above that).
+- Google Drive URLs NEVER work as mediaUrls — media must live in Blotato storage.
+- Blotato-hosted `database.blotato.io/storage/...` URLs from past posts are reusable forever.
+- YouTube requires title + privacyStatus + shouldNotifySubscribers.
 
-- **3 Drive-hosted videos can't be posted from any session**: "Tyson treat" ASMR (38MB) + IMG_1719.MOV (48MB) + IMG_3457.MOV (106MB). Root cause of original failures: Google Drive serves a virus-scan warning page instead of the file for >25MB downloads, so Blotato can never read them. The Drive connector caps at 10MB and direct Drive network access is blocked. FIX: Isaac drag-drops these 3 files into Blotato's media library once → then any session can post them.
-- **Facebook page not linked in Blotato** (account exists but has no page subaccount) — zero Facebook posts ever. Isaac must link his FB page in Blotato → Accounts to open that channel.
+## Shipped 2026-07-26
+
+**Published (4):**
+- IG "Comment KIT" money reel (rescued from Jul 24 failure) → instagram.com/reel/DbRccyMEUlG
+- Threads "my name was Titan" → threads.com/@tysonstravels_rescuepitslife/post/DbRcndWHQuJ
+- IG "60lb vs 2lb kitten" (was TikTok-only) → instagram.com/reel/DbRmx5XjmGF
+- Threads "60lb vs 2lb kitten" → threads.com/@tysonstravels_rescuepitslife/post/DbRmuWJlbu7
+
+**Scheduled (8) — queue was EMPTY before this session:**
+- Jul 27 16:00Z IG "POV new intern" · 23:00Z IG "aggressively asleep"
+- Jul 28 16:00Z IG "manatees" · 23:00Z YouTube "manatees"
+- Jul 29 16:00Z IG "10-minute walk" · 23:00Z Threads "10-minute walk"
+- Jul 30 16:00Z IG "newest rescue" · 23:00Z YouTube "caged 2 years / walk"
+
+All carry Kit link + Amazon disclosure.
+
+## Blocked — needs Isaac (cannot be done by any session)
+
+1. **3 videos stuck in Google Drive**: "Tyson treat" ASMR (38MB), IMG_1719.MOV (48MB), IMG_3457.MOV (106MB). Drive serves a virus-scan page instead of files >25MB, so Blotato can never fetch them; the Drive connector caps at 10MB. FIX: drag-drop them into Blotato's media library once.
+2. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
+3. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere.
 
 ## Next steps
 
-- Isaac: (1) drop the 3 videos into Blotato media library, (2) link Facebook page in Blotato, (3) confirm Amazon Associates link is in TikTok/IG/YouTube bios.
-- Claude: post the 3 rescued videos once uploaded; start posting to Facebook once page is linked; keep cadence going.
-- Rule: verify current state with live tool checks before telling Isaac anything is broken or asking him to act.
+- Claude: after Jul 30, refill the queue (check `blotato_list_schedules` — never let it hit 0). Post the 3 Drive videos once uploaded. Open Facebook once the Page is linked.
+- Rule: **verify with live tool checks before telling Isaac anything is broken or asking him to act.**
+- Rule: lead with the single best recommendation; ship first, report with live URLs.
 
 ## Session log
 
-- **2026-07-26**: Set up the CLAUDE.md + HANDOFF.md handoff system so context carries across sessions automatically.
+- **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
