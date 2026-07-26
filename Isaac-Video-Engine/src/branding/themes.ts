@@ -64,6 +64,7 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
       textMuted: "#b8c4d4",
     },
     fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/logos/luxury-coastal.png",
     watermarkText: "Luxury Coastal Listings",
   },
   "imagin-concierge": {
