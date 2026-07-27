@@ -28,7 +28,8 @@
 
 - First 30 Days Kit $19 — landing `https://tysons-time-kit.vercel.app/`, Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`
 - Amazon Associates: "Tyson's gear picks — link in bio" + required disclosure line.
-- ⚠️ A Jul 26 post used a DIFFERENT domain: `tysons-kit-link.vercel.app?s=yt`. Confirm with Isaac which is canonical.
+- Both kit domains are LIVE and correct (verified via Vercel MCP 2026-07-27): `tysons-time-kit.vercel.app` = full sales page (200); `tysons-kit-link.vercel.app` = 302 straight to Stripe, used with `?s=yt` tracking. **Use the sales page in social captions** — cold viewers need the pitch before a payment screen. No fix needed.
+- Note: `*.vercel.app` is blocked by this environment's proxy for plain WebFetch/curl — use the **Vercel MCP `web_fetch_vercel_url`** tool to check these pages.
 
 ### Platform rules learned the hard way
 
@@ -55,7 +56,7 @@ All carry Kit link + Amazon disclosure.
 
 ## Blocked — needs Isaac (cannot be done by any session)
 
-1. **3 videos stuck in Google Drive**: "Tyson treat" ASMR (38MB), IMG_1719.MOV (48MB), IMG_3457.MOV (106MB). Drive serves a virus-scan page instead of files >25MB, so Blotato can never fetch them; the Drive connector caps at 10MB. FIX: drag-drop them into Blotato's media library once.
+1. **3 videos stuck in Google Drive — because they are PRIVATE, not because of size.** Verified via Drive permissions: "Tyson treat" ASMR (38MB, id `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT`) and IMG_1719.MOV (48MB, `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz`) both show ONLY `isaacmagin78@gmail.com / owner` — no "anyone with the link" entry. IMG_3457.MOV (`1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`) is the third. Blotato fetched a Google login page, not a video, which is exactly the "Failed to read media metadata" error. FIX (10 seconds each): in Drive → Share → General access → "Anyone with the link" → Viewer. Then any session can post them. (Alternative: drag into Blotato's media library.) Claude cannot change Drive sharing — the connector is read-only — and this environment's network policy blocks drive.usercontent.google.com and *.vercel.app at the proxy (403 on CONNECT), so direct download is impossible from here too.
 2. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
 3. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere.
 
