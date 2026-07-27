@@ -12,3 +12,4 @@ out
 # normally; commit a specific video explicitly with `git add -f` if needed.
 public/assets/videos/*
 !public/assets/videos/.gitkeep
+public/assets/videos/*.mp4

@@ -21,6 +21,11 @@ import {
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
+import {
+  ListingFilm,
+  SEA_MONARCH_611_DURATION_IN_FRAMES,
+  SEA_MONARCH_611_PROPS,
+} from "./compositions/ListingFilm";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -82,6 +87,15 @@ export const MyComposition = () => {
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
         defaultProps={{ scenes: [] }}
+      />
+      <Composition
+        id="SeaMonarch611"
+        component={ListingFilm}
+        durationInFrames={SEA_MONARCH_611_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={1280}
+        height={720}
+        defaultProps={SEA_MONARCH_611_PROPS}
       />
     </>
   );
