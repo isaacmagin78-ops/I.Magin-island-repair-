@@ -46,7 +46,13 @@
 - IG "60lb vs 2lb kitten" (was TikTok-only) → instagram.com/reel/DbRmx5XjmGF
 - Threads "60lb vs 2lb kitten" → threads.com/@tysonstravels_rescuepitslife/post/DbRmuWJlbu7
 
-**Scheduled (8) — queue was EMPTY before this session:**
+**Published Jul 27 — the 3 rescued Drive videos:**
+- IG ASMR reel → instagram.com/reel/DbR88LYlDSq
+- Threads ASMR → threads.com/@tysonstravels_rescuepitslife/post/DbR9FBuDyb2
+- TikTok ASMR → tiktok.com/@tysons_time/video/7667038097124740383
+- (IMG_1719 "returned once, now runs this condo" → IG Jul 31 16:00Z · IMG_3457 "doghouse to penthouse" → IG Jul 31 23:00Z)
+
+**Scheduled (10) — queue was EMPTY before this session:**
 - Jul 27 16:00Z IG "POV new intern" · 23:00Z IG "aggressively asleep"
 - Jul 28 16:00Z IG "manatees" · 23:00Z YouTube "manatees"
 - Jul 29 16:00Z IG "10-minute walk" · 23:00Z Threads "10-minute walk"
@@ -54,11 +60,17 @@
 
 All carry Kit link + Amazon disclosure.
 
+## RESOLVED 2026-07-27: the 3 "stuck" Drive videos
+
+Root cause was **private Drive sharing**, not file size. Isaac set all three to "Anyone with the link → Viewer" (verified: permissions now include `{"role":"reader","type":"anyone"}`) and they posted immediately using
+`https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`.
+File IDs: ASMR `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT` · IMG_1719 `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz` · IMG_3457 `1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`.
+Prevention rule is now in CLAUDE.md — always verify media is publicly readable BEFORE posting.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
-1. **3 videos stuck in Google Drive — because they are PRIVATE, not because of size.** Verified via Drive permissions: "Tyson treat" ASMR (38MB, id `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT`) and IMG_1719.MOV (48MB, `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz`) both show ONLY `isaacmagin78@gmail.com / owner` — no "anyone with the link" entry. IMG_3457.MOV (`1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`) is the third. Blotato fetched a Google login page, not a video, which is exactly the "Failed to read media metadata" error. FIX (10 seconds each): in Drive → Share → General access → "Anyone with the link" → Viewer. Then any session can post them. (Alternative: drag into Blotato's media library.) Claude cannot change Drive sharing — the connector is read-only — and this environment's network policy blocks drive.usercontent.google.com and *.vercel.app at the proxy (403 on CONNECT), so direct download is impossible from here too.
-2. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-3. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere.
+1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
+2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
 
 ## Next steps
 
