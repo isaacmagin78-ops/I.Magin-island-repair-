@@ -30,6 +30,8 @@ export type EditorialCardProps = {
   button?: string;
   footnote?: string;
   scale?: number;
+  /** Overrides the wordmark size when the default would wrap the name. */
+  wordmarkFontSize?: number;
 };
 
 const useRise = (delayInFrames: number) => {
@@ -57,6 +59,7 @@ export const EditorialCard: React.FC<EditorialCardProps> = ({
   button,
   footnote,
   scale = 1,
+  wordmarkFontSize,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -123,9 +126,10 @@ export const EditorialCard: React.FC<EditorialCardProps> = ({
 
       <div
         style={{
-          fontSize: 58 * scale,
+          fontSize: wordmarkFontSize ?? 58 * scale,
           letterSpacing: `${0.16 * scale}em`,
           textTransform: "uppercase",
+          whiteSpace: "nowrap",
           lineHeight: 1.1,
           fontWeight: 400,
           ...wordmarkStyle,

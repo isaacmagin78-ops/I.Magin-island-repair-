@@ -51,44 +51,46 @@ const NARRATION_DURATION = 300;
  * narration; the second carries the feature beats and closing card.
  */
 const MUSIC = "assets/music/_samples/sample-track.mp3";
-const MUSIC_SPLIT = 440;
+const MUSIC_SPLIT = 435;
+/** Frames of overlap so the second pass crossfades in rather than cutting. */
+const MUSIC_OVERLAP = 17;
 
 /** Section boundaries, in frames at 30fps. */
 const BRAND_OPEN = { from: 0, duration: 75 };
 const FILM = { from: 75, duration: 222 };
-const STILL_DURATION = 105;
-const STILLS_FROM = 297;
-const CONTACT = { from: STILLS_FROM + STILL_DURATION * 4, duration: 120 };
-
-export const SEA_MONARCH_FILM_DURATION_IN_FRAMES = CONTACT.from + CONTACT.duration;
-
 const STILLS = [
   {
-    src: "assets/stills/611-aerial.png",
-    // This frame's baked caption sits high, so anchor low and crop the top.
-    anchor: "bottom" as const,
-    zoom: [1.3, 1.42] as [number, number],
-    caption: "Direct oceanfront · unobstructed Atlantic views",
-  },
-  {
     src: "assets/stills/611-living.png",
+    // These frames carry the source's own caption along the bottom edge,
+    // so the push is anchored to the top and crops it out of shot.
     anchor: "top" as const,
-    zoom: [1.3, 1.42] as [number, number],
+    zoom: [1.3, 1.44] as [number, number],
     caption: "1,450 square feet · turnkey furnished",
   },
   {
     src: "assets/stills/611-kitchen.png",
     anchor: "top" as const,
-    zoom: [1.3, 1.42] as [number, number],
+    zoom: [1.3, 1.44] as [number, number],
     caption: "Quartz counters · stainless · breakfast bar",
   },
   {
+    // The only frame in the source with no caption burned into it.
     src: PLATE,
     anchor: "center" as const,
-    zoom: [1.04, 1.14] as [number, number],
-    caption: "Impact glass · heated pool · steps to the pier",
+    zoom: [1.04, 1.16] as [number, number],
+    caption: "Direct oceanfront · impact glass · steps to the pier",
   },
 ];
+
+const STILL_DURATION = 140;
+const STILLS_FROM = 297;
+const CONTACT = {
+  from: STILLS_FROM + STILL_DURATION * STILLS.length,
+  duration: 120,
+};
+
+export const SEA_MONARCH_FILM_DURATION_IN_FRAMES = CONTACT.from + CONTACT.duration;
+
 
 const VerticalChrome: React.FC<{ theme: ReturnType<typeof getBrandTheme> }> = ({
   theme,
@@ -197,7 +199,7 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
   return (
     <AbsoluteFill style={{ backgroundColor: theme.colors.background }}>
       {/* Music bed, ducked under the narration so the voice stays clear. */}
-      <Sequence durationInFrames={MUSIC_SPLIT}>
+      <Sequence durationInFrames={MUSIC_SPLIT + MUSIC_OVERLAP}>
         <Audio
           src={staticFile(MUSIC)}
           volume={(f) =>
@@ -210,10 +212,10 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
                 FILM.from + 15,
                 FILM.from + NARRATION_DURATION - 20,
                 FILM.from + NARRATION_DURATION + 20,
-                MUSIC_SPLIT - 20,
                 MUSIC_SPLIT,
+                MUSIC_SPLIT + MUSIC_OVERLAP,
               ],
-              [0, 0.5, 0.5, 0.13, 0.13, 0.5, 0.5, 0.2],
+              [0, 0.5, 0.5, 0.13, 0.13, 0.5, 0.5, 0],
               { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
             )
           }
@@ -230,11 +232,11 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
               f,
               [
                 0,
-                20,
+                MUSIC_OVERLAP,
                 SEA_MONARCH_FILM_DURATION_IN_FRAMES - MUSIC_SPLIT - 45,
                 SEA_MONARCH_FILM_DURATION_IN_FRAMES - MUSIC_SPLIT,
               ],
-              [0.2, 0.5, 0.5, 0],
+              [0, 0.5, 0.5, 0],
               { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
             )
           }
@@ -261,6 +263,7 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
             wordmark="Linda S. Hoyt"
             lines={["Florida real estate expert"]}
             scale={cardScale}
+            wordmarkFontSize={isVertical ? 74 : undefined}
           />
         </SectionFade>
       </Sequence>
@@ -309,6 +312,7 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
           button="Let's connect"
           footnote="lindahoytrealestate.com"
           scale={cardScale}
+          wordmarkFontSize={isVertical ? 74 : undefined}
         />
       </Sequence>
     </AbsoluteFill>
