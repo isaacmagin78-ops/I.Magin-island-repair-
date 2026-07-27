@@ -35,6 +35,9 @@ export type AgentEndCardProps = {
   scale?: number;
 };
 
+/** Length of the opening rack-focus, in frames. */
+const INTRO_FRAMES = 14;
+
 /** Staggered rise-and-fade for each line of the card. */
 const useLineStyle = (delayInFrames: number) => {
   const frame = useCurrentFrame();
@@ -67,17 +70,23 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
   const { fps } = useVideoConfig();
   const portrait = portraitSrc ?? theme.logo;
 
-  // Slow push on the backdrop so the card never sits perfectly still.
-  const plateScale = interpolate(frame, [0, 150], [1.12, 1.2], {
+  // The card opens on the source's own last clean frame, then racks focus
+  // into the backdrop — so the hand-off reads as a camera move rather than
+  // a cut. Everything else waits for the defocus to finish.
+  const intro = interpolate(frame, [0, INTRO_FRAMES], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const plateScale = interpolate(frame, [0, 150], [1.02, 1.14], {
     extrapolateRight: "clamp",
   });
   const portraitSpring = spring({
-    frame,
+    frame: frame - INTRO_FRAMES,
     fps,
     config: { damping: 200, mass: 0.7 },
   });
   const ruleWidth = interpolate(
-    spring({ frame: frame - 14, fps, config: { damping: 200 } }),
+    spring({ frame: frame - INTRO_FRAMES - 14, fps, config: { damping: 200 } }),
     [0, 1],
     [0, 300 * scale],
   );
@@ -91,13 +100,18 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            filter: "blur(26px) brightness(0.34) saturate(0.85)",
+            filter: `blur(${interpolate(intro, [0, 1], [0, 26])}px) brightness(${interpolate(
+              intro,
+              [0, 1],
+              [1, 0.34],
+            )}) saturate(${interpolate(intro, [0, 1], [1, 0.85])})`,
             transform: `scale(${plateScale})`,
           }}
         />
       </AbsoluteFill>
       <AbsoluteFill
         style={{
+          opacity: intro,
           background: `linear-gradient(180deg, ${theme.colors.background}9e, ${theme.colors.background}c7)`,
         }}
       />
@@ -129,7 +143,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             }}
           />
         ) : null}
-        <div style={{ fontSize: 44 * scale, lineHeight: 1.1, ...useLineStyle(6) }}>
+        <div style={{ fontSize: 44 * scale, lineHeight: 1.1, ...useLineStyle(INTRO_FRAMES + 6) }}>
           {agentName}
         </div>
         <div
@@ -140,7 +154,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             textTransform: "uppercase",
             color: theme.colors.primary,
             marginTop: 10 * scale,
-            ...useLineStyle(10),
+            ...useLineStyle(INTRO_FRAMES + 10),
           }}
         >
           {brokerage}
@@ -157,7 +171,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
           style={{
             fontSize: 27 * scale,
             color: theme.colors.accent,
-            ...useLineStyle(20),
+            ...useLineStyle(INTRO_FRAMES + 20),
           }}
         >
           {addressLine}
@@ -167,7 +181,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             fontSize: 31 * scale,
             color: theme.colors.primary,
             marginTop: 8 * scale,
-            ...useLineStyle(25),
+            ...useLineStyle(INTRO_FRAMES + 25),
           }}
         >
           {price}
@@ -178,7 +192,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             fontSize: 23 * scale,
             letterSpacing: "0.04em",
             marginTop: 22 * scale,
-            ...useLineStyle(32),
+            ...useLineStyle(INTRO_FRAMES + 32),
           }}
         >
           {phone}
@@ -191,7 +205,7 @@ export const AgentEndCard: React.FC<AgentEndCardProps> = ({
             textTransform: "uppercase",
             color: theme.colors.textMuted,
             marginTop: 10 * scale,
-            ...useLineStyle(38),
+            ...useLineStyle(INTRO_FRAMES + 38),
           }}
         >
           {cta}

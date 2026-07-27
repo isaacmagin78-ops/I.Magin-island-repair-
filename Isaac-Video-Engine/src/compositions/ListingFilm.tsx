@@ -187,8 +187,10 @@ const SEA_MONARCH_611_BASE = {
   brandId: "luxury-coastal",
   videoSrc: "assets/videos/sea-monarch-611-source.mp4",
   plateSrc: "assets/plate-611.png",
-  // Source footage is clean through ~6.9s; its own closing card is not.
-  endCardStartFrame: 207,
+  // The bedroom scene plays out in full and the sunset lands clean at
+  // 7.40s; the source's own garbled end card ghosts in from ~7.47s, so
+  // the hand-off happens exactly on that scene change.
+  endCardStartFrame: 222,
   agentName: "Linda S. Hoyt",
   brokerage: "ONE Sotheby's International Realty",
   addressLine: "111 N Pompano Beach Blvd · Unit 611",
@@ -210,5 +212,8 @@ export const SEA_MONARCH_611_VERTICAL_PROPS: ListingFilmProps = {
   orientation: "vertical",
 };
 
-/** 10s of source footage plus a 2.5s hold on the end card, at 30fps. */
-export const SEA_MONARCH_611_DURATION_IN_FRAMES = 375;
+/**
+ * 7.4s of source footage, then a 3.6s end card — ending at 11s, just past
+ * where the source's music resolves on its own at 10s.
+ */
+export const SEA_MONARCH_611_DURATION_IN_FRAMES = 330;
