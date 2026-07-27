@@ -22,6 +22,10 @@ import {
 import { listSocialPresets } from "./presets/social";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
 import {
+  SeaMonarchFilm,
+  SEA_MONARCH_FILM_DURATION_IN_FRAMES,
+} from "./compositions/SeaMonarchFilm";
+import {
   ListingFilm,
   SEA_MONARCH_611_DURATION_IN_FRAMES,
   SEA_MONARCH_611_PROPS,
@@ -106,6 +110,24 @@ export const MyComposition = () => {
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
         defaultProps={SEA_MONARCH_611_VERTICAL_PROPS}
+      />
+      <Composition
+        id="SeaMonarchFilm"
+        component={SeaMonarchFilm}
+        durationInFrames={SEA_MONARCH_FILM_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ orientation: "landscape" as const }}
+      />
+      <Composition
+        id="SeaMonarchFilmVertical"
+        component={SeaMonarchFilm}
+        durationInFrames={SEA_MONARCH_FILM_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={{ orientation: "vertical" as const }}
       />
     </>
   );

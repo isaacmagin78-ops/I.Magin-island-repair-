@@ -52,6 +52,21 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/tysons-picks.png",
     watermarkText: "Tyson's Picks",
   },
+  "linda-hoyt": {
+    id: "linda-hoyt",
+    displayName: "Linda S. Hoyt",
+    colors: {
+      background: "#f2efe9",
+      primary: "#a2968a",
+      secondary: "#6e6459",
+      accent: "#2a2723",
+      text: "#2a2723",
+      textMuted: "#8a8177",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/agents/linda-hoyt.jpg",
+    watermarkText: "Linda S. Hoyt",
+  },
   "luxury-coastal": {
     id: "luxury-coastal",
     displayName: "Luxury Coastal Listings",
