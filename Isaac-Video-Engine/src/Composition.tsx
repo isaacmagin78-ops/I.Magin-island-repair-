@@ -25,6 +25,7 @@ import {
   ListingFilm,
   SEA_MONARCH_611_DURATION_IN_FRAMES,
   SEA_MONARCH_611_PROPS,
+  SEA_MONARCH_611_VERTICAL_PROPS,
 } from "./compositions/ListingFilm";
 
 export const VIDEO_FPS = 30;
@@ -96,6 +97,15 @@ export const MyComposition = () => {
         width={1280}
         height={720}
         defaultProps={SEA_MONARCH_611_PROPS}
+      />
+      <Composition
+        id="SeaMonarch611Vertical"
+        component={ListingFilm}
+        durationInFrames={SEA_MONARCH_611_DURATION_IN_FRAMES}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={SEA_MONARCH_611_VERTICAL_PROPS}
       />
     </>
   );
