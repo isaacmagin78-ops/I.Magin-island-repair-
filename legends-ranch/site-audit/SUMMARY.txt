@@ -1,0 +1,25 @@
+LEGENDS RANCH WEBSITE — WHERE THINGS STAND (July 24, 2026)
+
+- We found the real problem. The homepage spot that promises the
+  five-minute Legends Ranch film ("Watch the brand anthem, then call
+  the ranch") is playing the WRONG video — a generic Vimeo sample clip
+  of hands doing crafts, with a purple "vimeo" logo on it. Not ranch
+  footage. Screenshots prove it.
+
+- The good news: the video player itself is fine, and the Presidential
+  Hunt film elsewhere on the site plays correctly. Only the anthem spot
+  has the wrong film plugged in. This is a small, cheap fix.
+
+- The fix: the website company (Fish and Hunt USA) needs to swap the
+  wrong video for the real five-minute ranch film. If that film was
+  never uploaded to the ranch's Vimeo account, they need the master
+  copy from the ranch or the videographer first.
+
+- Still untested: whether the contact form actually delivers messages
+  to the ranch's email. This remains the most important remaining
+  check, and it needs your OK because the test sends one clearly
+  labeled fake message.
+
+- Next step: send FIX-INSTRUCTIONS.md to Fish and Hunt USA. The exact
+  steps for the video swap are in section 1-B, with the screenshots as
+  proof.
