@@ -91,7 +91,8 @@ export type SocialPresetName =
   | "facebook-reels"
   | "youtube-shorts"
   | "square-post"
-  | "story";
+  | "story"
+  | "widescreen";
 
 export type SocialPreset = {
   name: SocialPresetName;
