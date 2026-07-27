@@ -35,6 +35,23 @@ export type SeaMonarchFilmProps = {
 
 const BRAND_ID = "linda-hoyt";
 const PLATE = "assets/stills/611-sunset.png";
+const SOURCE = "assets/videos/sea-monarch-611-source.mp4";
+
+/**
+ * The source's narration runs the full 10s, past where its picture stops
+ * being usable at 7.4s — so its audio is mounted separately and keeps
+ * playing under the first feature beat, letting the voiceover finish its
+ * sentence instead of being cut off with the picture.
+ */
+const NARRATION_DURATION = 300;
+
+/**
+ * The music bed is shorter than the film, so it is mounted twice rather
+ * than relying on looping playback. The first pass ducks under the
+ * narration; the second carries the feature beats and closing card.
+ */
+const MUSIC = "assets/music/_samples/sample-track.mp3";
+const MUSIC_SPLIT = 440;
 
 /** Section boundaries, in frames at 30fps. */
 const BRAND_OPEN = { from: 0, duration: 75 };
@@ -130,7 +147,7 @@ const FilmSection: React.FC<{
 
   const video = (
     <OffthreadVideo
-      src={staticFile("assets/videos/sea-monarch-611-source.mp4")}
+      src={staticFile(SOURCE)}
       muted
       style={{
         width: "100%",
@@ -149,7 +166,7 @@ const FilmSection: React.FC<{
     <AbsoluteFill style={{ backgroundColor: theme.colors.background }}>
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <OffthreadVideo
-          src={staticFile("assets/videos/sea-monarch-611-source.mp4")}
+          src={staticFile(SOURCE)}
           muted
           style={{
             width: "100%",
@@ -179,23 +196,62 @@ export const SeaMonarchFilm: React.FC<SeaMonarchFilmProps> = ({ orientation }) =
 
   return (
     <AbsoluteFill style={{ backgroundColor: theme.colors.background }}>
-      <Audio
-        src={staticFile("assets/music/_samples/sample-track.mp3")}
-        loop
-        volume={(f) =>
-          interpolate(
-            f,
-            [
-              0,
-              30,
-              SEA_MONARCH_FILM_DURATION_IN_FRAMES - 45,
-              SEA_MONARCH_FILM_DURATION_IN_FRAMES,
-            ],
-            [0, 0.6, 0.6, 0],
-            { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
-          )
-        }
-      />
+      {/* Music bed, ducked under the narration so the voice stays clear. */}
+      <Sequence durationInFrames={MUSIC_SPLIT}>
+        <Audio
+          src={staticFile(MUSIC)}
+          volume={(f) =>
+            interpolate(
+              f,
+              [
+                0,
+                25,
+                FILM.from - 5,
+                FILM.from + 15,
+                FILM.from + NARRATION_DURATION - 20,
+                FILM.from + NARRATION_DURATION + 20,
+                MUSIC_SPLIT - 20,
+                MUSIC_SPLIT,
+              ],
+              [0, 0.5, 0.5, 0.13, 0.13, 0.5, 0.5, 0.2],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+            )
+          }
+        />
+      </Sequence>
+      <Sequence
+        from={MUSIC_SPLIT}
+        durationInFrames={SEA_MONARCH_FILM_DURATION_IN_FRAMES - MUSIC_SPLIT}
+      >
+        <Audio
+          src={staticFile(MUSIC)}
+          volume={(f) =>
+            interpolate(
+              f,
+              [
+                0,
+                20,
+                SEA_MONARCH_FILM_DURATION_IN_FRAMES - MUSIC_SPLIT - 45,
+                SEA_MONARCH_FILM_DURATION_IN_FRAMES - MUSIC_SPLIT,
+              ],
+              [0.2, 0.5, 0.5, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+            )
+          }
+        />
+      </Sequence>
+
+      <Sequence from={FILM.from} durationInFrames={NARRATION_DURATION}>
+        <Audio
+          src={staticFile(SOURCE)}
+          volume={(f) =>
+            interpolate(f, [0, 6, NARRATION_DURATION - 12, NARRATION_DURATION], [0, 1, 1, 0], {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+            })
+          }
+        />
+      </Sequence>
 
       <Sequence from={BRAND_OPEN.from} durationInFrames={BRAND_OPEN.duration}>
         <SectionFade durationInFrames={BRAND_OPEN.duration}>
