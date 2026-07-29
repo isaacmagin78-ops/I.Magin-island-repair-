@@ -67,6 +67,31 @@ Root cause was **private Drive sharing**, not file size. Isaac set all three to 
 File IDs: ASMR `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT` · IMG_1719 `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz` · IMG_3457 `1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`.
 Prevention rule is now in CLAUDE.md — always verify media is publicly readable BEFORE posting.
 
+## VERIFIED LIVE 2026-07-29 (supersedes the queue figures above)
+
+Checked directly with `blotato_list_schedules`. **6 posts scheduled, queue runs
+out after Jul 31 23:00Z** — not Jul 30 as stated above.
+
+| When (UTC) | Channel | Post |
+|---|---|---|
+| Jul 29 16:00 | Instagram | "10-minute walk" reel |
+| Jul 29 23:00 | Threads | "10-minute walk" |
+| Jul 30 16:00 | Instagram | "60lb vs 2lb kitten" reel |
+| Jul 30 23:00 | YouTube | "Caged 2 years / walk takes an hour" |
+| Jul 31 16:00 | Instagram | "returned once, now runs this condo" |
+| Jul 31 23:00 | Instagram | "doghouse to penthouse" |
+
+All six carry the Kit link and the Amazon disclosure. All are within the IG
+5-hashtag limit.
+
+**Gap: TikTok has zero posts queued.** @tysons_time (49211) is connected and
+working; it is simply being skipped. Instagram is correctly getting the bulk,
+but TikTok costs nothing to cross-post to.
+
+**Standing rule reaffirmed:** always run `blotato_list_schedules` before saying
+anything about the queue. This section exists because the figures above were
+two days stale and would have sent a session refilling a queue that was fine.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
 1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
