@@ -1,0 +1,44 @@
+{
+  "slug": "111-pompano-beach-611",
+  "address": "111 N Pompano Beach Blvd, Unit 611",
+  "neighborhood": "The Sea Monarch",
+  "city": "Pompano Beach",
+  "state": "FL",
+  "price": "$775,000",
+  "beds": 2,
+  "baths": 2,
+  "sqft": "1,450",
+  "lotOrWaterfrontage": "Direct oceanfront with private Atlantic-view balcony",
+  "yearBuiltOrRenovated": "Completely renovated, sold fully furnished",
+  "headlineFeature": "Turnkey oceanfront living — completely renovated, fully furnished, with unobstructed Atlantic views",
+  "features": [
+    "Large private balcony with unobstructed ocean views over the Atlantic",
+    "Completely renovated and offered fully furnished — true move-in ready",
+    "Open kitchen with quartz counters, stainless appliances, and breakfast bar",
+    "Split-bedroom plan with impact glass throughout and in-unit laundry",
+    "Sea Monarch resort amenities: oversized heated pool, fitness center, pet-friendly",
+    "Steps to the beach, Pompano pier, waterfront dining, shopping, and entertainment",
+    "Also available furnished at $4,000/month (MLS B26051222)"
+  ],
+  "lifestyle": "Coffee on the balcony as the sun comes up over the Atlantic, toes in the sand two minutes later — the Pompano Beach pier and waterfront restaurants an easy stroll away.",
+  "listingUrl": "https://lindahoytrealestate.com/properties/111-n-pompano-beach-boulevard-unit-611-pompano-beach-fl-us-33062-b26053249",
+  "agentProfile": "linda-hoyt",
+  "brand": "luxury-coastal",
+  "openHouse": {
+    "date": "[CONFIRM DATE — held late June 2026]",
+    "time": "[CONFIRM TIME]",
+    "isPast": true
+  },
+  "provenance": {
+    "status": "ACTIVE for sale ($775,000, MLS B26053249) and for rent ($4,000/mo, MLS B26051222) as of 2026-07-25",
+    "mls": "B26053249 (sale) / B26051222 (rental)",
+    "listedBy": "Linda S. Hoyt, ONE Sotheby's International Realty — this IS the profiled agent's own listing",
+    "sources": [
+      "https://lindahoytrealestate.com/properties/111-n-pompano-beach-boulevard-unit-611-pompano-beach-fl-us-33062-b26053249",
+      "https://www.propertypanorama.com/111-N-Pompano-Beach-Boulevard-Unit-611-Pompano-Beach-FL-33062--B26053249/unbranded",
+      "https://www.coldwellbanker.com/fl/pompano-beach/111-n-pompano-beach-blvd-apt-611/lid-P00800000HECURm5dYoqVt4HRV3Hh96O1xmpSeeV",
+      "https://www.redfin.com/FL/Pompano-Beach/111-N-Pompano-Beach-Blvd-33062/unit-611/home/41528053"
+    ],
+    "note": "Real listing, really listed by Linda S. Hoyt (Isaac's sister) — this package is the demo being shown to her to pitch the content system for her listings. Fill in the actual open-house date/time and attendance numbers from her before publishing the recap; she has final say on all assets under her name."
+  }
+}
