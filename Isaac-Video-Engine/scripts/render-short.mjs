@@ -147,8 +147,11 @@ function buildCaptionsFromScript(totalDurationInFrames) {
   const totalDurationMs = (totalDurationInFrames / FPS) * 1000;
   const perWordMs = totalDurationMs / words.length;
 
+  // Leading space is the page-break signal for @remotion/captions'
+  // createTikTokStyleCaptions (Whisper token convention) — with a trailing
+  // space instead, every word merges into one giant page.
   return words.map((word, index) => ({
-    text: `${word} `,
+    text: index === 0 ? word : ` ${word}`,
     startMs: Math.round(index * perWordMs),
     endMs: Math.round((index + 1) * perWordMs),
     timestampMs: null,

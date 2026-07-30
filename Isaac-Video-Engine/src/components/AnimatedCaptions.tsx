@@ -64,7 +64,15 @@ export const AnimatedCaptions: React.FC<Props> = ({
         if (durationInFrames <= 0) return null;
 
         return (
-          <Sequence key={page.startMs} from={startFrame} durationInFrames={durationInFrames}>
+          <Sequence
+            key={page.startMs}
+            from={startFrame}
+            durationInFrames={durationInFrames}
+            // layout="none" so the page is placed by the flex container above
+            // (position prop) instead of Sequence's default absolute fill,
+            // which pins every page to the top-left.
+            layout="none"
+          >
             <CaptionPage page={page} theme={theme} fontSize={fontSize} />
           </Sequence>
         );
