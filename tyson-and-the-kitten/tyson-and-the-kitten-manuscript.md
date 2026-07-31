@@ -1,17 +1,15 @@
-# Positively Tyson
-## Tyson and the Kitten
-### Master Manuscript + Illustration Guide — adapted from *Positively Negbaum* ("Good, Better, Best" master draft)
+# Tyson and the Kitten
+### Master Manuscript + Illustration Guide
 
-**Canon spine (carried over from Book #1):**
-Tyson is judged by his name and his breed before anyone asks who he is. The Grumble Pack tries to drag him into "Who's Got It Worse?" The meanest voice ends up inside his own head. Miss the Kitten helps him get quiet enough to hear Walker. Walker teaches him that choices shape fate, not a name. Tyson flips the game to "Good, Better, Best" and reclaims his name. Miss's fearlessness is seeded as both strength and limitation (her Happy-the-Clam role), saved for Book #2.
+**Story spine:**
+Tyson is judged by his name and his breed before anyone asks who he is. The Grumble Pack tries to drag him into "Who's Got It Worse?" The meanest voice ends up inside his own head. Miss the Kitten helps him get quiet enough to hear Walker. Walker teaches him that choices shape fate, not a name. Tyson flips the game to "Good, Better, Best" and reclaims his name. Miss's fearlessness is seeded as both strength and limitation — her own book comes next.
 
 ---
 
 ## Title Page
 
 **Text**
-POSITIVELY TYSON
-*Tyson and the Kitten*
+TYSON AND THE KITTEN
 
 **Illustration**
 Tyson front and center — a big, blocky, soft-eyed pit bull with a goofy grin — and Miss, a tiny kitten, standing on top of his head like she owns him. Warm backyard light. Behind them: a fence line, a big oak, and far off, an old dog's silhouette watching kindly.
@@ -950,7 +948,7 @@ Children may inherit labels, reputations, fears, and language from family, breed
 
 ## Series Notes
 
-**Locked by this draft:**
+**Locked by this book:**
 - Tyson is judged by name + breed; the real root problem is the voice inside his own head.
 - Walker tries first; Tyson can't hear him until Miss helps him get quiet.
 - Miss's quiet place is the purr; Tyson can't copy it and learns his own version (breathe, let thought-birds pass).
