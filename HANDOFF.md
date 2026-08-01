@@ -6,6 +6,7 @@
 
 - **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
 - **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
+- **Concierge Systems** (new 2026-08-01): `concierge-systems/` — collection inventory CSV, renovation dashboard CSV (Island Club PH3 + Boca 503), `concierge_tools.py` triage/listing script, and `PRODUCT-PILOT.md` (The Collection Record offer). Sample data is placeholder and needs Isaac's real numbers.
 
 ## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
 
@@ -105,4 +106,5 @@ two days stale and would have sent a session refilling a queue that was fine.
 
 ## Session log
 
+- **2026-08-01**: Built `concierge-systems/` — inventory schema (12 fields, `emotional_tag` checked first in triage so "keep" items can never surface a sale action), two-project renovation dashboard with a `load_level` column, a stdlib-only Python tool that derives next actions and drafts listings, and the Collection Record pilot offer. Verified the script against all 10 sample rows. **Open item for Isaac:** the CSVs carry realistic placeholders, not real budgets, vendors or items — replace before showing anyone.
 - **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
