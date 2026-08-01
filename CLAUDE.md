@@ -53,10 +53,13 @@ Read this first, then `HANDOFF.md`.
 The canonical life and business context is `Master_Context` in Google Drive
 (Isaac OS), not this repo.
 
-**Unresolved as of 2026-08-01:** three `Master_Context` documents exist across
-three separate `Isaac OS` root folders. The 4,590-byte version is the only
-complete one; another is an unfilled template sitting in the same folder under
-the same name. Isaac has not yet designated which is canonical — do not assume,
-and do not read one and treat it as authoritative without checking the size.
+**Canonical document, designated by Isaac 2026-08-01:**
+Drive file ID `1DjQ4GYy4e1Q-D5F_AlT5sZkg8fA-Sya1mZjCFfnpoNo` — the 4,590-byte
+version. Check the ID, not the title.
+
+Two other documents named `Master_Context` still exist in Drive, one of them an
+unfilled template sitting in the same folder under the same name. They are
+superseded. Do not read a `Master_Context` by title and assume it is the right
+one; a title search returns all three.
 
 Do not copy Master_Context into this repo. A fourth copy makes it worse.
