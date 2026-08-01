@@ -29,6 +29,17 @@ Read this first, then `HANDOFF.md`.
 - Recovery, food and stability outrank the business concept. His rule, not a
   suggestion — hold it even when he is pushing to go faster.
 
+## How Isaac takes in information
+
+- **Numbered lists do not work.** He has said so directly. Do not organize by
+  number and never refer back to "item 3" — he has to hold the number and map
+  it to a thing, and it drops.
+- Give things **names, position and colour** instead. Group them. Show state
+  visually. A published artifact beats a described plan.
+- One idea per paragraph, short lines, phone width.
+- When there is something to look at, build it and send the link rather than
+  writing about what it would contain.
+
 ## Repo conventions
 
 - Read `HANDOFF.md` before starting; update it before finishing.
