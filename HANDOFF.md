@@ -92,10 +92,32 @@ but TikTok costs nothing to cross-post to.
 anything about the queue. This section exists because the figures above were
 two days stale and would have sent a session refilling a queue that was fine.
 
+## Clip licensing — constraints are binding, see CLIP-LICENSING.md
+
+Ike set hard rules for submitting footage to ViralHog / Jukin / similar.
+**Read `CLIP-LICENSING.md` before packaging or pitching any clip.** Summary:
+non-exclusive only (agencies can takedown Ike's own reposts), never submit the
+rescue-story lane (it carries the offer at 9.35 subs/1k), unpublished clips only,
+clean music rights only.
+
+Screened live 2026-08-02: **nothing is currently clearable.** The entire described
+library is published (full Blotato history 2026-07-06→08-03 cross-checked against
+the two Drive planning docs). The only Rule-3-eligible pool is ~80 undescribed raw
+files in Drive `Ike's iPad Pro` (`1cr6vkOoEL1hDpx_w5A-CwoITNcUDXZNH`), blocked on
+Ike supplying Gemini descriptions + per-clip published/unpublished calls.
+
+Treat licensing as a free lottery ticket. **Do not build a forecast on it** — the
+$75 payout floor means gross profit received must exceed ~$150 before anything is
+owed, then 75+ days to pay.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
 1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
 2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
+3. **Clip licensing inputs** — Gemini descriptions for the `Ike's iPad Pro` raw batch,
+   plus per-clip published/unpublished confirmation (including native in-app posts
+   Blotato never recorded) and a background-music call per candidate. Nothing can be
+   submitted until these land. See `CLIP-LICENSING.md` §6.
 
 ## Next steps
 
