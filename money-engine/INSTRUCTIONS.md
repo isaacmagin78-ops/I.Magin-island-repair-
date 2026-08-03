@@ -16,8 +16,25 @@ Unless I say otherwise, assume:
 - **Cash budget:** ≤ $200 to first dollar.
 - **Product type:** digital product or AI-powered service. No inventory, no shipping, no employees, no licensing.
 - **Market:** global. Ignore my location unless the offer is location-bound.
-- **My assets:** AI automation, real estate marketing, content creation, existing platform accounts.
-  > **Fill this line in with real handles and real numbers.** "Existing platform accounts" is not something a plan can be built on. "@handle — 4.2k followers, reels average 2,200 views, best channel by 10x" is. Until this is specific, every traffic section is guesswork.
+- **My assets:** AI automation, real estate marketing, content creation, and the live distribution below.
+
+### My real distribution
+
+Use these by name in section 6. Reach figures are per-post, verified 2026-07-29 — re-check before any plan leans on them.
+
+| Channel | Handle | Reach per post | Notes |
+|---|---|---|---|
+| Instagram | `@tysonstime` | ~2,200 views / 1,500 reach | **Best channel by ~10x. Every plan posts here.** Hard limit: 5 hashtags. |
+| TikTok | `@tysons_time` | 42–275 views | Connected and working, costs nothing to cross-post, historically skipped. |
+| YouTube | Tyson's Time | ~234 views | Needs title + privacy status + notify-subscribers set. |
+| Threads | `@tysonstravels_rescuepitslife` | working, unmeasured | — |
+| Facebook | — | **dark** | No Page linked. Do not plan around it until that changes. |
+
+- **Scheduling:** Blotato, all channels connected. Media must live in Blotato storage — Google Drive URLs never work as post media.
+- **Live offer:** First 30 Days Kit, $19 — sales page `tysons-time-kit.vercel.app`, Stripe link `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`. A proven paid offer already exists; prefer attaching to it over standing up new payment rails.
+- **Amazon Associates:** active, requires its disclosure in every caption.
+- **Also live:** `college-launch-os.vercel.app` (college-prep app), a South Florida home-concierge site, and a Remotion-based branded video engine that can render assets on demand.
+- **Known gap:** link-in-bio is unverified. Any plan whose call to action is "link in bio" must first confirm the link is actually there, or the traffic goes nowhere.
 - **Definition of done:** a stranger can pay and receive the product while I am asleep. Both halves — payment *and* delivery — run without me.
 
 ## Non-negotiables
