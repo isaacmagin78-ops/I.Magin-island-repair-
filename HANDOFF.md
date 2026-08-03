@@ -105,4 +105,5 @@ two days stale and would have sent a session refilling a queue that was fine.
 
 ## Session log
 
+- **2026-08-03**: Added `money-engine/INSTRUCTIONS.md` — canonical copy of the 12-Hour Money Engine project instructions (role, standing assumptions, 7 behavior rules, 12-section output contract, `/engine` `/repeat` `/assets` `/scale` commands). Repo copy is the source of truth; re-paste into the Claude project after any edit. The Amazon monetization stack file it references is not in this repo and must be uploaded to the Claude project directly.
 - **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.

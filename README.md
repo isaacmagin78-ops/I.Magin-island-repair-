@@ -9,9 +9,11 @@ Master workspace context lives in the `imagin-concierge` repo (`CLAUDE.md` there
 | `college-launch-os/` | Family college-prep app — synced to the live build at https://college-launch-os.vercel.app | Digital products |
 | `isaac-video-engine/` | Remotion-based branded video production engine (own CLAUDE.md + skills inside) | Shared tool |
 | `legends-ranch/` | Legends Ranch project: finished films in `deliverables/`, existing-site audit in `site-audit/` | Legends Ranch (with Arturo, Mom, Bobby) |
+| `money-engine/` | Standing rules for the 12-Hour Money Engine Claude project (`INSTRUCTIONS.md`, paste-ready) | Digital products |
 
 ## Notes
 
 - The live College Launch site is deployed by direct upload to Vercel — it is NOT auto-deployed from this repo. `college-launch-os/` matches the live streamlined build (the richer pre-sync version is preserved in git history on `main` before the 2026-07-27 reorg).
 - Legends Ranch videos render from `isaac-video-engine/` (legends-ranch theme, LegendsAnthem composition). Finished MP4s live in `legends-ranch/deliverables/`.
 - This repo's name (`I.Magin-island-repair-`) is historical; the handyman lead-capture app it references was never built here.
+- `money-engine/INSTRUCTIONS.md` is the canonical copy of the project instructions — edit it here, then re-paste into the Claude project's Instructions field. Its "Reference files" section points at an Amazon monetization stack file that is **not** in this repo; it must be uploaded to the Claude project itself for any Amazon-based engine.
