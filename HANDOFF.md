@@ -92,17 +92,93 @@ but TikTok costs nothing to cross-post to.
 anything about the queue. This section exists because the figures above were
 two days stale and would have sent a session refilling a queue that was fine.
 
+## VERIFIED LIVE 2026-08-04 01:08Z (supersedes everything above)
+
+Checked with `blotato_list_schedules`, `blotato_list_posts`, `blotato_list_accounts`,
+`blotato_get_credits`, and direct fetches of all four Vercel surfaces.
+
+### Queue — 8 scheduled, runs dry after Aug 5 23:00Z
+
+| When (UTC) | Channel | Post | Kit link |
+|---|---|---|---|
+| Aug 4 17:00 | TikTok | "she pretends she doesn't live in HIS house" | ❌ missing |
+| Aug 4 21:00 | Instagram | "Episode 1: The takeover begins" | ✅ first comment |
+| Aug 4 22:30 | Threads | "giant potatoes" / manatees | ❌ missing |
+| Aug 4 23:00 | YouTube | "60 lbs of Muscle vs 2 lbs of Pure Attitude" | ✅ |
+| Aug 5 17:00 | TikTok | "60lbs vs 2lbs… and he LOST" | ❌ missing |
+| Aug 5 21:00 | Instagram | "From a shelter kennel to… everywhere" | ✅ first comment |
+| Aug 5 22:30 | Threads | "aggressive breed lists" (text only) | ❌ missing |
+| Aug 5 23:00 | YouTube | "Dad Said She Was Only Staying One Night" | ✅ |
+
+**Regression: 4 of 8 dropped monetization.** Both TikToks and both Threads posts
+carry no Kit link and no Amazon disclosure. The Jul 31 posts on those same
+channels carried both. Standing rule is that monetization appears in every caption.
+
+**Instagram went dark Aug 1 and Aug 2.** Those two days were TikTok-only, one post
+each — the exact failure mode this file names as "the single biggest miss." Fixed
+from Aug 3 onward (clean four-channel rotation). Watch for it recurring.
+
+Published Jul 28 → Aug 3: 20 posts, no dark days. Blotato credits: 2,640.
+
+### Resolved since the Jul 29 entry
+
+- **TikTok gap closed** — was zero-queued; now publishing daily with 2 more scheduled.
+- **Amazon storefront link received and live** — `tysons-links.vercel.app` carries the
+  real affiliate storefront (`tag=tysonspicks-20`) plus the required disclosure.
+  Blocked item #2 below is therefore half-resolved.
+
+### Money surfaces — all 200, all verified live Aug 4
+
+| URL | Sells | Note |
+|---|---|---|
+| `tysons-time-kit.vercel.app` | Kit $19, Stripe live | canonical sales page |
+| `tysons-links.vercel.app` | Kit + Amazon gear picks | has disclosure |
+| `tysons-time-hub.vercel.app` | **$5/mo stream subscription** + Kit | no Amazon links |
+| `tysons-kit-link.vercel.app` | 302 → Stripe | used with `?s=` tracking |
+
+**The $5/month stream subscription is a revenue line this file never recorded**
+(Stripe `dRmdR90uX8tPgN84dIg7e01`). Same for the TikTok live streams. They went
+live without being written down.
+
+**Two competing link-in-bio pages now exist** with different offers. No tool can read
+a social bio, so which one followers actually land on is unknown — and whichever it
+is, they see only half the offers. Needs Isaac to say which is in the bios.
+
+**Neither `tysons-links` nor `tysons-time-hub` has source in this repo.** They exist
+only as Vercel deployments — no version history, nothing to rebuild from. Pull them
+down and commit them alongside `kit-site/`.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
-1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
+1. **Facebook Page not linked** in Blotato → Accounts. Re-verified 2026-08-04:
+   account 43069 is connected but `subaccounts` is still empty, so the API cannot
+   post at all. Zero FB posts ever; whole channel dark, 9 days unchanged.
+2. **Which link-in-bio page is actually in the bios** — `tysons-links` or
+   `tysons-time-hub`? No tool can read or edit social bios. Until Isaac says,
+   every "link in bio" CTA points somewhere unverifiable. (The Amazon half of
+   this item is now resolved — the storefront link came through and is live.)
 
 ## Next steps
 
-- Claude: after Jul 30, refill the queue (check `blotato_list_schedules` — never let it hit 0). Post the 3 Drive videos once uploaded. Open Facebook once the Page is linked.
+- **Refill the queue before Aug 5 23:00Z** — it is empty after that. Always run
+  `blotato_list_schedules` first.
+- Rewrite the 4 queued TikTok/Threads captions to carry the Kit link before they fire.
+- Commit the two link-page sources into this repo so they're recoverable.
+- Legends Ranch: the homepage Vimeo-placeholder defect is still live 11 days on.
+  The replacement anthem film has been ready in `legends-ranch/deliverables/`
+  since Jul 24 — chase Fish and Hunt USA's developer or send them the file.
 - Rule: **verify with live tool checks before telling Isaac anything is broken or asking him to act.**
 - Rule: lead with the single best recommendation; ship first, report with live URLs.
+- Rule: **update this file before finishing.** It sat 6 days stale and was wrong on
+  three counts (queue state, TikTok gap, Amazon link) — a session trusting it would
+  have chased two non-problems and missed the real one.
 
 ## Session log
 
 - **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
+- **2026-08-04**: Status-update pass. Verified the whole workspace live rather than
+  from this file. Found the queue healthy but expiring Aug 5, monetization dropped
+  from 4 of 8 queued posts, Instagram dark Aug 1–2, a $5/mo revenue line nobody had
+  recorded, and two competing link-in-bio pages with no source in the repo. Confirmed
+  Facebook still blocked and Legends Ranch still unfixed. Nothing was published or
+  scheduled this session — read-only audit plus this file and the README.
