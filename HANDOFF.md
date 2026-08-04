@@ -92,10 +92,45 @@ but TikTok costs nothing to cross-post to.
 anything about the queue. This section exists because the figures above were
 two days stale and would have sent a session refilling a queue that was fine.
 
+## Amazon 2026-08-04 — Seller Central approved, but it's the wrong account
+
+Isaac sent the "You're approved to list on Amazon" Seller Central email. Researched and
+planned in `amazon/AMAZON-MONEY-PLAN.md` + `amazon/KDP-LISTING-COPY.md`.
+
+**The key finding: Seller Central sells physical products only.** The $19 First 30 Days
+Kit PDF cannot be listed there. The account that sells it is **KDP** — free, separate
+signup, and where every dollar of this plan comes from.
+
+Verified economics (live-checked 2026-08-04):
+
+| Channel | Price | We keep |
+|---|---|---|
+| Direct Stripe (today) | $19 | **$18.15** |
+| KDP paperback ~100pp | $14.99 | $6.69 |
+| KDP Kindle | $6.99 | ~$4.68 |
+| Associates, pet supplies | — | **3%** |
+
+- **Amazon is customer acquisition, not margin** — a direct sale is worth 2.7× a
+  paperback. The point is Amazon's search traffic, which we don't have to go find.
+- **KDP print cost is flat $2.30 for 24–108 pages.** Going 24 → ~100 pages is free.
+  Build the big version.
+- **Do NOT enroll in KDP Select** — it demands digital exclusivity and we already sell
+  the same content as a $19 PDF. Paperback is never exclusive; ship that.
+- **Associates at 3% is not a revenue line.** $100/mo needs $3,333 in tracked sales.
+  Stop treating it as a monetization pillar in captions; the Kit link does the work.
+
+Blocker: manuscript is 15 pages, KDP minimum is 24 and must be even. Expansion to ~100
+pages + print-ready render is Claude's next job, gated on the KDP account existing.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
-1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
+1. **Amazon Seller Central plan — possibly bleeding $39.99/month.** If signup put us on
+   Professional, that's $480/yr for an account with zero listings. Check Settings →
+   Account Info → Manage Selling Plan, switch to Individual. Fastest money move we have.
+2. **KDP account does not exist.** Free signup at kdp.amazon.com. Nothing can be
+   uploaded until it does — this gates the entire Amazon plan.
+3. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
+4. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
 
 ## Next steps
 
