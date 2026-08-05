@@ -6,6 +6,7 @@
  * reusable across Tyson's Time, Tyson's Picks, IMagin Concierge, and any
  * future brand.
  */
+import { FONT_STACKS } from "../lib/fonts";
 import type { BrandTheme } from "../lib/types";
 
 export const BRAND_THEMES: Record<string, BrandTheme> = {
@@ -36,6 +37,22 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     fontFamily: "'Helvetica Neue', Arial, sans-serif",
     logo: "assets/logos/tysons-time.png",
     watermarkText: "Tyson's Time",
+  },
+  "miss-ts": {
+    id: "miss-ts",
+    displayName: "Miss T's",
+    colors: {
+      background: "#0d0b09",
+      primary: "#d8b56d", // champagne gold — rules, wordmark accents
+      secondary: "#9c8a6a",
+      accent: "#f4ead6", // warm cream
+      text: "#fbf7ef",
+      textMuted: "#c6b393",
+    },
+    fontFamily: FONT_STACKS.serifDisplay,
+    accentFontFamily: FONT_STACKS.sansText,
+    impactFontFamily: FONT_STACKS.sansImpact,
+    watermarkText: "Miss T's",
   },
   "tysons-picks": {
     id: "tysons-picks",

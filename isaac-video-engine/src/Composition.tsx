@@ -21,6 +21,13 @@ import {
 } from "./compositions/SocialPresetPreview";
 import { listSocialPresets } from "./presets/social";
 import { TysonVsMiss, TYSON_VS_MISS_DURATION } from "./compositions/TysonVsMiss";
+import { MissTsFineDining, MISS_TS_DURATION } from "./compositions/MissTsFineDining";
+import {
+  MissTsPoster,
+  MISS_TS_POSTER_DURATION,
+  MISS_TS_POSTER_HEIGHT,
+  MISS_TS_POSTER_WIDTH,
+} from "./compositions/MissTsPoster";
 import { AutoShort, calculateAutoShortMetadata } from "./compositions/AutoShort";
 import {
   LegendsAnthem,
@@ -55,6 +62,22 @@ export const MyComposition = () => {
         fps={VIDEO_FPS}
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
+      />
+      <Composition
+        id="MissTsFineDining"
+        component={MissTsFineDining}
+        durationInFrames={MISS_TS_DURATION}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+      />
+      <Composition
+        id="MissTsPoster"
+        component={MissTsPoster}
+        durationInFrames={MISS_TS_POSTER_DURATION}
+        fps={VIDEO_FPS}
+        width={MISS_TS_POSTER_WIDTH}
+        height={MISS_TS_POSTER_HEIGHT}
       />
       <Composition
         id="ComponentShowcase"

@@ -122,7 +122,19 @@ export type BrandTheme = {
     text: string;
     textMuted: string;
   };
+  /** Primary/display face — wordmarks, titles, captions. */
   fontFamily: string;
+  /**
+   * Secondary face for eyebrows, small caps and fine print. Components fall
+   * back to a neutral system sans when a brand doesn't set one, so existing
+   * brands are unaffected.
+   */
+  accentFontFamily?: string;
+  /**
+   * Heavy/condensed face for impact typography (smash cuts, meme slates).
+   * Falls back to a bold system sans.
+   */
+  impactFontFamily?: string;
   logo?: string;
   watermarkText?: string;
 };
