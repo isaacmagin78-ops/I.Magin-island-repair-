@@ -53,7 +53,7 @@ Read this first, then `HANDOFF.md`.
 The canonical life and business context is `Master_Context` in Google Drive
 (Isaac OS), not this repo.
 
-**Canonical document, designated by Isaac 2026-08-01:**
+**Canonical document, designated by Isaac 2026-08-04:**
 Drive file ID `1DjQ4GYy4e1Q-D5F_AlT5sZkg8fA-Sya1mZjCFfnpoNo` — the 4,590-byte
 version. Check the ID, not the title.
 

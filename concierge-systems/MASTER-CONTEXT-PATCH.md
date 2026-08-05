@@ -1,12 +1,12 @@
 # Master_Context — corrections to paste
 
-Prepared 2026-08-01. Target document: Drive file ID
+Prepared 2026-08-04. Target document: Drive file ID
 `1DjQ4GYy4e1Q-D5F_AlT5sZkg8fA-Sya1mZjCFfnpoNo` (the 4,590-byte `Master_Context`,
 designated canonical by Isaac).
 
 Code Lab can read Google Drive but cannot edit or delete Drive documents — there
 is no write tool. So these edits are Isaac's to paste. Everything below was
-verified against `HANDOFF.md` in this repo on 2026-08-01, not recalled.
+verified against `HANDOFF.md` in this repo on 2026-08-04, not recalled.
 
 ---
 

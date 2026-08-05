@@ -6,11 +6,11 @@
 
 - **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
 - **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
-- **Concierge Systems** (new 2026-08-01): `concierge-systems/` — collection inventory CSV, renovation dashboard CSV (Island Club PH3 + Boca 503), `concierge_tools.py` triage/listing script, and `PRODUCT-PILOT.md` (The Collection Record offer). Sample data is placeholder and needs Isaac's real numbers.
+- **Concierge Systems** (new 2026-08-04): `concierge-systems/` — collection inventory CSV, renovation dashboard CSV (Island Club PH3 + Boca 503), `concierge_tools.py` triage/listing script, and `PRODUCT-PILOT.md` (The Collection Record offer). Sample data is placeholder and needs Isaac's real numbers.
 
 ## PH3 Punchlist — LIVE, and not in this repo
 
-`https://ph3-punchlist.vercel.app` — verified 200 on 2026-08-01, last modified
+`https://ph3-punchlist.vercel.app` — verified 200 on 2026-08-04, last modified
 that afternoon. Built and deployed outside this repo (Vercel + Supabase:
 `ph3_photos` table, `ph3` storage bucket). **Source is not here.** Do not
 rebuild it; ask Isaac where it lives before touching anything.
@@ -21,7 +21,7 @@ and closes on a photo. Live tallies for Open / Closed / On Jared. No login,
 mobile-first — that is deliberate, it is shared into a group text.
 
 **This is the concierge model working in production.** Sent into a thread with
-Suzanne and Jared Silverman (GC) on 2026-08-01; both replied and engaged on
+Suzanne and Jared Silverman (project lead, title unconfirmed) on 2026-08-04; both replied and engaged on
 substance the same evening. Contractor committed to reviewing the punchlist.
 Nearest thing to proof-of-model Isaac has — it belongs in any pitch.
 
@@ -30,7 +30,7 @@ the cab height. Panels run ~91"; the opening is roughly 36" × 84". That is why
 the letter went to the building office — the open question is whether the cab
 has a removable ceiling hatch. Suzanne asked for a tape-verified cab height and
 this reasoning was never explained to her, which caused a serious family
-argument on 2026-08-01. If it comes up: explain the door, do not re-litigate.
+argument on 2026-08-04. If it comes up: explain the door, do not re-litigate.
 
 ## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
 
@@ -130,5 +130,5 @@ two days stale and would have sent a session refilling a queue that was fine.
 
 ## Session log
 
-- **2026-08-01**: Built `concierge-systems/` — inventory schema (12 fields, `emotional_tag` checked first in triage so "keep" items can never surface a sale action), two-project renovation dashboard with a `load_level` column, a stdlib-only Python tool that derives next actions and drafts listings, and the Collection Record pilot offer. Verified the script against all 10 sample rows. **Open item for Isaac:** the CSVs carry realistic placeholders, not real budgets, vendors or items — replace before showing anyone.
+- **2026-08-04**: Built `concierge-systems/` — inventory schema (12 fields, `emotional_tag` checked first in triage so "keep" items can never surface a sale action), two-project renovation dashboard with a `load_level` column, a stdlib-only Python tool that derives next actions and drafts listings, and the Collection Record pilot offer. Verified the script against all 10 sample rows. **Open item for Isaac:** the CSVs carry realistic placeholders, not real budgets, vendors or items — replace before showing anyone.
 - **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
