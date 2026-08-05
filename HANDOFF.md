@@ -97,6 +97,32 @@ two days stale and would have sent a session refilling a queue that was fine.
 1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
 2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
 
+## PARKED 2026-08-05: Scott idea-intake (explored, not built)
+
+Scott Kukes (`S Kukes`) sends Isaac a steady stream of ideas by text and phone.
+Explored giving him a repurposed iPad Air as an intake point. **Nothing built —
+Scott leaves for North Carolina Friday Aug 7 and Isaac parked it.** Findings kept
+because the problem recurs:
+
+- **Real problem is interrupts, not storage.** Isaac wants the stream to land
+  somewhere he reads on his own schedule, not a dashboard.
+- **Hard constraint: it must be in the iOS share sheet.** Scott's flow is
+  see-something → share. A web app on the home screen can't be a share target,
+  so it loses to iMessage every time. This is what killed the idea as scoped.
+- **A shared Notes folder is the cheapest thing that clears that bar** — takes
+  links and screenshots, share-sheet native, notifications mutable. Name it
+  "Ideas," not "Notes" — Scott rejected the notes framing himself.
+- **The Drive folder failed from silence, not friction.**
+  `03 Scott's Workspace (collaborative)` / `Scott shared` (Drive folder
+  `1BiXtAP38hRjTTegNQ069hkcp7V7gzsSZ`) — untouched since Jul 16. Nothing ever
+  came back out of it, so nothing went in.
+- **Scott's mode is repurposing, not origination** — he forwards content that's
+  already working elsewhere. Isaac's read: that's what he'll do for now. Usable
+  as swipe-file supply for the Tyson's Time IG queue rather than as original ideas.
+- Prior art: `ScottK/scott-autopilot-clean.html` in Drive (Jul 5) — unwired
+  mobile dashboard prototype, dark/gold, situation → action → worked/no-result/
+  skipped. Right shape if this is ever revived.
+
 ## Next steps
 
 - Claude: after Jul 30, refill the queue (check `blotato_list_schedules` — never let it hit 0). Post the 3 Drive videos once uploaded. Open Facebook once the Page is linked.
