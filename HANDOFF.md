@@ -116,21 +116,51 @@ Verified economics (live-checked 2026-08-04):
   Build the big version.
 - **Do NOT enroll in KDP Select** — it demands digital exclusivity and we already sell
   the same content as a $19 PDF. Paperback is never exclusive; ship that.
-- **Associates at 3% is not a revenue line.** $100/mo needs $3,333 in tracked sales.
-  Stop treating it as a monetization pillar in captions; the Kit link does the work.
-
 Blocker: manuscript is 15 pages, KDP minimum is 24 and must be even. Expansion to ~100
 pages + print-ready render is Claude's next job, gated on the KDP account existing.
 
+### Associates — CORRECTED, do not use the old 3%-per-item math
+
+Isaac pushed back and he was right. Associates pays on **the entire cart** the referred
+shopper fills within **24 hours** of the click (cart-adds stay credited up to 90 days),
+not just the linked item. A converting click is worth ~$1.50–$3 on a normal basket —
+10–20× the earlier framing. Rate follows the **purchased** item's category.
+
+Three rules that kill the "send it to my network" plan, all verified 2026-08-04:
+
+1. **Friends, family, and our own orders earn $0** and don't count as qualifying sales.
+   Isaac's mom's toothbrush paid nothing — that's policy, not a glitch.
+2. **Links may not be texted, DM'd, or emailed.** Material breach → account closure.
+   Links must sit on a public site or approved public social channel.
+3. **Forwards don't pass through** — only clicks on our own link are tracked.
+
+Rates are lowest where big spenders spend: **grocery / health & personal care = 1%**,
+electronics 3%, pet 3%, books 4.5%. A $500 household basket pays ~$5.
+
+**⚠️ 180-DAY CLOCK: 3 qualifying sales from 3 separate checkouts within 180 days of
+registration, or Amazon closes the account permanently — the ID cannot be reinstated.**
+Family orders don't count. Need Isaac's registration date to know how much time is left.
+
+The compliant play is public reach, not our circle: build the link-in-bio gear page
+(blocked item 5), drive the 2,200-view reels to it, optimize for click volume rather
+than commission rate. Estimate ~$100–200/mo at current reach — real, and comparable to
+the book. Not the write-off the first draft called it.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
-1. **Amazon Seller Central plan — possibly bleeding $39.99/month.** If signup put us on
+1. **⚠️ Associates registration date — 180-day deadline may be running out.** Need the
+   date to know whether the account is about to be closed permanently. Highest urgency.
+2. **Amazon Seller Central plan — possibly bleeding $39.99/month.** If signup put us on
    Professional, that's $480/yr for an account with zero listings. Check Settings →
    Account Info → Manage Selling Plan, switch to Individual. Fastest money move we have.
-2. **KDP account does not exist.** Free signup at kdp.amazon.com. Nothing can be
+3. **KDP account does not exist.** Free signup at kdp.amazon.com. Nothing can be
    uploaded until it does — this gates the entire Amazon plan.
-3. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-4. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
+4. **Associates tag / storefront link** — needed to build the gear page. Claude can build
+   the page with a marked swap point, but the links are dead until Isaac pastes the tag.
+5. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is
+   actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere —
+   and the 180-day clock has been running the whole time. Now urgent, not cosmetic.
+6. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
 
 ## Next steps
 

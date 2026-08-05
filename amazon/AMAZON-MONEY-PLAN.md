@@ -104,22 +104,95 @@ anyway.
 
 ---
 
-## Amazon Associates — be honest about this one
+## Amazon Associates — corrected 2026-08-04
 
-We already have Associates and the "gear picks — link in bio" CTA is in every caption.
+**The first draft of this section dismissed Associates using per-item math. That was the
+wrong math.** Isaac's instinct was right, and it changes the picture.
 
-**Pet supplies pay 3%.**
+### The mechanism he spotted
 
-To clear $100/month we need **$3,333 in tracked sales** — from an audience whose best
-channel does 2,200 views a reel. That is not realistic this year.
+You do not earn only on the product you linked. When someone clicks an Associates link:
 
-Associates is not a revenue line. It's worth keeping because it costs nothing, but it
-should stop being treated as one of two monetization pillars in our captions. The kit
-link is doing the actual work.
+- you earn on **every qualifying item they add to their cart in the next 24 hours**
+- anything added inside that window stays credited for **up to 90 days**, even if they
+  check out much later
 
-Related and still blocked: **nobody has confirmed the Associates link is actually in
+So a click on a $5 toothbrush link followed by that person's normal weekly Amazon shop
+earns commission on **the whole basket**. A converting click is worth roughly **$1.50–$3**
+on an $80–150 basket, not the 15 cents that "3% of a toothbrush" implies — about
+**10–20× better per click** than the first draft assumed.
+
+Rates are set by the category of what's **purchased**, not what was linked.
+
+### But three rules break the "send it around my network" version
+
+**1. Friends and family earn zero.** Amazon's stated policy: no commission on "orders
+for products to be used by you, your friends, your relatives, or your associates in any
+manner." They won't publish the detection criteria, but they check buying patterns and
+purchase source.
+
+> **Isaac's mom's toothbrush earned $0.** Not a maybe — that's the policy as written.
+> Purchases by our own circle are excluded by design. Associates is an advertising
+> program, not a friends-and-family discount program.
+
+**2. The links cannot be texted, DM'd, or emailed.** The Operating Agreement bars
+Special Links in "any printed material, ebook, mailing, or any oral solicitation," and
+email and private social messages are explicitly out. It's classed as a **material
+breach** — grounds for immediate account closure.
+
+The "send it to my people" mechanic is precisely the banned mechanic.
+
+**3. "Everyone else's network" does not pass through.** Only people who click *our* link
+are tracked. A friend forwarding it attributes nothing — and the forward is itself the
+violation in rule 2.
+
+### The rates are lowest exactly where the spending is
+
+| Category | Rate |
+|---|---|
+| Grocery, Health & Personal Care | **1%** |
+| Electronics | 3% |
+| Pet supplies | 3% |
+| Physical books | 4.5% |
+| Luxury Beauty | 10% |
+
+High-spend households mostly spend in the 1–3% bands. A $500 grocery-and-household
+basket pays about **$5**. Big baskets help; they don't rescue a 1% rate.
+
+### URGENT — there is a 180-day clock
+
+**Associates requires 3 qualifying sales from 3 separate checkouts within 180 days of
+registration.** Miss it and Amazon **closes the account permanently — the Associates ID
+cannot be reinstated.** Reapplying is allowed; that ID is gone.
+
+Personal and family orders **do not count** toward the three. Three items in one
+checkout counts as **one** sale, not three.
+
+**Action: Isaac — when did you register for Associates?** If we're deep into the window
+with only family purchases logged, we have zero qualifying sales and a live deadline.
+Most time-sensitive item in this document.
+
+### The legitimate version, which does work
+
+The mechanism is real. The fix is changing *who clicks* and *where the link lives*:
+
+- **Public page, not private messages.** The link-in-bio gear page — offered weeks ago,
+  still unbuilt — is the compliant vehicle, and now the highest-priority build. It is
+  the only legal way to earn from this.
+- **Strangers, not our circle.** The 2,200-view reels are the real asset. Our network is
+  specifically excluded; a public audience is specifically allowed.
+- **Optimize for clicks, not for commission rate.** Because the whole cart counts, the
+  best link is whatever a stranger about to shop will actually tap. Click volume beats
+  hunting high-commission categories. Isaac's instinct got here first.
+
+Rough estimate at current reach: a reel driving 20–60 bio taps converts a handful of
+baskets — order of **$100–200/month** with daily posting. Real money, in the same range
+as the KDP book, and not the write-off the first draft called it. Treat that band as an
+estimate, not a figure; we have no click data yet, which is its own problem.
+
+Still blocked and now urgent: **nobody has confirmed the Associates link is actually in
 the IG/TikTok/YouTube bios.** No tool can read a social bio. If it isn't there, every
-"link in bio" CTA we've published has gone nowhere. Isaac needs to eyeball this.
+"link in bio" CTA we've ever published went nowhere — while the 180-day clock ran.
 
 ---
 
@@ -180,5 +253,9 @@ to people we personally reach.
 - [KDP printing cost — $2.30 flat, 24–108 pages B&W US](https://cambric.pub/guides/kdp-printing-cost-guide/)
 - [KDP 60% paperback royalty tier, ≥$9.99](https://kindlepreneur.com/kdp-royalty-calculator/)
 - [Kindle 70% tier $2.99–$9.99, $0.15/MB delivery](https://kdp.amazon.com/en_US/help/topic/G200644210)
-- [Associates pet supplies = 3%](https://azonpress.com/amazon-affiliate-commission-rates/)
+- [Associates rates by category](https://azonpress.com/amazon-affiliate-commission-rates/)
 - [Individual vs Professional selling plan](https://www.sellerapp.com/blog/become-an-amazon-individual-seller/)
+- [24-hour cookie, whole-cart attribution, 90-day cart window](https://azonpress.com/amazon-affiliate-cookie-duration/)
+- [No commission on own / friends' / relatives' orders](https://affiliate-program.amazon.com/help/node/topic/G46FTB8KQF8NRUWG)
+- [Operating Agreement — no Special Links in email, private messages, offline material](https://affiliate-program.amazon.com/help/operating/agreement)
+- [3 qualifying sales in 180 days or the account is closed](https://howtojoinaffiliateprograms.com/associates-3-sales-in-180-days/)
