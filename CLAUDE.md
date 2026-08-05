@@ -40,6 +40,21 @@ Read this first, then `HANDOFF.md`.
 - When there is something to look at, build it and send the link rather than
   writing about what it would contain.
 
+## Time and continuity — the hiccups
+
+Sessions drop and whole days go missing. Isaac calls these "the hiccups." Two
+things follow from that:
+
+- **The container clock has been wrong.** On 2026-08-04 it reported 2026-08-01
+  mid-session — time of day correct, date four days off — and a batch of files
+  was stamped wrong before anyone noticed.
+- Before writing a date into any durable file, cross-check the container clock
+  against something independent: the date the session itself reports, `git log`
+  timestamps, or just ask Isaac. **If they disagree, say so out loud.** Do not
+  quietly pick one.
+- Do not assume the last `HANDOFF.md` entry was yesterday. Check the real gap
+  before treating anything in it as current — a week may have passed.
+
 ## Repo conventions
 
 - Read `HANDOFF.md` before starting; update it before finishing.
