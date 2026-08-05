@@ -8,6 +8,30 @@
 - **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
 - **Concierge Systems** (new 2026-08-01): `concierge-systems/` — collection inventory CSV, renovation dashboard CSV (Island Club PH3 + Boca 503), `concierge_tools.py` triage/listing script, and `PRODUCT-PILOT.md` (The Collection Record offer). Sample data is placeholder and needs Isaac's real numbers.
 
+## PH3 Punchlist — LIVE, and not in this repo
+
+`https://ph3-punchlist.vercel.app` — verified 200 on 2026-08-01, last modified
+that afternoon. Built and deployed outside this repo (Vercel + Supabase:
+`ph3_photos` table, `ph3` storage bucket). **Source is not here.** Do not
+rebuild it; ask Isaac where it lives before touching anything.
+
+14 items across Laundry, Primary bath, Primary bedroom, Elevator/access, Second
+bedroom, Kitchen & bar. Each carries an owner (Jared / Ike / Building), a note,
+and closes on a photo. Live tallies for Open / Closed / On Jared. No login,
+mobile-first — that is deliberate, it is shared into a group text.
+
+**This is the concierge model working in production.** Sent into a thread with
+Suzanne and Jared Silverman (GC) on 2026-08-01; both replied and engaged on
+substance the same evening. Contractor committed to reviewing the punchlist.
+Nearest thing to proof-of-model Isaac has — it belongs in any pitch.
+
+**Elevator finding, easy to lose:** the constraint is the *door opening*, not
+the cab height. Panels run ~91"; the opening is roughly 36" × 84". That is why
+the letter went to the building office — the open question is whether the cab
+has a removable ceiling hatch. Suzanne asked for a tape-verified cab height and
+this reasoning was never explained to her, which caused a serious family
+argument on 2026-08-01. If it comes up: explain the door, do not re-litigate.
+
 ## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
 
 ### Channels
