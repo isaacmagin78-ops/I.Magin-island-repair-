@@ -1,173 +1,224 @@
 # Project Handoff
 
 > Every Claude session reads this file first and updates it before finishing. See CLAUDE.md.
+>
+> **Restructured 2026-08-05.** The old format layered "supersedes the above" queue
+> snapshots until nobody could tell which figures were live. Current state now lives in
+> one place at the top and gets overwritten, not appended. History moved to the log.
 
-## Current state (as of 2026-07-26)
+---
 
-- **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
-- **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
+# CURRENT STATE — live-verified 2026-08-05 22:05Z
 
-## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
-
-### Channels
+## Channels (`blotato_list_accounts`, verified twice today)
 
 | Platform | Account ID | Status |
 |---|---|---|
-| Instagram @tysonstime | 61044 | ✅ working — **best channel by ~10x** |
+| Instagram @tysonstime | 61044 | ✅ working — **best channel by ~10×** |
+| TikTok @tysons_time | 49211 | ✅ working — **posting daily now** |
 | Threads @tysonstravels_rescuepitslife | 8305 | ✅ working |
-| YouTube (Tyson's Time) | 42110 | ✅ working |
-| TikTok @tysons_time | 49211 | ✅ working |
-| Facebook | 43069 | ❌ no Page linked (empty subaccounts) — cannot post |
+| YouTube (Tyson's Time) | 42110 | ✅ working — 6 playlists available |
+| Facebook | 43069 | ❌ **still dark** — `subaccounts: []` |
 
-### Performance reality (drives all decisions)
+**Facebook diagnosis (new).** What's connected is Isaac's **personal profile**
+(`fullname: "Isaac Magin"`, no username, no subaccounts). Blotato needs a `pageId` and
+the API cannot post to a personal profile at all. So it's one of two situations:
 
-- Instagram: **~2,200 views / 1,500 reach** per reel. TikTok: 42–275 views. YouTube: ~234.
-- **Always cross-post to Instagram.** Historically several videos went TikTok-only — that was the single biggest miss.
+- **A Page exists but wasn't granted during OAuth.** Most likely. Facebook's consent
+  screen has a separate Page-selection step that's easy to click past; skipping it
+  produces exactly this empty-subaccounts result. Fix: disconnect Facebook in Blotato,
+  reconnect, slow down on the Page-selection screen.
+- **No Page exists**, only the personal profile. Then a Page must be created first.
 
-### Monetization (must appear in every caption)
+Determine which before hunting for a permission toggle on a Page that may not exist.
 
-- First 30 Days Kit $19 — landing `https://tysons-time-kit.vercel.app/`, Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`
-- Amazon Associates: "Tyson's gear picks — link in bio" + required disclosure line.
-- Both kit domains are LIVE and correct (verified via Vercel MCP 2026-07-27): `tysons-time-kit.vercel.app` = full sales page (200); `tysons-kit-link.vercel.app` = 302 straight to Stripe, used with `?s=yt` tracking. **Use the sales page in social captions** — cold viewers need the pitch before a payment screen. No fix needed.
-- Note: `*.vercel.app` is blocked by this environment's proxy for plain WebFetch/curl — use the **Vercel MCP `web_fetch_vercel_url`** tool to check these pages.
+## Queue — ⚠️ EMPTIES TONIGHT
 
-### Platform rules learned the hard way
-
-- **Instagram: max 5 hashtags** (hard API error above that).
-- Google Drive URLs NEVER work as mediaUrls — media must live in Blotato storage.
-- Blotato-hosted `database.blotato.io/storage/...` URLs from past posts are reusable forever.
-- YouTube requires title + privacyStatus + shouldNotifySubscribers.
-
-## Shipped 2026-07-26
-
-**Published (4):**
-- IG "Comment KIT" money reel (rescued from Jul 24 failure) → instagram.com/reel/DbRccyMEUlG
-- Threads "my name was Titan" → threads.com/@tysonstravels_rescuepitslife/post/DbRcndWHQuJ
-- IG "60lb vs 2lb kitten" (was TikTok-only) → instagram.com/reel/DbRmx5XjmGF
-- Threads "60lb vs 2lb kitten" → threads.com/@tysonstravels_rescuepitslife/post/DbRmuWJlbu7
-
-**Published Jul 27 — the 3 rescued Drive videos:**
-- IG ASMR reel → instagram.com/reel/DbR88LYlDSq
-- Threads ASMR → threads.com/@tysonstravels_rescuepitslife/post/DbR9FBuDyb2
-- TikTok ASMR → tiktok.com/@tysons_time/video/7667038097124740383
-- (IMG_1719 "returned once, now runs this condo" → IG Jul 31 16:00Z · IMG_3457 "doghouse to penthouse" → IG Jul 31 23:00Z)
-
-**Scheduled (10) — queue was EMPTY before this session:**
-- Jul 27 16:00Z IG "POV new intern" · 23:00Z IG "aggressively asleep"
-- Jul 28 16:00Z IG "manatees" · 23:00Z YouTube "manatees"
-- Jul 29 16:00Z IG "10-minute walk" · 23:00Z Threads "10-minute walk"
-- Jul 30 16:00Z IG "newest rescue" · 23:00Z YouTube "caged 2 years / walk"
-
-All carry Kit link + Amazon disclosure.
-
-## RESOLVED 2026-07-27: the 3 "stuck" Drive videos
-
-Root cause was **private Drive sharing**, not file size. Isaac set all three to "Anyone with the link → Viewer" (verified: permissions now include `{"role":"reader","type":"anyone"}`) and they posted immediately using
-`https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`.
-File IDs: ASMR `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT` · IMG_1719 `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz` · IMG_3457 `1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`.
-Prevention rule is now in CLAUDE.md — always verify media is publicly readable BEFORE posting.
-
-## VERIFIED LIVE 2026-07-29 (supersedes the queue figures above)
-
-Checked directly with `blotato_list_schedules`. **6 posts scheduled, queue runs
-out after Jul 31 23:00Z** — not Jul 30 as stated above.
+`blotato_list_schedules` shows **2 posts left, both today**:
 
 | When (UTC) | Channel | Post |
 |---|---|---|
-| Jul 29 16:00 | Instagram | "10-minute walk" reel |
-| Jul 29 23:00 | Threads | "10-minute walk" |
-| Jul 30 16:00 | Instagram | "60lb vs 2lb kitten" reel |
-| Jul 30 23:00 | YouTube | "Caged 2 years / walk takes an hour" |
-| Jul 31 16:00 | Instagram | "returned once, now runs this condo" |
-| Jul 31 23:00 | Instagram | "doghouse to penthouse" |
+| Aug 5 22:30 | Threads | "aggressive breed lists" |
+| Aug 5 23:00 | YouTube | "Dad Said She Was Only Staying One Night" |
 
-All six carry the Kit link and the Amazon disclosure. All are within the IG
-5-hashtag limit.
+**Nothing scheduled after Aug 5 23:00Z.** Refill is the next posting job.
 
-**Gap: TikTok has zero posts queued.** @tysons_time (49211) is connected and
-working; it is simply being skipped. Instagram is correctly getting the bulk,
-but TikTok costs nothing to cross-post to.
+## Correction: the TikTok gap is CLOSED
 
-**Standing rule reaffirmed:** always run `blotato_list_schedules` before saying
-anything about the queue. This section exists because the figures above were
-two days stale and would have sent a session refilling a queue that was fine.
+Earlier handoffs said "TikTok has zero posts queued / is being skipped." **That is no
+longer true** and shouldn't be carried forward. TikTok published Jul 31 (×2), Aug 1, 2,
+3, 4, and 5 — it's the most consistent channel right now.
 
-## Amazon 2026-08-04 — Seller Central approved, but it's the wrong account
+## Published Jul 29 – Aug 5 — **zero failures**
 
-Isaac sent the "You're approved to list on Amazon" Seller Central email. Researched and
-planned in `amazon/AMAZON-MONEY-PLAN.md` + `amazon/KDP-LISTING-COPY.md`.
+| Date | Channel | URL |
+|---|---|---|
+| Aug 5 | Instagram | [reel/DbrDf37DO7c](https://www.instagram.com/reel/DbrDf37DO7c/) |
+| Aug 5 | TikTok | [video/7670593360326937886](https://www.tiktok.com/@tysons_time/video/7670593360326937886) |
+| Aug 4 | YouTube | [watch?v=hjGcs7KERu4](https://www.youtube.com/watch?v=hjGcs7KERu4) |
+| Aug 4 | Instagram | [reel/DboerpsDuk1](https://www.instagram.com/reel/DboerpsDuk1/) |
+| Aug 4 | Threads | [post/Dboo-6aDTZF](https://www.threads.com/@tysonstravels_rescuepitslife/post/Dboo-6aDTZF) |
+| Aug 4 | TikTok | [video/7670222289840950559](https://www.tiktok.com/@tysons_time/video/7670222289840950559) |
+| Aug 3 | YouTube | [watch?v=ApsgYWEqFSs](https://www.youtube.com/watch?v=ApsgYWEqFSs) |
+| Aug 3 | Instagram | [reel/Dbl59ikiDUv](https://www.instagram.com/reel/Dbl59ikiDUv/) |
+| Aug 3 | Threads | [post/DbmEMHkieev](https://www.threads.com/@tysonstravels_rescuepitslife/post/DbmEMHkieev) |
+| Aug 3 | TikTok | [video/7669851179169500447](https://www.tiktok.com/@tysons_time/video/7669851179169500447) |
+| Aug 2 | TikTok | [video/7669480114576428319](https://www.tiktok.com/@tysons_time/video/7669480114576428319) |
+| Aug 1 | TikTok | [video/7669109008434760990](https://www.tiktok.com/@tysons_time/video/7669109008434760990) |
+| Jul 31 | Instagram | [reel/DbeZPsyD7x9](https://www.instagram.com/reel/DbeZPsyD7x9/) · [reel/DbdpLLCjlDj](https://www.instagram.com/reel/DbdpLLCjlDj/) |
+| Jul 31 | Threads | [post/DbeTg4wl_iW](https://www.threads.com/@tysonstravels_rescuepitslife/post/DbeTg4wl_iW) · [post/Dbb72hFDkOa](https://www.threads.com/@tysonstravels_rescuepitslife/post/Dbb72hFDkOa) |
+| Jul 31 | TikTok | [video/7668815270261067039](https://www.tiktok.com/@tysons_time/video/7668815270261067039) · [video/7668737977375378719](https://www.tiktok.com/@tysons_time/video/7668737977375378719) |
+| Jul 30 | YouTube | [watch?v=7Gyg1TP87fE](https://www.youtube.com/watch?v=7Gyg1TP87fE) |
+| Jul 30 | Instagram | [reel/Dbbyfd7k_BP](https://www.instagram.com/reel/Dbbyfd7k_BP/) (LIVE promo) · [reel/DbbEY_uiWbv](https://www.instagram.com/reel/DbbEY_uiWbv/) |
+| Jul 30 | Threads | [post/Dbbyh66Cc_X](https://www.threads.com/@tysonstravels_rescuepitslife/post/Dbbyh66Cc_X) |
+| Jul 29 | Instagram | [reel/DbYflQpj0JT](https://www.instagram.com/reel/DbYflQpj0JT/) |
+| Jul 29 | Threads | [post/DbZPpZLD5n9](https://www.threads.com/@tysonstravels_rescuepitslife/post/DbZPpZLD5n9) |
 
-**The key finding: Seller Central sells physical products only.** The $19 First 30 Days
-Kit PDF cannot be listed there. The account that sells it is **KDP** — free, separate
-signup, and where every dollar of this plan comes from.
+**Also undocumented until now: there is live streaming.** A TikTok LIVE ran Jul 30 at
+8PM ET, promoted on IG and Threads. Nothing in the handoff system covered this.
 
-Verified economics (live-checked 2026-08-04):
+---
+
+# MONETIZATION — verified live 2026-08-05
+
+## ⚠️ There are TWO competing link-in-bio pages, and neither is complete
+
+Both are live (200) and both have been posted publicly. Whichever one is actually in the
+bios determines what earns.
+
+| | `tysons-links.vercel.app` | `tysons-time-hub.vercel.app` |
+|---|---|---|
+| Kit $19 | ✅ direct to sales page | ✅ via `tysons-kit-link?s=bio` |
+| **Amazon gear picks** | ✅ **real affiliate link** | ❌ **absent** |
+| **Amazon disclosure** | ✅ present, correct | ❌ **absent** |
+| **$5/mo stream sub** | ❌ absent | ✅ present |
+| Socials | IG, TikTok, YouTube, Threads | TikTok, YouTube, IG |
+| Last modified | Aug 5 22:05Z | Aug 4 01:08Z |
+
+**This needs one decision: merge them into a single page.** Right now, whichever is in
+the bio silently drops either the Amazon income or the recurring income.
+
+Minor: the two pages disagree on the YouTube handle (`@TysonsTime` vs `@tysonstime`).
+Handles are case-insensitive so both resolve, but pick one.
+
+## RESOLVED — the Associates gear page is built and live
+
+Previous handoffs listed this as blocked "awaiting Isaac's Amazon storefront/affiliate
+link." **It exists.** `tysons-links.vercel.app` carries a real Amazon Idea List link with:
+
+- **Associates tag: `tysonspicks-20`**
+- correct `rel="sponsored nofollow noopener"`
+- the required disclosure, on-page
+
+No longer a blocker. Stop asking Isaac for the tag.
+
+## Revenue lines
+
+| Line | Price | Where |
+|---|---|---|
+| First 30 Days Kit | $19 | `tysons-time-kit.vercel.app` → Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00` |
+| **Stream subscription** | **$5/month** | Stripe `buy.stripe.com/dRmdR90uX8tPgN84dIg7e01` — **recurring, and previously undocumented** |
+| Amazon Associates | 1–4.5% by category | tag `tysonspicks-20` via the links page |
+
+The $5/month subscription is the only **recurring** line in the whole business and no
+handoff had recorded it. It deserves more attention than it's getting.
+
+## ⚠️ Monetization regression, Aug 3–5
+
+Captions carried the Kit link *and* "As an Amazon Associate I earn from qualifying
+purchases" consistently through **Aug 2**. From **Aug 3 onward, IG and TikTok posts
+carry neither** — six posts with no monetization and no disclosure. YouTube still
+carries the Kit link.
+
+Two problems: money left on the table, and posts saying "link in bio" that point at a
+bio containing affiliate links, with no disclosure on the post. They were doing this
+correctly two weeks ago; it lapsed. Restore it.
+
+## Kit pricing conflict with the Amazon plan
+
+The Kit is publicly advertised as **15 pages for $19**. The KDP plan builds a **~100-page
+paperback for $14.99**. Shipping both makes the direct product look strictly worse —
+more money for less book. Resolve before publishing: expand the digital Kit too, or
+reprice.
+
+---
+
+# Platform rules learned the hard way
+
+- **Instagram: max 5 hashtags** (hard API error above that). Recent posts are at exactly 5.
+- Google Drive URLs NEVER work as mediaUrls — media must live in Blotato storage.
+- Blotato-hosted `database.blotato.io/storage/...` URLs from past posts are reusable forever.
+- YouTube requires title + privacyStatus + shouldNotifySubscribers.
+- Facebook requires a `pageId` from `subaccounts` — a personal profile cannot be posted to.
+- `*.vercel.app` is blocked by this environment's proxy for plain WebFetch/curl — use the
+  **Vercel MCP `web_fetch_vercel_url`** tool.
+- Google Drive media must be "Anyone with the link → Viewer" *before* posting; use
+  `https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`.
+
+# Amazon — see `amazon/AMAZON-MONEY-PLAN.md`
+
+**Seller Central sells physical products only.** The $19 Kit PDF cannot be listed there;
+**KDP** is the account that sells it (free, separate signup).
 
 | Channel | Price | We keep |
 |---|---|---|
-| Direct Stripe (today) | $19 | **$18.15** |
+| Direct Stripe | $19 | **$18.15** |
 | KDP paperback ~100pp | $14.99 | $6.69 |
 | KDP Kindle | $6.99 | ~$4.68 |
-| Associates, pet supplies | — | **3%** |
 
-- **Amazon is customer acquisition, not margin** — a direct sale is worth 2.7× a
-  paperback. The point is Amazon's search traffic, which we don't have to go find.
-- **KDP print cost is flat $2.30 for 24–108 pages.** Going 24 → ~100 pages is free.
-  Build the big version.
-- **Do NOT enroll in KDP Select** — it demands digital exclusivity and we already sell
-  the same content as a $19 PDF. Paperback is never exclusive; ship that.
-Blocker: manuscript is 15 pages, KDP minimum is 24 and must be even. Expansion to ~100
-pages + print-ready render is Claude's next job, gated on the KDP account existing.
+- Amazon is **customer acquisition, not margin** — a direct sale is worth 2.7× a paperback.
+- KDP print cost is **flat $2.30 for 24–108 pages**, so 24 → ~100 pages is free.
+- **Do NOT enroll in KDP Select** — digital exclusivity conflicts with the $19 PDF.
+- Associates pays on **the entire cart** filled within 24 hours of the click (cart-adds
+  credited up to 90 days), not just the linked item — a converting click is worth
+  ~$1.50–$3. But: **our own friends and relatives earn $0**, links **cannot** be texted,
+  DM'd or emailed (material breach), and forwards don't attribute.
+- **⚠️ 180-day clock: 3 qualifying sales from 3 separate checkouts or the account closes
+  permanently.** Family orders don't count. Registration date still unknown.
 
-### Associates — CORRECTED, do not use the old 3%-per-item math
+Blocker: manuscript is 15 pages; KDP minimum is 24 and must be even. Expansion to ~100
+pages + print-ready render is Claude's next job.
 
-Isaac pushed back and he was right. Associates pays on **the entire cart** the referred
-shopper fills within **24 hours** of the click (cart-adds stay credited up to 90 days),
-not just the linked item. A converting click is worth ~$1.50–$3 on a normal basket —
-10–20× the earlier framing. Rate follows the **purchased** item's category.
+# Blocked — needs Isaac (cannot be done by any session)
 
-Three rules that kill the "send it to my network" plan, all verified 2026-08-04:
+1. **⚠️ Associates registration date** — the 180-day deadline may be close. Highest urgency.
+2. **Amazon Seller Central plan — possibly bleeding $39.99/month.** If signup landed on
+   Professional that's $480/yr for an account with zero listings. Settings → Account Info
+   → Manage Selling Plan → Individual.
+3. **KDP account does not exist.** Free signup at kdp.amazon.com; gates the whole plan.
+4. **Which link page is actually in the bios?** No tool can read a social bio. Until this
+   is known we cannot tell whether Amazon income or the $5/mo sub is reaching anyone.
+5. **Facebook: Page vs no Page** — see the diagnosis above; determines which fix applies.
 
-1. **Friends, family, and our own orders earn $0** and don't count as qualifying sales.
-   Isaac's mom's toothbrush paid nothing — that's policy, not a glitch.
-2. **Links may not be texted, DM'd, or emailed.** Material breach → account closure.
-   Links must sit on a public site or approved public social channel.
-3. **Forwards don't pass through** — only clicks on our own link are tracked.
+# Next steps for Claude
 
-Rates are lowest where big spenders spend: **grocery / health & personal care = 1%**,
-electronics 3%, pet 3%, books 4.5%. A $500 household basket pays ~$5.
+- **Refill the queue** — empty after Aug 5 23:00Z. Never let it hit 0.
+- **Merge the two link pages** into one carrying Kit + Amazon gear + disclosure + $5/mo sub.
+- **Restore Kit link + Amazon disclosure** to IG and TikTok captions (lapsed Aug 3).
+- Expand the Kit manuscript 15 → ~100 pages and render print-ready interior for KDP.
+- Resolve the 15-page-$19 vs 100-page-$14.99 pricing conflict.
+- Open Facebook once the Page is linked.
 
-**⚠️ 180-DAY CLOCK: 3 qualifying sales from 3 separate checkouts within 180 days of
-registration, or Amazon closes the account permanently — the ID cannot be reinstated.**
-Family orders don't count. Need Isaac's registration date to know how much time is left.
+# Standing rules
 
-The compliant play is public reach, not our circle: build the link-in-bio gear page
-(blocked item 5), drive the 2,200-view reels to it, optimize for click volume rather
-than commission rate. Estimate ~$100–200/mo at current reach — real, and comparable to
-the book. Not the write-off the first draft called it.
+- **Verify with live tool checks before telling Isaac anything is broken or asking him to act.**
+- Always run `blotato_list_schedules` before saying anything about the queue.
+- Always verify media is publicly readable BEFORE posting.
+- Lead with the single best recommendation; ship first, report with live URLs.
+- **Overwrite the current-state section — never append a "supersedes the above" snapshot.**
 
-## Blocked — needs Isaac (cannot be done by any session)
+# Session log
 
-1. **⚠️ Associates registration date — 180-day deadline may be running out.** Need the
-   date to know whether the account is about to be closed permanently. Highest urgency.
-2. **Amazon Seller Central plan — possibly bleeding $39.99/month.** If signup put us on
-   Professional, that's $480/yr for an account with zero listings. Check Settings →
-   Account Info → Manage Selling Plan, switch to Individual. Fastest money move we have.
-3. **KDP account does not exist.** Free signup at kdp.amazon.com. Nothing can be
-   uploaded until it does — this gates the entire Amazon plan.
-4. **Associates tag / storefront link** — needed to build the gear page. Claude can build
-   the page with a marked swap point, but the links are dead until Isaac pastes the tag.
-5. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is
-   actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere —
-   and the 180-day clock has been running the whole time. Now urgent, not cosmetic.
-6. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-
-## Next steps
-
-- Claude: after Jul 30, refill the queue (check `blotato_list_schedules` — never let it hit 0). Post the 3 Drive videos once uploaded. Open Facebook once the Page is linked.
-- Rule: **verify with live tool checks before telling Isaac anything is broken or asking him to act.**
-- Rule: lead with the single best recommendation; ship first, report with live URLs.
-
-## Session log
-
-- **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
+- **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato
+  end-to-end; found the queue empty and Instagram under-used despite being the 10× channel.
+  Published 4, scheduled 8.
+- **2026-07-27**: Reorganized the repo into clean project folders. Resolved the 3 "stuck"
+  Drive videos — root cause was private Drive sharing, not file size.
+- **2026-07-29**: Live-checked the queue; found the previous figures two days stale.
+- **2026-08-04**: Seller Central approval routed to KDP. Built `amazon/` plan + listing copy.
+- **2026-08-05**: Corrected the Associates math after Isaac pushed back — whole-cart
+  attribution, plus the three rules and the 180-day clock. Full system status check:
+  found the TikTok gap closed, the Associates gear page already live with tag
+  `tysonspicks-20`, a second competing link page, an undocumented $5/mo stream
+  subscription, undocumented live streaming, and a monetization regression from Aug 3.
+  Restructured this file so current state is overwritten rather than appended.
