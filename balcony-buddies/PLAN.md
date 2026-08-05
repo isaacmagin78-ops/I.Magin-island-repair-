@@ -4,6 +4,28 @@
 folder `1zb7NVvPd2yBlfPSxkZ0BEFKod3ed38Ga`) and was marked "archived for future
 execution." Isaac is buying additional cameras; this plan is what to do with them.
 
+## The bar this is judged against
+
+Isaac's stated criterion (2026-08-05): **"as long as it's something that helps"** —
+helping animals, not getting a hit. Reach is a means here, not the goal. Every
+decision below is judged against that.
+
+Consequences of taking that seriously:
+
+- **The friendship is the hook, not the railing.** A pit bull being gentle with a
+  small cat is the most effective format there is for countering breed bias, and
+  pit-bull-type dogs are the most common and least-adopted dogs in US shelters.
+  That's the advocacy engine. The cat's fearlessness is a character trait, not
+  the headline — leading with an animal in apparent danger spends credibility
+  arguing with the comments instead of doing the work.
+- **Reach without a mechanism doesn't help anything.** The archived plan
+  monetizes (merch, children's book) but contains nothing that assists an actual
+  animal. Views don't help dogs; a destination does.
+- **Attach a named rescue** — ideally the one Tyson came from. Gives every post
+  somewhere to land (adoptable animals, donations, whatever they need), and
+  turns merch from monetization into fundraising, which also sells better than
+  merch that is only merch.
+
 ## The franchise (from Drive, unchanged)
 
 - **Cast:** 203 Calico the Cat (rescued and raised by Emilio, Apartment 203) and
