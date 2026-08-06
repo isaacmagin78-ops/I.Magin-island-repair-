@@ -32,16 +32,27 @@ the API cannot post to a personal profile at all. So it's one of two situations:
 
 Determine which before hunting for a permission toggle on a Page that may not exist.
 
-## Queue — ⚠️ EMPTIES TONIGHT
+## Queue — refilled 2026-08-06, verified 12 scheduled
 
-`blotato_list_schedules` shows **2 posts left, both today**:
+Aug 5's last two posts published clean (Threads
+[DbrNxVRmPDa](https://www.threads.com/@tysonstravels_rescuepitslife/post/DbrNxVRmPDa),
+YouTube [xRccSPCxudw](https://www.youtube.com/watch?v=xRccSPCxudw)), the queue hit 0, and
+was refilled the same night. `blotato_list_schedules` → `count: 12`.
 
-| When (UTC) | Channel | Post |
-|---|---|---|
-| Aug 5 22:30 | Threads | "aggressive breed lists" |
-| Aug 5 23:00 | YouTube | "Dad Said She Was Only Staying One Night" |
+Daily rhythm matches the established pattern: **TikTok 17:00Z · Instagram 21:00Z ·
+Threads 22:30Z · YouTube 23:00Z.**
 
-**Nothing scheduled after Aug 5 23:00Z.** Refill is the next posting job.
+| Date | TikTok 17:00 | Instagram 21:00 | Threads 22:30 | YouTube 23:00 |
+|---|---|---|---|---|
+| Aug 6 | year-two montage | manatees | "he waits" (text) | kittens are fragile |
+| Aug 7 | Episode 1 takeover | POV new intern | year-two montage | manatees |
+| Aug 8 | first time they met | kittens are fragile | Episode 1 takeover | don't bring a kitten |
+
+**Every slot uses media that channel has never run.** No new production — this closes the
+cross-post gap the handoff calls the biggest historical miss, using only proven clips
+from Blotato storage (those URLs are reusable forever).
+
+Queue runs dry after **Aug 8 23:00Z**. Refill before then.
 
 ## Correction: the TikTok gap is CLOSED
 
@@ -81,25 +92,42 @@ longer true** and shouldn't be carried forward. TikTok published Jul 31 (×2), A
 
 # MONETIZATION — verified live 2026-08-05
 
-## ⚠️ There are TWO competing link-in-bio pages, and neither is complete
+## RESOLVED 2026-08-06 — both link pages now carry everything
 
-Both are live (200) and both have been posted publicly. Whichever one is actually in the
-bios determines what earns.
+There were two competing link-in-bio pages and **neither was complete**: `tysons-links`
+had the Amazon gear link and disclosure but no subscription; `tysons-time-hub` had the
+$5/mo subscription but no Amazon and no disclosure. Whichever sat in the bio was
+silently dropping an income line.
+
+Rather than force a choice about which URL is canonical (which would have needed a bio
+edit only Isaac can do), **both pages were made content-complete and redeployed.** Now
+either one works:
 
 | | `tysons-links.vercel.app` | `tysons-time-hub.vercel.app` |
 |---|---|---|
-| Kit $19 | ✅ direct to sales page | ✅ via `tysons-kit-link?s=bio` |
-| **Amazon gear picks** | ✅ **real affiliate link** | ❌ **absent** |
-| **Amazon disclosure** | ✅ present, correct | ❌ **absent** |
-| **$5/mo stream sub** | ❌ absent | ✅ present |
-| Socials | IG, TikTok, YouTube, Threads | TikTok, YouTube, IG |
-| Last modified | Aug 5 22:05Z | Aug 4 01:08Z |
+| Kit $19 → sales page | ✅ | ✅ |
+| Amazon gear (`tysonspicks-20`) | ✅ | ✅ |
+| Amazon disclosure | ✅ | ✅ |
+| $5/mo stream sub | ✅ | ✅ |
+| Socials (IG/TikTok/YT/Threads) | ✅ | ✅ |
 
-**This needs one decision: merge them into a single page.** Right now, whichever is in
-the bio silently drops either the Amazon income or the recurring income.
+Each keeps its own visual design — the orange card layout and the serif editorial layout
+were left alone; only the missing content was added.
 
-Minor: the two pages disagree on the YouTube handle (`@TysonsTime` vs `@tysonstime`).
-Handles are case-insensitive so both resolve, but pick one.
+Two fixes folded in:
+
+- The hub's Kit link pointed at `tysons-kit-link` which 302s **straight to Stripe**. That
+  violates our own documented rule ("cold viewers need the pitch before a payment
+  screen"). Both pages now go to the sales page with `?s=bio` tracking.
+- YouTube handle unified to `@tysonstime` (the pages previously disagreed on case).
+
+**Sources now live in `link-pages/` in this repo.** Before this they existed *only* on
+Vercel — one accidental deletion from being gone with no copy anywhere.
+
+Deploy note: `list_projects` returns an empty array for this team even though the
+projects exist. Use `get_project` with the slug (`tysons-links`, `tysons-time-hub`) —
+both are real, in `team_MCU3MembxNrAzrNozh6h8uWA`, and own their `.vercel.app` domains.
+Redeploy with `deploy_to_vercel` using the project name + `target: production`.
 
 ## RESOLVED — the Associates gear page is built and live
 
@@ -123,16 +151,27 @@ No longer a blocker. Stop asking Isaac for the tag.
 The $5/month subscription is the only **recurring** line in the whole business and no
 handoff had recorded it. It deserves more attention than it's getting.
 
-## ⚠️ Monetization regression, Aug 3–5
+## Monetization regression Aug 3–5 — fixed going forward
 
 Captions carried the Kit link *and* "As an Amazon Associate I earn from qualifying
-purchases" consistently through **Aug 2**. From **Aug 3 onward, IG and TikTok posts
-carry neither** — six posts with no monetization and no disclosure. YouTube still
-carries the Kit link.
+purchases" consistently through **Aug 2**. From **Aug 3–5, IG and TikTok posts carried
+neither** — six posts with no monetization and no disclosure, while still saying "link in
+bio" about a bio containing affiliate links.
 
-Two problems: money left on the table, and posts saying "link in bio" that point at a
-bio containing affiliate links, with no disclosure on the post. They were doing this
-correctly two weeks ago; it lapsed. Restore it.
+**All 12 posts in the current queue carry both lines.** The standard, restored:
+
+- **IG / TikTok:** `🐾 First 30 Days Kit + Tyson's gear picks: link in bio` +
+  `As an Amazon Associate I earn from qualifying purchases.`
+- **Threads:** the actual `https://tysons-links.vercel.app` URL (the page carries the
+  disclosure itself).
+- **YouTube:** direct Kit URL + gear picks link-in-bio + disclosure.
+
+The six already-published Aug 3–5 posts cannot be retroactively edited through Blotato.
+
+TikTok flags were set `isYourBrand: false` / `isBrandedContent: false`, matching every
+previous post. Worth a human look sometime: these posts do promote our own product, so
+the stricter reading of TikTok's labels is arguably `true`. Left consistent with what has
+been working rather than changed unilaterally.
 
 ## Kit pricing conflict with the Amazon plan
 
@@ -186,18 +225,19 @@ pages + print-ready render is Claude's next job.
    Professional that's $480/yr for an account with zero listings. Settings → Account Info
    → Manage Selling Plan → Individual.
 3. **KDP account does not exist.** Free signup at kdp.amazon.com; gates the whole plan.
-4. **Which link page is actually in the bios?** No tool can read a social bio. Until this
-   is known we cannot tell whether Amazon income or the $5/mo sub is reaching anyone.
-5. **Facebook: Page vs no Page** — see the diagnosis above; determines which fix applies.
+4. **Facebook: Page vs no Page** — see the diagnosis above; determines which fix applies.
+5. **Confirm a link page is in the bios at all.** No longer urgent for *which* one — both
+   are complete now — but if neither is in a bio, every "link in bio" CTA still goes
+   nowhere. No tool can read a social bio.
 
 # Next steps for Claude
 
-- **Refill the queue** — empty after Aug 5 23:00Z. Never let it hit 0.
-- **Merge the two link pages** into one carrying Kit + Amazon gear + disclosure + $5/mo sub.
-- **Restore Kit link + Amazon disclosure** to IG and TikTok captions (lapsed Aug 3).
+- **Refill the queue before Aug 8 23:00Z.** Never let it hit 0.
 - Expand the Kit manuscript 15 → ~100 pages and render print-ready interior for KDP.
 - Resolve the 15-page-$19 vs 100-page-$14.99 pricing conflict.
 - Open Facebook once the Page is linked.
+- Consider giving the $5/mo subscription real promotion — it's the only recurring line
+  and it has never been pushed in a caption.
 
 # Standing rules
 
@@ -222,3 +262,7 @@ pages + print-ready render is Claude's next job.
   `tysonspicks-20`, a second competing link page, an undocumented $5/mo stream
   subscription, undocumented live streaming, and a monetization regression from Aug 3.
   Restructured this file so current state is overwritten rather than appended.
+- **2026-08-06**: Queue hit 0 and was refilled with 12 posts through Aug 8, every slot
+  using proven media the target channel had never run. Restored the Kit link and Amazon
+  disclosure to every caption. Made both link pages content-complete and redeployed them,
+  and pulled their sources into `link-pages/` — they had existed only on Vercel.
