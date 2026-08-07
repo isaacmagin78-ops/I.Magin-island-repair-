@@ -1,108 +1,151 @@
 # Project Handoff
 
-> Every Claude session reads this file first and updates it before finishing. See CLAUDE.md.
+> **Every Claude session reads this file first and updates it before finishing.**
+>
+> This file exists because sessions cannot see each other. Kelly (GPT),
+> Flex (Perplexity), and Claude each start from zero every time. This is
+> the only shared memory. If it goes stale, everyone wakes up lost — that
+> is exactly what happened between Jul 29 and Aug 7.
 
-## Current state (as of 2026-07-26)
+**Last updated: 2026-08-07** · Anything below marked *(secondhand)* came from
+another session's summary and has not been re-verified. Re-check before acting.
 
-- **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
-- **Isaac Video Engine**: complete through Phase 7 (docs). Motion, audio, social presets, `npm run render:short` pipeline verified. Merged via PR #4.
+---
 
-## Tyson's Time — posting system (live-checked via Blotato 2026-07-26)
+## ⚠️ Read this first: why main went quiet
+
+`main` had **zero commits between Jul 29 and Aug 7**. All August work went
+onto ~20 `claude/*` branches that were never merged. Since every session
+clones `main`, every session since Jul 29 woke up in a nine-day-old repo
+knowing nothing about August.
+
+Nothing was lost — it was scattered. **When you finish work, get it onto
+`main`,** or the next session (and the next you) will not see it.
+
+---
+
+## The standing rules live in `money-engine/INSTRUCTIONS.md`
+
+Written Aug 3. It is the operating spec that made Aug 3–6 run itself:
+role, budget assumptions, real per-channel reach, non-negotiables, claim
+grading, and the never-propose list.
+
+**Install step never completed — this is the highest-value 2 minutes available:**
+1. Paste `money-engine/INSTRUCTIONS.md` into the Claude project's
+   **Instructions** field. Standing rules only persist there; a session's
+   memory dies with the session.
+2. Upload the Amazon monetization stack file to the same project.
+
+---
+
+## Tyson's Time — posting system
+
+### Queue: VERIFIED LIVE 2026-08-07 via `blotato_list_schedules`
+
+**8 posts scheduled. Queue empties after Aug 8 23:00Z.**
+
+| When (UTC) | Channel |
+|---|---|
+| Aug 7 17:00 / 21:00 / 22:30 / 23:00 | TikTok · Instagram · Threads · YouTube |
+| Aug 8 17:00 / 21:00 / 22:30 / 23:00 | TikTok · Instagram · Threads · YouTube |
+
+All carry the Kit link and the Amazon disclosure. **Refill before Aug 8 evening.**
+
+**Standing rule:** always run `blotato_list_schedules` before saying anything
+about the queue. Written figures go stale in days.
 
 ### Channels
 
 | Platform | Account ID | Status |
 |---|---|---|
-| Instagram @tysonstime | 61044 | ✅ working — **best channel by ~10x** |
-| Threads @tysonstravels_rescuepitslife | 8305 | ✅ working |
-| YouTube (Tyson's Time) | 42110 | ✅ working |
-| TikTok @tysons_time | 49211 | ✅ working |
-| Facebook | 43069 | ❌ no Page linked (empty subaccounts) — cannot post |
+| Instagram `@tysonstime` | 61044 | ✅ **best channel by ~10x** (~2,200 views / 1,500 reach) |
+| TikTok `@tysons_time` | 49211 | ✅ working (42–275 views) — cross-post always, costs nothing |
+| YouTube (Tyson's Time) | 42110 | ✅ working (~234 views) |
+| Threads `@tysonstravels_rescuepitslife` | 8305 | ✅ working |
+| Facebook | 43069 | ❌ dark — no Page linked. Needs Isaac. |
 
-### Performance reality (drives all decisions)
+### Platform rules learned the hard way — do not relearn these
 
-- Instagram: **~2,200 views / 1,500 reach** per reel. TikTok: 42–275 views. YouTube: ~234.
-- **Always cross-post to Instagram.** Historically several videos went TikTok-only — that was the single biggest miss.
+- **Instagram: max 5 hashtags.** Hard API error above that.
+- **Google Drive URLs never work as media.** Media must live in Blotato storage.
+  Drive files must be "Anyone with the link → Viewer" *and* go through
+  `drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`.
+- **Blotato-hosted `database.blotato.io/storage/...` URLs are reusable forever.**
+- **YouTube requires** title + privacyStatus + shouldNotifySubscribers.
+- **Always cross-post to Instagram.** Historically several videos went
+  TikTok-only — the single biggest recurring miss.
 
-### Monetization (must appear in every caption)
+### Money
 
-- First 30 Days Kit $19 — landing `https://tysons-time-kit.vercel.app/`, Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`
-- Amazon Associates: "Tyson's gear picks — link in bio" + required disclosure line.
-- Both kit domains are LIVE and correct (verified via Vercel MCP 2026-07-27): `tysons-time-kit.vercel.app` = full sales page (200); `tysons-kit-link.vercel.app` = 302 straight to Stripe, used with `?s=yt` tracking. **Use the sales page in social captions** — cold viewers need the pitch before a payment screen. No fix needed.
-- Note: `*.vercel.app` is blocked by this environment's proxy for plain WebFetch/curl — use the **Vercel MCP `web_fetch_vercel_url`** tool to check these pages.
+- First 30 Days Kit **$19** — sales page `tysons-time-kit.vercel.app`,
+  Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`. Already transacting.
+  Use the **sales page** in captions, not the raw Stripe link.
+- Amazon Associates active — disclosure required in every caption.
+- Link pages live and fixed *(secondhand, Aug 6)*.
+- `*.vercel.app` is blocked for plain WebFetch here — use the Vercel MCP
+  `web_fetch_vercel_url` tool to check those pages.
 
-### Platform rules learned the hard way
+---
 
-- **Instagram: max 5 hashtags** (hard API error above that).
-- Google Drive URLs NEVER work as mediaUrls — media must live in Blotato storage.
-- Blotato-hosted `database.blotato.io/storage/...` URLs from past posts are reusable forever.
-- YouTube requires title + privacyStatus + shouldNotifySubscribers.
+## Listing Content System — the nearest thing to new revenue
 
-## Shipped 2026-07-26
+**Linda S. Hoyt is Isaac's sister**, a top-producing Broker-Associate at ONE
+Sotheby's (Fort Lauderdale). She is customer #1, with her knowledge.
 
-**Published (4):**
-- IG "Comment KIT" money reel (rescued from Jul 24 failure) → instagram.com/reel/DbRccyMEUlG
-- Threads "my name was Titan" → threads.com/@tysonstravels_rescuepitslife/post/DbRcndWHQuJ
-- IG "60lb vs 2lb kitten" (was TikTok-only) → instagram.com/reel/DbRmx5XjmGF
-- Threads "60lb vs 2lb kitten" → threads.com/@tysonstravels_rescuepitslife/post/DbRmuWJlbu7
+**Ready now:** a full 19-asset package for her real active listing —
+111 N Pompano Beach Blvd Unit 611, The Sea Monarch, $775,000, MLS B26053249.
+Lives in `Listing-Content-System/out/111-pompano-beach-611/`.
+Review guide: `START-HERE-LINDA-PITCH.md` at repo root.
 
-**Published Jul 27 — the 3 rescued Drive videos:**
-- IG ASMR reel → instagram.com/reel/DbR88LYlDSq
-- Threads ASMR → threads.com/@tysonstravels_rescuepitslife/post/DbR9FBuDyb2
-- TikTok ASMR → tiktok.com/@tysons_time/video/7667038097124740383
-- (IMG_1719 "returned once, now runs this condo" → IG Jul 31 16:00Z · IMG_3457 "doghouse to penthouse" → IG Jul 31 23:00Z)
+**Before anything publishes,** need from Linda: real open-house date/time,
+real attendance count, and her authorization — every asset carries her name,
+phone, and ONE Sotheby's branding.
 
-**Scheduled (10) — queue was EMPTY before this session:**
-- Jul 27 16:00Z IG "POV new intern" · 23:00Z IG "aggressively asleep"
-- Jul 28 16:00Z IG "manatees" · 23:00Z YouTube "manatees"
-- Jul 29 16:00Z IG "10-minute walk" · 23:00Z Threads "10-minute walk"
-- Jul 30 16:00Z IG "newest rescue" · 23:00Z YouTube "caged 2 years / walk"
+**Known issue:** generated captions carry 7 hashtags; Instagram's limit is 5.
+Trim before posting, or fix `hashtags()` in `scripts/generate-package.mjs`.
 
-All carry Kit link + Amazon disclosure.
+**Not done:** the vertical reel. Handoff files are written
+(`video-engine/*.txt`); rendering needs her listing photos.
 
-## RESOLVED 2026-07-27: the 3 "stuck" Drive videos
+---
 
-Root cause was **private Drive sharing**, not file size. Isaac set all three to "Anyone with the link → Viewer" (verified: permissions now include `{"role":"reader","type":"anyone"}`) and they posted immediately using
-`https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`.
-File IDs: ASMR `1-mHQqzUT1CKWnYMvyZjZ_1Wgp3MfLNiT` · IMG_1719 `1HL7fQgjXwTJ8swCT3Rr7gGNgHaIHqnkz` · IMG_3457 `1kGsnDsGE-S0QYoMGyfc2qOHArDU1xIFB`.
-Prevention rule is now in CLAUDE.md — always verify media is publicly readable BEFORE posting.
+## Everything else, honestly
 
-## VERIFIED LIVE 2026-07-29 (supersedes the queue figures above)
+| Project | State |
+|---|---|
+| First 30 Days Kit | **Selling.** Live page + working Stripe link. |
+| Listing Content System | **Ready to sell as a service.** Warm lead, package built. |
+| Isaac Video Engine | Real infrastructure — the delivery engine, not a product. |
+| Legends Ranch | Delivered films = portfolio. Services, not product. |
+| College Launch OS | Live but a **prototype**: browser-only storage, canned "concierge" responses, no accounts, no payments. Not sellable without real work. |
+| Madison Moves | One client's site. Pattern is repeatable; not a product. |
 
-Checked directly with `blotato_list_schedules`. **6 posts scheduled, queue runs
-out after Jul 31 23:00Z** — not Jul 30 as stated above.
+**Test coverage: zero.** ~9,700 lines across five projects, no automated tests,
+no CI. Five real defects found and reproduced — see `TEST-COVERAGE-ANALYSIS.md`.
+Worth fixing *once money depends on the output*, not before.
 
-| When (UTC) | Channel | Post |
-|---|---|---|
-| Jul 29 16:00 | Instagram | "10-minute walk" reel |
-| Jul 29 23:00 | Threads | "10-minute walk" |
-| Jul 30 16:00 | Instagram | "60lb vs 2lb kitten" reel |
-| Jul 30 23:00 | YouTube | "Caged 2 years / walk takes an hour" |
-| Jul 31 16:00 | Instagram | "returned once, now runs this condo" |
-| Jul 31 23:00 | Instagram | "doghouse to penthouse" |
+---
 
-All six carry the Kit link and the Amazon disclosure. All are within the IG
-5-hashtag limit.
+## Blocked — needs Isaac, no session can do these
 
-**Gap: TikTok has zero posts queued.** @tysons_time (49211) is connected and
-working; it is simply being skipped. Instagram is correctly getting the bulk,
-but TikTok costs nothing to cross-post to.
+1. **Install `money-engine/INSTRUCTIONS.md`** into the Claude project (above).
+2. **Facebook Page** not linked in Blotato. Whole channel dark.
+3. **Bios** — no tool can read or edit social bios. Confirm the Amazon link
+   is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA
+   goes nowhere.
+4. **~80 clips** in the "Ike's iPad Pro" Drive folder need descriptions +
+   published/unpublished calls before the licensing work can move *(secondhand)*.
 
-**Standing rule reaffirmed:** always run `blotato_list_schedules` before saying
-anything about the queue. This section exists because the figures above were
-two days stale and would have sent a session refilling a queue that was fine.
-
-## Blocked — needs Isaac (cannot be done by any session)
-
-1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
-2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
+---
 
 ## Next steps
 
-- Claude: after Jul 30, refill the queue (check `blotato_list_schedules` — never let it hit 0). Post the 3 Drive videos once uploaded. Open Facebook once the Page is linked.
-- Rule: **verify with live tool checks before telling Isaac anything is broken or asking him to act.**
-- Rule: lead with the single best recommendation; ship first, report with live URLs.
+1. Merge the useful August branches into `main` so sessions stop waking up blind.
+2. Install `INSTRUCTIONS.md` into the Claude project.
+3. Refill the posting queue before Aug 8 evening.
+4. Show Linda the package.
 
-## Session log
-
-- **2026-07-26**: Built the CLAUDE.md + HANDOFF.md handoff system. Audited Blotato end-to-end; found the schedule queue empty and Instagram under-used despite being the 10x channel. Published 4, scheduled 8 through Jul 30.
+**Operating rules that keep this from happening again:**
+- Verify with live tool checks before telling Isaac anything is broken.
+- Lead with the single best recommendation; ship first, report with live URLs.
+- Update this file before finishing. Every time.
