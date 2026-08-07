@@ -1,0 +1,10 @@
+node_modules
+*.log
+.DS_Store
+.env
+
+# Generated packages are derived from listings/ briefs — regenerate with
+# `node scripts/generate-package.mjs listings/<listing>.json` instead of
+# committing them. The 111-pompano-beach-611 package is tracked on purpose
+# as the reference demo; add future ones explicitly with `git add -f`.
+out/
