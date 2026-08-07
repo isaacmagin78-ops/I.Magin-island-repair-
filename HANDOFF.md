@@ -10,6 +10,24 @@
 **Last updated: 2026-08-07** · Anything below marked *(secondhand)* came from
 another session's summary and has not been re-verified. Re-check before acting.
 
+## The other half of the system lives in Notion
+
+This repo holds the **technical** state — code, generated packages, what runs.
+The **business** state lives in Isaac's Notion workspace, **Ike's Venture HQ**:
+
+- **Ike OS — Master Project Registry** — the master list of projects
+- **Venture Tracker** — venture status
+- **Convert Linda pilot to paying arrangement** — the live plan for turning the
+  Listing Content System into paid work (see the Listing section below)
+
+No Claude session can read or write Notion — there is no connector here. If a
+decision, deadline, or client plan seems to be missing from this file, it is
+probably in Notion. Ask Isaac rather than assuming it does not exist.
+
+**Perplexity Pro's Notion connector is Max-tier only**, so Flex cannot read
+Notion either. Its **GitHub connector works on Pro** — so this file is the one
+place Claude, Perplexity, and Isaac can all reach. Keep it current.
+
 ---
 
 ## ⚠️ Read this first: why main went quiet
