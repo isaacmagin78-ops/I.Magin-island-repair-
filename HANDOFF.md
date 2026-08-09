@@ -20,7 +20,19 @@ it again.
 
 ## Tyson's Time — social (VERIFIED 2026-08-09)
 
-**Queue is EMPTY. 0 posts scheduled.** This is the live action item.
+**Queue holds 8 posts — Aug 9 and Aug 10 only. It runs dry after
+2026-08-10 23:00 UTC.** Refilling from Aug 11 onward is the live action item.
+
+Isaac authorised the refill on 2026-08-09. Aug 9 and Aug 10 are filled and
+verified (all four platforms each day). **Aug 11 and Aug 12 were written but
+never submitted** — the Blotato MCP server dropped mid-run and its reconnected
+instance gated `blotato_create_post` behind an approval that never resolved.
+Nothing partial or malformed was left behind; the failed calls simply did not
+create anything. Re-run them.
+
+Note: the 17:00 UTC TikTok slot on the current day will reject as "in the past"
+if the session is running later than that. Aug 9's TikTok was moved to 21:30
+UTC for this reason. Check the clock before assuming a slot is available.
 
 - Jul 28 → Aug 6: **32 posts published, 0 failed.** Four platforms a day
   (TikTok 17:00 / Instagram 21:00 / Threads 22:30 / YouTube 23:00 UTC) for the
