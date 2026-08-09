@@ -82,8 +82,48 @@ service. Isaac wants her as a client *and* eventually a salesperson.
   and in his DMs, not in any system. Do not go looking for them here again.
 
 Also wanted: a post from the **Tyson + Miss T first stroller walk** footage.
-Not in the repo either — Isaac has to send it. A `TysonVsMiss` Remotion
-composition already exists in `isaac-video-engine/src/compositions/`.
+A `TysonVsMiss` Remotion composition already exists in
+`isaac-video-engine/src/compositions/`.
+
+**The footage is in Google Drive** — `First walk mst new ride`, file ID
+`1ip4WYauPA1nZ46eleRzNIWX5zFiUiqdt`, 47.7 MB QuickTime, uploaded 2026-08-09.
+It is currently **private (owner-only)** and therefore unusable until shared.
+
+---
+
+## Google Drive — the recurring trap
+
+Drive IS connected and readable from these sessions (`search_files`,
+`read_file_content`, `download_file_content`; also `create_file`/`copy_file`).
+There is **no delete and no overwrite tool** — files there cannot be destroyed
+from here.
+
+**The trap, hit three times now:** a Drive file that is owner-only cannot be
+fetched by Blotato or downloaded here. It fails in a way that looks like a
+file-size or format problem and isn't. It is always permissions.
+
+**Permanent fix — do this once instead of per-file:** create a single folder,
+set *that folder* to **Anyone with the link → Viewer**, and put every asset
+meant for these sessions inside it. Everything dropped in inherits the
+permission and just works. Loose files in My Drive root do not.
+
+Direct-download form that works once a file is shared:
+`https://drive.usercontent.google.com/download?id=FILE_ID&export=download&confirm=t`
+
+Media still has to end up in Blotato storage to post — a Drive URL is never a
+valid `mediaUrls` value.
+
+**Also in Drive as of 2026-08-09** (all owner-only unless noted): `MrT new play
+pen`, `Mrs t playing with toy while Tyson watches`, `IMG_0411.MOV` (154 MB),
+`IMG_0407.MOV`, several `.heic` stills, a ~13-photo batch in folder
+`1UZKuUrCOD6-C5ZbgGPo4cBwthl4uoP3w`, and two edited exports
+(`cut01hooked.mp4`, `verticalmaster.mp4`) in `1qYhswxhTChb9nU7oz0gp491Fx2VubseG`.
+
+**No Claude session has ever had access to Isaac's computer.** These sessions
+run in a disposable cloud container with a fresh clone of this repo. There is
+no access to his camera roll, his filesystem, or his local Photos library — so
+nothing here organised his photos, and nothing here can lose them. Drive and
+chat uploads are the only two ways footage reaches a session.
 
 ---
 
