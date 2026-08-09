@@ -1,6 +1,6 @@
 # Isaac's Projects — Monorepo
 
-Reorganized 2026-07-27 from a tangle of unrelated branches into four clean project folders.
+Reorganized 2026-07-27 from a tangle of unrelated branches. Six project folders (see HANDOFF.md for current state).
 Master workspace context lives in the `imagin-concierge` repo (`CLAUDE.md` there).
 
 | Folder | What it is | Umbrella |
@@ -15,3 +15,6 @@ Master workspace context lives in the `imagin-concierge` repo (`CLAUDE.md` there
 - The live College Launch site is deployed by direct upload to Vercel — it is NOT auto-deployed from this repo. `college-launch-os/` matches the live streamlined build (the richer pre-sync version is preserved in git history on `main` before the 2026-07-27 reorg).
 - Legends Ranch videos render from `isaac-video-engine/` (legends-ranch theme, LegendsAnthem composition). Finished MP4s live in `legends-ranch/deliverables/`.
 - This repo's name (`I.Magin-island-repair-`) is historical; the handyman lead-capture app it references was never built here.
+
+| `kit-site/` | First 30 Days Kit sales page, product PDF, launch record | Tyson's Time |
+| `Listing-Content-System/` | Luxury listing content generator (Linda Hoyt's tool) | Real estate |
