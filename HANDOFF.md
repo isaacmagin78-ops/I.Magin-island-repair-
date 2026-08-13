@@ -20,19 +20,27 @@ it again.
 
 ## Tyson's Time — social (VERIFIED 2026-08-09)
 
-**Queue holds 8 posts — Aug 9 and Aug 10 only. It runs dry after
-2026-08-10 23:00 UTC.** Refilling from Aug 11 onward is the live action item.
+**Queue is EMPTY. Last post went out 2026-08-10 23:00 UTC — three days dark
+as of 2026-08-13.** Refilling is the live action item.
 
-Isaac authorised the refill on 2026-08-09. Aug 9 and Aug 10 are filled and
-verified (all four platforms each day). **Aug 11 and Aug 12 were written but
-never submitted** — the Blotato MCP server dropped mid-run and its reconnected
-instance gated `blotato_create_post` behind an approval that never resolved.
-Nothing partial or malformed was left behind; the failed calls simply did not
-create anything. Re-run them.
+The 8-post refill authorised on Aug 9 all **published successfully** — four
+platforms on Aug 9 and Aug 10, real live URLs, zero failures. Aug 11 and Aug 12
+were written but never submitted (the Blotato MCP server dropped mid-run and
+its reconnected instance gated `create_post` behind an approval that never
+resolved). Nothing partial was left behind — those calls created nothing.
 
-Note: the 17:00 UTC TikTok slot on the current day will reject as "in the past"
-if the session is running later than that. Aug 9's TikTok was moved to 21:30
-UTC for this reason. Check the clock before assuming a slot is available.
+**Two malformed posts are live and public.** On 2026-08-08 at 07:03 and 07:04
+UTC, a TikTok and a YouTube post published with the literal body text
+`Post Text` — placeholder copy that was never filled in.
+- TikTok: `tiktok.com/@tysons_time/video/7671553026762575134`
+- YouTube: `youtube.com/watch?v=cBbaW6pyXWQ`
+
+These carry no Kit link, no disclosure, no caption. Neither was created by this
+session. They should be deleted or edited — Isaac has to do it in-app; no tool
+here can delete a published post.
+
+Note: the 17:00 UTC TikTok slot on the current day rejects as "in the past" if
+the session runs later than that. Check the clock before assuming it's free.
 
 - Jul 28 → Aug 6: **32 posts published, 0 failed.** Four platforms a day
   (TikTok 17:00 / Instagram 21:00 / Threads 22:30 / YouTube 23:00 UTC) for the
@@ -70,6 +78,58 @@ UTC for this reason. Check the clock before assuming a slot is available.
 - Amazon Associates disclosure line required wherever gear is mentioned.
 - `*.vercel.app` is blocked for plain WebFetch/curl in this environment — use
   the Vercel MCP `web_fetch_vercel_url` tool to check those pages.
+
+---
+
+## Dispatch — the other Claude surface (IMPORTANT, 2026-08-13)
+
+**Dispatch is a Claude feature**, listed in the app sidebar alongside Code and
+Cowork. It is not a third-party product. It holds a large amount of Isaac's
+context that **no Code session can see** — sessions do not share memory across
+surfaces. Isaac spent days assuming Dispatch and Code were one system. They
+are not, and that assumption cost him most of a week of contradictory advice.
+
+**Anything that must survive between surfaces has to live in this file.**
+Isaac can paste this file into Dispatch to sync it in one message.
+
+### What Dispatch holds that this repo did not
+
+- **TysonScripts** — a full content library: captions for every ready-to-post
+  video, a 7-day posting schedule, UGC brand outreach templates (Chewy,
+  BarkBox), an Amazon storefront setup guide, product scripts, a YouTube
+  longform outline, Legends Ranch documentary narration scripts, and a
+  "Tomorrow Plan" morning brief built from Notion + YouTube Studio data.
+- **IMagin Concierge** and **IMagin Travel** — built as separate child
+  sessions: service menus, pricing, pitch docs, a first-3-clients strategy,
+  and the travel concept with **Madison as pilot client**.
+- **The winning YouTube formula**, from real Studio data: top video was
+  *"60lb Pitbull vs. 2lb Kitten"* at **2,529 views**. The pattern is
+  **kitten + Tyson size contrast, under 13 seconds, seamless loop.**
+  Use this to select clips — it beats guessing, and it beats
+  platform-novelty as a selection rule.
+
+### Pending since 2026-07-23 — nobody has done these
+
+1. **Southwest Airlines DM — still unread since July 23.** Dispatch prepared a
+   full response package with rate guidance of **$1,500–$3,000**. This is the
+   single largest money item on any board, and it has been sitting for three
+   weeks. Cannot be read or answered by any tool here.
+2. **Amazon Influencer application never filed** (Associates is already done).
+3. **Amazon tax info never completed.**
+4. **Gumroad never set up.**
+5. **3 bad YouTube Shorts never deleted.**
+
+### Unresolved — the Kit site could not be verified by either surface
+
+Dispatch tried to reach `tysons-time-kit.vercel.app` and **timed out**. From
+here, `web_fetch_vercel_url` failed to produce a shareable URL, and
+`list_projects` on the connected Vercel team
+(`team_MCU3MembxNrAzrNozh6h8uWA`) returns **zero projects**.
+
+Most likely the live sites are deployed under a **different Vercel account**
+than the one wired into these sessions — but that is unconfirmed. Since this
+is the paid checkout page for the $19 Kit, **Isaac should open the URL himself
+and confirm it loads.** Do not assume it is up, and do not assume it is down.
 
 ---
 
