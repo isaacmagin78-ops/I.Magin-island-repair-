@@ -219,6 +219,8 @@ Worth fixing *once money depends on the output*, not before.
 ## Next steps
 
 1. **Refill the posting queue — it is empty and all channels are dark since Aug 10.**
+   Runbook with the paste-ready instruction: **`money-engine/REFILL-QUEUE.md`**.
+   Needs Dispatch or another surface with Blotato tools; cloud Code sessions can't.
 2. Delete or fix the two `Post Text` posts from Aug 8 (missing Amazon disclosure).
 3. Find TysonScripts (Drive or Notion) and get it into this repo.
 4. Follow up the Southwest Airlines opportunity — $1,500–$3,000, still unclosed.
