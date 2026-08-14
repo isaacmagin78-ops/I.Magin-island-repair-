@@ -15,23 +15,31 @@ another session's summary and has not been re-verified. Re-check before acting.
 > written below. The four-rooms problem is written below. **Do not make him
 > explain it again.** Verify with tools, then act.
 
-## ⚠️ There are FOUR rooms, and none of them can see each other
+## ⚠️ There are FOUR rooms — but three walls came down on Aug 14
 
-This is the root cause of six weeks of confusion. In the Claude app, **Code**,
+This was the root cause of six weeks of confusion. In the Claude app, **Code**,
 **Dispatch**, **Cowork**, and **Chats** are separate surfaces. Work done in one
 is invisible to the others. Isaac has been re-explaining from zero in every room
 because each one genuinely does start blank.
 
-| Room | What lives there | Reachable from Code? |
+**That is now only half true.** A Code session *with MCP connectors enabled* can
+read Notion, Google Drive, and Blotato directly. Verified live 2026-08-14 — all
+three were previously written off in this file as unreachable. **Before you
+conclude something is out of reach, check your tool list.**
+
+| Room / System | What lives there | Reachable from Code? |
 |---|---|---|
 | **Code** (this repo) | All eight projects, this file | — |
+| **Notion** (`Ike's Venture HQ`) | Master Project Registry, Venture Tracker, daily briefings | ✅ **YES** — `notion-search`, `notion-fetch` |
+| **Google Drive** | TysonScripts, raw footage, Content Hub, prototypes | ✅ **YES** — `search_files`, `read_file_content` |
+| **Blotato** (posting queue) | Live schedule + all 5 channels | ✅ **YES** — `blotato_list_schedules`, `blotato_create_post` |
 | **Dispatch** | Read the Jul 22–23 transcripts; holds that recovery | ❌ No |
 | **Cowork** | 5 open tasks dated Aug 6 (see below) | ❌ No |
 | **Chats** | Starred: Money Engine OS, The Private Office, Isaac HQ, IMagin Concierge, Tyson Brand App | ❌ No |
 | **Local Mac** | `~/.claude/projects/*.jsonl` session transcripts | ❌ No |
 
-**This file is the only shared memory.** Anything that matters must land here or
-it is lost to every other room.
+**This file is still the shared memory of record.** Anything that matters must
+land here or it is lost to every room that lacks connectors.
 
 ### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
 
@@ -50,8 +58,36 @@ transcripts and reported that on **Jul 22–23** the following was built:
 - **Amazon storefront setup guide.**
 - **"Tomorrow Plan"** — a morning brief built from Notion + YouTube Studio data.
 
-**TysonScripts is not in this repo.** It is most likely in Google Drive or Notion.
-Finding it and getting it into version control is worth doing before it goes stale.
+### ✅ TysonScripts — FOUND 2026-08-14, in Google Drive, contents verified
+
+Not secondhand. Both documents were opened and read this session.
+
+> **This repo is PUBLIC.** Drive file IDs and the Amazon Associate tag are
+> deliberately not written here. Retrieve them with the Drive connector —
+> `search_files` on the titles below finds both in seconds.
+
+| Document (search Drive by title) | What is actually in it |
+|---|---|
+| **Tyson's Time — 10 Ready-to-Post Packages** (Jul 26) | 10 complete posts: hook line, full caption, hashtags, and a named source clip each |
+| **Tyson's Time — Amazon Storefront Build Kit + Agent Prompt** (Jul 26) | 6 Idea Lists w/ product briefs, influencer-approval path, network money-move |
+
+**Two facts recovered that appear nowhere else in this repo:**
+
+- **The Amazon Associate tracking ID is in the Storefront doc, Part A.** Not
+  reproduced here — public repo. It was previously recorded nowhere at all.
+- **All 10 captions already carry exactly 5 hashtags** — already inside
+  Instagram's hard limit. These are post-ready as written.
+
+**The matching footage is also in Drive** — `Tyson's Time Content Hub/` and
+`02 Raw Tyson Videos/`. Spot-checked: the clips named by Posts 1, 2, 3, and 5
+all exist as real files. **Scripts + footage are both in hand, so the empty
+queue is refillable now** — it is not blocked on producing anything new.
+
+⚠️ The Packages doc ends with: *"Post natively in-app for best reach (scheduler
+tends to get throttled)."* That is in tension with scheduling via Blotato.
+Isaac's call — native reach vs. scheduling convenience.
+
+Still worth copying both into version control before they drift.
 
 ### Cowork — 5 open tasks, all dated Aug 6, none visible from here
 
@@ -77,9 +113,26 @@ The **business** state lives in Isaac's Notion workspace, **Ike's Venture HQ**:
 - **Convert Linda pilot to paying arrangement** — the live plan for turning the
   Listing Content System into paid work (see the Listing section below)
 
-No Claude session can read or write Notion — there is no connector here. If a
-decision, deadline, or client plan seems to be missing from this file, it is
-probably in Notion. Ask Isaac rather than assuming it does not exist.
+**✅ CORRECTED 2026-08-14 — Notion IS readable from Code.** The previous line
+here said "No Claude session can read or write Notion — there is no connector
+here." That is false when connectors are enabled, and it caused sessions to
+stand down from work they could have done. Verified live this session:
+
+Search these by title with `notion-search` (IDs omitted — public repo):
+
+- **Ike OS — Master Project Registry** (database)
+- **Venture Tracker** (database)
+- **Ike's Venture HQ**
+- **Ike OS**
+- **Agent Roster — canonical (Aug 4, 2026)**
+- **Knowledge Asset… Cross-AI Continuity Loss — Recovery Inventory** (Jul 29)
+
+A **daily briefing page** has been generating on schedule (Aug 8–13 all present),
+reading Venture Tracker, Master Project Registry, Stripe, and Pre-Flight
+Checklist. That automation is alive and nobody in Code knew it.
+
+If a decision, deadline, or client plan seems missing from this file, **search
+Notion first** — then ask Isaac.
 
 **Perplexity Pro's Notion connector is Max-tier only**, so Flex cannot read
 Notion either. Its **GitHub connector works on Pro** — so this file is the one
@@ -115,9 +168,12 @@ grading, and the never-propose list.
 
 ## Tyson's Time — posting system
 
-### Queue: VERIFIED LIVE 2026-08-14 via `blotato_list_schedules`
+### Queue: RE-VERIFIED LIVE 2026-08-14 (second check, from a Code session)
 
-**🔴 QUEUE IS EMPTY. 0 posts scheduled.**
+**🔴 QUEUE IS EMPTY. 0 posts scheduled.** — `blotato_list_schedules` → `count: 0`
+
+✅ **A cloud Code session CAN reach Blotato.** Earlier guidance in this file said
+it could not and routed this to Dispatch. That was wrong; the tools are here.
 
 Last post published **Aug 10 23:00Z** (YouTube). All channels have been dark
 since. Instagram — the best channel by ~10x — has posted nothing in that window.
@@ -219,8 +275,9 @@ Worth fixing *once money depends on the output*, not before.
 ## Next steps
 
 1. **Refill the posting queue — it is empty and all channels are dark since Aug 10.**
-   Runbook with the paste-ready instruction: **`money-engine/REFILL-QUEUE.md`**.
-   Needs Dispatch or another surface with Blotato tools; cloud Code sessions can't.
+   Runbook: **`money-engine/REFILL-QUEUE.md`**. Captions are ready (TysonScripts,
+   above) and the footage is in Drive. **Any session with Blotato tools can do
+   this — including cloud Code.** Do not route it to Dispatch by default.
 2. Delete or fix the two `Post Text` posts from Aug 8 (missing Amazon disclosure).
 3. Find TysonScripts (Drive or Notion) and get it into this repo.
 4. Follow up the Southwest Airlines opportunity — $1,500–$3,000, still unclosed.

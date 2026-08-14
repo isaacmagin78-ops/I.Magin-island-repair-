@@ -1,7 +1,13 @@
 # Isaac's Projects — Monorepo
 
 Reorganized 2026-07-27 from a tangle of unrelated branches into four clean project folders.
-Master workspace context lives in the `imagin-concierge` repo (`CLAUDE.md` there).
+
+> ⚠️ **Start with [`HANDOFF.md`](HANDOFF.md) — it is the shared memory across sessions.**
+>
+> An earlier version of this line pointed to a separate `imagin-concierge` repo for
+> "master workspace context." **That repo does not exist.** Checked against the GitHub
+> API on 2026-08-14: this account has exactly one repository — this one. The pointer
+> sent sessions hunting for a phantom repo. Corrected so it stops costing time.
 
 | Folder | What it is | Umbrella |
 |---|---|---|
