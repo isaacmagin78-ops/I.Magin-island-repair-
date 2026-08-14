@@ -21,7 +21,7 @@
 ## Caption
 Mornings hit different at 111 N Pompano Beach Blvd, Unit 611. 2 beds · 2 baths · 1,450 SF · Direct oceanfront with private Atlantic-view balcony. DM "TOUR" for a private showing. 
 
-#PompanoBeachRealEstate #LuxuryListing #WaterfrontLiving #JustListed #TheSeaMonarch #SouthFloridaLuxury #DreamHome
+#PompanoBeachRealEstate #TheSeaMonarch #JustListed #LuxuryListing #WaterfrontLiving
 
 ## CTA
 Comment or DM **"TOUR"** → auto-reply with showing link.

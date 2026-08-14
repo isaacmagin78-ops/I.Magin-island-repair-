@@ -22,7 +22,7 @@ Serious about The Sea Monarch? The window on this one is closing. DM
 
 Linda S. Hoyt · ONE Sotheby's International Realty · (954) 647-9295
 
-#PompanoBeachRealEstate #LuxuryListing #WaterfrontLiving #JustListed #TheSeaMonarch #SouthFloridaLuxury #DreamHome
+#PompanoBeachRealEstate #TheSeaMonarch #JustListed #LuxuryListing #WaterfrontLiving
 
 ## Fill in before posting
 - [N] = real attendance count — never inflate

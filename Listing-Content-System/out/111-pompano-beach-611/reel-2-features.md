@@ -18,7 +18,7 @@ Wide golden-hour drone. Text: "$775,000 · The Sea Monarch, Pompano Beach"
 ## Caption
 Number 5 is the one everyone asks about. 111 N Pompano Beach Blvd, Unit 611 — 2 beds · 2 baths · 1,450 SF · Direct oceanfront with private Atlantic-view balcony. Save this one. 
 
-#PompanoBeachRealEstate #LuxuryListing #WaterfrontLiving #JustListed #TheSeaMonarch #SouthFloridaLuxury #DreamHome
+#PompanoBeachRealEstate #TheSeaMonarch #JustListed #LuxuryListing #WaterfrontLiving
 
 ## CTA
 "Save this post + DM 'DETAILS' for the full feature sheet."

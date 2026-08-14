@@ -19,7 +19,7 @@
 ## Caption
 The Sea Monarch inventory like this is measured in days, not weeks. If 111 N Pompano Beach Blvd, Unit 611 is on your list, move now — private showings are booking through Linda S. Hoyt. 
 
-#PompanoBeachRealEstate #LuxuryListing #WaterfrontLiving #JustListed #TheSeaMonarch #SouthFloridaLuxury #DreamHome
+#PompanoBeachRealEstate #TheSeaMonarch #JustListed #LuxuryListing #WaterfrontLiving
 
 ## CTA
 "DM 'SHOWING' today — serious buyers only."

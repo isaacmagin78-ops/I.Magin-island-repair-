@@ -18,7 +18,7 @@ marketing consultation.
 
 Linda S. Hoyt · ONE Sotheby's International Realty · (954) 647-9295
 
-#PompanoBeachRealEstate #LuxuryListing #WaterfrontLiving #UnderContract #TheSeaMonarch #SouthFloridaLuxury #DreamHome
+#PompanoBeachRealEstate #TheSeaMonarch #UnderContract #LuxuryListing #WaterfrontLiving
 
 ## Fill in before posting
 - [X] days on market, [Y] showings, [Z] offers (use real numbers only)
