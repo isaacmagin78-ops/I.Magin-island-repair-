@@ -11,9 +11,10 @@
 another session's summary and has not been re-verified. Re-check before acting.
 
 > **Aug 14 — read this before asking Isaac anything.** He has spent six weeks
-> re-explaining the same night to every new session. The Jul 22–23 recovery is
-> written below. The four-rooms problem is written below. **Do not make him
-> explain it again.** Verify with tools, then act.
+> re-explaining the same night to every new session. **The origin night was
+> Jul 14–15** — written below with commit evidence. The four-rooms problem is
+> written below. **Do not make him explain it again, and do not send him looking
+> for the transcript.** Verify with tools, then act.
 
 ## ⚠️ There are FOUR rooms, and none of them can see each other
 
@@ -33,11 +34,59 @@ because each one genuinely does start blank.
 **This file is the only shared memory.** Anything that matters must land here or
 it is lost to every other room.
 
-### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
+### 🛑 STOP LOOKING FOR THE ORIGIN CONVERSATION — it is already answered here
 
-Isaac repeatedly asked what happened the night Claude Code "took over the
-computer." **Dispatch already answered this.** It read the full prior session
-transcripts and reported that on **Jul 22–23** the following was built:
+**The night Claude Code "took over the computer" was Jul 14–15, not Jul 22–23.**
+Verified against commits on 2026-08-14. Do not go hunting for the transcript
+again; everything it produced is already in this repo as working code.
+
+Evidence — commit counts per day:
+
+| Date | Commits |
+|---|---|
+| **Jul 14** | **8** ← the night |
+| **Jul 15** | **7** ← it ran past midnight |
+| Jul 22 | **0** |
+| Jul 23 | **0** |
+
+What that session actually did, in order:
+
+```
+Jul 14 04:58  Add Isaac Video Engine: local Remotion setup   ← ran on the Mac
+Jul 14 22:36  Phase 1: core engine architecture
+Jul 14 22:41  Phase 2: reusable component library (12 components)
+Jul 14 22:43  Phase 3: motion system (Ken Burns, pan/zoom)
+Jul 14 22:46  Phase 4: audio system (music, voiceover, ducking)
+Jul 14 22:48  Phase 5: social presets verified end-to-end
+Jul 14 22:52  Phase 6: one-command render pipeline
+Jul 14 22:55  Phase 7: documentation
+Jul 15 00:22  Redesign into a premium college command center
+```
+
+Seven phases in nineteen minutes, on a **local** Remotion install. That is the
+"took over the computer" night.
+
+**Origin conversation link:** _(paste here once found — then never search again)_
+
+To locate the transcript on the Mac:
+
+```bash
+grep -ril remotion ~/.claude/projects/*/*.jsonl
+ls -lt ~/.claude/projects/*/*.jsonl | head -20   # look for Jul 14–15
+```
+
+**You do not need it.** The transcript is a recording of work that already
+exists as code. Read the commits instead.
+
+### ⚠️ DISPUTED: what Dispatch recovered about a "Jul 22–23 night" *(secondhand, contradicted by commits)*
+
+Dispatch reported the below as happening **Jul 22–23**. **That date is wrong** —
+there are zero commits on either day. The one artifact cited as proof, the Kit
+site, was committed **Jul 29** in `e83d0b9 "Recover three orphaned projects the
+July 27 cleanup missed"`, so its date proves nothing about when it was built.
+
+The *work items* below are probably real. Only the date is unreliable. Treat
+this list as "built sometime in late July," not as a dated event:
 
 - **$19 First 30 Days Kit — LIVE** at `tysons-time-kit.vercel.app`; promo videos
   posted Jul 21 across TikTok, IG, YouTube. *(Kit site confirmed in `kit-site/`.)*
