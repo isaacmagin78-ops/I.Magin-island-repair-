@@ -7,8 +7,65 @@
 > the only shared memory. If it goes stale, everyone wakes up lost — that
 > is exactly what happened between Jul 29 and Aug 7.
 
-**Last updated: 2026-08-07** · Anything below marked *(secondhand)* came from
+**Last updated: 2026-08-14** · Anything below marked *(secondhand)* came from
 another session's summary and has not been re-verified. Re-check before acting.
+
+> **Aug 14 — read this before asking Isaac anything.** He has spent six weeks
+> re-explaining the same night to every new session. The Jul 22–23 recovery is
+> written below. The four-rooms problem is written below. **Do not make him
+> explain it again.** Verify with tools, then act.
+
+## ⚠️ There are FOUR rooms, and none of them can see each other
+
+This is the root cause of six weeks of confusion. In the Claude app, **Code**,
+**Dispatch**, **Cowork**, and **Chats** are separate surfaces. Work done in one
+is invisible to the others. Isaac has been re-explaining from zero in every room
+because each one genuinely does start blank.
+
+| Room | What lives there | Reachable from Code? |
+|---|---|---|
+| **Code** (this repo) | All eight projects, this file | — |
+| **Dispatch** | Read the Jul 22–23 transcripts; holds that recovery | ❌ No |
+| **Cowork** | 5 open tasks dated Aug 6 (see below) | ❌ No |
+| **Chats** | Starred: Money Engine OS, The Private Office, Isaac HQ, IMagin Concierge, Tyson Brand App | ❌ No |
+| **Local Mac** | `~/.claude/projects/*.jsonl` session transcripts | ❌ No |
+
+**This file is the only shared memory.** Anything that matters must land here or
+it is lost to every other room.
+
+### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
+
+Isaac repeatedly asked what happened the night Claude Code "took over the
+computer." **Dispatch already answered this.** It read the full prior session
+transcripts and reported that on **Jul 22–23** the following was built:
+
+- **$19 First 30 Days Kit — LIVE** at `tysons-time-kit.vercel.app`; promo videos
+  posted Jul 21 across TikTok, IG, YouTube. *(Kit site confirmed in `kit-site/`.)*
+- **TysonScripts library** — captions for every ready-to-post video, a 7-day
+  posting schedule, product scripts, YouTube longform outline, Legends Ranch
+  documentary narration scripts.
+- **Southwest Airlines DM response package** with rate guidance **$1,500–$3,000**.
+  This is an unclosed brand-deal opportunity and appears nowhere else in this repo.
+- **UGC brand outreach templates** for Chewy / BarkBox / similar.
+- **Amazon storefront setup guide.**
+- **"Tomorrow Plan"** — a morning brief built from Notion + YouTube Studio data.
+
+**TysonScripts is not in this repo.** It is most likely in Google Drive or Notion.
+Finding it and getting it into version control is worth doing before it goes stale.
+
+### Cowork — 5 open tasks, all dated Aug 6, none visible from here
+
+Legends Ranch video production · Multi-AI blind spot analysis · IMagin Concierge
+service overview · App integration confusion · System status confusion
+
+### ⚠️ Privacy issue on the Mac, flagged by `START HERE.md` and not resolved
+
+The Jul cleanup moved `DS11_Complete-2.pdf` (passport application),
+`Florida Blue Ins Card.pdf`, and an Apple Card statement into `02 Admin` **on the
+Desktop, which syncs to Google Drive.** Also referenced: a credentials file that
+should not be left as a `.txt`. Isaac should decide on both deliberately.
+
+---
 
 ## The other half of the system lives in Notion
 
@@ -58,16 +115,19 @@ grading, and the never-propose list.
 
 ## Tyson's Time — posting system
 
-### Queue: VERIFIED LIVE 2026-08-07 via `blotato_list_schedules`
+### Queue: VERIFIED LIVE 2026-08-14 via `blotato_list_schedules`
 
-**8 posts scheduled. Queue empties after Aug 8 23:00Z.**
+**🔴 QUEUE IS EMPTY. 0 posts scheduled.**
 
-| When (UTC) | Channel |
-|---|---|
-| Aug 7 17:00 / 21:00 / 22:30 / 23:00 | TikTok · Instagram · Threads · YouTube |
-| Aug 8 17:00 / 21:00 / 22:30 / 23:00 | TikTok · Instagram · Threads · YouTube |
+Last post published **Aug 10 23:00Z** (YouTube). All channels have been dark
+since. Instagram — the best channel by ~10x — has posted nothing in that window.
 
-All carry the Kit link and the Amazon disclosure. **Refill before Aug 8 evening.**
+**Refilling the queue is the highest-value action available right now.**
+
+**Two posts published broken on Aug 8** with the literal caption `Post Text`:
+TikTok `5968806` and YouTube `5968795`. No Kit link, no Amazon disclosure.
+The missing disclosure is an Associates compliance problem, not just a typo.
+Consider deleting or editing both.
 
 **Standing rule:** always run `blotato_list_schedules` before saying anything
 about the queue. Written figures go stale in days.
@@ -158,10 +218,13 @@ Worth fixing *once money depends on the output*, not before.
 
 ## Next steps
 
-1. Merge the useful August branches into `main` so sessions stop waking up blind.
-2. Install `INSTRUCTIONS.md` into the Claude project.
-3. Refill the posting queue before Aug 8 evening.
-4. Show Linda the package.
+1. **Refill the posting queue — it is empty and all channels are dark since Aug 10.**
+2. Delete or fix the two `Post Text` posts from Aug 8 (missing Amazon disclosure).
+3. Find TysonScripts (Drive or Notion) and get it into this repo.
+4. Follow up the Southwest Airlines opportunity — $1,500–$3,000, still unclosed.
+5. Decide on the Desktop → Google Drive sync of passport/insurance/card documents.
+6. Install `INSTRUCTIONS.md` into the Claude project.
+7. Show Linda the package.
 
 **Operating rules that keep this from happening again:**
 - Verify with live tool checks before telling Isaac anything is broken.
