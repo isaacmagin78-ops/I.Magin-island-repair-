@@ -355,6 +355,20 @@ PDF to a raw GitHub URL pinned to the feature branch
 
 ---
 
+> ⚠️ **PROVENANCE WARNING, added 2026-08-15.** `concierge-systems/renovation-dashboard.csv`
+> and `collection-inventory.csv` carry **realistic placeholders, not Isaac's real budgets,
+> vendors, timelines or items.** The session that wrote them said so explicitly; that
+> warning did not survive into `main` until now.
+>
+> On 2026-08-15 a session read the dashboard's cargo-elevator/COI risk line as fact and
+> told Isaac a certificate of insurance was urgently blocking a September panel install.
+> **He did not know what it was talking about.** The Ferguson COI email in his inbox is
+> real; the deadline and the elevator reasoning attached to it came from placeholder text.
+>
+> **Do not quote these CSVs to him as fact.** Ask, or check with him, before acting on
+> anything in them. The same caution applies to the elevator dimensions below unless he
+> confirms them.
+
 ## PH3 Punchlist — LIVE, and not in this repo
 
 `https://ph3-punchlist.vercel.app` — verified 200 on 2026-08-04, last modified
