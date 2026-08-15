@@ -1,0 +1,305 @@
+<title>Final Punchlist</title>
+<style>
+  :root{
+    --paper:#f4f5f7; --card:#fff; --ink:#15181d; --body:#4a515c; --muted:#79818d;
+    --rule:#dfe2e7; --line:#eceef1;
+    --open:#b3391f; --open-w:#fceee9;
+    --on:#9a6a00; --on-w:#fbf3e2;
+    --done:#0c7048; --done-w:#e6f2ec;
+    --accent:#1f4f8f;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0e1014; --card:#161a20; --ink:#eceef2; --body:#b2b9c4; --muted:#838b97;
+      --rule:#262b33; --line:#1e232a;
+      --open:#f5836a; --open-w:#2b1613;
+      --on:#dda52f; --on-w:#2a2114;
+      --done:#3fbc8a; --done-w:#0f2219;
+      --accent:#6fa2e0;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0e1014; --card:#161a20; --ink:#eceef2; --body:#b2b9c4; --muted:#838b97;
+    --rule:#262b33; --line:#1e232a;
+    --open:#f5836a; --open-w:#2b1613; --on:#dda52f; --on-w:#2a2114;
+    --done:#3fbc8a; --done-w:#0f2219; --accent:#6fa2e0;
+  }
+  :root[data-theme="light"]{
+    --paper:#f4f5f7; --card:#fff; --ink:#15181d; --body:#4a515c; --muted:#79818d;
+    --rule:#dfe2e7; --line:#eceef1;
+    --open:#b3391f; --open-w:#fceee9; --on:#9a6a00; --on-w:#fbf3e2;
+    --done:#0c7048; --done-w:#e6f2ec; --accent:#1f4f8f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--body);font-family:var(--sans);font-size:17px;line-height:1.45;-webkit-font-smoothing:antialiased;padding:0 14px 90px}
+  .wrap{max-width:640px;margin:0 auto}
+
+  header{padding:28px 0 14px}
+  h1{font-size:29px;font-weight:800;letter-spacing:-.025em;color:var(--ink)}
+  header p{margin-top:6px;color:var(--muted);font-size:15.5px}
+
+  .tally{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+  .t{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:12px 10px;text-align:center}
+  .t .n{font-family:var(--mono);font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+  .t .l{font-size:11px;font-family:var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:5px;font-weight:600}
+  .t.o .n{color:var(--open)} .t.s .n{color:var(--on)} .t.d .n{color:var(--done)}
+
+  .add{margin-top:16px;background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:14px}
+  .add input,.add select{width:100%;font-family:inherit;font-size:16.5px;padding:11px 12px;border:1px solid var(--rule);border-radius:5px;background:var(--paper);color:var(--ink);margin-top:8px}
+  .add input:focus,.add select:focus{outline:2px solid var(--accent);outline-offset:1px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .add button{width:100%;margin-top:10px;font-family:inherit;font-size:16.5px;font-weight:700;padding:13px;border:none;border-radius:5px;background:var(--ink);color:var(--card);cursor:pointer}
+  .add button:active{opacity:.8}
+  .add .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+
+  h2.room{margin-top:28px;font-size:13px;font-family:var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+
+  .item{background:var(--card);border:1px solid var(--rule);border-top:none;padding:14px}
+  .item:first-of-type{border-top:1px solid var(--rule)}
+  .item.done .txt{text-decoration:line-through;color:var(--muted)}
+  .txt{font-size:16.5px;color:var(--ink);font-weight:600}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:9px}
+  .pill{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;padding:5px 9px;border-radius:3px;border:none;cursor:pointer;font-family:var(--mono)}
+  .p-open{background:var(--open-w);color:var(--open)}
+  .p-on{background:var(--on-w);color:var(--on)}
+  .p-done{background:var(--done-w);color:var(--done)}
+  .who{font-size:13.5px;color:var(--muted)}
+  .del{margin-left:auto;background:none;border:none;color:var(--muted);font-size:19px;cursor:pointer;padding:2px 6px;line-height:1}
+  .del:hover{color:var(--open)}
+
+  .empty{background:var(--card);border:1px dashed var(--rule);border-radius:6px;padding:26px 18px;text-align:center;color:var(--muted);font-size:15.5px;margin-top:20px}
+
+  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--rule);padding:11px 14px;display:flex;gap:8px;max-width:640px;margin:0 auto}
+  .bar button{flex:1;font-family:inherit;font-size:15.5px;font-weight:700;padding:13px;border-radius:5px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer}
+  .bar button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .toast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--card);font-size:14.5px;font-weight:600;padding:10px 18px;border-radius:20px;opacity:0;transition:opacity .2s;pointer-events:none}
+  .toast.on{opacity:1}
+  footer{margin-top:30px;font-size:14px;color:var(--muted);line-height:1.55}
+</style>
+
+<div class="wrap">
+
+<header>
+  <h1>Final punchlist</h1>
+  <p>Walk the place. Add what's wrong. Assign it. Copy the list into the group text when you're done.</p>
+</header>
+
+<div class="tally">
+  <div class="t o"><div class="n" id="c-open">0</div><div class="l">Open</div></div>
+  <div class="t s"><div class="n" id="c-on">0</div><div class="l">On someone</div></div>
+  <div class="t d"><div class="n" id="c-done">0</div><div class="l">Done</div></div>
+</div>
+
+<div class="add">
+  <div class="lbl">Add an item</div>
+  <input id="f-txt" type="text" placeholder="What's wrong? e.g. Gap at baseboard, left wall" autocomplete="off">
+  <div class="row2">
+    <select id="f-room">
+      <option>Laundry</option>
+      <option>Primary bath</option>
+      <option>Primary bedroom</option>
+      <option>Second bedroom</option>
+      <option>Second bath</option>
+      <option>Kitchen &amp; bar</option>
+      <option>Living</option>
+      <option>Entry / hallway</option>
+      <option>Balcony</option>
+      <option>Building / access</option>
+      <option>Other</option>
+    </select>
+    <select id="f-who">
+      <option>Open — unassigned</option>
+      <option>Jared</option>
+      <option>Ike</option>
+      <option>Building</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <button id="btn-add" type="button">Add to list</button>
+</div>
+
+<div id="list"></div>
+
+<footer id="foot"></footer>
+
+</div>
+
+<div class="bar">
+  <button type="button" id="btn-copy" class="primary">Copy list</button>
+  <button type="button" id="btn-clear">Clear all</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var KEY = 'ph3-punchlist-v1';
+  var items = [];
+  try { items = JSON.parse(localStorage.getItem(KEY)) || []; } catch(e){ items = []; }
+
+  var ROOMS = ['Laundry','Primary bath','Primary bedroom','Second bedroom','Second bath',
+               'Kitchen & bar','Living','Entry / hallway','Balcony','Building / access','Other'];
+
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(items)); } catch(e){} }
+
+  function toast(msg){
+    var t = document.getElementById('toast');
+    t.textContent = msg; t.classList.add('on');
+    setTimeout(function(){ t.classList.remove('on'); }, 1800);
+  }
+
+  function statusOf(it){
+    if (it.done) return 'done';
+    if (it.who && it.who !== 'Open — unassigned') return 'on';
+    return 'open';
+  }
+
+  function render(){
+    var list = document.getElementById('list');
+    list.innerHTML = '';
+    var counts = {open:0, on:0, done:0};
+    items.forEach(function(it){ counts[statusOf(it)]++; });
+    document.getElementById('c-open').textContent = counts.open;
+    document.getElementById('c-on').textContent = counts.on;
+    document.getElementById('c-done').textContent = counts.done;
+
+    if (!items.length){
+      var e = document.createElement('div');
+      e.className = 'empty';
+      e.textContent = 'Nothing yet. Walk one room and add what you see — even the small stuff.';
+      list.appendChild(e);
+      document.getElementById('foot').textContent = '';
+      return;
+    }
+
+    ROOMS.forEach(function(room){
+      var inRoom = items.filter(function(it){ return it.room === room; });
+      if (!inRoom.length) return;
+      var h = document.createElement('h2');
+      h.className = 'room';
+      h.textContent = room + ' · ' + inRoom.length;
+      list.appendChild(h);
+
+      inRoom.forEach(function(it){
+        var st = statusOf(it);
+        var d = document.createElement('div');
+        d.className = 'item' + (it.done ? ' done' : '');
+
+        var txt = document.createElement('div');
+        txt.className = 'txt';
+        txt.textContent = it.txt;
+        d.appendChild(txt);
+
+        var meta = document.createElement('div');
+        meta.className = 'meta';
+
+        var pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'pill ' + (st === 'done' ? 'p-done' : st === 'on' ? 'p-on' : 'p-open');
+        pill.textContent = st === 'done' ? 'Done' : st === 'on' ? 'On ' + it.who : 'Open';
+        pill.addEventListener('click', function(){
+          it.done = !it.done;
+          save(); render();
+        });
+        meta.appendChild(pill);
+
+        if (!it.done && st === 'open'){
+          var w = document.createElement('span');
+          w.className = 'who';
+          w.textContent = 'unassigned';
+          meta.appendChild(w);
+        }
+
+        var del = document.createElement('button');
+        del.type = 'button';
+        del.className = 'del';
+        del.setAttribute('aria-label', 'Remove item');
+        del.textContent = '×';
+        del.addEventListener('click', function(){
+          items = items.filter(function(x){ return x !== it; });
+          save(); render();
+        });
+        meta.appendChild(del);
+
+        d.appendChild(meta);
+        list.appendChild(d);
+      });
+    });
+
+    document.getElementById('foot').textContent =
+      items.length + ' item' + (items.length === 1 ? '' : 's') +
+      ' · saved on this device only · tap a status to mark it done';
+  }
+
+  function asText(){
+    var out = ['FINAL PUNCHLIST', ''];
+    var counts = {open:0, on:0, done:0};
+    items.forEach(function(it){ counts[statusOf(it)]++; });
+    out.push(counts.open + ' open · ' + counts.on + ' assigned · ' + counts.done + ' done');
+    out.push('');
+    ROOMS.forEach(function(room){
+      var inRoom = items.filter(function(it){ return it.room === room; });
+      if (!inRoom.length) return;
+      out.push(room.toUpperCase());
+      inRoom.forEach(function(it){
+        var st = statusOf(it);
+        var mark = st === 'done' ? '[x]' : '[ ]';
+        var tail = st === 'on' ? '  (' + it.who + ')' : '';
+        out.push('  ' + mark + ' ' + it.txt + tail);
+      });
+      out.push('');
+    });
+    return out.join('\n');
+  }
+
+  document.getElementById('btn-add').addEventListener('click', function(){
+    var t = document.getElementById('f-txt');
+    var v = t.value.trim();
+    if (!v){ t.focus(); return; }
+    items.push({
+      txt: v,
+      room: document.getElementById('f-room').value,
+      who: document.getElementById('f-who').value,
+      done: false
+    });
+    t.value = '';
+    save(); render(); t.focus();
+  });
+
+  document.getElementById('f-txt').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') document.getElementById('btn-add').click();
+  });
+
+  document.getElementById('btn-copy').addEventListener('click', function(){
+    if (!items.length){ toast('Nothing to copy yet'); return; }
+    var txt = asText();
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(
+        function(){ toast('Copied — paste it into the group text'); },
+        function(){ fallback(txt); }
+      );
+    } else { fallback(txt); }
+  });
+
+  function fallback(txt){
+    var ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); toast('Copied'); }
+    catch(e){ toast('Select the text and copy manually'); }
+    document.body.removeChild(ta);
+  }
+
+  document.getElementById('btn-clear').addEventListener('click', function(){
+    if (!items.length) return;
+    if (confirm('Clear all ' + items.length + ' items? This cannot be undone.')){
+      items = []; save(); render(); toast('Cleared');
+    }
+  });
+
+  render();
+})();
+</script>
