@@ -228,6 +228,22 @@ correcting figures that were reported without re-checking.
   log, and they go stale.
 - **Before telling the owner something is broken or asking him to act:** verify
   it yourself first.
+- **Never tell Isaac to click, approve, grant, or send something you have not
+  read yourself.** He has said plainly that he does not have technical instincts
+  and is trusting this judgment. Read the actual dialog, page, or permission
+  first. If a screenshot is too blurry or cropped to read, say so and ask for a
+  better one — do not infer what a button probably does. On 2026-08-15 a session
+  told him to hit "Quit & Reopen" on a macOS Full Disk Access prompt before
+  reading it, then reversed the advice a message later, after he had already
+  clicked. Low stakes that time. It will not always be.
+- **A permission prompt gets "Later" by default.** Grant access when something he
+  is actually trying to do fails without it — never in advance. Prompts appear at
+  setup time, before anything has failed, when there is no way to judge. Every one
+  is reversible in Settings later.
+- **When he hesitates about something technical, take the hesitation seriously.**
+  It has been right more often than not. He declined background access for a tool
+  that already had three tasks silently stalled — a better call than the one this
+  session gave him.
 - Lead with the single best recommendation. Ship first, then report with real
   URLs and paths.
 
