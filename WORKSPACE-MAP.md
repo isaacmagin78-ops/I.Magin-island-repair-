@@ -94,6 +94,62 @@ there is both `isaac-video-engine/` and `tyson-video-engine/`. Any consolidation
 has to resolve this or it will produce duplicate trees on case-insensitive
 filesystems (macOS).
 
+## Status: consolidated 2026-08-15
+
+**Merged onto `claude/project-status-update-xbolj2` and pending one PR into `main`:**
+
+| Branch | What it brought |
+|---|---|
+| `claude/consolidate-orphaned-assets` | `link-pages/`, `amazon/`, `money-engine/`, `concierge-systems/`, `imagin-concierge/`, `shop-tyson/`, `balcony-buddies/`, `tyson-and-the-kitten/`, `tyson-video-engine/`, `CLIP-LICENSING.md`, `ASSET-INVENTORY.md`, `IKE-OS-HANDOFF`, `TEST-COVERAGE-ANALYSIS.md`, `START-HERE-LINDA-PITCH.md`, the 19-asset Linda package, and the richest handoff |
+| `claude/claude-md-docs-4usf84` | Root `CLAUDE.md` (285 lines) — `main` never had one |
+
+Everything those two carried transitively covers the handoff content from
+`optimize-repository-context`, `understand-current-situation`, `handoff-origin-fix`,
+`clip-licensing-constraints`, `money-engine-instructions`, `uhnw-concierge-systems`,
+`scott-ipad-dashboard` and `new-session`. The reconciled `HANDOFF.md` was then
+hand-edited to settle the contradictions between them.
+
+## Deliberately NOT merged — pre-reorg, would damage the tree
+
+These fork from **Jul 15**, before the Jul 27 reorganization into project folders.
+Their layout is the old one: a root `app/`, and `Isaac-Video-Engine/` with a
+capital I. Merging any of them resurrects that layout *alongside* the current
+one, and the two engine folders **collide on macOS**, which is case-insensitive.
+
+| Branch | Old-layout paths |
+|---|---|
+| `claude/fable-video-prompt-refine-b21x3t` | `Isaac-Video-Engine/`, `app/`, `kit-site/` |
+| `claude/luxury-listing-content-system-gbptg5` | `Isaac-Video-Engine/`, `Listing-Content-System/` |
+| `claude/sea-monarch-sales-script-fd28zd` | `Isaac-Video-Engine/` |
+| `claude/tyson-gear-page-d15ud7` | root `app/` |
+| `claude/madison-moves-production-xfljqf` | root `app/` |
+| `claude/college-launch-os-tcdpg3` | root `app/` |
+| `claude/autonomous-agent-setup-bprzw4` | root `app/`, jest config |
+| `claude/claude-md-docs-if24f6` | superseded by the Aug 7 `CLAUDE.md` |
+| `export/*` (3) | standalone one-commit exports, intentionally separate |
+
+Their work already reached the current tree through the Jul 27 reorg commit.
+**If something specific is ever needed from one of them, cherry-pick the file
+and place it at the new path — do not merge the branch.**
+
+### ⚠️ Before deleting `claude/fable-video-prompt-refine-b21x3t`
+
+`kit-site/site/vercel.json` used to serve the product PDF from a raw GitHub URL
+pinned to that branch. Deleting it would have 404'd delivery of a paid product.
+**Repointed at `main` on 2026-08-15**, so deletion is now safe — but verify the
+redirect still resolves after the PR lands before removing the branch.
+
+## Deleting the dead branches
+
+Only after the PR merges, and only for branches listed above as either merged or
+pre-reorg. Nothing here deletes itself; this is Isaac's call to run:
+
+```bash
+git push origin --delete <branch>
+```
+
+## The original fix (for reference)
+
 ## The fix
 
 One merge pass into `main` that produces:
