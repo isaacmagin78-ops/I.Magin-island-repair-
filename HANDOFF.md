@@ -487,9 +487,24 @@ and must not be pitched again.**
   Instagram benchmark for that follower count is 1–3%; real estate averages 1–2%.
 - Her Facebook open-house post for the cottage, up 22 hours: **5 reactions.**
 
-**The read:** her audience turns out for *her*, not for her listings. The trust
-is already built and is not transferring to the property. Cross-platform, so it
-is not a clean comparison — say so — but the shape is the whole pitch.
+**Her YouTube — the number that matters most.** Channel "Linda S. Hoyt - Realtor",
+**29 subscribers**. She produced a real episodic series, *The American Dream:
+Selling Fort Lauderdale* — professionally shot on the water, styled, titled.
+**Episode 1: 1,005 views, posted 3 years ago, 16 likes, 0 comments.**
+
+**The read — corrected by Isaac 2026-08-15, and he was right.** Do not call the
+8.95% "great marketing reach." Those 2,693 followers are her *warm network*:
+family, past clients, referral sources. They gave the award post 184 likes
+because they are proud of her; they gave the cottage 5 reactions because none of
+them needs a 3/2 in Sailboat Bend. Meanwhile the one channel built to reach
+strangers has 29 subscribers.
+
+So the pitch is **not** "your engagement is great." It is: *the expensive part is
+already done and nobody built the thing that carries it.* Feed and Facebook posts
+distribute to existing followers; **reels, Shorts and TikTok are the only formats
+shown to non-followers.** Everything she posts currently lands in the same warm
+room. She needs distribution and repurposing, not content generation — and the
+seller report is what converts a referral network into listings.
 
 **The pitch page** is `Listing-Content-System/pitch/linda-hoyt-pitch.html`
 (published at `claude.ai/code/artifact/a3b18477-dfad-4fce-87ac-02fffc4fd91f`).
