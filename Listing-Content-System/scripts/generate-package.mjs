@@ -117,16 +117,26 @@ const agentSignature = (b) => {
   return lines.join("\n");
 };
 
-const hashtags = (b) =>
+// Instagram hard-errors above 5 hashtags, so the list is capped rather than
+// trimmed by hand at post time. Ordered most specific first — the hyperlocal
+// tags earn more reach than the generic ones, so the generic tail is what gets
+// dropped. #JustListed must stay inside the cap: the under-contract variant
+// rewrites it.
+const HASHTAG_LIMIT = 5;
+
+const hashtags = (b, limit = HASHTAG_LIMIT) =>
   [
     `#${b.city.replace(/\s+/g, "")}RealEstate`,
+    `#${b.neighborhood.replace(/[^A-Za-z0-9]/g, "")}`,
+    "#JustListed",
     "#LuxuryListing",
     "#WaterfrontLiving",
-    "#JustListed",
-    `#${b.neighborhood.replace(/[^A-Za-z0-9]/g, "")}`,
     "#SouthFloridaLuxury",
     "#DreamHome",
-  ].join(" ");
+  ]
+    .filter((tag) => tag.length > 1)
+    .slice(0, limit)
+    .join(" ");
 
 const top = (b, n) => b.features.slice(0, n);
 
