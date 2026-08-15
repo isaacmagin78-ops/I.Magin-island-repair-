@@ -1,4 +1,4 @@
-<title>The Seller's Copy</title>
+<title>Three Weeks at the Cottage</title>
 <style>
   :root{
     --ground:#F2F1ED; --surface:#FFFFFF; --sunk:#E9E8E2;
@@ -36,49 +36,35 @@
     font-family:var(--serif);font-size:18px;line-height:1.62;
     -webkit-font-smoothing:antialiased;padding:0 20px 80px;
   }
-  .wrap{max-width:648px;margin:0 auto}
+  .wrap{max-width:660px;margin:0 auto}
 
   header{padding:56px 0 0}
-  .kicker{
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
-    text-transform:uppercase;color:var(--accent);font-weight:600;
-  }
-  h1{
-    font-family:var(--serif);font-size:clamp(34px,7.4vw,50px);line-height:1.04;
-    letter-spacing:-.021em;font-weight:400;color:var(--ink);
-    margin-top:16px;text-wrap:balance;
-  }
-  .standfirst{margin-top:18px;font-size:19.5px;line-height:1.55;color:var(--body);max-width:33em}
+  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
+    text-transform:uppercase;color:var(--accent);font-weight:600}
+  h1{font-family:var(--serif);font-size:clamp(34px,7.4vw,50px);line-height:1.04;
+    letter-spacing:-.021em;font-weight:400;color:var(--ink);margin-top:16px;text-wrap:balance}
+  .standfirst{margin-top:18px;font-size:19.5px;line-height:1.55;color:var(--body);max-width:34em}
   .standfirst em{font-style:italic;color:var(--ink)}
-  .byline{
-    margin-top:22px;padding-top:14px;border-top:1px solid var(--hair);
-    font-family:var(--mono);font-size:11px;letter-spacing:.07em;
-    color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;
-  }
+  .byline{margin-top:22px;padding-top:14px;border-top:1px solid var(--hair);
+    font-family:var(--mono);font-size:11px;letter-spacing:.07em;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:6px 18px}
 
-  section{padding:52px 0 0}
-  .eyebrow{
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
+  section{padding:50px 0 0}
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
     text-transform:uppercase;color:var(--muted);font-weight:600;
-    padding-bottom:10px;border-bottom:1px solid var(--rule);
-  }
-  h2{
-    font-family:var(--serif);font-size:clamp(24px,4.6vw,30px);line-height:1.16;
-    letter-spacing:-.016em;font-weight:400;color:var(--ink);
-    margin-top:20px;text-wrap:balance;
-  }
+    padding-bottom:10px;border-bottom:1px solid var(--rule)}
+  h2{font-family:var(--serif);font-size:clamp(24px,4.6vw,30px);line-height:1.16;
+    letter-spacing:-.016em;font-weight:400;color:var(--ink);margin-top:20px;text-wrap:balance}
   p{margin-top:16px;max-width:34em}
   p strong{font-weight:700;color:var(--ink)}
   .lede{font-size:19px}
 
-  /* ---------- her numbers ---------- */
-  .stats{
-    margin-top:26px;background:var(--surface);border:1px solid var(--rule);
-    border-radius:2px;padding:24px 24px 20px;
-  }
-  .stats .src{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  /* two rooms */
+  .rooms{margin-top:24px;background:var(--surface);border:1px solid var(--rule);
+    border-radius:2px;padding:22px 24px 18px}
+  .rooms .src{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--muted)}
-  .bars{margin-top:18px;display:flex;flex-direction:column;gap:16px}
+  .bars{margin-top:16px;display:flex;flex-direction:column;gap:14px}
   .bar .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
   .bar .lbl{font-size:15px;color:var(--ink);line-height:1.3}
   .bar .lbl small{display:block;font-family:var(--mono);font-size:10px;
@@ -86,68 +72,74 @@
   .bar .val{font-family:var(--mono);font-size:17px;font-weight:600;
     font-variant-numeric:tabular-nums;white-space:nowrap}
   .bar .track{margin-top:8px;height:9px;background:var(--sunk);border-radius:1px;overflow:hidden}
-  .bar .fill{height:100%;border-radius:1px}
-  .bar.hers .val{color:var(--accent)}
-  .bar.hers .fill{background:var(--accent)}
-  .bar.norm .val{color:var(--muted)}
-  .bar.norm .fill{background:var(--hair)}
-  .stats .foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  .bar .fill{height:100%}
+  .bar.warm .val{color:var(--accent)} .bar.warm .fill{background:var(--accent)}
+  .bar.cold .val{color:var(--muted)} .bar.cold .fill{background:var(--hair)}
+  .rooms .foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule);
     font-size:14.5px;font-style:italic;color:var(--muted)}
 
-  .gap{
-    margin-top:34px;background:var(--signal-soft);
-    border-left:3px solid var(--signal);padding:22px 24px;border-radius:0 2px 2px 0;
-  }
-  .gap .flag{font-family:var(--mono);font-size:10.5px;letter-spacing:.17em;
-    text-transform:uppercase;color:var(--signal);font-weight:700}
-  .gap p{margin-top:10px;font-size:19px;line-height:1.5;color:var(--ink);max-width:31em}
-  .gap p:first-of-type{margin-top:12px}
+  /* legend */
+  .legend{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted)}
+  .chip{display:inline-flex;align-items:center;gap:7px}
+  .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+  .dot.ready{background:var(--accent)}
+  .dot.needs{background:var(--signal)}
 
-  /* ---------- table ---------- */
-  .tablewrap{margin-top:26px;overflow-x:auto;border:1px solid var(--rule);
-    background:var(--surface);border-radius:2px}
-  table{border-collapse:collapse;width:100%;min-width:500px;font-size:15px}
-  caption{caption-side:bottom;text-align:left;padding:12px 18px 14px;
-    font-size:13px;font-style:italic;color:var(--muted);border-top:1px solid var(--rule)}
-  th,td{padding:13px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
-  thead th{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
-    font-weight:600;color:var(--muted);background:var(--sunk)}
-  tbody th{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:16px;white-space:nowrap}
-  tbody th small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;
-    font-weight:400;color:var(--muted);margin-top:3px;white-space:nowrap}
-  tr:last-child th,tr:last-child td{border-bottom:none}
-  .holder{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--body)}
-  tr.ours{background:var(--accent-soft)}
-  tr.ours th{color:var(--accent)}
-  tr.ours .holder{color:var(--accent);font-weight:600}
+  /* calendar */
+  .week{margin-top:38px}
+  .wlabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;text-transform:uppercase;
+    color:var(--accent);font-weight:700;padding-bottom:9px;border-bottom:2px solid var(--accent)}
+  .wnote{margin-top:10px;font-size:15px;font-style:italic;color:var(--muted);max-width:34em}
+  .days{margin-top:16px;display:flex;flex-direction:column;gap:14px}
 
-  /* ---------- plates ---------- */
-  figure{margin-top:34px}
-  .plate{
-    background:var(--sunk);border:1px solid var(--rule);border-radius:2px;
-    padding:34px 24px;display:flex;justify-content:center;align-items:center;overflow-x:auto;
-  }
+  .day{background:var(--surface);border:1px solid var(--rule);border-radius:2px;
+    padding:18px 20px;position:relative}
+  .day.needs{border-left:3px solid var(--signal)}
+  .day.ready{border-left:3px solid var(--accent)}
+  .dhead{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .dwhen{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;white-space:nowrap}
+  .dkind{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+    font-weight:700;white-space:nowrap}
+  .day.ready .dkind{color:var(--accent)}
+  .day.needs .dkind{color:var(--signal)}
+  .day h3{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--ink);
+    margin-top:9px;line-height:1.28;letter-spacing:-.01em}
+  .dwhy{margin-top:7px;font-size:14.5px;color:var(--muted);font-style:italic;max-width:36em}
+
+  .copy{margin-top:14px;background:var(--sunk);border:1px solid var(--rule);
+    border-radius:2px;padding:15px 16px;font-family:var(--ui);font-size:14.5px;
+    line-height:1.55;color:var(--ink)}
+  .copy .cl{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;display:block;margin-bottom:9px}
+  .copy .tags{display:block;margin-top:9px;color:var(--accent);font-size:13.5px}
+  .copy .blank{color:var(--signal);font-weight:700}
+  .shot{margin-top:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;
+    color:var(--signal);line-height:1.5}
+  .shot b{color:var(--ink);font-weight:700}
+
+  /* report plate */
+  figure{margin-top:30px}
+  .plate{background:var(--sunk);border:1px solid var(--rule);border-radius:2px;
+    padding:34px 24px;display:flex;justify-content:center;overflow-x:auto}
   figcaption{margin-top:12px;display:flex;gap:14px;align-items:baseline}
   .pnum{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
     color:var(--accent);font-weight:600;white-space:nowrap;padding-top:3px}
   .ptext{font-size:14.5px;font-style:italic;line-height:1.5;color:var(--muted);max-width:38em}
   .ptext b{font-style:normal;font-weight:700;color:var(--body)}
 
-  /* sheet */
-  .sheet{
-    background:#fff;width:100%;max-width:400px;padding:30px 30px 26px;
+  .sheet{background:#fff;width:100%;max-width:400px;padding:30px 30px 26px;
     box-shadow:0 1px 2px var(--shadow),0 10px 26px -8px var(--shadow);
-    font-family:var(--serif);color:#14181B;flex-shrink:0;
-  }
+    font-family:var(--serif);color:#14181B;flex-shrink:0}
   .sheet .sh-top{font-family:var(--mono);font-size:7.5px;letter-spacing:.16em;
     text-transform:uppercase;color:#8A9299}
-  .sheet h4{font-size:17px;font-weight:400;line-height:1.22;margin-top:9px;
-    letter-spacing:-.01em;color:#14181B}
+  .sheet h4{font-size:17px;font-weight:400;line-height:1.22;margin-top:9px;color:#14181B}
   .sheet .sh-sub{font-size:10.5px;color:#5C656C;margin-top:6px;font-style:italic}
   .sheet .sh-rule{height:1px;background:#DCDBD4;margin-top:16px}
   .sheet h5{font-family:var(--mono);font-size:8px;letter-spacing:.15em;text-transform:uppercase;
     color:#0B5563;font-weight:600;margin-top:16px}
-  .sheet table{min-width:0;width:100%;font-size:9.5px;margin-top:9px}
+  .sheet table{width:100%;font-size:9.5px;margin-top:9px;border-collapse:collapse}
   .sheet td{padding:5px 0;border-bottom:1px solid #EDECE7;color:#3F484F;line-height:1.35}
   .sheet td:first-child{font-weight:700;color:#14181B;padding-right:14px;width:47%}
   .sheet tr:last-child td{border-bottom:none}
@@ -161,59 +153,18 @@
     font-size:8.5px;color:#7C858C;line-height:1.5}
   .sheet .sh-foot b{color:#14181B;font-size:9px}
 
-  /* sign */
-  .signrig{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-  .sign{background:#fff;width:238px;padding:20px 18px 16px;text-align:center;
-    border:1px solid #D6D5CE;box-shadow:0 1px 2px var(--shadow),0 12px 26px -10px var(--shadow)}
-  .sign .brand{font-family:var(--mono);font-size:7.5px;letter-spacing:.2em;
-    text-transform:uppercase;color:#0B5563;font-weight:600}
-  .sign svg{display:block;width:118px;height:118px;margin:12px auto 0}
-  .sign .cta{font-family:var(--ui);font-size:11.5px;font-weight:700;
-    color:#14181B;margin-top:12px;line-height:1.3}
-  .sign .tag{font-family:var(--mono);font-size:7px;letter-spacing:.11em;color:#8A9299;margin-top:7px}
-  .post{width:11px;height:44px;background:#C9C8C0;border-radius:0 0 2px 2px}
+  .close{margin-top:50px;background:var(--surface);border:1px solid var(--hair);
+    border-radius:2px;padding:28px}
+  .close h2{margin-top:0;font-size:25px}
+  .close p{font-size:17px}
 
-  /* phone */
-  .phone{width:250px;background:#fff;border-radius:26px;padding:9px;flex-shrink:0;
-    border:1px solid #D6D5CE;box-shadow:0 1px 2px var(--shadow),0 14px 30px -10px var(--shadow)}
-  .screen{background:#fff;border-radius:19px;overflow:hidden;font-family:var(--ui)}
-  .ph-bar{display:flex;align-items:center;gap:7px;padding:10px 11px 8px}
-  .ph-av{width:22px;height:22px;border-radius:50%;background:#0B5563;flex-shrink:0;
-    display:grid;place-items:center;color:#fff;font-size:9px;font-weight:700}
-  .ph-name{font-size:10.5px;font-weight:600;color:#14181B;line-height:1.2}
-  .ph-loc{font-size:8.5px;color:#7C858C;line-height:1.3}
-  .ph-img{height:146px;overflow:hidden}
-  .ph-img svg{display:block;width:100%;height:100%}
-  .ph-icons{display:flex;gap:11px;padding:9px 11px 4px;color:#14181B}
-  .ph-icons svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.7}
-  .ph-cap{padding:2px 11px 12px;font-size:9.5px;line-height:1.48;color:#14181B}
-  .ph-cap .hand{font-weight:600}
-  .ph-cap .tick{color:#0B5563}
-  .ph-cap .tags{color:#0B5563;display:block;margin-top:5px}
-  .ph-cap .more{color:#8A9299;display:block;margin-top:3px}
-
-  .loopwrap{margin-top:30px;background:var(--surface);border:1px solid var(--rule);
-    border-radius:2px;padding:22px 16px 16px;overflow-x:auto}
-  .loopwrap svg{display:block;width:100%;min-width:520px;height:auto;color:var(--ink)}
-
-  .ask{margin-top:52px;background:var(--surface);border:2px solid var(--accent);
-    border-radius:2px;padding:30px 28px}
-  .ask .eyebrow{border-bottom:none;padding-bottom:0;color:var(--accent)}
-  .ask h2{margin-top:12px;font-size:27px}
-  .ask ol{list-style:none;counter-reset:a;margin-top:20px;display:flex;flex-direction:column;gap:15px}
-  .ask li{counter-increment:a;display:grid;grid-template-columns:26px 1fr;gap:14px;
-    align-items:baseline;font-size:17px;color:var(--ink);line-height:1.5}
-  .ask li::before{content:counter(a,decimal-leading-zero);font-family:var(--mono);
-    font-size:10px;font-weight:600;color:var(--accent);letter-spacing:.04em;padding-top:4px}
-  .ask li span{display:block;font-size:14.5px;color:var(--muted);margin-top:3px;font-style:italic}
-
-  .notice{margin-top:34px;border:1px solid var(--rule);border-radius:2px;
+  .notice{margin-top:30px;border:1px solid var(--rule);border-radius:2px;
     padding:18px 20px;background:var(--sunk)}
   .notice .flag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
     text-transform:uppercase;color:var(--muted);font-weight:600}
   .notice p{margin-top:9px;font-size:14.5px;line-height:1.55;color:var(--body);max-width:none}
 
-  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--hair);
+  footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--hair);
     font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted);line-height:1.7}
   footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
   footer a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
@@ -228,114 +179,231 @@
 <div class="wrap">
 
 <header>
-  <div class="kicker">Prepared for Linda S. Hoyt · Broker-Associate</div>
-  <h1>The seller's copy</h1>
-  <p class="standfirst">Your open house at the Cozy Cottage is tomorrow, 1 to 3. This is one page about the piece nobody is building for you — <em>including the platform your brokerage is about to hand you.</em></p>
+  <div class="kicker">For Linda · the Cozy Cottage · 1205 SW 4th Street</div>
+  <h1>Three weeks at the cottage</h1>
+  <p class="standfirst">A campaign calendar for the listing, with the copy already written. <em>Nothing needed from you — take any of it, ignore the rest.</em> Tomorrow's open house is yours; this starts the day after and runs to Labor Day.</p>
   <div class="byline">
     <span>Isaac Magin</span>
-    <span>Saturday, 15 August 2026</span>
+    <span>15 August 2026</span>
     <span>Fort Lauderdale</span>
   </div>
 </header>
 
 <section>
-  <div class="eyebrow">What I noticed first</div>
-  <h2>You already paid for the expensive part. Nobody ever built the thing that carries it.</h2>
-  <p class="lede">Three years ago you shot <em>The American Dream: Selling Fort Lauderdale</em> — a real episodic series, on the water, properly produced. Episode 1 has <strong>1,005 views and zero comments.</strong> The channel has <strong>29 subscribers.</strong></p>
-  <p>That is not a content problem. That film is better than most of what agents put out today. It is a <strong>distribution</strong> problem, and it shows up clearly the moment you put your two audiences side by side.</p>
+  <div class="eyebrow">Why it's shaped this way</div>
+  <h2>Everything you post lands in the same room.</h2>
+  <p class="lede">Your Instagram following is 2,693 people who mostly know you — family, past clients, referral sources. Your YouTube channel, the one built to reach people who don't, has 29 subscribers.</p>
 
-  <div class="stats">
-    <div class="src">Your two rooms · counted 15 Aug 2026</div>
+  <div class="rooms">
+    <div class="src">Counted 15 August 2026</div>
     <div class="bars">
-      <div class="bar hers">
+      <div class="bar warm">
         <div class="top">
-          <div class="lbl">Instagram — the warm room<small>@linda_s_hoyt_realtor · 1,968 posts</small></div>
+          <div class="lbl">Instagram — people who know you<small>@linda_s_hoyt_realtor</small></div>
           <div class="val">2,693</div>
         </div>
         <div class="track"><div class="fill" style="width:100%"></div></div>
       </div>
-      <div class="bar norm">
+      <div class="bar cold">
         <div class="top">
-          <div class="lbl">YouTube — the room full of strangers<small>Linda S. Hoyt – Realtor</small></div>
+          <div class="lbl">YouTube — people who don't<small>Linda S. Hoyt – Realtor</small></div>
           <div class="val">29</div>
         </div>
         <div class="track"><div class="fill" style="width:1.1%"></div></div>
       </div>
     </div>
-    <div class="foot">Same person, same work, two orders of magnitude apart. Everything you post lands in the first room.</div>
+    <div class="foot">You already made <em>The American Dream: Selling Fort Lauderdale</em> — properly shot, on the water. Episode 1 has 1,005 views. The work was never the problem.</div>
   </div>
 
-  <p>And the warm room behaves exactly like a warm room. Your RealTrends post in June — you, in a chair, no house in the frame — did <strong>184 likes and 57 comments.</strong> The Cozy Cottage open-house announcement, posted 22 hours ago with the full invitation and the mimosas, is sitting on <strong>5 reactions.</strong></p>
-  <p>That isn't your content underperforming. Those 2,693 people are family, past clients and referral sources. <strong>They're proud of you. They don't need a three-bedroom in Sailboat Bend.</strong> The buyer for the cottage has never heard of you and is not in that room.</p>
+  <p>Your June RealTrends post did 184 likes and 57 comments. The cottage's open-house announcement, up 22 hours, has 5 reactions. That isn't weak content — <strong>those 2,693 people are proud of you, and none of them needs a three-bedroom in Sailboat Bend.</strong></p>
+  <p>Feed posts and Facebook posts are served to people who already follow you. <strong>Reels, Shorts and TikTok are the only formats served to people who don't.</strong> So this calendar is weighted toward those, and every item names the one shot it needs.</p>
 
-  <div class="gap">
-    <div class="flag">Where the buyer actually is</div>
-    <p>Feed posts and Facebook posts go to people who already follow you. <strong>Reels, Shorts and TikTok are the only formats that get shown to people who don't.</strong></p>
-    <p>You have the footage. You have the credibility. What's missing is the machine that cuts one shoot into the pieces those formats reward — and the report that proves to the seller it ran.</p>
+  <div class="legend">
+    <span class="chip"><span class="dot ready"></span> Copy is written — post as-is</span>
+    <span class="chip"><span class="dot needs"></span> Needs about 60 seconds of phone video</span>
   </div>
 </section>
 
-<section>
-  <div class="eyebrow">What's already arriving</div>
-  <h2>You're about to get a very good agent platform. This isn't one.</h2>
-  <p>Compass finished the Anywhere acquisition and began rolling the Home Platform out to Sotheby's International Realty agents in July — roughly 80,000 agents by the end of September. <strong>Franchise affiliates, which is ONE Sotheby's, begin Q1 2027.</strong> Berkshire Hathaway's parent launched Maestro in March doing much the same thing.</p>
-  <p>Daily briefings, CMA generation, reverse prospecting, one login instead of six. Genuinely better than what you have now, and I'm not going to sell you a worse version of it.</p>
+<div class="week">
+  <div class="wlabel">Week one · Aug 17–23</div>
+  <p class="wnote">The window where attention is highest and cheapest. Proof first, then the two features nobody else in Sailboat Bend can claim.</p>
 
-  <div class="tablewrap">
-    <table>
-      <caption>Sources: Compass Q2 2026 rollout disclosures; HomeServices of America launch announcement, 26 March 2026; published vendor pricing.</caption>
-      <thead>
-        <tr><th scope="col">Platform</th><th scope="col">Built to do</th><th scope="col">Output goes to</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">Home Platform<small>Compass · yours Q1 2027</small></th>
-            <td>Briefings, CMA, likely-to-sell, reverse prospecting</td>
-            <td class="holder">The agent</td></tr>
-        <tr><th scope="row">Maestro<small>HomeServices · live Mar 2026</small></th>
-            <td>Search, CRM, marketing, transactions — one login</td>
-            <td class="holder">The agent</td></tr>
-        <tr><th scope="row">Content tools<small>$19–449/mo</small></th>
-            <td>Listing descriptions, captions, auto-cut reels</td>
-            <td class="holder">The agent</td></tr>
-        <tr class="ours"><th scope="row">This<small>done for you · per listing</small></th>
-            <td>The campaign <em>and</em> the report that proves it ran</td>
-            <td class="holder">The seller</td></tr>
-      </tbody>
-    </table>
+  <div class="days">
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sun 16, evening</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The recap — the only post that proves people came</h3>
+      <p class="dwhy">Written tonight, posted the moment you're home. This is the one that makes the next open house busier.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        A hundred and three years old, and it still throws a better Sunday than most houses half its age. 🥂<br><br>
+        Thank you to everyone who came through the Cozy Cottage — <span class="blank">[ __ ]</span> of you, one pitcher of mimosas, and a lot of people standing in that backyard saying the same thing: <em>you'd never know this was minutes from Las Olas.</em><br><br>
+        Still available. Private showings this week.
+        <span class="tags">#SailboatBend #FortLauderdaleRealEstate #HistoricHomes #OpenHouse #CozyCottage</span>
+      </div>
+      <div class="shot"><b>Fill in one number.</b> Any photo from the day, even a phone shot of the yard.</div>
+    </div>
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Tue 18</span><span class="dkind">Reel · needs 60s</span></div>
+      <h3>The mosquito misting system</h3>
+      <p class="dwhy">The single most South Florida detail in your listing, and no other cottage in the neighborhood is advertising it. This is the one that gets shown to strangers.</p>
+      <div class="copy">
+        <span class="cl">On-screen text, then caption</span>
+        <strong>"Why you can actually sit outside here. In August."</strong><br><br>
+        Fully fenced yard, artificial turf, decorative gravel, multiple places to sit — and a mosquito misting system, so the backyard works year-round instead of six months a year.<br><br>
+        1205 SW 4th Street · Sailboat Bend · $750,000
+        <span class="tags">#SailboatBend #FortLauderdale #BackyardGoals #FloridaLiving #JustListed</span>
+      </div>
+      <div class="shot"><b>The shot:</b> walk out the back door, hold the phone vertical, slow pan across the yard. Eight seconds. Turn the misters on if they run.</div>
+    </div>
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Thu 20</span><span class="dkind">Reel · needs 60s</span></div>
+      <h3>1923 — things they stopped building</h3>
+      <p class="dwhy">Original hardwood and real French doors are the reason this house isn't interchangeable with new construction. Buyers who want this <em>only</em> want this.</p>
+      <div class="copy">
+        <span class="cl">On-screen text, then caption</span>
+        <strong>"Built in 1923. Try getting these floors today."</strong><br><br>
+        Original hardwood. Real French doors. A restored 1923 cottage in the heart of Sailboat Bend — with a newer roof, newer A/C and new fencing, so the character comes without the project.<br><br>
+        Offered at $750,000.
+        <span class="tags">#HistoricHomes #SailboatBend #FortLauderdaleRealEstate #OldHouseLove #CharacterHome</span>
+      </div>
+      <div class="shot"><b>The shot:</b> low and slow along the floorboards, then up to the French doors. Vertical. Natural light — open the blinds first.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sat 22</span><span class="dkind">Story set · ready</span></div>
+      <h3>Five slides: what $750,000 buys here</h3>
+      <p class="dwhy">Stories go to the warm room — and the warm room is your referral network. This is the one aimed at them, on purpose.</p>
+      <div class="copy">
+        <span class="cl">Slide by slide</span>
+        1 — "Three bedrooms. Two baths. 1923."<br>
+        2 — "Original hardwood, French doors, a kitchen someone actually thought about."<br>
+        3 — "Fenced yard, turf, misting system. It works in August."<br>
+        4 — "Minutes to Las Olas, downtown, the beach, FLL."<br>
+        5 — "$750,000 · Know someone? Send them my way."
+      </div>
+      <div class="shot"><b>Any five photos you already have.</b> Slide 5 is the one that does the work.</div>
+    </div>
+
   </div>
+</div>
 
-  <p>Every one of them makes <strong>your</strong> day easier. None of them makes anything you can hand a seller at week three, when they've gone quiet and started wondering what they're paying for. High-end sellers are consistent about wanting exactly that — one consolidated read-out, not a stream of updates.</p>
-</section>
+<div class="week">
+  <div class="wlabel">Week two · Aug 24–30</div>
+  <p class="wnote">Attention has dropped. This is where most listings go quiet — and where a second wave separates you from the agent who posted once.</p>
+
+  <div class="days">
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Mon 25</span><span class="dkind">Reel · needs 90s</span></div>
+      <h3>The walkthrough, front door to back fence</h3>
+      <p class="dwhy">One continuous take. This is the piece that also becomes a YouTube Short and a TikTok — three placements from one recording.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        The whole thing, front door to back fence, no cuts.<br><br>
+        1923 cottage · 3 bed · 2 bath · Sailboat Bend · $750,000<br>
+        Newer roof, A/C and fencing. Minutes from Las Olas and the beach.<br><br>
+        Full tour and private showings — link in bio.
+        <span class="tags">#HomeTour #SailboatBend #FortLauderdale #HouseTour #ForSale</span>
+      </div>
+      <div class="shot"><b>The shot:</b> start outside at the front steps, walk in, keep walking, end in the backyard. Vertical, move slower than feels natural.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Wed 27</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The neighborhood, not the house</h3>
+      <p class="dwhy">Sailboat Bend sells itself and this post costs you nothing to make. It also reaches people who aren't shopping yet — which is where next year's sellers come from.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        People are surprised twice by Sailboat Bend.<br><br>
+        First when they realize how quiet it is. Then when they realize how close it is — Las Olas, downtown, the beach and FLL are all minutes away, and none of it follows you home.<br><br>
+        That's the trade most neighborhoods can't offer. It's the reason the 1923 cottage on SW 4th keeps getting the same reaction at the door.
+        <span class="tags">#SailboatBend #FortLauderdale #NeighborhoodGuide #SoFloLife #RealEstate</span>
+      </div>
+      <div class="shot"><b>Any street or exterior photo.</b> The one from your listing post works.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Fri 29</span><span class="dkind">Seller report · ready</span></div>
+      <h3>Week two read-out — to the seller, not the feed</h3>
+      <p class="dwhy">Week two is when a seller starts wondering. This arrives before they ask.</p>
+      <div class="shot"><b>Format below.</b> Numbers stay blank until they're real.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="week">
+  <div class="wlabel">Week three · Aug 31–Sep 6</div>
+  <p class="wnote">Labor Day weekend. Buyers are in town and looking; most agents are not posting.</p>
+
+  <div class="days">
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sat 30 or Sun 31</span><span class="dkind">Feed + story · ready</span></div>
+      <h3>Second open house — Labor Day weekend</h3>
+      <p class="dwhy">The first one is for the neighborhood. The second one is for the buyers who were out of town.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        ✨ OPEN HOUSE · Labor Day weekend at the Cozy Cottage ✨<br><br>
+        📍 1205 SW 4th St, Fort Lauderdale, FL 33312<br>
+        <span class="blank">[ day ]</span>, <span class="blank">[ time ]</span><br><br>
+        The 1923 cottage in Sailboat Bend — original hardwood, French doors, a backyard built for exactly this weekend. Newer roof, A/C and fencing.<br><br>
+        Offered at $750,000. Come see why everyone says the same thing at the door.
+        <span class="tags">#OpenHouse #SailboatBend #FortLauderdale #LaborDayWeekend #HistoricHomes</span>
+      </div>
+      <div class="shot"><b>Two blanks to fill.</b> Everything else is set.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">If it goes under contract</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The under-contract post — the one that wins the next listing</h3>
+      <p class="dwhy">Not a victory lap. The only post a future seller reads closely, because it's the one that shows what you actually did.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        Under contract — the 1923 cottage on SW 4th.<br><br>
+        <span class="blank">[ __ ]</span> days on market. <span class="blank">[ __ ]</span> showings. <span class="blank">[ __ ]</span> people through two open houses.<br><br>
+        Thinking about selling in Sailboat Bend? This is what the first three weeks look like.
+        <span class="tags">#UnderContract #SailboatBend #FortLauderdale #JustSold #ListWithLinda</span>
+      </div>
+      <div class="shot"><b>Three numbers.</b> Real ones — a made-up figure here costs more than it earns.</div>
+    </div>
+
+  </div>
+</div>
 
 <section>
-  <div class="eyebrow">Built for 1205 SW 4th Street</div>
-  <h2>Three objects, per listing</h2>
-  <p>Not a description — the actual things. Your branding, your name, your numbers once they're measured.</p>
+  <div class="eyebrow">The piece nobody else makes</div>
+  <h2>The seller's copy</h2>
+  <p>Compass is rolling its Home Platform out to Sotheby's agents now — franchise affiliates in Q1 2027. Berkshire's brokerage launched Maestro in March. Both are excellent, and both are built for <em>your</em> desk: briefings, CMA, prospecting, one login.</p>
+  <p><strong>None of them produces anything the seller ever holds.</strong> That's still a phone call you make from memory in week three. This is the version that arrives before the call.</p>
 
   <figure>
     <div class="plate">
       <div class="sheet">
         <div class="sh-top">Marketing Value Summary · Prepared for the Seller</div>
         <h4>1205 SW 4th Street · Sailboat Bend</h4>
-        <div class="sh-sub">Offered at $750,000 · Week 3 read-out</div>
+        <div class="sh-sub">Offered at $750,000 · Week two read-out</div>
         <div class="sh-rule"></div>
 
-        <h5>What your campaign includes</h5>
+        <h5>What ran this week</h5>
         <table>
           <tbody>
-            <tr><td>Cinematic listing film</td><td>Listing page, YouTube, email</td></tr>
-            <tr><td>Vertical recut + 3 reels</td><td>Instagram, TikTok, Shorts</td></tr>
-            <tr><td>5-slide story sequence</td><td>Day-one launch</td></tr>
-            <tr><td>Open-house promo + recap</td><td>Turnout, then urgency</td></tr>
-            <tr><td>QR signage kit</td><td>Rider, directionals, flyers — tracked</td></tr>
+            <tr><td>Open-house recap</td><td>Feed — proof of turnout</td></tr>
+            <tr><td>Backyard reel</td><td>Reels, Shorts, TikTok — non-followers</td></tr>
+            <tr><td>1923 character reel</td><td>Reels, Shorts, TikTok</td></tr>
+            <tr><td>Five-slide story set</td><td>Referral network</td></tr>
+            <tr><td>Neighborhood feature</td><td>Feed — future sellers</td></tr>
           </tbody>
         </table>
 
         <h5>Exposure this week</h5>
         <div class="metrics">
-          <div class="metric"><div class="n">[N]</div><div class="l">Sign scans</div></div>
-          <div class="metric"><div class="n">[N]</div><div class="l">Video views</div></div>
-          <div class="metric"><div class="n">[N]</div><div class="l">Showings</div></div>
+          <div class="metric"><div class="n">[ ]</div><div class="l">Reached</div></div>
+          <div class="metric"><div class="n">[ ]</div><div class="l">Saves</div></div>
+          <div class="metric"><div class="n">[ ]</div><div class="l">Showings</div></div>
         </div>
 
         <div class="sh-foot">
@@ -346,139 +414,21 @@
       </div>
     </div>
     <figcaption>
-      <div class="pnum">Plate 01</div>
-      <div class="ptext"><b>The only piece the seller ever sees.</b> The brackets are deliberate — figures stay empty until they're measured. A report that inflates a number once is worth nothing every week after.</div>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <div class="plate">
-      <div class="signrig">
-        <div class="sign">
-          <div class="brand">Sailboat Bend · Est. 1923</div>
-          <svg viewBox="0 0 81 81" shape-rendering="crispEdges" role="img" aria-label="Example tracked QR code, tagged utm_content=yard-sign">
-            <path fill="#ffffff" d="M0 0h81v81H0z"/>
-            <path stroke="#000000" d="M2 2.5h7m8 0h1m2 0h2m1 0h5m5 0h1m3 0h1m4 0h3m1 0h2m1 0h4m1 0h3m2 0h2m11 0h7M2 3.5h1m5 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m1 0h1m5 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m5 0h1m6 0h2m1 0h2m2 0h3m1 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m2 0h1m1 0h2m3 0h1m3 0h1m1 0h1m2 0h1m1 0h3m3 0h2m1 0h1m1 0h1m3 0h2m2 0h5m2 0h2m2 0h3m3 0h1m4 0h1m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m4 0h1m4 0h3m1 0h2m1 0h3m1 0h1m1 0h2m2 0h1m3 0h1m1 0h1m1 0h2m6 0h2m2 0h2m1 0h3m4 0h2m3 0h1m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h5m4 0h2m1 0h2m1 0h6m1 0h1m2 0h1m2 0h5m4 0h6m1 0h2m1 0h2m1 0h3m3 0h1m1 0h3m1 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m2 0h4m3 0h1m1 0h1m2 0h2m1 0h1m3 0h1m1 0h3m2 0h2m1 0h1m1 0h4m1 0h2m3 0h1m2 0h3m1 0h3m2 0h5m3 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h4m1 0h2m1 0h1m2 0h3m1 0h2m3 0h2m4 0h1m2 0h2m1 0h1m1 0h1m2 0h2m3 0h6m2 0h1m1 0h2m1 0h2M4 10.5h2m2 0h4m2 0h2m1 0h4m3 0h8m1 0h1m3 0h2m1 0h2m1 0h1m2 0h1m1 0h6m1 0h1m1 0h3m2 0h1m1 0h1m5 0h3m1 0h1M2 11.5h2m5 0h2m2 0h2m2 0h3m1 0h2m1 0h1m1 0h2m1 0h4m1 0h3m2 0h2m1 0h3m2 0h3m2 0h1m1 0h3m1 0h2m5 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1M3 12.5h1m3 0h9m3 0h2m1 0h2m1 0h1m2 0h1m5 0h8m1 0h2m3 0h1m1 0h2m4 0h1m2 0h1m1 0h1m1 0h1m1 0h1m3 0h4m4 0h1M6 13.5h1m2 0h2m1 0h2m4 0h1m2 0h4m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h2m1 0h1m4 0h2m1 0h1m1 0h1m4 0h4m1 0h1m3 0h1m3 0h2m1 0h1m1 0h1M2 14.5h4m2 0h1m2 0h2m1 0h1m3 0h2m4 0h3m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m2 0h2m3 0h1m4 0h2m2 0h3m3 0h2m3 0h2m3 0h1m2 0h2M5 15.5h2m4 0h1m1 0h2m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m4 0h2m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m1 0h3m5 0h2m1 0h1m3 0h4m1 0h1m2 0h2m1 0h1m1 0h1M3 16.5h3m1 0h3m2 0h2m5 0h1m1 0h1m2 0h1m2 0h4m3 0h2m1 0h1m1 0h1m3 0h1m2 0h1m6 0h2m1 0h3m5 0h2m1 0h5m2 0h2m1 0h2M2 17.5h1m4 0h1m1 0h1m2 0h5m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m3 0h3m5 0h2m4 0h1m3 0h9m2 0h2m1 0h1m1 0h1m1 0h1m4 0h3m1 0h2M2 18.5h1m1 0h2m1 0h2m2 0h2m1 0h2m1 0h1m3 0h1m1 0h1m1 0h4m1 0h1m2 0h1m1 0h3m2 0h1m1 0h2m4 0h2m2 0h3m4 0h1m1 0h2m1 0h1m1 0h2m1 0h1M2 19.5h3m2 0h1m7 0h1m3 0h1m4 0h2m1 0h1m3 0h1m1 0h1m4 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h1m1 0h5m1 0h2m1 0h1m2 0h1m3 0h2m1 0h1M2 20.5h2m1 0h1m1 0h4m5 0h7m1 0h5m4 0h1m8 0h3m1 0h1m1 0h1m3 0h2m1 0h1m3 0h2m1 0h2m2 0h2m4 0h1m3 0h1m1 0h1M3 21.5h1m2 0h2m5 0h1m1 0h2m1 0h2m1 0h2m3 0h1m1 0h1m2 0h3m3 0h1m1 0h1m4 0h3m4 0h1m2 0h2m1 0h3m2 0h5m2 0h1m1 0h1m3 0h2m1 0h1M2 22.5h1m3 0h3m2 0h2m3 0h2m1 0h6m1 0h3m2 0h1m2 0h3m2 0h1m4 0h4m1 0h2m2 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h2M2 23.5h1m2 0h1m1 0h1m1 0h2m3 0h1m1 0h1m1 0h2m3 0h1m2 0h1m2 0h2m1 0h1m4 0h1m1 0h1m1 0h1m1 0h6m1 0h1m3 0h1m1 0h3m2 0h1m1 0h1m1 0h1m2 0h1m2 0h3m3 0h2M4 24.5h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h3m3 0h2m1 0h1m1 0h2m5 0h2m1 0h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h6m2 0h1m2 0h1m2 0h1m4 0h5m1 0h2M2 25.5h1m3 0h2m2 0h1m2 0h1m1 0h1m1 0h2m6 0h1m2 0h3m2 0h1m2 0h1m1 0h4m3 0h1m6 0h1m1 0h3m4 0h2m3 0h1m2 0h5M2 26.5h1m2 0h8m1 0h2m2 0h4m1 0h8m1 0h1m1 0h2m1 0h1m5 0h1m1 0h1m2 0h7m1 0h1m1 0h1m3 0h5m1 0h1m1 0h9M4 27.5h1m1 0h1m3 0h2m5 0h4m3 0h1m1 0h1m3 0h3m2 0h2m1 0h1m2 0h8m3 0h1m5 0h1m4 0h2m2 0h1m2 0h1m3 0h2m2 0h1M2 28.5h2m2 0h1m1 0h1m1 0h1m2 0h3m1 0h5m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m1 0h1m1 0h4m3 0h2m4 0h2m1 0h1m1 0h1m1 0h2M3 29.5h1m1 0h2m3 0h2m13 0h2m3 0h3m9 0h1m2 0h1m1 0h2m3 0h1m1 0h6m1 0h10m3 0h2m1 0h2M2 30.5h1m3 0h7m1 0h3m3 0h1m5 0h5m1 0h1m2 0h3m4 0h2m1 0h9m1 0h2m2 0h1m1 0h1m6 0h1m1 0h6m2 0h1M2 31.5h1m1 0h4m2 0h3m2 0h3m2 0h2m1 0h2m2 0h2m1 0h1m3 0h1m2 0h3m4 0h1m3 0h2m1 0h1m6 0h4m4 0h2m1 0h1m1 0h1m1 0h2m1 0h1M3 32.5h1m1 0h1m2 0h1m2 0h1m1 0h3m2 0h2m2 0h2m2 0h1m2 0h1m3 0h3m2 0h1m2 0h2m1 0h2m1 0h2m2 0h2m3 0h2m1 0h3m1 0h2m1 0h2m2 0h2m1 0h1m1 0h1m2 0h1M2 33.5h4m3 0h3m1 0h1m3 0h1m3 0h2m2 0h2m3 0h3m3 0h6m1 0h3m2 0h1m2 0h4m2 0h1m1 0h1m1 0h1m1 0h3m3 0h1m1 0h6m1 0h1M2 34.5h1m3 0h1m1 0h1m5 0h1m1 0h2m1 0h2m1 0h2m1 0h1m5 0h3m2 0h1m2 0h3m1 0h2m5 0h2m2 0h6m2 0h1m2 0h2m2 0h2m4 0h2m1 0h1M4 35.5h2m4 0h3m2 0h1m3 0h1m1 0h2m1 0h1m3 0h4m2 0h1m7 0h1m1 0h1m1 0h2m1 0h2m2 0h4m5 0h1m4 0h2m2 0h1m2 0h2m1 0h2M2 36.5h1m2 0h1m1 0h2m1 0h1m4 0h5m1 0h1m1 0h1m1 0h2m2 0h1m3 0h1m2 0h3m1 0h1m4 0h3m2 0h1m1 0h5m1 0h1m1 0h4m1 0h1m1 0h2m3 0h1m2 0h4M3 37.5h1m6 0h2m8 0h1m3 0h3m1 0h1m3 0h2m5 0h2m1 0h2m4 0h1m1 0h3m2 0h1m2 0h1m3 0h2m3 0h2m1 0h2m2 0h1M3 38.5h1m1 0h1m1 0h2m1 0h1m1 0h1m3 0h1m3 0h2m1 0h1m5 0h1m1 0h1m1 0h3m6 0h1m2 0h1m1 0h2m2 0h1m6 0h1m2 0h2m1 0h1m5 0h2m1 0h2m1 0h1m1 0h1M3 39.5h2m2 0h1m1 0h4m3 0h1m3 0h1m1 0h1m1 0h3m1 0h4m3 0h2m1 0h1m2 0h1m2 0h4m5 0h3m1 0h1m1 0h1m2 0h4m5 0h2m3 0h3M2 40.5h4m1 0h6m1 0h4m1 0h1m6 0h1m1 0h2m1 0h1m2 0h1m2 0h3m1 0h2m4 0h1m1 0h1m3 0h1m1 0h2m1 0h1m3 0h4m1 0h2m6 0h2m1 0h1M4 41.5h3m3 0h4m1 0h3m3 0h2m1 0h2m2 0h1m3 0h3m3 0h3m1 0h1m3 0h3m1 0h1m1 0h5m6 0h1m2 0h5m1 0h1m2 0h1m1 0h2M2 42.5h2m1 0h1m2 0h1m1 0h4m2 0h1m1 0h1m1 0h1m1 0h3m1 0h4m1 0h1m1 0h2m1 0h2m1 0h1m2 0h1m1 0h2m1 0h2m1 0h1m1 0h2m1 0h2m2 0h2m2 0h1m4 0h1m1 0h1m2 0h1m3 0h1M7 43.5h1m1 0h1m1 0h1m1 0h4m3 0h1m2 0h1m1 0h1m3 0h2m2 0h2m5 0h1m1 0h1m2 0h3m2 0h1m1 0h3m2 0h1m1 0h4m4 0h1m2 0h1m3 0h2M2 44.5h3m1 0h1m1 0h2m1 0h2m1 0h1m4 0h1m1 0h5m2 0h1m2 0h1m2 0h1m2 0h2m2 0h3m3 0h3m2 0h4m2 0h3m1 0h1m1 0h1m6 0h1m1 0h1M15 45.5h1m3 0h2m1 0h2m1 0h1m1 0h2m1 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h5m3 0h1m1 0h4m1 0h1m1 0h2m1 0h1m1 0h6M3 46.5h1m2 0h3m2 0h2m2 0h3m3 0h1m1 0h7m4 0h1m2 0h1m1 0h1m1 0h1m7 0h1m2 0h1m1 0h1m4 0h1m1 0h1m4 0h6m1 0h1m1 0h2m1 0h1M5 47.5h2m3 0h1m2 0h2m6 0h1m1 0h2m1 0h1m2 0h1m3 0h1m2 0h1m1 0h2m1 0h2m2 0h1m1 0h5m4 0h8m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h1M2 48.5h2m2 0h5m4 0h3m8 0h5m2 0h1m1 0h2m1 0h1m2 0h3m1 0h10m1 0h4m3 0h1m1 0h10m1 0h2M2 49.5h1m2 0h2m3 0h1m1 0h1m2 0h2m1 0h1m1 0h1m4 0h2m3 0h1m2 0h5m1 0h1m1 0h4m2 0h2m3 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h6m3 0h2m1 0h2M2 50.5h3m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m2 0h1m3 0h1m1 0h2m3 0h3m1 0h1m1 0h3m1 0h2m1 0h2m1 0h3m3 0h3m1 0h1m1 0h1m1 0h1m1 0h1M2 51.5h5m3 0h1m3 0h2m1 0h1m1 0h1m4 0h1m1 0h1m3 0h4m1 0h1m1 0h1m2 0h1m1 0h3m1 0h3m3 0h1m2 0h2m3 0h1m2 0h3m3 0h2m3 0h1m1 0h3M2 52.5h10m3 0h5m2 0h9m4 0h4m2 0h1m1 0h10m1 0h2m2 0h2m3 0h3m2 0h11M3 53.5h1m1 0h3m2 0h1m1 0h3m2 0h2m1 0h2m2 0h1m5 0h1m2 0h1m3 0h2m1 0h4m4 0h2m1 0h5m2 0h1m2 0h1m3 0h2m2 0h1m4 0h1M2 54.5h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h5m1 0h5m2 0h1m1 0h1m3 0h2m7 0h1m3 0h1m1 0h2m3 0h2m1 0h4m1 0h1m2 0h3m1 0h2m1 0h2m1 0h2M4 55.5h1m1 0h2m1 0h1m2 0h1m2 0h1m1 0h3m1 0h8m1 0h2m1 0h2m2 0h1m1 0h7m3 0h3m1 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h2M2 56.5h1m1 0h3m1 0h2m1 0h1m3 0h5m2 0h2m1 0h1m2 0h2m1 0h2m3 0h2m1 0h1m1 0h2m2 0h2m3 0h2m2 0h2m2 0h1m2 0h3m1 0h1m3 0h1m1 0h1m2 0h1m1 0h1M5 57.5h2m2 0h1m2 0h1m1 0h2m1 0h1m1 0h3m3 0h5m1 0h4m2 0h6m1 0h1m2 0h1m1 0h1m1 0h2m1 0h2m3 0h1m1 0h2m3 0h1m2 0h3m3 0h1m2 0h1M4 58.5h1m1 0h4m1 0h3m2 0h1m2 0h1m1 0h1m1 0h2m2 0h2m1 0h1m3 0h1m2 0h1m3 0h7m5 0h5m1 0h1m1 0h1m1 0h2m1 0h3m1 0h3m1 0h3m1 0h1M3 59.5h2m4 0h3m1 0h1m6 0h2m2 0h1m3 0h1m1 0h1m2 0h1m2 0h3m2 0h4m2 0h3m2 0h1m3 0h2m1 0h4m2 0h1m1 0h3m2 0h4m1 0h2M2 60.5h7m2 0h4m3 0h1m9 0h2m5 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h1m3 0h1m1 0h7m1 0h1m2 0h1M3 61.5h1m5 0h1m3 0h1m1 0h1m1 0h2m1 0h2m3 0h3m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m5 0h1m1 0h1m3 0h2m5 0h1m1 0h5m5 0h3m3 0h2M2 62.5h2m1 0h1m2 0h1m3 0h4m4 0h1m2 0h1m3 0h3m2 0h1m1 0h2m3 0h1m1 0h1m1 0h3m6 0h2m2 0h2m2 0h4m1 0h2m2 0h2m6 0h1M2 63.5h1m2 0h1m1 0h1m5 0h3m1 0h2m2 0h1m1 0h4m1 0h2m1 0h2m2 0h6m5 0h1m1 0h6m1 0h4m7 0h2m2 0h3m3 0h1m1 0h1M3 64.5h3m2 0h1m1 0h5m4 0h1m3 0h1m3 0h6m1 0h1m3 0h2m1 0h5m1 0h4m1 0h2m1 0h1m2 0h2m1 0h1m2 0h6m1 0h1m1 0h1m1 0h1m1 0h2M2 65.5h1m4 0h1m1 0h1m2 0h1m3 0h1m1 0h1m4 0h4m3 0h4m1 0h2m1 0h1m2 0h1m1 0h2m1 0h1m2 0h3m1 0h2m1 0h1m1 0h1m7 0h2m1 0h1m3 0h1m1 0h4M7 66.5h3m1 0h2m2 0h1m1 0h1m1 0h1m2 0h2m1 0h2m1 0h5m1 0h1m1 0h2m2 0h2m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m1 0h2m1 0h3m3 0h1m1 0h1m1 0h2M3 67.5h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h1m1 0h10m1 0h3m4 0h1m1 0h1m4 0h1m1 0h2m2 0h1m2 0h2m1 0h1m1 0h1m1 0h2m3 0h1m1 0h1M3 68.5h1m2 0h3m2 0h2m1 0h1m1 0h1m1 0h2m1 0h2m3 0h1m3 0h2m2 0h1m3 0h3m3 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h4m1 0h1m3 0h1m1 0h2M6 69.5h1m2 0h1m1 0h3m2 0h6m1 0h2m5 0h3m3 0h1m4 0h2m1 0h2m1 0h1m1 0h2m1 0h1m1 0h2m9 0h5m1 0h3m1 0h1m1 0h1M3 70.5h4m1 0h1m2 0h1m4 0h1m3 0h1m1 0h2m2 0h5m1 0h4m1 0h1m1 0h2m7 0h7m4 0h1m2 0h2m2 0h1m1 0h8m1 0h2M10 71.5h2m1 0h1m2 0h8m1 0h2m3 0h1m5 0h1m3 0h1m3 0h1m2 0h2m3 0h1m1 0h1m1 0h4m1 0h2m3 0h1m2 0h2m3 0h1m2 0h2M2 72.5h7m1 0h1m1 0h1m2 0h4m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m3 0h3m3 0h2m1 0h2m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h2M2 73.5h1m5 0h1m2 0h2m1 0h2m1 0h1m1 0h1m1 0h2m3 0h1m3 0h5m3 0h6m2 0h1m1 0h1m3 0h1m3 0h2m3 0h1m3 0h1m4 0h1m3 0h1m1 0h3M2 74.5h1m1 0h3m1 0h1m2 0h1m3 0h1m2 0h1m1 0h2m1 0h2m1 0h5m1 0h2m2 0h2m2 0h2m2 0h1m3 0h5m3 0h1m6 0h4m3 0h5m2 0h2M2 75.5h1m1 0h3m1 0h1m1 0h1m3 0h4m2 0h1m1 0h1m1 0h1m3 0h3m1 0h1m1 0h3m1 0h5m1 0h10m1 0h1m2 0h1m3 0h1m3 0h2m1 0h3m2 0h1m1 0h1M2 76.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h2m5 0h5m5 0h1m2 0h2m2 0h1m1 0h1m2 0h1m5 0h1m1 0h4m1 0h2m1 0h1m2 0h5m1 0h1m2 0h4m1 0h1M2 77.5h1m5 0h1m3 0h2m1 0h1m4 0h1m1 0h2m8 0h2m2 0h1m2 0h1m2 0h4m1 0h3m4 0h2m1 0h1m1 0h1m1 0h2m1 0h1m1 0h5m1 0h1m2 0h1m1 0h1M2 78.5h7m2 0h1m3 0h2m1 0h1m1 0h1m3 0h4m3 0h1m2 0h2m3 0h1m5 0h2m4 0h1m1 0h1m5 0h1m1 0h1m4 0h1m1 0h4m1 0h2m1 0h2"/>
-          </svg>
-          <div class="cta">Scan for the full video tour</div>
-          <div class="tag">utm_content = yard-sign</div>
-        </div>
-        <div class="post"></div>
-      </div>
-    </div>
-    <figcaption>
-      <div class="pnum">Plate 02</div>
-      <div class="ptext"><b>A tracked code, print-ready as vector.</b> Three variants — rider, open-house directional, flyer — each tagged separately, so tomorrow's drive-by traffic becomes a line in the report instead of a guess. <b>The code shown is a working sample from another campaign</b>, not the cottage's.</div>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <div class="plate">
-      <div class="phone">
-        <div class="screen">
-          <div class="ph-bar">
-            <div class="ph-av">LH</div>
-            <div>
-              <div class="ph-name">linda_s_hoyt_realtor</div>
-              <div class="ph-loc">Sailboat Bend, Fort Lauderdale</div>
-            </div>
-          </div>
-          <div class="ph-img">
-            <svg viewBox="0 0 250 146" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration standing in for the open-house photograph, which you supply.">
-              <defs>
-                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#CFE0E4"/><stop offset="1" stop-color="#EFE9DC"/>
-                </linearGradient>
-              </defs>
-              <rect width="250" height="146" fill="url(#sky)"/>
-              <rect y="104" width="250" height="42" fill="#9FB68A"/>
-              <path d="M62 96 V54 L125 26 L188 54 V96 Z" fill="#E8E3C9"/>
-              <path d="M56 56 L125 22 L194 56 L188 62 L125 32 L62 62 Z" fill="#F6F5EE"/>
-              <rect x="112" y="66" width="26" height="30" fill="#F6F5EE"/>
-              <rect x="78" y="64" width="20" height="18" fill="#F6F5EE"/>
-              <rect x="152" y="64" width="20" height="18" fill="#F6F5EE"/>
-              <g stroke="#C6C2AC" stroke-width="1">
-                <line x1="88" y1="64" x2="88" y2="82"/><line x1="78" y1="73" x2="98" y2="73"/>
-                <line x1="162" y1="64" x2="162" y2="82"/><line x1="152" y1="73" x2="172" y2="73"/>
-              </g>
-              <rect x="46" y="96" width="158" height="8" fill="#C9A87C"/>
-              <ellipse cx="26" cy="72" rx="24" ry="34" fill="#7E9A6A"/>
-              <ellipse cx="226" cy="78" rx="22" ry="30" fill="#7E9A6A"/>
-              <text x="125" y="139" text-anchor="middle" font-family="ui-monospace,monospace"
-                    font-size="6" letter-spacing="1.4" fill="#14181B" opacity=".4">YOUR PHOTO GOES HERE</text>
-            </svg>
-          </div>
-          <div class="ph-icons">
-            <svg viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.2-4.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          </div>
-          <div class="ph-cap">
-            <span class="hand">A hundred and three years old</span>, and it still throws a better Sunday than most houses half its age. 🥂<br><br>
-            Thank you to everyone who came through the Cozy Cottage — <span class="tick">[N]</span> of you, one pitcher of mimosas, and a lot of people standing in that backyard saying the same thing: <em>you'd never know this was minutes from Las Olas.</em><br><br>
-            Still available. Private showings this week.
-            <span class="tags">#SailboatBend #FortLauderdaleRealEstate #HistoricHomes #OpenHouse #CozyCottage</span>
-            <span class="more">Linda S. Hoyt · ONE Sotheby's International Realty</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <figcaption>
-      <div class="pnum">Plate 03</div>
-      <div class="ptext"><b>The recap — the post that can't be written before the event.</b> Five hashtags exactly; Instagram's reach penalty starts above that. This is the one that converts, because it's the only post that proves people actually came. <b>The photo is yours</b> — I don't generate property images and I won't.</div>
+      <div class="pnum">The format</div>
+      <div class="ptext"><b>Your name on it, not mine.</b> The brackets stay empty until the numbers are measured — a report that inflates a figure once is worth nothing every week after.</div>
     </figcaption>
   </figure>
 </section>
 
-<section>
-  <div class="eyebrow">Why it compounds</div>
-  <h2>The part that pays twice</h2>
-  <p>The read-out isn't only for the seller you have. It's the artifact you put in front of the next one. Nobody wins a listing appointment by promising marketing — they win it by showing the last seller's report.</p>
-
-  <div class="loopwrap">
-    <svg viewBox="0 0 620 178" role="img" aria-label="A four-stage loop: the launch campaign runs, the read-out goes to the current seller, the sale becomes proof, and that proof wins the next listing appointment, which starts the cycle again.">
-      <defs>
-        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path d="M0 0 L10 5 L0 10 z" fill="var(--accent)"/>
-        </marker>
-      </defs>
-      <rect x="2" y="30" width="132" height="58" rx="2" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      <text x="68" y="54" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--accent)" font-family="ui-monospace,monospace">LAUNCH</text>
-      <text x="68" y="72" text-anchor="middle" font-size="11" fill="var(--body)">film · reels · signage</text>
-      <line x1="134" y1="59" x2="158" y2="59" stroke="var(--accent)" stroke-width="1.4" marker-end="url(#ar)"/>
-      <rect x="162" y="30" width="132" height="58" rx="2" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.4"/>
-      <text x="228" y="54" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--surface)" font-family="ui-monospace,monospace">READ-OUT</text>
-      <text x="228" y="72" text-anchor="middle" font-size="11" fill="var(--surface)">the seller holds this</text>
-      <line x1="294" y1="59" x2="318" y2="59" stroke="var(--accent)" stroke-width="1.4" marker-end="url(#ar)"/>
-      <rect x="322" y="30" width="132" height="58" rx="2" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      <text x="388" y="54" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--accent)" font-family="ui-monospace,monospace">SOLD</text>
-      <text x="388" y="72" text-anchor="middle" font-size="11" fill="var(--body)">under-contract post</text>
-      <line x1="454" y1="59" x2="478" y2="59" stroke="var(--accent)" stroke-width="1.4" marker-end="url(#ar)"/>
-      <rect x="482" y="30" width="136" height="58" rx="2" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-      <text x="550" y="54" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--accent)" font-family="ui-monospace,monospace">NEXT SELLER</text>
-      <text x="550" y="72" text-anchor="middle" font-size="11" fill="var(--body)">you show the read-out</text>
-      <path d="M550 88 L550 124 L68 124 L68 90" fill="none" stroke="var(--accent)" stroke-width="1.4"
-            stroke-dasharray="4 4" marker-end="url(#ar)"/>
-      <text x="309" y="141" text-anchor="middle" font-size="11.5" font-style="italic" fill="var(--muted)">
-        each sale becomes the proof that wins the next listing appointment
-      </text>
-    </svg>
-  </div>
-</section>
-
-<div class="ask">
-  <div class="eyebrow">The ask · tomorrow</div>
-  <h2>Text me three photos when the mimosas run out.</h2>
-  <ol>
-    <li>Tomorrow, 1 to 3, shoot whatever you'd shoot anyway.<span>Phone is fine. The backyard, the hardwood, people in the room.</span></li>
-    <li>Send me three of them Sunday evening.<span>That's the entire ask. No call, no meeting, nothing to sign.</span></li>
-    <li>You'll have the recap post back the same night, in your branding.<span>Free. If it's worse than what you'd have written, that's a useful answer and it cost you one text.</span></li>
-  </ol>
+<div class="close">
+  <h2>That's all of it.</h2>
+  <p>No meeting, no call, nothing to sign, nothing to send back. If two of these are useful, use those two. If none are, that's a fair answer.</p>
+  <p>I build this kind of thing — the calendar, the cuts, the seller report — and I'd rather show you than describe it. So this is the showing.</p>
 </div>
 
 <div class="notice">
-  <div class="flag">Authorization</div>
-  <p>Nothing publishes under your name without your sign-off on each asset — the recap included. Listing details on this page were taken from your own public posts on 15 August 2026. The listing belongs to ONE Sotheby's International Realty; every package I generate carries that notice with it.</p>
+  <div class="flag">Where this came from</div>
+  <p>Everything about the property was taken from your own public posts on 15 August 2026 — no MLS data was used. The listing belongs to ONE Sotheby's International Realty. Nothing here has been published anywhere, and nothing would be without your sign-off on each piece.</p>
 </div>
 
 <footer>

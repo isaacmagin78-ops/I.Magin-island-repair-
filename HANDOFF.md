@@ -506,11 +506,21 @@ shown to non-followers.** Everything she posts currently lands in the same warm
 room. She needs distribution and repurposing, not content generation — and the
 seller report is what converts a referral network into listings.
 
+> **Isaac's standing instruction, 2026-08-15: do not ask Linda for anything.**
+> "I really don't wanna ask her anything. I just wanted to see what we can do for
+> her." He also read her working style: she plans ahead and is already thinking
+> about next week and three weeks out, so anything hinging on *tomorrow* is both
+> an ask and badly timed. **Give, don't request.** Build the finished thing and
+> hand it over with no reply required.
+
 **The pitch page** is `Listing-Content-System/pitch/linda-hoyt-pitch.html`
 (published at `claude.ai/code/artifact/a3b18477-dfad-4fce-87ac-02fffc4fd91f`).
-It opens on her engagement numbers, positions against the platforms below, shows
-the three deliverables as objects, and asks for exactly one thing: **three
-photos from Sunday's open house, recap post returned the same night, free.**
+It is **not a pitch** — it is a three-week campaign calendar for the cottage
+(Aug 17 → Labor Day) with all nine captions already written, five postable as-is
+and four needing ~60s of phone video with the exact shot named. It closes with no
+ask at all. Strongest angles, both buried in her own listing copy and unused: the
+**mosquito misting system** ("why you can actually sit outside here, in August")
+and **1923** ("try getting these floors today"). Every figure is a real blank.
 
 ## Brokerage AI landscape — researched 2026-08-15
 
