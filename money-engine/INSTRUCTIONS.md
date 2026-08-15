@@ -31,8 +31,10 @@ Use these by name in section 6. Reach figures are per-post, verified 2026-07-29 
 | Facebook | — | **dark** | No Page linked. Do not plan around it until that changes. |
 
 - **Scheduling:** Blotato, all channels connected. Media must live in Blotato storage — Google Drive URLs never work as post media.
-- **Live offer:** First 30 Days Kit, $19 — sales page `tysons-time-kit.vercel.app`, Stripe link `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`. A proven paid offer already exists; prefer attaching to it over standing up new payment rails.
-- **Amazon Associates:** active, requires its disclosure in every caption.
+- **Live offer:** First 30 Days Kit, $19 — sales page `tysons-time-kit.vercel.app`, Stripe link `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`. **The payment rails work; the offer is NOT proven.** Verified against Stripe 2026-08-15: zero external customers, one self-test charge 07-24 billed to Isaac's own address, 24 of 25 checkout sessions expired unpaid, balance $0. Attach to these rails rather than building new ones — but never plan as though demand has been demonstrated. It has not been tested.
+- **Second offer:** College Checklist, $49 — its buy button points at a **Stripe test link** and the product has never been purchasable. The live link `https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02` was created 2026-08-07 and never wired up. Swapping the button on `college-checklist.vercel.app` is a five-minute paste.
+- **Total verified third-party revenue, all time: $1.29** (Amazon Associates). Any plan that assumes more than this is wrong.
+- **Amazon Associates:** active — $1.29, 67 clicks, 1 order, 1.49% conversion. Only **one** affiliate link has ever been created; 33 YouTube videos (11,929 views) carry no tagged links, while ~25 posts carry the disclosure with no link in the funnel. Disclosure required in every caption that carries a link. Probation: 3 qualifying sales by ~mid-Jan 2027; 1 so far.
 - **Also live:** `college-launch-os.vercel.app` (college-prep app), a South Florida home-concierge site, and a Remotion-based branded video engine that can render assets on demand.
 - **Known gap:** link-in-bio is unverified. Any plan whose call to action is "link in bio" must first confirm the link is actually there, or the traffic goes nowhere.
 - **Definition of done:** a stranger can pay and receive the product while I am asleep. Both halves — payment *and* delivery — run without me.

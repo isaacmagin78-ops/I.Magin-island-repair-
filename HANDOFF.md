@@ -211,11 +211,40 @@ about the queue. Written figures go stale in days.
 
 ### Money
 
+> **CORRECTED 2026-08-15 from the live layer (Stripe + Blotato + Gmail).** This section
+> previously said the Kit was "already transacting." It is not, and that claim propagated
+> into `money-engine/INSTRUCTIONS.md` and several sessions. Per the verified-state rule
+> below: the live layer wins, Notion and this file get corrected.
+
+**Total verified third-party revenue, all time: $1.29.**
+
 - First 30 Days Kit **$19** — sales page `tysons-time-kit.vercel.app`,
-  Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`. Already transacting.
+  Stripe `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00`.
+  **ZERO external customers.** Infrastructure works end to end (page, checkout, PDF,
+  automated delivery). One charge exists all-time: 2026-07-24, billed to Isaac Magin at
+  his own address — a self-test. 25 checkout sessions created, 24 expired unpaid, none
+  since 07-31. Stripe balance $0. Do not describe this offer as proven or selling.
   Use the **sales page** in captions, not the raw Stripe link.
-- Amazon Associates active — disclosure required in every caption.
+- **College Checklist $49 — live Stripe link EXISTS but was never wired up.**
+  `https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02` (created 2026-08-07). The button on
+  `college-checklist.vercel.app` still points at a **test** link, so real cards are
+  rejected and the product has never been purchasable. Swapping the button is the whole
+  fix. Seasonal note: college move-in is late August — this is the product's window.
+- Amazon Associates active — **$1.29 earned, 67 clicks, 1 order, 1.49% conversion.**
+  That single qualifying sale retired the 180-day account-closure risk. Probation
+  continues: 3 qualifying sales from 3 separate checkouts by ~mid-Jan 2027; 1 so far.
+  Only **one** affiliate link has ever been created. 33 YouTube videos (11,929 views)
+  carry **no tagged links in their descriptions**, while ~25 posts carry the disclosure
+  with no link in the funnel — lost revenue and a disclosure-accuracy exposure.
+  Disclosure required in every caption that carries a link.
+- **Amazon email goes to iCloud, not Gmail** — there is a dedicated Amazon folder there.
+  A Gmail sweep finds nothing. Likely tied to the open Apple Hide My Email item.
 - Link pages live and fixed *(secondhand, Aug 6)*.
+- **Not deals, despite prior claims:** Southwest (public comment 07-23, DM never arrived,
+  window closed). **TikTok Shop is not cleanly approved** — six "Application Rejected"
+  emails 07-12→08-02, resubmitted 08-10, settlement tier **Deferred**, W-9 not on file,
+  withdrawals blocked, zero products listed. **YouTube Partner Program not approved** —
+  18.3 of 4,000 watch hours. **Amazon Influencer blocked** — needs 10 sales/30 days, has 1.
 - `*.vercel.app` is blocked for plain WebFetch here — use the Vercel MCP
   `web_fetch_vercel_url` tool to check those pages.
 
