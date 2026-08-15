@@ -1,0 +1,357 @@
+<title>Imagin Concierge</title>
+<meta name="description" content="Done-for-you websites, flyers and social setup for South Florida small businesses. Quick Win $99, Launch Kit $499, Autopilot $299/mo.">
+<style>
+  :root{
+    --paper:#f7f7f4;
+    --card:#fffffe;
+    --ink:#16181c;
+    --body:#3d434e;
+    --muted:#6a7180;
+    --rule:#d9dce3;
+    --rule-soft:#e9ebef;
+    --blue:#1b4f9c;
+    --blue-wash:#eef2f9;
+    --stamp:#c0392b;
+    --stamp-wash:#fbeeec;
+    --mono:ui-monospace,SFMono-Regular,Menlo,"Cascadia Mono",Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#101318;
+      --card:#171b22;
+      --ink:#e8eaee;
+      --body:#b3bac6;
+      --muted:#828b9b;
+      --rule:#2b313b;
+      --rule-soft:#222731;
+      --blue:#6fa0e8;
+      --blue-wash:#151d2b;
+      --stamp:#f0736a;
+      --stamp-wash:#2a1614;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101318;
+    --card:#171b22;
+    --ink:#e8eaee;
+    --body:#b3bac6;
+    --muted:#828b9b;
+    --rule:#2b313b;
+    --rule-soft:#222731;
+    --blue:#6fa0e8;
+    --blue-wash:#151d2b;
+    --stamp:#f0736a;
+    --stamp-wash:#2a1614;
+  }
+  :root[data-theme="light"]{
+    --paper:#f7f7f4;
+    --card:#fffffe;
+    --ink:#16181c;
+    --body:#3d434e;
+    --muted:#6a7180;
+    --rule:#d9dce3;
+    --rule-soft:#e9ebef;
+    --blue:#1b4f9c;
+    --blue-wash:#eef2f9;
+    --stamp:#c0392b;
+    --stamp-wash:#fbeeec;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--body);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding:0 18px 72px;
+  }
+  .sheet{
+    max-width:720px;
+    margin:0 auto;
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--blue);
+  }
+  a{color:var(--blue)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
+
+  .lbl{
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:600;
+  }
+
+  /* ---------- masthead: the form header ---------- */
+  .masthead{padding:24px 28px 20px;border-bottom:1px solid var(--rule)}
+  .mast-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:baseline}
+  .mark{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+  .mark span{color:var(--blue)}
+
+  .hero{padding:34px 28px 30px;border-bottom:1px solid var(--rule)}
+  h1{
+    font-family:var(--sans);
+    font-size:clamp(29px,6.2vw,44px);
+    line-height:1.06;
+    letter-spacing:-.028em;
+    font-weight:800;
+    color:var(--ink);
+    text-wrap:balance;
+    max-width:17ch;
+  }
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero p{margin-top:16px;max-width:56ch;font-size:16.5px}
+  .hero p strong{color:var(--ink);font-weight:650}
+
+  /* ---------- line items ---------- */
+  .section{padding:30px 28px;border-bottom:1px solid var(--rule)}
+  h2{
+    font-family:var(--sans);
+    font-size:19px;
+    font-weight:750;
+    letter-spacing:-.015em;
+    color:var(--ink);
+    margin-top:8px;
+  }
+  .section > .lbl + h2{margin-top:6px}
+  .lede{margin-top:8px;font-size:15px;max-width:58ch}
+
+  .items{margin-top:22px;border-top:1px solid var(--rule)}
+  .item{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:4px 20px;
+    padding:18px 0;
+    border-bottom:1px solid var(--rule-soft);
+    align-items:baseline;
+  }
+  .item:last-child{border-bottom:none}
+  .item-name{font-size:17px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+  .item-code{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;color:var(--blue);text-transform:uppercase;font-weight:600;display:block;margin-bottom:5px}
+  .item-price{
+    font-family:var(--mono);
+    font-size:21px;
+    font-weight:700;
+    color:var(--stamp);
+    font-variant-numeric:tabular-nums;
+    white-space:nowrap;
+    text-align:right;
+  }
+  .item-price small{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:2px}
+  .item-desc{grid-column:1/-1;font-size:14.5px;max-width:58ch;margin-top:2px}
+  .item-desc ul{margin-top:8px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+  .item-desc li{padding-left:18px;position:relative;font-size:14px}
+  .item-desc li::before{
+    content:"";position:absolute;left:2px;top:.62em;
+    width:7px;height:7px;border:1.5px solid var(--blue);
+  }
+
+  /* ---------- proof ---------- */
+  .proof{display:flex;flex-direction:column;gap:0;margin-top:20px;border-top:1px solid var(--rule)}
+  .proof-row{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline}
+  .proof-row:last-child{border-bottom:none}
+  .proof-kind{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:600;white-space:nowrap;padding-top:2px}
+  .proof-row p{font-size:14.5px;max-width:52ch}
+  .proof-row b{color:var(--ink);font-weight:650}
+
+  /* ---------- who it's for ---------- */
+  .trades{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+  .trade{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ink);
+    border:1px solid var(--rule);
+    padding:5px 10px;
+    background:var(--paper);
+  }
+  .kicker{
+    margin-top:20px;padding:14px 16px;
+    background:var(--blue-wash);
+    border-left:3px solid var(--blue);
+    font-size:15px;color:var(--ink);
+    max-width:56ch;
+  }
+
+  /* ---------- the stamp ---------- */
+  .cta{padding:34px 28px;text-align:left;border-bottom:1px solid var(--rule)}
+  .cta h2{margin-top:6px}
+  .cta p{margin-top:10px;max-width:52ch;font-size:15.5px}
+  .stamp{
+    display:inline-block;
+    margin-top:20px;
+    font-family:var(--mono);
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:.02em;
+    color:var(--stamp);
+    background:var(--stamp-wash);
+    border:2px solid var(--stamp);
+    padding:13px 22px;
+    text-decoration:none;
+    transition:transform .14s ease, box-shadow .14s ease;
+  }
+  .stamp:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--stamp)}
+  @media (prefers-reduced-motion:reduce){
+    .stamp{transition:none}
+    .stamp:hover{transform:none}
+  }
+  .cta .fine{margin-top:14px;font-size:13.5px;color:var(--muted);max-width:52ch}
+
+  .referral{padding:26px 28px;border-bottom:1px solid var(--rule);background:var(--paper)}
+  .referral p{font-size:15px;max-width:56ch;margin-top:8px}
+  .referral b{color:var(--ink);font-weight:650}
+
+  footer{padding:22px 28px;font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.7}
+
+  @media (max-width:520px){
+    .masthead,.hero,.section,.cta,.referral,footer{padding-left:20px;padding-right:20px}
+    .item{grid-template-columns:1fr}
+    .item-price{text-align:left;margin-top:4px}
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="mast-row">
+      <div class="mark">IMAGIN <span>CONCIERGE</span></div>
+      <div class="lbl">South Florida · Digital work, done for you</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Your website is a <em>Facebook page.</em></h1>
+    <p>That worked for a while. It doesn't anymore — people look you up before they call, and right now there's nothing to find. I build the thing they find: a real page, the flyers, the social accounts, set up properly and handed over working. <strong>You don't manage anything. You just get sent the finished link.</strong></p>
+  </section>
+
+  <section class="section">
+    <div class="lbl">Services &amp; rates</div>
+    <h2>Pick the size of the job.</h2>
+    <p class="lede">Flat prices, quoted up front. No retainers you can't cancel, no discovery calls before you know what it costs.</p>
+
+    <div class="items">
+
+      <div class="item">
+        <div>
+          <span class="item-code">One-off</span>
+          <div class="item-name">Quick Win</div>
+        </div>
+        <div class="item-price">$99<small>per piece</small></div>
+        <div class="item-desc">
+          One thing, done well, back to you fast.
+          <ul>
+            <li>A one-page site, or a flyer, or a menu</li>
+            <li>Google Business profile set up and verified</li>
+            <li>One social account built out properly</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+          <span class="item-code">Full setup</span>
+          <div class="item-name">Launch Kit</div>
+        </div>
+        <div class="item-price">$499<small>one time</small></div>
+        <div class="item-desc">
+          Everything a business needs to look real online, in one pass.
+          <ul>
+            <li>Multi-page site with your services and real photos</li>
+            <li>Booking or contact form that reaches your phone</li>
+            <li>Google Business, Instagram and Facebook set up to match</li>
+            <li>A flyer and a set of social posts to open with</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+          <span class="item-code">Ongoing</span>
+          <div class="item-name">Autopilot</div>
+        </div>
+        <div class="item-price">$299<small>per month</small></div>
+        <div class="item-desc">
+          For when the setup exists and nobody has time to feed it.
+          <ul>
+            <li>Posts written and scheduled across your accounts</li>
+            <li>Site kept current — hours, prices, new services</li>
+            <li>Seasonal flyers and promos as you need them</li>
+            <li>Cancel any month. No contract.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="lbl">Work already shipped</div>
+    <h2>Things that exist, not a portfolio of mockups.</h2>
+
+    <div class="proof">
+      <div class="proof-row">
+        <div class="proof-kind">Product</div>
+        <p>A <b>$19 digital product</b> built end to end — sales page, card checkout, and the file delivered automatically the second someone pays.</p>
+      </div>
+      <div class="proof-row">
+        <div class="proof-kind">Tool</div>
+        <p>A <b>renovation punch list</b> for a Pompano Beach condo, built mobile-first and shared straight into a group text. The owner, the project lead and the contractor all worked off it the same evening.</p>
+      </div>
+      <div class="proof-row">
+        <div class="proof-kind">Film</div>
+        <p>Two finished films for a <b>hunting ranch in Michigan</b> — narration, music, the real property — cut from their own footage.</p>
+      </div>
+      <div class="proof-row">
+        <div class="proof-kind">Site</div>
+        <p>A booking site for a <b>South Florida home-concierge service</b>, and a college-prep app used by a family through a full application season.</p>
+      </div>
+      <div class="proof-row">
+        <div class="proof-kind">Social</div>
+        <p>A rescue-dog account posting <b>daily across four platforms</b> on a schedule that runs itself — the same system I'd point at your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="lbl">Who this is for</div>
+    <h2>Businesses that run on word of mouth.</h2>
+    <div class="trades">
+      <span class="trade">Restaurants</span>
+      <span class="trade">Barbers</span>
+      <span class="trade">Salons</span>
+      <span class="trade">Handymen</span>
+      <span class="trade">Landscapers</span>
+      <span class="trade">Charter &amp; boat</span>
+      <span class="trade">Cleaners</span>
+      <span class="trade">Contractors</span>
+      <span class="trade">Real estate</span>
+      <span class="trade">Food trucks</span>
+      <span class="trade">Gyms</span>
+      <span class="trade">Dog groomers</span>
+    </div>
+    <p class="kicker">If you've been meaning to "get the website sorted" for two years, that's the job. It takes me days, not months, and you don't have to learn anything.</p>
+  </section>
+
+  <section class="cta">
+    <div class="lbl">Start a job</div>
+    <h2>Tell me what the business is.</h2>
+    <p>One email. Say what you do and what's missing, and I'll tell you which of the three it is and what it'll cost — before you commit to anything.</p>
+    <a class="stamp" href="mailto:isaacmagin78@gmail.com?subject=Imagin%20Concierge%20—%20new%20job">Email me →</a>
+    <p class="fine">Replies come from a real person, usually same day. If it's not a job I'm right for, I'll say so.</p>
+  </section>
+
+  <section class="referral">
+    <div class="lbl">Referrals</div>
+    <p>Know someone who needs this? <b>Send them here and $50 comes back to you</b> when they book. No cap, no forms — just tell me who sent them.</p>
+  </section>
+
+  <footer>
+    Imagin Concierge · South Florida · isaacmagin78@gmail.com
+  </footer>
+
+</div>
