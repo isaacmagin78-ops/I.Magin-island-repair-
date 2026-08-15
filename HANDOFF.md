@@ -355,6 +355,40 @@ PDF to a raw GitHub URL pinned to the feature branch
 
 ---
 
+## PH3 Punchlist — LIVE, and not in this repo
+
+`https://ph3-punchlist.vercel.app` — verified 200 on 2026-08-04, last modified
+that afternoon. Built and deployed outside this repo (Vercel + Supabase:
+`ph3_photos` table, `ph3` storage bucket). **Source is not here.** Do not
+rebuild it; ask Isaac where it lives before touching anything.
+
+14 items across Laundry, Primary bath, Primary bedroom, Elevator/access, Second
+bedroom, Kitchen & bar. Each carries an owner (Jared / Ike / Building), a note,
+and closes on a photo. Live tallies for Open / Closed / On Jared. No login,
+mobile-first — that is deliberate, it is shared into a group text.
+
+**This is the concierge model working in production.** Sent into a thread with
+Suzanne and Jared Silverman (project lead, title unconfirmed) on 2026-08-04; both replied and engaged on
+substance the same evening. Contractor committed to reviewing the punchlist.
+Nearest thing to proof-of-model Isaac has — it belongs in any pitch.
+
+**Elevator finding, easy to lose:** the constraint is the *door opening*, not
+the cab height. Panels run ~91"; the opening is roughly 36" × 84". That is why
+the letter went to the building office — the open question is whether the cab
+has a removable ceiling hatch. Suzanne asked for a tape-verified cab height and
+this reasoning was never explained to her, which caused a serious family
+argument on 2026-08-04. If it comes up: explain the door, do not re-litigate.
+
+**Source location, still unknown as of 2026-08-15.** Isaac has a file named
+`punchlist-track…​.tsx` in his iPhone Files app (folder "Ideas and Side
+Projects"), which is very likely the React component behind the live site. It
+has never been committed anywhere. **Ask him to send it, then commit it** — the
+punchlist is the strongest proof-of-model in the workspace and currently exists
+only as a Vercel deployment plus one file on a phone.
+
+
+---
+
 ## Listing Content System — the nearest thing to new revenue
 
 **Linda S. Hoyt is Isaac's sister**, a top-producing Broker-Associate at ONE
