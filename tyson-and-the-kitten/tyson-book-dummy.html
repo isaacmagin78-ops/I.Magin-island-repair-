@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tyson and the Kitten — Book Dummy</title>
+<style>
+  @page{ size:8.5in 8.5in; margin:0; }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:Georgia,"Times New Roman",serif; color:#39321f}
+  .page{
+    width:8.5in; height:8.5in; page-break-after:always; position:relative;
+    padding:.65in .7in; display:flex; flex-direction:column; background:#fdfaf2;
+  }
+  .folio{
+    position:absolute; bottom:.32in; left:0; right:0; text-align:center;
+    font-size:9pt; color:#a0947a; letter-spacing:.15em;
+  }
+  .verse{
+    font-size:15pt; line-height:1.5; white-space:pre-line; text-align:center;
+    margin:auto 0; padding:.15in 0; flex:none;
+  }
+  .verse i{color:#6d6450}
+  .verse b{color:#b07d1e}
+  .artbox{
+    flex:1 1 auto; min-height:2.6in; border:2px dashed #cdbd97; border-radius:10px;
+    margin-bottom:.25in; display:flex; align-items:center; justify-content:center;
+    padding:.35in; background:#f6efdd;
+  }
+  .artbox p{
+    font-family:"Helvetica Neue",Arial,sans-serif; font-size:9.5pt; line-height:1.5;
+    color:#8a7c5c; text-align:center; max-width:5.6in;
+  }
+  .artbox p::before{content:"ILLUSTRATION — "; font-weight:bold; color:#b07d1e; letter-spacing:.08em}
+
+  /* cover + special pages */
+  .cover{
+    background:linear-gradient(#f2c565,#f8e6bb 55%,#9cb96e); align-items:center; justify-content:center;
+    text-align:center; display:flex; flex-direction:column; gap:.3in;
+  }
+  .cover h1{font-size:44pt; letter-spacing:-.01em; color:#3c2f14; text-wrap:balance; line-height:1.1}
+  .cover .byline{font-size:14pt; font-style:italic; color:#5d4c26}
+  .cover .coverart{
+    width:5.4in; height:3.4in; border:3px solid #3c2f14; border-radius:14px;
+    background:#fdf6e2cc; display:flex; align-items:center; justify-content:center; padding:.3in;
+  }
+  .cover .coverart p{font-family:"Helvetica Neue",Arial,sans-serif; font-size:10pt; color:#6d5c34; line-height:1.5}
+  .frontmatter{justify-content:center; text-align:center}
+  .frontmatter h2{font-size:26pt; margin-bottom:.3in}
+  .frontmatter p{font-size:11pt; line-height:1.7; color:#6d6450; max-width:5.5in; margin:0 auto .18in}
+  .backcover{background:linear-gradient(#8db262,#f8e6bb 60%,#f2c565); justify-content:center}
+  .backcover .blurb{
+    background:#fdf6e2ee; border-radius:14px; padding:.5in; max-width:6in; margin:0 auto;
+    font-size:12.5pt; line-height:1.65; text-align:center;
+  }
+  .backcover .blurb b{color:#b07d1e}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <h1>Tyson<br>and the Kitten</h1>
+  <div class="coverart"><p>COVER ART — Tyson, a big blocky soft-eyed pit bull with a goofy grin, and Miss, a tiny kitten, standing on top of his head like she owns him. Warm backyard light, fence line, big oak. Walker's silhouette far off, watching kindly.</p></div>
+  <div class="byline">A story about the name you're given and the friend who sees you</div>
+</div>
+
+<!-- TITLE PAGE -->
+<div class="page frontmatter">
+  <div style="margin:auto">
+    <h2>Tyson and the Kitten</h2>
+    <p style="font-style:italic">For every good dog who got judged by the bark and not the heart.</p>
+  </div>
+</div>
+
+<!-- COPYRIGHT PAGE -->
+<div class="page frontmatter">
+  <div style="margin-top:auto">
+    <p>Copyright © 2026. All rights reserved.</p>
+    <p>No part of this book may be reproduced without permission.</p>
+    <p>First edition.</p>
+  </div>
+</div>
+
+<!-- STORY PAGES -->
+<div class="page">
+  <div class="artbox"><p>Close-up, Tyson waving a paw at the reader, sweet-faced and hopeful. Background animals flinch dramatically at his name.</p></div>
+  <div class="verse">Hi!
+I'm Tyson.
+Just Tyson.
+The most misunderstood dog
+on the whole wide block.
+
+Go ahead.
+Say it.
+<i>Tyson.</i>
+
+See?
+You made the face.
+Everybody does.</div>
+  <div class="folio">1</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Cheerful street, BARKER BOULEVARD sign, Tyson trotting past fences, tail wagging.</p></div>
+  <div class="verse">I live on
+Barker Boulevard.
+The grass glows.
+The sprinklers sway.
+The birds all sing.
+The mail trucks play.
+
+Most mornings smell like
+sunshine and bacon.
+
+I love it here.
+Well… mostly.</div>
+  <div class="folio">2</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Family portraits of gentle grinning pit bulls — one holds a flower, one naps under a kitten pile. The portraits contradict the gossip.</p></div>
+  <div class="verse">My pa was a Tyson.
+His pa was too.
+Big heads. Big hearts.
+Tysons through and through.
+
+Funny thing is…
+not one of us
+ever picked a fight.
+
+Not one.</div>
+  <div class="folio">3</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Fence-line animals whispering and judging. Tyson off to the side, hurt but trying to smile.</p></div>
+  <div class="verse">But the block didn't care.
+
+"Tyson?" yipped a poodle.
+"Sounds tough."
+"Sounds scary."
+"Sounds like trouble."
+
+Nobody asked if I was kind.
+Nobody even asked
+my favorite treat.
+
+Peanut butter.
+Obviously.
+
+They heard my name…
+and decided who I was.</div>
+  <div class="folio">4</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson alone on the sidewalk; the word TYSON echoes in bubbles, bigger and bigger, as animals point and whisper.</p></div>
+  <div class="verse">Maybe they wanted
+to defame my name
+because I wasn't the same.
+
+Or maybe…
+they just didn't want
+to see me run farther
+than they did.
+
+I only knew this:
+
+A name can echo.
+Especially down a long fence line.</div>
+  <div class="folio">5</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>The Grumble Pack enters like a storm cloud — sour bulldog, hissing alley cat, droopy hound, crabby raccoon. Junkyard gate sign: GROWLER'S GRIPES.</p></div>
+  <div class="verse">Then came
+the Grumble Pack,
+slinking my way.
+
+And as soon as the Grumblers
+joined in the fray,
+the rumors swirled
+and twirled down the street.
+
+"Tyson is trouble!
+Just wait and see!"</div>
+  <div class="folio">6</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Gag spread: rumor bubbles as sinking paper boats, Tyson in a tiny doghouse, a ten-foot leash from off-panel, a bowl labeled GOSSIP STEW.</p></div>
+  <div class="verse">Loose lips sink friendships,
+and those lips let it rip.
+They didn't like
+the cut of my jib.
+
+They had me in the doghouse,
+stuck in dire straits,
+tangled in gossip,
+and blamed by my mates.
+
+No one would touch me
+with a ten-foot leash.
+
+All because Grumblers
+were stirring the street.</div>
+  <div class="folio">7</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Gloomy chorus at the junkyard fence. Gray speech bubbles: Blame. Defame. Complain. Again.</p></div>
+  <div class="verse">They growled and grumbled.
+They groaned and complained.
+They blamed and defamed,
+then blamed me again.
+
+With the unhappiest tone
+on the whole grumpy block,
+they said,
+
+"With a name like Tyson,
+how good can he be?"</div>
+  <div class="folio">8</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Junkyard clubhouse interior. Menu board: Blame Chowder · Sour Kibble · Today's Special: Not My Fault. A tired old growler runs the counter.</p></div>
+  <div class="verse">At Growler's Gripes,
+the Grumblers came
+to whine and complain
+and play the blame game.
+
+They never grew.
+They stayed the same.
+
+Then blame someone else
+for the mess that they made.
+
+Which is convenient.
+And also nonsense.</div>
+  <div class="folio">9</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Ridiculous complaint circle. Trophies: First of the Worst · Most Miserable · Champion Complainer. Tyson watches from the edge.</p></div>
+  <div class="verse">Their favorite game
+was a miserable curse:
+
+<b>WHO'S GOT IT WORSE?</b>
+
+Who's first
+at being the worst?
+
+"My bone is too bony!"
+"My yard has no shade!"
+"My neighbor barks bubbles
+of noise at my gate!"</div>
+  <div class="folio">10</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>The circle opens a space for Tyson. His goofy grin misread as a snarl by one dramatic chihuahua.</p></div>
+  <div class="verse">"Come sit," said the Grumblers.
+"Come join our game.
+You're a Tyson, dear Tyson.
+You're surely the same."
+
+I tried smiling.
+"I'm friendly. See?"
+
+They winked.
+"Classic Tyson.
+Dark irony."</div>
+  <div class="folio">11</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Grumblers swirl around Tyson in gray-blue fog; their words become cartoonish chains and fences — not frightening.</p></div>
+  <div class="verse">They circled like smoke.
+They crowded like fog.
+They croaked like a cranky
+old junkyard dog.
+
+"Don't dream too big."
+"Don't run too far."
+"Stay where you are."
+"You are what you are."</div>
+  <div class="folio">12</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson's ears droop. Dark thought-clouds circle his head, labeled Fail · Fall · Can't · Same.</p></div>
+  <div class="verse">Soon I felt groggy.
+I grumbled. I groaned.
+I started to hear
+their unhappy tone.
+
+<i>What if I fail?
+What if I fall?
+What if a Tyson
+can't change at all?</i>
+
+Their words wore smiles,
+but they worked like hooks.
+That's how bad advice
+sometimes looks.</div>
+  <div class="folio">13</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson alone in the empty yard at dusk, small under a huge sky. A tiny toy ship's wheel waits in the sandbox — the choice.</p></div>
+  <div class="verse">I felt lost and low,
+off the deep end,
+out of my depth,
+with no fair-weather friend.
+
+Would I sink or swim?
+Would I stay overwhelmed?
+
+Or could I take hold
+of my own little helm?</div>
+  <div class="folio">14</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Miss struts in under the fence flap, tail high, walks straight between Tyson's front paws. The Grumblers are three times her size. She does not care.</p></div>
+  <div class="verse">Then the flap on the fence
+went <i>flip</i> and <i>flick</i>—
+
+and in marched Miss,
+my best friend, the kitten.
+
+All four pounds of her.
+
+"Tyson," she said,
+"I'm caught in their song too.
+But I never sing it.
+And neither should you."</div>
+  <div class="folio">15</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Miss perched on Tyson's head like a tiny life coach. A water bowl beside them glows warm and full.</p></div>
+  <div class="verse">Miss curled up close.
+"Let's be clear.
+Not every loud mouth
+deserves your ear.
+
+Friends lift you up.
+They fill your cup.
+If they drag you down,
+don't drink that stuff."</div>
+  <div class="folio">16</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Miss points her tail at squirrels chanting YEAH-YEAH! at a wobbling branch — safely far from the danger they cheer for.</p></div>
+  <div class="verse">"If it dims you, ditch it.
+If it shrinks you, run.
+If they cheer when you're falling,
+that friendship is done.
+
+Some dogs want the show.
+Some dogs want the fall.
+The squirrels yell 'Yeah-yeah!'
+but don't care at all."
+
+<i>Purrrr.</i></div>
+  <div class="folio">17</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Miss in a perfect purring loaf, eyes half closed, warm glow around her. Tyson leans in, curious.</p></div>
+  <div class="verse">"That sounds wise, Miss.
+But what do I do?"
+
+Miss tucked her paws
+and started to purr.
+The whole loud world
+went soft and blurred.
+
+"This is my quiet place.
+I take it everywhere.
+When the block gets barky,
+I go inward — right here."</div>
+  <div class="folio">18</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Comedy spread: Tyson attempting to loaf like a kitten and failing spectacularly — legs everywhere, tongue out. Miss amused but kind.</p></div>
+  <div class="verse">I tried purring.
+
+"Purr!" I said.
+
+Nothing.
+No rumble.
+Just slobber instead.
+
+I squeezed. I squinted.
+I wiggled my tail.
+
+But being a pit bull
+is terrible training
+for being a cat.</div>
+  <div class="folio">19</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Both in the grass watching thought-birds labeled Can't · Fail · Same fly overhead — passing by without landing.</p></div>
+  <div class="verse">Miss opened one eye.
+"You're not built like me.
+You don't need a purr
+to get quiet and see.
+
+Breathe in the stillness.
+Let thought-birds fly by.
+A thought can pass over
+without being true."</div>
+  <div class="folio">20</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Walker arrives — a big old dog, calm as moonlight, muzzle gone silver. Grass leans toward him as though listening. No background gags; this moment belongs to Walker.</p></div>
+  <div class="verse">And that's when the yard
+went strangely still.
+
+The squirrels stopped chattering.
+Even the wind
+sat down to listen.
+
+Through the gate came Walker,
+old and gray,
+a dog with a slow walk
+and a wise way.</div>
+  <div class="folio">21</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Walker and Tyson nose to nose at the fence. TYSON floats in a bubble between them; Walker looks past it, down the open road.</p></div>
+  <div class="verse">"Tyson," he rumbled,
+"the obstacle's the way.
+The thing that trips you
+can teach you today."
+
+I sighed.
+"My name is the trouble.
+That's plain as can be.
+They hear 'Tyson'
+and decide about me."</div>
+  <div class="folio">22</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson with the toy ship's wheel under one paw. Stormy rumor-clouds overhead; Walker's nose points toward a break in the sky.</p></div>
+  <div class="verse">Walker smiled softly.
+
+"Names may start stories.
+Choices steer dogs.
+
+Their words are the weather.
+Your will is the wheel.
+Stay steady, young Tyson.
+Keep an even keel."</div>
+  <div class="folio">23</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson running full-speed into the wind, ears flying, joyful — the wind carrying him forward instead of pushing him back. Walker's words glow around him.</p></div>
+  <div class="verse">"Why fight the current
+when you can ride the wave?
+Lean right in, Tyson.
+Be gentle. Be brave.
+
+The harder the wind,
+the stronger you run."
+
+Then he said the words
+that changed everything:
+
+"Your choices shape your fate.
+<b>Not your name.</b>"</div>
+  <div class="folio">24</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Chains made of the letters T-Y-S-O-N dissolve into dandelion fluff and float away.</p></div>
+  <div class="verse">The words hit me
+like a bright tidal wave.
+
+Not loud. Not fancy.
+But steady and brave.
+
+<i>Maybe my name
+isn't chains after all.
+Maybe I choose
+if I rise or I fall.</i></div>
+  <div class="folio">25</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Porch light. Three proud scratch-marks in the dirt by Tyson's bowl. Miss asleep against his side; Walker's silhouette in the next yard, keeping watch.</p></div>
+  <div class="verse">That night I scratched
+three marks by my bowl —
+three things that were good,
+three things that were whole.
+
+One: I have Miss,
+who tells me what's true.
+Two: I have Walker.
+Three: <b>I can choose.</b></div>
+  <div class="folio">26</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Small vignettes: waking, stretching, sharing his bone, walking tall past the fence line, breathing slow. A single raindrop rippling outward.</p></div>
+  <div class="verse">Each morning I practiced
+one brave little thought.
+Each day I remembered
+the lesson I'd caught.
+
+Small steps. Same path.
+Every day.
+
+A little each day
+helps you seize the day.
+
+Just like…
+a mighty wave begins
+with a single drop.</div>
+  <div class="folio">27</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Grumblers arrive smug with the old WHO'S GOT IT WORSE? sign; Tyson calmly flips over a new one: GOOD, BETTER, BEST. A squirrel drops his acorn.</p></div>
+  <div class="verse">The Grumble Pack came back
+with their sour old test.
+
+"Come play our game!
+<b>Who's Got It Worse?</b>"
+
+I smiled.
+"No, thank you.
+I've got a better game."
+
+They blinked.
+
+"<b>Good. Better. Best.</b>"</div>
+  <div class="folio">28</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson explaining the rules while the Grumblers look horrified — like he suggested a bath before breakfast.</p></div>
+  <div class="verse">"The rules are simple.
+Say something good
+and let the game begin.
+
+The next one says better.
+The next one says best.
+We count up our blessings
+and outshine the rest."
+
+The Grumblers stared.
+
+Gratitude?
+In public?
+How deeply unfair.</div>
+  <div class="folio">29</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>The gratitude circle grows. The tiny stray kitten's line lands soft and true — even the Grumblers pause. Miss and Walker exchange a look.</p></div>
+  <div class="verse">One grumbled,
+"My rock is smooth."
+Another muttered,
+"My tail can groove."
+A third one shrugged,
+"My lunch had some crunch."
+
+Then a small stray whispered,
+"Somebody fed me today."
+
+The whole block got quiet
+in a different kind of way.
+
+<b>Good. Better. Best.</b></div>
+  <div class="folio">30</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Rain starting; everyone under the porch together — accidentally cozy. A Grumbler confused by his own gratitude. Tyson unbothered, grinning.</p></div>
+  <div class="verse">The Grumblers tried
+to stay salty and sour.
+They lasted about
+one half of an hour.
+
+Then the bulldog mumbled,
+"My paws are not wet."
+Then paused.
+"Wait. It's raining.
+That's the best one yet."
+
+They tried to bring me down.
+But I'm built low and happy.
+So that didn't work.
+At all.</div>
+  <div class="folio">31</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Quiet turning point. Tyson centered in warm light; the word TYSON shifts from gray to gold.</p></div>
+  <div class="verse">That's when I realized:
+
+I didn't need to fight them.
+I didn't need
+to prove them wrong.
+I didn't need
+to change my name.
+
+I needed to change
+<b>what my name meant.</b></div>
+  <div class="folio">32</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson walking tall down Barker Boulevard, Miss riding his back like a tiny captain. Gloom-bubbles slide right off his fur.</p></div>
+  <div class="verse">When they whispered,
+"You can't,"
+I answered,
+"<b>Yes, I can.</b>"
+
+You threw your shade,
+but I let it slide,
+because I've got the sun
+and a kitten with pride.
+
+Your words can't stick.
+My stride's too strong.
+I'm walking my truth
+and wagging along.</div>
+  <div class="folio">33</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Miss's signature move — squaring up, weaving between Tyson's legs, fearless. Tyson gentle beside her, not scolding, just loving.</p></div>
+  <div class="verse">Miss stretched tall.
+"My quiet place helped you.
+I taught rather well."
+
+"Yes, Miss. It's true.
+But maybe that fearless
+has a lesson for <i>you</i>.
+
+You square up at big dogs.
+You strut at the moon.
+Brave is a gift —
+but so is a friend
+who knows when to listen."
+
+"We'll see," she said.
+
+<i>(We'll see is kitten for 'you're right.')</i></div>
+  <div class="folio">34</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Walker, Tyson, and Miss in a calm triangle of friendship under the big oak. Golden hour light.</p></div>
+  <div class="verse">Walker spoke low
+from the shade of the oak.
+
+"Truth without kindness
+is not really love.
+Courage is good.
+And gentle is too.
+The wise heart knows
+which one to do."</div>
+  <div class="folio">35</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Porch steps at sunset, thought-birds passing overhead without landing. Tyson waves a paw at them, easy.</p></div>
+  <div class="verse">So I stayed Tyson,
+but not quite the same.
+
+I carried my past.
+I reclaimed my name.
+
+No longer just "trouble."
+No longer stuck.
+
+I still had hard thoughts.
+They still flew by.
+But now I could wave
+and let them pass by.</div>
+  <div class="folio">36</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Hero shot: neighborhood kids and animals gathered around Tyson. Fence sign: TYSON'S YARD — ALL FRIENDS WELCOME. The Grumblers in line too, "just researching."</p></div>
+  <div class="verse">Now the same name
+they flinched at before
+is the name the whole block
+comes looking for.
+
+"Tyson! The gentle one!"
+"Tyson! Our friend!"
+
+Not because I changed it.
+Because I <b>owned</b> it.
+
+Not because they approved.
+Because I stopped asking.</div>
+  <div class="folio">37</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Tyson speaking directly to the reader, Miss on his head, Walker behind him. Bright, joyful block backdrop.</p></div>
+  <div class="verse">So if someone says,
+"Tyson sounds tough,"
+
+I just smile and say,
+
+"<b>I'm positively Tyson.</b>"
+
+Because your choices
+shape your fate…
+not your name.
+
+And the obstacle?
+The obstacle is the way.</div>
+  <div class="folio">38</div>
+</div>
+
+<div class="page">
+  <div class="artbox"><p>Full celebration: Tyson, Miss, Walker, the softened Grumble Pack, squirrels waving harmless YEAH! flags. Signs: Good, Better, Best · Who's Got It Worse? — Closed for Repairs.</p></div>
+  <div class="verse">Don't judge a friend
+by their name or their bark.
+Sometimes they need
+a chance to leave a mark.
+
+And when the Grumblers
+try to pull you off course, remember:
+
+<b>Your choices determine the ship's course.</b>
+
+Stay steady. Seize the day.
+Keep an even keel.
+And always keep it real.</div>
+  <div class="folio">39</div>
+</div>
+
+<!-- BACK COVER -->
+<div class="page backcover">
+  <div class="blurb">
+    <p style="margin-bottom:.2in">Tyson is the most misunderstood dog on the whole wide block.</p>
+    <p style="margin-bottom:.2in">The neighborhood hears his name and decides he must be trouble. Then the Grumble Pack joins the fray — spreading rumors, stirring the street, and pulling everyone into their favorite game: <b>Who's Got It Worse?</b></p>
+    <p style="margin-bottom:.2in">But with help from Miss the Kitten and old Walker the Wise, Tyson learns that names do not steer dogs. <b>Choices do.</b></p>
+    <p>Because your choices shape your fate, not your name.<br>And a good dog walks right through the blame.</p>
+  </div>
+</div>
+
+</body>
+</html>

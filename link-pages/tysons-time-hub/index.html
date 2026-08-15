@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tyson's Time</title>
+<meta name="description" content="Tyson is a rescue pit bull who spent years in a kennel. This is where he lives now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141210;
+    --paper:#ffffff;
+    --accent:#C2410C;
+    --muted:#6b6560;
+    --rule:#e6e1dc;
+    --soft:#faf8f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Poppins',system-ui,sans-serif;
+    line-height:1.55;
+    padding:0 22px 72px;
+  }
+  .wrap{max-width:520px;margin:0 auto}
+
+  header{padding:56px 0 8px}
+  .eyebrow{
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);font-weight:500;
+  }
+  h1{
+    font-family:'Lora',Georgia,serif;
+    font-weight:600;
+    font-size:clamp(38px,11vw,54px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    margin-top:14px;
+  }
+  .arc{
+    margin:26px 0 0;
+    font-family:'Lora',Georgia,serif;
+    font-size:clamp(17px,4.6vw,21px);
+    font-style:italic;
+    color:var(--muted);
+  }
+  .arc b{
+    font-style:normal;font-weight:600;color:var(--ink);
+    border-bottom:3px solid var(--accent);
+    padding-bottom:1px;
+  }
+
+  .story{
+    margin-top:30px;font-size:15.5px;color:var(--muted);max-width:44ch;
+  }
+
+  .rule{height:1px;background:var(--rule);margin:40px 0 34px}
+
+  .label{
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin-bottom:16px;
+  }
+
+  a.card{
+    display:block;text-decoration:none;color:inherit;
+    border:1px solid var(--rule);
+    padding:20px 22px;
+    margin-bottom:12px;
+    transition:border-color .18s ease, transform .18s ease;
+  }
+  a.card:hover,a.card:focus-visible{
+    border-color:var(--ink);transform:translateY(-2px);
+  }
+  a.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .card .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+  .card h2{
+    font-family:'Lora',Georgia,serif;font-size:19px;font-weight:600;letter-spacing:-.01em;
+  }
+  .price{
+    font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap;
+  }
+  .card p{font-size:14px;color:var(--muted);margin-top:7px;max-width:40ch}
+
+  .primary{border-color:var(--ink);border-width:1.5px}
+
+  .follow{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+  .follow a{
+    text-decoration:none;color:var(--ink);
+    font-size:13.5px;font-weight:500;
+    border:1px solid var(--rule);
+    padding:9px 15px;
+  }
+  .follow a:hover,.follow a:focus-visible{border-color:var(--ink)}
+  .follow a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+  .disclosure{
+    background:var(--soft);
+    margin-top:34px;padding:16px 18px;
+    font-size:13px;line-height:1.55;color:var(--muted);
+  }
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--muted)}
+
+  @media (prefers-reduced-motion:reduce){
+    a.card{transition:none}
+    a.card:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Tyson's Time</div>
+    <h1>Tyson is a rescue pit bull.</h1>
+    <p class="arc">From the <b>doghouse</b> to the <b>penthouse</b>.</p>
+    <p class="story">
+      He spent years in a kennel and was nearly out of time. He lives here now,
+      with a kitten named Kitty who has decided she runs the place.
+    </p>
+  </header>
+
+  <div class="rule"></div>
+
+  <div class="label">Support the stream</div>
+
+  <a class="card primary" href="https://buy.stripe.com/dRmdR90uX8tPgN84dIg7e01">
+    <div class="top">
+      <h2>Keep the stream running</h2>
+      <span class="price">$5 / month</span>
+    </div>
+    <p>Tyson and Kitty go live regularly. This keeps it going. Cancel anytime.</p>
+  </a>
+
+  <a class="card" href="https://tysons-time-kit.vercel.app/?s=bio">
+    <div class="top">
+      <h2>The First 30 Days Kit</h2>
+      <span class="price">$19</span>
+    </div>
+    <p>Just adopted a rescue dog? The guide to the month that decides everything.</p>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/gp/profile/amzn1.account.AFDKG7OKVRQ552IJHXMAUKMZHCPQ/list/1J9PZ8JBDZ31L?ccs_id=b1baa9da-910c-44c7-a343-9b2e8b795852&amp;linkCode=ll2&amp;tag=tysonspicks-20&amp;linkId=b9cb0b4e466ab591d9f76768c88b6c31&amp;language=en_US&amp;ref_=as_li_ss_tl" rel="sponsored nofollow noopener" target="_blank">
+    <div class="top">
+      <h2>Tyson's gear picks</h2>
+      <span class="price">Amazon</span>
+    </div>
+    <p>The exact gear we actually use — leashes, treats, crate setup.</p>
+  </a>
+
+  <div class="rule"></div>
+
+  <div class="label">Follow along</div>
+  <div class="follow">
+    <a href="https://www.instagram.com/tysonstime">Instagram</a>
+    <a href="https://www.tiktok.com/@tysons_time">TikTok</a>
+    <a href="https://www.youtube.com/@tysonstime">YouTube</a>
+    <a href="https://www.threads.com/@tysonstravels_rescuepitslife">Threads</a>
+  </div>
+
+  <div class="disclosure">
+    As an Amazon Associate I earn from qualifying purchases. Gear links on this
+    page are affiliate links — they cost you nothing extra, and they help keep
+    Tyson in treats.
+  </div>
+
+  <footer>Tyson's Time — Pompano Beach, Florida</footer>
+
+</div>
+</body>
+</html>

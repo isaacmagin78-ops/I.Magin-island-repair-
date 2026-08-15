@@ -1,0 +1,809 @@
+<title>Tyson and the Kitten — Storyboard Grid</title>
+<style>
+  :root{
+    --paper:#faf4e6;
+    --panel:#fffdf6;
+    --ink:#38321f;
+    --ink-soft:#6d6450;
+    --gold:#e0a33c;
+    --sky:#aacfe4;
+    --grass:#7fa65a;
+    --slate:#5c6672;
+    --dusk:#3d4b63;
+    --pearl:#f3e3c0;
+    --line:#e4d9bd;
+    --shadow:0 2px 10px rgba(70,58,30,.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#221f18;
+      --panel:#2c2820;
+      --ink:#efe6d2;
+      --ink-soft:#b3a88d;
+      --gold:#e8b45a;
+      --line:#453e2f;
+      --pearl:#4a4030;
+      --shadow:0 2px 12px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#221f18; --panel:#2c2820; --ink:#efe6d2; --ink-soft:#b3a88d;
+    --gold:#e8b45a; --line:#453e2f; --pearl:#4a4030; --shadow:0 2px 12px rgba(0,0,0,.4);
+  }
+  :root[data-theme="light"]{
+    --paper:#faf4e6; --panel:#fffdf6; --ink:#38321f; --ink-soft:#6d6450;
+    --gold:#e0a33c; --line:#e4d9bd; --pearl:#f3e3c0; --shadow:0 2px 10px rgba(70,58,30,.10);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Iowan Old Style", Georgia, "Times New Roman", serif;
+    line-height:1.45;
+  }
+  header{
+    max-width:1280px; margin:0 auto; padding:44px 24px 8px;
+  }
+  .eyebrow{
+    font-family:ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, sans-serif;
+    font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold);
+    font-weight:700;
+  }
+  h1{
+    font-size:clamp(2rem,5vw,3.2rem); margin:.15em 0 .1em; text-wrap:balance;
+    font-weight:700; letter-spacing:-.01em;
+  }
+  .sub{color:var(--ink-soft); max-width:60ch; margin:0 0 6px; font-style:italic}
+  .grid{
+    max-width:1280px; margin:20px auto 64px; padding:0 24px;
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(272px,1fr)); gap:18px;
+  }
+  .panel{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column;
+  }
+  .panel.wide{grid-column:span 2}
+  @media (max-width:640px){ .panel.wide{grid-column:span 1} }
+
+  /* scene bands — the emotional weather of the book */
+  .scene{height:86px; position:relative; flex:none}
+  .scene::after{ /* ground strip */
+    content:""; position:absolute; inset:auto 0 0 0; height:22px;
+  }
+  .scene .orb{ /* sun or moon */
+    position:absolute; width:34px; height:34px; border-radius:50%;
+    top:14px; right:20px;
+  }
+  .s-morning{background:linear-gradient(#bfdcee,#e9f2dd)}
+  .s-morning::after{background:#8db262}
+  .s-morning .orb{background:#f6cf6b; box-shadow:0 0 22px #f6cf6b88}
+  .s-gossip{background:linear-gradient(#8f9aa6,#b9bfc4)}
+  .s-gossip::after{background:#6e7580}
+  .s-gossip .orb{background:#d9dde0}
+  .s-storm{background:linear-gradient(#5c6672,#8b94a0)}
+  .s-storm::after{background:#4a525c}
+  .s-storm .orb{background:#aab2ba}
+  .s-dusk{background:linear-gradient(#3d4b63,#7d6a80)}
+  .s-dusk::after{background:#2e3a4e}
+  .s-dusk .orb{background:#f0e6c8; box-shadow:0 0 18px #f0e6c866}
+  .s-quiet{background:linear-gradient(#e8d5ac,#f6ecd4)}
+  .s-quiet::after{background:#cdb887}
+  .s-quiet .orb{background:#fff3d6; box-shadow:0 0 26px #ffe9b0}
+  .s-wise{background:linear-gradient(#7d94ad,#c5d5df)}
+  .s-wise::after{background:#5f7891}
+  .s-wise .orb{background:#f4efe2; box-shadow:0 0 20px #f4efe288}
+  .s-rise{background:linear-gradient(#f0c46a,#fbe9bd)}
+  .s-rise::after{background:#a3b96a}
+  .s-rise .orb{background:#f9d97e; box-shadow:0 0 26px #f9d97e99}
+  .s-rain{background:linear-gradient(#98a6b0,#c9d3d8)}
+  .s-rain::after{background:#7c8b96}
+  .s-rain .orb{background:#e6ebee}
+  .s-golden{background:linear-gradient(#e9a94e,#f7d99a)}
+  .s-golden::after{background:#8db262}
+  .s-golden .orb{background:#ffe9a8; box-shadow:0 0 30px #ffdf8e}
+
+  .num{
+    position:absolute; top:10px; left:12px;
+    font-family:ui-rounded,"SF Pro Rounded","Segoe UI",system-ui,sans-serif;
+    font-weight:800; font-size:.78rem; color:#fff; background:rgba(45,40,25,.55);
+    padding:2px 9px; border-radius:999px; letter-spacing:.06em;
+  }
+  .body{padding:16px 18px 6px; white-space:pre-line; font-size:.95rem}
+  .body b{color:var(--gold)}
+  .art{
+    margin-top:auto; padding:10px 18px 14px; border-top:1px dashed var(--line);
+    font-family:ui-rounded,"SF Pro Rounded","Segoe UI",system-ui,sans-serif;
+    font-size:.74rem; color:var(--ink-soft); letter-spacing:.01em;
+  }
+  .art::before{content:"ART · "; color:var(--gold); font-weight:700; letter-spacing:.12em}
+  .title-panel .body{
+    font-size:1.5rem; font-weight:700; text-align:center; padding-top:26px; letter-spacing:-.01em;
+  }
+  .title-panel .body small{display:block; font-size:.85rem; font-weight:400; font-style:italic; color:var(--ink-soft); margin-top:8px}
+  footer{
+    max-width:1280px; margin:0 auto; padding:0 24px 60px; color:var(--ink-soft);
+    font-size:.85rem; font-style:italic;
+  }
+</style>
+
+<header>
+  <div class="eyebrow">Storyboard · 39 spreads + finale</div>
+  <h1>Tyson and the Kitten</h1>
+  <p class="sub">Every page with its verse and art direction. The panel colors follow the story's weather — bright morning, gossip gray, dusk doubt, the quiet purr, and the golden turn home.</p>
+</header>
+
+<div class="grid">
+
+<div class="panel wide title-panel">
+  <div class="scene s-golden"><span class="orb"></span></div>
+  <div class="body">TYSON AND THE KITTEN<small>Tyson big and blocky, soft-eyed, goofy grin. Miss standing on his head like she owns him. Warm backyard light; Walker's silhouette far off, watching kindly.</small></div>
+</div>
+
+<div class="panel">
+  <div class="scene s-morning"><span class="num">1</span><span class="orb"></span></div>
+  <div class="body">Hi!
+I'm Tyson.
+Just Tyson.
+The most misunderstood dog
+on the whole wide block.
+
+Go ahead.
+Say it.
+<i>Tyson.</i>
+
+See?
+You made the face.
+Everybody does.</div>
+  <div class="art">Close-up, Tyson waving a paw at the reader. Background animals flinch dramatically at his name.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-morning"><span class="num">2</span><span class="orb"></span></div>
+  <div class="body">I live on
+Barker Boulevard.
+The grass glows.
+The sprinklers sway.
+The birds all sing.
+The mail trucks play.
+
+Most mornings smell like
+sunshine and bacon.
+
+I love it here.
+Well… mostly.</div>
+  <div class="art">Cheerful street, BARKER BOULEVARD sign, Tyson trotting past fences, tail wagging.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-morning"><span class="num">3</span><span class="orb"></span></div>
+  <div class="body">My pa was a Tyson.
+His pa was too.
+Big heads. Big hearts.
+Tysons through and through.
+
+Funny thing is…
+not one of us
+ever picked a fight.
+
+Not one.</div>
+  <div class="art">Family portraits of gentle grinning pit bulls — one holds a flower, one naps under a kitten pile.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-gossip"><span class="num">4</span><span class="orb"></span></div>
+  <div class="body">But the block didn't care.
+
+"Tyson?" yipped a poodle.
+"Sounds tough."
+"Sounds scary."
+"Sounds like trouble."
+
+Nobody asked if I was kind.
+Nobody even asked
+my favorite treat.
+
+Peanut butter.
+Obviously.
+
+They heard my name…
+and decided who I was.</div>
+  <div class="art">Fence-line animals whispering and judging. Tyson off to the side, hurt but trying to smile.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-gossip"><span class="num">5</span><span class="orb"></span></div>
+  <div class="body">Maybe they wanted
+to defame my name
+because I wasn't the same.
+
+Or maybe…
+they just didn't want
+to see me run farther
+than they did.
+
+I only knew this:
+
+A name can echo.
+Especially down a long fence line.</div>
+  <div class="art">Tyson alone on the sidewalk; TYSON echoes in bubbles, bigger and bigger, as animals whisper.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-gossip"><span class="num">6</span><span class="orb"></span></div>
+  <div class="body">Then came
+the Grumble Pack,
+slinking my way.
+
+And as soon as the Grumblers
+joined in the fray,
+the rumors swirled
+and twirled down the street.
+
+"Tyson is trouble!
+Just wait and see!"</div>
+  <div class="art">The pack enters like a storm cloud — sour bulldog, hissing alley cat, droopy hound, crabby raccoon. Junkyard gate sign: GROWLER'S GRIPES.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-gossip"><span class="num">7</span><span class="orb"></span></div>
+  <div class="body">Loose lips sink friendships,
+and those lips let it rip.
+They didn't like
+the cut of my jib.
+
+They had me in the doghouse,
+stuck in dire straits,
+tangled in gossip,
+and blamed by my mates.
+
+No one would touch me
+with a ten-foot leash.
+
+All because Grumblers
+were stirring the street.</div>
+  <div class="art">Gag spread: rumor bubbles as sinking paper boats, tiny doghouse, ten-foot leash from off-panel, a bowl labeled GOSSIP STEW.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-storm"><span class="num">8</span><span class="orb"></span></div>
+  <div class="body">They growled and grumbled.
+They groaned and complained.
+They blamed and defamed,
+then blamed me again.
+
+With the unhappiest tone
+on the whole grumpy block,
+they said,
+
+"With a name like Tyson,
+how good can he be?"</div>
+  <div class="art">Gloomy chorus at the junkyard fence. Gray bubbles: Blame. Defame. Complain. Again.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-storm"><span class="num">9</span><span class="orb"></span></div>
+  <div class="body">At Growler's Gripes,
+the Grumblers came
+to whine and complain
+and play the blame game.
+
+They never grew.
+They stayed the same.
+
+Then blame someone else
+for the mess that they made.
+
+Which is convenient.
+And also nonsense.</div>
+  <div class="art">Junkyard clubhouse. Menu board: Blame Chowder · Sour Kibble · Today's Special: Not My Fault.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-storm"><span class="num">10</span><span class="orb"></span></div>
+  <div class="body">Their favorite game
+was a miserable curse:
+
+<b>WHO'S GOT IT WORSE?</b>
+
+Who's first
+at being the worst?
+
+"My bone is too bony!"
+"My yard has no shade!"
+"My neighbor barks bubbles
+of noise at my gate!"</div>
+  <div class="art">Ridiculous complaint circle. Trophies: First of the Worst · Most Miserable · Champion Complainer.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-storm"><span class="num">11</span><span class="orb"></span></div>
+  <div class="body">"Come sit," said the Grumblers.
+"Come join our game.
+You're a Tyson, dear Tyson.
+You're surely the same."
+
+I tried smiling.
+"I'm friendly. See?"
+
+They winked.
+"Classic Tyson.
+Dark irony."</div>
+  <div class="art">The circle opens a space. Tyson's goofy grin misread as a snarl by one dramatic chihuahua.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-storm"><span class="num">12</span><span class="orb"></span></div>
+  <div class="body">They circled like smoke.
+They crowded like fog.
+They croaked like a cranky
+old junkyard dog.
+
+"Don't dream too big."
+"Don't run too far."
+"Stay where you are."
+"You are what you are."</div>
+  <div class="art">Grumblers swirl in gray-blue fog; their words become cartoonish chains and fences.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-dusk"><span class="num">13</span><span class="orb"></span></div>
+  <div class="body">Soon I felt groggy.
+I grumbled. I groaned.
+I started to hear
+their unhappy tone.
+
+<i>What if I fail?
+What if I fall?
+What if a Tyson
+can't change at all?</i>
+
+Their words wore smiles,
+but they worked like hooks.
+That's how bad advice
+sometimes looks.</div>
+  <div class="art">Tyson's ears droop. Dark thought-clouds labeled Fail · Fall · Can't · Same.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-dusk"><span class="num">14</span><span class="orb"></span></div>
+  <div class="body">I felt lost and low,
+off the deep end,
+out of my depth,
+with no fair-weather friend.
+
+Would I sink or swim?
+Would I stay overwhelmed?
+
+Or could I take hold
+of my own little helm?</div>
+  <div class="art">Tyson alone in the empty yard at dusk, small under a huge sky. A toy ship's wheel waits in the sandbox.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">15</span><span class="orb"></span></div>
+  <div class="body">Then the flap on the fence
+went <i>flip</i> and <i>flick</i>—
+
+and in marched Miss,
+my best friend, the kitten.
+
+All four pounds of her.
+
+"Tyson," she said,
+"I'm caught in their song too.
+But I never sing it.
+And neither should you."</div>
+  <div class="art">Miss struts in under the fence, tail high, walks straight between Tyson's front paws. The Grumblers are three times her size. She does not care.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">16</span><span class="orb"></span></div>
+  <div class="body">Miss curled up close.
+"Let's be clear.
+Not every loud mouth
+deserves your ear.
+
+Friends lift you up.
+They fill your cup.
+If they drag you down,
+don't drink that stuff."</div>
+  <div class="art">Miss perched on Tyson's head like a tiny life coach. A water bowl glows warm and full.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">17</span><span class="orb"></span></div>
+  <div class="body">"If it dims you, ditch it.
+If it shrinks you, run.
+If they cheer when you're falling,
+that friendship is done.
+
+Some dogs want the show.
+Some dogs want the fall.
+The squirrels yell 'Yeah-yeah!'
+but don't care at all."
+
+<i>Purrrr.</i></div>
+  <div class="art">Miss points her tail at squirrels chanting YEAH-YEAH! at a wobbling branch — safely far from the danger they cheer for.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">18</span><span class="orb"></span></div>
+  <div class="body">"That sounds wise, Miss.
+But what do I do?"
+
+Miss tucked her paws
+and started to purr.
+The whole loud world
+went soft and blurred.
+
+"This is my quiet place.
+I take it everywhere.
+When the block gets barky,
+I go inward — right here."</div>
+  <div class="art">Miss in a perfect purring loaf, eyes half closed, warm glow. Tyson leans in, curious.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">19</span><span class="orb"></span></div>
+  <div class="body">I tried purring.
+
+"Purr!" I said.
+
+Nothing.
+No rumble.
+Just slobber instead.
+
+I squeezed. I squinted.
+I wiggled my tail.
+
+But being a pit bull
+is terrible training
+for being a cat.</div>
+  <div class="art">Comedy spread: Tyson attempting to loaf like a kitten and failing spectacularly. Miss amused but kind.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-quiet"><span class="num">20</span><span class="orb"></span></div>
+  <div class="body">Miss opened one eye.
+"You're not built like me.
+You don't need a purr
+to get quiet and see.
+
+Breathe in the stillness.
+Let thought-birds fly by.
+A thought can pass over
+without being true."</div>
+  <div class="art">Both in the grass watching thought-birds labeled Can't · Fail · Same fly overhead — passing without landing.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-wise"><span class="num">21</span><span class="orb"></span></div>
+  <div class="body">And that's when the yard
+went strangely still.
+
+The squirrels stopped chattering.
+Even the wind
+sat down to listen.
+
+Through the gate came Walker,
+old and gray,
+a dog with a slow walk
+and a wise way.</div>
+  <div class="art">Walker arrives — calm as moonlight, muzzle silver. Grass leans toward him. This moment belongs to Walker; no background gags.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-wise"><span class="num">22</span><span class="orb"></span></div>
+  <div class="body">"Tyson," he rumbled,
+"the obstacle's the way.
+The thing that trips you
+can teach you today."
+
+I sighed.
+"My name is the trouble.
+That's plain as can be.
+They hear 'Tyson'
+and decide about me."</div>
+  <div class="art">Nose to nose at the fence. TYSON floats in a bubble between them; Walker looks past it, down the open road.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-wise"><span class="num">23</span><span class="orb"></span></div>
+  <div class="body">Walker smiled softly.
+
+"Names may start stories.
+Choices steer dogs.
+
+Their words are the weather.
+Your will is the wheel.
+Stay steady, young Tyson.
+Keep an even keel."</div>
+  <div class="art">Tyson with the toy ship's wheel under one paw; rumor-clouds overhead, Walker's nose toward a break in the sky.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-wise"><span class="num">24</span><span class="orb"></span></div>
+  <div class="body">"Why fight the current
+when you can ride the wave?
+Lean right in, Tyson.
+Be gentle. Be brave.
+
+The harder the wind,
+the stronger you run."
+
+Then he said the words
+that changed everything:
+
+"Your choices shape your fate.
+<b>Not your name.</b>"</div>
+  <div class="art">Tyson running full-speed into the wind, ears flying, joyful — the wind carrying him forward. Walker's words glow.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">25</span><span class="orb"></span></div>
+  <div class="body">The words hit me
+like a bright tidal wave.
+
+Not loud. Not fancy.
+But steady and brave.
+
+<i>Maybe my name
+isn't chains after all.
+Maybe I choose
+if I rise or I fall.</i></div>
+  <div class="art">Chains made of the letters T-Y-S-O-N dissolve into dandelion fluff and float away.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">26</span><span class="orb"></span></div>
+  <div class="body">That night I scratched
+three marks by my bowl —
+three things that were good,
+three things that were whole.
+
+One: I have Miss,
+who tells me what's true.
+Two: I have Walker.
+Three: <b>I can choose.</b></div>
+  <div class="art">Porch light, three proud scratch-marks in the dirt. Miss asleep against his side; Walker's silhouette keeping watch.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">27</span><span class="orb"></span></div>
+  <div class="body">Each morning I practiced
+one brave little thought.
+Each day I remembered
+the lesson I'd caught.
+
+Small steps. Same path.
+Every day.
+
+A little each day
+helps you seize the day.
+
+Just like…
+a mighty wave begins
+with a single drop.</div>
+  <div class="art">Vignettes: waking, stretching, sharing his bone, walking tall past the fence line. A raindrop rippling outward.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">28</span><span class="orb"></span></div>
+  <div class="body">The Grumble Pack came back
+with their sour old test.
+
+"Come play our game!
+<b>Who's Got It Worse?</b>"
+
+I smiled.
+"No, thank you.
+I've got a better game."
+
+They blinked.
+
+"<b>Good. Better. Best.</b>"</div>
+  <div class="art">Grumblers arrive smug with the old sign; Tyson flips over a new one: GOOD, BETTER, BEST. A squirrel drops his acorn.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">29</span><span class="orb"></span></div>
+  <div class="body">"The rules are simple.
+Say something good
+and let the game begin.
+
+The next one says better.
+The next one says best.
+We count up our blessings
+and outshine the rest."
+
+The Grumblers stared.
+
+Gratitude?
+In public?
+How deeply unfair.</div>
+  <div class="art">Tyson explaining; the Grumblers horrified, like he suggested a bath before breakfast. Parent humor in the faces.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rise"><span class="num">30</span><span class="orb"></span></div>
+  <div class="body">One grumbled,
+"My rock is smooth."
+Another muttered,
+"My tail can groove."
+A third one shrugged,
+"My lunch had some crunch."
+
+Then a small stray whispered,
+"Somebody fed me today."
+
+The whole block got quiet
+in a different kind of way.
+
+<b>Good. Better. Best.</b></div>
+  <div class="art">The gratitude circle grows; the stray kitten's line lands soft and true. Miss and Walker exchange a look.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-rain"><span class="num">31</span><span class="orb"></span></div>
+  <div class="body">The Grumblers tried
+to stay salty and sour.
+They lasted about
+one half of an hour.
+
+Then the bulldog mumbled,
+"My paws are not wet."
+Then paused.
+"Wait. It's raining.
+That's the best one yet."
+
+They tried to bring me down.
+But I'm built low and happy.
+So that didn't work.
+At all.</div>
+  <div class="art">Rain starting; everyone under the porch together — accidentally cozy. Tyson unbothered, grinning.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">32</span><span class="orb"></span></div>
+  <div class="body">That's when I realized:
+
+I didn't need to fight them.
+I didn't need
+to prove them wrong.
+I didn't need
+to change my name.
+
+I needed to change
+<b>what my name meant.</b></div>
+  <div class="art">Quiet turning point. Tyson centered in warm light; TYSON shifts from gray to gold.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">33</span><span class="orb"></span></div>
+  <div class="body">When they whispered,
+"You can't,"
+I answered,
+"<b>Yes, I can.</b>"
+
+You threw your shade,
+but I let it slide,
+because I've got the sun
+and a kitten with pride.
+
+Your words can't stick.
+My stride's too strong.
+I'm walking my truth
+and wagging along.</div>
+  <div class="art">Tyson tall down Barker Boulevard, Miss riding his back like a tiny captain. Gloom-bubbles slide off his fur.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">34</span><span class="orb"></span></div>
+  <div class="body">Miss stretched tall.
+"My quiet place helped you.
+I taught rather well."
+
+"Yes, Miss. It's true.
+But maybe that fearless
+has a lesson for <i>you</i>.
+
+You square up at big dogs.
+You strut at the moon.
+Brave is a gift —
+but so is a friend
+who knows when to listen."
+
+"We'll see," she said.
+
+<i>(We'll see is kitten for 'you're right.')</i></div>
+  <div class="art">Miss's signature move — squaring up, weaving between Tyson's legs, fearless. Series seed: her book comes next.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">35</span><span class="orb"></span></div>
+  <div class="body">Walker spoke low
+from the shade of the oak.
+
+"Truth without kindness
+is not really love.
+Courage is good.
+And gentle is too.
+The wise heart knows
+which one to do."</div>
+  <div class="art">Walker, Tyson, and Miss in a calm triangle of friendship under the big oak. Golden hour.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">36</span><span class="orb"></span></div>
+  <div class="body">So I stayed Tyson,
+but not quite the same.
+
+I carried my past.
+I reclaimed my name.
+
+No longer just "trouble."
+No longer stuck.
+
+I still had hard thoughts.
+They still flew by.
+But now I could wave
+and let them pass by.</div>
+  <div class="art">Porch steps at sunset, thought-birds passing without landing. Tyson waves a paw at them, easy.</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">37</span><span class="orb"></span></div>
+  <div class="body">Now the same name
+they flinched at before
+is the name the whole block
+comes looking for.
+
+"Tyson! The gentle one!"
+"Tyson! Our friend!"
+
+Not because I changed it.
+Because I <b>owned</b> it.
+
+Not because they approved.
+Because I stopped asking.</div>
+  <div class="art">Hero shot: kids and animals gathered round. Fence sign: TYSON'S YARD — ALL FRIENDS WELCOME. Grumblers in line, "just researching."</div>
+</div>
+
+<div class="panel">
+  <div class="scene s-golden"><span class="num">38</span><span class="orb"></span></div>
+  <div class="body">So if someone says,
+"Tyson sounds tough,"
+
+I just smile and say,
+
+"<b>I'm positively Tyson.</b>"
+
+Because your choices
+shape your fate…
+not your name.
+
+And the obstacle?
+The obstacle is the way.</div>
+  <div class="art">Tyson speaking directly to the reader, Miss on his head, Walker behind. Bright, joyful block.</div>
+</div>
+
+<div class="panel wide">
+  <div class="scene s-golden"><span class="num">Finale</span><span class="orb"></span></div>
+  <div class="body">Don't judge a friend
+by their name or their bark.
+Sometimes they need
+a chance to leave a mark.
+
+And when the Grumblers
+try to pull you off course, remember:
+
+<b>Your choices determine the ship's course.</b>
+
+Stay steady. Seize the day.
+Keep an even keel.
+And always keep it real.</div>
+  <div class="art">Full celebration: Tyson, Miss, Walker, the softened Grumble Pack, squirrels waving harmless YEAH! flags. Signs: Good, Better, Best · Who's Got It Worse? — Closed for Repairs.</div>
+</div>
+
+</div>
+
+<footer>Storyboard companion to the Tyson and the Kitten manuscript — panel colors trace the emotional arc so an illustrator can read the whole book's weather at a glance.</footer>

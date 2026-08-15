@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop with Tyson 🐾</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Arial,sans-serif;background:linear-gradient(#fdf3d9,#f6e2b8);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .card{background:#fffdf6;border-radius:24px;box-shadow:0 8px 40px rgba(120,90,30,.18);max-width:420px;width:100%;padding:36px 28px;text-align:center}
+  .paw{font-size:52px}
+  h1{font-size:26px;color:#3c2f14;margin:10px 0 6px}
+  .sub{color:#7a6a45;font-size:15px;line-height:1.5;margin-bottom:26px}
+  .armed{font-size:13px;color:#4f7a3a;font-weight:700;height:18px;margin-bottom:12px}
+  .big{display:block;background:#e8a93c;color:#2f2510;text-decoration:none;font-size:21px;font-weight:800;padding:20px;border-radius:16px;margin-bottom:14px;box-shadow:0 4px 14px rgba(200,150,40,.35)}
+  .big:active{transform:scale(.98)}
+  .small{display:block;background:#f3ead2;color:#5d4c26;text-decoration:none;font-size:15px;font-weight:600;padding:14px;border-radius:12px;margin-bottom:10px}
+  .how{background:#f8f1de;border-radius:12px;padding:14px;font-size:13.5px;color:#6d5c34;line-height:1.6;margin:20px 0 14px;text-align:left}
+  .how b{color:#3c2f14}
+  .disc{font-size:11px;color:#a08f68;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="paw">🐾</div>
+  <h1>Shop with Tyson</h1>
+  <p class="sub">Shopping on Amazon anyway? Tap the button first — then shop like you always do. Costs you nothing extra, and it helps Tyson.</p>
+  <a class="big" id="shopBtn" href="https://www.amazon.com/?tag=tysonspicks20-20" rel="nofollow sponsored">🛒 Shop Amazon →</a>
+  <div class="armed" id="armed"></div>
+  <a class="small" href="https://tysons-time-kit.vercel.app/">🐶 The First 30 Days Kit — for new rescue parents</a>
+  <div class="how">
+    <b>How it works:</b> tap the yellow button, and anything you buy on Amazon in the next 24 hours supports Tyson's Time — whatever it is, dog stuff or not. Same prices, same Amazon.<br><br><b>Tip:</b> bookmark this page → tap it every time before you shop.
+  </div>
+  <p class="disc">As an Amazon Associate, Tyson's Time earns from qualifying purchases.</p>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  var KEY='tysonLastTap';
+  function show(){
+    var t=localStorage.getItem(KEY); if(!t)return;
+    var hrs=(Date.now()-parseInt(t,10))/3600000;
+    if(hrs<24){var left=Math.max(1,Math.round(24-hrs));
+      document.getElementById('armed').textContent='\u2705 Active \u2014 purchases count for about '+left+' more hours';}
+  }
+  document.getElementById('shopBtn').addEventListener('click',function(){
+    localStorage.setItem(KEY,String(Date.now()));
+    if(window.va)window.va('event',{name:'shop_tap'});
+  });
+  show();
+})();
+</script>
+</body>
+</html>
