@@ -2,6 +2,12 @@
 
 > Every Claude session reads this file first and updates it before finishing. See CLAUDE.md.
 
+> ⚠️ **READ `WORKSPACE-MAP.md` FIRST.** This file is one of *eleven* versions of
+> the handoff living on eleven unmerged branches. `main`'s copy is frozen at
+> Jul 29 and nothing has merged since Jul 27. Whatever you are about to
+> discover, another session probably already discovered it and wrote it down
+> somewhere you are not looking. Check the map before doing any work.
+
 ## Current state (as of 2026-07-26)
 
 - **College Launch OS**: fully built, redesigned ("premium college command center"), production build fixed, favicon added, deployed via Vercel. All merged to main.
