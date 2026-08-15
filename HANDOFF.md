@@ -7,8 +7,17 @@
 > the only shared memory. If it goes stale, everyone wakes up lost — that
 > is exactly what happened between Jul 29 and Aug 7.
 
-**Last updated: 2026-08-14** · Anything below marked *(secondhand)* came from
+**Last updated: 2026-08-15** · Anything below marked *(secondhand)* came from
 another session's summary and has not been re-verified. Re-check before acting.
+
+> **Consolidated 2026-08-15.** Until today this file existed as eleven rival
+> copies on eleven unmerged branches, and `main`'s was frozen at Jul 29. This is
+> the reconciliation of all of them. See `WORKSPACE-MAP.md` for what was on each
+> branch and what is still archived.
+>
+> **Check `date -u` before trusting any tool's idea of "now."** A stale Blotato
+> snapshot and a stale Vercel `date` header agreed with each other on 2026-08-15
+> and cost a session an entire wrong status report.
 
 > **Aug 14 — read this before asking Isaac anything.** He has spent six weeks
 > re-explaining the same night to every new session. The Jul 22–23 recovery is
@@ -170,13 +179,25 @@ grading, and the never-propose list.
 
 ### Queue: RE-VERIFIED LIVE 2026-08-14 (second check, from a Code session)
 
-**🔴 QUEUE IS EMPTY. 0 posts scheduled.** — `blotato_list_schedules` → `count: 0`
+### Queue: REFILLED 2026-08-15 07:30Z — 16 posts through Aug 18 23:00Z
+
+**Verified `count: 16`.** Four channels a day in the proven slots
+(TikTok 17:00 · Instagram 21:00 · Threads 22:30 · YouTube 23:00 UTC),
+Aug 15 → Aug 18. Every caption carries the Kit link and the Amazon disclosure;
+Instagram uses `firstComment`, YouTube and Threads carry real clickable URLs.
+Footage rotated so nothing repeats on the same channel inside ~10 days.
+
+**Refill again before Aug 18 23:00Z.**
+
+Before this refill the queue was empty and **every channel was dark from
+Aug 10 23:00Z to Aug 15 — four and a half days.** That is the second time the
+queue has silently run to zero. It is the single most repeatable failure here.
 
 ✅ **A cloud Code session CAN reach Blotato.** Earlier guidance in this file said
 it could not and routed this to Dispatch. That was wrong; the tools are here.
 
 Last post published **Aug 10 23:00Z** (YouTube). All channels have been dark
-since. Instagram — the best channel by ~10x — has posted nothing in that window.
+since.
 
 **Refilling the queue is the highest-value action available right now.**
 
@@ -192,11 +213,38 @@ about the queue. Written figures go stale in days.
 
 | Platform | Account ID | Status |
 |---|---|---|
-| Instagram `@tysonstime` | 61044 | ✅ **best channel by ~10x** (~2,200 views / 1,500 reach) |
+| Instagram `@tysonstime` | 61044 | ✅ highest **views** (~1,100–2,200/reel) but near-zero engagement — see below |
 | TikTok `@tysons_time` | 49211 | ✅ working (42–275 views) — cross-post always, costs nothing |
 | YouTube (Tyson's Time) | 42110 | ✅ working (~234 views) |
 | Threads `@tysonstravels_rescuepitslife` | 8305 | ✅ working |
 | Facebook | 43069 | ❌ dark — no Page linked. Needs Isaac. |
+
+### Channel value is inverted from what this file has always said
+
+"Instagram is the best channel by ~10x" is true for **views** and false for
+everything else. Measured 2026-08-15 via `blotato_list_top_posts`:
+
+| Post | Channel | Views | Likes | New subs |
+|---|---|---|---|---|
+| "The first month sets the rhythm" | YouTube | 1,281 | 94 | 12 |
+| "Returned once, years confined" | YouTube | 1,457 | 66 | 2 |
+| "Aggressively asleep" | YouTube | 1,385 | 55 | 10 |
+| "Dad said she was only staying one night" | Instagram | 2,217 | 30 | — |
+| "Kittens are fragile" | Instagram | 1,981 | 21 | — |
+| "60lbs vs 2lbs" | Instagram | 1,195 | 5 | — |
+
+Instagram delivers reach without a relationship — **near-zero comments on almost
+every post**, despite every caption ending in a question. YouTube converts a
+smaller audience into likes, comments and actual subscribers, and it is the one
+high-volume channel where a clickable link already works in the description.
+
+Keep cross-posting to Instagram — it costs nothing and the reach is real. But
+when choosing where to spend *effort*, YouTube is what compounds.
+
+**Footage decay:** the same ~12 clips have cycled for a month and reposts lose
+about 17% (2,217 → 1,839 on the same reel; 1,981 → 1,649). New footage is the
+highest-value hour available. Blotato collects **no analytics for TikTok**, so
+TikTok is absent from every figure here.
 
 ### Platform rules learned the hard way — do not relearn these
 
@@ -237,6 +285,63 @@ about the queue. Written figures go stale in days.
   carry **no tagged links in their descriptions**, while ~25 posts carry the disclosure
   with no link in the funnel — lost revenue and a disclosure-accuracy exposure.
   Disclosure required in every caption that carries a link.
+#### The 24 abandoned checkouts — verified independently 2026-08-15
+
+`GetCheckoutSessions` live: **25 sessions, 24 expired unpaid, 1 paid** (Isaac's
+own test, Jul 24 03:48). All 25 on the same $19 payment link.
+
+**This corrects a diagnosis another session reached this morning.** Counting only
+`GetPaymentIntents` shows one record and makes it look like nobody ever reached
+the payment screen — i.e. a severed link path. That is wrong. A Checkout Session
+is created when a real person lands on the Stripe page; an abandoned one never
+becomes a PaymentIntent. **Two dozen real people reached checkout and left.**
+The funnel is not severed. Amazon's 67 clicks say the same thing: the bio link
+works.
+
+**The pattern that matters is the dates:**
+
+| Window | Checkout sessions |
+|---|---|
+| Jul 21 → Jul 31 14:30Z | 25 |
+| Aug 1 → Aug 15 | **0** |
+
+Traffic to checkout stopped dead on Jul 31 and has never resumed, through two
+solid weeks of daily four-channel posting. Something in the path changed that
+day, not gradually.
+
+**Leading hypothesis, unconfirmed:** on Jul 31 00:05Z a Threads post announced
+`tysons-time-hub.vercel.app` as the new "everything in one place" link. The hub
+leads with the **$5/month stream subscription** and demotes the Kit to second
+card; `tysons-links` leads with the Kit as a filled orange button. If the bio
+moved from `tysons-links` to the hub around Jul 31, the Kit lost the hero slot
+on the same day checkout traffic went to zero — and the subscription that
+replaced it has **never sold once** (0 subscriptions, all time).
+
+**To test it:** ask Isaac which page is in the IG and TikTok bios. If it is the
+hub, put the Kit back on top or point the bio at `tysons-links`, then watch
+whether checkout sessions resume. That is a one-line change with a measurable
+answer.
+
+#### Post-payment delivery is UNVERIFIED and may be broken
+
+The Kit's Stripe link redirects paid customers to
+`https://tysons-kit-access.vercel.app/access-tyk30-8f4d2/` — a **different
+domain** from the `tysons-time-kit.vercel.app` that `kit-site/LAUNCH.md` and the
+sales page both name. On 2026-08-15 `web_fetch_vercel_url` fetched
+`tysons-links`, `tysons-time-kit` and `tysons-time-hub` fine but could **not**
+resolve `tysons-kit-access.vercel.app` or the `/access-tyk30-8f4d2/` path on
+either domain. Plain curl is proxy-blocked for `*.vercel.app`, so this is
+genuinely unresolved from here.
+
+**If that page is dead, anyone who pays $19 gets nothing.** Isaac has to open the
+Stripe link, pay or use the success URL directly, and confirm the delivery page
+loads and the PDF downloads. Highest-severity unknown on this list.
+
+**Related, now fixed:** `kit-site/site/vercel.json` was redirecting the product
+PDF to a raw GitHub URL pinned to the feature branch
+`claude/fable-video-prompt-refine-b21x3t`. Deleting that branch would have
+404'd product delivery. Repointed at `main` on 2026-08-15.
+
 - **Amazon email goes to iCloud, not Gmail** — there is a dedicated Amazon folder there.
   A Gmail sweep finds nothing. Likely tied to the open Apple Hide My Email item.
 - Link pages live and fixed *(secondhand, Aug 6)*.
@@ -276,7 +381,7 @@ Trim before posting, or fix `hashtags()` in `scripts/generate-package.mjs`.
 
 | Project | State |
 |---|---|
-| First 30 Days Kit | **Selling.** Live page + working Stripe link. |
+| First 30 Days Kit | **Not selling.** Live page + working Stripe link, **zero external customers in 25 days.** See Money. |
 | Listing Content System | **Ready to sell as a service.** Warm lead, package built. |
 | Isaac Video Engine | Real infrastructure — the delivery engine, not a product. |
 | Legends Ranch | Delivered films = portfolio. Services, not product. |
@@ -298,6 +403,14 @@ Worth fixing *once money depends on the output*, not before.
    goes nowhere.
 4. **~80 clips** in the "Ike's iPad Pro" Drive folder need descriptions +
    published/unpublished calls before the licensing work can move *(secondhand)*.
+5. **Confirm post-payment delivery works.** Open the Kit's Stripe success URL and
+   check the page loads and the PDF downloads. See "Post-payment delivery" above.
+   If it is broken, every future sale fails silently.
+6. **Say which link page is in the IG and TikTok bios** — `tysons-links` or
+   `tysons-time-hub`. Checkout traffic died the day the hub was announced; this
+   answer is testable and probably worth more than anything else on this list.
+7. **Delete the two `Post Text` posts** (TikTok `7671553026762575134`,
+   YouTube `cBbaW6pyXWQ`). No tool here can delete a published post.
 
 ---
 
@@ -308,8 +421,11 @@ Worth fixing *once money depends on the output*, not before.
    above) and the footage is in Drive. **Any session with Blotato tools can do
    this — including cloud Code.** Do not route it to Dispatch by default.
 2. Delete or fix the two `Post Text` posts from Aug 8 (missing Amazon disclosure).
-3. Find TysonScripts (Drive or Notion) and get it into this repo.
-4. Follow up the Southwest Airlines opportunity — $1,500–$3,000, still unclosed.
+3. Copy TysonScripts out of Drive into this repo before it drifts (it was
+   *found* on Aug 14 — the two documents are named in the Drive section above;
+   this step is the copy, not another search).
+4. ~~Follow up Southwest~~ — **dead.** The DM never arrived and the window
+   closed; see "Not deals" under Money. Do not resurrect this.
 5. Decide on the Desktop → Google Drive sync of passport/insurance/card documents.
 6. Install `INSTRUCTIONS.md` into the Claude project.
 7. Show Linda the package.
