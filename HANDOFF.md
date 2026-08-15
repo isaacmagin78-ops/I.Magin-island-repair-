@@ -19,6 +19,28 @@ another session's summary and has not been re-verified. Re-check before acting.
 > snapshot and a stale Vercel `date` header agreed with each other on 2026-08-15
 > and cost a session an entire wrong status report.
 
+> ## 🚨 The 611 "photos" are AI-generated. Do not render or ship them.
+>
+> Found 2026-08-15 by opening them. `isaac-video-engine/public/assets/stills/`
+> holds `611-living.png`, `611-kitchen.png`, `611-sunset.png`, plus
+> `plate-611.png`. **All four are AI-generated and carry a visible Gemini/Veo
+> sparkle watermark in the bottom-right corner.** They have a real property's
+> address, real bed/bath/sqft, and real marketing copy burned into the frame
+> ("Sea Monarch Unit 611 | 2 Bed • 2 Bath • 1,450 Sq Ft", "Fully Renovated &
+> Turnkey Furnished").
+>
+> They are wired into `src/compositions/SeaMonarchFilm.tsx` (stills) and
+> `ListingFilm.tsx` (plate). Neither composition is registered in
+> `src/Composition.tsx`, so **nothing has ever rendered or shipped with them.**
+> Keep it that way.
+>
+> This is not a branding problem. A synthetic interior of a *real* listing,
+> captioned with that listing's real specs, published under a licensed broker's
+> name, is a misrepresentation-of-property problem — and the watermark makes it
+> detectable. **Never generate property images. The shoot is the client's input,
+> not our output.** Say so out loud in pitches; it is a differentiator, not a
+> weakness.
+
 > **Aug 14 — read this before asking Isaac anything.** He has spent six weeks
 > re-explaining the same night to every new session. The Jul 22–23 recovery is
 > written below. The four-rooms problem is written below. **Do not make him
@@ -434,3 +456,72 @@ Worth fixing *once money depends on the output*, not before.
 - Verify with live tool checks before telling Isaac anything is broken.
 - Lead with the single best recommendation; ship first, report with live URLs.
 - Update this file before finishing. Every time.
+
+---
+
+## Linda Hoyt — verified state as of 2026-08-15
+
+Everything here came from Isaac's own screenshots of her live Facebook and
+Instagram, taken 2026-08-15 ~13:36 ET. It is public-post data, not MLS.
+
+**Her current listing — this is the live one. `111-pompano-beach-611` is CLOSED
+and must not be pitched again.**
+
+| Field | Value |
+|---|---|
+| Address | 1205 SW 4th Street, Fort Lauderdale, FL 33312 |
+| Neighborhood | Sailboat Bend |
+| Price | $750,000 |
+| Beds / baths | 3 / 2 |
+| Character | 1923 restored historic cottage; she calls it "the Cozy Cottage" |
+| Features | Original hardwood, French doors, designed kitchen; fenced yard, artificial turf, decorative gravel, mosquito misting; newer roof, A/C, fencing |
+| Position | Minutes to Las Olas, downtown FTL, the beach, FLL |
+| **Open house** | **Sunday 2026-08-16, 1:00–3:00 PM. Mimosas.** |
+
+**Her numbers — the finding that should lead any pitch to her.**
+
+- Instagram `@linda_s_hoyt_realtor`: 1,968 posts · **2,693 followers** · 1,700 following
+- Bio: Top 1.5% of Realtors nationwide · Global RE Advisor · ONE Sotheby's Int'l Realty · lindashoyt.com
+- RealTrends Verified 2026 — **ranked #18 Realtor in Fort Lauderdale**
+- Her Jun 11 RealTrends award post: **184 likes, 57 comments = 8.95% engagement.**
+  Instagram benchmark for that follower count is 1–3%; real estate averages 1–2%.
+- Her Facebook open-house post for the cottage, up 22 hours: **5 reactions.**
+
+**The read:** her audience turns out for *her*, not for her listings. The trust
+is already built and is not transferring to the property. Cross-platform, so it
+is not a clean comparison — say so — but the shape is the whole pitch.
+
+**The pitch page** is `Listing-Content-System/pitch/linda-hoyt-pitch.html`
+(published at `claude.ai/code/artifact/a3b18477-dfad-4fce-87ac-02fffc4fd91f`).
+It opens on her engagement numbers, positions against the platforms below, shows
+the three deliverables as objects, and asks for exactly one thing: **three
+photos from Sunday's open house, recap post returned the same night, free.**
+
+## Brokerage AI landscape — researched 2026-08-15
+
+Isaac asked what the high-end brokerages are actually running, so the pitch does
+not duplicate what she already gets daily.
+
+- **Compass Home Platform.** Compass closed the Anywhere acquisition; rollout to
+  company-owned brands (incl. Sotheby's International Realty) began July 2026,
+  ~4,000 agents at launch, ~80,000 expected by end of September. **Franchise
+  network — which is ONE Sotheby's — begins Q1 2027.** AI Assistant with context
+  across contacts/pipeline/marketing, daily briefings, "Likely to Sell", CMA,
+  reverse prospecting.
+- **Maestro** (HomeServices of America — Berkshire Hathaway's brokerage arm),
+  launched 2026-03-26. AI "front door" unifying consumer search, CRM, marketing
+  and transaction management behind one login. BHHS also runs an AI Academy
+  certification track.
+- **Content tools** (AutoReel $19–49/mo, Reel-E $44–449/mo, Trolto, etc.) —
+  crowded and cheap. 97% of brokerage leaders report agent AI use, up from 80%
+  in 2024; only independents under 10 agents still lag.
+
+**The gap, and the only defensible position:** every one of these is
+agent-facing back-office. None produces an artifact the *seller* holds.
+Meanwhile luxury-seller research is consistent that they want a consolidated
+read-out — the private-banking pattern — not a stream of updates. The
+seller-facing marketing report, tracked QR signage, and done-for-you service are
+the three things absent from the entire competitive set.
+
+**Do not pitch "AI makes content."** She gets that mail every day, and her own
+brokerage ships a better version of it next year.
