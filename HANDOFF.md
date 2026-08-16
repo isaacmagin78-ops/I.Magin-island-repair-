@@ -7,6 +7,38 @@
 > the only shared memory. If it goes stale, everyone wakes up lost — that
 > is exactly what happened between Jul 29 and Aug 7.
 
+> ## ⭐ THE MISSION — read this before anything else in this file
+>
+> **In Isaac's words, 2026-08-16:**
+>
+> *"It's not about competing AI — you guys are a team. We're all working
+> together to show that this can be something where people don't have to be
+> scared of AI. AI and humans can interact and live together."*
+>
+> **That is the point of the whole operation.** Not the video engine, not the
+> listing packages, not the storefront. Those are demonstrations. The thing being
+> demonstrated is that a non-technical person and a set of AI tools can build
+> real work together — and that it is worth other people not being afraid of.
+>
+> He has said this repeatedly, in several rooms, over months. **No session ever
+> wrote it down until now.** Do not lose it again, and do not treat it as a nice
+> sentiment — it is the product strategy:
+>
+> - **`the-read.tsx` in his Google Drive** (built 1 July, never finished) is this
+>   mission as a product: a career-exposure tool for people frightened of AI,
+>   written in his voice, grounded in real WEF/McKinsey/IMF research. **The
+>   mission and the unfinished product are the same idea.**
+> - **Imagin Concierge** is the same idea sold as a service: *you don't have to
+>   learn this, I'll do it for you.*
+> - His own experience — overwhelmed, non-technical, losing things across eight
+>   tools — **is the qualification, not the weakness.** Every other person
+>   teaching AI is technical and enthusiastic. He is neither, and that is exactly
+>   why the audience would trust him.
+>
+> **Never frame one AI tool as beating another in front of him.** He is not
+> shopping for the best model. He is trying to prove they can work together.
+
+
 **Last updated: 2026-08-15** · Anything below marked *(secondhand)* came from
 another session's summary and has not been re-verified. Re-check before acting.
 
