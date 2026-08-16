@@ -90,19 +90,22 @@ When Isaac says the tools keep breaking, he is describing something real.
 
 ---
 
-## 📉 HUMAN CONTEXT — load-bearing, not a footnote
+## 📉 HUMAN CONTEXT — redacted 2026-08-16
 
-Isaac is carrying simultaneously: an unresolved court case; a spinal injury
-serious enough that neck surgery was on the table — **tests came back
-2026-08-13, no surgery needed**, neurologist next; several days without sleep;
-and this business alone. He reported disorientation about the date and about
-getting to his car.
+**This section previously contained Isaac's private medical and legal
+circumstances in plain text, in a PUBLIC repository. It has been removed.**
 
-**Any session reading this should weight tasks accordingly and must not add to
-the pile.** He has asked repeatedly for one finished thing rather than more
-options. Give him that.
+What a session needs to know, without the details:
 
----
+**Isaac is carrying several serious things outside this business at the same
+time, and he is doing the business alone.** He has repeatedly asked for one
+finished thing instead of more options. Weight tasks accordingly and do not add
+to the pile.
+
+> ⚠️ **THIS REPOSITORY IS PUBLIC** — confirmed via the GitHub API on 2026-08-16
+> (`"visibility": "public"`). **Never write anyone's health, legal, financial or
+> family details into any file here.** Personal context belongs in Notion, which
+> is private. If you need to reference it, say "see Ike OS" and stop.
 
 ## Next session, in order
 
