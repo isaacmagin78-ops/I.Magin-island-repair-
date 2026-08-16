@@ -38,6 +38,26 @@
 > **Never frame one AI tool as beating another in front of him.** He is not
 > shopping for the best model. He is trying to prove they can work together.
 
+> ## 📱 The first 6–7 months were built on an iPhone. Do not get this wrong again.
+>
+> **Recorded 2026-08-16, after a session got it wrong.**
+>
+> The entire first 6–7 months of this body of work was done on an **iPhone
+> only.** The MacBook and the iPads came later, and he learned them
+> mid-project with Claude Code walking him through it.
+>
+> This is not trivia. It is the strongest single fact in the whole pitch — a
+> person with no technical background, limited mobility, and a phone built a
+> video engine, a listing system, a published product and a book. Describing
+> his setup as "an iPad Pro, a MacBook and an iPhone" is accurate only for the
+> last stretch and **erases the part that proves the mission.**
+>
+> How this got lost: a session saw him working on an iPad *today*, wrote that
+> into a brief as if it were the history, and then "corrected" ChatGPT for
+> saying "built primarily from an iPhone" — which was right. The device
+> history had never been written into any file, so there was nothing to check
+> it against. It is written down now.
+
 
 **Last updated: 2026-08-15** · Anything below marked *(secondhand)* came from
 another session's summary and has not been re-verified. Re-check before acting.

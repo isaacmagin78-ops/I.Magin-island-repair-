@@ -28,9 +28,17 @@ else teaching AI is a developer. He isn't, and that's why the audience trusts hi
 
 ## Who
 
-Isaac Magin — Pompano Beach, Florida. Imagin Consulting. Works from an iPad
-Pro, a MacBook and an iPhone. Limited mobility: **work has to be low-effort,
-repeatable, and automatable.** Long setup instructions are a failure, not a plan.
+Isaac Magin — Pompano Beach, Florida. Imagin Consulting.
+
+**The first 6–7 months of this entire body of work were built on an iPhone.**
+Nothing else. The MacBook and the iPads came later and he learned them
+mid-project, with Claude Code walking him through it. Anyone describing his
+setup as "a Mac and an iPad" is describing the last stretch and erasing the
+part that proves the point: a person with no technical background built all of
+this from a phone.
+
+Limited mobility: **work has to be low-effort, repeatable, and automatable.**
+A long setup instruction is a failure, not a plan.
 
 ---
 
