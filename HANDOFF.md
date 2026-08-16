@@ -580,3 +580,53 @@ pages and a stack of links. The film he wanted had existed in
 `legends-ranch/deliverables/` since 31 July. **When he asks for one thing, give
 him that one thing** — and put content in the chat as plain text, not behind
 links, because links scroll away and he cannot find them again.
+
+---
+
+## 2026-08-15, late — what this day actually taught, read this before anything
+
+**The single most important finding, in his own words:** *"All the TikTok momentum
+is from those live feeds I was doing."* He stopped doing TikTok Live about a month
+ago to build systems. **Those systems have earned $0. The live feeds were working.**
+
+And the economics back him up — checked tonight:
+
+| Channel | Commission |
+|---|---|
+| Amazon Associates | 1–10% fixed (pet supplies ~3%) |
+| TikTok Shop, average US | ~13% |
+| **TikTok Shop, LIVE sessions** | **20–30%** — sellers pay more for live |
+
+Same $50 product: **$1.50 from Amazon vs $10–15 from a TikTok live.** The one
+activity he already proved works for him is also the highest-paying format on the
+platform. **This is the lead, not the content systems.**
+
+> ⚠️ **He was about to text Amazon affiliate links to family and friends.** That is
+> two explicit Associates violations — links in private messages, and encouraging
+> relatives to buy through them — and it gets accounts terminated. He has a real
+> Associate ID. He was warned tonight. **Do not let anyone walk him into this.**
+
+**Why Linda still has no walkthrough video, after weeks:** the engine can build one
+from stills (Workflow A, Ken Burns). **The only missing input is photographs of
+1205 SW 4th Street.** He has none, and hers belong to ONE Sotheby's. Nobody ever
+asked her for the files. A session today built her a calendar and a pitch page
+instead of asking for the one input that unblocks the actual deliverable.
+**Photos are not a favor, they are an input** — that distinction was not made to
+him and it cost him the thing he wanted.
+
+**Corrections logged today, all of them mine:**
+
+- I told him the repo held 8 projects. **It holds 15.** `ASSET-INVENTORY.md`
+  (written 2026-08-15) is the real map and is better than anything I produced.
+  **Read it before claiming to know what exists.**
+- `tyson-and-the-kitten/` is a **finished book** — manuscript, print-ready dummy
+  PDF, storyboard, funder packet. A July session dismissed his description of it
+  as a voice-to-text error. Per his own file: *"Isaac was accurate every time."*
+- `concierge-systems/PRODUCT-PILOT.md` — "The Collection Record" — is the tiered
+  concierge offer he keeps describing from memory. **It is already written.** Aimed
+  at 65–85 year old South Florida homeowners, which is the room he was in tonight.
+- The Legends Ranch audit finding is stale. He checked the site himself.
+
+**The pattern to break:** he asked for one video tonight and received five pages
+and a stack of links. The film had existed since July 31. **Give him the one thing
+he asked for. Put it in the chat as text or a file, not behind a link.**
