@@ -630,3 +630,35 @@ him and it cost him the thing he wanted.
 **The pattern to break:** he asked for one video tonight and received five pages
 and a stack of links. The film had existed since July 31. **Give him the one thing
 he asked for. Put it in the chat as text or a file, not behind a link.**
+
+---
+
+## 📌 THE TWO CREATORS ISAAC FOLLOWS — write nothing over this
+
+**Isaac has named these two repeatedly across multiple sessions and rooms. No
+session ever wrote them down. He had to say it again on 2026-08-16, angry, and
+he was right to be. This is the record. Do not lose it again.**
+
+### Sabrina Ramonov 🍄 — `@sabrina_ramonov`
+
+- **She is the solo founder of Blotato.com** — the posting tool already wired into
+  this repo's MCP stack (`blotato_*`). **Isaac is already inside her product.**
+  Following her is not random advice; it is the person who built a tool he uses.
+- YouTube: **20,354,603 views**, joined 18 May 2024. Grew 0 → 500k+ in six months solo.
+- Stated mission: *"teach 1 million people AI."*
+- **Free AI prompts, playbooks and agents: `sabrina.dev/p/free`** — go read these
+  before inventing any workflow from scratch.
+- Blotato link: `l.blotato.com/yt-sabrina`
+
+### Dan Martell — `@danmartell`
+
+- **2.99M subscribers**, 3.6K videos. *"My #1 passion is teaching."*
+- Business/SaaS operator teaching systems, buybacks-of-time, and self-education.
+- Recent, relevant: **"How To Become Dangerously Self-Educated (with AI)"** — 454K
+  views; "If I Wanted to Make My First $100K/Month, I'd Do This"; "You only need
+  6 months to change your life."
+
+**Standing instruction from Isaac: follow their guidance.** He stopped watching
+both for roughly a month while buried in AI tooling and considers that a mistake.
+When proposing a content, monetization or AI-workflow approach, check it against
+what these two actually teach before inventing something new.
