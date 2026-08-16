@@ -685,6 +685,56 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 💥 LIVE DEFECT FOUND 2026-08-16 — the link-in-bio may be taking money and not delivering
+
+**Found by reading the repo, not by being told. No status file has ever mentioned it.**
+
+There are **two different Stripe payment links** in this repo:
+
+| Link | Where it lives | Status |
+|---|---|---|
+| `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00` | `kit-site/site/index.html` (`PAYMENT_LINK`) and `buy.html` | The **known-good** one. Verified live. 25 sessions, 24 expired, 1 paid. |
+| `buy.stripe.com/dRmdR90uX8tPgN84dIg7e01` | **`link-pages/tysons-time-hub/index.html:131`** and **`link-pages/tysons-links/index.html:57`** | **Undocumented anywhere.** Almost certainly the "second link." |
+
+**Why this matters more than anything else on the open list:** the original
+`PROJECT-BRIEF.md` (2026-07-31, commit history) listed as open item #1:
+
+> *"Second Stripe payment link doesn't redirect buyers to their download"*
+
+That defect was recorded on Jul 31, **never carried into `HANDOFF.md`**, and so
+no session since has known about it. Meanwhile the link it refers to is sitting
+on **both link-in-bio pages** — the destination his social bios point at, and the
+entry point to his entire funnel.
+
+**The plain-language version: someone arriving from his bio may be able to pay
+and never receive the product.** Anyone arriving at the Kit sales page hits the
+good link instead. Two doors, one of them possibly broken, and the broken one is
+the one his audience walks through.
+
+### ⚠️ What is verified and what is not
+
+- **VERIFIED from files (2026-08-16):** two distinct links exist; the
+  `dRmdR90…` link is on both link-in-bio pages; the Jul 31 brief flagged a
+  second link as not delivering; `HANDOFF.md` never carried it forward.
+- **NOT VERIFIED — no Stripe tool is available in this container:** whether
+  `dRmdR90…` is live, what product and price it is attached to, and whether its
+  post-payment redirect is actually broken today.
+
+### Next session: do this before anything else
+
+1. Open Stripe → Payment Links → find `dRmdR90UX8tPgN84dIg7e01`. Check that it is
+   live, what it charges, and **whether it has an after-payment redirect to the
+   delivery page**.
+2. If it is broken or duplicative, **point both link-in-bio pages at
+   `cNi4gz1z1aBXdAW7pUg7e00`** — the one known to work end to end — and redeploy.
+3. This also resolves old open item #2, *"four different link URLs across bios —
+   consolidate to one."*
+
+**Do not tell Isaac his funnel is broken until step 1 is done.** The file
+evidence is strong; the live status is not confirmed. Verify, then report.
+
+---
+
 ## 📅 JULY 11–14, 2026 — what actually happened, and why it was not Isaac's fault
 
 **Mirrored into this repo 2026-08-16.** This was verified by Perplexity Computer
