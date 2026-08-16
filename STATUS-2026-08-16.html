@@ -1,0 +1,412 @@
+<title>Where Everything Stands</title>
+<style>
+  :root {
+    --ground: #fffdf8;
+    --surface: #fff9ee;
+    --surface-2: #f7efe0;
+    --line: #e8dcc4;
+    --ink: #1c1409;
+    --ink-2: #5c4d38;
+    --ink-3: #8a7659;
+    --amber: #b4700a;
+    --ember: #c2410c;
+    --good: #3d7a4e;
+    --warn: #9a6b12;
+    --crit: #b3382c;
+    --good-bg: #eaf3ec;
+    --warn-bg: #faf1dc;
+    --crit-bg: #fbeae8;
+    --shadow: 0 1px 2px rgba(60,40,10,.06), 0 8px 24px rgba(60,40,10,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0d0803;
+      --surface: #17100a;
+      --surface-2: #1f1610;
+      --line: #33271b;
+      --ink: #fffdf8;
+      --ink-2: #c4b199;
+      --ink-3: #8a7659;
+      --amber: #ffb020;
+      --ember: #ff6b35;
+      --good: #6fc088;
+      --warn: #e2b44f;
+      --crit: #ef7264;
+      --good-bg: #16241a;
+      --warn-bg: #291f0c;
+      --crit-bg: #2b1512;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0d0803;
+    --surface: #17100a;
+    --surface-2: #1f1610;
+    --line: #33271b;
+    --ink: #fffdf8;
+    --ink-2: #c4b199;
+    --ink-3: #8a7659;
+    --amber: #ffb020;
+    --ember: #ff6b35;
+    --good: #6fc088;
+    --warn: #e2b44f;
+    --crit: #ef7264;
+    --good-bg: #16241a;
+    --warn-bg: #291f0c;
+    --crit-bg: #2b1512;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 22px 80px; }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--amber);
+  }
+
+  header { padding: 52px 0 30px; }
+  h1 {
+    font-size: clamp(34px, 6.5vw, 54px);
+    line-height: 1.02; letter-spacing: -.035em; font-weight: 800;
+    margin: 12px 0 12px; text-wrap: balance;
+  }
+  .standfirst {
+    font-size: 18px; color: var(--ink-2); max-width: 60ch; margin: 0;
+  }
+  .stamp {
+    margin-top: 18px; font-size: 12.5px; color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* the single answer */
+  .answer {
+    margin: 34px 0 44px; background: var(--surface);
+    border: 1px solid var(--line); border-left: 4px solid var(--amber);
+    border-radius: 4px; padding: 24px 26px; box-shadow: var(--shadow);
+  }
+  .answer h2 { font-size: 15px; margin: 0 0 10px; letter-spacing: -.01em; }
+  .answer p { margin: 0 0 14px; color: var(--ink-2); font-size: 15px; max-width: 62ch; }
+  .answer p:last-child { margin-bottom: 0; }
+  code, .mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .89em;
+  }
+  .branch {
+    display: block; background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 3px; padding: 11px 13px; margin: 0 0 14px;
+    color: var(--ember); font-weight: 600; overflow-x: auto; white-space: nowrap;
+  }
+
+  section { margin: 0 0 46px; }
+  h2.sec {
+    font-size: 13px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+    color: var(--ink-3); margin: 0 0 4px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sec-note { font-size: 14px; color: var(--ink-2); margin: 14px 0 20px; max-width: 64ch; }
+
+  /* tiles */
+  .tiles {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin-top: 20px;
+  }
+  .tile {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 4px; padding: 16px 17px;
+  }
+  .tile .k {
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 700;
+  }
+  .tile .v {
+    font-size: 30px; font-weight: 800; letter-spacing: -.03em;
+    font-variant-numeric: tabular-nums; margin: 7px 0 3px; line-height: 1;
+  }
+  .tile .s { font-size: 12.5px; color: var(--ink-2); }
+  .v.good { color: var(--good); } .v.warn { color: var(--warn); } .v.crit { color: var(--crit); }
+
+  /* pills */
+  .pill {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+    text-transform: uppercase; padding: 3px 9px; border-radius: 3px; white-space: nowrap;
+  }
+  .pill.good { background: var(--good-bg); color: var(--good); }
+  .pill.warn { background: var(--warn-bg); color: var(--warn); }
+  .pill.crit { background: var(--crit-bg); color: var(--crit); }
+
+  /* tables */
+  .scroll { overflow-x: auto; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 500px; }
+  th {
+    text-align: left; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 700; padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:last-child, th:last-child { padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  .t-name { font-weight: 650; }
+  .t-note { color: var(--ink-2); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* issue rows */
+  .issue {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 3px solid var(--ink-3); border-radius: 4px;
+    padding: 17px 19px; margin-bottom: 11px;
+  }
+  .issue.crit { border-left-color: var(--crit); }
+  .issue.warn { border-left-color: var(--warn); }
+  .issue-head {
+    display: flex; gap: 11px; align-items: baseline; flex-wrap: wrap; margin-bottom: 7px;
+  }
+  .issue-head h3 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: -.015em; }
+  .issue p { margin: 0; color: var(--ink-2); font-size: 14.5px; max-width: 68ch; }
+  .issue p + p { margin-top: 8px; }
+
+  /* ordered actions */
+  ol.actions { list-style: none; counter-reset: a; padding: 0; margin: 20px 0 0; }
+  ol.actions li {
+    counter-increment: a; position: relative; padding: 0 0 20px 46px;
+    border-bottom: 1px solid var(--line); margin-bottom: 20px;
+  }
+  ol.actions li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  ol.actions li::before {
+    content: counter(a); position: absolute; left: 0; top: -2px;
+    font-size: 13px; font-weight: 800; color: var(--amber);
+    font-variant-numeric: tabular-nums;
+    width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--surface);
+  }
+  ol.actions h3 { margin: 0 0 6px; font-size: 16.5px; font-weight: 700; letter-spacing: -.015em; }
+  ol.actions p { margin: 0; color: var(--ink-2); font-size: 14.5px; max-width: 66ch; }
+
+  .foot {
+    margin-top: 60px; padding-top: 26px; border-top: 1px solid var(--line);
+    font-size: 13.5px; color: var(--ink-3); max-width: 66ch;
+  }
+  .foot strong { color: var(--ink-2); }
+  a { color: var(--ember); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Verified state · 16 August 2026</div>
+  <h1>Where Everything Stands</h1>
+  <p class="standfirst">Every project, what's live, what's broken, and the one branch that holds the business. Checked against Blotato, the repos, and the live sales page today — not from memory.</p>
+  <div class="stamp">2 repos · 8 projects · ~45 past sessions accounted for</div>
+</header>
+
+<div class="answer">
+  <h2>The reason nothing could be found</h2>
+  <p>Your entire business lives on one branch whose name describes none of its contents. It was created 14 July for a throwaway cleanup task and quietly became the main working line:</p>
+  <code class="branch">claude/optimize-repository-context-i7ulyu</code>
+  <p>Meanwhile <code>main</code> had zero commits between 29 July and 7 August, and every new session clones <code>main</code>. So every session since late July woke up in a nine-day-old repo, knowing nothing — which is why you kept re-explaining the same night.</p>
+  <p><strong>Nothing was lost.</strong> Of ~45 sessions, 9 branches are gone; 8 of those were advisory or config work that never wrote a file. The one real loss — a 14 July Tyson video session — survived anyway, because its work landed on <code>main</code>.</p>
+</div>
+
+<section>
+  <h2 class="sec">Live right now</h2>
+  <p class="sec-note">Checked directly against Blotato this morning. This is the one thing that has changed since the notes were written: <strong>the posting queue is no longer empty.</strong></p>
+  <div class="tiles">
+    <div class="tile">
+      <div class="k">Queue</div>
+      <div class="v good">12</div>
+      <div class="s">posts scheduled, today → 18 Aug</div>
+    </div>
+    <div class="tile">
+      <div class="k">Channels live</div>
+      <div class="v good">4</div>
+      <div class="s">TikTok · Instagram · Threads · YouTube</div>
+    </div>
+    <div class="tile">
+      <div class="k">Revenue, all time</div>
+      <div class="v crit">$1.29</div>
+      <div class="s">Amazon Associates · 1 order</div>
+    </div>
+    <div class="tile">
+      <div class="k">Kit customers</div>
+      <div class="v crit">0</div>
+      <div class="s">25 checkouts started, 24 expired</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">The queue that's going out</h2>
+  <p class="sec-note">Three days, four channels, twelve posts — Tyson's return story, the year-two beach post, and the kitten takeover. Every caption carries the Kit link and the Amazon disclosure, and all three Instagram posts sit at exactly 5 hashtags, inside the hard limit. This is good work and it's ready.</p>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th>When (ET)</th><th>Channel</th><th>Post</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">Today 1:00 PM</td><td class="t-name">TikTok</td><td class="t-note">"somebody gave him back"</td></tr>
+        <tr><td class="num">Today 5:00 PM</td><td class="t-name">Instagram</td><td class="t-note">Year two of Tyson's Time</td></tr>
+        <tr><td class="num">Today 6:30 PM</td><td class="t-name">Threads</td><td class="t-note">First meeting with the kitten</td></tr>
+        <tr><td class="num">Today 7:00 PM</td><td class="t-name">YouTube</td><td class="t-note">Doghouse to Penthouse</td></tr>
+        <tr><td class="num">Sun–Mon</td><td class="t-name">All four</td><td class="t-note">8 more, same rotation</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">Broken and costing money</h2>
+  <p class="sec-note">Ordered by urgency. The first one has a deadline that is running out this month.</p>
+
+  <div class="issue crit">
+    <div class="issue-head">
+      <h3>College Checklist is live and unbuyable</h3>
+      <span class="pill crit">Seasonal — act now</span>
+    </div>
+    <p>The $49 buy button points at a Stripe <em>test</em> link, so real cards are rejected. It has been unbuyable since 6 August. A working live link already exists and was never wired in — swapping the button is the entire fix.</p>
+    <p>College move-in is late August. This is the product's one window each year, and it's open right now.</p>
+  </div>
+
+  <div class="issue crit">
+    <div class="issue-head">
+      <h3>33 YouTube videos, 11,929 views, no links</h3>
+      <span class="pill crit">Highest value</span>
+    </div>
+    <p>An audience you already have, handed no way to buy anything. Only one Amazon affiliate link has ever been created, while ~25 posts carry the disclosure with no link behind it — which is both lost revenue and a disclosure-accuracy problem.</p>
+  </div>
+
+  <div class="issue warn">
+    <div class="issue-head">
+      <h3>Two posts published broken on 8 August</h3>
+      <span class="pill warn">Compliance</span>
+    </div>
+    <p>TikTok and YouTube both went out with the literal caption <code>Post Text</code> — no Kit link, no Amazon disclosure. The missing disclosure is an Associates compliance exposure, not just a typo. Fix or delete both.</p>
+  </div>
+
+  <div class="issue warn">
+    <div class="issue-head">
+      <h3>Facebook cannot publish at all</h3>
+      <span class="pill warn">Needs you</span>
+    </div>
+    <p>Confirmed live today: the Facebook account has zero Pages attached, so the channel is structurally dark. Monetization was approved back in 2024 and has never been used. Only you can link the Page.</p>
+  </div>
+
+  <div class="issue warn">
+    <div class="issue-head">
+      <h3>Linktree Pro billing since 31 July</h3>
+      <span class="pill warn">Check</span>
+    </div>
+    <p>$15/month with zero products added. Worth checking for duplicate billing while you're in there.</p>
+  </div>
+
+  <div class="issue">
+    <div class="issue-head">
+      <h3>Passport and insurance documents syncing to Drive</h3>
+      <span class="pill warn">Privacy</span>
+    </div>
+    <p>The July cleanup moved a passport application, an insurance card, and an Apple Card statement into a Desktop folder that syncs to Google Drive. A credentials file was also left as plain <code>.txt</code>. Your call to make deliberately, but make it.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">The eight projects, honestly</h2>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th>Project</th><th>Status</th><th>Where it really is</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-name">First 30 Days Kit</td>
+          <td><span class="pill warn">Live, unsold</span></td>
+          <td class="t-note">$19 PDF. Page, checkout, delivery all work end to end. Zero external customers.</td>
+        </tr>
+        <tr>
+          <td class="t-name">Listing Content System</td>
+          <td><span class="pill good">Nearest to revenue</span></td>
+          <td class="t-note">19-asset package built for Linda's real Sea Monarch listing. Needs her authorization before anything publishes.</td>
+        </tr>
+        <tr>
+          <td class="t-name">Tyson's Time</td>
+          <td><span class="pill good">Publishing</span></td>
+          <td class="t-note">The brand. Instagram is strongest by ~10×. Queue refilled through Monday.</td>
+        </tr>
+        <tr>
+          <td class="t-name">Isaac Video Engine</td>
+          <td><span class="pill good">Working</span></td>
+          <td class="t-note">Real infrastructure — the delivery engine, not a product to sell.</td>
+        </tr>
+        <tr>
+          <td class="t-name">Legends Ranch</td>
+          <td><span class="pill good">Delivered</span></td>
+          <td class="t-note">Finished anthem and wildlife films. Portfolio and services, not a product.</td>
+        </tr>
+        <tr>
+          <td class="t-name">College Launch OS</td>
+          <td><span class="pill warn">Prototype</span></td>
+          <td class="t-note">Live, but browser-only storage and canned responses. Not sellable without real work.</td>
+        </tr>
+        <tr>
+          <td class="t-name">Madison Moves</td>
+          <td><span class="pill good">Shipped</span></td>
+          <td class="t-note">One client's site. The pattern repeats; it isn't a product yet.</td>
+        </tr>
+        <tr>
+          <td class="t-name">College Checklist</td>
+          <td><span class="pill crit">Broken</span></td>
+          <td class="t-note">$49, live, and impossible to buy. See above.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec">What the Kit audit actually found</h2>
+  <p class="sec-note">The positioning is not the problem. The sales page already owns the rescue-specific language competitors don't, opens on the real buying emotion — the untouched bowl, the 2am googling — and carries something no competitor can copy: Tyson is a real dog and the kit is his real first month.</p>
+  <p class="sec-note">With 25 checkout sessions in total, there is no conversion problem to diagnose. There is a distribution problem. The one genuine positioning fix is that <strong>"all sales are final"</strong> sits exactly where hesitation happens — your closest competitor wins on a 30-day money-back guarantee, which on a $19 digital file costs almost nothing.</p>
+</section>
+
+<section>
+  <h2 class="sec">Do these next</h2>
+  <ol class="actions">
+    <li>
+      <h3>Swap the College Checklist button to the live Stripe link</h3>
+      <p>Smallest possible fix, real money, and the seasonal window closes in about two weeks. The live link already exists.</p>
+    </li>
+    <li>
+      <h3>Put Kit links in the 33 YouTube descriptions</h3>
+      <p>Nearly 12,000 views currently earning nothing. Use the sales page, not the raw Stripe link, and include the Amazon disclosure wherever an affiliate link appears.</p>
+    </li>
+    <li>
+      <h3>Add a 30-day guarantee to the Kit page</h3>
+      <p>Replace "all sales are final." Cheapest available test of the one real positioning weakness.</p>
+    </li>
+    <li>
+      <h3>Fix or delete the two broken 8 August posts</h3>
+      <p>Compliance, not cosmetics.</p>
+    </li>
+    <li>
+      <h3>Fold the second repo in, then archive it</h3>
+      <p>The plan is already written. Two memory files is the bug that cost you six weeks — and one session four hours on the wrong book.</p>
+    </li>
+  </ol>
+</section>
+
+<p class="foot">
+  <strong>What I verified myself today:</strong> the posting queue and connected channels (live, via Blotato), the Kit sales page copy, both repos and every branch, and the recovery notes from 14–15 August.<br><br>
+  <strong>What I could not check:</strong> Stripe needs authorizing before I can read it, so all revenue figures here come from the 15 August verification rather than from live data. Notion and Google Drive weren't re-checked this session.<br><br>
+  The memory of record is <code>HANDOFF.md</code>, on the branch named at the top. It hasn't yet been updated with today's finding that the queue is live again.
+</p>
+
+</div>
