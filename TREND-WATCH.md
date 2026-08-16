@@ -72,6 +72,24 @@ running for months. Same stack.
 
 What her description also says: **33M+ views last month.** He has ~15,000.
 
+### 🔑 And the part nobody in nine months ever wrote down: **Sabrina Ramonov founded Blotato.**
+
+Verified 2026-08-16 via her own about page and multiple press items. She is not
+a creator who *recommends* Blotato — **she built it.** Isaac has been running her
+product for months without any file here connecting the two, while separately
+naming her as one of the two creators the whole system should follow.
+
+Also verified about her: she grew **zero to 1.4M followers in just over a year**
+using it — no ads, no team, no budget. She previously founded and sold the AI
+startup Qurious to Pegasystems for $10M+, Forbes 30 Under 30, Berkeley CS and
+Physics.
+
+**Why this matters more than the video did:** she built this tool to solve
+exactly Isaac's problem and then proved it on herself. The question is not
+*"what tool am I missing"* — he already has hers. It is *"what does she do with
+the same tool that I don't."* That is a far smaller and more answerable question,
+and it is where the next real work is.
+
 **The gap is distribution, not tooling.** He is level with her on the system and
 two orders of magnitude behind on reach. That is the same conclusion the money
 section reaches from the other direction: a traffic problem, not a product
