@@ -141,7 +141,21 @@ nine months of findings evaporated.
 | | |
 |---|---|
 | Watch list | ✅ defined here, 2026-08-16 |
-| Scheduled runner | ⏳ pending — a Routine that fires a fresh session on a schedule |
-| First run | not yet |
+| Owner | **Flex / Arturo — Perplexity Computer** |
+| Scheduled runner | ✅ **live** — recurring task created in Perplexity, 2026-08-16 |
+| Cadence | Every **Monday and Thursday, 8:00 AM ET** |
+| First run | **Monday 2026-08-17, 8:00 AM ET** |
 
-The runner is the whole point. A watch list nobody executes is another document.
+Confirmed from Isaac's own screenshot at 16:07 ET on 2026-08-16: Perplexity
+proposed *"every Monday and Thursday at 8:00 AM ET — first run tomorrow, Monday
+Aug 17 at 8:00 AM"* and he approved it.
+
+**Nobody has seen a completed run yet.** Scheduled is not the same as working.
+The first real test is whether the Aug 17 run produces three dated, sourced items
+**and writes them into Ike OS** rather than only into a chat. Until that happens
+this is a plan, not a watcher.
+
+**Next session: check whether the Aug 17 run landed.** If it produced nothing, or
+produced something that never made it into Ike OS, say so out loud — a silent
+watcher and a broken one look identical, and that ambiguity is the whole reason
+this file exists.
