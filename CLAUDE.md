@@ -191,6 +191,30 @@ prose in a README:
 
 When you change what is true, update the status file in the same commit.
 
+### The intake rule — write it down in the same turn
+
+**When Isaac states a fact — about himself, his history, his people, his tools,
+or what he wants — write it to a file before you reply.** Not "noted." Not a
+summary in the chat. A conversation is not storage; it evaporates, and the next
+session starts blind.
+
+This rule exists because the failure kept repeating and he finally named it:
+*"I've done this already."* He had. He named the two creators he follows many
+times and a repo-wide grep returned zero hits. He told sessions the first 6–7
+months were built on an iPhone, and a session later "corrected" ChatGPT for
+saying exactly that — because the device history had never been written down,
+so there was nothing to check a guess against.
+
+Two practical consequences:
+
+- **Never fill a gap in his history with an inference from the current
+  conversation.** If it isn't in a file, say "I don't have that" and ask, or
+  leave it out. A guess about his own life, stated as fact, is worse than a
+  blank.
+- **The repo is public.** Health, legal, financial-personal or family details
+  about real people go to **Notion**, never to a file here. Work facts get
+  mirrored into `PROJECT-BRIEF.md`. Sort it at intake, not later.
+
 ## Non-negotiable content rules
 
 This repo produces marketing material for **real people and real businesses**.

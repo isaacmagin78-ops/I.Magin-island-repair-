@@ -685,6 +685,32 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 🛒 Retail arbitrage — a proven channel no file had ever mentioned
+
+**Recorded 2026-08-16.** Isaac told this to a session and it was never written
+down, so it does not appear in any revenue planning anywhere in this repo.
+
+There is a **Hopkins store selling Amazon pallets — open-box and returns.**
+Isaac ran a weekend test there and it worked: **CRAVE** pet product bought at
+roughly **$2–3 a unit against about $18 retail.**
+
+Given that total verified third-party revenue is $1.29, a channel he has
+*already executed successfully with his own hands* deserves to be on the board
+next to the $19 Kit that has never sold to an outsider. Nobody has costed it out.
+
+**His own caveat, stated at the time:** he is not switching Tyson's food over it.
+
+**Related standing rule for the storefront:** on the Tyson shop page he only
+wants **products Tyson actually uses.** He photographed a drawer to show which
+ones — the photos were about the products, not the drawer.
+
+**Amazon Associates compliance, learned the hard way:** affiliate links in
+**emails and private messages are prohibited**, and **encouraging friends or
+relatives to purchase through a link is prohibited.** Either one terminates the
+account. Both came up because he was about to send a link privately.
+
+---
+
 ## 📌 THE TWO CREATORS ISAAC FOLLOWS — write nothing over this
 
 **Isaac has named these two repeatedly across multiple sessions and rooms. No
