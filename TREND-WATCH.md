@@ -147,6 +147,70 @@ route or a non-starter. **Check it before anything else.**
 
 ---
 
+## 4. 📺 The creator lane — filled in for the first time in nine months
+
+*Read directly off Isaac's own screenshots, 2026-08-16. Titles, view counts and
+ages are as displayed. He is subscribed to all three.*
+
+### Sabrina Ramonov — `@sabrina_ramonov` · **357K subs · 2.1K videos**
+Bio: *"FREE AI Prompts, Playbooks, & Agents"* → **`sabrina.dev/p/free`**
+*(blocked from this container's proxy — Isaac must open it himself; it is a link
+in her channel bio and takes ten seconds.)*
+
+| Video | Views | Age |
+|---|---|---|
+| **Secret codes for ChatGPT & Claude** | 7K | **1 day** |
+| I Built The Same App on Every AI | 4K | 4 days |
+| 3 Ways to Use AI for Finance & Asset Management | 3.8K | 8 days |
+| **I Built a $1M Marketing Team with 1 AI Agent (7 Skills)** | 14K | **12 days** |
+| Claude Fable 6 INSANE Projects To Get Ahead of 99% | 6.3K | 13 days |
+| How This Lawyer Uses AI (3 Real Use Cases) | 5.4K | 2 weeks |
+
+One thumbnail shows a terminal reading `> /goal — initializing agent, analyzing
+repository`. **That is Claude Code slash commands and Skills** — the exact thing
+Isaac asked about and no session ever connected to her.
+
+### Dan Martell — `@danmartell` · **2.99M subs · 3.6K videos**
+
+| Video | Views | Age |
+|---|---|---|
+| How to Make Rich Friends | 75K | 4 days |
+| **How To Become Dangerously Self-Educated (with AI)** | **459K** | **11 days** |
+| You only need 6 months to change your life | 206K | 2 weeks |
+| If I Wanted to Make My First $100K/Month, I'd Do This | 157K | 3 weeks |
+| **You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide)** | **339K** | **1 month** |
+| I'm changing how I invest my money because of AI | 121K | 1 month |
+
+### Alex Hormozi — `@AlexHormozi` · **4.42M subs · 5.4K videos**
+Third subscribed channel; not previously recorded anywhere. Currently running
+*"Scale or Fail — 8 Businesses, 90 Days to Scale, 1 Winner."*
+
+---
+
+### ⭐ Two of these answer things Isaac said out loud today
+
+**Dan Martell, "You're Not Behind (Yet)" — a month old, 339K views.** He spent
+today saying *"I'm two months behind."* The single most-watched relevant video
+from a creator he already follows and pays attention to is titled, literally,
+*you're not behind yet.* Nobody surfaced it.
+
+**Dan Martell, "How To Become Dangerously Self-Educated (with AI)" — 11 days
+old, 459K views.** Earlier today this file recorded a gap: *he set the system up
+so he could be learning, and the trend watch tells him what shipped but teaches
+him nothing.* That gap has a 459K-view answer from a creator he follows,
+published eleven days ago.
+
+**And "I Built a $1M Marketing Team with 1 AI Agent (7 Skills)"** is Sabrina —
+who built Blotato, which he already pays for — demonstrating **Skills**, the
+feature he asked about earlier today.
+
+**Read together, the creator lane says the same thing the money lane said: he is
+not missing tools or information. It was all published, by people he already
+follows, and nothing was watching.** That is exactly the hole this file exists to
+close, and it just proved its own value retroactively.
+
+---
+
 ## Also worth knowing, lower priority
 
 - **Dan Martell** — one of the two creators Isaac follows — teaches the **Buyback
