@@ -685,6 +685,37 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## ⚠️ THE REGRESSION — the system made him slower at what he was best at
+
+**Isaac, 2026-08-16:** *"Three months ago I would've known about Buzz before Scott."*
+
+He is not describing a capability he never had. He **had it and lost it.** Three
+months ago he was in the feeds on his phone, following creators, watching what
+shipped — he *was* the trend sensor. The tooling never added sensing. It
+consumed the hours he used to spend sensing and filled them with maintaining
+tools, re-explaining context, and chasing work that evaporated.
+
+Nine months of building, honestly scored: hours in the feeds went from most of
+them to near zero; he went from ahead of his friends on launches in his own lane
+to three weeks late and secondhand.
+
+**Consequences for every future session — these outrank tidiness:**
+
+1. **Any new file, tool or process must remove more of his time than it adds.**
+   If you cannot name the hour it gives back, do not build it. This repo already
+   has fifteen project folders and a dozen status documents. Organization has
+   never been the bottleneck.
+2. **Never hand him a system to operate.** The recurring failure is building
+   something that only works if he tends it. He is not the operator; he is the
+   person it runs for.
+3. **The measure of this project is whether he is back ahead of the news and out
+   of the maintenance** — not how clean the repo looks. A tidier workspace that
+   costs him another hour a day is a loss.
+
+See `TREND-WATCH.md` for the repair.
+
+---
+
 ## 🛒 Retail arbitrage — a proven channel no file had ever mentioned
 
 **Recorded 2026-08-16.** Isaac told this to a session and it was never written

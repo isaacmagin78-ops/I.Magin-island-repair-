@@ -17,6 +17,49 @@ time to stay ahead. Instead it consumed the time and watched nothing.
 
 ---
 
+## ⚠️ The regression — he used to be the watcher, and the system took that away
+
+**Isaac, 2026-08-16:** *"Three months ago I would've known about Buzz before Scott."*
+
+**Read that as the core finding of this whole project, because it is.** He is not
+describing a capability he never had. He is describing one he **had, and lost.**
+
+Three months ago he was on a phone, in the feeds, following creators, watching
+what shipped. **He was the trend sensor, and he was good at it.** Nothing in this
+repo does that job. Nothing ever did. The tooling did not add sensing — it
+**consumed the hours he used to spend sensing** and replaced them with hours
+spent managing tools, re-explaining context, and chasing things that evaporated.
+
+So the honest scoreboard on nine months of building:
+
+| | Three months ago | Now |
+|---|---|---|
+| Hours in the feeds | most of them | near zero |
+| Knew about a major launch in his lane | before his friends | three weeks late, secondhand |
+| Time spent maintaining the system | ~none | most of the day |
+
+**The system made him slower at the one thing he was already best at.** Every
+session that added a file, a folder, or a "better" workflow without removing an
+hour of his labor made this worse, and no session ever measured it.
+
+### What this changes
+
+1. **The watcher is not a new feature. It is a repair.** It restores a function
+   he had before the tooling arrived. Frame it that way in every status update.
+2. **The measure of this project is not how organized the repo is.** It is
+   whether Isaac is back ahead of the news and out of the maintenance. A tidier
+   workspace that costs him another hour a day is a *loss*, no matter how good
+   the files look.
+3. **Any new file, tool, or process must remove more of his time than it adds.**
+   If it cannot show which hour it gives back, it does not get built. This repo
+   already has fifteen project folders and a dozen status documents; the
+   bottleneck has never been organization.
+4. **Never hand him a system to operate.** The failure mode is always the same —
+   something gets built that only works if he tends it. He is not the operator.
+   He is the one it runs for.
+
+---
+
 ## What gets watched
 
 Five lanes. Each one has a reason and a named consequence for missing it.
