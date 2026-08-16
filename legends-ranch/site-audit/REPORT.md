@@ -4,7 +4,24 @@ Ordered by revenue impact. Every claim is backed by evidence or marked
 unverified. See FIX-INSTRUCTIONS.md for the developer's verification and
 fix procedures, and SUMMARY.txt for the plain-English owner summary.
 
-## Finding 1 — Homepage "brand anthem" embed plays the WRONG video: CONFIRMED
+> ## ⛔ FINDING 1 IS STALE — DO NOT SHOW IT TO ANYONE
+>
+> **2026-08-15.** Isaac looked at legendsranch.com twice this evening and reports
+> the site **looks substantially better than it did a few months ago**. He did not
+> find the broken anthem embed described below. The web company has clearly been
+> working on it.
+>
+> This audit's evidence is from **24 July 2026**. It was accurate that day. It is
+> not evidence of anything today. `legendsranch.com` is blocked by this
+> environment's egress proxy, so **no session can re-verify it from here** — only
+> Isaac can, by looking.
+>
+> A session handed this finding to Isaac on 2026-08-15 as something to show people
+> at dinner, with the "may since have been fixed" caveat buried at the bottom of
+> the page instead of said out loud. **Do not repeat that.** Treat Finding 1 as
+> resolved unless Isaac says otherwise.
+
+## Finding 1 — Homepage "brand anthem" embed plays the WRONG video: STALE (was CONFIRMED 2026-07-24)
 
 **Status: confirmed content defect, owner-witnessed on iPhone,
 2026-07-24 ~11:12 and ~12:00 local.**

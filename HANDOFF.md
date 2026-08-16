@@ -550,3 +550,33 @@ the three things absent from the entire competitive set.
 
 **Do not pitch "AI makes content."** She gets that mail every day, and her own
 brokerage ships a better version of it next year.
+
+---
+
+## ⛔ The Legends Ranch audit is stale — 2026-08-15
+
+`legends-ranch/site-audit/REPORT.md` Finding 1 ("homepage anthem embed plays a
+Vimeo placeholder") was **confirmed on 24 July 2026 and is no longer safe to
+repeat.** Isaac looked at legendsranch.com twice on the evening of 2026-08-15 and
+reports the site looks substantially better than a few months ago. He did not see
+the defect.
+
+**`legendsranch.com` is blocked by this environment's egress proxy.** No session
+can re-verify it. Only Isaac can, by looking at it.
+
+**What went wrong, so it doesn't happen again:** a session built him a page around
+that finding and handed it to him to show people at dinner, with "may since have
+been fixed — worth re-checking" in small print at the bottom instead of said
+plainly before the handoff. He nearly showed a real client's defect that had
+already been fixed.
+
+> **Standing rule: a finding in a file is only as fresh as its date.** Before
+> handing Isaac anything to *show another human*, state the date out loud and say
+> whether you can re-verify it right now. If you can't re-verify it, say so
+> before the link, not after.
+
+**Also standing, from the same evening:** he asked for one video and got five
+pages and a stack of links. The film he wanted had existed in
+`legends-ranch/deliverables/` since 31 July. **When he asks for one thing, give
+him that one thing** — and put content in the chat as plain text, not behind
+links, because links scroll away and he cannot find them again.
