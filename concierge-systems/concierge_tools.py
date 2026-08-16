@@ -108,9 +108,16 @@ def draft_listing(item):
 
 
 def load_items(csv_path):
-    """Read the inventory CSV into a list of dicts."""
+    """Read the inventory CSV into a list of dicts.
+
+    Lines starting with '#' are skipped. Both data files carry a leading
+    '# UNVERIFIED DATA' banner (added 2026-08-15) so anyone opening a CSV
+    directly meets the warning before the numbers. Three separate sessions had
+    already quoted figures out of these files as established fact.
+    """
     with open(csv_path, newline="", encoding="utf-8") as handle:
-        return list(csv.DictReader(handle))
+        rows = (line for line in handle if not line.lstrip().startswith("#"))
+        return list(csv.DictReader(rows))
 
 
 def main(argv=None):

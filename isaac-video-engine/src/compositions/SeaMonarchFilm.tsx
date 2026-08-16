@@ -1,4 +1,17 @@
 /**
+ * ⛔ THIS COMPOSITION WILL NOT RENDER — AND MUST NOT BE "FIXED" BY RESTORING ITS IMAGES.
+ *
+ * 2026-08-15: the stills referenced below (assets/stills/611-*.png) were AI-GENERATED
+ * images of a condo interior, carrying a visible AI watermark and captioned with a real
+ * address and real specs — "Sea Monarch Unit 611 | 2 Bed • 2 Bath • 1,450 Sq Ft".
+ * They were moved to public/assets/_QUARANTINE-ai-generated/. Read DO-NOT-SEND.md there.
+ *
+ * Rendering this would produce marketing for a real listing out of fabricated
+ * photographs, under Isaac's name and potentially under Linda S. Hoyt / ONE Sotheby's
+ * branding. The 611 listing is also closed, so there is no legitimate use for it.
+ *
+ * The broken asset path is deliberate. Repoint this ONLY at real, permissioned photos.
+ *
  * SeaMonarchFilm — a full listing film for 111 N Pompano Beach Blvd #611,
  * cut in the order a broker would actually want it:
  *

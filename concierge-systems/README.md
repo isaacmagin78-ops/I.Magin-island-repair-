@@ -1,5 +1,30 @@
 # Concierge Systems
 
+> ## ⚠️ THE TWO CSVs ARE UNVERIFIED — do not quote a figure from them as fact
+>
+> **Flagged 2026-08-15, after three separate sessions were misled by them in one day.**
+>
+> They contain **real project and people names** — Island Club / Royal Palm PH3, Townsend
+> Place 503, Arturo, Legends Ranch, Mom's house in Boca, Pompano storage — alongside
+> **budgets, dates, vendors and item details that Isaac has never confirmed.** That
+> combination is what makes them dangerous: they read as authoritative because the
+> surrounding context is genuine.
+>
+> Documented damage from treating them as fact:
+> - one session reported a certificate-of-insurance problem blocking a cargo elevator
+> - another quoted Isaac a **$2.6M budget he never set**
+> - a third cited Island Club PH3 and Townsend 503 to him as two confirmed live projects
+>
+> **A separate, important caution against over-correcting:** a session then dismissed the
+> COI item entirely as fabricated — but a real Ferguson certificate-of-insurance email
+> exists (order `SUZANNE SHNEIDER-7556820`, forwarded by Isaac's mother 2026-08-15) and
+> that mailbox is iCloud, unreachable from Code. **The spreadsheet being unverified does
+> not make every item in it false.** Verify individually; do not resolve either way by
+> assumption.
+>
+> Treat every value here as a **placeholder pending Isaac's confirmation.** The tooling
+> below is sound — only its inputs are unconfirmed.
+
 Plug-in pieces for the UHNW concierge practice. Two spreadsheets and one script
 — open the CSVs in any spreadsheet app, run the script when you want the list to
 tell you what to do next.
