@@ -7,6 +7,16 @@ bridge instead.
 **Any assistant — Perplexity, ChatGPT, Gemini, Claude — read this before
 answering anything.** Last updated 2026-08-16.
 
+> **Whichever assistant you are, find yourself in the roster below and say which
+> one you are in your first line.** If you cannot tell, ask him — one short
+> question. Isaac pastes into whatever app is already open, which is normal and
+> correct. **Nothing here depends on landing in a particular room.**
+
+**His work surface:** iPad Pro 13", iPad mini Pro, and iPhone — *"my main work
+area anywhere in the world."* There is a MacBook, but he does not carry it.
+**Assume no desktop, no keyboard, no big screen.** Anything that needs one is a
+failure.
+
 > **Isaac, 2026-08-16:** *"Operate like a goddamn team, everyone, and I can work
 > on the run."*
 
