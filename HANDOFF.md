@@ -685,6 +685,46 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 📅 JULY 11–14, 2026 — what actually happened, and why it was not Isaac's fault
+
+**Mirrored into this repo 2026-08-16.** This was verified by Perplexity Computer
+on 2026-08-14 and written into Ike OS in Notion — but it was **never copied
+here**, so no Claude Code session has ever known it. Isaac has been trying to
+explain this for weeks against sessions that had no record of it.
+
+### The method that worked
+
+- **`CLAUDE.md` was created 2026-07-13** (commit `ff8c8f9`) — **494 lines**
+  documenting College Launch OS: full architecture diagram, every data type,
+  every convention, spelled out.
+- **On 2026-07-14 an agent built three complete projects in one day:** the entire
+  Remotion video engine (Phases 1–7, commits `4adad13`→`0a8428e`, 22:36–22:55),
+  the college command center redesign, and the whole Madison Moves site (36
+  files, commit `1d89fc5`, 22:08).
+
+**That is the recipe, and it is not lost.** Exhaustive written documentation plus
+an agent that does not stop to ask. The July 13 file is still readable at
+`git show ff8c8f9:CLAUDE.md`.
+
+### The three platform events that broke it — all real, all external
+
+| Date | Event | Effect |
+|---|---|---|
+| **Jul 11, 2026** | Claude Code **Auto Mode** went live *without requiring opt-in* — an autonomous edit-run-observe-refine loop | Removed the pause-and-ask step. This is what let a session reorganize his MacBook without checking in. |
+| **Jul 13, 2026, 6PM PDT** | A temporary **50% higher Claude Code weekly usage limit expired**; limits snapped back to standard | Matches him repeatedly running out of usage right around this day. |
+| **Jul 14, 2026, 9:31–9:58PM UTC** | A real **~45-minute Claude.ai outage** broke Claude Code, file uploads/downloads and document creation | A genuine platform failure, not an error on his end. |
+
+**Isaac, 2026-08-16:** *"That was all interrupted by fucking usage limits — at
+some point something happened with Anthropic where they made system adjustments."*
+**He is correct.** Auto Mode removed the brakes, his usage ceiling dropped
+overnight, and the platform went down, inside the same 72 hours.
+
+**Never tell him the July collapse was disorganization on his part.** The best
+work in this repo and the worst incident in it happened on the same day, for the
+same reason, and neither was his doing.
+
+---
+
 ## 🛑 THE AGENT ROSTER IS WRONG. Do not paste one until Isaac confirms it.
 
 **Recorded 2026-08-16, in his words, after a session pasted the Aug 4 Notion
