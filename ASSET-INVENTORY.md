@@ -57,9 +57,18 @@ carrying no tagged links).
 
 `concierge_tools.py` reads a CSV and derives a next action per row. Stdlib only, no
 network, no API keys. It reads and prints and never writes back, so the operator stays
-the editor. Ships with `collection-inventory.csv`, `renovation-dashboard.csv`
-(**Island Club PH3** and **Boca 503**), and `PRODUCT-PILOT.md` — a sellable offer with a
-30-day pilot.
+the editor. Ships with `collection-inventory.csv`, `renovation-dashboard.csv` and
+`PRODUCT-PILOT.md` — a sellable offer with a 30-day pilot.
+
+> **CORRECTION, 2026-08-15.** An earlier version of this line described the renovation
+> dashboard as tracking "two real properties — Island Club PH3 and Boca 503." **That was
+> not verified.** Both CSVs mix real project and people names with budgets, dates and
+> item details Isaac has never confirmed, and three sessions in one day quoted them as
+> fact — one inventing an insurance blocker, one quoting a **$2.6M budget he never set**,
+> and this file being the third. Both files now carry an UNVERIFIED banner; see
+> `concierge-systems/README.md`. Equally, do **not** swing the other way and treat
+> everything in them as fabricated — a real Ferguson COI email exists in an iCloud
+> mailbox that cannot be read from here. Verify item by item.
 
 **Its architecture is the right shape for the multi-family DSCR screen** — `next_action()`
 is derived rather than stored, so changing an input changes the recommendation. Swapping
