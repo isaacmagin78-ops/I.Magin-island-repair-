@@ -685,6 +685,48 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 🛑 THE AGENT ROSTER IS WRONG. Do not paste one until Isaac confirms it.
+
+**Recorded 2026-08-16, in his words, after a session pasted the Aug 4 Notion
+roster at him as if it were true.**
+
+**The Notion page "Agent Roster — canonical (Aug 4, 2026)" is NOT reliable.**
+It flagged its own unresolved conflicts on the day it was written and they sat
+for twelve days. A page being labeled canonical in Notion does not make its
+contents current — Ike OS's own rule says the live layer wins, and for *which
+assistants Isaac actually uses*, **Isaac is the live layer.** Ask him; do not
+read it off a page.
+
+### What he confirmed
+
+- **The agents are named after real people in his life.** That is the naming
+  convention, and no file in this repo has ever recorded it. Losing it is why
+  the roster reads like arbitrary labels.
+- **Claude Code is "Sy"** — named after his stepfather. *(The family detail
+  stays in Notion; the repo is public. The agent name itself is operational and
+  belongs here.)* Sessions have been signing off as "Sy" without any file saying
+  why.
+- **Flex is now also "Arturo."**
+- **Flex's original job — never built, and lost:** *"Flex was originally supposed
+  to be my second brain, someone I could talk to as my second brain and
+  strategize and oversee all of you guys."* Then Perplexity's capabilities
+  changed and the role blurred. **Nothing in this workspace fills that seat
+  today.**
+
+### What is still unknown — leave it unknown, do not guess
+
+- **"Todd."** Isaac does not recognize him: *"there's no Todd."* The Aug 4 page
+  invented or inherited the name and handed him final decision-making. **Never
+  use the name Todd until Isaac says what it is.**
+- The rest of the roster. Kelly, Percy, Gem — plausible but unconfirmed by him.
+
+**Standing rule from this:** do not hand Isaac a roster, an org chart, or a
+"paste this into every AI" block until he has confirmed every name on it. A
+wrong roster is worse than none — he pastes it, every assistant adopts it, and
+the error propagates into five rooms at once.
+
+---
+
 ## ⚠️ THE REGRESSION — the system made him slower at what he was best at
 
 **Isaac, 2026-08-16:** *"Three months ago I would've known about Buzz before Scott."*
