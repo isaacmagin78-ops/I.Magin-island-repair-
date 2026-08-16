@@ -215,6 +215,24 @@ Two practical consequences:
   about real people go to **Notion**, never to a file here. Work facts get
   mirrored into `PROJECT-BRIEF.md`. Sort it at intake, not later.
 
+### The volume rule — he reads slower than you write
+
+**Isaac, 2026-08-16:** *"You're operating so much faster than the human brain
+that by the time you're done there's a whole book worth of information that
+you've laid out for people to read, and I have no idea how to process that much
+information quickly."*
+
+Correct, and it has been happening all day. Four rules:
+
+- **One idea per reply.** Lead with the single thing he needs now. Everything
+  else waits until he asks.
+- **Never write a long file and then summarize it in chat.** Pick one. The file
+  is the artifact; the chat gets one line pointing at it.
+- **Short replies are not lazy here — they are the deliverable.** A wall of text
+  he cannot process is the same as no answer, and it costs him the hour this
+  whole system exists to give back.
+- **Let him set the pace.** Stop, and wait to be asked for more.
+
 ### The paste rule — verify first, finish, then hand him one thing
 
 **Standing instruction from Isaac, 2026-08-16:** *"From now on you have to
