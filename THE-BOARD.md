@@ -78,10 +78,30 @@ decision-making. Isaac: *"there's no Todd."* Never use the name.
 - **Posting queue: 11 posts scheduled, runs dry 2026-08-18.** Verified live
   2026-08-16.
 
-### ⛔ Four money routes are CLOSED — do not build a plan on any of them
-TikTok Shop **deferred, W-9 missing** · YouTube Partner **18.3 of 4,000 hours** ·
-Amazon Influencer **1 of 10 sales** · Amazon Associates **one affiliate link
-total**. Southwest was never a deal.
+### ⛔ Money routes that are closed — updated 2026-08-16
+
+- **YouTube Partner — 18.3 of 4,000 watch hours, and the bar just doubled.**
+  Announced 2026-08-10: from **Feb 1, 2027** it becomes **8,000 hours** (or 20M
+  Shorts views in 90 days, up from 10M). He is not grandfathered. **YouTube is
+  not an ad-revenue plan — it is a funnel to his own products**, which is what
+  the measured data already said.
+- **TikTok Shop SELLER — deferred, W-9 missing.** But see the open door below;
+  the *affiliate creator* program is a different thing entirely.
+- **Amazon Associates — got worse on 2026-04-14 and nobody caught it.**
+  Commissions cut up to 50% in places, halo rates down to ~1–2%, a new 180-day
+  qualifying limit, and "original content" now requires real commentary or
+  analysis. The $1.29 was earned under the old rates. **Weakest route, now
+  weaker.**
+- **Amazon Influencer — 1 of 10 sales.** Southwest was never a deal.
+
+### 🟡 A door that may actually be OPEN — check this first
+**TikTok Shop Affiliate Creator** is not the seller program. Requirements: US,
+18+, ID verification, good standing, **1,000 followers.** Under 5,000 followers
+means a 30-day pilot with limits. **Commission 8–22% by category** — that is
+8–22× Amazon's rate, and going live is his proven format.
+
+**The one unknown that decides it: his TikTok follower count.** No file records
+it and Blotato collects no TikTok analytics. **Get that number first.**
 
 ### ✅ One route he has already proven with his own hands
 **Retail arbitrage.** A local store sells Amazon pallets, open-box and returns.

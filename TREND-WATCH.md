@@ -60,6 +60,119 @@ hour of his labor made this worse, and no session ever measured it.
 
 ---
 
+# 🔴 CATCH-UP RUN — 2026-08-16, run manually by Sy
+
+*Isaac's instruction: **"start now so everything is working when I wake up, with any
+new relevant updates throughout AI we've missed since then."** This is the two-month
+backfill, not a routine run. Three items that change his money, ranked. Everything
+sourced and dated to when it **happened**, not when it was found.*
+
+---
+
+## 1. 🚨 YouTube DOUBLED the monetization bar — announced **2026-08-10/11**, six days ago
+
+**This is the most important thing in this file and it has a deadline.**
+
+| | Now | From **2026-02-01** *(i.e. Feb 1, 2027)* |
+|---|---|---|
+| Long-form path | 1,000 subs + **4,000** watch hours / 12 months | 1,000 subs + **8,000** watch hours |
+| Shorts path | 1,000 subs + **10M** Shorts views / 90 days | 1,000 subs + **20M** Shorts views |
+
+**Isaac has 18.3 of 4,000 hours.** The target he is already far from **doubles in
+about five and a half months.**
+
+Two more details that matter:
+- Shorts monetization now requires a **recurring** 10M views per trailing 90 days.
+  Dip below and Shorts payouts pause automatically until you cross back.
+- **Creators already in the program are grandfathered — but must accept updated
+  terms in YouTube Studio by 2027-01-31.** Isaac is *not* in the program, so
+  grandfathering does not help him.
+
+**What this actually means for him:** YouTube ad revenue is not a 2026 plan. It was
+already distant; it is now roughly twice as distant, with a hard date. The value of
+YouTube in his stack is what the measured data already said — **it converts
+subscribers and it is the one channel where a description link works.** Treat it as
+a *funnel to his own products*, never as an ad-revenue play.
+
+*Sources: [TechCrunch, 2026-08-10](https://techcrunch.com/2026/08/10/youtube-now-requires-creators-to-have-twice-as-many-watch-hours-to-start-earning-money/) · [Forbes, 2026-08-11](https://www.forbes.com/sites/gabrielalinzainescu/2026/08/11/youtube-doubles-the-monetization-bar-for-new-creators/)*
+
+---
+
+## 2. 💸 Amazon gutted the Associates program — effective **2026-04-14**, four months ago and never caught
+
+Commission rates cut **by as much as 50%** across several categories, plus rule
+changes that land directly on how Isaac has been posting:
+
+- **"Original content" redefined.** Content must now contain **commentary, analysis
+  or transformation** to qualify. A caption with a bare link is thinner than it was.
+- **Halo commission slashed** — non-linked-product purchases dropped to roughly
+  **1–2%**, down from 3–4%. Onsite commission now applies only to the **same ASIN
+  variant** as the linked page.
+- **180-day limit** — the product must be shipped/streamed/downloaded *and* paid for
+  within 180 days to count.
+- **Purchases referred through any paid or boosted ad linking to Amazon are
+  disqualified**, whether or not prohibited keywords are involved.
+
+**What this means for him:** the $1.29 was earned under the *old* rates. The same
+activity earns less now. Combined with what was already on file — one affiliate link
+in existence, 33 YouTube videos with 11,929 views carrying no tagged link, and ~25
+posts carrying the disclosure with no link — **Amazon Associates is the weakest of
+his money routes and just got weaker.** Do not build the 90-day plan on it.
+
+*Sources: [Amazon Associates Operating Agreement changes](https://affiliate-program.amazon.com/help/operating/compare) · [Affiliyo, April 2026 policy breakdown](https://affiliyo.com/blog/amazon-associates-april-2026-policy-changes) · [Commission cut coverage](https://novadata.io/resources/news/amazon-associates-commission-cut-may-2026)*
+
+---
+
+## 3. ✅ A door he thinks is closed may actually be open: TikTok Shop **Affiliate Creator** ≠ TikTok Shop **Seller**
+
+His file says *"TikTok Shop deferred, W-9 missing."* That is the **seller**
+application. The **affiliate creator** route is a different program with a much
+lower bar:
+
+- **US, 18+, identity verification, account in good standing, and 1,000 followers.**
+- Under 5,000 followers you enter the **Affiliate Creator Pilot Program** for at
+  least 30 days — shoppable videos, LIVEs, campaign access and eligible shops are
+  limited during that window.
+- **Commission runs 8–22% by category.** Open Collaboration typically 10–15%;
+  Targeted Collaboration is negotiable at 18–50%.
+- Payout lands ~15 days after delivery, up to 31 with disputes or returns.
+
+**Why this is worth checking first thing:** those rates are **8–22× Amazon's 1–10%**,
+and going live is his proven format. The only unknown is his TikTok follower count
+against the 1,000 threshold — **nothing in this repo records it, and Blotato collects
+no TikTok analytics.** That single number decides whether this is the best available
+route or a non-starter. **Check it before anything else.**
+
+*Sources: [TikTok Shop affiliate requirements 2026](https://creatorsagency.co/blog/tiktok-shop-affiliate-requirements-2026) · [Commission rates & payouts 2026](https://www.dashboardly.io/post/tiktok-shop-affiliate-commissions-2026-payouts-clawbacks-profit-math)*
+
+---
+
+## Also worth knowing, lower priority
+
+- **Dan Martell** — one of the two creators Isaac follows — teaches the **Buyback
+  Loop: Audit → Transfer → Fill.** Audit your time for draining low-value tasks,
+  transfer them to a person, process or tool, and refill the freed hours with
+  growth work. He also teaches a 3-level AI agent framework. *This is the named
+  remedy for exactly the regression recorded in this file* — the hours the tooling
+  ate. Nobody has ever applied it here. ([Buyback Loop](https://marketingagent.blog/2026/04/13/tutorial-dan-martells-buyback-system-for-time-freedom/) · [3-level agent framework](https://marketingagent.blog/2026/04/09/tutorial-dan-martells-3-level-ai-agent-framework/))
+- **Model releases since he fell behind:** Claude Sonnet 5 (Jul 3), Fable 5 and
+  Mythos 5 (Jul 20), **Opus 5 (late July)**; OpenAI GPT-5.6 in three sizes with 1M
+  context; Google Gemini 3.6 Flash (Jul 21). **None of this changes what he should
+  do.** Recorded so he is not surprised, not because it is a task.
+- **Anthropic's Claude Agent SDK** shipped hierarchical subagents and an MCP tool
+  marketplace; VS Code agentic browser tools went GA with 1M-token context. Relevant
+  to the *Buzz lane* — agent coordination is consolidating fast.
+
+---
+
+## What did NOT change
+
+**Nothing in the brokerage-AI lane** (Compass, Sotheby's, Berkshire, eXp) surfaced
+in this sweep. The Linda pitch premise still holds. Saying this out loud on purpose:
+a quiet lane is a finding, and silence must never be mistaken for a broken watcher.
+
+---
+
 ## First real finding — 2026-08-16, and it is not what he feared
 
 Isaac walked in on **Sabrina Ramonov, "Simple AI Tips for Business Owners,"
