@@ -211,6 +211,62 @@ close, and it just proved its own value retroactively.
 
 ---
 
+## 5. ✅ COPY HER — she grants permission, and the playbook for his exact problem already exists
+
+**Isaac, 2026-08-16:** *"She explicitly says we can use her content and mimic
+everything she does — so why don't we do that?"*
+
+**Do it.** Her stated business model is to give the playbook away free and sell
+the tool. Isaac already pays for the tool. Her AI education is **kept 100% free
+on purpose**, in her own words, "despite countless temptations."
+
+### 🎯 The single most useful link found in this entire sweep
+
+**`sabrina.dev/p/21-ways-to-get-your-first-5-customers`** — *"21 Ways to Get Your
+First 5 Customers ($0 Budget)."* **15 free methods and 6 paid**, each one she has
+either done herself, is testing now, or plans to try.
+
+Isaac has a **working checkout with zero customers.** This is a written,
+free, first-party document addressing precisely that, from a founder who took
+Blotato from zero to thousands of paying customers solo. *(sabrina.dev is blocked
+by this container's egress proxy — **Isaac must open it himself.**)*
+
+### Concrete tactics of hers found tonight, worth copying
+
+- **TikTok hashtags.** She has said plainly that `#AI` and `#ChatGPT` were what
+  moved her from ~200 views to 1,000+ regularly. *The tags themselves are hers,
+  not his — the transferable part is that a small number of correct broad tags
+  moved the floor.*
+- **TikTok Creator Search Insights** to find content gaps — she found people
+  searching for voice-AI apps with almost no content answering them, and filled
+  it. **This is a free, in-app tool.** Nothing in this workspace has ever used a
+  search-demand signal to pick content. Every post here has been made on instinct.
+- **Cadence.** She posts **daily to 8+ platforms** with no team, no editors, no
+  VAs, no paid ads. Isaac posts to four and has recycled the same ~12 clips for a
+  month.
+- **She used her own tool on herself first.** Blotato exists because she was
+  drowning posting daily to 8+ platforms. Isaac owns the same tool and is using
+  a fraction of it.
+
+### Where she actually is now, for scale calibration
+3M+ followers, **33M+ organic views a month**, across YouTube, TikTok, Instagram,
+LinkedIn, X, Substack and Threads. Forbes 30 Under 30; featured in Forbes,
+VentureBeat, WSJ and Inc. Zero to 500K in roughly six months; zero to 1.4M in
+just over a year.
+
+### Recent livestreams — she streams, which is his proven format
+| Stream | Views | When |
+|---|---|---|
+| **How I got my first 1000 customers for my app solo** | 5.6K | **2 days ago** |
+| Here's why everyone's going back to ChatGPT (Codex Week 1 → Week 6) | 13K | 9 days ago |
+| SEO in 2026: Get Customers From ChatGPT and Claude AI | 12K | 2 weeks ago |
+
+**"SEO in 2026: Get Customers From ChatGPT and Claude AI" is a second direct hit** —
+getting found through AI assistants rather than Google is a distribution channel
+nothing in this workspace has ever considered.
+
+---
+
 ## Also worth knowing, lower priority
 
 - **Dan Martell** — one of the two creators Isaac follows — teaches the **Buyback
