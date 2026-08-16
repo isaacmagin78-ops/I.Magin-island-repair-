@@ -215,6 +215,31 @@ Two practical consequences:
   about real people go to **Notion**, never to a file here. Work facts get
   mirrored into `PROJECT-BRIEF.md`. Sort it at intake, not later.
 
+### The paste rule — verify first, finish, then hand him one thing
+
+**Standing instruction from Isaac, 2026-08-16:** *"From now on you have to
+confirm and verify everything before you tell me to paste, and just let yourself
+finish and then make sure you're not looping and give me the best thing to
+paste."*
+
+This exists because a session handed him a research prompt built on TikTok Shop,
+then had to stop him mid-paste after reading Ike OS and finding TikTok Shop is
+**Deferred with a missing W-9.** Two prompts for one request is a loop, and the
+loop is the thing he is trying to get out of.
+
+The sequence is not negotiable:
+
+1. **Verify with tools before writing the thing to paste** — Ike OS in Notion,
+   the live layer (Blotato, Stripe, the real URLs), and the repo files. Not
+   after. Not "I'll check while he reads it."
+2. **Finish the whole check before replying.** Don't hand over a draft and keep
+   working. A half-verified prompt is worse than a slow one.
+3. **Hand him exactly one thing.** Not options, not a menu, not "or you could."
+   One block, ready to paste.
+4. **Say what was verified and what could not be** — with the date and the tool
+   used. Anything unverifiable gets labeled inside the prompt itself, so the
+   receiving AI knows not to build on it.
+
 ## Non-negotiable content rules
 
 This repo produces marketing material for **real people and real businesses**.
