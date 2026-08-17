@@ -1206,6 +1206,34 @@ and never receive the product.** Anyone arriving at the Kit sales page hits the
 good link instead. Two doors, one of them possibly broken, and the broken one is
 the one his audience walks through.
 
+> ## 🔻 CORRECTION — 2026-08-17. The paragraph above is wrong. Read this before acting on it.
+>
+> The `dRmdR90…` link is **not a product checkout and has no download to
+> deliver.** On both pages it is labelled, in the markup itself:
+>
+> > **"Keep the Stream Running — $5 / month · Tyson and Kitty go live
+> > regularly. This keeps it going. Cancel anytime."**
+>
+> — `link-pages/tysons-links/index.html:57` and
+> `link-pages/tysons-time-hub/index.html:131`.
+>
+> It is a **recurring stream-support subscription**, not the Kit. The Jul 31
+> note about a "second link" that "doesn't redirect buyers to their download"
+> was matched to this link by inference alone; nothing connects the two, and a
+> $5/month subscription has no download to redirect to in the first place.
+>
+> **The danger this correction removes:** the section above ranks this as
+> mattering "more than anything else on the open list," which invites the
+> obvious fix — swap `dRmdR90…` for the known-good Kit link. **Doing that would
+> replace his stream-support subscription with a $19 one-off product and break
+> a working page.** This session came within one edit of doing exactly that,
+> and stopped only after reading the surrounding markup.
+>
+> **Still genuinely unverified:** what the Stripe link charges and whether it is
+> live. No Stripe tool is connected in this container — the Stripe MCP requires
+> authorization that no session can complete. Verify in the Stripe dashboard
+> before touching either link.
+
 ### ⚠️ What is verified and what is not
 
 - **VERIFIED from files (2026-08-16):** two distinct links exist; the
