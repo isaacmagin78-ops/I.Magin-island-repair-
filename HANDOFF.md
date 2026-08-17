@@ -240,11 +240,37 @@ should not be left as a `.txt`. Isaac should decide on both deliberately.
 never there before and I opened it up. It looks different than the other one and
 it seems more advanced."*
 
-**Nobody knows which app this is. Do not guess it.** Plausible candidates are
-the Claude desktop app in dark mode, Claude Code in a terminal, or another
-vendor's desktop app entirely — and picking one and being wrong is exactly the
-failure that has cost him days. **Ask him for the name at the top of the window,
-or a screenshot.** Then write the answer here.
+**Nobody knows which app this is. Do not guess it.** Picking one and being wrong
+is exactly the failure that has cost him days. **Ask him for the name at the top
+of the window, or a screenshot.** Then write the answer here.
+
+**More of his description, 2026-08-17** (voice-to-text, so partly garbled):
+*"Everybody said it's a Claude developer and I should have it… That I should not
+have it. It's a lack square root of AI or something. It's a black app with AI."*
+
+**Leading hypothesis, UNCONFIRMED — Adobe Illustrator.** Its icon is a near-black
+rounded square with the letters **Ai**, which fits "black square… with AI"
+closely. If so it is design software, not an AI assistant, there is no
+possibility of anyone else "working in it," and nothing needs doing. **Confirm by
+asking whether the letters are `Ai` in orange before saying a word about it.**
+
+> ### 💸 The real risk buried in this, and it is a money one
+>
+> He said *"everybody said it's a Claude developer and I should have it."* If
+> anyone is pointing him at the **Claude Developer Platform / API console**,
+> that is a **pay-per-use account billed separately from his $20/mo Pro
+> subscription** — a metered bill on top of a workspace whose total lifetime
+> third-party revenue is **$1.29**, against a subscription burn nobody was
+> tracking until 2026-08-17.
+>
+> **He does not need one.** Nothing in this repo requires an API key. The
+> watcher (`.github/workflows/watch.yml`) was deliberately built to run with no
+> session and no key. Every MCP connector he uses authorizes through his
+> existing accounts.
+>
+> **Warn him before he signs up, not after.** This is precisely the
+> warn-before-not-after case: a metered account is easy to open, easy to forget,
+> and he has an Apple One increase landing 10 September already.
 
 **What he was actually worried about, and the answer to it:** *"it probably has
 somebody already working there."* No — there is no other person in any of these
