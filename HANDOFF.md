@@ -744,6 +744,57 @@ live.
 
 ---
 
+## ✅ TIKTOK SHOP IS OPEN — verified in Gmail 2026-08-17, with dates
+
+**Isaac said it was approved. He was right. Independently confirmed from his own
+inbox — this is no longer his word against a Notion page.**
+
+| Date | From | What it says |
+|---|---|---|
+| Jul 17, 19, 26 · Aug 2 | `sellersupport@shop.tiktok.com` | *"Application Rejected? Here's How to Fix It"* — Business Verification needed updating. **This is the era Ike OS recorded.** |
+| **Aug 10, 07:28** | `no-reply@shop.tiktok.com` | New login to the TikTok Shop account — Safari, Florida |
+| **Aug 10, 07:30** | `sellersupport@` | *"We've Received Your Documents"* — review in 48–72h |
+| **Aug 10, 07:56** | `sellersupport@` | *"Your Settlement Tier Status Has Been Updated"* |
+| **Aug 10, 07:56** | `sellersupport@` | 🎉 **"Congrats! your shop setup is complete!"** |
+| Aug 13 · Aug 16 | `sellersupport@` | *"Your Shop Is Ready — Let's Get Your First Product Live"* — sent again, twice |
+| Aug 13 | `sellersupport@` | *"70% of Shoppers Buy Through Shop Tab First"* |
+| Aug 14 | `sellersupport@` | Seller training invitations |
+
+### The remaining step is one thing: **list a product**
+
+Not "one or two setup steps." **TikTok has now asked him three times to list his
+first product.** That is the entire gap between an open shop and a working one.
+
+### Why this is the highest-value unfinished item in the workspace
+
+Every piece is already in his hands:
+- **A shop that is open**, as of Aug 10
+- **A proven supply** — CRAVE pet product at **$2–3 a unit against ~$18 retail**,
+  bought with his own hands at a pallet store
+- **An audience that matches it** — a rescue-dog brand
+- **The format that works** — 30 hours of LIVE built his entire TikTok following
+  and earned 147 diamonds, while two months of automated posting moved nothing
+- **Commission of 8–22%** against Amazon's 1–10%
+
+**One listing closes the loop.**
+
+### ⚠️ The process failure this exposes — do not repeat it
+
+The shop was approved **Aug 10 at 7:56am.** Ike OS was edited **Aug 15** and still
+said *"Deferred, W-9 missing."* Sessions then repeated that back to Isaac for two
+days while TikTok emailed him three times asking for a product.
+
+**The proof was in Gmail the whole time and no session looked.** This was not a
+tooling limit — a Gmail tool was available and simply never used. Standing rule
+from this:
+
+> **Before repeating any account status from a file, ask where the proof would
+> live and go look there.** Approvals, rejections, payouts and policy changes
+> arrive by email. Notion records what someone believed; the inbox records what
+> actually happened.
+
+---
+
 ## 🌐 PUBLIC HOSTING — where it stands, 2026-08-16, and one 30-second unblock
 
 Isaac needs **a public URL that works for anyone with no login** — the claude.ai
