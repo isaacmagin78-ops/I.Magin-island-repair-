@@ -250,6 +250,22 @@ should not be left as a `.txt`. Isaac should decide on both deliberately.
 
 ---
 
+## 🎙️ He talks to this by voice, and transcription garbles load-bearing words
+
+**Twice on 2026-08-17 voice-to-text produced text that changed the meaning:**
+*"It's a lack square root of AI"* (describing an app on his Mac), and *"That's
+why you got caught Max"* — which was **"that's why you got me on Max."** He
+flagged it himself: *"My mumbling is still bad."* It is not mumbling; it is the
+transcription, and it has cost real time today.
+
+**When a sentence turns on one unclear word — a product name, a number, a plan
+tier, a yes or no — read it back in four words and let him confirm.** Do not guess
+and carry on. Both wrong turns today began with a session acting on a word it had
+not confirmed: one produced an Adobe Illustrator theory, the other produced a page
+of budget advice calibrated to the wrong subscription.
+
+---
+
 ## ❓ OPEN QUESTION — the "black AI" that appeared on his screen (2026-08-17)
 
 **Isaac, 2026-08-17:** *"How did that black AI appear on my screen that was
@@ -357,9 +373,14 @@ Ultracode's own instructions say to run a Workflow on every substantive task and
 that token cost is not a constraint. **On this account that instruction is
 wrong, and following it literally would hurt him:**
 
-- **He is on Claude Pro at $20/mo.** His limit is a weekly usage allowance, not
-  a bill. Fleets of parallel agents reach that ceiling in a fraction of a
-  session.
+- **⚠️ CORRECTED 2026-08-17 — he is on Claude MAX, not Pro.** He said so
+  directly: *"I have subscription to Claude Max, not the pro anymore."* On what
+  he pays for, **he is the live layer** — believe him. The caution below was
+  written against Pro's much tighter ceiling and is **overstated for Max**: a
+  Max allowance absorbs deep sessions that would have exhausted Pro.
+  **Do not quote Max's price or limits from memory — look them up and date them.**
+  The remaining true point is only that the limit is an *allowance*, so a heavy
+  fan-out still consumes a shared weekly pool rather than billing per use.
 - **Running out already cost him his best week.** Per the July 11–14 section: a
   temporary higher limit expired 2026-07-13 and his ceiling dropped overnight,
   mid-build, and he has named it as the thing that broke that stretch.
@@ -386,12 +407,12 @@ actually matters he wants full capability and accepts the cost. **When he says a
 piece of work is important, give it everything** — that is an instruction, not a
 budget negotiation.
 
-**The one factual thing to keep straight for him:** on Claude Pro the constraint
-is a **weekly usage allowance, not a bill** — so mid-week there is nothing to
-"spend" to buy more headroom; the lever is a higher subscription tier, decided in
-advance. **Do not quote him tier prices or limits from memory** — that is exactly
-the fabricated-number failure this repo forbids. If he asks about upgrading, look
-it up live and label the date.
+**The one factual thing to keep straight for him:** he is on **Max**, and even
+there the constraint is a **usage allowance, not a bill** — so mid-week there is
+nothing to "spend" to buy more headroom. **He is already on the tier that buys
+it**, which is exactly why he said he'd pay to get this done right; he had
+already done it. **Do not quote him tier prices or limits from memory** — that is
+the fabricated-number failure this repo forbids. Look it up live and date it.
 
 ---
 
@@ -404,9 +425,12 @@ He asked which model to run Claude Code on and what thinking level. **Answer:
 
 - **Fable 5 costs roughly double per unit of work** and is not better at what he
   does here. Opus 5 is the model built for coding and agentic repo work.
-- **His binding constraint is usage limits, not dollars** — he is on Claude Pro
-  at $20/mo, so per-token API pricing is not what he pays. Fable reaches the
-  weekly ceiling roughly twice as fast.
+- **⚠️ REVISED 2026-08-17 — he is on Max, not Pro.** Per-token API pricing is
+  still not what he pays, but a Max allowance is far larger than Pro's, so
+  "Fable burns your ceiling twice as fast" is **much weaker than first written**.
+  **Fable 5 is a legitimate option for him on genuinely hard reasoning work.**
+  Opus 5 stays the default on **capability grounds** — it is the model built for
+  coding and agentic repo work — not because it is the cheap choice.
 - **Usage limits already cost him a week.** Per the July 11–14 section: a
   temporary higher limit expired 2026-07-13 and his ceiling dropped overnight,
   mid-build. Recommending the model that burns it fastest repeats that.
@@ -1172,7 +1196,7 @@ email. Personal-financial items were deliberately excluded from this public repo
   stated as Jul 22 so they may have self-restored. Needs a live check.
 
 ### Recurring spend — nothing in this repo tracks any of it
-Claude Pro $20/mo · Linktree Pro **$15/mo** (a free trial that auto-converted
+Claude **Max** (⚠️ *the audit recorded Pro $20/mo; he confirmed 2026-08-17 he is on Max — the burn total below is understated by the difference. Verify the current Max price before restating any total.*) · Linktree Pro **$15/mo** (a free trial that auto-converted
 2026-07-31, account `imaginconcierge`) · iCloud+ $2.99 · Apple One **rising
 $25.95 → $27.95 on Sept 10** · CapCut Pro · LinkedIn Premium Business (renews
 Aug 22). Lapsed or ending: Grammarly $139.99/yr, Perplexity Pro $20/mo,
