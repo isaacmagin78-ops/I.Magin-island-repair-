@@ -374,6 +374,25 @@ say what it will cost him in usage and let him decide.** That is the
 warn-before-not-after rule applied to the one resource he cannot buy back
 mid-week.
 
+### ✅ HIS DECISION, in his own words — 2026-08-17
+
+> *"If we're on the same page and I'll turn it down to wherever we need to but
+> un important shit I'll have you at the Max. I'll spend the money to get this
+> done right."*
+
+**This is his call and it is the right one — do not re-argue it with him.** It is
+the same rule from the other side: routine work runs lean, and when the work
+actually matters he wants full capability and accepts the cost. **When he says a
+piece of work is important, give it everything** — that is an instruction, not a
+budget negotiation.
+
+**The one factual thing to keep straight for him:** on Claude Pro the constraint
+is a **weekly usage allowance, not a bill** — so mid-week there is nothing to
+"spend" to buy more headroom; the lever is a higher subscription tier, decided in
+advance. **Do not quote him tier prices or limits from memory** — that is exactly
+the fabricated-number failure this repo forbids. If he asks about upgrading, look
+it up live and label the date.
+
 ---
 
 ## ⚙️ HIS MODEL SETTING — Opus 5 at `high`. Recommended 2026-08-17.
