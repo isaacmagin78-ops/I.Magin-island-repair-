@@ -685,6 +685,55 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 💡 THE CONCIERGE DIFFERENTIATOR — situational intelligence, not task execution
+
+**Isaac, 2026-08-16, and this is a product requirement, not a passing remark.**
+
+He asked what to wear before going out. The answer mattered less than the point
+he made after it:
+
+> *"The context is bigger picture. If we're selling a personal assistant for
+> Arturo or anybody of his ilk — anywhere in the world, wants to change their
+> travel or do anything they want — that needs to be built in."*
+
+**Anyone can build "book my flight."** What a client like Arturo actually pays
+for is an assistant that knows **how a room works**: what to wear to this
+specific kind of evening, what will get you turned away at a door, what is
+current versus dated, how people actually behave when they get together at an
+event. That is the layer generic assistants have no idea exists.
+
+### Why Isaac is uniquely qualified to specify it
+
+**He has thirty years of lived experience in exactly these rooms.** In his own
+words, *"I know the game. I know how this operates in this life."* He knows that
+jeans, a t-shirt and the right shoes read better in the right room than a suit
+does — the kind of judgment that cannot be scraped, only lived.
+
+**That is the moat.** It is the same pattern as the rest of this workspace: his
+own experience is the qualification, not the weakness. Non-technical is why the
+AI-fear audience trusts him; thirty years in the room is why a concierge product
+built by him would be worth paying for.
+
+### What this means for IMagin Concierge
+
+- **Situational intelligence is a feature to build, not a nice-to-have.** Dress
+  codes and door policy for a specific venue. What is current this season, not
+  in general. How an event actually runs. Who is in the room.
+- **It has to be verified and current** — the same rule as everything else here.
+  A confidently wrong answer about a dress code gets a client turned away at a
+  door, which is worse than no answer.
+- **It has to work from a phone, anywhere in the world**, spoken, in the ten
+  minutes before someone walks out the door. That is the actual usage moment.
+
+**Nobody has scoped this.** `imagin-concierge/` and `concierge-systems/` describe
+task execution. This is the part that would make it worth money, and it is not in
+either of them.
+
+*(Isaac also shared personal context alongside this. Per the intake rule, that
+belongs in Notion, not in a public repo. Only the product-relevant part is here.)*
+
+---
+
 ## 💥 LIVE DEFECT FOUND 2026-08-16 — the link-in-bio may be taking money and not delivering
 
 **Found by reading the repo, not by being told. No status file has ever mentioned it.**
