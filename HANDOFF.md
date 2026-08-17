@@ -16,7 +16,14 @@
 >
 > **Running without him:** `.github/workflows/watch.yml` fires 07:12 and
 > 19:12 UTC daily on GitHub's servers, needs no session and no key, and
-> appends to `WATCH-FEED.md` on `main`. Verified working 2026-08-17 11:37 UTC.
+> appends to `WATCH-FEED.md` on `main`.
+>
+> ⚠️ **Re-checked 2026-08-17 16:39 UTC — the schedule is UNPROVEN, not verified.**
+> `actions_list` on `watch.yml` returns **exactly one run, `workflow_dispatch`** —
+> Isaac pressed the button. The job itself works (it wrote the 11:37 entry), but
+> **no cron-triggered run has ever fired.** 07:12 today was before the workflow
+> existed; the first real scheduled run is **tonight, 19:12 UTC.** Do not write
+> "verified working" against a manual run again — check `event:` on the run.
 >
 > **The two live blockers, both needing only him, neither urgent enough to
 > chase him about:** the Vercel account that hosts his sites is not the one
@@ -24,8 +31,10 @@
 > needs switching on by hand once. Until one of those, the $49 College
 > Checklist cannot take a card.
 >
-> **Posting queue, verified live today:** 8 posts scheduled, last one fires
-> 2026-08-18 23:00 UTC, then dry.
+> **Posting queue, re-verified live 2026-08-17 16:39 UTC:** `count: 8`. Four
+> today (TikTok 17:00 · IG 21:00 · Threads 22:30 · YouTube 23:00) and the same
+> four tomorrow. **Last post fires 2026-08-18 23:00 UTC, then every channel goes
+> dark.** That is the third time this queue has been allowed to run to zero.
 >
 > **What today actually was:** this session opened a ten-day-old copy of the
 > repo, told him things that were stale, and he had to fight through the fog
