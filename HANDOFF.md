@@ -744,6 +744,75 @@ live.
 
 ---
 
+## 💰 GMAIL AUDIT 2026-08-17 — money, deadlines and breakage nobody recorded
+
+*Read-only sweep of 60 days of inbox. Every line below is quoted from an actual
+email. Personal-financial items were deliberately excluded from this public repo.*
+
+### Money he has earned and not collected
+- **AIRBNB IS HOLDING HOSTING INCOME.** `automated@airbnb.com`, **2026-07-15 and
+  again 2026-08-15**: *"THE MONEY YOU EARNED HOSTING IS WAITING FOR YOU… add or
+  update your payout method in your account so you get the hosting income you
+  earned."* **No amount is stated — do not guess one.** Sent twice, a month apart,
+  so still unresolved. **Nothing in this entire repo has ever mentioned that Isaac
+  hosts on Airbnb.**
+- **Stripe works end to end.** First payment 2026-07-24, **$19.00 from Isaac Magin**
+  (his own name — a self-test, not a customer), account *Imagin Consultation*
+  `acct_1ToG3jFDa35si8Lw`. Paid out **$18.15** to Wells Fargo on 2026-07-31. **No
+  disputes, no chargebacks, no restrictions.**
+
+### Deadlines that already passed or are running
+- **`imaginhq.com` may be disabled.** Vercel/registrar, **2026-07-13**: *"we must
+  verify your email address within 15 days, or your domain will be temporarily
+  disabled."* Deadline was ~Jul 28; the email is **still unread** and no
+  suspension notice ever arrived. He paid $11.25 for it on 2026-07-12. **State
+  unknown — check the dashboard, do not assume either way.**
+- **Supabase project paused** (`dzaxjebkbxifgxzmehrl`, "IMagIn consulting"),
+  2026-08-10, after 7 days idle. **Restorable for 90 days — that window closes
+  about 2026-11-08.** After that the project is gone, though data stays downloadable.
+- **Netlify projects suspended** 2026-07-04 — credit allowance exhausted. Reset was
+  stated as Jul 22 so they may have self-restored. Needs a live check.
+
+### Recurring spend — nothing in this repo tracks any of it
+Claude Pro $20/mo · Linktree Pro **$15/mo** (a free trial that auto-converted
+2026-07-31, account `imaginconcierge`) · iCloud+ $2.99 · Apple One **rising
+$25.95 → $27.95 on Sept 10** · CapCut Pro · LinkedIn Premium Business (renews
+Aug 22). Lapsed or ending: Grammarly $139.99/yr, Perplexity Pro $20/mo,
+Supermetrics and Airtable trials.
+
+**Against $1.29 of lifetime third-party revenue, the subscription burn is the
+larger number and no file has ever named it.**
+
+### Closed doors
+- **PartnerStack rejected him**, 2026-07-30: *"Your profile is not a great fit,
+  but may be in the future."* He can reapply from the dashboard.
+- **A TikTok for Business partner signup was started 2026-07-22 and never
+  finished** — *"Follow this link to finish signing up."*
+
+### Quiet lanes — said out loud, because silence is a finding
+- **Amazon Associates and Amazon Influencer: totally silent for 90 days**,
+  including spam and trash. No status notice, no warning, **and nothing about a
+  180-day probation.** That probation belief appears in this repo's own files and
+  **has no email support** — verify it at the source before building on it.
+- **YouTube monetization: silent.** One item only — **2026-07-20, advanced
+  features unlocked** after video verification.
+- **TikTok payouts, LIVE, Creator Rewards: silent. No violations or strikes.**
+- **Legends Ranch: no contact in 60 days.**
+- **Linda Hoyt: no business contact at all.** She appears only as an automated
+  Luxury Presence listing digest he subscribes to. **No engagement, no
+  authorization, no reply.** The do-not-publish-without-authorization rule stands
+  completely untouched.
+
+### Two loose ends
+- **TikTok hit 300 followers on 2026-08-14** (now 302).
+- **Seven different spellings of the same brand across seven billing systems:**
+  "Tyson's Time" · `tysonstime` · `imaginconcierge` · "Imagin Consultation" ·
+  "Imagin bespoke concuerg" · "IMagIn consulting" · `isaacmagin78-4065`.
+- **`CLAUDE.md` says "no CI, `.github/` does not exist." That is now false** —
+  `.github/workflows/pages.yml` was added today.
+
+---
+
 ## ✅ TIKTOK SHOP IS OPEN — verified in Gmail 2026-08-17, with dates
 
 **Isaac said it was approved. He was right. Independently confirmed from his own
@@ -792,6 +861,31 @@ from this:
 > live and go look there.** Approvals, rejections, payouts and policy changes
 > arrive by email. Notion records what someone believed; the inbox records what
 > actually happened.
+
+---
+
+### ⚠️ CORRECTION, same day: approved and payable are two different things
+
+**An earlier entry today said the "W-9 missing" note was stale. That was an
+overcorrection and it is wrong.** A Gmail audit found the two are separate
+systems:
+
+- **Business Verification** — this is what was approved 2026-08-10. Shop open. ✅
+- **Form W-9** — lives in Seller Center tax information. The only email about it
+  is **2026-07-11**, and it says plainly: *"Failure to submit a valid Form W-9
+  results in your withdrawals being blocked."* **No later email anywhere in the
+  mailbox confirms it was received or accepted.**
+
+**A shop can be fully approved and still have withdrawals blocked.** Do not tell
+Isaac the money side is clear until someone opens Seller Center and looks at the
+tax information tab. **Shop ID: `USUSLCE6ESY2`.**
+
+### ⚠️ "Deferred" now means two unrelated things — do not let a session confuse them
+- The old project-status note said TikTok Shop was *deferred* (an application state).
+- TikTok's 2026-08-10 email assigns **Settlement Tier: Deferred Settlement** — that
+  is a **payout schedule**, the slowest one, and it is current and unrelated.
+
+A future session will "correct" one using the other unless this stays written down.
 
 ---
 
