@@ -188,6 +188,28 @@ been bounced between surfaces for six weeks and the browser is the one that
 reaches everything. Do not send him to a different app to do work that a cloud
 session already does.
 
+### 🎤 LIVE VOICE — verified 2026-08-17: yes, in the app he already holds
+
+He asked for it plainly: *"I need to have a live assistant I can talk to."*
+(Also noted: Perplexity Computer converses live with him but *"it doesn't
+operate the same — I don't like it for that."* Keep that in the roster picture.)
+
+**Claude voice mode exists — every plan, beta, in the Claude mobile app (and
+desktop/web), on the CHAT side.** Upgraded July 2026: runs on Opus/Sonnet-class
+models and can pull context from connected apps. Started via the **black
+waveform icon next to the message box — not the microphone beside it** (mic =
+dictation into text; waveform = live conversation), per Anthropic's help center.
+
+**The catch and the bridge:** voice is a *Chats*-room session — blank about this
+repo. The repo is public and `THE-BOARD.md` exists for exactly this. His opener
+for a voice session: **"Read THE-BOARD file in my GitHub repo —
+isaacmagin78-ops — then catch me up."** A voice session cannot write to this
+repo, so anything decided by voice still has to land here through a Code
+session, or it evaporates — same rule as every other room.
+
+*Verified 2026-08-17 via web search: Anthropic help center ("Use voice mode"),
+Engadget how-to, MacRumors/9to5Mac coverage of the July 2026 model upgrade.*
+
 ### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
 
 Isaac repeatedly asked what happened the night Claude Code "took over the
