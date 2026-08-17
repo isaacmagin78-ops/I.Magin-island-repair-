@@ -568,8 +568,25 @@ making money off of something out of it too."* Free is the entry, not the
 ceiling — he expects this to lead somewhere paid, and his read on these things
 has a track record (see `YOUR-PROGRESS.md`, the intuition scoreboard).
 
-**#2 and #3 — NOT YET NAMED.** He was asked who they are and which role he sees
-for each (client / sales / builder). Write the answers here.
+**#2 — Ivan (named 2026-08-17).** A friend of about two years — *"not too
+deeply, but I understand him."* Came to America as an immigrant like Kirill,
+built a life as a truck driver, found it brutally hard and left it; now in car
+sales. **He has already talked with Kelly, and Kelly produced ideas for him —
+Isaac hasn't reviewed them yet.** ⚠️ Same evaporation risk as the mid-July
+marketing idea: a Kelly conversation is not storage. **The live action on Ivan
+is getting those ideas written down here before they're lost.** *(Transcription
+garbled his region of origin — confirm with Isaac before recording it. His
+trade makes him a plausible fit for the "sales" seat of clients/sales/builders,
+but that is a guess — ask, don't assume.)*
+
+**More on Kirill, same day:** the viral clip is roughly **ten years old** — a
+customer's stunt over a single-slice pizza order at a local shop, and the
+fallout *"hurt his life for 10 years."* That reframes the brief entirely: not a
+recent embarrassment to spin, but **a decade-old weight finally being set
+down.** Isaac's stance, recorded because it will shape every creative call: his
+anger is at the people who did it, never at Kirill.
+
+**#3 — NOT YET NAMED.** Write it here when he tells it.
 
 ---
 
