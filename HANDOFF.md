@@ -271,12 +271,26 @@ of budget advice calibrated to the wrong subscription.
 **His words:** *"When we're done with this, we have to talk about what happened
 yesterday with ChatGPT real time showing the system working."*
 
-Something happened **yesterday (2026-08-16), with ChatGPT/Kelly, in real time,
-that showed "the system working."** He raised it himself and wants the
-conversation — that alone makes it worth having: things he flags unprompted have
-been right all day. What exactly happened is not yet known; the phrase came
-through voice transcription, so **ask him to describe it rather than guessing**
-what "the system working" means. Write the answer here when he tells it.
+**He told the story, correcting a wrong first reconstruction on the way:**
+
+> *"A month ago it confirmed everything. It even said we could use how they
+> learn marketing and use it in our system, and it said it would keep a record
+> of it. And yesterday it stumbled on everything when I talked about it."*
+
+**Sequence: ≈mid-July, ChatGPT/Kelly confirmed the ads/marketing material, went
+further — proposed using how they do marketing/learning in HIS system — and
+promised to keep a record. Yesterday (2026-08-16) the record was gone and it
+stumbled.** The conversation-is-not-storage failure, on the ChatGPT side.
+
+**✅ RECOVERY STEP — concrete, and only he can do it:** a model's memory failing
+does not delete chat history. The mid-July conversation should still be in his
+ChatGPT chat list. When he finds it, **copy the marketing idea into this repo**
+(THE-BOARD or a project file) so it stops depending on any assistant's memory.
+Full write-up: `TREND-WATCH.md`, the ads entry's addendum.
+
+**Still unclear (transcription):** whether *"real time showing the system
+working"* was this same event or a **second, positive** thing from yesterday.
+He was asked; write the answer here.
 
 ---
 

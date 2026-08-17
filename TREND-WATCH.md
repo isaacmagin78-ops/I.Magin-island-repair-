@@ -102,24 +102,35 @@ behavior — **check it before agreeing or moving on.** He is usually right abou
 the fact and wrong about the scope, and the scope is what decides what he should
 do about it.
 
-### Addendum, same day — he DID try to check this, and why his check failed
+### Addendum — corrected by Isaac within minutes. The real story is a broken memory promise.
 
-He didn't just carry the half-fact around: **he asked ChatGPT itself.** A month
-ago it "couldn't confirm" anything about its own ads; yesterday it gave only a
-generic answer (through a glitchy voice reply). He read that as something built
-into the code to deflect the topic.
+> 🔻 The first version of this addendum reconstructed a garbled voice message as
+> "a month ago it couldn't confirm anything." **Backwards.** He corrected it on
+> the spot — the read-back rule doing its job. This is his account:
 
-The boring explanation covers it: **a model cannot reliably report on its own
-product.** Its knowledge is frozen months before today, it cannot see his account
-or the ad system, and vendors do steer how models discuss their own company — so
-answers come out generic and inconsistent, which reads as evasion. His instinct
-that "it processes it different when you ask about \[itself]" is half right, and
-the practical rule is the same either way:
+> *"A month ago it confirmed everything. It even said we could use how they
+> learn marketing and use it in our system, and it said it would keep a record
+> of it. And yesterday it stumbled on everything when I talked about it."*
 
-> **"Ask the AI about the AI" is not a check.** Verify platform facts on the
-> web, dated and sourced, the way the entry above was. This applies to Claude
-> too — a session answering about Anthropic's own features from memory is
-> exactly as unreliable.
+**≈Mid-July: ChatGPT/Kelly confirmed the material, went further — proposed
+using how they do marketing/learning in his own system — and promised to keep
+a record of it. Yesterday (2026-08-16): the record was gone and it stumbled.**
+
+That is not evasion and not a filter. **It is the exact failure this workspace
+exists to fix, surfacing on the ChatGPT side:** a chat is not storage, and an
+assistant's promise to "keep a record" inside its own memory is the same promise
+Claude sessions made him and broke. THE-BOARD's rule already says it — *never
+report only in chat* — and there is now a second vendor's worth of evidence.
+
+**The record is probably not gone.** A model's memory failing does not delete
+the chat history. The mid-July conversation should still be sitting in his
+ChatGPT chat list. Recovery step filed as an open item in `HANDOFF.md`: find
+that chat, copy the marketing idea into this repo, where no assistant's memory
+can lose it.
+
+The narrower rule from the first version stands on its own feet: **"ask the AI
+about the AI" is not a check** — platform facts get verified on the web, dated
+and sourced, Claude included.
 
 **Sources:** [OpenAI — Our approach to advertising](https://openai.com/index/our-approach-to-advertising-and-expanding-access/) ·
 [OpenAI Help Center — Ads in ChatGPT](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) ·
