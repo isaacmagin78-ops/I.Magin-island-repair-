@@ -123,11 +123,15 @@ his money routes and just got weaker.** Do not build the 90-day plan on it.
 
 ---
 
-## 3. ✅ A door he thinks is closed may actually be open: TikTok Shop **Affiliate Creator** ≠ TikTok Shop **Seller**
+## 3. 🟢 TikTok Shop is APPROVED — corrected by Isaac, 2026-08-17
 
-His file says *"TikTok Shop deferred, W-9 missing."* That is the **seller**
-application. The **affiliate creator** route is a different program with a much
-lower bar:
+**Every file in this repo said "deferred, W-9 missing." That was wrong and
+stale**, inherited from Ike OS. Isaac: *"I already proved it to Claude chat or
+one of you guys — TikTok's approved."* **One or two setup steps remain**, which
+another assistant was walking him through.
+
+**Finishing those steps is likely the highest-value unfinished task here.** The
+commission rates below are the reason. Reference on the affiliate side:
 
 - **US, 18+, identity verification, account in good standing, and 1,000 followers.**
 - Under 5,000 followers you enter the **Affiliate Creator Pilot Program** for at
@@ -137,11 +141,10 @@ lower bar:
   Targeted Collaboration is negotiable at 18–50%.
 - Payout lands ~15 days after delivery, up to 31 with disputes or returns.
 
-**Why this is worth checking first thing:** those rates are **8–22× Amazon's 1–10%**,
-and going live is his proven format. The only unknown is his TikTok follower count
-against the 1,000 threshold — **nothing in this repo records it, and Blotato collects
-no TikTok analytics.** That single number decides whether this is the best available
-route or a non-starter. **Check it before anything else.**
+**Why this is the priority:** those rates are **8–22× Amazon's 1–10%**, and going
+live — his one proven format — is exactly what the program is built around. His
+follower count is **302** (verified 2026-08-17), which matters for the affiliate
+pilot tier but **does not** change the fact that the Shop itself is approved.
 
 *Sources: [TikTok Shop affiliate requirements 2026](https://creatorsagency.co/blog/tiktok-shop-affiliate-requirements-2026) · [Commission rates & payouts 2026](https://www.dashboardly.io/post/tiktok-shop-affiliate-commissions-2026-payouts-clawbacks-profit-math)*
 
@@ -348,9 +351,10 @@ TikTok Shop seller rules and commission rates. YouTube Partner Program
 thresholds, including the Shorts track. Amazon Associates commission changes and
 link-placement policy. Instagram / Threads monetization.
 
-**Why:** four separate routes are currently closed to him (TikTok Shop deferred,
-YouTube Partner 18.3/4,000 hours, Amazon Influencer 1/10 sales, and one affiliate
-link total). Every one of those thresholds is a number a platform can change
+**Why:** several money routes are gated (YouTube Partner 18.3/4,000 hours,
+Amazon Influencer 1/10 sales, one affiliate link total) — and **TikTok Shop is
+approved with final setup steps outstanding**, which makes rate changes there
+directly material. Every one of those thresholds is a number a platform can change
 without telling him. A rate change or an eligibility change **is money**.
 
 ### 3. Real-estate marketing AI — *the premise of the Listing Content System*

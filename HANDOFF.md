@@ -421,7 +421,9 @@ PDF to a raw GitHub URL pinned to the feature branch
 - Link pages live and fixed *(secondhand, Aug 6)*.
 - **Not deals, despite prior claims:** Southwest (public comment 07-23, DM never arrived,
   window closed). **TikTok Shop is not cleanly approved** — six "Application Rejected"
-  emails 07-12→08-02, resubmitted 08-10, settlement tier **Deferred**, W-9 not on file,
+  emails 07-12→08-02, resubmitted 08-10 — **SUPERSEDED: Isaac confirmed 2026-08-17
+  that TikTok Shop is APPROVED, with one or two setup steps outstanding. The
+  Deferred / no-W-9 status below is historical, not current.**
   withdrawals blocked, zero products listed. **YouTube Partner Program not approved** —
   18.3 of 4,000 watch hours. **Amazon Influencer blocked** — needs 10 sales/30 days, has 1.
 - `*.vercel.app` is blocked for plain WebFetch here — use the Vercel MCP
