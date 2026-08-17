@@ -777,6 +777,67 @@ live.
 
 ---
 
+## 🔗 ARTURO AND LEGENDS RANCH — a connection no file ever stated plainly
+
+**Surfaced 2026-08-17 by cross-checking two agents' findings.** Three facts that
+were each recorded separately and never joined up:
+
+1. `README.md:25` describes the Legends Ranch project as *"Legends Ranch **(with
+   Arturo, Mom, Bobby)**."*
+2. `legends-ranch/deliverables/README.md:6` says the anthem's second half is
+   *"heritage — **Arturo's quote** and the 83% return-rate stat."*
+3. `LegendsAnthem.tsx:106` renders that quote on screen attributed to
+   **"Arthur J. Gutierrez, Founder"** — and public sources name the founder of
+   Legends Ranch as **Arthur Gutierrez, Sr.**
+
+**Read together: Arturo is connected to Legends Ranch, and appears to be its
+founder.** *Strongly implied, not confirmed — ask Isaac to confirm rather than
+asserting it.*
+
+**Why this matters more than a filing detail:** Isaac asked a session for a
+**high-end hunting gear list for Arturo, who is recovering** — described as
+someone older who may not know current equipment. Every session treated that as
+a personal favour. **If Arturo is the founder of a 2,000-acre trophy hunting
+ranch that is already Isaac's client, it is not a favour. It is client work, for
+the owner of the business he has already delivered two films to.**
+
+That changes what the gear list should be, who it is for, and what it is worth.
+
+---
+
+## ⚠️ THE 83% STAT IS IN A DELIVERED FILM AND ITS SOURCE IS NOT RECORDED
+
+`legends-ranch/deliverables/legends-ranch-anthem.mp4` — a film **already
+delivered to a paying client** — carries two claims on screen:
+
+- **"83% of guests return, season after season"** (`LegendsAnthem.tsx:111-112`)
+- A quote attributed to **Arthur J. Gutierrez, Founder** (`:106`)
+
+**Neither appears on any public source.** A research pass on 2026-08-17 searched
+legendsranch.com, wildlifecentermi.org and independent coverage and found no
+support for either. Both were deliberately left off the fan page for that reason.
+
+**This is probably fine and must still be closed.** The deliverables README calls
+it *"Arturo's quote,"* which points to the material being **supplied by the
+client himself** — the ordinary and legitimate way a founder's quote and an
+internal figure reach a brand film. **That is very different from fabrication.**
+
+**But no file records where either came from.** Under this repo's absolute
+no-fabricated-numbers rule, a delivered client asset carrying an unsourced
+statistic is a loose end that has to be tied off, not assumed.
+
+### Do this before the stat is reused anywhere
+1. **Ask Isaac where the 83% came from** — Arturo directly, a ranch document, or
+   somewhere else. One question, one line, closed forever.
+2. **Write the answer into `legends-ranch/deliverables/README.md`** next to the
+   film, so the provenance travels with the asset.
+3. **Until then, do not put either claim in any new material** — not the fan
+   page, not a pitch, not a case study. The fan page already correctly omits both.
+4. If it turns out nobody can source it, **it comes out of the film** and the
+   client is told plainly why.
+
+---
+
 ## 💰 GMAIL AUDIT 2026-08-17 — money, deadlines and breakage nobody recorded
 
 *Read-only sweep of 60 days of inbox. Every line below is quoted from an actual
