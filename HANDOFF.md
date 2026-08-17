@@ -346,6 +346,32 @@ those things, it skipped step zero.
 
 ---
 
+## ⚙️ HIS MODEL SETTING — Opus 5 at `high`. Recommended 2026-08-17.
+
+He asked which model to run Claude Code on and what thinking level. **Answer:
+`claude-opus-5`, thinking effort `high`.** Do not talk him onto Fable.
+
+**Why, in his terms:**
+
+- **Fable 5 costs roughly double per unit of work** and is not better at what he
+  does here. Opus 5 is the model built for coding and agentic repo work.
+- **His binding constraint is usage limits, not dollars** — he is on Claude Pro
+  at $20/mo, so per-token API pricing is not what he pays. Fable reaches the
+  weekly ceiling roughly twice as fast.
+- **Usage limits already cost him a week.** Per the July 11–14 section: a
+  temporary higher limit expired 2026-07-13 and his ceiling dropped overnight,
+  mid-build. Recommending the model that burns it fastest repeats that.
+- **`high` over `xhigh`:** Claude Code defaults to `xhigh`, which is genuinely
+  better on large multi-file refactors but spends noticeably more for the same
+  result on his actual work (reading the repo, status, queue refills, one-page
+  builds). `high` is the sweet spot; `xhigh` only for a real refactor.
+
+**If he asks for the most powerful thing available, tell him what it costs him
+before switching** — that is the warn-before-not-after rule applied to his
+usage ceiling.
+
+---
+
 ## The other half of the system lives in Notion
 
 This repo holds the **technical** state — code, generated packages, what runs.
