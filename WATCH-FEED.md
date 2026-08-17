@@ -67,3 +67,20 @@ file exists.
 - **Sabrina Ramonov** — [How I Used ChatGPT to Find My Data Broker Listings](https://www.youtube.com/watch?v=hXwfY3mNUZE) · published 2026-08-12
 - **Sabrina Ramonov** — [How I Run My Content Business With Claude and 1 Command](https://www.youtube.com/watch?v=VXc_EX8UcxE) · published 2026-08-11
 
+
+---
+
+## 2026-08-17 19:39 UTC
+
+**What shipped**
+- [AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira](https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug) · 220 points · 2026-08-17
+
+**Who posted**
+- **Alex Hormozi** — ["How Do I Get More $500K Deals?"](https://www.youtube.com/watch?v=YZatOc5xang) · published 2026-08-17
+- **Alex Hormozi** — [Salespeople are paid so well because they’re willing to deal with rejection.](https://www.youtube.com/watch?v=gKt_KwR3hGQ) · published 2026-08-17
+- **Alex Hormozi** — [NO is the job baby!](https://www.youtube.com/watch?v=FJdNOwf5bIg) · published 2026-08-17
+- **Sabrina Ramonov** — [Remove the Hidden ChatGPT Watermark for Free](https://www.youtube.com/watch?v=khu8nUdKkRg) · published 2026-08-17
+- **Dan Martell** — [ChatGPT is such a YES MAN](https://www.youtube.com/watch?v=Mg4hsqdwjcI) · published 2026-08-17
+- **Sabrina Ramonov** — [Unlimited Nano Banana 2 Images Free on Blotato Until September 1](https://www.youtube.com/watch?v=uNy_YuXIZ38) · published 2026-08-17
+- *(+12 more held back to keep this readable.)*
+
