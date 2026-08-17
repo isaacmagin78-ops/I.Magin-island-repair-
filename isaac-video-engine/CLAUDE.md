@@ -37,7 +37,8 @@ something the pipeline genuinely can't produce.
 ## Standing configuration (do not change without reason)
 
 - Default canvas: **1080 × 1920 @ 30fps** (vertical, 9:16) — see
-  `src/presets/social.ts` for the other five supported platform sizes
+  `src/presets/social.ts` for the other **six** supported platform sizes
+  (seven total, as of 2026-08-17)
 - Language: TypeScript
 - Styling: Tailwind is available (`@remotion/tailwind-v4`), plain inline
   styles are also fine and are what every existing component uses
@@ -59,9 +60,14 @@ files in assets"*:
    "Captions without a transcription API" below), a CTA line to
    `assets/cta.txt`, and a closing line to `assets/endcard.txt`.
 2. **Pick brand and preset.** Match `BRAND` to the brand named in the
-   request (`tysons-time`, `tysons-picks`, `imagin-concierge`, or add a new
-   one — see "Adding a new brand" below) and `PRESET` to the platform
-   named, if any (default `tiktok` covers most vertical short requests).
+   request. **The seven registered ids (2026-08-17) are `isaac-video-engine`,
+   `tysons-time`, `tysons-picks`, `legends-ranch`, `wildlife-center`,
+   `imagin-concierge` and `luxury-coastal`** — or add a new one, see "Adding a
+   new brand" below. **An unrecognised id does not throw; it falls back to the
+   default and renders silently off-brand.** `getBrandTheme()` now logs a
+   warning when that happens, so watch the render output.
+   Match `PRESET` to the platform named, if any — `tiktok` is the default and
+   covers most vertical short requests.
 3. **Run it:**
    ```bash
    BRAND=<brand-id> PRESET=<preset-name> OUTPUT=out/<descriptive-name>.mp4 npm run render:short

@@ -74,8 +74,8 @@ another session's summary and has not been re-verified. Re-check before acting.
 > ## 🚨 The 611 "photos" are AI-generated. Do not render or ship them.
 >
 > Found 2026-08-15 by opening them. `isaac-video-engine/public/assets/stills/`
-> holds `611-living.png`, `611-kitchen.png`, `611-sunset.png`, plus
-> `plate-611.png`. **All four are AI-generated and carry a visible Gemini/Veo
+> holds `611-living.png`, `611-kitchen.png` and `611-sunset.png`; `plate-611.png`
+> sits one level up in `public/assets/`. **All four are AI-generated and carry a visible Gemini/Veo
 > sparkle watermark in the bottom-right corner.** They have a real property's
 > address, real bed/bath/sqft, and real marketing copy burned into the frame
 > ("Sea Monarch Unit 611 | 2 Bed • 2 Bath • 1,450 Sq Ft", "Fully Renovated &
@@ -1022,7 +1022,7 @@ the one his audience walks through.
 
 ### Next session: do this before anything else
 
-1. Open Stripe → Payment Links → find `dRmdR90UX8tPgN84dIg7e01`. Check that it is
+1. Open Stripe → Payment Links → find `dRmdR90uX8tPgN84dIg7e01`. Check that it is
    live, what it charges, and **whether it has an after-payment redirect to the
    delivery page**.
 2. If it is broken or duplicative, **point both link-in-bio pages at

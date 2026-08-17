@@ -23,9 +23,13 @@ workspace, not a single application. Each top-level folder is its own
 self-contained project with its own `package.json`, dependencies, and README.
 
 There is **no root `package.json`, no workspace tooling (npm/pnpm/yarn
-workspaces, Turborepo, Nx), and no CI** (`.github/` does not exist). Nothing
+workspaces, Turborepo, Nx)**. Nothing
 builds or tests the repo as a whole. Always `cd` into a project folder before
 running anything.
+
+**As of 2026-08-17 there is one workflow**, `.github/workflows/pages.yml`, which
+publishes `/site` to GitHub Pages. It is not CI — it does not build or test
+anything — and it is currently waiting on Pages being switched on by hand.
 
 The repo name (`I.Magin-island-repair-`) is historical — the handyman
 lead-capture app it refers to was never built here. Ignore it.
@@ -94,7 +98,7 @@ The short version of what that file says:
 
 Current brand ids in `BRAND_THEMES`: `isaac-video-engine` (default),
 `tysons-time`, `tysons-picks`, `legends-ranch`, `wildlife-center`,
-`imagin-concierge`.
+`imagin-concierge`, `luxury-coastal`. **Seven, as of 2026-08-16.**
 Current presets: `tiktok`, `instagram-reels`, `facebook-reels`,
 `youtube-shorts`, `square-post`, `story`, `widescreen`.
 
@@ -109,8 +113,9 @@ not hand-edit them.**
 - `agents/<id>.json` are reusable agent profiles referenced by
   `"agentProfile": "<id>"`; inline `agent` fields on a brief override them.
 - `CONTEXT.md` carries the durable why: Linda S. Hoyt is a **real** agent
-  (Isaac's sister) and the first intended client; `111-pompano-beach-611` is
-  her real listing and the flagship demo.
+  (Isaac's sister) and the first intended client. ⚠️ **`111-pompano-beach-611`
+  is a CLOSED listing — a fine demo of the system, but never pitch it. Her live
+  listing is 1205 SW 4th Street.**
 - Briefs for real properties carry a `provenance` block. Keep it accurate and
   keep it traveling with the package.
 
@@ -311,7 +316,7 @@ correcting figures that were reported without re-checking.
 
 **Stale or missing wiring — check before relying on it**
 
-- **`luxury-coastal` is not a registered brand theme.** Every listing brief and
+- ~~**`luxury-coastal` is not a registered brand theme.**~~ **FIXED 2026-08-16** — registered in `BRAND_THEMES`. The note below is kept only to explain the bug class. Every listing brief and
   `ListingFilm.tsx` reference `brandId: "luxury-coastal"`, and
   `assets/logos/luxury-coastal.png` exists, but there is no such entry in
   `BRAND_THEMES`. `getBrandTheme()` falls back silently to the default
@@ -322,8 +327,7 @@ correcting figures that were reported without re-checking.
   them (with props) before trying to render either.
 - `isaac-video-engine/README.md` and `PROJECT-STATUS.md` say "six" social
   presets and four brand themes; there are now seven presets and six themes.
-- `Listing-Content-System/` has **no `.gitignore`**, so its `out/` directory is
-  *not* ignored despite the README saying so. Don't commit generated packages.
+- ~~`Listing-Content-System/` has **no `.gitignore`**~~ — **FIXED.** It exists and ignores `out/`; the 111 demo package is force-added on purpose.
 - `college-launch-os` declares `"test": "jest"` but has no jest config and no
   test files — `npm test` fails. `madison-moves` declares `"lint": "next lint"`
   with no eslint config or dependency.

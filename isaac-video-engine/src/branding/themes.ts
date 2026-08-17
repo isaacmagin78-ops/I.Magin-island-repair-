@@ -126,7 +126,26 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
 
 export const DEFAULT_BRAND_ID = "isaac-video-engine";
 
-export const getBrandTheme = (id?: string): BrandTheme =>
-  BRAND_THEMES[id ?? DEFAULT_BRAND_ID] ?? BRAND_THEMES[DEFAULT_BRAND_ID];
+/**
+ * Resolving an unknown brand id used to fail *silently*: it returned the default
+ * theme, so a typo or an unregistered brand rendered a whole video off-brand
+ * with no error and nothing to debug. That is exactly what happened with
+ * `luxury-coastal` for weeks. Adding the theme fixed one instance; this fixes
+ * the mechanism. It still falls back rather than throwing — a render half-way
+ * through a batch should not die — but it can no longer do so quietly.
+ */
+export const getBrandTheme = (id?: string): BrandTheme => {
+  const key = id ?? DEFAULT_BRAND_ID;
+  const theme = BRAND_THEMES[key];
+  if (!theme) {
+    // eslint-disable-next-line no-console
+    console.warn(
+      `[branding] Unknown brandId "${key}" — falling back to "${DEFAULT_BRAND_ID}". ` +
+        `This render will be OFF-BRAND. Registered ids: ${Object.keys(BRAND_THEMES).join(", ")}`,
+    );
+    return BRAND_THEMES[DEFAULT_BRAND_ID];
+  }
+  return theme;
+};
 
 export const listBrandThemes = (): BrandTheme[] => Object.values(BRAND_THEMES);

@@ -23,7 +23,7 @@ receipt; the redirect IS the delivery. Then paste the payment-link URL into
 the clearly-marked `PAYMENT_LINK` constant at the bottom of
 `kit-site/site/index.html` (search "CHECKOUT SWAP POINT") and redeploy — or
 paste the link to Claude in one message and it's swapped and redeployed for
-you. Until then, buy buttons route to the honest interim `/buy.html`.
+you. ~~Until then, buy buttons route to the honest interim `/buy.html`.~~ **STALE — corrected 2026-08-17.** `PAYMENT_LINK` in `site/index.html` is a live Stripe URL and the status table at the top of this file is the accurate one.
 
 ## Positioning (use everywhere)
 

@@ -5,7 +5,7 @@ has to reconstruct the channel IDs, the cadence, or the platform rules from
 scratch again.
 
 **Who can run this:** Dispatch, or any surface with the Blotato tools connected.
-Claude Code sessions in the cloud container do **not** have those tools — the
+~~Claude Code sessions in the cloud container do **not** have those tools~~ — **WRONG, corrected 2026-08-17.** A cloud Code session called `blotato_list_schedules` and got live data. **Refill the queue from here; do not route it to another session.** The original claim — the
 queue cannot be refilled from there. Check first; don't assume.
 
 **Before saying anything about the queue, run `blotato_list_schedules`.**
