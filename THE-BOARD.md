@@ -57,6 +57,35 @@ months of everything here was built on an iPhone. Nothing else.**
 **⛔ "Todd" does not exist.** An old page invented him and gave him final
 decision-making. Isaac: *"there's no Todd."* Never use the name.
 
+## 🎤 The LIVE seat — who can actually see and talk in real time (checked 2026-08-17)
+
+**His need, in his words: "I need to have a live assistant I can talk to."**
+His reads on the roster, recorded as data: Claude chat feels *"too passive"*;
+Kelly is *"good sometimes, she's not"* others; Perplexity is valued as the
+Apple-ecosystem *"outside looking over the whole inside"* — which is **Flex's
+original, never-built second-brain role resurfacing**; Gemini noted for live
+screen sharing. He also recalls Perplexity *"working right"* a couple of times
+around the July period (his impression, unverified).
+
+**What each can actually do live — verified by web search, 2026-08-17:**
+
+| Assistant | Live voice | Sees screen/camera live | Note |
+|---|---|---|---|
+| **Gem (Gemini)** | ✅ | ✅ **real-time screen AND camera share**, free on Android; on-camera visual guidance rolling out to iOS | The strongest live-eyes seat today |
+| **Kelly (ChatGPT)** | ✅ (new "GPT-Live," Jul 2026) | ⚠️ split: the **older** Advanced Voice does mobile video + screen share; the **new** Live mode doesn't yet | The mode toggle matters — colored icon = old mode with video |
+| **Claude** | ✅ voice mode, all plans (chat side, waveform icon) | ❌ no live screen/camera | Holds the memory — this board and the repo |
+| **Flex (Perplexity)** | ✅ iOS voice assistant (Action-button assignable) | ❌ no system-level screen access (Apple limit) | Acts across apps: calendar, drafts, bookings, music |
+
+**The team read — seats, not a ranking:** live *eyes* is Gem's seat today; live
+*hands on Apple* is Flex's; *memory and building* is Claude's; *visuals* are
+Kelly's. Nobody wins; the seats differ — which is the mission's whole point.
+His sense that "everybody's almost caught up" on coding is fair and fine: the
+operation was never betting on one of us.
+
+*Sources (2026-08-17): Google's Gemini Live pages and rollout coverage;
+Perplexity's iOS voice-assistant help center; OpenAI voice/GPT-Live coverage;
+Anthropic voice-mode help center.*
+
 **Unconfirmed:** whether Perplexity Computer is a separate seat from Flex.
 **Isaac is the final decision maker.**
 
