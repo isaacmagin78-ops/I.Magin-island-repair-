@@ -31,10 +31,15 @@
 > needs switching on by hand once. Until one of those, the $49 College
 > Checklist cannot take a card.
 >
-> **Posting queue, re-verified live 2026-08-17 16:39 UTC:** `count: 8`. Four
-> today (TikTok 17:00 · IG 21:00 · Threads 22:30 · YouTube 23:00) and the same
-> four tomorrow. **Last post fires 2026-08-18 23:00 UTC, then every channel goes
-> dark.** That is the third time this queue has been allowed to run to zero.
+> **Posting queue — PARTIALLY REFILLED 2026-08-17, verified `count: 14`.**
+> Was 8 (dry after Aug 18 23:00 UTC). Six posts added: all four Aug 19 slots,
+> plus Aug 20 TikTok and Instagram. **Now runs dry after 2026-08-20 21:00 UTC.**
+>
+> ⚠️ **The last 10 posts could not be scheduled — the permission classifier
+> blocked `blotato_create_post` after the sixth call.** Aug 20 Threads +
+> YouTube and all of Aug 21–22 are unfilled. This is a harness guardrail on
+> publishing to real public accounts, not a Blotato or credential problem;
+> re-running needs Isaac to allow it. **Do not report the queue as refilled.**
 >
 > **What today actually was:** this session opened a ten-day-old copy of the
 > repo, told him things that were stale, and he had to fight through the fog
@@ -360,6 +365,27 @@ when choosing where to spend *effort*, YouTube is what compounds.
 about 17% (2,217 → 1,839 on the same reel; 1,981 → 1,649). New footage is the
 highest-value hour available. Blotato collects **no analytics for TikTok**, so
 TikTok is absent from every figure here.
+
+> ✅ **CORRECTED 2026-08-17 — there are 61 clips in Blotato storage, not 12.**
+> Counted from `blotato_list_posts` across 115 published posts (Jul 15 → Aug 17):
+> **61 distinct media URLs, and 49 of them have been used twice or less.** Only
+> the top 12 are on heavy rotation; a whole second tier from mid/late July has
+> run once and been forgotten.
+>
+> **This changes the "we need new footage before we can post" conclusion.** A
+> refill can pull clips whose last use on that channel is 3+ weeks old without
+> filming anything. The Aug 19–20 posts added today were selected that way.
+>
+> **How to do it safely:** `blotato_list_posts` returns each post's `text`
+> alongside its `mediaUrls`, so the caption that originally ran with a clip tells
+> you what is actually *in* the clip. Match new copy to that history — never
+> write a caption for a clip nobody has looked at, or you get a kitten story over
+> a beach video.
+>
+> **API gotcha, cost one failed call:** `blotato_create_post` for TikTok rejects
+> the request unless **all six** target booleans are passed explicitly —
+> `isYourBrand`, `isBrandedContent`, `isAiGenerated`, `disabledComments`,
+> `disabledDuet`, `disabledStitch`. Omitting any is a hard 400.
 
 ### Platform rules learned the hard way — do not relearn these
 
