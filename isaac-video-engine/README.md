@@ -136,12 +136,15 @@ PRESET=instagram-reels npm run render:short
 OUTPUT=out/tyson-picks-episode-4.mp4 BRAND=tysons-picks npm run render:short
 ```
 
-- `BRAND` — one of the ids in `src/branding/themes.ts` (`isaac-video-engine`,
-  `tysons-time`, `tysons-picks`, `imagin-concierge`, or a new one you add).
-  Defaults to `isaac-video-engine`.
-- `PRESET` — one of the names in `src/presets/social.ts` (`tiktok`,
+- `BRAND` — one of the **seven** ids in `src/branding/themes.ts`
+  (`isaac-video-engine`, `tysons-time`, `tysons-picks`, `legends-ranch`,
+  `wildlife-center`, `imagin-concierge`, `luxury-coastal`, or a new one you
+  add). Defaults to `isaac-video-engine`.
+  **An unrecognised id does not throw** — `getBrandTheme()` falls back to the
+  default, so a typo renders silently off-brand. Check the id against this list.
+- `PRESET` — one of the **seven** names in `src/presets/social.ts` (`tiktok`,
   `instagram-reels`, `facebook-reels`, `youtube-shorts`, `square-post`,
-  `story`). Defaults to `tiktok` (1080×1920 @ 30fps).
+  `story`, `widescreen`). Defaults to `tiktok` (1080×1920 @ 30fps).
 - `OUTPUT` — output file path. Defaults to `out/isaac-short.mp4`.
 
 ## Requesting a new video from Claude Code

@@ -4,6 +4,25 @@ Last verified: **2026-07-21** (fresh cloud session: `npm ci` from lockfile, lint
 
 ## Status: ✅ Operational
 
+> ### Current inventory — 2026-08-16
+>
+> The phase log below is a **build record** and states the counts as they were
+> at the time. Current live counts:
+>
+> **7 brand themes** — `isaac-video-engine` (default), `tysons-time`,
+> `tysons-picks`, `legends-ranch`, `wildlife-center`, `imagin-concierge`,
+> **`luxury-coastal`**.
+> **7 social presets** — `tiktok`, `instagram-reels`, `facebook-reels`,
+> `youtube-shorts`, `square-post`, `story`, `widescreen`.
+>
+> **`luxury-coastal` was added 2026-08-16 to close a silent failure.** Four
+> listing briefs and `ListingFilm.tsx` had referenced `brandId:
+> "luxury-coastal"` for weeks, and `assets/logos/luxury-coastal.png` was on
+> disk, but no theme entry existed. `getBrandTheme()` falls back instead of
+> throwing, so every listing render came out in the default dark-blue engine
+> palette **with no error and nothing to debug**. Any listing content produced
+> before this date is off-brand and should be re-rendered.
+
 The Isaac Video Engine is a complete local Remotion video-generation system:
 component library, motion system, audio system, brand theming, social
 presets, and a one-command auto render pipeline. Every phase below was

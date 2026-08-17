@@ -96,6 +96,32 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/imagin-concierge.png",
     watermarkText: "IMagin Concierge",
   },
+  /**
+   * Added 2026-08-16 to close a silent failure. Every listing brief in
+   * `Listing-Content-System/listings/` and `ListingFilm.tsx` already declared
+   * `brandId: "luxury-coastal"`, and `assets/logos/luxury-coastal.png` was
+   * already on disk — but no entry existed here. `getBrandTheme()` falls back to
+   * the default rather than throwing, so listing renders came out in the dark
+   * blue engine palette with no error and nothing to debug.
+   *
+   * This is the one theme that sets a serif face: it fronts real-estate work for
+   * a licensed agent, where the other brands front pet and ranch content.
+   */
+  "luxury-coastal": {
+    id: "luxury-coastal",
+    displayName: "Luxury Coastal",
+    colors: {
+      background: "#06161d",
+      primary: "#d9c3a0",
+      secondary: "#5f9ea0",
+      accent: "#f2e9dc",
+      text: "#ffffff",
+      textMuted: "#bcd3d6",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/logos/luxury-coastal.png",
+    watermarkText: "Luxury Coastal",
+  },
 };
 
 export const DEFAULT_BRAND_ID = "isaac-video-engine";
