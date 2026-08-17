@@ -13,7 +13,10 @@ name: Publish site to Pages
 
 on:
   push:
-    branches: [claude/project-status-update-xbolj2]
+    # Was pinned to claude/project-status-update-xbolj2. Everything lives on
+    # main now, so pinned to a side branch meant this would never fire again —
+    # the same defect the watcher had. Corrected 2026-08-17.
+    branches: [main]
     paths: ['site/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 
