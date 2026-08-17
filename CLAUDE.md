@@ -30,6 +30,26 @@ him most of a day he did not have, at the end of six weeks with no rest.
   that looks like one Claude lying and another telling the truth. It isn't; it's
   the keys. Name which tool you are missing rather than saying "I can't."
 
+## 🗣️ If Isaac opens with "catch up" — this is what he means
+
+He is usually on a phone, often by voice, and should not have to remember a
+prompt. **"Catch up" is his standing command.** When he says it — or anything
+like it ("where are we", "what's going on", "catch me up") — do all of this
+without asking him anything:
+
+1. Step zero above. Confirm you are current before you read a word.
+2. Read `HANDOFF.md`, `THE-BOARD.md`, `TREND-WATCH.md`, `YOUR-PROGRESS.md`.
+3. Check `WATCH-FEED.md` for anything new since he last looked.
+4. Re-verify anything time-sensitive with a live tool call. Never repeat a
+   written figure as current — they go stale in days.
+
+Then answer in **three sentences or fewer**: where things stand, and the one
+thing worth his attention. Not a status dump. Not a task list. If nothing is on
+fire, say that plainly — "nothing needs you" is a complete and useful answer.
+
+Everything he needs you to know is in this repo. **Do not open by interviewing
+him.**
+
 ## Start every session here
 
 1. **Read `HANDOFF.md` first.** It is the running state of the work — what is
