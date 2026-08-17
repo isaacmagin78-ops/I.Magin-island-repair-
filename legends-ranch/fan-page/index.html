@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Legends Ranch — A Fan Page (unofficial)</title>
+<meta name="description" content="An independent fan page for Legends Ranch in Bitely, Michigan, made by Isaac Magin. Not affiliated with or endorsed by Legends Ranch.">
+<meta name="robots" content="index, follow">
+<style>
+  /* ------------------------------------------------------------------
+     Legends Ranch — fan page.
+
+     This file exists to be unmistakably a FAN page. Two rules drive
+     every decision in here:
+
+     1. It must never read as the ranch's own site. So it deliberately
+        shares nothing with their identity — they use a gold-on-forest
+        serif; this is a near-black page in a system sans. The
+        disclaimer is a structural element in the first screen and the
+        last, not fine print.
+     2. Every factual claim about the ranch carries a source link.
+        Anything that could not be sourced was cut, not softened.
+
+     Palette is a closed 2-stop ember→coral ramp on true black — no
+     full-spectrum ramp anywhere. See /DESIGN-DIRECTION.md.
+     ------------------------------------------------------------------ */
+
+  :root {
+    --ground: #000000;
+    --surface: #0d0c0b;
+    --surface-2: #151311;
+    --hairline: #262320;
+    --hairline-soft: #1a1816;
+    --ink: #f5f5f7;
+    --ink-muted: #a09a92;
+    --ink-dim: #6e6862;
+    --ember: #ff6b35;
+    --coral: #ff5787;
+    --measure: 40rem;
+    --pad: clamp(1.25rem, 5vw, 2.5rem);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a { color: var(--ink); text-decoration-color: var(--ink-dim); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ember); }
+
+  .wrap {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding-inline: var(--pad);
+  }
+
+  /* ---------- the disclaimer, first screen ---------- */
+
+  .disclaimer-top {
+    border-bottom: 1px solid var(--hairline);
+    background: var(--surface-2);
+  }
+  .disclaimer-top .wrap {
+    padding-block: 1rem;
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+  .dot {
+    flex: 0 0 auto;
+    width: 0.5rem; height: 0.5rem;
+    margin-top: 0.6rem;
+    border-radius: 50%;
+    background: linear-gradient(140deg, var(--ember), var(--coral));
+  }
+  .disclaimer-top p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .disclaimer-top strong { font-weight: 600; }
+  .disclaimer-top span { color: var(--ink-muted); }
+
+  /* ---------- hero ---------- */
+
+  header.hero {
+    position: relative;
+    padding-block: clamp(3.5rem, 14vw, 7rem) clamp(2.5rem, 9vw, 4.5rem);
+    overflow: hidden;
+  }
+  header.hero::before {
+    content: "";
+    position: absolute;
+    inset: -30% -20% auto -20%;
+    height: 70%;
+    background: radial-gradient(
+      60% 100% at 50% 0%,
+      rgba(255, 107, 53, 0.16) 0%,
+      rgba(255, 87, 135, 0.06) 45%,
+      rgba(0, 0, 0, 0) 78%
+    );
+    pointer-events: none;
+  }
+  header.hero .wrap { position: relative; }
+
+  .eyebrow {
+    margin: 0 0 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ember);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.25rem, 10vw, 3.75rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    font-weight: 640;
+  }
+  h1 .quiet { color: var(--ink-muted); display: block; }
+
+  .rule {
+    height: 2px;
+    width: 4.5rem;
+    margin: 2rem 0 1.75rem;
+    background: linear-gradient(90deg, var(--ember), var(--coral));
+  }
+
+  .standfirst {
+    margin: 0;
+    font-size: clamp(1.0625rem, 4.2vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink-muted);
+    max-width: 32rem;
+  }
+  .standfirst a { color: var(--ink); }
+
+  /* ---------- sections ---------- */
+
+  section { padding-block: clamp(2.75rem, 10vw, 4.5rem); }
+  section + section { border-top: 1px solid var(--hairline-soft); }
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    font-weight: 620;
+  }
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    letter-spacing: -0.018em;
+    font-weight: 600;
+  }
+  p { margin: 0 0 1.15rem; }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--ink-muted); }
+  .small { font-size: 0.9375rem; line-height: 1.6; }
+
+  /* ---------- the films ---------- */
+
+  .film {
+    margin-top: 2rem;
+    border: 1px solid var(--hairline);
+    background: var(--surface);
+  }
+  .film:first-of-type { margin-top: 0; }
+
+  .film-head {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 1.25rem var(--pad) 0;
+  }
+  .film-no {
+    flex: 0 0 auto;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.08em;
+    color: var(--ember);
+    padding-top: 0.2rem;
+  }
+  .film-head h3 { margin-bottom: 0.2rem; }
+
+  .film-meta {
+    margin: 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-dim);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .film-body { padding: 0.9rem var(--pad) 1.25rem; }
+  .film-body p { margin: 0; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-muted); }
+
+  .film video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .film-note {
+    padding: 1rem var(--pad) 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--ink-dim);
+  }
+  .film-note b { color: var(--ink-muted); font-weight: 600; }
+
+  /* ---------- sourced facts ---------- */
+
+  .facts { margin: 0; padding: 0; list-style: none; }
+  .facts li {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--hairline-soft);
+  }
+  .facts li:first-child { border-top: 0; padding-top: 0; }
+  .facts .fact { margin: 0 0 0.4rem; }
+  .facts .src {
+    margin: 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.01em;
+    color: var(--ink-dim);
+  }
+  .facts .src a { color: var(--ink-dim); }
+  .facts .src a:hover { color: var(--ink-muted); }
+
+  .callout {
+    margin-top: 2rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.15rem;
+    border-left: 2px solid var(--ember);
+    background: var(--surface);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- the real thing ---------- */
+
+  .go {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--hairline);
+    background: var(--surface-2);
+    color: var(--ink);
+    font-size: 0.9375rem;
+    font-weight: 560;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+  .go:hover { border-color: var(--ember); }
+  .go .arrow { color: var(--ember); }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    background: var(--surface-2);
+    padding-block: clamp(2.25rem, 8vw, 3.25rem);
+  }
+  footer h2 {
+    font-size: 1.0625rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.85rem;
+  }
+  footer p {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+    max-width: 34rem;
+  }
+  footer .sig {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.8125rem;
+    color: var(--ink-dim);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ DISCLAIMER — first screen, above everything ============ -->
+<div class="disclaimer-top" role="note" aria-label="Disclaimer">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <p>
+      <strong>This is an independent fan page.</strong>
+      <span>It is not affiliated with, authorized by, or endorsed by Legends Ranch.
+      Nothing here speaks for the ranch. The official site is
+      <a href="https://legendsranch.com/">legendsranch.com</a>.</span>
+    </p>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Made by a fan · Not the ranch</p>
+    <h1>
+      I'm a fan of<br>Legends&nbsp;Ranch.
+      <span class="quiet">So I made a page about it.</span>
+    </h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="standfirst">
+      A hunting ranch and a nonprofit wildlife museum in Bitely, Michigan.
+      I made two short films for them in July&nbsp;2026 — those are further down,
+      along with the things I could actually verify about the place, each one
+      with a link to where I found it.
+    </p>
+  </div>
+</header>
+
+<!-- ============ WHY I'M A FAN ============ -->
+<section id="why">
+  <div class="wrap">
+    <h2>Why I'm a fan</h2>
+
+    <p>
+      I make films. I made two for Legends Ranch in July 2026, and cutting them
+      is how I got close enough to the place to have an opinion about it.
+    </p>
+
+    <p>Three things stuck.</p>
+
+    <p>
+      <b>The Purple Heart Hunt has run since 2003.</b> Not a campaign, not a
+      season — the same thing every year for combat-wounded veterans, sponsored,
+      by invitation. Anybody can do a thing once. Twenty-plus years is a
+      different kind of claim.
+    </p>
+
+    <p>
+      <b>The school tours are free.</b> The Wildlife Center on the property is a
+      separate 501(c)(3), and Michigan kids walk fifteen conservation stations
+      through 24,000 square feet of it at no cost. Free is easy to say and
+      expensive to run.
+    </p>
+
+    <p>
+      <b>The founder didn't start hunting until his fifties.</b> Then he spent
+      decades at it and ended up with the largest private collection on the
+      continent. I have a lot of time for a late start.
+    </p>
+
+    <p class="muted">
+      None of that is my language — it is on their own pages and in the local
+      press, and I checked each piece before writing it down. What I couldn't
+      check, I left out. There's a list of what I cut at the bottom.
+    </p>
+  </div>
+</section>
+
+<!-- ============ THE FILMS ============ -->
+<section id="films">
+  <div class="wrap">
+    <h2>Two films I made for them</h2>
+    <p class="muted small">
+      These are mine — I produced and delivered them. They are not the ranch's
+      official videos and were not commissioned as such. Posted here because a
+      fan page and a portfolio turn out to be the same page.
+    </p>
+
+    <article class="film">
+      <div class="film-head">
+        <span class="film-no">01</span>
+        <div>
+          <h3>Legends Ranch — brand anthem</h3>
+          <p class="film-meta">1:04 · 1920×1080 · delivered 31 Jul 2026</p>
+        </div>
+      </div>
+      <div class="film-body">
+        <p>
+          The ranch first — habitat, newborn fawns in the pens, the lodge, the
+          shooting center, the Purple Heart Hunt — then the heritage half, and a
+          close on the ranch's own name.
+        </p>
+      </div>
+      <video controls preload="metadata" playsinline
+             src="../deliverables/legends-ranch-anthem.mp4">
+        Your browser can't play this file. It is at
+        <code>legends-ranch/deliverables/legends-ranch-anthem.mp4</code>.
+      </video>
+      <p class="film-note">
+        <b>How it was made.</b> Cut in a Remotion video engine I built, from real
+        ranch photos and video plus licensed motion for the scenes there was no
+        footage for. The narration is a scratch text-to-speech pass — a human
+        read is the obvious upgrade.
+      </p>
+    </article>
+
+    <article class="film">
+      <div class="film-head">
+        <span class="film-no">02</span>
+        <div>
+          <h3>The Wildlife Center — legacy film</h3>
+          <p class="film-meta">0:52 · 1920×1080 · delivered 31 Jul 2026</p>
+        </div>
+      </div>
+      <div class="film-body">
+        <p>
+          The nonprofit side: the collection, the founder, the free field trips,
+          the veterans' and youth hunts, closing on the Center's own site.
+        </p>
+      </div>
+      <video controls preload="metadata" playsinline
+             src="../deliverables/wildlife-center-film.mp4">
+        Your browser can't play this file. It is at
+        <code>legends-ranch/deliverables/wildlife-center-film.mp4</code>.
+      </video>
+      <p class="film-note">
+        <b>How it was made.</b> Same engine, same rules. Every figure on screen
+        was checked against the Center's public pages and its IRS filing before
+        it went in. The museum interiors are stat cards standing in for footage
+        that doesn't exist yet.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ SOURCED FACTS ============ -->
+<section id="facts">
+  <div class="wrap">
+    <h2>What's actually true about the place</h2>
+    <p class="muted small">
+      Every line below links to where I found it. If it isn't sourced, it isn't
+      on this page.
+    </p>
+
+    <ul class="facts">
+      <li>
+        <p class="fact">
+          Legends Ranch is in <b>Bitely, Michigan</b> — Newaygo County, along the
+          Manistee National Forest. It was <b>established in 1998</b>.
+        </p>
+        <p class="src">Source: <a href="https://legendsranch.com/about/">legendsranch.com/about</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          The property runs to roughly <b>2,000 acres</b> of managed habitat —
+          pastures, hardwoods, food plots and ponds.
+        </p>
+        <p class="src">Source: <a href="https://legendsranch.com/about/">legendsranch.com/about</a> · <a href="https://www.wildlifecentermi.org/">wildlifecentermi.org</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          It is a <b>trophy whitetail operation</b>, and also runs turkey and
+          pheasant hunts. The <b>Presidential Whitetail</b> is the flagship, and
+          each hunter is paired with a personal guide.
+        </p>
+        <p class="src">Source: <a href="https://legendsranch.com/">legendsranch.com</a> · <a href="https://legendsranch.com/hunts/presidential/">legendsranch.com/hunts/presidential</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          The <b>lodge</b> is around 6,000 sq ft with <b>eight private suites</b>,
+          an open dining hall and fireplace over a private lake, and a chef on
+          site. Pontoons, kayaks, hiking and a supervised shooting range come
+          with it.
+        </p>
+        <p class="src">Source: <a href="https://www.legendsranch.com/lodge-michigan-deer-hunting-lodges-trophy-whitetail.html">legendsranch.com — the lodge</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          The <b>Purple Heart Hunt</b> for combat-wounded veterans has run
+          <b>since 2003</b>. It is sponsored, by invitation, and ends in a
+          dedicated ceremony. There is also a <b>Youth Challenge Hunt</b> for
+          youth with disabilities.
+        </p>
+        <p class="src">Source: <a href="https://legendsranch.com/the-hunts/">legendsranch.com/the-hunts</a> · <a href="https://www.theheraldreview.com/news/article/Purple-Heart-Hunt-honors-seven-veterans-17438510.php">Herald Review</a> · <a href="https://safariclubfoundation.org/legends-ranch-a-great-place-to-healing-and-great-hunting/">SCI Foundation</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          <b>The Wildlife Center</b> on the property is a separate
+          <b>501(c)(3) nonprofit, established 2018</b>. It is a <b>24,000 sq ft</b>
+          facility holding <b>more than 3,000</b> taxidermy animals — described as
+          the largest private collection on the continent.
+        </p>
+        <p class="src">Source: <a href="https://www.wildlifecentermi.org/">wildlifecentermi.org</a> · <a href="https://legendsranch.com/wildlife-center/">legendsranch.com/wildlife-center</a> · <a href="https://enjoyer.com/the-continents-largest-taxidermy-collection-is-hidden-away-in-west-michigan/">Michigan Enjoyer</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          The Center's <b>school tours are free and sponsored</b> — an hour inside
+          the museum across <b>15 conservation curriculum stations</b>, plus a
+          1.1-mile nature trail outside.
+        </p>
+        <p class="src">Source: <a href="https://www.wildlifecentermi.org/our-programs/">wildlifecentermi.org/our-programs</a> · <a href="https://upnorthlive.com/news/local/legends-ranch-wildlife-center-educates-on-ethical-hunting-and-conservation"> UpNorthLive</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          It was founded by <b>Arthur Gutierrez, Sr.</b>, an adult-onset hunter
+          who didn't start until his fifties and spent the decades after that
+          building the collection.
+        </p>
+        <p class="src">Source: <a href="https://www.wildlifecentermi.org/about/">wildlifecentermi.org/about</a> · <a href="https://enjoyer.com/the-continents-largest-taxidermy-collection-is-hidden-away-in-west-michigan/">Michigan Enjoyer</a></p>
+      </li>
+
+      <li>
+        <p class="fact">
+          There is a <b>taxidermy studio on site</b> — The Studio at Legends
+          Ranch — so trophies don't have to leave the property.
+        </p>
+        <p class="src">Source: <a href="https://legendsranch.com/studio/">legendsranch.com/studio</a> · <a href="https://thestudioatlegendsranch.com/">thestudioatlegendsranch.com</a></p>
+      </li>
+    </ul>
+
+    <div class="callout">
+      <b>What I left off, on purpose.</b> No prices, no package details, no hunt
+      success rates, no trophy scores, no visitor or student counts, no reviews
+      and no quotes from anyone at the ranch. I either couldn't source them or
+      found the sources disagreeing with each other, and a fan page is not a
+      good enough reason to guess about somebody's real business. I also left
+      their phone number off — if you want to reach them, reach them through
+      their own site, where it's current.
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE REAL THING ============ -->
+<section id="visit">
+  <div class="wrap">
+    <h2>Go to the actual ranch</h2>
+    <p class="muted">
+      This page is a fan's page. Everything real — hunts, dates, availability,
+      prices, the people — lives with them.
+    </p>
+    <p>
+      <a class="go" href="https://legendsranch.com/">legendsranch.com <span class="arrow" aria-hidden="true">→</span></a>
+    </p>
+    <p class="small muted" style="margin-top:1.25rem">
+      The Wildlife Center, the 501(c)(3), keeps its own site at
+      <a href="https://www.wildlifecentermi.org/">wildlifecentermi.org</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER — DISCLAIMER AGAIN, IN FULL ============ -->
+<footer id="disclaimer">
+  <div class="wrap">
+    <h2>The disclaimer, again, in full</h2>
+    <p>
+      This is an <b>independent fan page</b> made by Isaac Magin. It is
+      <b>not affiliated with, authorized by, sponsored by, or endorsed by</b>
+      Legends Ranch, The Wildlife Center at Legends Ranch, or anyone who works
+      for either. It does not speak for them and is not their website.
+    </p>
+    <p>
+      Legends Ranch and The Wildlife Center own their own names, marks and
+      material. Nothing of theirs was copied here — the two films are my own
+      work, and every factual statement links out to a public source.
+    </p>
+    <p>
+      If anyone at Legends Ranch or the Wildlife Center wants a line changed or
+      this page taken down, that happens the same day, no discussion needed.
+    </p>
+    <p class="sig">
+      Films and page by Isaac Magin. Facts checked 17 August 2026 against the
+      public sources linked above. Sources go stale — if something here has
+      changed, believe legendsranch.com, not this page.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
