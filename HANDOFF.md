@@ -523,6 +523,39 @@ usage ceiling.
 
 ---
 
+## 🟢 PIPELINE — three potential people, raised 2026-08-17
+
+**His words:** *"There are three people that could be clients and sales and
+builders… people that I can see potential on all sorts of ways."* Possibly
+connected to the 2026-08-16 afternoon out — plausible, not confirmed; ask
+rather than assume.
+
+**#1 — shown: Kirill / "Shi Heng De."** Public creator persona: viral delivery
+driver (*"20 seconds the internet laughed at"* — a pizza-delivery clip) turned
+independent owner-operator trucker, with a 35th-generation Shaolin discipline
+angle and channels on YouTube/TikTok/IG/Facebook. Isaac showed a full brand
+one-pager for him — *"You saw 20 seconds of my life. Now let me tell you the
+rest."* Who produced the one-pager was not stated (Kelly's lane is visuals —
+ask, don't assume).
+
+**Why the fit is real, in machine terms:** a creator with an existing viral
+moment, a strong story, and "new videos every week" ambitions is the ideal
+input for what is already built here — the video engine's short pipeline, the
+caption/package generator, brand themes, the posting queue. It is the
+Legends-Ranch/Linda pattern pointed at a creator instead of a ranch or a
+listing.
+
+**Guardrails, standing rules applied, said once:**
+- **Real person:** nothing publishes under Kirill's name or brand without his
+  engagement — same hard rule as Linda.
+- **The one-pager's photos appear AI-generated.** Fine as a private concept to
+  show him; not something that ships as-is. Same class as the 611 rule.
+
+**#2 and #3 — NOT YET NAMED.** He was asked who they are and which role he sees
+for each (client / sales / builder). Write the answers here.
+
+---
+
 ## The other half of the system lives in Notion
 
 This repo holds the **technical** state — code, generated packages, what runs.
