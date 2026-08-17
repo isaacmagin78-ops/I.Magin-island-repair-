@@ -545,19 +545,59 @@ what he remembers is **Claude Code installed on the MacBook**. Setting that up i
 a genuine next project with a real payoff — the July record shows three complete
 projects built in one day that way.
 
-**Do it deliberately, and only when he is sitting down with time:**
+### ✅ VERIFIED ROUTE — read from Anthropic's own docs, 2026-08-17
 
-- **Name the July risk out loud first.** That same setup reorganized his MacBook
-  without checking in, because Auto Mode had shipped days earlier without
-  requiring opt-in and nobody warned him. He is owed that context before he
-  installs anything, not after.
-- **Permissions are his to choose.** Walk the modes; default to the one that asks
-  before acting. A permission prompt gets "Later" by default (`CLAUDE.md`).
-- **Teach it from zero.** He does not know where Terminal is — keystrokes first,
-  one step at a time, and say what each does. See the teaching note above.
-- **The payoff to aim at:** on-Mac sessions can finally reach the things every
-  cloud session has been blocked on — the Desktop/Drive privacy cleanup, the
-  punchlist `.tsx` on his phone, and the mystery app in `/Applications`.
+**A session told him he would need Terminal. That was wrong — corrected here.**
+He pushed back with *"you used to go straight to everything… you used to go deep
+research mode,"* and he was right: the first answer came off a third-party blog.
+These four findings come from `code.claude.com/docs` directly. **Every one of
+them is on Max, which he has.**
+
+| What | Does it solve the "take over my computer" ask? | Requires |
+|---|---|---|
+| **Desktop app** (`/docs/en/desktop-quickstart`) | ✅ Claude Code with a real window — sidebar, file editor, diff view, **"No terminal required."** Download the macOS `.dmg`, sign in, click the **Code** tab, **Select folder**. | Pro/Max. Nothing typed. |
+| **Remote Control** (`/docs/en/remote-control`) | ✅ **This is the piece he has been asking for by name.** `claude remote-control` on the Mac, then drive that same session **from his iPhone or iPad** — claude.ai/code or the Claude iOS app. Press spacebar for a QR code to connect the phone. | All plans. Runs on the Mac; phone is a window into it. |
+| **Computer use** (`/docs/en/computer-use`) | ✅ Opens apps, clicks, types, **sees the screen** — macOS only, research preview. | **Pro or Max only.** Needs Accessibility + Screen Recording. |
+| **Claude in Chrome** (`/docs/en/chrome`) | ❌ Not this. Acts *inside the browser* only — pages, tabs, forms. Desktop Chromium only; **does not exist on iPhone/iPad.** | Also needs Claude Code already installed to drive it from the CLI. |
+
+**The direct answer to his two questions:** the **one-time install has to happen
+on the MacBook** — it is Mac software and there is no phone install path. After
+that, Remote Control means **the phone and both iPads drive it**, which is what he
+actually wanted. And no, the Chrome extension is not the route: it reaches web
+pages, not his files, and not from iOS at all.
+
+**Order of operations, safest first:**
+
+1. **Desktop app, Code tab, Manual permission mode, one folder.** Files only, no
+   screen control, nothing typed into a terminal. This alone would unblock the
+   Desktop/Drive cleanup and the punchlist `.tsx`.
+2. **Remote Control**, once step 1 feels normal — that is when the phone becomes
+   the remote for his own Mac.
+3. **Computer use last, and only if a task actually fails without it.**
+
+### ⚠️ The July mechanism, now identified
+
+**Computer use is almost certainly what happened in July** — it is the only
+feature that opens apps and moves files on his Mac, and it explains the app that
+appeared in `/Applications` that he did not put there. Two things changed since:
+
+- **Approval is now per-app, per-session**, and the docs flag the dangerous ones
+  in the prompt itself: **Finder → "Can read or write any file."** Terminal/IDEs →
+  **"Equivalent to shell access."** System Settings → "Can change system settings."
+- **`Esc` from anywhere aborts it**, and the keypress is consumed so injected
+  page content cannot dismiss it.
+
+**Permission mode is the whole ballgame.** The docs describe **Auto** as *"a
+classifier reviews actions in the background and blocks the risky ones instead of
+asking you"* — that is the mode that reorganized his Mac without checking in.
+**Manual** — *"Claude asks before editing files or running commands"* — is the
+one he should start in, and he should be told why in those words.
+
+**Standing rules that still apply:** name the July risk out loud *before* he
+installs anything, not after. A permission prompt gets "Later" by default
+(`CLAUDE.md`) — Accessibility and Screen Recording get granted only when a task
+he is actually trying to do fails without them. And teach it from zero: the
+Desktop app removes the Terminal problem entirely, so start there.
 
 ---
 
