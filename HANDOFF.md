@@ -637,6 +637,39 @@ links, because links scroll away and he cannot find them again.
 
 ---
 
+## 🎬 Legends Ranch FAN PAGE — built 2026-08-17, local file only
+
+His words: *"Why don't you just start a Legends Ranch fan page and we'll make it
+look like we're fans… I am a fan."* Built at
+**`legends-ranch/fan-page/index.html`** — one self-contained page, mobile-first,
+verified in headless Chromium at 320 / 390 / 834px with no horizontal overflow.
+It doubles as his portfolio: both delivered films are embedded from
+`../deliverables/`, credited honestly as *films I made for them*.
+
+**It is not deployed.** `.github/workflows/pages.yml` publishes `/site`, not this
+folder, so nothing is live until someone makes it live. The `<video>` paths are
+relative — the MP4s must travel with the file if it ever moves.
+
+**`legends-ranch/fan-page/README.md` carries the rules and they are load-bearing:**
+disclaimer in the first screen *and* the footer, never their branding, never
+their voice, never an unsourced fact. Every claim on the page links to its
+source. Read it before editing the page.
+
+**Left off on purpose, because nothing public supports them:** the **83% return
+rate** and the **Arthur Gutierrez quote** — both are on screen in
+`LegendsAnthem.tsx` and neither could be found on any public source. Also cut:
+prices, trophy scores, veteran/student counts (sources disagreed), reviews, and
+their phone number. Do not add any of them back without a real source.
+
+**Research constraint, unchanged:** `legendsranch.com`, `wildlifecentermi.org`
+and `michigan.org` are all **egress-blocked** here — `WebFetch` returns
+`EGRESS_BLOCKED`. Facts came from WebSearch on 2026-08-17, cross-checked across
+independent results. `ffprobe` is also absent (the bundled Playwright ffmpeg has
+no H.264 decoder); film durations were verified by parsing the MP4 containers
+directly — anthem 64.06s, wildlife 52.05s, both 1920×1080.
+
+---
+
 ## 2026-08-15, late — what this day actually taught, read this before anything
 
 **The single most important finding, in his own words:** *"All the TikTok momentum
@@ -810,6 +843,59 @@ larger number and no file has ever named it.**
   "Imagin bespoke concuerg" · "IMagIn consulting" · `isaacmagin78-4065`.
 - **`CLAUDE.md` says "no CI, `.github/` does not exist." That is now false** —
   `.github/workflows/pages.yml` was added today.
+
+---
+
+## 🛒 THE TYSON PRODUCT LIST — FOUND. Stop rebuilding it. (2026-08-17)
+
+**He said "Gemini, Claude or ChatGPT already has a detailed list." He was right, and
+it took three sessions of rebuilding before anyone looked outside the repo.**
+
+**It is not in this repo.** It is in Drive and Notion:
+
+| Where | What |
+|---|---|
+| Drive · [`Tysons_Picks_Revenue_System`](https://docs.google.com/document/d/1sXyNJ-UaZeNBuGP5VY0udr_Q332xHLOLsN-C54TtVsc/edit) | **Section 9 = "PRODUCTS TYSON ACTUALLY USES."** The drawer rule, already written 2026-07-13. Also holds Associates ID `tysonspicks-20`, disclosure wording, category rules |
+| Drive · [`Tyson's Time — Amazon Storefront Build Kit`](https://docs.google.com/document/d/1Fys2WebqW_JTlEwGPKexr3Imko9S3F_s72_tK8MOP64/edit) | 6 named collections + the "mid-to-premium, never cheapest" selection rule |
+| Notion · [`Tyson's Brand`](https://app.notion.com/p/3a308c7e2ece81c2b6c7cd66d84c8f2a) | Verified shortlist: Nerf Dog soccer ball, Miami Dolphins jersey, bed, ID tag |
+
+**Two decoys — do not mistake these for the list.** `app/gear/page.tsx` in git history
+(commit `41713de`, branch `claude/tyson-gear-page-d15ud7`) is three invented placeholders
+pointing at `amazon.com/dp/EXAMPLE`. `Tyson_Picks_App_Prototype_v2` in Drive is a UI
+mockup with a fabricated "Chewy 20% OFF" tile.
+
+**Two open questions closed by looking at a photo already in this repo** —
+`kit-site/product/cover-tyson.jpg` and `tyson-and-miss.jpg`:
+- **The Miami Dolphins collar is real.** The Drive doc says *"No evidence it exists."*
+  It's on Tyson's neck in `cover-tyson.jpg`, webbing reading "Dolphins". Update that doc.
+- **The bed is Beautyrest** — brand legible in `tyson-and-miss.jpg`, which also shows the
+  ZippyPaws-style football plush, a plush duck, and an elevated bowl stand.
+
+**The full write-up, with the ready-to-paste listing and an iPad checklist, is
+`shop-tyson/TIKTOK-SHOP-LISTING.md`.** Do not summarise it back to him; point at it.
+
+### ⛔ The listing is gated on brand authorization — this is new and it matters
+
+TikTok Shop requires **brand authorization** to list any trademarked product, and marking
+a branded item "No Brand" is explicitly prohibited. CRAVE is Mars Petcare. Two routes:
+a Letter of Authorization from Mars (unobtainable for pallet stock), or **proof of
+purchase** — the pallet-store receipt — which TikTok accepts *only for brands in their
+drop-down and only for sellers TikTok selects.* **Until that check is run in Seller
+Center → Qualification Center, nobody knows whether CRAVE is listable at all.**
+
+And the fallbacks are already closed: the **$19 Kit cannot be listed** — digital goods
+need the invite-only Virtual Goods category (gift cards / game codes / software licences
+only, auto-delivery via API, ebooks and courses excluded). Tyson's own gear is one of each,
+not stock. **If CRAVE is blocked, he has no listable product today** — say that plainly
+rather than writing more copy.
+
+### Also confirmed today
+- **Amazon order confirmations are not in this Gmail account.** Searched every phrasing;
+  zero results. Product ownership cannot be verified from the inbox — only from his eyes
+  on the bag.
+- **The drawer photos are in Drive** in [`Ike's Ipad Pro`](https://drive.google.com/drive/folders/1cr6vkOoEL1hDpx_w5A-CwoITNcUDXZNH),
+  all named `IMG_####`. Unlabelled means unfindable — renaming three files fixes it forever.
+- The Notion page **`Tyson's new toy`** (2026-08-15) is **empty** — the attachment never saved.
 
 ---
 
