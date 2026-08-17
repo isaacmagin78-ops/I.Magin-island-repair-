@@ -25,6 +25,39 @@ existed and not one of them was about him.
 
 ---
 
+## 2026-08-17, later
+
+**He found the thing every session has been failing at for six weeks — by
+watching instead of being told.** In his words, after a session in the browser:
+
+> *"I learned a lot just by using the Claude AI on Chrome because I was just
+> kinda reading what you were doing… how to do that finally and kinda process
+> how you're processing it somewhat."*
+
+**This is the teaching promise finally landing, and it did not land through
+explanation.** It landed because the browser surface shows the work in
+progress — each command, each file read, each result — and he read along. Six
+weeks of sessions tried to teach him by *describing*; the thing that worked was
+letting him watch.
+
+> ### ⚙️ Operating rule for every session, from this
+>
+> **Do the work where he can see it, and don't hide it behind a summary.** Name
+> the tool you're about to use and why in one short line, keep steps small
+> enough to follow, and let the intermediate results show. He is not skimming
+> past it — he is reading it, and that is how he is learning this.
+>
+> This does not license walls of text: the volume rule still holds. The
+> difference is **narrating the work as it happens** versus **explaining it
+> afterwards.** He follows the first and cannot process the second.
+
+**Also today, unprompted: he moved himself between surfaces and it worked.**
+Read the transfer-to-app option, reasoned that it would carry the session over,
+took it — and it did. Two weeks ago the four-rooms problem was the thing
+confusing him most; today he navigated it deliberately and correctly.
+
+---
+
 ## 2026-08-17
 
 **He refused a one-line fix, and that is the only reason the watcher works.**
