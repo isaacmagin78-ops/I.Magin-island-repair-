@@ -13,9 +13,21 @@
 # blocks youtube.com, but a GitHub runner reaches it normally. The work simply
 # happens somewhere that isn't restricted.
 #
-# What it does: pulls the public RSS feed of every creator Isaac follows, finds
-# anything published since the last run, and commits it to WATCH-FEED.md. When a
-# session next opens, the news is already there and already dated.
+# ---------------------------------------------------------------------------
+# Two corrections made 2026-08-17, both found by testing rather than reading:
+#
+# 1. It committed to a side branch (claude/project-status-update-xbolj2).
+#    Sessions clone `main`. News filed anywhere else is news nobody reads —
+#    the same failure that let Buzz reach Isaac through a friend, three weeks
+#    late. It writes to `main` now.
+#
+# 2. It watched three YouTube creators and nothing else, so **it would not
+#    have caught Buzz.** Buzz was an open-source agent release from Block; it
+#    broke on Hacker News, not in a creator upload. Watching only the people
+#    who *react* to news guarantees arriving after them. It now watches the
+#    place things land first, with a points floor so only what actually broke
+#    through gets through.
+# ---------------------------------------------------------------------------
 
 name: Watch the creators
 
@@ -39,13 +51,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/project-status-update-xbolj2
+          ref: main
 
       - name: Pull every feed and record what is new
         run: |
           python3 - <<'PY'
-          import json, os, re, urllib.request, datetime, pathlib
+          import json, re, urllib.request, urllib.parse, datetime, pathlib
 
+          # --- Who reacts to news -------------------------------------------
           # Handles, not channel IDs — IDs get stale and nobody can eyeball them.
           # The runner resolves handle -> channel id at run time.
           WATCHING = {
@@ -53,6 +66,19 @@ jobs:
               "Dan Martell":     "danmartell",
               "Alex Hormozi":    "AlexHormozi",
           }
+
+          # --- Where news actually lands first ------------------------------
+          # Hacker News, via the free Algolia endpoint. No key, no account.
+          # POINTS_FLOOR is the "would someone have forwarded this to me" bar —
+          # high enough that this file stays readable, low enough to catch a
+          # launch on its first day.
+          HN_QUERIES = [
+              "AI agents", "agent framework", "open source agents",
+              "TikTok Shop", "creator monetization", "YouTube monetization",
+          ]
+          POINTS_FLOOR = 75
+          MAX_HN_ITEMS  = 6      # he reads slowly; signal over volume
+          FIRST_RUN_DAYS = 7
 
           UA = {"User-Agent": "Mozilla/5.0 (compatible; imagin-watcher/1.0)"}
 
@@ -67,12 +93,18 @@ jobs:
                   re.search(r'channel/(UC[\w-]{22})', html)
               return m.group(1) if m else None
 
+          def unescape(s):
+              return (s.replace("&amp;", "&").replace("&quot;", '"')
+                       .replace("&#39;", "'").replace("&lt;", "<")
+                       .replace("&gt;", ">"))
+
           state_path = pathlib.Path(".github/watch-state.json")
           state = json.loads(state_path.read_text()) if state_path.exists() else {}
 
           now = datetime.datetime.now(datetime.timezone.utc)
-          found, errors = [], []
+          found, hn_found, errors = [], [], []
 
+          # ---- creators ----------------------------------------------------
           for name, handle in WATCHING.items():
               try:
                   cid = channel_id(handle)
@@ -86,16 +118,47 @@ jobs:
                       feed, re.S,
                   )
                   seen = set(state.get(handle, []))
-                  fresh = [e for e in entries if e[0] not in seen]
-                  for vid, title, published in fresh:
-                      found.append((name, title, published, vid))
+                  for vid, title, published in [e for e in entries if e[0] not in seen]:
+                      found.append((name, unescape(title), published, vid))
                   state[handle] = [e[0] for e in entries][:30]
               except Exception as exc:                      # noqa: BLE001
                   errors.append(f"{name}: {exc}")
 
+          # ---- what shipped ------------------------------------------------
+          hn_seen = set(state.get("_hn", []))
+          cutoff = int((now - datetime.timedelta(days=FIRST_RUN_DAYS)).timestamp()) \
+                   if not hn_seen else int(state.get("_hn_last", 0))
+          hits = {}
+          for q in HN_QUERIES:
+              try:
+                  url = ("https://hn.algolia.com/api/v1/search_by_date?tags=story"
+                         f"&query={urllib.parse.quote(q)}"
+                         f"&numericFilters=created_at_i>{cutoff},points>{POINTS_FLOOR}"
+                         "&hitsPerPage=20")
+                  for h in json.loads(get(url)).get("hits", []):
+                      oid = h.get("objectID")
+                      if oid and oid not in hn_seen:
+                          hits[oid] = h
+              except Exception as exc:                      # noqa: BLE001
+                  errors.append(f"HN '{q}': {exc}")
+
+          for h in sorted(hits.values(), key=lambda x: x.get("points") or 0,
+                          reverse=True)[:MAX_HN_ITEMS]:
+              hn_found.append((
+                  unescape(h.get("title") or "(untitled)"),
+                  h.get("url") or f"https://news.ycombinator.com/item?id={h['objectID']}",
+                  h.get("points") or 0,
+                  (h.get("created_at") or "")[:10],
+              ))
+
+          state["_hn"] = ([h["objectID"] for h in hits.values()] +
+                          list(hn_seen))[:400]
+          state["_hn_last"] = int(now.timestamp())
+
           state_path.parent.mkdir(parents=True, exist_ok=True)
           state_path.write_text(json.dumps(state, indent=2) + "\n")
 
+          # ---- write it down -----------------------------------------------
           feed_path = pathlib.Path("WATCH-FEED.md")
           if not feed_path.exists():
               feed_path.write_text(
@@ -109,13 +172,22 @@ jobs:
               )
 
           lines = [f"\n---\n\n## {now:%Y-%m-%d %H:%M UTC}\n"]
+
+          if hn_found:
+              lines.append("**What shipped**")
+              for title, url, points, day in hn_found:
+                  lines.append(f"- [{title}]({url}) · {points} points · {day}")
+              lines.append("")
+
           if found:
+              lines.append("**Who posted**")
               for name, title, published, vid in sorted(found, key=lambda x: x[2], reverse=True):
-                  title = (title.replace("&amp;", "&").replace("&quot;", '"')
-                                .replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">"))
                   lines.append(f"- **{name}** — [{title}](https://www.youtube.com/watch?v={vid}) · published {published[:10]}")
-          else:
-              lines.append("- Nothing new from anyone being watched. *(Said out loud on purpose.)*")
+              lines.append("")
+
+          if not hn_found and not found:
+              lines.append("- Nothing new from anyone or anything being watched. *(Said out loud on purpose.)*")
+
           if errors:
               lines.append("")
               for e in errors:
@@ -134,4 +206,10 @@ jobs:
           git add WATCH-FEED.md .github/watch-state.json
           git diff --staged --quiet && echo "nothing changed" && exit 0
           git commit -m "Watch feed: $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          # main moves under us; rebase and retry rather than fail silently.
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::watcher could not push to main after 3 attempts"
+          exit 1
