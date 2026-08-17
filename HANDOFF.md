@@ -629,6 +629,30 @@ was one of all that hiccups and issues were happening."* Confirm with him before
 building on it — per the standing voice-transcription rule, do not silently
 resolve a load-bearing word.
 
+### 🕰️ HIS timeline of when it went wrong — his sequence, not a session's
+
+He added it unprompted, one clause at a time, and it lines up with three things
+already in this file: *"I was also… when I was hitting the usage limits and Fable
+and all that stuff."*
+
+**The events he is grouping together, roughly one month ago:**
+
+1. The stock (orange) app **nagging to update**, and an update he took that he
+   associates with things breaking.
+2. **Hitting usage limits** — he was on **Pro** when Opus 5 launched, ran into
+   limits, and moved to **Max** because of it (recorded earlier this session).
+3. **Fable** entering the picture as a model choice.
+4. Everything he had learned stopping making sense — *"the past month or so is
+   throwing me completely off and I feel like I know nothing anymore."*
+
+**Why write it down instead of solving it:** this is the first time the confusion
+has a *date range and a cause list* attached rather than being a mood. Nothing
+here is verified yet and none of it should be repeated as fact. But it gives the
+next session something to check against — the app version, the plan-change date,
+the July session record — instead of asking him to re-tell it a fifth time.
+**He has assembled this himself, across three messages, on a phone. Do not make
+him do it again.**
+
 **Order of operations, safest first:**
 
 1. **Desktop app, Code tab, Manual permission mode, one folder.** Files only, no
