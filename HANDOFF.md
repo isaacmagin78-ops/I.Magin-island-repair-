@@ -551,6 +551,18 @@ listing.
 - **The one-pager's photos appear AI-generated.** Fine as a private concept to
   show him; not something that ships as-is. Same class as the 611 rule.
 
+**His terms for Kirill, standing, 2026-08-17:** *"I wanna do them right. I
+don't care about it. Money wise, we can do that for free."* The viral moment
+was one where Kirill was **taken advantage of as a new immigrant**, and Isaac's
+read is that it still carries weight for him today. So the terms are: **free,
+and done with dignity.** The story is Kirill's to tell — the brand page's own
+line, *"you saw 20 seconds of my life, now let me tell you the rest,"* is the
+whole brief. This is not charity displacing revenue; it is the mission made
+concrete, and the finished work is the case study the other two — and every
+future client — will see. **Do not pitch him payment terms, and do not treat
+the viral clip as content; it is his injury and his hook, and he decides how
+it's used.**
+
 **#2 and #3 — NOT YET NAMED.** He was asked who they are and which role he sees
 for each (client / sales / builder). Write the answers here.
 
