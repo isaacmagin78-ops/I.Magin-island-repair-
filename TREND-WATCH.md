@@ -60,6 +60,55 @@ hour of his labor made this worse, and no session ever measured it.
 
 ---
 
+# ✅ ANSWERED ON REQUEST — 2026-08-17: the ChatGPT advertising question
+
+**He pushed himself away from a tool over a fact he never got to check.** In his
+words: *"I had no idea that ChatGPT was as useful as it is now. I was almost
+pushing against it because of the whole angle that they are now using some sort of
+advertising. So, anyway, that pushed me off because I didn't know the facts."*
+
+**He was right that it is real — and wrong that it applies to him.** Checked live
+2026-08-17:
+
+| | |
+|---|---|
+| Testing began | **2026-01-16**, US, logged-in adults 18+ |
+| Launched | **2026-02-09** |
+| **Sees ads** | **Free** tier, and **Go** ($8/mo) — a *paid* tier that still shows ads |
+| **Does NOT see ads** | **Plus** ($20/mo), **Pro** ($200/mo), Team, Business, Enterprise, Edu. Under-18 accounts exempt |
+| Targeting | Conversation topic, past chats/memory, past ad interactions — **not** third-party cross-web tracking |
+| Live in | US, UK, Canada, Australia, New Zealand, Japan, Korea |
+
+**So: any ChatGPT tier at Plus or above is ad-free.** The reason he backed away
+does not apply to a paying account. **The one thing that muddies it** — and likely
+what he half-heard — is that headlines said ads were coming to "paying users,"
+which is true only of the $8 Go tier.
+
+**Do not restate his ChatGPT tier — nobody has asked him which one he is on.**
+Ask before advising further.
+
+### Why this belongs in this file rather than a chat reply
+
+This is the exact failure this file was created for, caught a second time in one
+day: a fact in his lane, three weeks to seven months old, that changed a decision
+he made — and he had no way to check it. He named the pattern himself in the same
+breath: *"Same as the whole thing with Scott telling me about Jack Dorsey and that
+Buzz operating system. That's something two months ago I would have been on top
+of."*
+
+**Standing instruction from this:** when he says he *thinks* something is true
+about a tool, a platform, or a rule — especially when it has already changed his
+behavior — **check it before agreeing or moving on.** He is usually right about
+the fact and wrong about the scope, and the scope is what decides what he should
+do about it.
+
+**Sources:** [OpenAI — Our approach to advertising](https://openai.com/index/our-approach-to-advertising-and-expanding-access/) ·
+[OpenAI Help Center — Ads in ChatGPT](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) ·
+[MacRumors, 2026-02-09](https://www.macrumors.com/2026/02/09/chatgpt-now-has-ads/) ·
+[360ROI — who sees ChatGPT ads](https://360roi.co/blog/who-sees-chatgpt-ads/)
+
+---
+
 # 🔴 CATCH-UP RUN — 2026-08-16, run manually by Sy
 
 *Isaac's instruction: **"start now so everything is working when I wake up, with any

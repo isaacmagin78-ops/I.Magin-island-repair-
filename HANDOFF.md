@@ -395,6 +395,26 @@ say what it will cost him in usage and let him decide.** That is the
 warn-before-not-after rule applied to the one resource he cannot buy back
 mid-week.
 
+### 📜 Why he is on Max — the history, in his words (2026-08-17)
+
+> *"I was paying for Pro when Anthropic changed their whole system and had Opus 5
+> come up, and I started running into usage limits, so I started paying for Max…
+> I thought I'd get you to get back \[what I had], but it didn't work out that
+> way, but ended up with the Max subscription."*
+
+**He did not upgrade to buy more power. He upgraded trying to get back to where he
+already was** — Opus 5 arrived, his usage started running out, and Max was what it
+took to keep working at all. He is paying more for the same ground.
+
+**Two things follow from that:**
+
+1. **He already spent money to fix this once and it didn't land the way he hoped.**
+   Do not pitch him further spend as the solution to anything without a specific,
+   named payoff.
+2. **His words "if that works out good… we can do heavy lifting" are permission,
+   not enthusiasm.** He bought capacity he was forced into; use it on work that
+   matters to him rather than on thoroughness for its own sake.
+
 ### ✅ HIS DECISION, in his own words — 2026-08-17
 
 > *"If we're on the same page and I'll turn it down to wherever we need to but
