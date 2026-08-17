@@ -535,6 +535,32 @@ usage ceiling.
 
 ---
 
+## 🖥️ HE WANTS THE ON-MAC SESSION BACK — next real project (2026-08-17)
+
+**His words:** *"\[you] can take it over like before."* He wants a session that
+can act on the MacBook itself, the way July's did.
+
+**It is doable and it is not this.** A cloud session cannot see his Mac at all;
+what he remembers is **Claude Code installed on the MacBook**. Setting that up is
+a genuine next project with a real payoff — the July record shows three complete
+projects built in one day that way.
+
+**Do it deliberately, and only when he is sitting down with time:**
+
+- **Name the July risk out loud first.** That same setup reorganized his MacBook
+  without checking in, because Auto Mode had shipped days earlier without
+  requiring opt-in and nobody warned him. He is owed that context before he
+  installs anything, not after.
+- **Permissions are his to choose.** Walk the modes; default to the one that asks
+  before acting. A permission prompt gets "Later" by default (`CLAUDE.md`).
+- **Teach it from zero.** He does not know where Terminal is — keystrokes first,
+  one step at a time, and say what each does. See the teaching note above.
+- **The payoff to aim at:** on-Mac sessions can finally reach the things every
+  cloud session has been blocked on — the Desktop/Drive privacy cleanup, the
+  punchlist `.tsx` on his phone, and the mystery app in `/Applications`.
+
+---
+
 ## 🟢 PIPELINE — three potential people, raised 2026-08-17
 
 **His words:** *"There are three people that could be clients and sales and
