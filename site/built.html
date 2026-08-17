@@ -1,0 +1,147 @@
+<title>Built on a Phone</title>
+<style>
+  /* Built to be read in a dark, loud room, on a phone held at arm's length.
+     Max contrast, enormous type, one idea per screen. Single committed dark
+     world — every colour painted explicitly so it holds on any host ground. */
+  :root{
+    --black:#000000; --amber:#FFB020; --ember:#FF6B35; --gold:#FFD166;
+    --ink:#FFFFFF; --dim:#8A7B63;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-snap-type:y mandatory; overflow-x:hidden}
+  body{
+    background:var(--black); color:var(--ink); overflow-x:hidden;
+    font:800 16px/1 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .panel{
+    min-height:100svh; scroll-snap-align:start; scroll-snap-stop:always;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:34px 26px; position:relative; overflow:hidden;
+  }
+
+  /* ---------- shared type ---------- */
+  .kicker{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px; font-weight:700;
+    letter-spacing:.3em; text-transform:uppercase; color:var(--amber); margin-bottom:22px;
+  }
+  .huge{
+    font-size:clamp(52px,15.5vw,120px); line-height:.92; letter-spacing:-.045em;
+    font-weight:900; text-wrap:balance;
+  }
+  .mid{
+    font-size:clamp(30px,8.5vw,60px); line-height:1.02; letter-spacing:-.035em;
+    font-weight:900; text-wrap:balance;
+  }
+  .amber{color:var(--amber)}
+  .ember{color:var(--ember)}
+  .note{
+    margin-top:26px; font-size:clamp(16px,4.4vw,21px); line-height:1.4; font-weight:500;
+    color:var(--dim); max-width:24ch;
+  }
+
+  /* ---------- entrance motion ---------- */
+  .rise{opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1)}
+  .panel.on .rise{opacity:1; transform:none}
+  .panel.on .rise:nth-child(2){transition-delay:.09s}
+  .panel.on .rise:nth-child(3){transition-delay:.18s}
+  .panel.on .rise:nth-child(4){transition-delay:.27s}
+  .panel.on .rise:nth-child(5){transition-delay:.36s}
+  .panel.on .rise:nth-child(6){transition-delay:.45s}
+
+  /* ---------- panel 1 ---------- */
+  #p1{justify-content:center}
+  .glow{
+    position:absolute; width:150vw; height:150vw; left:-25vw; top:-40vw; pointer-events:none;
+    background:radial-gradient(circle, rgba(255,176,32,.20) 0%, rgba(255,107,53,.07) 38%, transparent 68%);
+  }
+  .phone{
+    display:inline-block; width:clamp(46px,12vw,80px); height:clamp(80px,21vw,140px);
+    border:5px solid var(--amber); border-radius:12px; position:relative;
+    vertical-align:-14%; margin-left:6px;
+  }
+  .phone::after{
+    content:""; position:absolute; left:50%; transform:translateX(-50%); top:6px;
+    width:34%; height:5px; border-radius:3px; background:var(--amber);
+  }
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+
+  /* ---------- the list ---------- */
+  .row{
+    display:flex; align-items:baseline; gap:14px; padding:17px 0;
+    border-bottom:1px solid #241a0c;
+  }
+  .row:first-of-type{border-top:1px solid #241a0c}
+  .num{
+    font-family:ui-monospace,Menlo,monospace; font-size:13px; font-weight:700;
+    color:var(--ember); flex:none; width:26px;
+  }
+  .row span.t{font-size:clamp(19px,5.2vw,27px); font-weight:800; letter-spacing:-.02em; line-height:1.2}
+
+  /* ---------- closer ---------- */
+  .big-num{
+    font-size:clamp(84px,26vw,200px); line-height:.85; font-weight:900;
+    letter-spacing:-.06em; color:var(--amber);
+  }
+  .scrollcue{
+    position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+    font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--dim); animation:bob 1.9s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0);opacity:.5}50%{transform:translateX(-50%) translateY(6px);opacity:1}}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important}
+    .rise{opacity:1; transform:none}
+  }
+</style>
+
+<section class="panel on" id="p1">
+  <div class="glow"></div>
+  <div class="kicker rise">Pompano Beach, Florida</div>
+  <div class="huge rise">I built<br>all of this<br>on a <span class="amber">phone</span><span class="phone pulse"></span></div>
+  <div class="note rise">No coding. No team. No office.<br>Just a lot of questions.</div>
+  <div class="scrollcue">Swipe up</div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">What came out of it</div>
+  <div class="rise">
+    <div class="row"><span class="num">01</span><span class="t">A video studio that builds films from one line of text</span></div>
+    <div class="row"><span class="num">02</span><span class="t">A finished children's book about a rescue pit bull</span></div>
+    <div class="row"><span class="num">03</span><span class="t">A machine that writes a whole real-estate campaign</span></div>
+    <div class="row"><span class="num">04</span><span class="t">A product with a live checkout</span></div>
+    <div class="row"><span class="num">05</span><span class="t">Videos that post themselves, every day</span></div>
+  </div>
+  <div class="note rise">Films from it have already been delivered to a paying client.</div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">One day in July</div>
+  <div class="big-num rise">3</div>
+  <div class="mid rise" style="margin-top:16px">complete projects.<br><span class="ember">Built overnight.</span><br>While I slept.</div>
+  <div class="note rise">I woke up and they existed. That's when I knew this was real.</div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">Why I'm showing you</div>
+  <div class="mid rise">Everybody's scared of <span class="amber">AI</span> taking their job.</div>
+  <div class="mid rise" style="margin-top:22px">I'm a regular guy who<br>used it to <span class="ember">build</span> one.</div>
+  <div class="note rise">If I can do this from a phone, so can you. That's the whole message.</div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">That's it</div>
+  <div class="huge rise">Ask me<br>about the <span class="amber">dog.</span></div>
+  <div class="note rise">His name is Tyson. He was returned once and spent two years in a kennel. He's the reason any of this exists.</div>
+  <div class="rise" style="margin-top:38px;font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">Isaac Magin &nbsp;·&nbsp; Imagin Consulting</div>
+</section>
+
+<script>
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('on'); });
+  }, {threshold:0.25});
+  document.querySelectorAll('.panel').forEach(function(p){ io.observe(p); });
+</script>

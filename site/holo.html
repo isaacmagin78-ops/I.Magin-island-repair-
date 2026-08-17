@@ -1,0 +1,209 @@
+<title>I.MAGIN Hologram</title>
+<style>
+  :root{ --ground:#050505; --ink:#F5F1EA; --dim:#7E7568; --amber:#FFB020; --line:#231F1A; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--ground); color:var(--ink); overflow-x:hidden;
+    font:400 16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  #stage{position:relative; width:100%; height:100svh; overflow:hidden; cursor:pointer}
+  canvas{display:block; width:100%; height:100%}
+  .hud{
+    position:absolute; left:0; right:0; bottom:26px; text-align:center; pointer-events:none;
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:10.5px;
+    letter-spacing:.3em; text-transform:uppercase; color:var(--dim);
+    opacity:0; animation:hudIn 1s ease 2.4s forwards;
+  }
+  @keyframes hudIn{to{opacity:.75}}
+  .tagline{
+    position:absolute; left:0; right:0; top:calc(50% + 12svh); text-align:center; pointer-events:none;
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:clamp(9.5px,2.6vw,12px);
+    letter-spacing:.42em; text-transform:uppercase; color:var(--dim);
+    opacity:0; animation:hudIn 1.2s ease 1.9s forwards;
+  }
+  .below{max-width:620px; margin:0 auto; padding:56px 24px 80px}
+  .kick{
+    font-family:ui-monospace,Menlo,monospace; font-size:10.5px; font-weight:700;
+    letter-spacing:.28em; text-transform:uppercase; color:var(--amber);
+    display:flex; align-items:center; gap:12px; margin-bottom:16px;
+  }
+  .kick::after{content:"";flex:1;height:1px;background:var(--line)}
+  h2{font-size:clamp(20px,5vw,25px); font-weight:800; letter-spacing:-.025em; margin-bottom:10px}
+  p{color:var(--dim); font-size:15.5px; line-height:1.62; max-width:56ch}
+  p + p{margin-top:12px}
+  p b{color:var(--ink); font-weight:600}
+  @media (prefers-reduced-motion: reduce){ .hud,.tagline{animation:none;opacity:.75} }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="tagline">Isaac&nbsp;Magin</div>
+  <div class="hud">Tap to re-run</div>
+</div>
+
+<div class="below">
+  <div class="kick">What you're looking at</div>
+  <h2>Real light, not a picture of light</h2>
+  <p>This isn't an image or a video. Every frame is <b>computed on your screen right now</b> — a shader running on your phone's graphics chip, the same way a game renders. The iridescence flows because a mathematical field is flowing underneath it. Tilt-shimmer, spectrum split, a light sweep passing through the letters.</p>
+  <p><b>Which means it never repeats and it never pixelates.</b> Same file works on a phone, a billboard, or the side of a building. That's what a hologram-looking mark actually is: not a picture — a program.</p>
+  <p>The mark is still your name. <b>I.MAGIN</b> — Isaac Magin, and <em>imagine</em>. The light is just what makes someone look up.</p>
+</div>
+
+<script>
+(function(){
+  var cv = document.getElementById('c');
+  var gl = cv.getContext('webgl', {alpha:false, antialias:true, premultipliedAlpha:false});
+  var start = performance.now();
+
+  // ---------- text mask, drawn to an offscreen 2D canvas ----------
+  var mc = document.createElement('canvas'), mx = mc.getContext('2d');
+  function drawMask(w,h){
+    mc.width = w; mc.height = h;
+    mx.clearRect(0,0,w,h);
+    mx.fillStyle = '#000'; mx.fillRect(0,0,w,h);
+    var size = Math.min(w*0.205, h*0.34);
+    mx.font = '900 ' + size + 'px -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif';
+    mx.textAlign = 'center'; mx.textBaseline = 'middle';
+    mx.fillStyle = '#fff';
+    // tighten tracking by drawing char by char
+    var s = 'I.MAGIN', tr = -size*0.055, tot = 0, i, wds = [];
+    for(i=0;i<s.length;i++){ var cw = mx.measureText(s[i]).width; wds.push(cw); tot += cw + tr; }
+    tot -= tr;
+    var x = w/2 - tot/2, y = h/2;
+    for(i=0;i<s.length;i++){ mx.fillText(s[i], x + wds[i]/2, y); x += wds[i] + tr; }
+    return mc;
+  }
+
+  if(!gl){ fallback(); return; }
+
+  var VS = 'attribute vec2 p; varying vec2 vUv; void main(){ vUv = p*0.5+0.5; gl_Position = vec4(p,0.0,1.0); }';
+
+  var FS = [
+  'precision highp float;',
+  'uniform float uT; uniform vec2 uRes; uniform sampler2D uMask;',
+  'varying vec2 vUv;',
+  'float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7)))*43758.5453123); }',
+  'float noise(vec2 p){ vec2 i=floor(p), f=fract(p); vec2 u=f*f*(3.0-2.0*f);',
+  '  return mix(mix(hash(i),hash(i+vec2(1.0,0.0)),u.x), mix(hash(i+vec2(0.0,1.0)),hash(i+vec2(1.0,1.0)),u.x), u.y); }',
+  'float fbm(vec2 p){ float v=0.0,a=0.55; for(int i=0;i<5;i++){ v+=a*noise(p); p=p*2.02+vec2(3.1,1.7); a*=0.5; } return v; }',
+  // MIAMI SUNSET — a closed four-stop palette, NOT a spectrum.
+  // Peach -> coral -> violet -> aqua. There is deliberately no yellow and no
+  // green in it: those two bands are what make a gradient read as a rainbow.
+  'vec3 miami(float t){',
+  '  t = fract(t);',
+  '  vec3 a = vec3(1.00,0.72,0.55);',   // peach   #FFB78C
+  '  vec3 b = vec3(1.00,0.34,0.53);',   // coral   #FF5787
+  '  vec3 c = vec3(0.63,0.35,1.00);',   // violet  #A159FF
+  '  vec3 d = vec3(0.20,0.78,0.92);',   // aqua    #33C7EB
+  '  float s = t*4.0; vec3 col;',
+  '  if(s < 1.0)      col = mix(a,b,smoothstep(0.0,1.0,s));',
+  '  else if(s < 2.0) col = mix(b,c,smoothstep(0.0,1.0,s-1.0));',
+  '  else if(s < 3.0) col = mix(c,d,smoothstep(0.0,1.0,s-2.0));',
+  '  else             col = mix(d,a,smoothstep(0.0,1.0,s-3.0));',
+  '  return col; }',
+  'void main(){',
+  '  vec2 uv = vUv; vec2 asp = vec2(uRes.x/uRes.y, 1.0);',
+  '  float m = texture2D(uMask, vec2(uv.x, 1.0-uv.y)).r;',
+  '  if(m < 0.02){ gl_FragColor = vec4(0.02,0.02,0.02,1.0); return; }',
+  '  vec2 q = uv*asp;',
+  // slow, soft flow — Apple restraint, not turbulence
+  '  float f1 = fbm(q*1.9 + vec2(uT*0.07, uT*0.04));',
+  '  float f2 = fbm(q*3.6 - vec2(uT*0.10, uT*0.05) + f1*1.1);',
+  // low frequency: roughly one pass of the palette across the mark, not four
+  '  float band = f1*0.45 + f2*0.30 + uv.x*0.80 - uv.y*0.18 + uT*0.045;',
+  '  vec3 col = miami(band);',
+  // specular sweep — the Apple "polished surface" move
+  '  float sw = fract(uT*0.15);',
+  '  float d = abs((uv.x*0.78 + uv.y*0.22) - (sw*1.7 - 0.35));',
+  '  float sweep = smoothstep(0.14, 0.0, d);',
+  '  col += vec3(1.0,0.98,0.95) * sweep * 0.95;',
+  // scanlines kept, but barely — a whisper of glass, not a CRT
+  '  float scan = 0.95 + 0.05*sin(uv.y*uRes.y*0.5 - uT*6.0);',
+  '  col *= scan;',
+  // inner shaping so the letterforms stay crisp
+  '  col *= 0.66 + 0.62*smoothstep(0.05,0.65,m);',
+  '  col += vec3(0.10,0.06,0.09) * m;',
+  '  col += (hash(uv*uRes + uT)-0.5)*0.025;',
+  '  col *= m;',
+  '  gl_FragColor = vec4(col, 1.0);',
+  '}'].join('\n');
+
+  function sh(type, src){
+    var s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s);
+    if(!gl.getShaderParameter(s, gl.COMPILE_STATUS)) return null;
+    return s;
+  }
+  var vs = sh(gl.VERTEX_SHADER, VS), fs = sh(gl.FRAGMENT_SHADER, FS);
+  if(!vs || !fs){ fallback(); return; }
+  var pr = gl.createProgram();
+  gl.attachShader(pr, vs); gl.attachShader(pr, fs); gl.linkProgram(pr);
+  if(!gl.getProgramParameter(pr, gl.LINK_STATUS)){ fallback(); return; }
+  gl.useProgram(pr);
+
+  var buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  var loc = gl.getAttribLocation(pr,'p');
+  gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+
+  var uT = gl.getUniformLocation(pr,'uT'), uRes = gl.getUniformLocation(pr,'uRes'), uMask = gl.getUniformLocation(pr,'uMask');
+  var tex = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, tex);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.uniform1i(uMask, 0);
+
+  var W=0, H=0;
+  function size(){
+    var dpr = Math.min(window.devicePixelRatio||1, 2);
+    W = Math.floor(cv.clientWidth*dpr); H = Math.floor(cv.clientHeight*dpr);
+    if(W<2||H<2) return;
+    cv.width = W; cv.height = H;
+    gl.viewport(0,0,W,H);
+    drawMask(W,H);
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, mc);
+  }
+  size();
+  window.addEventListener('resize', size);
+  document.getElementById('stage').addEventListener('click', function(){ start = performance.now(); });
+
+  (function loop(){
+    var t = (performance.now() - start)/1000;
+    // build-in: the mark resolves out of the noise over the first ~1.2s
+    gl.uniform1f(uT, t);
+    gl.uniform2f(uRes, W, H);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    requestAnimationFrame(loop);
+  })();
+
+  // ---------- 2D fallback so it is never a blank box ----------
+  function fallback(){
+    var ctx = cv.getContext('2d');
+    function frame(){
+      var dpr = Math.min(window.devicePixelRatio||1,2);
+      var w = cv.width = Math.floor(cv.clientWidth*dpr), h = cv.height = Math.floor(cv.clientHeight*dpr);
+      var t = (performance.now()-start)/1000;
+      ctx.fillStyle='#050505'; ctx.fillRect(0,0,w,h);
+      var size = Math.min(w*0.205, h*0.34);
+      var g = ctx.createLinearGradient(0,h/2-size/2, w, h/2+size/2);
+      var o = (t*0.08)%1;
+      g.addColorStop(Math.max(0,(0.00+o)%1), '#FFB78C');
+      g.addColorStop(Math.max(0.001,(0.33+o)%1), '#FF5787');
+      g.addColorStop(Math.max(0.002,(0.66+o)%1), '#A159FF');
+      g.addColorStop(1, '#33C7EB');
+      ctx.font = '900 ' + size + 'px -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif';
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillStyle = g;
+      ctx.fillText('I.MAGIN', w/2, h/2);
+      requestAnimationFrame(frame);
+    }
+    frame();
+  }
+})();
+</script>
