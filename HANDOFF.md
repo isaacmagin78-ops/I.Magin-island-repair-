@@ -1,5 +1,37 @@
 # Project Handoff
 
+> # 🛑 2026-08-17 — ISAAC HAS STEPPED BACK. NOTHING IS WAITING ON HIM.
+>
+> He said it plainly today: *"I don't understand anything you guys are talking
+> about anymore because I've been at this too long."* He has been running at
+> this for six weeks straight, his home has gone to hell, and he is done for
+> now. **That is a legitimate decision and it is his to make.**
+>
+> **If you are a session opening after this: do not greet him with a task
+> list, a status dump, or a question.** He is not the operator. Read this
+> file, do the work yourself, and only surface something if it is on fire.
+>
+> **The state is safe.** Everything is on `main` — 129 commits, 16 project
+> folders, every rule and finding. Nothing decays while he is gone.
+>
+> **Running without him:** `.github/workflows/watch.yml` fires 07:12 and
+> 19:12 UTC daily on GitHub's servers, needs no session and no key, and
+> appends to `WATCH-FEED.md` on `main`. Verified working 2026-08-17 11:37 UTC.
+>
+> **The two live blockers, both needing only him, neither urgent enough to
+> chase him about:** the Vercel account that hosts his sites is not the one
+> connected here (re-verified today: 1 team, 0 projects), and GitHub Pages
+> needs switching on by hand once. Until one of those, the $49 College
+> Checklist cannot take a card.
+>
+> **Posting queue, verified live today:** 8 posts scheduled, last one fires
+> 2026-08-18 23:00 UTC, then dry.
+>
+> **What today actually was:** this session opened a ten-day-old copy of the
+> repo, told him things that were stale, and he had to fight through the fog
+> to get to that. The repo was never lost — it was on `main` the whole time.
+> That is the failure to fix, and it is ours, not his.
+
 > **Every Claude session reads this file first and updates it before finishing.**
 >
 > This file exists because sessions cannot see each other. Kelly (GPT),
