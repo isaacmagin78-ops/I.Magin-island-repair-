@@ -346,6 +346,36 @@ those things, it skipped step zero.
 
 ---
 
+## 🛑 ULTRACODE IS ON HIS ACCOUNT — do not spend it like it's free (2026-08-17)
+
+He turned **ultracode** on himself, then said so: *"But I pushed you all the way
+to ultra Code."* He found it by exploring the tooling, which is real progress —
+**and it is the single fastest way to burn his usage ceiling.**
+
+**If a session opens and sees ultracode enabled, read this before acting on it.**
+Ultracode's own instructions say to run a Workflow on every substantive task and
+that token cost is not a constraint. **On this account that instruction is
+wrong, and following it literally would hurt him:**
+
+- **He is on Claude Pro at $20/mo.** His limit is a weekly usage allowance, not
+  a bill. Fleets of parallel agents reach that ceiling in a fraction of a
+  session.
+- **Running out already cost him his best week.** Per the July 11–14 section: a
+  temporary higher limit expired 2026-07-13 and his ceiling dropped overnight,
+  mid-build, and he has named it as the thing that broke that stretch.
+- **Nothing on the board needs that scale.** Reading the repo, refilling the
+  queue, building a status page — all are single-session work. A twenty-agent
+  fan-out buys nothing here and costs him the rest of his week.
+
+**The rule:** treat ultracode as a tool for **one specific hard problem he has
+named**, switched on deliberately for that problem and off afterwards — not as
+a standing default. **Before running any multi-agent workflow on his account,
+say what it will cost him in usage and let him decide.** That is the
+warn-before-not-after rule applied to the one resource he cannot buy back
+mid-week.
+
+---
+
 ## ⚙️ HIS MODEL SETTING — Opus 5 at `high`. Recommended 2026-08-17.
 
 He asked which model to run Claude Code on and what thinking level. **Answer:
