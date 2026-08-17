@@ -685,6 +685,53 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 🌐 PUBLIC HOSTING — where it stands, 2026-08-16, and one 30-second unblock
+
+Isaac needs **a public URL that works for anyone with no login** — the claude.ai
+artifact share flow keeps bouncing him to a sign-in he can't complete on mobile.
+Three routes attempted tonight. **Read this before trying a fourth.**
+
+### ✅ The unblock — 30 seconds, only Isaac can do it
+**GitHub → repo Settings → Pages → Source: "GitHub Actions". Save.**
+That is the entire fix. `.github/workflows/pages.yml` is already committed and
+will publish `/site` automatically on the next push to
+`claude/project-status-update-xbolj2`.
+
+Live URL once enabled: `https://isaacmagin78-ops.github.io/I.Magin-island-repair-/`
+(`/built.html`, `/brand.html`, `/holo.html` alongside it.)
+
+**Why it failed tonight:** `actions/configure-pages@v5` with `enablement: true`
+returned *"Create Pages site failed — Resource not accessible by integration."*
+The default `GITHUB_TOKEN` **cannot create a Pages site**; Pages has to be
+switched on once by hand. Everything after that is automatic. Do not rewrite the
+workflow — it is correct, it is only waiting on the toggle.
+
+### ⚠️ The Vercel account mismatch — unresolved since 2026-07-20, confirmed again tonight
+
+A production deploy through the Vercel MCP returned **READY** with
+`imagin-concierge-ovjmi6yae-c8j6sgyyh7-5024s-projects.vercel.app`. Then:
+
+- `list_projects` on the only connected team → **empty**
+- `get_deployment` on the id it had just returned → **404 not found**
+- `get_project_deployment_protection` → **404**
+- `*.vercel.app` is blocked by this container's egress proxy, so no direct test
+
+**The connected Vercel account is not the one hosting his live sites.**
+`tysons-time-kit`, `shop-tyson`, `college-checklist` and `tysons-links` are all
+live in the world and **none of them appear in the connected account.** Ike OS
+flagged exactly this on 2026-07-20 and nobody resolved it; four weeks later it
+is still true and it silently wasted a deploy tonight.
+
+**Consequence:** *do not trust any Vercel URL produced through the MCP*, and do
+not report one as live. **Fixing the account connection is a real task nobody has
+picked up** — until then Vercel is not a usable publishing route from here.
+
+### Netlify
+`deploy-site` requires an existing `siteId` and explicitly refuses to assume a
+new site. Not attempted further.
+
+---
+
 ## 💡 THE CONCIERGE DIFFERENTIATOR — situational intelligence, not task execution
 
 **Isaac, 2026-08-16, and this is a product requirement, not a passing remark.**
