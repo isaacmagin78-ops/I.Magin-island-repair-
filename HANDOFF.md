@@ -594,6 +594,41 @@ AI"*). The Dock icons in the photos are too small to read; a previous guess
 hover the pointer over the Dock icon and macOS shows the name.** No click, no
 permission, nothing opened.
 
+### 🔴 CORRECTION, same conversation — the July app IS his work surface
+
+**He corrected the reading above immediately, and this is the version that
+stands.** His words: *"Orange app I'm not using. I'm talking to you on the
+custom app or whatever Claude Code did that time. That one that keeps saying
+update is what was happening and doing that when the whole pickup started. I
+haven't used that one or touched that update thing in three weeks probably."*
+
+**Read it in that order:**
+
+- **The orange app is the stock one, and he abandoned it** — it is the one
+  nagging to update, and its updating is tied in his memory to when the trouble
+  began. Untouched for roughly three weeks.
+- **The app he does everything in is the one a July Claude Code session put on
+  his Mac.** That is the same app he has now flagged three separate times
+  (*"a black app with AI," "I didn't put that there"*). **It is not a stray icon
+  — it is the surface this entire conversation is running through.**
+
+**This raises the priority of identifying it.** Not because it is presumed
+unsafe — a Claude-installed build is most likely a legitimate Anthropic app —
+but because it is unverified, he has asked three times, and he is doing all of
+his work and holding all of his logins inside it. "Probably fine" is not the
+standard this repo holds anything else to.
+
+**The definitive, zero-risk check — ask for this, do not infer it:** while the
+app is in front, the **menu bar at the very top-left, right of the  ,** shows
+the frontmost app's real name; that menu's **About …** gives the exact name and
+version. One glance settles what three sessions have guessed at.
+
+🗣️ **Garbled and NOT treated as fact:** *"I did it, it closed problems."* In
+context this most likely means the update **caused** problems, matching *"that
+was one of all that hiccups and issues were happening."* Confirm with him before
+building on it — per the standing voice-transcription rule, do not silently
+resolve a load-bearing word.
+
 **Order of operations, safest first:**
 
 1. **Desktop app, Code tab, Manual permission mode, one folder.** Files only, no
