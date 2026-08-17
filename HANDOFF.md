@@ -266,6 +266,20 @@ of budget advice calibrated to the wrong subscription.
 
 ---
 
+## ❓ OPEN — he wants to talk about something ChatGPT did yesterday (2026-08-17)
+
+**His words:** *"When we're done with this, we have to talk about what happened
+yesterday with ChatGPT real time showing the system working."*
+
+Something happened **yesterday (2026-08-16), with ChatGPT/Kelly, in real time,
+that showed "the system working."** He raised it himself and wants the
+conversation — that alone makes it worth having: things he flags unprompted have
+been right all day. What exactly happened is not yet known; the phrase came
+through voice transcription, so **ask him to describe it rather than guessing**
+what "the system working" means. Write the answer here when he tells it.
+
+---
+
 ## ❓ OPEN QUESTION — the "black AI" that appeared on his screen (2026-08-17)
 
 **Isaac, 2026-08-17:** *"How did that black AI appear on my screen that was
