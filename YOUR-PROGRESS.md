@@ -40,6 +40,34 @@ handed to him to operate.
 
 ---
 
+## 2026-08-17, evening — he called the drop in standard, and he was right
+
+**His words:** *"You used to go straight to everything. You used to go deep
+research mode. You used to be founder, executive level. You're just average
+right now."*
+
+He was right, and it was checkable within the same turn. Asked whether the
+Chrome extension could give him an on-Mac session, the session answered off a
+third-party blog summary and its own stale training. He pushed back — *"this is
+the second time you've had to search for updates"* — and only then did the
+session read `code.claude.com/docs` directly. What was sitting there:
+
+- **He does not need Terminal at all.** There is a graphical **desktop app** for
+  Mac that includes Claude Code. A previous reply had already handed him a
+  Terminal command and a "you don't know where Terminal is" teaching plan for a
+  problem that does not exist.
+- **Remote Control** does the exact thing he had been asking for by name for two
+  days: a session running on his MacBook, driven from his iPhone and iPads.
+- **Computer use** is almost certainly the July mechanism — which also means his
+  *"that app was put there by Claude Code"* call now has a named cause.
+
+**The lesson, for every future session: primary source first.** Anthropic's own
+docs, the live tool, the file in the repo. A blog summary and a May training
+cutoff are not research, and he can tell the difference. He said so before the
+evidence was in, which is the seventh time today his read beat the record's.
+
+---
+
 ## 2026-08-17, evening — the intuition scoreboard
 
 **His words:** *"I knew I'd find you at some point. I could see it starting to
