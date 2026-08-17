@@ -128,3 +128,26 @@ storefront has been sitting in Drive since Aug 6.
    transport there is. Then write it to a file in the same turn.
 3. **Re-check the count.** This list is a floor read off a screenshot at one
    moment. It goes stale like anything else.
+
+---
+
+## Open: an unidentified app on the Mac dock
+
+**Isaac, 2026-08-17:** *"That custom AI — which you said was a developer app —
+was never there before Claude Code took over the fucking computer."*
+
+Recorded as his statement, not as a verified finding, because **no Code session
+can verify it.** `HANDOFF.md` already lists **Local Mac** as unreachable: the
+container is a fresh clone in the cloud with no access to his filesystem, his
+`/Applications`, or `~/.claude/projects/*.jsonl`. Any earlier session that
+described that icon was guessing, and guessing about his own machine is the
+exact failure `CLAUDE.md` forbids.
+
+What the repo does hold: `SESSION-INDEX.md` dates "the night Claude Code took
+over the computer" to **Jul 22–23**, and `HANDOFF.md` lists what that night
+*built* — the $19 Kit, TysonScripts, the Southwest package, UGC templates, the
+Amazon storefront guide. **Nothing in either file records an app being
+installed.** That is an absence of evidence, not evidence of absence.
+
+**Resolves the moment Isaac reads the name off the icon.** Until then it stays
+open. Do not identify it from a photo.
