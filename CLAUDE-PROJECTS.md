@@ -76,6 +76,49 @@ intake, per `CLAUDE.md`, not after it is already pushed.
 Work projects get a one-page summary in this repo. Personal ones get a Notion
 page and a line here saying only that they exist.
 
+## The "custom AI app" — searched 2026-08-17, not found
+
+Isaac: *"Claude Code built that custom AI app that I haven't even touched because
+everyone says not to touch it, so that's probably where he lives."*
+
+Every reachable system was checked. **It is not in any of them:**
+
+| Searched | Result |
+|---|---|
+| GitHub — both repos, **all 36 branches** | No agent app, no MCP server, no `.claude/agents/`. The only non-Remotion skills are `market-read`, `room-read`, `show-it`. |
+| `claude/autonomous-agent-setup-bprzw4` (best-named candidate) | It is a **Jest test suite** for College Launch OS. 9 files, 390 lines. Not an agent. |
+| Vercel (connected account) | **Zero projects** — confirms the account mismatch already on record. |
+| Replit | One app: *Wine Column Design*, Aug 11. |
+| Notion | No page describes a custom AI app built by Claude Code. |
+| Google Drive | Apps exist (below) — none is an AI agent. |
+
+**The conclusion that matters:** a session does not live inside an app it built.
+Nothing of a Claude session survives in its output — not its judgment, not its
+manner, not its memory. What made the first Claude Code different was its
+**instructions**, and instructions are text. That is why the teaching rule was
+written into `CLAUDE.md` on 2026-08-17 rather than hunted for. **The recovery
+route is to re-author the instructions, not to find the app.**
+
+If a written copy of that first session's promise exists anywhere, the only
+place left is a **claude.ai Project's custom instructions** — which is the
+unreadable surface this whole file is about. Isaac is the only one who can open
+it and paste it.
+
+## Finished work sitting in Drive that no status file mentions
+
+Found while searching for the app. Verified by reading the files, 2026-08-17.
+
+| File | Created | What it actually is |
+|---|---|---|
+| `Tyson_Picks_App_Prototype_v2` (+2 copies) | Aug 6, copies Aug 9 | **A complete "Tyson's Pet Network" app** — South Florida rescue/pet-service hub. Featured $19 Kit, curated Picks with ratings, near-you listings, episode grid, live-offers section, a 30-day 3-3-3 progress tracker, bottom nav. Never launched, never referenced anywhere. |
+| `linda-hoyt-luxury-app.html` | Jul 11 & 14 | A finished luxury real-estate site for Linda. 558 KB with photos embedded as base64. **Five identical copies** across four Drive folders. |
+| `imagin_harbor_mom_app.html` | Jul 4 | 17 KB. Unexamined. |
+| `app.html` | Jul 18 | 142 KB. Unexamined. |
+
+The Tyson's Picks prototype matters most: the Amazon tag `tysonspicks-20` is
+live and has earned **$1.29** because no storefront was ever built — and a built
+storefront has been sitting in Drive since Aug 6.
+
 ## What a session should do with this file
 
 1. **Do not claim a full picture without saying this surface was excluded.**
