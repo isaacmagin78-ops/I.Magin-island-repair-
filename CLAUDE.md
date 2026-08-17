@@ -350,3 +350,13 @@ correcting figures that were reported without re-checking.
   originally blocked this way — a "blocked" result there is a network policy,
   not a broken script. Re-run `node test_nav.mjs` to test the path before
   concluding anything.
+
+## Before you design anything: `DESIGN-DIRECTION.md`
+
+**Apple is the standard. Miami is the palette. No full-spectrum rainbows.**
+
+That last one is a hard rule with a technical fix, not a taste note: a gradient
+containing yellow and green alongside pink and blue reads as a pride flag, which
+is not what Isaac sells. Never use the standard
+`cos(6.28*(t + vec3(0.0,0.33,0.67)))` iridescence trick on his brand — use a
+closed 3–4 stop palette instead. He has had to say this more than once.
