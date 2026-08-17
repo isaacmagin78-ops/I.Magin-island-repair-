@@ -3,6 +3,33 @@
 Guidance for Claude Code (and any AI assistant) working in this repository.
 Last verified against the tree on **2026-08-07**.
 
+## 🛑 STEP ZERO — do this before you read one more line
+
+```bash
+git fetch origin main && git log --oneline -1 origin/main && git status -sb
+```
+
+**If your HEAD is behind `origin/main`, everything you are about to read is
+wrong.** Fast-forward first (`git merge --ff-only origin/main`). Do not answer
+a single question until you have.
+
+**This is not hypothetical.** On 2026-08-17 a session opened a checkout that was
+ten days old, read the `HANDOFF.md` inside it, and told Isaac his work was
+missing, his projects were gone, and a video engine existed that did not. None
+of it was true — all of it was sitting on `origin/main` the whole time. It cost
+him most of a day he did not have, at the end of six weeks with no rest.
+
+**Two rules that follow from that day:**
+
+- **Isaac should never have to explain this repo to you.** He is not technical,
+  he is usually on a phone, and he has re-explained his own project to a fresh
+  session more times than anyone should. Everything you need is in this repo.
+  Read it. Do not open by interviewing him.
+- **Say what you cannot do, and why, in one sentence.** Sessions differ in which
+  tools are connected — one has Stripe and Vercel, the next does not. To Isaac
+  that looks like one Claude lying and another telling the truth. It isn't; it's
+  the keys. Name which tool you are missing rather than saying "I can't."
+
 ## Start every session here
 
 1. **Read `HANDOFF.md` first.** It is the running state of the work — what is
