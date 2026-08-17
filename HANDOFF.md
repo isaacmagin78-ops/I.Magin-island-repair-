@@ -629,6 +629,43 @@ was one of all that hiccups and issues were happening."* Confirm with him before
 building on it — per the standing voice-transcription rule, do not silently
 resolve a load-bearing word.
 
+### 📥 HE WENT AND DID THINGS ON HIS OWN — 2026-08-17, ~17:06, out walking
+
+Sent by voice while walking, heavily garbled. **Split into what is legible and
+what is not. Do not resolve the unclear half by inference.**
+
+**Legible and worth acting on:**
+
+- **He started using Notion more, unprompted**, and *"ended up making a folder
+  for prompts"* plus **Sabrina info** — Sabrina Ramonov, one of the two creators
+  named in `THE-BOARD.md` as the **cheapest unwatched lane, "named repeatedly,
+  never once checked."** He checked it himself. That trend-watch item now has an
+  owner and it is him.
+- **He shot new footage** and wants it off his phone: a dog in a **Miami
+  Dolphins collar**, a **bandana**, and a **gold chain**. Pet/rescue short-form
+  is his proven lane, and the queue has been recycling the same clips for a
+  month — **this is the first genuinely new material in that lane.**
+- **He reconfigured the app's layout and taught himself how to choose input.**
+  Second time in two days he has navigated a surface on his own.
+- **He hit a real wall:** *"I'm gonna upload that to you because I don't think
+  Notion will take that size."* Correct instinct — Notion caps per-file upload,
+  and this repo gitignores `public/assets/videos/*` on purpose. **Raw footage
+  belongs in Google Drive** (connector already live here, handles large files,
+  readable by a session). Not Notion, not the repo.
+
+🗣️ **Garbled — flagged, NOT interpreted:** *"currently currently walking
+personally," "as Sabrina info with a mushroom," "I've tasted it with the
+dolphins collar on," "put that on his list of things with the gold chain."*
+Whose list, and what the mushroom refers to, are unknown. Ask; do not fill in.
+
+**Also, from the screenshot he sent:** an **iOS widget configuration for the
+Claude app — "Claude Quick Actions"** — with four assignable buttons, currently
+**Voice Chat · Code · Projects · Dictation**. Note what that means against his
+standing need (*"I need a live assistant I can talk to"*): **Claude voice chat
+is already one tap from his phone's home screen.** It does not answer the
+outstanding question about the Mac app's identity — that check needs him back at
+the MacBook, and it can wait.
+
 ### 🕰️ HIS timeline of when it went wrong — his sequence, not a session's
 
 He added it unprompted, one clause at a time, and it lines up with three things
