@@ -172,6 +172,22 @@ conclude something is out of reach, check your tool list.**
 **This file is still the shared memory of record.** Anything that matters must
 land here or it is lost to every room that lacks connectors.
 
+### 🌐 Which room to send him to — settled 2026-08-17, in his own words
+
+> *"I just logged onto Claude.AI on Chrome on my same phone because I believe
+> that's where that Chrome that Claude Code told me to go and not go to the app."*
+
+**He remembered right, and it is the correct instruction.** A cloud Code session
+— the kind that has this repo, the Blotato queue and the Stripe/Vercel
+connectors — is reached at **claude.ai in a browser**. That is why it works from
+his phone with no MacBook involved, anywhere, which is the whole point given
+`THE-BOARD.md` records his work surface as iPad and iPhone.
+
+**Say this plainly when he asks whether he is in the right place: yes.** He has
+been bounced between surfaces for six weeks and the browser is the one that
+reaches everything. Do not send him to a different app to do work that a cloud
+session already does.
+
 ### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
 
 Isaac repeatedly asked what happened the night Claude Code "took over the
