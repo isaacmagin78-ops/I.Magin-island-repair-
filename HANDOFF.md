@@ -685,6 +685,63 @@ he asked for. Put it in the chat as text or a file, not behind a link.**
 
 ---
 
+## 📊 TIKTOK — the first real numbers, and they overturn the current strategy
+
+**Pulled from Isaac's own TikTok analytics, 2026-08-17. None of this existed in
+any file before tonight.** Blotato collects no TikTok analytics, so this channel
+has been operating blind for months.
+
+### The account
+**`@tysons_time` — 302 followers · 2,467 likes · 391 following.**
+Bio link: `tysons-kit-link.vercel.app`. A **TikTok Shop tab is visible on his
+profile** — do not assume the shop is closed without checking what that grants.
+
+### LIVE analytics, Jun 17 → Aug 15
+| | |
+|---|---|
+| LIVE duration | **30 hours** |
+| Views | 5.2K |
+| Unique viewers | 4.8K |
+| Diamonds | **147** |
+| Average watch duration | 1m 17s |
+| Peak concurrent viewers | 8 |
+| Average concurrent viewers | 0 |
+
+### 🔴 The finding — his read, and the chart backs it
+
+**Isaac, 2026-08-17:** *"All the followers were from when I was doing a live feed
+and interacting. Whatever has been done since then has been failing."*
+
+**He is right, and the graph shows it plainly.** Views spike to ~1,200 in late
+June, and the follower line rises *in the same window*. After the live sessions
+stop, both lines flatten to near zero and stay there through Aug 15.
+
+**Thirty hours of him talking to people produced the entire audience.** Two
+months of automated daily posting — the same twelve recycled clips through
+Blotato — produced a flat line next to it.
+
+### What this overturns
+
+- The operating strategy is **automated posting**. His own data says **live
+  interaction is what worked and automation has not moved this channel.**
+- **147 Diamonds is real third-party revenue from strangers** — gifts from people
+  who watched him talk. *(Diamond-to-dollar value not verified here; check
+  TikTok's current rate before quoting a figure.)* The $19 Kit has **zero**
+  outside customers. **Live out-earned the product.**
+- Average watch 1m 17s with peak concurrent of 8 means it was never a big room —
+  **it was a real one.** Small and live beat large and automated.
+
+### The number that gates the money door
+**302 followers. TikTok Shop Affiliate Creator requires 1,000.** He is 698 short
+of an 8–22% commission program, against Amazon's 1–10%. **Live is both the thing
+that grows followers here and the format that program is built around.** That is
+the same lever twice.
+
+**Do not tell him to post more clips.** Tell him what the data says: get back on
+live.
+
+---
+
 ## 🌐 PUBLIC HOSTING — where it stands, 2026-08-16, and one 30-second unblock
 
 Isaac needs **a public URL that works for anyone with no login** — the claude.ai
