@@ -102,6 +102,25 @@ behavior — **check it before agreeing or moving on.** He is usually right abou
 the fact and wrong about the scope, and the scope is what decides what he should
 do about it.
 
+### Addendum, same day — he DID try to check this, and why his check failed
+
+He didn't just carry the half-fact around: **he asked ChatGPT itself.** A month
+ago it "couldn't confirm" anything about its own ads; yesterday it gave only a
+generic answer (through a glitchy voice reply). He read that as something built
+into the code to deflect the topic.
+
+The boring explanation covers it: **a model cannot reliably report on its own
+product.** Its knowledge is frozen months before today, it cannot see his account
+or the ad system, and vendors do steer how models discuss their own company — so
+answers come out generic and inconsistent, which reads as evasion. His instinct
+that "it processes it different when you ask about \[itself]" is half right, and
+the practical rule is the same either way:
+
+> **"Ask the AI about the AI" is not a check.** Verify platform facts on the
+> web, dated and sourced, the way the entry above was. This applies to Claude
+> too — a session answering about Anthropic's own features from memory is
+> exactly as unreliable.
+
 **Sources:** [OpenAI — Our approach to advertising](https://openai.com/index/our-approach-to-advertising-and-expanding-access/) ·
 [OpenAI Help Center — Ads in ChatGPT](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) ·
 [MacRumors, 2026-02-09](https://www.macrumors.com/2026/02/09/chatgpt-now-has-ads/) ·
