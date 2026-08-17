@@ -362,6 +362,18 @@ the toolchain, and removing it could break something he depends on. He is
 getting conflicting advice — *"you should have it"* / *"you should not have it"* —
 and the honest answer is that **nobody knows yet, so nothing gets uninstalled.**
 
+> ### 🧑‍🏫 On the MacBook, start from zero — he does not know where Terminal is
+>
+> **He said it plainly, 2026-08-17:** *"You have to remember the context is I'm
+> starting from the MacBook. Like, I don't know anything, and you have to teach
+> me."* A session handed him a Terminal command with no way to open Terminal.
+>
+> **Never hand him a command without the keystrokes to get to the window.** The
+> working form: ⌘ + space → type `terminal` → Return → paste → Return → copy
+> what it prints. Say in one line what the command does and that it changes
+> nothing. He learns by following visible steps (see `YOUR-PROGRESS.md`), so
+> steps are the deliverable, not the command.
+
 **No cloud session can resolve this.** A cloud container cannot see his Mac at
 all. It closes in one command from a session running **on the MacBook**, or by
 him reading the window title:
