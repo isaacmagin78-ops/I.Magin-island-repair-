@@ -566,6 +566,34 @@ that, Remote Control means **the phone and both iPads drive it**, which is what 
 actually wanted. And no, the Chrome extension is not the route: it reaches web
 pages, not his files, and not from iOS at all.
 
+### 🟠 IT IS ALREADY INSTALLED — from his own screenshots, 2026-08-17
+
+**He never needed the download link.** Two photos of his MacBook show a window
+with the desktop app's sidebar (**Home · Code · Artifacts · Routines ·
+Customize**), his account footer (**"IM Ike · Max"**), a model selector reading
+**Opus 5 / Extra**, a `+1,403 −4` diff with a **Create PR** button, and a
+session list going back to Aug 14. A web page does not show **"Relaunch to
+update · v1.32352.0."** That is the desktop app, and it is the **orange icon in
+his Dock**.
+
+**So the on-Mac session is not a setup project. It is an app he already owns and
+has been avoiding.** Every session that told him a local session was impossible
+was wrong about the reason — the software was on his machine the whole time.
+
+⚠️ **He has been declining its updates on purpose, and he had cause.** His
+words: *"That always says update. I stopped doing that because that was one of
+all that hiccups and issues were happening."* Do not push the update on him
+casually — an update is exactly the class of change that cost him a working day
+in July. When it matters, say what the update fixes and let him choose.
+
+**Still unidentified — two Dock icons, and do not guess again.** He points to
+*"the white one with an eye, kind of cool looking, right next to the orange
+one,"* and separately to the dark **AI** square (his earlier *"black app with
+AI"*). The Dock icons in the photos are too small to read; a previous guess
+(Illustrator) was wrong and he corrected it. **The zero-risk way to answer it:
+hover the pointer over the Dock icon and macOS shows the name.** No click, no
+permission, nothing opened.
+
 **Order of operations, safest first:**
 
 1. **Desktop app, Code tab, Manual permission mode, one folder.** Files only, no
