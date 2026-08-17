@@ -1,0 +1,107 @@
+<title>Two Doors</title>
+<style>
+  :root{
+    --black:#000000; --raise:#101010; --line:#282320;
+    --ink:#FFFFFF; --dim:#8C8175; --amber:#FFB020; --ember:#FF6B35;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-snap-type:y mandatory; overflow-x:hidden}
+  body{
+    background:var(--black); color:var(--ink); overflow-x:hidden;
+    font:800 16px/1 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .panel{
+    min-height:100svh; scroll-snap-align:start; scroll-snap-stop:always;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:36px 26px; position:relative; overflow:hidden;
+  }
+  .kicker{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11.5px; font-weight:700;
+    letter-spacing:.3em; text-transform:uppercase; color:var(--amber); margin-bottom:24px;
+  }
+  .huge{font-size:clamp(46px,13.5vw,104px); line-height:.94; letter-spacing:-.045em; font-weight:900; text-wrap:balance}
+  .mid{font-size:clamp(28px,7.6vw,54px); line-height:1.04; letter-spacing:-.035em; font-weight:900; text-wrap:balance}
+  .amber{color:var(--amber)} .ember{color:var(--ember)}
+  .note{margin-top:24px; font-size:clamp(16px,4.3vw,20px); line-height:1.45; font-weight:500; color:var(--dim); max-width:26ch}
+  .note b{color:var(--ink); font-weight:700}
+
+  .rise{opacity:0; transform:translateY(24px); transition:opacity .68s cubic-bezier(.2,.7,.3,1), transform .68s cubic-bezier(.2,.7,.3,1)}
+  .panel.on .rise{opacity:1; transform:none}
+  .panel.on .rise:nth-child(2){transition-delay:.09s}
+  .panel.on .rise:nth-child(3){transition-delay:.19s}
+  .panel.on .rise:nth-child(4){transition-delay:.29s}
+  .panel.on .rise:nth-child(5){transition-delay:.39s}
+
+  .glow{position:absolute; width:150vw; height:150vw; left:-25vw; top:-45vw; pointer-events:none;
+    background:radial-gradient(circle, rgba(255,176,32,.17) 0%, rgba(255,107,53,.06) 40%, transparent 70%)}
+
+  .door{
+    border:1px solid var(--line); background:var(--raise); border-radius:4px;
+    padding:24px 22px; margin-top:20px; border-left:3px solid var(--amber);
+  }
+  .door.two{border-left-color:var(--ember)}
+  .door .n{
+    font-family:ui-monospace,Menlo,monospace; font-size:10.5px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--dim); margin-bottom:10px;
+  }
+  .door h3{font-size:clamp(22px,5.8vw,30px); line-height:1.12; letter-spacing:-.03em; font-weight:900}
+  .door p{margin-top:11px; font-size:15.5px; line-height:1.5; font-weight:500; color:var(--dim)}
+  .door p b{color:var(--ink); font-weight:700}
+
+  .scrollcue{
+    position:absolute; bottom:24px; left:50%; transform:translateX(-50%);
+    font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--dim); animation:bob 1.9s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0);opacity:.5}50%{transform:translateX(-50%) translateY(6px);opacity:1}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important} .rise{opacity:1;transform:none}}
+</style>
+
+<section class="panel on">
+  <div class="glow"></div>
+  <div class="kicker rise">Read this before you go back on the floor</div>
+  <div class="huge rise">You sell<br>all night.<br><span class="amber">Somebody else<br>keeps most of it.</span></div>
+  <div class="scrollcue">Swipe</div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">Who's saying it</div>
+  <div class="mid rise">I build things.<br>Videos. Pages.<br>Whole brands.</div>
+  <div class="note rise">Taught myself on a phone. Nine months ago I couldn't do any of it. <b>Now I build in an afternoon what agencies charge five grand and six weeks for.</b></div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">There are two doors</div>
+
+  <div class="door rise">
+    <div class="n">Door one</div>
+    <h3>You're good with people.</h3>
+    <p>You read a room in four seconds, handle no all night, and turn strangers into regulars. <b>That's the whole job in sales and most people in it are terrible at it.</b> Send me business, you get paid on it. No quitting anything, no schedule, nothing to buy.</p>
+  </div>
+
+  <div class="door two rise">
+    <div class="n">Door two</div>
+    <h3>You want your own thing.</h3>
+    <p>A brand, a page, a business — something that keeps earning when you're not standing in front of someone. <b>You don't have to learn any of this. I build it, you own it.</b></p>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="kicker rise">The part nobody else says</div>
+  <div class="mid rise">I can't promise<br>you <span class="ember">a number.</span></div>
+  <div class="note rise">Anyone who throws one at you tonight is lying to you, and you already know it. <b>I'll show you what I've built and you decide if it's real.</b> That's the whole pitch.</div>
+</section>
+
+<section class="panel">
+  <div class="glow"></div>
+  <div class="kicker rise">That's it</div>
+  <div class="huge rise">Give me<br>your <span class="amber">number.</span></div>
+  <div class="note rise">I'll send you something real tomorrow. No follow-up if you don't answer — I'm not that guy.</div>
+  <div class="rise" style="margin-top:36px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)">Isaac &nbsp;·&nbsp; I.MAGIN</div>
+</section>
+
+<script>
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.25});
+  document.querySelectorAll('.panel').forEach(function(p){io.observe(p)});
+</script>

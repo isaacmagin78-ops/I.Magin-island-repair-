@@ -96,11 +96,56 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/imagin-concierge.png",
     watermarkText: "IMagin Concierge",
   },
+  /**
+   * Added 2026-08-16 to close a silent failure. Every listing brief in
+   * `Listing-Content-System/listings/` and `ListingFilm.tsx` already declared
+   * `brandId: "luxury-coastal"`, and `assets/logos/luxury-coastal.png` was
+   * already on disk — but no entry existed here. `getBrandTheme()` falls back to
+   * the default rather than throwing, so listing renders came out in the dark
+   * blue engine palette with no error and nothing to debug.
+   *
+   * This is the one theme that sets a serif face: it fronts real-estate work for
+   * a licensed agent, where the other brands front pet and ranch content.
+   */
+  "luxury-coastal": {
+    id: "luxury-coastal",
+    displayName: "Luxury Coastal",
+    colors: {
+      background: "#06161d",
+      primary: "#d9c3a0",
+      secondary: "#5f9ea0",
+      accent: "#f2e9dc",
+      text: "#ffffff",
+      textMuted: "#bcd3d6",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/logos/luxury-coastal.png",
+    watermarkText: "Luxury Coastal",
+  },
 };
 
 export const DEFAULT_BRAND_ID = "isaac-video-engine";
 
-export const getBrandTheme = (id?: string): BrandTheme =>
-  BRAND_THEMES[id ?? DEFAULT_BRAND_ID] ?? BRAND_THEMES[DEFAULT_BRAND_ID];
+/**
+ * Resolving an unknown brand id used to fail *silently*: it returned the default
+ * theme, so a typo or an unregistered brand rendered a whole video off-brand
+ * with no error and nothing to debug. That is exactly what happened with
+ * `luxury-coastal` for weeks. Adding the theme fixed one instance; this fixes
+ * the mechanism. It still falls back rather than throwing — a render half-way
+ * through a batch should not die — but it can no longer do so quietly.
+ */
+export const getBrandTheme = (id?: string): BrandTheme => {
+  const key = id ?? DEFAULT_BRAND_ID;
+  const theme = BRAND_THEMES[key];
+  if (!theme) {
+    // eslint-disable-next-line no-console
+    console.warn(
+      `[branding] Unknown brandId "${key}" — falling back to "${DEFAULT_BRAND_ID}". ` +
+        `This render will be OFF-BRAND. Registered ids: ${Object.keys(BRAND_THEMES).join(", ")}`,
+    );
+    return BRAND_THEMES[DEFAULT_BRAND_ID];
+  }
+  return theme;
+};
 
 export const listBrandThemes = (): BrandTheme[] => Object.values(BRAND_THEMES);

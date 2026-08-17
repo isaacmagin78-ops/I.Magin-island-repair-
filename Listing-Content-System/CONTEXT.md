@@ -1,3 +1,11 @@
+> ## ⛔ STOP — read before using anything in this file (added 2026-08-17)
+> **`111-pompano-beach-611` is a CLOSED listing and must never be pitched again.**
+> Linda's live listing is **1205 SW 4th Street**. This file has no date on it,
+> tells every session to read it first, and calls the closed listing "the
+> flagship demo" — which would send a session to pitch a real licensed broker a
+> property that already sold. The package is still a fine *demo of the system*.
+> It is not a live campaign.
+
 # Project context (read me first in future sessions)
 
 - **Owner:** Isaac Magin (this repo). The Listing Content System and the

@@ -32,6 +32,10 @@ import {
   WILDLIFE_DURATION_IN_FRAMES,
   WILDLIFE_FPS,
 } from "./compositions/WildlifeCenterFilm";
+import {
+  ScriptShort,
+  calculateScriptShortMetadata,
+} from "./compositions/ScriptShort";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -117,6 +121,31 @@ export const MyComposition = () => {
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
         defaultProps={{ scenes: [] }}
+      />
+      {/* Faceless pipeline (`npm run render:script`). The default props are a
+          neutral demonstration of the script format, so opening this in Studio
+          shows a real video without standing in for any brand's copy. */}
+      <Composition
+        id="ScriptShort"
+        component={ScriptShort}
+        calculateMetadata={calculateScriptShortMetadata}
+        durationInFrames={1}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={{
+          beats: [
+            { statement: "One text file in." },
+            {
+              statement: "One finished video out.",
+              supportingLines: ["No footage. No camera."],
+            },
+            { statement: "Write the next line and run it again." },
+          ],
+          brandId: "isaac-video-engine",
+          preset: "youtube-shorts" as const,
+          eyebrow: "Isaac Video Engine",
+        }}
       />
     </>
   );

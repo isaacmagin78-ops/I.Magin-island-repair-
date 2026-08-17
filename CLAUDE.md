@@ -23,9 +23,13 @@ workspace, not a single application. Each top-level folder is its own
 self-contained project with its own `package.json`, dependencies, and README.
 
 There is **no root `package.json`, no workspace tooling (npm/pnpm/yarn
-workspaces, Turborepo, Nx), and no CI** (`.github/` does not exist). Nothing
+workspaces, Turborepo, Nx)**. Nothing
 builds or tests the repo as a whole. Always `cd` into a project folder before
 running anything.
+
+**As of 2026-08-17 there is one workflow**, `.github/workflows/pages.yml`, which
+publishes `/site` to GitHub Pages. It is not CI — it does not build or test
+anything — and it is currently waiting on Pages being switched on by hand.
 
 The repo name (`I.Magin-island-repair-`) is historical — the handyman
 lead-capture app it refers to was never built here. Ignore it.
@@ -94,7 +98,7 @@ The short version of what that file says:
 
 Current brand ids in `BRAND_THEMES`: `isaac-video-engine` (default),
 `tysons-time`, `tysons-picks`, `legends-ranch`, `wildlife-center`,
-`imagin-concierge`.
+`imagin-concierge`, `luxury-coastal`. **Seven, as of 2026-08-16.**
 Current presets: `tiktok`, `instagram-reels`, `facebook-reels`,
 `youtube-shorts`, `square-post`, `story`, `widescreen`.
 
@@ -109,8 +113,9 @@ not hand-edit them.**
 - `agents/<id>.json` are reusable agent profiles referenced by
   `"agentProfile": "<id>"`; inline `agent` fields on a brief override them.
 - `CONTEXT.md` carries the durable why: Linda S. Hoyt is a **real** agent
-  (Isaac's sister) and the first intended client; `111-pompano-beach-611` is
-  her real listing and the flagship demo.
+  (Isaac's sister) and the first intended client. ⚠️ **`111-pompano-beach-611`
+  is a CLOSED listing — a fine demo of the system, but never pitch it. Her live
+  listing is 1205 SW 4th Street.**
 - Briefs for real properties carry a `provenance` block. Keep it accurate and
   keep it traveling with the package.
 
@@ -191,6 +196,107 @@ prose in a README:
 
 When you change what is true, update the status file in the same commit.
 
+### The intake rule — write it down in the same turn
+
+**When Isaac states a fact — about himself, his history, his people, his tools,
+or what he wants — write it to a file before you reply.** Not "noted." Not a
+summary in the chat. A conversation is not storage; it evaporates, and the next
+session starts blind.
+
+This rule exists because the failure kept repeating and he finally named it:
+*"I've done this already."* He had. He named the two creators he follows many
+times and a repo-wide grep returned zero hits. He told sessions the first 6–7
+months were built on an iPhone, and a session later "corrected" ChatGPT for
+saying exactly that — because the device history had never been written down,
+so there was nothing to check a guess against.
+
+Two practical consequences:
+
+- **Never fill a gap in his history with an inference from the current
+  conversation.** If it isn't in a file, say "I don't have that" and ask, or
+  leave it out. A guess about his own life, stated as fact, is worse than a
+  blank.
+- **The repo is public.** Health, legal, financial-personal or family details
+  about real people go to **Notion**, never to a file here. Work facts get
+  mirrored into `PROJECT-BRIEF.md`. Sort it at intake, not later.
+
+### The teaching rule — warn him before, not after
+
+**Isaac, 2026-08-17, describing what the first Claude Code session promised him:**
+
+> *"He said it was dangerous. He said he was gonna be watching over everything I
+> did and guiding me to teach me how to learn everything. You're not doing that."*
+
+He is right that it stopped. That promise is not in this repo's session
+transcript — it predates it and lives in a surface no Code session can read —
+but it does not need to be found to be honoured. **Do it.**
+
+- **Warn before, not after.** If he is about to do something that will cost him
+  money, an account, or a day, say so *while he can still stop* — not in a
+  post-mortem. He has lost a working day to a session that acted without
+  warning him, and a week to a status file nobody questioned.
+- **Give the hint before the answer.** When he is figuring something out, point
+  at the thing rather than handing over the finished object. A finished answer
+  he cannot reproduce is worth less than a hint he can use twice.
+- **Explain the why, in one plain sentence.** Not the mechanism — the reason.
+  "Don't say a price standing up, because whatever you say becomes your ceiling"
+  teaches; "set your pricing strategically" does not.
+- **Name the danger out loud when there is one.** Real ones only: money,
+  accounts, real people's names, anything published under someone else's brand.
+  Manufactured caution is noise and he will stop listening.
+- **Never let him think he is covered when he is not.** The most useful thing a
+  session did for him was say "you set this up so you could be *learning*, and
+  the watcher will tell you what shipped but teach you nothing — that part is
+  still missing." Say the missing part out loud.
+
+**This does not mean lecturing, and it does not mean asking permission for
+everything.** He wants the work done. It means that while the work is being
+done, he is being shown what is happening and why — so that in six months he
+does not need the session at all.
+
+### The volume rule — he reads slower than you write
+
+**Isaac, 2026-08-16:** *"You're operating so much faster than the human brain
+that by the time you're done there's a whole book worth of information that
+you've laid out for people to read, and I have no idea how to process that much
+information quickly."*
+
+Correct, and it has been happening all day. Four rules:
+
+- **One idea per reply.** Lead with the single thing he needs now. Everything
+  else waits until he asks.
+- **Never write a long file and then summarize it in chat.** Pick one. The file
+  is the artifact; the chat gets one line pointing at it.
+- **Short replies are not lazy here — they are the deliverable.** A wall of text
+  he cannot process is the same as no answer, and it costs him the hour this
+  whole system exists to give back.
+- **Let him set the pace.** Stop, and wait to be asked for more.
+
+### The paste rule — verify first, finish, then hand him one thing
+
+**Standing instruction from Isaac, 2026-08-16:** *"From now on you have to
+confirm and verify everything before you tell me to paste, and just let yourself
+finish and then make sure you're not looping and give me the best thing to
+paste."*
+
+This exists because a session handed him a research prompt built on TikTok Shop,
+then had to stop him mid-paste after reading Ike OS and finding TikTok Shop is
+**Deferred with a missing W-9.** Two prompts for one request is a loop, and the
+loop is the thing he is trying to get out of.
+
+The sequence is not negotiable:
+
+1. **Verify with tools before writing the thing to paste** — Ike OS in Notion,
+   the live layer (Blotato, Stripe, the real URLs), and the repo files. Not
+   after. Not "I'll check while he reads it."
+2. **Finish the whole check before replying.** Don't hand over a draft and keep
+   working. A half-verified prompt is worse than a slow one.
+3. **Hand him exactly one thing.** Not options, not a menu, not "or you could."
+   One block, ready to paste.
+4. **Say what was verified and what could not be** — with the date and the tool
+   used. Anything unverifiable gets labeled inside the prompt itself, so the
+   receiving AI knows not to build on it.
+
 ## Non-negotiable content rules
 
 This repo produces marketing material for **real people and real businesses**.
@@ -260,7 +366,7 @@ correcting figures that were reported without re-checking.
 
 **Stale or missing wiring — check before relying on it**
 
-- **`luxury-coastal` is not a registered brand theme.** Every listing brief and
+- ~~**`luxury-coastal` is not a registered brand theme.**~~ **FIXED 2026-08-16** — registered in `BRAND_THEMES`. The note below is kept only to explain the bug class. Every listing brief and
   `ListingFilm.tsx` reference `brandId: "luxury-coastal"`, and
   `assets/logos/luxury-coastal.png` exists, but there is no such entry in
   `BRAND_THEMES`. `getBrandTheme()` falls back silently to the default
@@ -271,8 +377,7 @@ correcting figures that were reported without re-checking.
   them (with props) before trying to render either.
 - `isaac-video-engine/README.md` and `PROJECT-STATUS.md` say "six" social
   presets and four brand themes; there are now seven presets and six themes.
-- `Listing-Content-System/` has **no `.gitignore`**, so its `out/` directory is
-  *not* ignored despite the README saying so. Don't commit generated packages.
+- ~~`Listing-Content-System/` has **no `.gitignore`**~~ — **FIXED.** It exists and ignores `out/`; the 111 demo package is force-added on purpose.
 - `college-launch-os` declares `"test": "jest"` but has no jest config and no
   test files — `npm test` fails. `madison-moves` declares `"lint": "next lint"`
   with no eslint config or dependency.
@@ -299,3 +404,13 @@ correcting figures that were reported without re-checking.
   originally blocked this way — a "blocked" result there is a network policy,
   not a broken script. Re-run `node test_nav.mjs` to test the path before
   concluding anything.
+
+## Before you design anything: `DESIGN-DIRECTION.md`
+
+**Apple is the standard. Miami is the palette. No full-spectrum rainbows.**
+
+That last one is a hard rule with a technical fix, not a taste note: a gradient
+containing yellow and green alongside pink and blue reads as a pride flag, which
+is not what Isaac sells. Never use the standard
+`cos(6.28*(t + vec3(0.0,0.33,0.67)))` iridescence trick on his brand — use a
+closed 3–4 stop palette instead. He has had to say this more than once.

@@ -1,0 +1,22 @@
+# This is the whole script. Rules:
+#   - A blank line starts a new card.
+#   - The first line of a card is the line people read.
+#   - Lines under it are the quieter lines.
+#   - A line starting with # is a note to yourself. It never appears.
+# Delete everything below and write your own. Then run:
+#   BRAND=tysons-time PRESET=youtube-shorts npm run render:script
+
+The first month sets the rhythm
+
+A new dog does not need more freedom
+He needs a smaller world he can trust
+
+Same walk. Same route. Same hour.
+
+Week one belongs to one person
+Everyone else can wait
+
+Boring is not a failure
+Boring is what a rescue has never had
+
+Follow for the rest of the first 30 days

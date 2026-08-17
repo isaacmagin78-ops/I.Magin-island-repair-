@@ -8,9 +8,14 @@ folders. Two more were recovered 2026-07-29 — **there are six**, listed below.
 > inventories every unmerged branch and what is stranded on each.
 >
 > An earlier version of this line pointed to a separate `imagin-concierge` repo for
-> "master workspace context." **That repo does not exist.** Checked against the GitHub
-> API on 2026-08-14: this account has exactly one repository — this one. The pointer
-> sent sessions hunting for a phantom repo. Corrected so it stops costing time.
+> "master workspace context." ~~**That repo does not exist.**~~ **THAT CORRECTION WAS ITSELF WRONG —
+> re-verified against the GitHub API 2026-08-17.** The repo is real:
+> `isaacmagin78-ops/-imagin-concierge`, created 2026-07-22, public, default
+> branch `claude/isaac-workspace-charter-htet5g`. **Its name begins with a
+> hyphen**, which is almost certainly why a name-based check missed it.
+> `ASSET-INVENTORY.md` lists it and seven paths inside it and was right all
+> along. A denial is more expensive than a stale pointer: it tells every future
+> session to stop looking.
 
 | Folder | What it is | Umbrella |
 |---|---|---|

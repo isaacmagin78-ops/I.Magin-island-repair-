@@ -90,6 +90,74 @@ export const exitMotion = ({
   return { translateY, opacity, progress };
 };
 
+type BeatOptions = {
+  frame: number;
+  fps: number;
+  /** Total length of this beat. The exit is timed backwards from the end. */
+  durationInFrames: number;
+  spring?: Partial<SpringConfig>;
+  /** Pixels of vertical travel on entry. */
+  distance?: number;
+  exitDurationInFrames?: number;
+};
+
+/**
+ * The whole life of a fixed-length beat — rise in, hold, settle out — from
+ * one call.
+ *
+ * Exists because a card in a text-driven video already knows how long it is
+ * on screen, so making every composition pair `entranceMotion` with a
+ * hand-computed `exitStart` is both redundant and easy to get wrong by a few
+ * frames. Pass the beat's duration; the exit lands on the end of it.
+ */
+export const beatMotion = ({
+  frame,
+  fps,
+  durationInFrames,
+  spring: springConfig = SPRINGS.smooth,
+  distance = 40,
+  exitDurationInFrames = 16,
+}: BeatOptions) => {
+  const entrance = entranceMotion({ frame, fps, spring: springConfig, distance });
+  const exit = exitMotion({
+    frame,
+    exitStart: Math.max(0, durationInFrames - exitDurationInFrames),
+    exitDurationInFrames,
+    distance: -distance * 0.6,
+  });
+
+  return {
+    translateY: entrance.translateY + exit.translateY,
+    opacity: entrance.opacity * exit.opacity,
+    scale: entrance.scale,
+  };
+};
+
+type DriftOptions = {
+  frame: number;
+  /** Frames in one full cycle. Long periods (300+) read as stillness. */
+  periodInFrames: number;
+  /** Peak excursion, in whatever unit the caller applies it in. */
+  amplitude: number;
+  /** Phase offset in cycles (0–1), to decorrelate several drifting layers. */
+  phase?: number;
+};
+
+/**
+ * Slow ambient drift, for backdrops with no footage to carry motion.
+ *
+ * A long sine: the frame is never quite still, but nothing on it is ever
+ * seen to move — the "felt, not watched" motion the design direction asks
+ * for. Deterministic (frame in, value out), so renders stay reproducible.
+ */
+export const ambientDrift = ({
+  frame,
+  periodInFrames,
+  amplitude,
+  phase = 0,
+}: DriftOptions): number =>
+  Math.sin((frame / periodInFrames + phase) * Math.PI * 2) * amplitude;
+
 /**
  * Ken Burns / auto pan-zoom transform for a full-bleed image or video layer.
  * Returns a CSS transform string driven by the current frame across the

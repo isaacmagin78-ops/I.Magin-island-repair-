@@ -1,0 +1,155 @@
+<title>I.MAGIN Identity</title>
+<style>
+  /* Obsidian + champagne metal, one Miami accent. Luxury is restraint:
+     light weight, wide tracking, precious material, almost no motion. */
+  :root{
+    --obsidian:#07070A; --raise:#0E0E12; --line:#1E1E24;
+    --ink:#EDE8DF; --dim:#6E6A63;
+    --coral:#FF5787; --aqua:#33C7EB;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--obsidian); color:var(--ink);
+    font:400 16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px; margin:0 auto; padding:0 24px 80px}
+
+  /* ---------- the mark ---------- */
+  .hero{
+    min-height:66svh; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center; padding:60px 0 44px;
+  }
+  .mark{
+    font-weight:200;
+    font-size:clamp(30px,8.6vw,64px);
+    letter-spacing:.30em;
+    text-indent:.30em;            /* balances the trailing letterspace */
+    line-height:1.1;
+    background:linear-gradient(100deg,
+      #6B5433 0%, #9C7F4E 12%, #E8D5A8 26%, #FFF8E7 34%,
+      #E8D5A8 42%, #A98A56 56%, #6B5433 70%, #C3A56C 86%, #6B5433 100%);
+    background-size:260% 100%;
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent; color:transparent;
+    animation:sheen 9s ease-in-out infinite;
+  }
+  @keyframes sheen{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+  /* the period — the single Miami note in an otherwise metal mark */
+  .mark .pt{
+    -webkit-text-fill-color:var(--coral); color:var(--coral);
+    animation:glimmer 5s ease-in-out infinite;
+  }
+  @keyframes glimmer{0%,100%{opacity:1}50%{opacity:.55}}
+
+  .under{
+    margin-top:22px; font-size:clamp(8.5px,2.3vw,11px); font-weight:400;
+    letter-spacing:.62em; text-indent:.62em; text-transform:uppercase; color:var(--dim);
+  }
+  .hair{width:44px; height:1px; background:var(--line); margin:26px auto 0}
+
+  /* ---------- sections ---------- */
+  .kick{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:10px; font-weight:600;
+    letter-spacing:.3em; text-transform:uppercase; color:var(--dim);
+    display:flex; align-items:center; gap:14px; margin:0 0 18px;
+  }
+  .kick::after{content:"";flex:1;height:1px;background:var(--line)}
+  section{padding:50px 0 0}
+  h2{font-size:clamp(19px,4.6vw,23px); font-weight:600; letter-spacing:-.015em; margin-bottom:10px}
+  p{color:var(--dim); font-size:15.5px; line-height:1.65; max-width:56ch}
+  p + p{margin-top:12px}
+  p b{color:var(--ink); font-weight:500}
+
+  /* ---------- lockups ---------- */
+  .set{display:flex; flex-direction:column; gap:12px; margin-top:22px}
+  .box{
+    background:var(--raise); border:1px solid var(--line); border-radius:3px;
+    min-height:132px; display:flex; align-items:center; justify-content:center;
+    position:relative; padding:28px 20px;
+  }
+  .box .tag{
+    position:absolute; top:11px; left:13px; font-family:ui-monospace,Menlo,monospace;
+    font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:var(--dim); opacity:.6;
+  }
+  .gold{
+    background:linear-gradient(100deg,#6B5433 0%,#E8D5A8 30%,#FFF8E7 40%,#C3A56C 62%,#6B5433 100%);
+    background-size:200% 100%; -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent; color:transparent;
+    animation:sheen 9s ease-in-out infinite;
+  }
+  .lk-primary{font-weight:200; font-size:clamp(22px,5.6vw,34px); letter-spacing:.3em; text-indent:.3em}
+  .lk-sub{display:block; margin-top:13px; font-size:8.5px; letter-spacing:.6em; text-indent:.6em;
+    text-transform:uppercase; color:var(--dim); -webkit-text-fill-color:var(--dim)}
+  .lk-stack{text-align:center}
+  .monogram{
+    width:104px; height:104px; border:1px solid var(--line); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:200; font-size:34px; letter-spacing:.06em;
+  }
+  .lk-line{font-weight:200; font-size:clamp(16px,4.2vw,21px); letter-spacing:.34em; text-indent:.34em}
+  .pt-c{-webkit-text-fill-color:var(--coral); color:var(--coral)}
+
+  .why{margin-top:20px}
+  .why div{padding:15px 0; border-top:1px solid var(--line); display:flex; gap:15px; align-items:flex-start}
+  .why div:last-child{border-bottom:1px solid var(--line)}
+  .why .k{font-family:ui-monospace,Menlo,monospace; font-size:9.5px; letter-spacing:.16em;
+    text-transform:uppercase; color:#C3A56C; flex:none; width:70px; padding-top:4px}
+  .why .t{font-size:15px; line-height:1.55; color:var(--ink)}
+  .why .t em{color:var(--dim); font-style:normal}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="mark">I<span class="pt">.</span>MAGIN</div>
+    <div class="under">Concierge</div>
+    <div class="hair"></div>
+  </div>
+
+  <section>
+    <div class="kick">The call</div>
+    <h2>I.MAGIN, and nothing after it</h2>
+    <p>Luxury houses don't put the job in the name. Aman doesn't say resorts, Hermès doesn't say leather. <b>The name is the name; the category sits underneath in small type</b> — which is exactly where CONCIERGE goes, and it can be swapped for a city, a division, or dropped entirely without touching the mark.</p>
+    <p><b>Everything is lowercase-weight, not loud.</b> Heavy type and wide gradients read as streetwear or sports. Thin strokes with wide letterspacing is what money looks like — it's the same move on a Bentley badge, a Tom Ford box and a Miami penthouse listing.</p>
+  </section>
+
+  <section>
+    <div class="kick">Why it looks expensive</div>
+    <div class="why">
+      <div><span class="k">Material</span><span class="t">Champagne gold with a real sheen crossing it — <em>a surface, not a color. That's the difference between expensive and colorful.</em></span></div>
+      <div><span class="k">Restraint</span><span class="t">One accent in the entire identity: the period, in Miami coral. <em>Everything else is metal and black.</em></span></div>
+      <div><span class="k">Space</span><span class="t">The letterspacing is doing most of the work. <em>Confidence reads as room, not volume.</em></span></div>
+      <div><span class="k">Motion</span><span class="t">A nine-second sheen and a slow pulse. <em>You notice it on the second look, never the first — which is the point.</em></span></div>
+      <div><span class="k">Miami</span><span class="t">Present as one note, not a theme. <em>Coral against obsidian is South Florida. A full sunset gradient is a t-shirt.</em></span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kick">The set</div>
+    <h2>Three lockups</h2>
+    <div class="set">
+      <div class="box">
+        <span class="tag">01 — Primary</span>
+        <div class="lk-stack">
+          <div class="lk-primary gold">I<span class="pt-c">.</span>MAGIN</div>
+          <span class="lk-sub">Concierge</span>
+        </div>
+      </div>
+      <div class="box">
+        <span class="tag">02 — Monogram</span>
+        <div class="monogram gold">I<span class="pt-c">.</span>M</div>
+      </div>
+      <div class="box">
+        <span class="tag">03 — Signature</span>
+        <div class="lk-line gold">I<span class="pt-c">.</span>MAGIN</div>
+      </div>
+    </div>
+    <p style="margin-top:20px">The monogram in a thin circle is the one that does the heavy lifting — <b>it works as a profile picture, an app icon, a stamp on a folder, embroidery on a shirt, or foil on a card.</b> If the mark survives being pressed into paper in one color, it's a real identity. This one does.</p>
+  </section>
+
+</div>

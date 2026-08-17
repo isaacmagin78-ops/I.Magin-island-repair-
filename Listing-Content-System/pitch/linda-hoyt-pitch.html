@@ -1,0 +1,439 @@
+<title>Three Weeks at the Cottage</title>
+<style>
+  :root{
+    --ground:#F2F1ED; --surface:#FFFFFF; --sunk:#E9E8E2;
+    --ink:#14181B; --body:#4C555C; --muted:#7C858C;
+    --accent:#0B5563; --accent-soft:#E2ECEE;
+    --signal:#A2492A; --signal-soft:#F6E9E3;
+    --rule:#DCDBD4; --hair:#C9C8C0;
+    --shadow:rgba(20,24,27,.13);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#0D1114; --surface:#161B1F; --sunk:#11161A;
+      --ink:#E9EBE7; --body:#A9B3B9; --muted:#7C868D;
+      --accent:#5AAEBE; --accent-soft:#122A31;
+      --signal:#E0906C; --signal-soft:#2C1912;
+      --rule:#252C31; --hair:#333B41;
+      --shadow:rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0D1114; --surface:#161B1F; --sunk:#11161A;
+    --ink:#E9EBE7; --body:#A9B3B9; --muted:#7C868D;
+    --accent:#5AAEBE; --accent-soft:#122A31;
+    --signal:#E0906C; --signal-soft:#2C1912;
+    --rule:#252C31; --hair:#333B41;
+    --shadow:rgba(0,0,0,.5);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--ground);color:var(--body);
+    font-family:var(--serif);font-size:18px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;padding:0 20px 80px;
+  }
+  .wrap{max-width:660px;margin:0 auto}
+
+  header{padding:56px 0 0}
+  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
+    text-transform:uppercase;color:var(--accent);font-weight:600}
+  h1{font-family:var(--serif);font-size:clamp(34px,7.4vw,50px);line-height:1.04;
+    letter-spacing:-.021em;font-weight:400;color:var(--ink);margin-top:16px;text-wrap:balance}
+  .standfirst{margin-top:18px;font-size:19.5px;line-height:1.55;color:var(--body);max-width:34em}
+  .standfirst em{font-style:italic;color:var(--ink)}
+  .byline{margin-top:22px;padding-top:14px;border-top:1px solid var(--hair);
+    font-family:var(--mono);font-size:11px;letter-spacing:.07em;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:6px 18px}
+
+  section{padding:50px 0 0}
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;
+    text-transform:uppercase;color:var(--muted);font-weight:600;
+    padding-bottom:10px;border-bottom:1px solid var(--rule)}
+  h2{font-family:var(--serif);font-size:clamp(24px,4.6vw,30px);line-height:1.16;
+    letter-spacing:-.016em;font-weight:400;color:var(--ink);margin-top:20px;text-wrap:balance}
+  p{margin-top:16px;max-width:34em}
+  p strong{font-weight:700;color:var(--ink)}
+  .lede{font-size:19px}
+
+  /* two rooms */
+  .rooms{margin-top:24px;background:var(--surface);border:1px solid var(--rule);
+    border-radius:2px;padding:22px 24px 18px}
+  .rooms .src{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted)}
+  .bars{margin-top:16px;display:flex;flex-direction:column;gap:14px}
+  .bar .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .bar .lbl{font-size:15px;color:var(--ink);line-height:1.3}
+  .bar .lbl small{display:block;font-family:var(--mono);font-size:10px;
+    letter-spacing:.06em;color:var(--muted);margin-top:2px}
+  .bar .val{font-family:var(--mono);font-size:17px;font-weight:600;
+    font-variant-numeric:tabular-nums;white-space:nowrap}
+  .bar .track{margin-top:8px;height:9px;background:var(--sunk);border-radius:1px;overflow:hidden}
+  .bar .fill{height:100%}
+  .bar.warm .val{color:var(--accent)} .bar.warm .fill{background:var(--accent)}
+  .bar.cold .val{color:var(--muted)} .bar.cold .fill{background:var(--hair)}
+  .rooms .foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule);
+    font-size:14.5px;font-style:italic;color:var(--muted)}
+
+  /* legend */
+  .legend{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted)}
+  .chip{display:inline-flex;align-items:center;gap:7px}
+  .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+  .dot.ready{background:var(--accent)}
+  .dot.needs{background:var(--signal)}
+
+  /* calendar */
+  .week{margin-top:38px}
+  .wlabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.19em;text-transform:uppercase;
+    color:var(--accent);font-weight:700;padding-bottom:9px;border-bottom:2px solid var(--accent)}
+  .wnote{margin-top:10px;font-size:15px;font-style:italic;color:var(--muted);max-width:34em}
+  .days{margin-top:16px;display:flex;flex-direction:column;gap:14px}
+
+  .day{background:var(--surface);border:1px solid var(--rule);border-radius:2px;
+    padding:18px 20px;position:relative}
+  .day.needs{border-left:3px solid var(--signal)}
+  .day.ready{border-left:3px solid var(--accent)}
+  .dhead{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .dwhen{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;white-space:nowrap}
+  .dkind{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+    font-weight:700;white-space:nowrap}
+  .day.ready .dkind{color:var(--accent)}
+  .day.needs .dkind{color:var(--signal)}
+  .day h3{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--ink);
+    margin-top:9px;line-height:1.28;letter-spacing:-.01em}
+  .dwhy{margin-top:7px;font-size:14.5px;color:var(--muted);font-style:italic;max-width:36em}
+
+  .copy{margin-top:14px;background:var(--sunk);border:1px solid var(--rule);
+    border-radius:2px;padding:15px 16px;font-family:var(--ui);font-size:14.5px;
+    line-height:1.55;color:var(--ink)}
+  .copy .cl{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;display:block;margin-bottom:9px}
+  .copy .tags{display:block;margin-top:9px;color:var(--accent);font-size:13.5px}
+  .copy .blank{color:var(--signal);font-weight:700}
+  .shot{margin-top:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;
+    color:var(--signal);line-height:1.5}
+  .shot b{color:var(--ink);font-weight:700}
+
+  /* report plate */
+  figure{margin-top:30px}
+  .plate{background:var(--sunk);border:1px solid var(--rule);border-radius:2px;
+    padding:34px 24px;display:flex;justify-content:center;overflow-x:auto}
+  figcaption{margin-top:12px;display:flex;gap:14px;align-items:baseline}
+  .pnum{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;white-space:nowrap;padding-top:3px}
+  .ptext{font-size:14.5px;font-style:italic;line-height:1.5;color:var(--muted);max-width:38em}
+  .ptext b{font-style:normal;font-weight:700;color:var(--body)}
+
+  .sheet{background:#fff;width:100%;max-width:400px;padding:30px 30px 26px;
+    box-shadow:0 1px 2px var(--shadow),0 10px 26px -8px var(--shadow);
+    font-family:var(--serif);color:#14181B;flex-shrink:0}
+  .sheet .sh-top{font-family:var(--mono);font-size:7.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:#8A9299}
+  .sheet h4{font-size:17px;font-weight:400;line-height:1.22;margin-top:9px;color:#14181B}
+  .sheet .sh-sub{font-size:10.5px;color:#5C656C;margin-top:6px;font-style:italic}
+  .sheet .sh-rule{height:1px;background:#DCDBD4;margin-top:16px}
+  .sheet h5{font-family:var(--mono);font-size:8px;letter-spacing:.15em;text-transform:uppercase;
+    color:#0B5563;font-weight:600;margin-top:16px}
+  .sheet table{width:100%;font-size:9.5px;margin-top:9px;border-collapse:collapse}
+  .sheet td{padding:5px 0;border-bottom:1px solid #EDECE7;color:#3F484F;line-height:1.35}
+  .sheet td:first-child{font-weight:700;color:#14181B;padding-right:14px;width:47%}
+  .sheet tr:last-child td{border-bottom:none}
+  .sheet .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:11px}
+  .sheet .metric{background:#F2F1ED;padding:9px 8px;text-align:center}
+  .sheet .metric .n{font-family:var(--mono);font-size:16px;font-weight:600;color:#0B5563;
+    font-variant-numeric:tabular-nums;line-height:1}
+  .sheet .metric .l{font-family:var(--mono);font-size:6.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:#7C858C;margin-top:5px;line-height:1.3}
+  .sheet .sh-foot{margin-top:16px;padding-top:10px;border-top:1px solid #DCDBD4;
+    font-size:8.5px;color:#7C858C;line-height:1.5}
+  .sheet .sh-foot b{color:#14181B;font-size:9px}
+
+  .close{margin-top:50px;background:var(--surface);border:1px solid var(--hair);
+    border-radius:2px;padding:28px}
+  .close h2{margin-top:0;font-size:25px}
+  .close p{font-size:17px}
+
+  .notice{margin-top:30px;border:1px solid var(--rule);border-radius:2px;
+    padding:18px 20px;background:var(--sunk)}
+  .notice .flag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);font-weight:600}
+  .notice p{margin-top:9px;font-size:14.5px;line-height:1.55;color:var(--body);max-width:none}
+
+  footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--hair);
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted);line-height:1.7}
+  footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+  footer a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+  @media (max-width:520px){
+    body{font-size:17px}
+    .plate{padding:24px 16px}
+    .sheet{padding:24px 22px 22px}
+  }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="kicker">For Linda · the Cozy Cottage · 1205 SW 4th Street</div>
+  <h1>Three weeks at the cottage</h1>
+  <p class="standfirst">A campaign calendar for the listing, with the copy already written. <em>Nothing needed from you — take any of it, ignore the rest.</em> Tomorrow's open house is yours; this starts the day after and runs to Labor Day.</p>
+  <div class="byline">
+    <span>Isaac Magin</span>
+    <span>15 August 2026</span>
+    <span>Fort Lauderdale</span>
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">Why it's shaped this way</div>
+  <h2>Everything you post lands in the same room.</h2>
+  <p class="lede">Your Instagram following is 2,693 people who mostly know you — family, past clients, referral sources. Your YouTube channel, the one built to reach people who don't, has 29 subscribers.</p>
+
+  <div class="rooms">
+    <div class="src">Counted 15 August 2026</div>
+    <div class="bars">
+      <div class="bar warm">
+        <div class="top">
+          <div class="lbl">Instagram — people who know you<small>@linda_s_hoyt_realtor</small></div>
+          <div class="val">2,693</div>
+        </div>
+        <div class="track"><div class="fill" style="width:100%"></div></div>
+      </div>
+      <div class="bar cold">
+        <div class="top">
+          <div class="lbl">YouTube — people who don't<small>Linda S. Hoyt – Realtor</small></div>
+          <div class="val">29</div>
+        </div>
+        <div class="track"><div class="fill" style="width:1.1%"></div></div>
+      </div>
+    </div>
+    <div class="foot">You already made <em>The American Dream: Selling Fort Lauderdale</em> — properly shot, on the water. Episode 1 has 1,005 views. The work was never the problem.</div>
+  </div>
+
+  <p>Your June RealTrends post did 184 likes and 57 comments. The cottage's open-house announcement, up 22 hours, has 5 reactions. That isn't weak content — <strong>those 2,693 people are proud of you, and none of them needs a three-bedroom in Sailboat Bend.</strong></p>
+  <p>Feed posts and Facebook posts are served to people who already follow you. <strong>Reels, Shorts and TikTok are the only formats served to people who don't.</strong> So this calendar is weighted toward those, and every item names the one shot it needs.</p>
+
+  <div class="legend">
+    <span class="chip"><span class="dot ready"></span> Copy is written — post as-is</span>
+    <span class="chip"><span class="dot needs"></span> Needs about 60 seconds of phone video</span>
+  </div>
+</section>
+
+<div class="week">
+  <div class="wlabel">Week one · Aug 17–23</div>
+  <p class="wnote">The window where attention is highest and cheapest. Proof first, then the two features nobody else in Sailboat Bend can claim.</p>
+
+  <div class="days">
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sun 16, evening</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The recap — the only post that proves people came</h3>
+      <p class="dwhy">Written tonight, posted the moment you're home. This is the one that makes the next open house busier.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        A hundred and three years old, and it still throws a better Sunday than most houses half its age. 🥂<br><br>
+        Thank you to everyone who came through the Cozy Cottage — <span class="blank">[ __ ]</span> of you, one pitcher of mimosas, and a lot of people standing in that backyard saying the same thing: <em>you'd never know this was minutes from Las Olas.</em><br><br>
+        Still available. Private showings this week.
+        <span class="tags">#SailboatBend #FortLauderdaleRealEstate #HistoricHomes #OpenHouse #CozyCottage</span>
+      </div>
+      <div class="shot"><b>Fill in one number.</b> Any photo from the day, even a phone shot of the yard.</div>
+    </div>
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Tue 18</span><span class="dkind">Reel · needs 60s</span></div>
+      <h3>The mosquito misting system</h3>
+      <p class="dwhy">The single most South Florida detail in your listing, and no other cottage in the neighborhood is advertising it. This is the one that gets shown to strangers.</p>
+      <div class="copy">
+        <span class="cl">On-screen text, then caption</span>
+        <strong>"Why you can actually sit outside here. In August."</strong><br><br>
+        Fully fenced yard, artificial turf, decorative gravel, multiple places to sit — and a mosquito misting system, so the backyard works year-round instead of six months a year.<br><br>
+        1205 SW 4th Street · Sailboat Bend · $750,000
+        <span class="tags">#SailboatBend #FortLauderdale #BackyardGoals #FloridaLiving #JustListed</span>
+      </div>
+      <div class="shot"><b>The shot:</b> walk out the back door, hold the phone vertical, slow pan across the yard. Eight seconds. Turn the misters on if they run.</div>
+    </div>
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Thu 20</span><span class="dkind">Reel · needs 60s</span></div>
+      <h3>1923 — things they stopped building</h3>
+      <p class="dwhy">Original hardwood and real French doors are the reason this house isn't interchangeable with new construction. Buyers who want this <em>only</em> want this.</p>
+      <div class="copy">
+        <span class="cl">On-screen text, then caption</span>
+        <strong>"Built in 1923. Try getting these floors today."</strong><br><br>
+        Original hardwood. Real French doors. A restored 1923 cottage in the heart of Sailboat Bend — with a newer roof, newer A/C and new fencing, so the character comes without the project.<br><br>
+        Offered at $750,000.
+        <span class="tags">#HistoricHomes #SailboatBend #FortLauderdaleRealEstate #OldHouseLove #CharacterHome</span>
+      </div>
+      <div class="shot"><b>The shot:</b> low and slow along the floorboards, then up to the French doors. Vertical. Natural light — open the blinds first.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sat 22</span><span class="dkind">Story set · ready</span></div>
+      <h3>Five slides: what $750,000 buys here</h3>
+      <p class="dwhy">Stories go to the warm room — and the warm room is your referral network. This is the one aimed at them, on purpose.</p>
+      <div class="copy">
+        <span class="cl">Slide by slide</span>
+        1 — "Three bedrooms. Two baths. 1923."<br>
+        2 — "Original hardwood, French doors, a kitchen someone actually thought about."<br>
+        3 — "Fenced yard, turf, misting system. It works in August."<br>
+        4 — "Minutes to Las Olas, downtown, the beach, FLL."<br>
+        5 — "$750,000 · Know someone? Send them my way."
+      </div>
+      <div class="shot"><b>Any five photos you already have.</b> Slide 5 is the one that does the work.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="week">
+  <div class="wlabel">Week two · Aug 24–30</div>
+  <p class="wnote">Attention has dropped. This is where most listings go quiet — and where a second wave separates you from the agent who posted once.</p>
+
+  <div class="days">
+
+    <div class="day needs">
+      <div class="dhead"><span class="dwhen">Mon 25</span><span class="dkind">Reel · needs 90s</span></div>
+      <h3>The walkthrough, front door to back fence</h3>
+      <p class="dwhy">One continuous take. This is the piece that also becomes a YouTube Short and a TikTok — three placements from one recording.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        The whole thing, front door to back fence, no cuts.<br><br>
+        1923 cottage · 3 bed · 2 bath · Sailboat Bend · $750,000<br>
+        Newer roof, A/C and fencing. Minutes from Las Olas and the beach.<br><br>
+        Full tour and private showings — link in bio.
+        <span class="tags">#HomeTour #SailboatBend #FortLauderdale #HouseTour #ForSale</span>
+      </div>
+      <div class="shot"><b>The shot:</b> start outside at the front steps, walk in, keep walking, end in the backyard. Vertical, move slower than feels natural.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Wed 27</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The neighborhood, not the house</h3>
+      <p class="dwhy">Sailboat Bend sells itself and this post costs you nothing to make. It also reaches people who aren't shopping yet — which is where next year's sellers come from.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        People are surprised twice by Sailboat Bend.<br><br>
+        First when they realize how quiet it is. Then when they realize how close it is — Las Olas, downtown, the beach and FLL are all minutes away, and none of it follows you home.<br><br>
+        That's the trade most neighborhoods can't offer. It's the reason the 1923 cottage on SW 4th keeps getting the same reaction at the door.
+        <span class="tags">#SailboatBend #FortLauderdale #NeighborhoodGuide #SoFloLife #RealEstate</span>
+      </div>
+      <div class="shot"><b>Any street or exterior photo.</b> The one from your listing post works.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Fri 29</span><span class="dkind">Seller report · ready</span></div>
+      <h3>Week two read-out — to the seller, not the feed</h3>
+      <p class="dwhy">Week two is when a seller starts wondering. This arrives before they ask.</p>
+      <div class="shot"><b>Format below.</b> Numbers stay blank until they're real.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="week">
+  <div class="wlabel">Week three · Aug 31–Sep 6</div>
+  <p class="wnote">Labor Day weekend. Buyers are in town and looking; most agents are not posting.</p>
+
+  <div class="days">
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">Sat 30 or Sun 31</span><span class="dkind">Feed + story · ready</span></div>
+      <h3>Second open house — Labor Day weekend</h3>
+      <p class="dwhy">The first one is for the neighborhood. The second one is for the buyers who were out of town.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        ✨ OPEN HOUSE · Labor Day weekend at the Cozy Cottage ✨<br><br>
+        📍 1205 SW 4th St, Fort Lauderdale, FL 33312<br>
+        <span class="blank">[ day ]</span>, <span class="blank">[ time ]</span><br><br>
+        The 1923 cottage in Sailboat Bend — original hardwood, French doors, a backyard built for exactly this weekend. Newer roof, A/C and fencing.<br><br>
+        Offered at $750,000. Come see why everyone says the same thing at the door.
+        <span class="tags">#OpenHouse #SailboatBend #FortLauderdale #LaborDayWeekend #HistoricHomes</span>
+      </div>
+      <div class="shot"><b>Two blanks to fill.</b> Everything else is set.</div>
+    </div>
+
+    <div class="day ready">
+      <div class="dhead"><span class="dwhen">If it goes under contract</span><span class="dkind">Feed post · ready</span></div>
+      <h3>The under-contract post — the one that wins the next listing</h3>
+      <p class="dwhy">Not a victory lap. The only post a future seller reads closely, because it's the one that shows what you actually did.</p>
+      <div class="copy">
+        <span class="cl">Caption</span>
+        Under contract — the 1923 cottage on SW 4th.<br><br>
+        <span class="blank">[ __ ]</span> days on market. <span class="blank">[ __ ]</span> showings. <span class="blank">[ __ ]</span> people through two open houses.<br><br>
+        Thinking about selling in Sailboat Bend? This is what the first three weeks look like.
+        <span class="tags">#UnderContract #SailboatBend #FortLauderdale #JustSold #ListWithLinda</span>
+      </div>
+      <div class="shot"><b>Three numbers.</b> Real ones — a made-up figure here costs more than it earns.</div>
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <div class="eyebrow">The piece nobody else makes</div>
+  <h2>The seller's copy</h2>
+  <p>Compass is rolling its Home Platform out to Sotheby's agents now — franchise affiliates in Q1 2027. Berkshire's brokerage launched Maestro in March. Both are excellent, and both are built for <em>your</em> desk: briefings, CMA, prospecting, one login.</p>
+  <p><strong>None of them produces anything the seller ever holds.</strong> That's still a phone call you make from memory in week three. This is the version that arrives before the call.</p>
+
+  <figure>
+    <div class="plate">
+      <div class="sheet">
+        <div class="sh-top">Marketing Value Summary · Prepared for the Seller</div>
+        <h4>1205 SW 4th Street · Sailboat Bend</h4>
+        <div class="sh-sub">Offered at $750,000 · Week two read-out</div>
+        <div class="sh-rule"></div>
+
+        <h5>What ran this week</h5>
+        <table>
+          <tbody>
+            <tr><td>Open-house recap</td><td>Feed — proof of turnout</td></tr>
+            <tr><td>Backyard reel</td><td>Reels, Shorts, TikTok — non-followers</td></tr>
+            <tr><td>1923 character reel</td><td>Reels, Shorts, TikTok</td></tr>
+            <tr><td>Five-slide story set</td><td>Referral network</td></tr>
+            <tr><td>Neighborhood feature</td><td>Feed — future sellers</td></tr>
+          </tbody>
+        </table>
+
+        <h5>Exposure this week</h5>
+        <div class="metrics">
+          <div class="metric"><div class="n">[ ]</div><div class="l">Reached</div></div>
+          <div class="metric"><div class="n">[ ]</div><div class="l">Saves</div></div>
+          <div class="metric"><div class="n">[ ]</div><div class="l">Showings</div></div>
+        </div>
+
+        <div class="sh-foot">
+          <b>Linda S. Hoyt, P.A.</b> — Broker-Associate | Realtor<br>
+          ONE Sotheby's International Realty · 954.647.9295<br>
+          Top 1.5% of Realtors nationwide
+        </div>
+      </div>
+    </div>
+    <figcaption>
+      <div class="pnum">The format</div>
+      <div class="ptext"><b>Your name on it, not mine.</b> The brackets stay empty until the numbers are measured — a report that inflates a figure once is worth nothing every week after.</div>
+    </figcaption>
+  </figure>
+</section>
+
+<div class="close">
+  <h2>That's all of it.</h2>
+  <p>No meeting, no call, nothing to sign, nothing to send back. If two of these are useful, use those two. If none are, that's a fair answer.</p>
+  <p>I build this kind of thing — the calendar, the cuts, the seller report — and I'd rather show you than describe it. So this is the showing.</p>
+</div>
+
+<div class="notice">
+  <div class="flag">Where this came from</div>
+  <p>Everything about the property was taken from your own public posts on 15 August 2026 — no MLS data was used. The listing belongs to ONE Sotheby's International Realty. Nothing here has been published anywhere, and nothing would be without your sign-off on each piece.</p>
+</div>
+
+<footer>
+  Isaac Magin · <a href="mailto:isaacmagin78@gmail.com">isaacmagin78@gmail.com</a><br>
+  Independent · Fort Lauderdale, FL
+</footer>
+
+</div>
