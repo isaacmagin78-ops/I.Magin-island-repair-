@@ -1350,3 +1350,72 @@ he was right to be. This is the record. Do not lose it again.**
 both for roughly a month while buried in AI tooling and considers that a mistake.
 When proposing a content, monetization or AI-workflow approach, check it against
 what these two actually teach before inventing something new.
+
+---
+
+## 🎬 FACELESS VIDEO — built and proven 2026-08-17. It renders. It does not post.
+
+**Isaac asked: *"Why don't we have a faceless YouTube channel going already?
+Isn't that supposed to be pretty damn easy?"*** He was right. The engine could
+turn photos and clips into video since July; it could not turn **words** into
+video, so the one format that needs no camera and no filming day was the one
+thing it couldn't make. That is now built.
+
+### What he does
+
+Write lines into `isaac-video-engine/assets/faceless/next.txt`, then run one
+line in the `isaac-video-engine` folder:
+
+```bash
+BRAND=tysons-time PRESET=youtube-shorts npm run render:script
+```
+
+Blank line = new card. First line of a card is the big line. Lines under it are
+the smaller line. `#` = a note that never renders. No timings to set — each card
+holds for as long as it takes to read. **Full instructions: `isaac-video-engine/FACELESS.md`.**
+
+### Verified, not claimed — 2026-08-17, this container
+
+- `npm ci` from the committed lockfile: clean, **9.4s**.
+- `npx tsc --noEmit` clean; eslint clean (2 pre-existing warnings, neither new).
+- Rendered `isaac-video-engine/out/faceless-first-30-days.mp4` from the six-card
+  demo script. `ffprobe`: **h264, 1080×1920, SAR 1:1 / DAR 9:16, 30 fps, 27.90s,
+  837 frames**, 8.6 MB, plus the expected silent aac track.
+- Six frames extracted and **looked at**: every card legible, brand watermark
+  correct, hairline rule and supporting lines correct, crossfade confirmed
+  mid-transition, warm amber/ember ground drifting, no rainbow band.
+
+**Looking at a frame caught a defect nothing else would have.** The first render
+came out labelled "ISAAC VIDEO ENGINE" on a Tyson's Time video: Remotion merges
+`--props` *over* `defaultProps`, and a key passed as `undefined` is dropped by
+`JSON.stringify`, so it silently inherited the default. Fixed, re-rendered,
+re-verified, and written into `TROUBLESHOOTING.md`.
+
+### ⚠️ What is NOT built — the honest gap
+
+**The engine makes the file. Nothing carries it to Blotato.** Verified live via
+`blotato_list_accounts` and `blotato_list_schedules` on 2026-08-17: 5 channels
+connected (TikTok `49211`, Instagram `61044`, Threads `8305`, YouTube `42110`,
+Facebook `43069`) and 8 posts scheduled through Aug 18 — **every one of them
+with media already sitting in `database.blotato.io/storage/...`.**
+
+That is the whole gap. Blotato will not post from a file on a machine or from a
+Drive link; the video has to be uploaded into Blotato's own storage first
+(`blotato_create_presigned_upload_url` → `blotato_create_post`). Today a Claude
+session does that by hand.
+
+**To make it daily, one job has to do three things nobody has strung together:**
+render the next text file → upload the MP4 to Blotato storage → schedule the
+post. Every piece is proven and available. **Nothing should be built until it is
+worth more than the ten minutes a day it replaces** — see the regression section
+above; a system he has to operate is a loss, not a win.
+
+### Where the code lives
+
+`ScriptShort` composition (`src/compositions/ScriptShort.tsx`), driven by
+`scripts/render-script.mjs`, built from `ScriptCard.tsx` and
+`AmbientBackdrop.tsx`. **`AmbientBackdrop.tsx` is where `DESIGN-DIRECTION.md`'s
+closed-palette rule is enforced in code** — light comes only from the brand's
+own primary/secondary over its background, and hue is never computed or cycled,
+so it structurally cannot produce a rainbow. Nothing existing was changed or
+removed; every diagnostic composition still stands.

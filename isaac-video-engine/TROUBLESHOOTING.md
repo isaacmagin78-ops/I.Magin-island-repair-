@@ -134,6 +134,39 @@ below. If a *scene* image/video 404s instead, the file was likely deleted
 or renamed after the pipeline discovered it but before the render finished
 reading it; just re-run `npm run render:short`.
 
+## A `--props` render shows a value nobody passed (e.g. the wrong eyebrow/brand)
+
+**Remotion merges `--props` *over* a composition's `defaultProps` — it does
+not replace them.** A key you leave out of the props JSON silently inherits
+the composition's default, and nothing warns you.
+
+Found the hard way: the first `render:script` run passed
+`eyebrow: undefined`, which `JSON.stringify` drops entirely, so a Tyson's
+Time video rendered with `ScriptShort`'s default eyebrow and came out
+labelled **"ISAAC VIDEO ENGINE"**. `ffprobe` cannot catch this — only
+looking at a frame can.
+
+**Rule for any pipeline script:** send every key explicitly, using an empty
+string or an explicit value rather than `undefined`, so the props JSON is a
+complete description of the render. `scripts/render-script.mjs` does this and
+says why.
+
+## `npm run render:script` says "No script file at …"
+
+The pipeline reads one plain text file, default `assets/faceless/next.txt`.
+Either that file was deleted, or the path in `FILE=` is wrong. `FILE=` is
+resolved relative to the project root unless it is absolute. See
+`FACELESS.md`.
+
+## A `render:script` card's text comes out smaller than the others
+
+Working as designed. `ScriptCard` steps the statement down a fixed type scale
+as the line gets longer, so an arbitrary sentence from a text file always
+fits inside the preset's safe zone instead of overflowing. If a card looks
+undersized, the line is too long for the format — split it across two lines
+in the text file (the second becomes the quieter supporting line) rather than
+overriding the size.
+
 ## Logo image fails to load
 
 `src/components/LogoWatermark.tsx` catches the image's `onError` and falls

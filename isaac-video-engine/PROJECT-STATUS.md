@@ -146,6 +146,53 @@ both h264 and aac streams present) and 5 inspected frames that motion,
 transitions, word-by-word captions from `script.txt`, logo watermark,
 CTA, and end card all render correctly from auto-discovered media.
 
+### Phase 7 — Faceless pipeline (2026-08-17)
+
+The engine could always turn *media* into a video. It could not turn *words*
+into one, so a text-only channel — the cheapest format there is, and the one
+that needs no camera, no footage and no filming day — was the one thing it
+could not make. `npm run render:script` closes that.
+
+`scripts/render-script.mjs` reads one plain text file (blank line = new card,
+first line = the line people read, `#` = a note that never renders), and
+renders `compositions/ScriptShort.tsx`. New pieces, each placed by the
+project's own rule about where things belong:
+
+- `components/AmbientBackdrop.tsx` — the moving ground for a frame with no
+  footage in it. **This is where `DESIGN-DIRECTION.md`'s closed-palette rule
+  is enforced in code:** light comes only from `theme.colors.primary` and
+  `secondary` over `background`, and hue is never computed or cycled, so the
+  backdrop structurally cannot produce a rainbow.
+- `components/ScriptCard.tsx` — one card. Steps its statement down a fixed
+  type scale so an arbitrary sentence fits, and mirrors the *larger*
+  horizontal safe-zone inset to both sides so centred type stays optically
+  centred instead of being shoved left by TikTok's button rail.
+- `lib/motion.ts` — `beatMotion()` (a fixed-length beat's whole life from one
+  call) and `ambientDrift()` (long decorrelated sine, "felt not watched").
+- Timing is **derived, not authored**: `scriptBeatDuration()` gives each card
+  a dwell from its own word count (2.6 words/sec + 0.9s settle, clamped to
+  2.4–6.5s), so a text file can be written by someone who has never thought
+  about frame counts. One implementation, exported and reused by the script.
+
+See `FACELESS.md` for the operator-facing version.
+
+Verified (2026-08-17): `npm ci` clean in 9.4s; `npx tsc --noEmit` clean;
+eslint clean (2 pre-existing warnings, neither in new files); rendered
+`out/faceless-first-30-days.mp4` from `assets/faceless/next.txt` with
+`BRAND=tysons-time PRESET=youtube-shorts`; `ffprobe` reports h264 1080×1920
+SAR 1:1 DAR 9:16, 30/1 fps, 27.90s, 837 frames, plus the expected silent aac
+track; six extracted frames inspected — every card legible and on-brand, the
+hairline rule and supporting lines correct, the crossfade between cards
+confirmed mid-transition, and the amber/ember ground drifting with no
+rainbow band anywhere.
+
+**One real defect was caught by looking at a frame and could not have been
+caught any other way:** the first render came out labelled "ISAAC VIDEO
+ENGINE" on a Tyson's Time video, because Remotion merges `--props` *over*
+`defaultProps` and the script had passed `eyebrow: undefined`, which
+`JSON.stringify` drops. Fixed by sending every key explicitly; written up in
+`TROUBLESHOOTING.md`.
+
 ## Installed components
 
 | Component | Version |
@@ -176,6 +223,7 @@ CTA, and end card all render correctly from auto-discovered media.
 | `AudioTest` | Exercises fade in/out + ducking — standing audio regression test |
 | `SocialPreset-<name>` × 6 | One per social preset, proves preset data drives real dimensions |
 | `AutoShort` | The render target for `npm run render:short` — takes discovered-media props |
+| `ScriptShort` | The render target for `npm run render:script` — takes the lines of a text file, no media |
 
 All are safe to re-render at any time as a smoke test of the whole engine.
 
@@ -199,7 +247,10 @@ Chrome automatically.
 
 ## Next steps for future requests
 
-Drop media into `assets/images/`, `assets/videos/`, optionally
+**With no media at all:** write lines into `assets/faceless/next.txt` and run
+`npm run render:script` — see `FACELESS.md`.
+
+Otherwise: drop media into `assets/images/`, `assets/videos/`, optionally
 `assets/music/`, `assets/logos/`, `assets/script.txt`, and run
 `npm run render:short` (optionally with `BRAND=`/`PRESET=`/`OUTPUT=`) —
 or ask Claude Code in plain language, e.g. *"Create a 15-second vertical

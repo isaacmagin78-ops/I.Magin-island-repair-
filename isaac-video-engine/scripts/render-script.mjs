@@ -110,9 +110,17 @@ function main() {
   const brandId = process.env.BRAND || DEFAULT_BRAND;
   const preset = process.env.PRESET || DEFAULT_PRESET;
   const outputPath = process.env.OUTPUT || DEFAULT_OUTPUT;
-  const eyebrow = process.env.EYEBROW || undefined;
 
-  const props = { beats, brandId, preset, eyebrow };
+  // Every key is sent explicitly, including the empty ones. Remotion merges
+  // `--props` *over* the composition's `defaultProps`, so a key left out here
+  // silently inherits the default instead of being unset — which is how the
+  // first Tyson's Time render came out labelled "ISAAC VIDEO ENGINE".
+  const props = {
+    beats,
+    brandId,
+    preset,
+    eyebrow: process.env.EYEBROW || "",
+  };
 
   const totalFrames = beats.reduce(
     (total, beat) => total + beatDurationInFrames(beat),
