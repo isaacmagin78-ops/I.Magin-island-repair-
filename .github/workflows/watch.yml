@@ -80,6 +80,13 @@ jobs:
           MAX_HN_ITEMS  = 6      # he reads slowly; signal over volume
           FIRST_RUN_DAYS = 7
 
+          # The first run produced 46 creator lines — Hormozi alone posts ~15
+          # shorts a day. A wall of text is the same as no answer, so the
+          # creator side is capped too. Per-creator first, so one prolific
+          # poster cannot crowd out the other two.
+          MAX_PER_CREATOR = 3
+          MAX_CREATOR_ITEMS = 9
+
           UA = {"User-Agent": "Mozilla/5.0 (compatible; imagin-watcher/1.0)"}
 
           def get(url):
@@ -180,9 +187,20 @@ jobs:
               lines.append("")
 
           if found:
+              per, trimmed = {}, []
+              for item in sorted(found, key=lambda x: x[2], reverse=True):
+                  name = item[0]
+                  if per.get(name, 0) >= MAX_PER_CREATOR:
+                      continue
+                  per[name] = per.get(name, 0) + 1
+                  trimmed.append(item)
+              held_back = len(found) - len(trimmed[:MAX_CREATOR_ITEMS])
+
               lines.append("**Who posted**")
-              for name, title, published, vid in sorted(found, key=lambda x: x[2], reverse=True):
+              for name, title, published, vid in trimmed[:MAX_CREATOR_ITEMS]:
                   lines.append(f"- **{name}** — [{title}](https://www.youtube.com/watch?v={vid}) · published {published[:10]}")
+              if held_back > 0:
+                  lines.append(f"- *(+{held_back} more held back to keep this readable.)*")
               lines.append("")
 
           if not hn_found and not found:
