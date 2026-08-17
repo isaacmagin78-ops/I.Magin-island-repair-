@@ -232,6 +232,47 @@ should not be left as a `.txt`. Isaac should decide on both deliberately.
 
 ---
 
+## ❓ OPEN QUESTION — the "black AI" that appeared on his screen (2026-08-17)
+
+**Isaac, 2026-08-17:** *"How did that black AI appear on my screen that was
+never there before and I opened it up. It looks different than the other one and
+it seems more advanced."*
+
+**Nobody knows which app this is. Do not guess it.** Plausible candidates are
+the Claude desktop app in dark mode, Claude Code in a terminal, or another
+vendor's desktop app entirely — and picking one and being wrong is exactly the
+failure that has cost him days. **Ask him for the name at the top of the window,
+or a screenshot.** Then write the answer here.
+
+**What he was actually worried about, and the answer to it:** *"it probably has
+somebody already working there."* No — there is no other person in any of these
+surfaces. Each one starts blank. That is the four-rooms problem already
+documented above, and it is why this repo exists.
+
+### ⚙️ Why "you used to be able to take over my computer" is true, and not a downgrade
+
+He is not misremembering. **The difference is *where* the session runs, not what
+Claude Code can do:**
+
+| | On his Mac | In the cloud (this session) |
+|---|---|---|
+| His Desktop, Documents, whole drive | ✅ reachable | ❌ never |
+| This repo | ✅ | ✅ |
+| Organizing his actual files | ✅ | ❌ |
+
+**A cloud session gets a fresh copy of this one repo and nothing else of his.**
+So when a session says "I can't organize your folders," that is the location,
+not a lost capability — and it should be said in exactly one sentence rather
+than as "I can't."
+
+**The part he thinks he lost but hasn't:** the memory. This repo *is* the
+partner that remembers. A session that reads it knows about Todd, the iPhone
+history, the Buzz miss and the paste rule before he says a word. That is
+working. **Say so when he doubts it** — and if a session ever *doesn't* know
+those things, it skipped step zero.
+
+---
+
 ## The other half of the system lives in Notion
 
 This repo holds the **technical** state — code, generated packages, what runs.
