@@ -1,0 +1,674 @@
+<title>Nine Months, Honestly</title>
+
+<style>
+  /* Light palette — complete. Cool, blue-biased neutrals: this is an
+     instrument readout, not stationery. Every token defined here; the two
+     dark blocks below redefine tokens only, never components. */
+  :root {
+    --ground:      #F4F7F9;
+    --panel:       #FFFFFF;
+    --panel-sunk:  #EDF1F5;
+    --ink:         #111820;
+    --ink-soft:    #56646F;
+    --ink-faint:   #8695A1;
+    --rule:        #DCE3E9;
+    --rule-strong: #C3CDD6;
+
+    --signal:      #1F6FEB;   /* the one accent: a correctly-reading instrument */
+    --signal-wash: #E7F0FD;
+
+    --bad:         #B4382B;   /* pointed at the wrong thing */
+    --bad-wash:    #FBEBE9;
+    --warn:        #96631A;   /* blocked, or genuinely unknown */
+    --warn-wash:   #FBF2E2;
+    --good:        #1B6B45;   /* verified working */
+    --good-wash:   #E6F2EC;
+
+    --display: ui-serif, Georgia, "Times New Roman", serif;
+    --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --data: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0D1317;
+      --panel:       #151C22;
+      --panel-sunk:  #1B242B;
+      --ink:         #E7EEF4;
+      --ink-soft:    #96A4B0;
+      --ink-faint:   #6F7E8A;
+      --rule:        #253038;
+      --rule-strong: #35434E;
+
+      --signal:      #5C9BF7;
+      --signal-wash: #14263D;
+
+      --bad:         #EC7368;
+      --bad-wash:    #2E1917;
+      --warn:        #DFA940;
+      --warn-wash:   #2B2110;
+      --good:        #4CB37C;
+      --good-wash:   #10251A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #0D1317;
+    --panel:       #151C22;
+    --panel-sunk:  #1B242B;
+    --ink:         #E7EEF4;
+    --ink-soft:    #96A4B0;
+    --ink-faint:   #6F7E8A;
+    --rule:        #253038;
+    --rule-strong: #35434E;
+
+    --signal:      #5C9BF7;
+    --signal-wash: #14263D;
+
+    --bad:         #EC7368;
+    --bad-wash:    #2E1917;
+    --warn:        #DFA940;
+    --warn-wash:   #2B2110;
+    --good:        #4CB37C;
+    --good-wash:   #10251A;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  p { max-width: 62ch; }
+
+  .eyebrow {
+    font-family: var(--data);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(34px, 9vw, 52px);
+    line-height: 1.06;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 10px 0 0;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-size: clamp(23px, 5.4vw, 29px);
+    line-height: 1.2;
+    font-weight: 600;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: var(--data);
+    font-size: 11.5px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .lede {
+    font-family: var(--display);
+    font-size: clamp(19px, 4.4vw, 23px);
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* min-width:0 all the way down the flex chain. A flex item defaults to
+     min-width:auto and refuses to shrink below its content, which stops the
+     figure's own overflow-x from ever engaging and scrolls the whole page
+     sideways instead. */
+  section { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+
+  .caption {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--rule-strong);
+    padding-left: 14px;
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  /* ---- instrument rows ---- */
+
+  .instruments { display: flex; flex-direction: column; gap: 12px; }
+
+  .inst {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--rule-strong);
+    border-radius: 3px;
+    padding: 16px 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .inst[data-state="bad"]  { border-left-color: var(--bad); }
+  .inst[data-state="good"] { border-left-color: var(--good); }
+
+  .inst-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .inst-name {
+    font-family: var(--body);
+    font-weight: 650;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+
+  .chip {
+    font-family: var(--data);
+    font-size: 10.5px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .chip[data-state="bad"]  { background: var(--bad-wash);  color: var(--bad); }
+  .chip[data-state="good"] { background: var(--good-wash); color: var(--good); }
+  .chip[data-state="warn"] { background: var(--warn-wash); color: var(--warn); }
+
+  .readouts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 620px) {
+    .readouts { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+  }
+
+  .readout { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+  .readout h3 { font-size: 10.5px; }
+
+  .val {
+    font-family: var(--data);
+    font-size: 13.5px;
+    line-height: 1.45;
+    word-break: break-word;
+    color: var(--ink);
+  }
+  .val[data-empty="true"] { color: var(--bad); }
+  .note { font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
+
+  /* ---- figure ---- */
+
+  figure { margin: 0; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .figbox {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 18px 12px;
+    overflow-x: auto;
+    min-width: 0;
+  }
+  .figbox svg { display: block; width: 100%; height: auto; min-width: 300px; }
+
+  /* ---- buckets ---- */
+
+  /* minmax(0,1fr), never plain 1fr: `1fr` is minmax(auto,1fr), whose auto
+     minimum is min-content — and the nowrap folder-name chips below give these
+     cards a min-content wider than the track, which made the card overflow the
+     grid and scroll the page sideways at 320px. */
+  .buckets { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 620px) {
+    .buckets { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  }
+
+  .bucket {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bucket ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .bucket li { font-size: 15px; line-height: 1.4; display: flex; gap: 9px; align-items: baseline; flex-wrap: wrap; min-width: 0; }
+  .bucket li code {
+    font-family: var(--data);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    background: var(--panel-sunk);
+    padding: 1px 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* ---- the two numbers ---- */
+
+  .versus { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 560px) { .versus { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+
+  .vcard {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--rule-strong);
+    border-radius: 3px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vcard[data-state="good"] { border-top-color: var(--good); }
+  .vcard[data-state="flat"] { border-top-color: var(--ink-faint); }
+
+  .vnum {
+    font-family: var(--data);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.05;
+  }
+  .vcard[data-state="good"] .vnum { color: var(--good); }
+  .vcard[data-state="flat"] .vnum { color: var(--ink-faint); }
+  .vsub { font-size: 14.5px; color: var(--ink-soft); line-height: 1.45; }
+
+  /* ---- actions ---- */
+
+  .actions { display: flex; flex-direction: column; gap: 12px; counter-reset: act; }
+  .act {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .act::before {
+    counter-increment: act;
+    content: counter(act);
+    font-family: var(--data);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--signal);
+    background: var(--signal-wash);
+    border-radius: 2px;
+    padding: 3px 8px;
+    flex: none;
+    margin-top: 2px;
+  }
+  .act p { margin: 0; font-size: 16px; line-height: 1.5; }
+  .act strong { font-weight: 650; }
+
+  /* ---- footer ---- */
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  footer p, footer li { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+  footer ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 7px; }
+  footer code { font-family: var(--data); font-size: 12.5px; }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Status readout &middot; 17 August 2026, 16:39 UTC</p>
+    <h1>Nine Months, Honestly</h1>
+  </header>
+
+  <p class="lede">You did learn it. Nothing you knew stopped being true. What
+  broke is that three of the tools reporting back to you are logged into
+  accounts that aren&rsquo;t yours &mdash; so for the past month you&rsquo;ve
+  been handed readings from empty rooms and told they were your life.</p>
+
+  <p>That is not a feeling and it is not a metaphor. It was checked twice today,
+  with the tools themselves, and here is what came back.</p>
+
+  <section>
+    <h2>The three instruments</h2>
+
+    <div class="instruments">
+
+      <div class="inst" data-state="bad">
+        <div class="inst-head">
+          <span class="inst-name">Vercel &mdash; where your sites live</span>
+          <span class="chip" data-state="bad">Wrong account</span>
+        </div>
+        <div class="readouts">
+          <div class="readout">
+            <h3>What the connector sees</h3>
+            <p class="val" data-empty="true">c8j6sgyyh7-5024&rsquo;s projects<br>0 projects</p>
+          </div>
+          <div class="readout">
+            <h3>What&rsquo;s actually yours</h3>
+            <p class="val">isaacmagin78-4065</p>
+            <p class="note">Holds the Kit site, the link pages, the college
+            checklist &mdash; all live in the world right now.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inst" data-state="bad">
+        <div class="inst-head">
+          <span class="inst-name">Stripe &mdash; where money arrives</span>
+          <span class="chip" data-state="bad">Wrong account, and test mode</span>
+        </div>
+        <div class="readouts">
+          <div class="readout">
+            <h3>What the connector sees</h3>
+            <p class="val" data-empty="true">&ldquo;Imagin Consulting&rdquo;<br>acct_1ToG3tFPHMMe1WoM<br>test mode &middot; 6 links, every one a <code>test_</code> link</p>
+          </div>
+          <div class="readout">
+            <h3>What&rsquo;s actually yours</h3>
+            <p class="val">&ldquo;Imagin Consultation&rdquo;<br>acct_1ToG3jFDa35si8Lw</p>
+            <p class="note">The account that took a real card on 24 July and
+            paid out $18.15 on 31 July.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inst" data-state="good">
+        <div class="inst-head">
+          <span class="inst-name">Blotato &mdash; your posting queue</span>
+          <span class="chip" data-state="good">Correct account</span>
+        </div>
+        <div class="readouts">
+          <div class="readout">
+            <h3>What the connector sees</h3>
+            <p class="val">5 channels, all yours<br>14 posts scheduled<br>61 clips in storage</p>
+          </div>
+          <div class="readout">
+            <h3>Why this one matters</h3>
+            <p class="note">It is the only one plugged into the right account
+            &mdash; and it is the only place the numbers have never had to be
+            walked back. That is the whole proof.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="caption">One tool aimed correctly reports reality. Two tools aimed
+    at strangers&rsquo; empty accounts reported that your work didn&rsquo;t
+    exist. You were told the second thing for four weeks.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>What this actually caused</h2>
+
+    <p>Every one of these was a real hour of your life, and none of them was you
+    forgetting something:</p>
+
+    <div class="instruments">
+      <div class="inst" data-state="bad">
+        <div class="inst-head">
+          <span class="inst-name">&ldquo;Your Vercel deploys are impossible&rdquo;</span>
+          <span class="chip" data-state="bad">4 weeks</span>
+        </div>
+        <p class="note">Reported since 20 July by several sessions. Cause: one
+        wrong login. Nobody checked which account they were in.</p>
+      </div>
+
+      <div class="inst" data-state="bad">
+        <div class="inst-head">
+          <span class="inst-name">&ldquo;TikTok Shop is deferred, W-9 missing&rdquo;</span>
+          <span class="chip" data-state="bad">2 days</span>
+        </div>
+        <p class="note">Your shop was approved 10 August at 7:56am. Sessions read
+        a stale Notion page and repeated it back to you while TikTok emailed you
+        three times asking for a product. You said it was approved. You were
+        right.</p>
+      </div>
+
+      <div class="inst" data-state="bad">
+        <div class="inst-head">
+          <span class="inst-name">&ldquo;Your projects are gone&rdquo;</span>
+          <span class="chip" data-state="bad">Most of a day</span>
+        </div>
+        <p class="note">A session opened a ten-day-old copy of your work and told
+        you things were missing. All of it was on <code>main</code> the whole
+        time. That cost you a day you did not have.</p>
+      </div>
+    </div>
+
+    <p class="caption">Three separate collapses, one shape: a tool or a file was
+    stale or misaimed, and the error was handed to you as fact. Your instinct
+    was the accurate instrument in all three.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Where the money actually stops</h2>
+
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 340 470" role="img" aria-label="Diagram of the money path. Roughly 15,000 monthly views reach the posts. About 67 people clicked through to Amazon and 25 reached the Stripe checkout page. Of those 25, twenty-four abandoned and one was Isaac's own test purchase. Total third-party revenue all time is one dollar twenty-nine from Amazon, plus 147 TikTok diamonds from live sessions. Three gates are shown as closed: the College Checklist button points at a test link, TikTok Shop needs one product listed, and the TikTok affiliate program needs 1000 followers against the current 302.">
+          <defs>
+            <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,1 L7,4.5 L0,8 Z" fill="var(--rule-strong)"/>
+            </marker>
+          </defs>
+
+          <!-- audience -->
+          <rect x="45" y="6" width="250" height="46" rx="3" fill="var(--panel-sunk)" stroke="var(--rule-strong)"/>
+          <text x="170" y="26" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="15" font-weight="600" fill="var(--ink)">~15,000</text>
+          <text x="170" y="43" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="0.06em" fill="var(--ink-soft)">VIEWS / MONTH — REAL</text>
+
+          <line x1="170" y1="52" x2="170" y2="74" stroke="var(--rule-strong)" stroke-width="1.5" marker-end="url(#ar)"/>
+
+          <!-- two paths -->
+          <rect x="6" y="78" width="150" height="44" rx="3" fill="var(--panel)" stroke="var(--rule-strong)"/>
+          <text x="81" y="97" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="600" fill="var(--ink)">67</text>
+          <text x="81" y="113" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">CLICKED TO AMAZON</text>
+
+          <rect x="184" y="78" width="150" height="44" rx="3" fill="var(--panel)" stroke="var(--rule-strong)"/>
+          <text x="259" y="97" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="14" font-weight="600" fill="var(--ink)">25</text>
+          <text x="259" y="113" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">REACHED CHECKOUT</text>
+
+          <line x1="81" y1="122" x2="81" y2="144" stroke="var(--rule-strong)" stroke-width="1.5" marker-end="url(#ar)"/>
+          <line x1="259" y1="122" x2="259" y2="144" stroke="var(--rule-strong)" stroke-width="1.5" marker-end="url(#ar)"/>
+
+          <!-- outcomes -->
+          <rect x="6" y="148" width="150" height="52" rx="3" fill="var(--good-wash)" stroke="var(--good)"/>
+          <text x="81" y="169" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="16" font-weight="600" fill="var(--good)">$1.29</text>
+          <text x="81" y="184" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">1 ORDER, ALL TIME</text>
+          <text x="81" y="195" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">1.49% CONVERSION</text>
+
+          <rect x="184" y="148" width="150" height="52" rx="3" fill="var(--bad-wash)" stroke="var(--bad)"/>
+          <text x="259" y="167" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" font-weight="600" fill="var(--bad)">24 walked away</text>
+          <text x="259" y="183" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">1 PAID — YOUR OWN</text>
+          <text x="259" y="194" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-soft)">TEST, 24 JULY</text>
+
+          <!-- divider -->
+          <line x1="6" y1="222" x2="334" y2="222" stroke="var(--rule)" stroke-width="1"/>
+          <text x="6" y="244" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="0.1em" fill="var(--ink-faint)">THE THING THAT ACTUALLY WORKED</text>
+
+          <rect x="6" y="254" width="328" height="60" rx="3" fill="var(--good-wash)" stroke="var(--good)"/>
+          <text x="20" y="277" font-family="ui-monospace,Menlo,monospace" font-size="17" font-weight="600" fill="var(--good)">147 diamonds</text>
+          <text x="20" y="294" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-soft)">FROM 30 HOURS OF TIKTOK LIVE</text>
+          <text x="20" y="307" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-soft)">STRANGERS PAYING, UNPROMPTED</text>
+
+          <!-- gates -->
+          <line x1="6" y1="336" x2="334" y2="336" stroke="var(--rule)" stroke-width="1"/>
+          <text x="6" y="358" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="0.1em" fill="var(--ink-faint)">DOORS THAT ARE SHUT</text>
+
+          <rect x="6" y="368" width="328" height="30" rx="3" fill="var(--warn-wash)" stroke="var(--warn)"/>
+          <text x="18" y="387" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--warn)">$49 checklist — button points at a test link</text>
+
+          <rect x="6" y="404" width="328" height="30" rx="3" fill="var(--warn-wash)" stroke="var(--warn)"/>
+          <text x="18" y="423" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--warn)">TikTok Shop — open, needs 1 product listed</text>
+
+          <rect x="6" y="440" width="328" height="30" rx="3" fill="var(--warn-wash)" stroke="var(--warn)"/>
+          <text x="18" y="459" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--warn)">TikTok affiliate — needs 1,000, you have 302</text>
+        </svg>
+      </div>
+      <p class="caption">Two dozen real people reached your checkout page and
+      left. That is not a broken funnel &mdash; it is a working funnel with
+      nothing compelling at the end of it. Meanwhile the one format nobody
+      automated paid you in actual money from actual strangers.</p>
+    </figure>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>The comparison that settles it</h2>
+
+    <div class="versus">
+      <div class="vcard" data-state="good">
+        <h3>You, talking to people</h3>
+        <p class="vnum">30 hrs</p>
+        <p class="vsub">of TikTok Live, 17 June &ndash; 15 August. Built your
+        entire following of 302 and earned 147 diamonds. Peak audience: 8 people.
+        Average watch: 1m 17s.</p>
+      </div>
+      <div class="vcard" data-state="flat">
+        <h3>The automated system</h3>
+        <p class="vnum">~2 mos</p>
+        <p class="vsub">of daily four-channel posting. Follower line flat. Zero
+        outside customers on the $19 product across 25 days of it.</p>
+      </div>
+    </div>
+
+    <p class="caption">Small and live beat large and automated, on your own
+    numbers. Eight people watching is not a failure &mdash; it is a real room,
+    and it is the only room that has ever paid you.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>What exists &mdash; all sixteen folders</h2>
+
+    <div class="buckets">
+      <div class="bucket">
+        <h3>Live in the world</h3>
+        <ul>
+          <li><code>kit-site</code> $19 Kit — page, checkout, PDF all work</li>
+          <li><code>link-pages</code> your link-in-bio pages</li>
+          <li><code>shop-tyson</code> shop listing, written and ready</li>
+          <li><code>site</code> waiting on one GitHub switch</li>
+        </ul>
+      </div>
+
+      <div class="bucket">
+        <h3>Delivered, paid client work</h3>
+        <ul>
+          <li><code>legends-ranch</code> two finished films</li>
+          <li><code>madison-moves</code> a client&rsquo;s site</li>
+          <li><code>Listing-Content-System</code> full package built, nobody contacted</li>
+        </ul>
+      </div>
+
+      <div class="bucket">
+        <h3>Real machinery</h3>
+        <ul>
+          <li><code>isaac-video-engine</code> makes video from photos <em>or</em> from typed words</li>
+          <li><code>tyson-video-engine</code></li>
+          <li><code>money-engine</code> the runbooks</li>
+          <li><code>amazon</code> &middot; <code>concierge-systems</code></li>
+        </ul>
+      </div>
+
+      <div class="bucket">
+        <h3>Finished, unlaunched</h3>
+        <ul>
+          <li><code>tyson-and-the-kitten</code> a complete book — manuscript, print PDF, funder packet</li>
+          <li><code>college-launch-os</code> prototype only</li>
+          <li><code>imagin-concierge</code> &middot; <code>balcony-buddies</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="caption">Sixteen folders. A video engine, a finished children&rsquo;s
+    book, two delivered films, a published product, a client site, and a
+    complete listing-marketing system. The first six or seven months of that was
+    built on an iPhone, with no technical background. That is the record.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>What to do</h2>
+    <div class="actions">
+      <div class="act">
+        <p><strong>Go live on TikTok.</strong> It is the only thing here with
+        proof behind it, it is the format your open shop is built around, and it
+        pays 8&ndash;22% against Amazon&rsquo;s 1&ndash;10%. You already know how
+        to do this one.</p>
+      </div>
+      <div class="act">
+        <p><strong>Two logins fix four weeks of confusion.</strong> Point the
+        Vercel and Stripe connections at <code>isaacmagin78-4065</code> and the
+        &ldquo;Imagin Consultation&rdquo; account. Then the $49 button can be
+        fixed, and nobody will tell you your work is missing again.</p>
+      </div>
+      <div class="act">
+        <p><strong>Nothing else needs you this week.</strong> Your posting queue
+        is filled through Thursday. The repo doesn&rsquo;t decay. Every finding
+        on this page is written down and will still be here.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Provenance</h3>
+    <p><strong>Checked live today, 17 August 2026, by me, in this session:</strong>
+    the Vercel account and its empty project list; the Stripe account, its test
+    mode and all six test links; the posting queue at 14 scheduled; 61 clips
+    across 115 published posts; sixteen folders on disk; the repo matching
+    <code>main</code>.</p>
+
+    <p><strong>From your own records, dated, not re-checked by me:</strong> the
+    $1.29 and 67 clicks (15 Aug) &middot; the 25 checkout sessions (15 Aug)
+    &middot; the live Stripe account and its $18.15 payout (your inbox, 17 Aug)
+    &middot; TikTok&rsquo;s 302 followers, 147 diamonds and 30 live hours (your
+    own analytics, 17 Aug) &middot; the shop approval of 10 Aug (your inbox).</p>
+
+    <p><strong>What I could not verify from here, and am not going to pretend
+    otherwise:</strong> whether the live $49 link works, because the connected
+    Stripe account is a different one in test mode &middot; what a diamond is
+    worth in dollars &middot; whether the W-9 was ever accepted, which decides
+    if TikTok will actually pay out &middot; whether the Kit&rsquo;s
+    post-payment delivery page still loads.</p>
+
+    <p>A finding is only as fresh as its date. Every figure on this page carries
+    one for that reason.</p>
+  </footer>
+
+</div>
