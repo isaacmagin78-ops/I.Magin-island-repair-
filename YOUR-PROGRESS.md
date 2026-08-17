@@ -25,6 +25,25 @@ existed and not one of them was about him.
 
 ---
 
+## 2026-08-16, told the day after
+
+**He sat outside with friends and relaxed for the first time in seven months —
+because the system ran without him.** His words:
+
+> *"I met a couple friends out… I was actually able to sit outside and work on
+> the iPad and iPad mini Pro for the first time and kind of relaxed for the
+> first time in seven months because things were kind of working right."*
+
+Checkable against the record: that afternoon the posting queue fired all four
+channels on schedule without him touching it (refilled 2026-08-15, verified in
+the 2026-08-17 session's live pull), and nothing in the workspace was waiting on
+him. `TREND-WATCH.md` defines the measure of this project as him being **out of
+the maintenance** — not how clean the repo looks. **This is the first recorded
+instance of that measure actually moving:** not a tidier file, an afternoon of
+his life back.
+
+---
+
 ## 2026-08-17, later
 
 **He found the thing every session has been failing at for six weeks — by
