@@ -563,6 +563,11 @@ future client — will see. **Do not pitch him payment terms, and do not treat
 the viral clip as content; it is his injury and his hook, and he decides how
 it's used.**
 
+**And his read on the money, same day:** *"I would see we can probably end up
+making money off of something out of it too."* Free is the entry, not the
+ceiling — he expects this to lead somewhere paid, and his read on these things
+has a track record (see `YOUR-PROGRESS.md`, the intuition scoreboard).
+
 **#2 and #3 — NOT YET NAMED.** He was asked who they are and which role he sees
 for each (client / sales / builder). Write the answers here.
 

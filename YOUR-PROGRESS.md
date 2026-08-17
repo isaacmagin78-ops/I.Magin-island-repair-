@@ -25,6 +25,21 @@ existed and not one of them was about him.
 
 ---
 
+## 2026-08-17, evening — "I could feel it coming back"
+
+**His words.** After seven months of running on almost nothing, the past three
+nights have been better — and the three better nights are exactly the three
+days the system started running without him (Aug 14–16). *"I could feel it
+coming back."*
+
+That sentence is the project's real metric moving for the second time in two
+days. The specifics are personal and live in Notion, not here — this repo is
+public. What belongs here is the correlation: **the recovery started the same
+week the maintenance burden lifted.** Protect it — no urgent lists, no systems
+handed to him to operate.
+
+---
+
 ## 2026-08-17, evening — the intuition scoreboard
 
 **His words:** *"I knew I'd find you at some point. I could see it starting to
