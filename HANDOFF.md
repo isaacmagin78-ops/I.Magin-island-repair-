@@ -124,11 +124,53 @@ conclude something is out of reach, check your tool list.**
 **This file is still the shared memory of record.** Anything that matters must
 land here or it is lost to every room that lacks connectors.
 
-### What Dispatch recovered about the Jul 22–23 night *(secondhand — from Dispatch, not re-verified here)*
+### ⛔ CORRECTED 2026-08-17 — the night was **July 14**, not July 22–23
 
-Isaac repeatedly asked what happened the night Claude Code "took over the
-computer." **Dispatch already answered this.** It read the full prior session
-transcripts and reported that on **Jul 22–23** the following was built:
+Isaac said it plainly: *"July 13, 14, 15 was the day everything took place."* Two
+sessions argued with him using the date below. **He was right and the file was
+wrong.** The git log settles it — commits per day across July:
+
+```
+Jul 12 ····  4      Jul 21 ···· 21
+Jul 13 ····  1      Jul 22 ····  0   ← "the night" has ZERO commits
+Jul 14 ···· 18      Jul 23 ····  0
+Jul 15 ···· 11      Jul 24 ···· 17
+```
+
+**July 22 and 23 produced nothing at all.** July 14 produced eighteen commits in
+two bursts, and that is what "Claude Code took over the computer" describes:
+
+| Time | What landed |
+|---|---|
+| **Jul 13, 2:23 PM** | A 494-line `CLAUDE.md` written in one commit — the original rulebook |
+| **Jul 14, 4:58 AM** | Isaac Video Engine — the local Remotion setup |
+| **Jul 14, 8:07–8:36 AM** | **Nine milestones in 29 minutes** — scaffold, templates, captions, animated text, Ken Burns, transitions, music, watermark, one-command render |
+| **Jul 14, 10:36–10:55 PM** | **Seven phases in 19 minutes** — core architecture, 12 components, motion, audio, social presets, render pipeline, docs |
+| **Jul 15, 9:51 PM** | College command center merged to `main` |
+| **Jul 15, 10:08 PM–11:46 PM** | Madison Moves built and rebranded |
+
+The entire video engine every video in this repo still renders from was built in
+**48 minutes of wall-clock**, across one day.
+
+**Why the wrong date stuck:** `SESSION-INDEX.md` in `-imagin-concierge` carries
+the Jul 22–23 claim, sourced from Dispatch secondhand and never checked against
+the commit log. It has been repeated into every session since. **Dispatch's
+recovery is not worthless — the items below are real and several are confirmed
+elsewhere — but its date is wrong, so treat the whole block as undated.**
+
+### 🔎 The teaching promise is not in the July 13 rulebook — verified
+
+Isaac remembers the first session promising to watch over his work and teach him.
+All 494 lines of that original `CLAUDE.md` (commit `ff8c8f9`, Jul 13 2:23 PM)
+were searched on 2026-08-17 for *teach, learn, guide, watch, warn, hint,
+mistake, beginner* — **zero hits.** It is a purely technical development guide.
+
+**The promise was spoken in the session and never written down.** That is the
+whole reason no session since has honoured it, and it is why the teaching rule
+now lives in `CLAUDE.md` at the root. Nothing was hidden and nothing was lost by
+anyone's fault — it was simply never recorded.
+
+### What Dispatch recovered — real items, **date unreliable, see correction above**
 
 - **$19 First 30 Days Kit — LIVE** at `tysons-time-kit.vercel.app`; promo videos
   posted Jul 21 across TikTok, IG, YouTube. *(Kit site confirmed in `kit-site/`.)*
