@@ -1461,3 +1461,34 @@ closed-palette rule is enforced in code** — light comes only from the brand's
 own primary/secondary over its background, and hue is never computed or cycled,
 so it structurally cannot produce a rainbow. Nothing existing was changed or
 removed; every diagnostic composition still stands.
+
+### ⛔ The July 13/14 sessions are NOT in the session list — verified 2026-08-17
+
+`SESSION-INDEX.md` says it was built "from the Claude Code Remote session list
+(45 sessions)". **The list Isaac can actually see has about 30, and it does not
+go back that far.** He scrolled it end to end and photographed the bottom:
+
+```
+…  AI leverage ideas analysis      Jul 29
+   Context from previous chat      Jul 26
+   Tyson session                   Jul 26
+   Debug and fix Notion issues     Jul 22   (Disconnected)
+   Fable video prompt refinement   Jul 21
+   Remotion video engine setup     Jul 17
+   Home care template              Jul 15
+   Adam's Island Fixes UI          Jul 8    ← last entry
+```
+
+**There is no `CLAUDE.md documentation` from July 13 and no July 14 cluster.**
+The dates also disagree with `SESSION-INDEX.md` — it lists Remotion setup at
+Jul 14 03:51; the UI shows Jul 17.
+
+**Do not send Isaac to open the July 13 session. It is not reachable.** He spent
+twenty minutes scrolling on a session's say-so. The commit log
+(`ff8c8f9`, Jul 13) proves the work happened; the *conversation* is gone from
+every surface a person or a session can reach.
+
+**This closes the hunt for the teaching promise.** It was spoken, never written,
+and the room it was spoken in no longer lists. The version in `CLAUDE.md` under
+"The teaching rule" is now the only copy that exists — and it is the one every
+future session actually reads, which the original never was.
