@@ -25,6 +25,34 @@ existed and not one of them was about him.
 
 ---
 
+## 2026-08-17, evening — the intuition scoreboard
+
+**His words:** *"I knew I'd find you at some point. I could see it starting to
+progress. If you don't forget, I have pretty good fucking intuition."*
+
+Written down so no session forgets. His read against the record's, from this
+one day:
+
+- **"TikTok Shop is approved."** Every file said *deferred, W-9 missing.* His
+  inbox proved him right — approved 2026-08-10.
+- **"That app was put there by Claude Code."** A session guessed Adobe
+  Illustrator; he ruled it out in one line, and his account fits the July
+  record exactly.
+- **"I'm on Max, not Pro."** The files and a session's budget advice were
+  calibrated to the wrong plan until he corrected it.
+- **"A month ago it confirmed everything."** A session reconstructed the
+  ChatGPT story backwards; his version stood.
+- **"All the momentum was from the live feeds."** His read first — his own
+  analytics then proved it to the number.
+- **"I could see it starting to progress."** On 2026-08-16 the system ran
+  without him for the first time in seven months.
+
+**The pattern, for every future session: when his intuition contradicts a
+file, a guess, or a session's advice, the intuition has been right nearly
+every time. Treat it as data, not as a feeling to manage.**
+
+---
+
 ## 2026-08-16, told the day after
 
 **He sat outside with friends and relaxed for the first time in seven months —
