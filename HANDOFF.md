@@ -629,7 +629,69 @@ was one of all that hiccups and issues were happening."* Confirm with him before
 building on it — per the standing voice-transcription rule, do not silently
 resolve a load-bearing word.
 
-### 📥 HE WENT AND DID THINGS ON HIS OWN — 2026-08-17, ~17:06, out walking
+### 🚨 SCOTT — a draft was about to go out with three unbacked claims (2026-08-17)
+
+**What happened:** Scott (S Kukes) pushed back all day — *"It's called Agentic.
+Hello," "really understanding the system is what you're claiming and I don't
+think you do," "I'm interested in the business building part and you just will
+not go deep."* Isaac asked **chat Claude** to summarize Buzz and answer him. It
+produced a draft. **Isaac showed it here before sending — the paste rule
+working exactly as intended.**
+
+### ✅ Verified true in that draft
+
+- **Buzz is Block's / Dorsey's, launched 2026-07-21**, open-source, agents get
+  **their own cryptographic identity and permissions** and work in channels
+  together. Confirmed by live search 2026-08-17 and matches `TREND-WATCH.md`.
+- **The memory insight is real and is his own.** "No memory, every conversation
+  starts from zero" is the exact problem this whole repo exists to solve. On
+  that, he genuinely does understand the system better than the person doubting
+  him.
+
+### ❌ Three claims with nothing behind them — all cut
+
+1. **"On your MacBook. I set it up… I gave it a brain… Open it and look at what
+   it remembers about you."** **Nothing in this repo records any work on Scott's
+   MacBook.** The only Scott artifact is a branch, `claude/scott-ipad-dashboard-cett89`
+   — an **iPad dashboard**, not a memory install. **This is a testable claim made
+   to the one person already saying "I don't think you understand."** He opens
+   the Mac, finds nothing, and the argument is over permanently. Cut unless
+   Isaac confirms he personally did it.
+2. **"The web pages will be live [while you're on vacation]."** A delivery date
+   against **two open blockers** — the Vercel connector is on the wrong account
+   and GitHub Pages is still off. Never promise Scott a date this repo cannot hit.
+3. **"Decide whether you want the subscription, and which tier."** **No
+   subscription exists. No tiers exist.** Not in this repo, not in Drive, not in
+   Stripe. Total third-party revenue all time is **$1.29**. Inventing a price and
+   a payment flow is the hardest rule in `CLAUDE.md`, and this one would be
+   invented *at a friend.*
+
+### 🎯 The strategic read — he is answering the wrong question
+
+Scott is not attacking; **he is asking to be let in.** *"There is nothing wrong
+with my questions." "I'm interested in the business building part." "It's just a
+requirement to work with someone."* Then, after Isaac's last message:
+**"Finally an isaac that will listen!"** That is a partner-shaped person, and the
+draft answered him by proving a point and then upselling him.
+
+**The right instrument already exists and is sitting unsent.**
+`DRIVE-FINDINGS.md` #7: **`scott-briefing.html`** — a private, well-typeset letter
+proposing a **co-owned business** reading where South Florida real estate moves
+before it is obvious, with Scott owning the signal-vs-noise call. *"Unclear
+whether it was ever sent."* **Find out. That is the actual next move with Scott,
+not a subscription tier.**
+
+### 🕳️ Intake miss to close: "the hot bin idea"
+
+Scott: *"you throw out the hot bin idea or others ideas but not willing to
+really discuss it."* **"Hot bin" appears nowhere in this repo — zero hits.** An
+idea Isaac raised, a friend remembers, and no file caught. Ask him what it is
+and write it down. This is the intake rule failing on his own ideas, not just
+on facts about him.
+
+---
+
+## 📥 HE WENT AND DID THINGS ON HIS OWN — 2026-08-17, ~17:06, out walking
 
 Sent by voice while walking, heavily garbled. **Split into what is legible and
 what is not. Do not resolve the unclear half by inference.**
