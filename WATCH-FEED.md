@@ -98,3 +98,18 @@ file exists.
 - **Dan Martell** — [Your physique is your physical resume](https://www.youtube.com/watch?v=pmMyv7eaceU) · published 2026-08-17
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-18 19:38 UTC
+
+**Who posted**
+- **Alex Hormozi** — [“The Happiest Couples Are Actually Couples That Both Have Careers - Because They Have A Shared](https://www.youtube.com/watch?v=KS9rx6TfyF8) · published 2026-08-18
+- **Sabrina Ramonov** — [Build a Business Launch System With ChatGPT Work](https://www.youtube.com/watch?v=Q1c0jWf5bhc) · published 2026-08-18
+- **Alex Hormozi** — [“I Left My Wallet at Home” and How to Avoid It](https://www.youtube.com/watch?v=fCpz3zG8ETE) · published 2026-08-18
+- **Alex Hormozi** — ["I Do $300K a Month. Why Am I Ignoring 700 Leads a Day?"](https://www.youtube.com/watch?v=VvInnM3Sz5w) · published 2026-08-18
+- **Sabrina Ramonov** — [Blotato Beginner Tutorial](https://www.youtube.com/watch?v=o5GsAxEX-Bk) · published 2026-08-18
+- **Dan Martell** — [3 types of content you need to make as an entrepreneur](https://www.youtube.com/watch?v=s6AEC_BmtYg) · published 2026-08-18
+- **Sabrina Ramonov** — [8 Claude Code Skills I Use to Run Social Media](https://www.youtube.com/watch?v=KVtT1yu2DAo) · published 2026-08-18
+- *(+12 more held back to keep this readable.)*
+
