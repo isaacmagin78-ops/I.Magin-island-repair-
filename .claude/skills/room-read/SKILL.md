@@ -157,3 +157,36 @@ ending Dubrovnik.
 
 **Do not build all of these now.** A concierge earns trust by arriving on the
 day, current and checked. Build each one as he approaches it.
+
+### The third finding — the product named its own bottleneck
+
+**Isaac, 2026-08-18:** *"I'm just pasting his exact messages into you. I'm not
+telling you anything. He's telling you basically."*
+
+Two things follow, and the second is the product.
+
+**1. The reads are primary source.** *"I prefer the smaller town over these
+bigger cities"* is Scott's own sentence, not Isaac's summary of him. Rules built
+on it are built on the user's words. **Keep it that way** — when Isaac relays,
+ask for the message rather than the gist, and never attribute a paraphrase to
+the user.
+
+**2. Isaac is currently the transport layer.** Scott types → Isaac pastes →
+the agent answers → Isaac pastes back. The concierge works end to end for a
+real stranger today, and the only moving part that is not automated **is a
+human carrying messages in both directions.**
+
+> **That is the whole product spec: remove Isaac from the loop.** The client
+> should reach the agent directly, and the agent should reach the client
+> directly, with Isaac seeing the thread rather than ferrying it.
+>
+> This is exactly what **Inkbox** does — persistent agent identities with their
+> own email, phone and iMessage. A session signed Isaac up on 2026-08-17 and
+> recorded nothing, and he found it confusing and unexplained (see
+> `HANDOFF.md`). One day later the need is obvious. **Evaluate it against this
+> use case specifically** — a client texting the agent while travelling —
+> rather than as a general agent-comms tool.
+
+**⚠️ Still his call, and not a small one.** Letting an agent send messages under
+an identity tied to him has real blast radius, and one of the first people on
+the other end would be a friend of thirty-five years. Decide it rested.
