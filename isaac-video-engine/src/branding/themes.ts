@@ -122,6 +122,39 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/luxury-coastal.png",
     watermarkText: "Luxury Coastal",
   },
+
+  /**
+   * ⚠️ UNCONFIRMED NAME — added 2026-08-18 for the Scott Kukes demo.
+   *
+   * Isaac believes his friend's business is called "The Kukes Group" but said
+   * "I believe", and a Sunbiz search on 2026-08-18 found NO Florida entity by
+   * that name (two unrelated Kukes entities exist; neither matches). It may be
+   * informal, registered in another state, or not registered at all.
+   *
+   * DO NOT show a render carrying this name to Scott until he confirms the
+   * spelling himself. Getting a man's own company name wrong on the first
+   * thing you hand him undoes the demo.
+   *
+   * Palette reasoning: he is an angel investor in real estate and finance who
+   * over-analyses and will not appear on camera. So — no warmth, no
+   * personality, no showmanship. Ink-blue ground, a single cold signal blue,
+   * one restrained brass accent for the figure that matters. It should read
+   * like a terminal, not a channel.
+   */
+  "kukes-group": {
+    id: "kukes-group",
+    displayName: "The Kukes Group",
+    colors: {
+      background: "#070b12",
+      primary: "#4d8dd6",
+      secondary: "#2b4f79",
+      accent: "#c9a227",
+      text: "#f2f5f9",
+      textMuted: "#8ea3bd",
+    },
+    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+    watermarkText: "The Kukes Group",
+  },
 };
 
 export const DEFAULT_BRAND_ID = "isaac-video-engine";
