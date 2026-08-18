@@ -63,10 +63,8 @@ approached, and no package ships without Isaac saying so explicitly.**
   company. Isaac's read: he can now monetize that attention and expand the
   business while making content on the road. ⚠️ Someone hurt by virality is
   owed care, not a pitch. Nothing goes near him without Isaac leading it.
-  ❓ **Unconfirmed:** Isaac also refers to a **"Carl"** in the same breath as
-  Ivan. Very likely the same person transcribed two ways by voice-to-text —
-  but *likely* is not *confirmed*, and this repo has already had one
-  two-people-one-name problem. Ask him; do not merge on inference.
+  ✅ **Settled 2026-08-18: the spelling is "Karil", not "Carl".** Isaac
+  confirmed. Any "Carl" in a transcript is voice-to-text for the same man.
 - **Ivan** — has messaged Isaac and is intrigued; follow-up still owed as of
   2026-08-18. Isaac rates him and Karil as the **more solid** leads.
 
@@ -83,6 +81,26 @@ useful, so it is recorded:
 *(Isaac also gave a blunter personal characterisation of one of these men.
 It is deliberately not written here — this repo is public and that line would
 embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
+
+> ### 🚫 Do not send the existing "Scott" materials to Scott Kukes
+>
+> On 2026-08-18 Isaac asked whether the finished Scott assets could just be
+> sent. **They cannot — they were built for the other Scott.**
+>
+> - `START HERE — The Screen (angel deal evaluator) v2.html` is explicitly
+>   **built for Scott Osman**: a go/no-go screener for angel deals, SAFEs,
+>   convertible notes and cap tables.
+> - `scott-briefing.html` is a **private letter proposing a co-owned business**
+>   in South Florida real estate, and it is unclear whether it was ever sent
+>   or which Scott it was for.
+>
+> **Scott Kukes asked a different question entirely** — what Isaac is
+> building and how it works. Neither document answers it. Sending either one
+> would be worse than sending nothing: an angel-deal tool reads as a pitch he
+> never asked for, and a private co-ownership proposal meant for someone else
+> is actively damaging.
+>
+> Build him the thing that answers *his* question. It is a short build.
 - **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
   picture." Punch list work is separate from this repo.
 
