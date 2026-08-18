@@ -79,6 +79,13 @@ useful, so it is recorded:
   `room-read` skill and the I.MAGIN Concierge were built for: what to expect,
   what the door enforces, how the room actually works, decided before he walks
   in. He is the product's live test case.
+  🐕 **He has a rescue dog, Max, and worries about him constantly.** That is
+  the single most useful thing on this page, because *The First 30 Days Kit is
+  the calm-structure answer to exactly that worry* — written by a friend who
+  went through it, not sold. 🚫 **Max is not content.** Scott is private and
+  will not appear anywhere; his dog does not go into Balcony Buddies or any
+  other post. The overlap is a shared experience between two men with rescue
+  dogs, and that is all it is.
   🚫 **Do not pitch him during this trip.** He is dealing with something
   family-shaped. The correct move, if any, is a small useful thing sent free
   with no ask attached — which is both the decent thing and, incidentally, the
