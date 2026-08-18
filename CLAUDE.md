@@ -367,6 +367,27 @@ These rules are enforced throughout the existing code and copy — hold the line
 
 ## Verify before you claim
 
+> ### 🔒 "Don't ever assume — you have to lock it in."
+>
+> **Isaac, 2026-08-17.** He added: *"seems like once in a while a couple of AIs
+> have forgotten that."* He is right, and it had already happened twice that
+> same day — a session repeated a ten-day-old file as current, and another
+> nearly swapped a working $5/month subscription link for a one-off product
+> link because a status file said so.
+>
+> **Two halves, and most sessions only do the first:**
+>
+> 1. **Don't assume.** Check it with a live call before you say it. A file is a
+>    log, not a fact — figures in this repo go stale in days.
+> 2. **Lock it in.** Write what you verified into a file, with the date and the
+>    tool you used, *in the same turn*. "Noted" is not storage. A verified fact
+>    that lives only in a chat message is gone the moment the session ends, and
+>    the next session re-derives it wrong.
+>
+> If you cannot verify something, say so and label it unverified with its date.
+> An honest gap is useful. A confident guess costs him a day — that is not
+> hypothetical, it is what 2026-08-17 was.
+
 The strongest convention in this repo: **never report something as working,
 broken, or done without a live check.** It is written into the engine's
 `CLAUDE.md`, into `HANDOFF.md`'s standing rules, and into the audit report's
