@@ -190,3 +190,35 @@ human carrying messages in both directions.**
 **⚠️ Still his call, and not a small one.** Letting an agent send messages under
 an identity tied to him has real blast radius, and one of the first people on
 the other end would be a friend of thirty-five years. Decide it rested.
+
+---
+
+## ⭐ THE FEATURE REQUEST — unprompted, from the user, 2026-08-18
+
+> **Scott:** *"Real time highly rated coffee shops notifications popping up on
+> my phone as I'm within reasonable distance would be very valuable."*
+
+**A paying-shaped customer described the product without being asked.** Nothing
+else in this workspace has that. Treat this line as the spec.
+
+**Why it is the right feature and not just a nice one:**
+
+- It is **push, not pull.** Every version so far requires him to open something.
+  This requires him to do nothing, which is the only interaction model that
+  survives a man driving down a coast.
+- It is **proximity-triggered**, so it cannot recommend a place he has already
+  left — the exact failure of the Zagreb card.
+- It is **coffee**, which he has already proven he cares about: he bought beans
+  from several cafés in Zagreb unprompted. Not a guess about what he wants.
+- It sidesteps the over-analysis entirely. There is nothing to evaluate — it
+  arrives when it is useful and is silent otherwise.
+
+**What it needs, honestly:** the client's live location, a quality source for
+venues, and a push channel to his phone. The location half already works — he
+shares it with Isaac today. The push half is what the Inkbox agent-identity
+question above is really about.
+
+**The standing rule for this product, from one afternoon of real use:** the
+value is never the recommendation. It is **the right thing at the right
+distance at the right moment**, and everything else is a search engine with
+better manners.
