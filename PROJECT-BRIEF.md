@@ -118,6 +118,40 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 > Scott" — it is **why a collaboration this far along went quiet.** That is a
 > question for Isaac, not a build.
 >
+> ### 💰 Isaac's position on terms — 2026-08-18
+>
+> *"Those were all months old by now… since he didn't use any of them and we
+> built them out further he can still collaborate, but he'd get a smaller
+> percentage."*
+>
+> Sound in principle: contribution sets the split, and Isaac has carried it
+> alone since. Three things follow.
+>
+> **1. The original deal gave Scott the wrong job.** `scott-briefing.html`
+> proposes he owns *the signal-vs-noise call* — the decision. Isaac's own
+> description of him is that he over-analyses and *"always looks for a reason
+> it won't work."* **The role that stalls him was written into the deal.** No
+> rebuild of the assets fixes that; only changing the role does. If he comes
+> in, he should come in where he is strong — capital, domain interest, a
+> long-game view — and nowhere near the go/no-go.
+>
+> **2. Nothing appears to have been agreed, which is a strength.** No signed
+> split is recorded anywhere. That means Isaac is not reducing an existing
+> share, he is **making a first offer** — a much simpler and stronger
+> position. Do not describe it to Scott as "less than before" if there was
+> never a before.
+>
+> **3. ⚠️ Say the number out loud, in writing, before doing more work.** A
+> thirty-five-year friendship plus money plus an unstated shrinking percentage
+> is the standard way old friendships end. Isaac should not build the next
+> version and *then* negotiate. One plain message naming the structure and the
+> number, before the work, protects both of them.
+>
+> **The structural question nobody has asked:** is Scott a *partner* or an
+> *investor*? He brings capital and interest, not execution. Those are
+> different instruments with different paperwork, and picking the wrong one is
+> what creates a partner who holds equity and never moves.
+>
 > ### 🚫 Superseded — read the correction above first
 > ### Do not send the existing "Scott" materials to Scott Kukes
 >
