@@ -770,7 +770,41 @@ is already one tap from his phone's home screen.** It does not answer the
 outstanding question about the Mac app's identity — that check needs him back at
 the MacBook, and it can wait.
 
-### 🕰️ HIS timeline of when it went wrong — his sequence, not a session's
+### 📧 UNEXPLAINED SIGNUP — Inkbox (YC S26), found in his email, 2026-08-17
+
+**He forwarded a welcome email he does not remember requesting**, from Ray Liao
+(cofounder), subject "Welcome to Inkbox (YC S26)." **Same shape as the mystery
+`/Applications` app: something exists that he did not knowingly put there, and
+the honest answer is "ask him," not "guess."**
+
+**What Inkbox actually is, verified by live search 2026-08-17 — real, not a
+scam:** a YC Summer 2026 company, founders MIT/Harvard-trained, that gives an
+AI agent **its own email inbox, phone number, iMessage, a persistent internet
+address, and an encrypted 2FA/TOTP credential vault** through one API — so an
+agent can sign up for services and act on the codes itself. Plugins exist for
+Claude Code, Hermes, OpenClaw, Codex, OpenCode.
+
+⚠️ **Name the danger plainly, per the standing rule — this is a real one.**
+This is not a note-taking tool. It is infrastructure for letting an agent hold
+**a phone number reachable by anyone, an email address, and 2FA codes to real
+accounts.** That combination is exactly the class of thing that gets an
+account-recovery flow social-engineered. **Nothing here suggests Inkbox itself
+is unsafe — the founders are real, it's YC-backed — but what it's *for* is
+consequential enough that it should never be running because a welcome email
+sat in an inbox unexamined.**
+
+**Not yet checked, cannot check from this session:** Gmail MCP is disconnected
+in this session — could not read the inbox directly to see whether Isaac
+requested this, whether any onward step was completed, or whether a linked
+account already exists. **Do not tell him it is safe or already handled. Ask
+him directly whether he signed up for it, the same as the app question.**
+
+**If he did not sign up for it himself:** do not click any install/plugin link
+in that email until the source is understood. If he did, find out why and
+whether anything downstream (a phone number, a vault) is already active —
+that is the part with real consequence, not the welcome email itself.
+
+## 🕰️ HIS timeline of when it went wrong — his sequence, not a session's
 
 He added it unprompted, one clause at a time, and it lines up with three things
 already in this file: *"I was also… when I was hitting the usage limits and Fable
