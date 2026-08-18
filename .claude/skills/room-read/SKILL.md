@@ -86,6 +86,36 @@ are not.** Record what he says; do not argue him out of it.
 
 ---
 
+## ⭐ Save it — this step is not optional
+
+**Added 2026-08-18 on Isaac's go-ahead. This is the step that turns the skill from a
+service into an asset.**
+
+Before this existed, every run spent thirty years of room knowledge and kept none of it.
+The answer was good, the conversation ended, and the next session started from nothing.
+
+**So: every time this skill runs, append the read to `concierge-systems/ROOM-LOG.md`.**
+Newest at the bottom, using the block defined in that file. It takes seconds and it is the
+entire long-term point.
+
+What to capture:
+
+1. **The five lines exactly as given** — the door, wear, the room, current, don't.
+2. **Confirmed versus inferred**, labelled line by line. Same rule as the answer itself.
+3. **⭐ Isaac's correction, if he gives one.** The most valuable field in the corpus.
+   Research produces patterns; he produces the truth. When he contradicts the research,
+   **record what he says verbatim and do not argue him out of it.**
+4. **What actually happened**, later, if he mentions it. Was the door read right? What got
+   missed? A wrong read corrected by reality is worth more than a right one.
+
+**Do not make him do this.** He is walking out the door — give him the five lines, then
+write the entry yourself. Never hand him the logging as homework.
+
+**Do not publish the log.** It is the trade secret, not content. Excerpts go to a paying
+client; nothing goes to a feed. See the warnings at the top of `ROOM-LOG.md`.
+
+---
+
 ## Beyond clothes
 
 The full version of this — the one that becomes the product — also covers:
