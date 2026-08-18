@@ -49,10 +49,15 @@ months of everything here was built on an iPhone. Nothing else.**
 
 | Agent | Product | Job |
 |---|---|---|
-| **Sy** | Claude Code | Building, code, canonical documents, long execution. |
+| **Sid** | Claude Code | Building, code, canonical documents, long execution. |
 | **Flex / Arturo** | Perplexity | **His second brain.** Strategy, research, cited sourcing, trend watch. Talks *with* him, not at him. |
 | **Kelly** | ChatGPT | **Visuals.** Infographics and diagrams — the current real use. |
 | **Gem** | Gemini | Posting and device-side execution. |
+
+**✅ It is "Sid", not "Sy".** Corrected by Isaac 2026-08-18: *"No, it's not
+Sy. It's Sid — Sydney Schneider, my stepfather."* The Claude Code agent is
+named after him. Spell it **Sid**. This is not a nickname to vary or shorten,
+and it is not a transcription error to "fix" back to Sy.
 
 **⛔ "Todd" does not exist.** An old page invented him and gave him final
 decision-making. Isaac: *"there's no Todd."* Never use the name.

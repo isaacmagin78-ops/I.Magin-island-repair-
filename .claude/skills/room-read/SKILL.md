@@ -136,3 +136,24 @@ expectation the place did not meet.
    wasted; he was gone by Saturday.
 5. **Own the miss out loud when reporting back.** Isaac's whole system runs on
    verified-not-assumed. A concierge that never admits a bad call is a brochure.
+
+### The second finding, from his next message
+
+> **"I prefer the smaller town over these bigger cities."**
+
+Said unprompted, right after *"nothing in the town for me"* about Zagreb. **This
+is the single most valuable line the product has received.** It is a standing
+filter, not a preference about one city.
+
+**What it means operationally:** on a route through big-name stops, the
+headline city is the *least* interesting part to him. The card's job is to find
+what is small and near it — the village, the locked church, the cellar — and to
+treat the famous city as a base rather than a destination.
+
+**His route as of 2026-08-18** (recorded so cards can be prepared ahead and
+date-checked, which is where the Zagreb card failed):
+Rovinj / Istria → the Lakes region → Zadar → Hvar → Split → Makarska →
+ending Dubrovnik.
+
+**Do not build all of these now.** A concierge earns trust by arriving on the
+day, current and checked. Build each one as he approaches it.
