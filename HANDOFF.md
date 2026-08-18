@@ -1,5 +1,51 @@
 # Project Handoff
 
+> # 🧭 THE CALL — 2026-08-17. Read this first. It settles what we are doing.
+>
+> Isaac asked for a decision instead of options: *"This team needs to freaking
+> have a leader, that's you and I."* Fair. Here it is, and it stands until he
+> changes it.
+>
+> ### What we are doing
+>
+> **Selling through links, not websites.** Both Stripe payment links are
+> self-hosted by Stripe and work with no site, no deploy, and no laptop:
+> - $19 First 30 Days Kit — `buy.stripe.com/cNi4gz1z1aBXdAW7pUg7e00` *(verified live, 1 paid charge)*
+> - $49 College Checklist — `buy.stripe.com/00w6oH1z16lHcwS9y2g7e02` *(created 2026-08-07, NOT yet independently verified — test before pushing traffic)*
+>
+> **Posting is the business.** ~15,000 short-form views/month already exist.
+> That is the asset. Everything else here is scaffolding around it.
+>
+> ### What we are NOT doing — do not reopen these without him asking
+>
+> - **Not fixing the Vercel account.** Four weeks, several sessions, still
+>   bound to an empty account. The websites are cosmetic; the links work
+>   without them. This is a dead end that has cost more than it returns.
+> - **Not setting up the MacBook.** Nothing the business needs lives there.
+> - **Not building new files, tools or systems.** This repo has sixteen project
+>   folders and twenty status documents. The bottleneck has never been
+>   organization. If a new thing cannot name the hour it gives back, it does
+>   not get built. (`TREND-WATCH.md`)
+>
+> ### What actually needs Isaac — the whole list
+>
+> 1. Put the two Stripe links in his bios and captions.
+> 2. Refill the posting queue when it runs dry (**2026-08-18 23:00 UTC**, verified live 2026-08-17).
+>
+> That is it. Everything else either runs itself or does not matter.
+>
+> ### What runs without him — verified 2026-08-17
+>
+> - **Watcher** — `.github/workflows/watch.yml`, 07:12 and 19:12 UTC daily, on
+>   GitHub's servers. Fired unattended at 19:39 UTC with no session open and no
+>   machine of his involved. Appends to `WATCH-FEED.md`.
+> - **Morning session** — scheduled routine, 12:00 UTC daily. No connectors, so
+>   it cannot check the queue, Stripe or Vercel. It keeps the repo current,
+>   verifies the watcher is alive, and promotes anything material into
+>   `TREND-WATCH.md`.
+> - **Orientation** — `CLAUDE.md` step zero plus the "catch up" command. Any new
+>   session opens current instead of blind.
+
 > # 🛑 2026-08-17 — ISAAC HAS STEPPED BACK. NOTHING IS WAITING ON HIM.
 >
 > He said it plainly today: *"I don't understand anything you guys are talking
