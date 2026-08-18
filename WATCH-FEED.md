@@ -84,3 +84,17 @@ file exists.
 - **Sabrina Ramonov** — [Unlimited Nano Banana 2 Images Free on Blotato Until September 1](https://www.youtube.com/watch?v=uNy_YuXIZ38) · published 2026-08-17
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-18 07:51 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Do Married Men Make More Money?](https://www.youtube.com/watch?v=Axz7nNfUotE) · published 2026-08-18
+- **Alex Hormozi** — [The worst thing in the world is punishing the pilot when the plane crashes, but not rewarding t](https://www.youtube.com/watch?v=7wBJkV_79dQ) · published 2026-08-18
+- **Alex Hormozi** — [What Shape Is Your Business?](https://www.youtube.com/watch?v=AFkWxg4RLSc) · published 2026-08-18
+- **Sabrina Ramonov** — [How to Remove Claude and ChatGPT Watermarks for Free](https://www.youtube.com/watch?v=EWQtdRHcfFQ) · published 2026-08-18
+- **Dan Martell** — [The best investment you could make @icedcoffeehour](https://www.youtube.com/watch?v=zQMT-lhLp5g) · published 2026-08-18
+- **Dan Martell** — [Your physique is your physical resume](https://www.youtube.com/watch?v=pmMyv7eaceU) · published 2026-08-17
+- *(+12 more held back to keep this readable.)*
+
