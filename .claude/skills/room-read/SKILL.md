@@ -93,3 +93,46 @@ arrival timing, who is likely in the room, how the check works, tipping norms,
 what to have ready before walking in, and how conversation is actually opened at
 that kind of event. **Answer whichever of these the situation calls for**, in the
 same five-line discipline.
+
+---
+
+## 🧪 FIELD TEST #1 — Zagreb, 2026-08-18. First real user. Read this before writing another card.
+
+A card was written for a traveller in central Zagreb and sent to him live. He
+replied within the hour. **This is the only real usage data this product has.**
+
+| What was sent | What he said back |
+|---|---|
+| Dolac market, go before 1pm | *"Went to Dolac.. very unimpressive and that's supposedly best and biggest"* |
+| Coffee culture, an hour not ten minutes | *"The coffee shops are great. Already got beans from several cafes"* |
+| Stone Gate, medieval gate with a chapel | **"Stone gate is one i didn't know"** |
+| Zrinjevac picnic, špica on Saturday | No reaction. He leaves before Saturday. |
+
+### The finding, and it is the whole product
+
+**Everything he could have found himself, he had already found.** He is an
+obsessive researcher. By the time the card reached him he had been to the
+market and bought beans from several cafés. Those lines cost credibility
+rather than earning it — one of them ("best and biggest") actively set an
+expectation the place did not meet.
+
+**Exactly one line landed, and it was the one that is not in the guidebooks.**
+
+> ### The rule: for a researcher, the obvious is worse than nothing.
+>
+> Recommending the top result tells him you searched the same page he did. It
+> reads as a lookup, not a concierge. **Skip everything a competent person
+> would find in ten minutes and lead with the thing they would not.**
+
+### What changes in the next card
+
+1. **Cut anything ranked "best", "biggest", "top" or "must-see."** If it wins a
+   search, he has been. Say so and move on, or omit it.
+2. **Lead with the Stone Gate slot** — the specific, small, findable-only-if-you-know
+   thing. One or two of those is worth more than five good ones.
+3. **Never oversell a place.** "Best and biggest" was repeated from a source and
+   it made the miss worse. Describe what is actually there, flatly.
+4. **Check his dates before recommending a day-specific thing.** Špica was
+   wasted; he was gone by Saturday.
+5. **Own the miss out loud when reporting back.** Isaac's whole system runs on
+   verified-not-assumed. A concierge that never admits a bad call is a brochure.
