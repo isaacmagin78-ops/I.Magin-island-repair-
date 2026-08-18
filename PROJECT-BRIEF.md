@@ -118,7 +118,38 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 > Scott" — it is **why a collaboration this far along went quiet.** That is a
 > question for Isaac, not a build.
 >
-> ### 💰 Isaac's position on terms — 2026-08-18
+> ### ✅ SETTLED 2026-08-18 — Scott is a friend with a sandbox, not a stakeholder
+>
+> **Isaac, in his own words:** *"He's really just a friend at this point. We're
+> too far along to be less. His issue is power — he wants more power than he
+> deserves on anything… whatever Scott wants to work on, it's just something
+> for him to do. If it turns into a product, we have control."*
+>
+> **This closes the partner/investor question below. Do not reopen it.** Scott
+> is not a co-founder, not an investor, and not a stakeholder. He is a
+> thirty-five-year friend who gets something to tinker with.
+>
+> **What this means in practice:**
+> - **No equity conversation, no percentage, no terms document.** There is
+>   nothing to negotiate over a friend's hobby project, and drafting one would
+>   manufacture the exact power fight Isaac is avoiding.
+> - **Do not build a contribution or sweat-equity tracker.** Isaac floated
+>   measuring it analytically. It fails the standing test — it cannot name an
+>   hour it gives back, and it only matters if this becomes a business, which
+>   it is not.
+> - **Control is already structural, not contractual.** Anything Scott builds
+>   runs on Isaac's machine: the video engine, the faceless pipeline, the
+>   posting system, this repo. Ownership of the system *is* the control. No
+>   paperwork is needed to hold a position Isaac already holds by construction.
+>
+> **⚠️ The one thing still worth doing, and only one line of it:** say once, in
+> writing, what this is — *yours to play with; if it becomes a business we'll
+> talk then; the system it runs on is mine.* Send it while it is still a hobby
+> and it reads as generous. Send it after something works and it reads as a
+> land grab. Given that Isaac's own read is that Scott reaches for more power
+> than he has earned, that one line is the whole insurance policy.
+>
+> ### 💰 Superseded — earlier terms thinking, kept for reasoning only
 >
 > *"Those were all months old by now… since he didn't use any of them and we
 > built them out further he can still collaborate, but he'd get a smaller
