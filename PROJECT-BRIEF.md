@@ -102,30 +102,28 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 >
 > Build him the thing that answers *his* question. It is a short build.
 
-> ### ⚠️ "Scott Osman" — Isaac does not know who this is
+> ### ✅ "Scott Osman" — a source Isaac studied, not a person he knows
 >
-> **Isaac, 2026-08-18:** *"Scott Kukes is my friend for 35 yrs and I don't know
-> who the other Scott is."*
+> **Settled by Isaac, 2026-08-18.** He brought Scott Osman's material in
+> himself, as something to learn from and build off. Osman is a **reference**,
+> not a contact, not a lead, and not a relationship.
 >
-> So there is a finished, personalised document sitting in his Google Drive —
-> an angel-deal evaluator — **addressed to a named person he does not
-> recognise**, and `DRIVE-FINDINGS.md` records no provenance for the name.
+> This session briefly flagged the name as a possible fabrication. **That was
+> wrong** — recorded here so nobody re-raises it. `DRIVE-FINDINGS.md` describes
+> the angel-deal evaluator as *"built for a named person, Scott Osman"*, which
+> reads as a personalised gift; it is more accurately a **study artifact built
+> from his framework**. Treat that description as loose wording, not intent.
 >
-> **Treat this as a possible fabrication until proven otherwise.** The most
-> likely explanation is that an earlier AI session invented or borrowed the
-> name and built a document around it. There is a real, well-known Scott Osman
-> in the coaching world, which makes this worse rather than better: a
-> personalised business document addressed to a public figure Isaac has never
-> met is not a gift, it is a liability.
+> **Still true regardless:**
+> 1. **Do not send it to Scott Osman.** A document derived from someone's
+>    public work and carrying their name, sent unsolicited, is awkward at best.
+> 2. **Do not send it to Scott Kukes** — see the block above. Different man,
+>    different question.
+> 3. `scott-briefing.html` still has an unverified recipient. Ask before
+>    assuming which Scott it was for, or whether it was ever sent.
 >
-> **Hard rules until Isaac says otherwise:**
-> 1. **Never send it.** Not to Scott Kukes, not to Scott Osman, not to anyone.
-> 2. Do not treat "Scott Osman" as a contact, a lead, or a relationship in any
->    file, plan or pitch.
-> 3. The same doubt applies to `scott-briefing.html` — the private co-ownership
->    proposal. Its recipient is unverified and may be equally invented.
->
-> This is exactly what the no-fabricated-people rule exists to catch.
+> **Scott Kukes is a 35-year friend.** That is the relationship. Osman is
+> reading material.
 - **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
   picture." Punch list work is separate from this repo.
 
