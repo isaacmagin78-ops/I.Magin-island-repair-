@@ -63,6 +63,26 @@ approached, and no package ships without Isaac saying so explicitly.**
   company. Isaac's read: he can now monetize that attention and expand the
   business while making content on the road. ⚠️ Someone hurt by virality is
   owed care, not a pitch. Nothing goes near him without Isaac leading it.
+  ❓ **Unconfirmed:** Isaac also refers to a **"Carl"** in the same breath as
+  Ivan. Very likely the same person transcribed two ways by voice-to-text —
+  but *likely* is not *confirmed*, and this repo has already had one
+  two-people-one-name problem. Ask him; do not merge on inference.
+- **Ivan** — has messaged Isaac and is intrigued; follow-up still owed as of
+  2026-08-18. Isaac rates him and Karil as the **more solid** leads.
+
+**How to approach them — Isaac's own read, 2026-08-18.** This is operationally
+useful, so it is recorded:
+
+- **Scott** can be sent a self-contained thing and will work through it on his
+  own. A document or a page suits him; he does not need a conversation first.
+- **Karil and Ivan** are the warmer, more solid leads, and they need *time* —
+  a follow-up conversation and room to actually understand it, not a document
+  dropped on them. Both come from a working background outside the US, which
+  Isaac reads as a genuinely different and more grounded perspective.
+
+*(Isaac also gave a blunter personal characterisation of one of these men.
+It is deliberately not written here — this repo is public and that line would
+embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 - **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
   picture." Punch list work is separate from this repo.
 
