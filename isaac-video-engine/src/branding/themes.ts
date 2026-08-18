@@ -131,9 +131,14 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
    * that name (two unrelated Kukes entities exist; neither matches). It may be
    * informal, registered in another state, or not registered at all.
    *
-   * DO NOT show a render carrying this name to Scott until he confirms the
-   * spelling himself. Getting a man's own company name wrong on the first
-   * thing you hand him undoes the demo.
+   * 🚫 STRENGTHENED 2026-08-18: do not put this name on anything at all.
+   * Isaac says Scott calls himself this but is **private about his business
+   * and may not have a registered one.** Branding a demo with a name a man
+   * holds close — and possibly does not hold at all — is worse than using no
+   * name. Use a neutral render, or ask him directly, and only ever use the
+   * name if he offers it himself.
+   *
+   * The theme stays registered so the option exists. It is not a licence.
    *
    * Palette reasoning: he is an angel investor in real estate and finance who
    * over-analyses and will not appear on camera. So — no warmth, no
