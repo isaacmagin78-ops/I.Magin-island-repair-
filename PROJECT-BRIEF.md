@@ -48,13 +48,15 @@ approached, and no package ships without Isaac saying so explicitly.**
 - **Linda S. Hoyt** — Isaac's sister, Broker-Associate at ONE Sotheby's
   (Fort Lauderdale). Customer #1, with her knowledge. A finished 19-asset
   package exists for her live listing. See `START-HERE-LINDA-PITCH.md`.
-- **Scott** (contact shows as "S Kukes") — the friend who sent Isaac the Jack
-  Dorsey / Buzz news three weeks late, which is the origin of `TREND-WATCH.md`.
-  Asks Isaac a lot of questions about what he is building. As of 2026-08-18 he
-  said **"I'm fine with ai answering"** — the first time he has been open to
-  talking to an agent instead of to Isaac. He is an amplifier, not a customer.
-  ⚠️ **Do not merge him with "Scott Osman"** in `DRIVE-FINDINGS.md` — different
-  surname, possibly a different person entirely. Nobody has confirmed which.
+- **Scott Kukes** — full name confirmed by Isaac 2026-08-18. The friend who
+  sent him the Jack Dorsey / Buzz news three weeks late, which is the origin
+  of `TREND-WATCH.md`. Asks Isaac a lot of questions about what he is
+  building. As of 2026-08-18 he said **"I'm fine with ai answering"** — the
+  first time he has been open to talking to an agent instead of to Isaac. He
+  is an amplifier, not a customer.
+  ✅ **Settled: Scott Kukes and "Scott Osman" in `DRIVE-FINDINGS.md` are two
+  different people.** Isaac confirmed the surname. Never merge them, and never
+  attribute one's history to the other.
 - **Karil** — subject of a viral short-form series ("the poor delivery guy",
   Maker Media, 2024). Isaac has spoken with him; describes him as genuinely
   nice and **negatively affected** by the attention. He owns a trucking
