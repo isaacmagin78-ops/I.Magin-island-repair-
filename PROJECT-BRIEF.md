@@ -91,7 +91,35 @@ useful, so it is recorded:
 It is deliberately not written here — this repo is public and that line would
 embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 
-> ### 🚫 Do not send the existing "Scott" materials to Scott Kukes
+> ### 🔄 CORRECTION 2026-08-18 — the Scott materials are for Kukes, and there is a whole workspace
+>
+> The block below says the finished Scott assets were built for the other
+> Scott. **Drive says otherwise.** Verified by listing file titles this
+> morning:
+>
+> - **`ScottK`** — a folder. K for Kukes.
+> - **`03 Scott's Workspace (collaborative)`**
+> - **`04 Isaac Mirror (snapshots — not shared with Scott)`**
+> - `Scott shared`, `Scott demo`
+> - `scott-briefing.html` ×3 and `scott-autopilot-clean.html` ×3
+>
+> That is a built-out, two-sided collaboration structure, not a one-off gift.
+> And Isaac confirmed the same morning that **Scott Kukes is an angel investor**
+> — his own capital, not a job — **whose interests are travel, real estate,
+> finance, and creative work.** The angel-deal evaluator and the real-estate
+> signal briefing map onto that profile exactly.
+>
+> **Still unverified:** the addressee written *inside* the files. Reading Drive
+> file contents needs Isaac's approval on his device; only titles were listed.
+> Do not state who the briefing is addressed to until someone opens it.
+>
+> **What this does not change:** he does not act. Three things were sent and
+> none were used. The open question is no longer "what should we build for
+> Scott" — it is **why a collaboration this far along went quiet.** That is a
+> question for Isaac, not a build.
+>
+> ### 🚫 Superseded — read the correction above first
+> ### Do not send the existing "Scott" materials to Scott Kukes
 >
 > On 2026-08-18 Isaac asked whether the finished Scott assets could just be
 > sent. **They cannot — they were built for the other Scott.**
