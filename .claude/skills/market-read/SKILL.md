@@ -76,11 +76,33 @@ figure. Make it specific enough that only someone who looked would ask it.
 
 ---
 
-## Where it goes
+## ⭐ Where it goes — this step is not optional
 
-Per the Ike OS rule — *no research asset exists until it is written down* —
-append every market read to `TREND-WATCH.md` under a dated heading, and mirror
-anything that changes strategy into Ike OS in Notion.
+**Corrected 2026-08-18 on Isaac's go-ahead.** This section used to point at
+`TREND-WATCH.md`. **That was wrong and it never happened once** — `TREND-WATCH.md` is
+about the creator and AI lane, so a read on a yacht club had nowhere to sit and every
+market read ever run evaporated. A rule pointing at the wrong file is the same as no rule.
+
+**Append every market read to `concierge-systems/MARKET-LOG.md`**, newest at the bottom,
+using the block defined in that file. Then mirror anything that changes strategy into
+Ike OS in Notion.
+
+What to capture beyond the six lines:
+
+1. **Why he asked** — who he was standing in front of. This turns the log into a map of
+   his real pipeline, which stays useful long after the figures die.
+2. **Split DURABLE from PERISHABLE.** How the business runs is true next year; this
+   year's numbers are not. **Stamp a re-check date and never repeat a perishable line to
+   a real person without re-verifying it.**
+3. **⭐ Isaac's correction, verbatim.** He has thirty years around these businesses and
+   the research does not. **His word overrides the research** — record it, do not argue.
+4. **What happened.** Did the question land? Was the pressure line right? A read that
+   reality corrected is worth more than one that was never tested.
+5. **"Not his market" is a finding too.** Write it down so the next session does not
+   re-derive a forced angle.
+
+**Do not make him do this.** He is mid-conversation — give him the six lines, then write
+the entry yourself. Never hand him the logging as homework.
 
 **Never deliver only in chat.** That is how nine months of research evaporated.
 
