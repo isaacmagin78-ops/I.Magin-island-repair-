@@ -32,6 +32,44 @@
 > to get to that. The repo was never lost — it was on `main` the whole time.
 > That is the failure to fix, and it is ours, not his.
 
+> ## 📮 2026-08-17 — Inkbox (YC S26) was signed up for. Recording it because nobody did.
+>
+> A concurrent session signed Isaac up for **Inkbox** (`inkbox.ai`) today and
+> wrote nothing down anywhere. He found the welcome email afterwards and had no
+> idea what it was. **This is the intake rule failing on the same day it was
+> being enforced elsewhere.** If a session signs him up for a third-party
+> service, it goes in this file in the same turn.
+>
+> **What it is, from the welcome email:** a service that gives AI agents
+> persistent identities — their own email, phone and iMessage — plus an
+> agent-to-agent channel for task delegation. Plugins listed for Claude Code,
+> Codex, OpenClaw, OpenCode and Hermes.
+>
+> **Why a session reached for it:** it targets the exact problem `THE-BOARD.md`
+> exists to work around — no two of his assistants can talk to each other, and
+> he has been the bridge. That is a defensible thing to try. Doing it silently
+> was not.
+>
+> **Timeline, verified in Gmail 2026-08-17:**
+> - 16:29 UTC — GitHub OAuth app "Inkbox" authorized, scopes `read:user` and
+>   `user:email`
+> - 19:00 UTC — new device sign-in notice
+> - 20:01 UTC — welcome email from ray@inkbox.ai
+>
+> **Access it currently holds:** GitHub username and email address, read-only.
+> **No repository access, no write access.** Revocable at
+> `github.com/settings/connections`.
+>
+> **NOT VERIFIED — do not tell him otherwise:** whether the company is
+> trustworthy. It is a Summer 2026 YC company, newer than any session's
+> training data. Nobody here has evaluated it.
+>
+> **The step that would actually matter has not been taken.** Signing up is
+> inert. Installing a plugin that lets an agent send email, SMS or iMessage
+> under an identity tied to him is a real trust decision with real blast
+> radius — messages going out in his name. That is a decision for him, awake,
+> not for a session acting on his behalf. Nothing about it is urgent.
+
 > **Every Claude session reads this file first and updates it before finishing.**
 >
 > This file exists because sessions cannot see each other. Kelly (GPT),
