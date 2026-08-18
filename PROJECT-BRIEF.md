@@ -71,8 +71,17 @@ approached, and no package ships without Isaac saying so explicitly.**
 **How to approach them — Isaac's own read, 2026-08-18.** This is operationally
 useful, so it is recorded:
 
-- **Scott** can be sent a self-contained thing and will work through it on his
-  own. A document or a page suits him; he does not need a conversation first.
+- **Scott is a friend, not a lead. Do not build for him.** ⚠️ Corrected
+  2026-08-18, hours after the opposite was written here. Isaac: *"He has a
+  bunch of ideas. He just never acts on them. We already sent him a travel
+  idea, a checklist, and a couple of other things — he just never used it."*
+  **Three things built and sent, three unused.** A fourth is the same
+  experiment with more of Isaac's time in it. His "I'm fine with ai answering"
+  is curiosity, not intent to act.
+  **What to do instead:** point him at something that already exists and costs
+  nothing to produce — Isaac already told him to watch Sabrina Ramonov, which
+  was the right instinct. Spend zero build hours here. Thirty-five years of
+  friendship is the value; it does not need a deliverable attached.
 - **Karil and Ivan** are the warmer, more solid leads, and they need *time* —
   a follow-up conversation and room to actually understand it, not a document
   dropped on them. Both come from a working background outside the US, which
