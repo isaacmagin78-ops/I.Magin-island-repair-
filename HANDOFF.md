@@ -650,13 +650,14 @@ working exactly as intended.**
 
 ### ❌ Three claims with nothing behind them — all cut
 
-1. **"On your MacBook. I set it up… I gave it a brain… Open it and look at what
-   it remembers about you."** **Nothing in this repo records any work on Scott's
-   MacBook.** The only Scott artifact is a branch, `claude/scott-ipad-dashboard-cett89`
-   — an **iPad dashboard**, not a memory install. **This is a testable claim made
-   to the one person already saying "I don't think you understand."** He opens
-   the Mac, finds nothing, and the argument is over permanently. Cut unless
-   Isaac confirms he personally did it.
+1. ~~**"On your MacBook. I set it up… I gave it a brain."**~~ **RETRACTED SAME
+   DAY — this claim is TRUE and the session was wrong to flag it.** Isaac:
+   *"we put the instruction in his Claude that's working way differently than
+   before. He had an empty brain."* **He did it. He is the live layer on what he
+   has done; the absence of a file is this repo's failure, not evidence against
+   him.** Put the line back in the message. See the Scott history below — which
+   nobody had ever written down, which is exactly why a session doubted him.
+
 2. **"The web pages will be live [while you're on vacation]."** A delivery date
    against **two open blockers** — the Vercel connector is on the wrong account
    and GitHub Pages is still off. Never promise Scott a date this repo cannot hit.
@@ -680,6 +681,47 @@ proposing a **co-owned business** reading where South Florida real estate moves
 before it is obvious, with Scott owning the signal-vs-noise call. *"Unclear
 whether it was ever sent."* **Find out. That is the actual next move with Scott,
 not a subscription tier.**
+
+### 👤 WHO SCOTT IS — write this down once so he never repeats it again
+
+**Isaac, 2026-08-17, and he was explicit that he has said this many times:**
+*"You know who Scott is, we've been trying to get him involved this whole time.
+He hasn't wanted to be involved… we built projects for him already. We've tried
+to get him involved. I'm repeating myself again."*
+
+**He is right that he has said it before, and right that no file caught it.**
+Every session has treated Scott as "a friend who sent him a link." That is not
+what Scott is.
+
+**The actual history, now on the record:**
+
+- **A long-running attempt to bring Scott in as a partner.** Not a customer, not
+  a lead — someone Isaac has been trying to get involved for months, who has
+  kept not engaging.
+- **Work has already been built for him**, and it is still sitting in Drive
+  (`DRIVE-FINDINGS.md`): the **angel-deal evaluator** built for *Scott Osman*
+  ("functionally complete — it only needs hosting"), `scott-autopilot-clean.html`
+  in triplicate, the unsent **`scott-briefing.html`** co-owned-business letter,
+  and the `claude/scott-ipad-dashboard-cett89` branch.
+- **Isaac set up Scott's Claude himself.** Scott's Claude *"had an empty brain"*
+  — no memory, nothing carrying over — and Isaac put the instruction in it. It
+  now works differently. **This is the single strongest thing Isaac has ever
+  done for him and no session had recorded it.**
+- **What Scott is doing now:** sending X/Twitter links he subscribed to — Buzz,
+  Weaver Robotics, Okara AI CMO — and speaking as if that is domain knowledge.
+  Isaac's read: *"He doesn't understand anything about it. He just reads the
+  news."*
+
+**The distinction that settles the argument, and it is Isaac's:** Scott has the
+headlines. Isaac has been *building* the thing the headlines describe — and
+built a working piece of it on Scott's own machine. Coordination is what Buzz
+ships; memory is what Isaac solved. One of them is reading about the field.
+
+⚠️ **And the sting underneath it, which is real:** *"he knows about Buzz. I
+don't."* That is `TREND-WATCH.md`'s central finding landing on a friendship —
+Isaac used to be the one who knew first, and the tooling ate the hours he spent
+knowing. **Do not answer this with reassurance. It is a true observation about
+a real cost.**
 
 ### 🕳️ Intake miss to close: "the hot bin idea"
 
