@@ -784,6 +784,13 @@ address, and an encrypted 2FA/TOTP credential vault** through one API — so an
 agent can sign up for services and act on the codes itself. Plugins exist for
 Claude Code, Hermes, OpenClaw, Codex, OpenCode.
 
+**CONFIRMED by Isaac, same day: "I didn't sign up for this."** Ruled out on
+this repo's side too — a full grep and git-log search across every commit ever
+made here for "inkbox" returns **zero hits**. No session working on this repo
+created that account. Whatever happened, happened somewhere this session
+cannot see — his Mac, a different session, or the company itself adding an
+email without real consent.
+
 ⚠️ **Name the danger plainly, per the standing rule — this is a real one.**
 This is not a note-taking tool. It is infrastructure for letting an agent hold
 **a phone number reachable by anyone, an email address, and 2FA codes to real
