@@ -40,6 +40,35 @@ this from a phone.
 Limited mobility: **work has to be low-effort, repeatable, and automatable.**
 A long setup instruction is a failure, not a plan.
 
+### People in play — recorded 2026-08-18, work facts only
+
+**Nobody below has authorized anything. No name publishes, no one is
+approached, and no package ships without Isaac saying so explicitly.**
+
+- **Linda S. Hoyt** — Isaac's sister, Broker-Associate at ONE Sotheby's
+  (Fort Lauderdale). Customer #1, with her knowledge. A finished 19-asset
+  package exists for her live listing. See `START-HERE-LINDA-PITCH.md`.
+- **Scott** (contact shows as "S Kukes") — the friend who sent Isaac the Jack
+  Dorsey / Buzz news three weeks late, which is the origin of `TREND-WATCH.md`.
+  Asks Isaac a lot of questions about what he is building. As of 2026-08-18 he
+  said **"I'm fine with ai answering"** — the first time he has been open to
+  talking to an agent instead of to Isaac. He is an amplifier, not a customer.
+  ⚠️ **Do not merge him with "Scott Osman"** in `DRIVE-FINDINGS.md` — different
+  surname, possibly a different person entirely. Nobody has confirmed which.
+- **Karil** — subject of a viral short-form series ("the poor delivery guy",
+  Maker Media, 2024). Isaac has spoken with him; describes him as genuinely
+  nice and **negatively affected** by the attention. He owns a trucking
+  company. Isaac's read: he can now monetize that attention and expand the
+  business while making content on the road. ⚠️ Someone hurt by virality is
+  owed care, not a pitch. Nothing goes near him without Isaac leading it.
+- **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
+  picture." Punch list work is separate from this repo.
+
+**Why this section exists:** on 2026-08-18 Isaac named three people in one
+message and none of them were written down anywhere. Sessions have lost his
+people repeatedly. Work facts go here; anything personal, medical, legal or
+financial about a real person goes to Notion, never to this public repo.
+
 ---
 
 ## The one real problem
