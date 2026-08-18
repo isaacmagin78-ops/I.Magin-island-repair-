@@ -1,0 +1,41 @@
+# DEMO SCRIPT FOR SCOTT KUKES — drafted 2026-08-18, not sent, not approved.
+#
+# Why this exists: Scott wants a faceless channel (no camera, no personal
+# details). His subjects are real estate, finance and travel. His objection is
+# never the idea - it is that he looks for a reason it will not work.
+#
+# So this demo is HIS OWN THESIS from scott-briefing.html - spotting the next
+# corridor before it is obvious - rendered as an actual finished video. He does
+# not get a document explaining the channel. He gets the channel's first video.
+#
+# Isaac: read it, change anything that is not how you would say it, then run
+# this from the isaac-video-engine folder:
+#
+#   BRAND=tysons-time PRESET=youtube-shorts npm run render:script
+#
+# (Swap BRAND when a Scott-specific theme exists. tysons-time renders today.)
+#
+# NOTHING HERE IS A CLAIM ABOUT A REAL MARKET. No figures, no percentages, no
+# named deals - deliberately. The point is to show the format works, not to
+# publish an analysis nobody has verified.
+
+Every corridor looks obvious afterward
+
+Pompano was not obvious in 2015
+It was obvious in 2022
+That gap is the whole business
+
+Nobody is paid to notice early
+They are paid to be right late
+
+A signal is not a headline
+It is the third boring permit in the same six blocks
+
+The hard part was never finding ideas
+It was killing the bad ones fast enough
+
+So the screen says no first
+Five disqualifiers. No override. No feelings.
+
+You do not have to be on camera
+You never have to be on camera
