@@ -101,6 +101,31 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 > is actively damaging.
 >
 > Build him the thing that answers *his* question. It is a short build.
+
+> ### ⚠️ "Scott Osman" — Isaac does not know who this is
+>
+> **Isaac, 2026-08-18:** *"Scott Kukes is my friend for 35 yrs and I don't know
+> who the other Scott is."*
+>
+> So there is a finished, personalised document sitting in his Google Drive —
+> an angel-deal evaluator — **addressed to a named person he does not
+> recognise**, and `DRIVE-FINDINGS.md` records no provenance for the name.
+>
+> **Treat this as a possible fabrication until proven otherwise.** The most
+> likely explanation is that an earlier AI session invented or borrowed the
+> name and built a document around it. There is a real, well-known Scott Osman
+> in the coaching world, which makes this worse rather than better: a
+> personalised business document addressed to a public figure Isaac has never
+> met is not a gift, it is a liability.
+>
+> **Hard rules until Isaac says otherwise:**
+> 1. **Never send it.** Not to Scott Kukes, not to Scott Osman, not to anyone.
+> 2. Do not treat "Scott Osman" as a contact, a lead, or a relationship in any
+>    file, plan or pitch.
+> 3. The same doubt applies to `scott-briefing.html` — the private co-ownership
+>    proposal. Its recipient is unverified and may be equally invented.
+>
+> This is exactly what the no-fabricated-people rule exists to catch.
 - **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
   picture." Punch list work is separate from this repo.
 
