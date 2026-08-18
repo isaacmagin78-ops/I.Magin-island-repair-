@@ -71,7 +71,25 @@ approached, and no package ships without Isaac saying so explicitly.**
 **How to approach them — Isaac's own read, 2026-08-18.** This is operationally
 useful, so it is recorded:
 
-- **Scott is a friend, not a lead. Do not build for him.** ⚠️ Corrected
+- **Scott — future CLIENT, not partner. Settled 2026-08-18.** He travels
+  constantly (Croatia → Amsterdam → Detroit as of this date, and he will be in
+  Detroit roughly two weeks for a private family matter — **deliberately not
+  detailed here; this repo is public. It is in Notion if anywhere**).
+  **He over-analyses when he travels.** That is the exact pain the
+  `room-read` skill and the I.MAGIN Concierge were built for: what to expect,
+  what the door enforces, how the room actually works, decided before he walks
+  in. He is the product's live test case.
+  🚫 **Do not pitch him during this trip.** He is dealing with something
+  family-shaped. The correct move, if any, is a small useful thing sent free
+  with no ask attached — which is both the decent thing and, incidentally, the
+  best demo the product will ever get. The Detroit stretch is downtime and is
+  when he would actually have room to look at anything.
+  **Longer term:** Isaac expects to travel with him and work off his ideas —
+  ideas being the thing Scott genuinely produces. Some money for ideas, inside
+  Isaac's system. Keep it a product-level revenue share, never company equity
+  (see `LEGAL-SETUP.md`). **Standing position: wait and see whether he puts in
+  effort instead of negative analysis before anyone widens his involvement.**
+- **Superseded note — do not build for him.** ⚠️ Corrected
   2026-08-18, hours after the opposite was written here. Isaac: *"He has a
   bunch of ideas. He just never acts on them. We already sent him a travel
   idea, a checklist, and a couple of other things — he just never used it."*
