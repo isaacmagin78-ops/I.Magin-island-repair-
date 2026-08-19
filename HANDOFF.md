@@ -1743,3 +1743,35 @@ file, every future session can run it. That is exactly how `room-read` and
 **Deliberately not recorded:** the agent/company names he listed. It was not
 clear whether they name AI agents or real businesses, and this repo is public.
 Ask him which, then write them down once — don't make him say them a third time.
+
+### 2026-08-19 — The mystery QR exists. Built, published, and the code decodes.
+
+He asked for a code he could post anywhere in the building (**507 units, his
+number**) that lets whoever scans it "write their own destiny."
+
+**Built and verified 2026-08-19:**
+
+- **Landing page** — "Somebody Here Built This",
+  `https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`.
+  Four doors (a punch list, a film from a camera roll, a full setup, and one for
+  people who are only curious), each ending in a real price off the published
+  tier card — **$99 / $499 / $299 mo** — and `isaacmagin78@gmail.com`. No form,
+  no capture, no invented phone number, no fabricated results.
+- **Poster** (`qr-poster.png`, letter @ 300dpi) and a bare code
+  (`qr-code-only.png`), error-correction level **H** so it survives tape and
+  scuffing. **Both decoded back to the exact URL with `cv2.QRCodeDetector`** —
+  not assumed, read.
+
+**Two things gate it, and neither is code:**
+
+1. **The artifact is private until he shares it.** Unshared, every scan hits a
+   login wall and the whole walk is wasted. He shares it from the page's own
+   share menu — nothing here can do it for him.
+2. **Common-area posting is the association's call.** Taping flyers in a 507-unit
+   building without management's okay gets them torn down at best and puts a
+   resident in front of the board at worst. Ask first; it costs one conversation.
+
+**Design note for whoever touches this next:** the mystery lives on the *poster*.
+The *page* identifies him as a neighbor in the first line on purpose — an
+anonymous QR in a residential building reads as a scam, and a scam in his own
+building costs more than it could ever return.
