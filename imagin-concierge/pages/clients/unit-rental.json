@@ -1,0 +1,108 @@
+{
+  "title": "Rented By The Owner",
+  "brand": "I.Magin Concierge · for rent by owner",
+  "headline": "Rented straight from the owner. <em>Nobody in the middle.</em>",
+  "subhead": "A unit in a 507-home community on the South Florida coast, offered directly — and backed by a resident board of neighbours who already do the things a building usually charges you for.",
+  "accent": {
+    "light": "#0E8C86",
+    "dark": "#3FC8C2",
+    "soft_light": "#D3ECEA",
+    "soft_dark": "#12343A"
+  },
+  "sections": [
+    {
+      "kind": "facts",
+      "heading": "The numbers",
+      "items": [
+        {
+          "label": "Rent",
+          "value": "",
+          "blank": "owner to set"
+        },
+        {
+          "label": "Bedrooms",
+          "value": "",
+          "blank": "to confirm"
+        },
+        {
+          "label": "Baths",
+          "value": "",
+          "blank": "to confirm"
+        },
+        {
+          "label": "Interior",
+          "value": "",
+          "blank": "to confirm"
+        },
+        {
+          "label": "Available",
+          "value": "",
+          "blank": "to confirm"
+        },
+        {
+          "label": "Lease term",
+          "value": "",
+          "blank": "to confirm"
+        }
+      ]
+    },
+    {
+      "kind": "frames",
+      "heading": "The home",
+      "hero": true,
+      "items": [
+        "Hero — living room toward the balcony, daylight",
+        "Kitchen",
+        "Primary bedroom",
+        "Bath",
+        "Balcony view"
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Why this one is different",
+      "items": [
+        "Most rentals hand you keys and a phone number for a management company two towns away. This one hands you a building that already works.",
+        "There is a resident board here — neighbours who watch packages, walk dogs, sit with someone who shouldn't be alone all day, and fix the thing that broke on a Sunday. Not a vendor list. People who live upstairs.",
+        "The owner manages this unit through I.Magin Concierge, which means one number for the lease, the repairs, and the move-in — and a written punch list instead of a promise."
+      ]
+    },
+    {
+      "kind": "items",
+      "heading": "In the building, already",
+      "items": [
+        {
+          "name": "Mail & package watch",
+          "price": "resident",
+          "note": "Deliveries kept out of the open hallway while you're at work or in the air."
+        },
+        {
+          "name": "Dog walking & pet sitting",
+          "price": "resident",
+          "note": "Your animal stays home instead of boarding. The person holding the leash lives one elevator ride away."
+        },
+        {
+          "name": "Senior companion & care",
+          "price": "resident",
+          "note": "Company, errands and appointments, for a household that needs it."
+        },
+        {
+          "name": "Moving, staging & logistics",
+          "price": "resident",
+          "note": "Move-in day handled by someone who already knows the loading dock and the elevator rules."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Ask about it",
+      "href": "mailto:isaacmagin78@gmail.com?subject=The%20rental%20—%20I%20have%20a%20question",
+      "title": "One question is enough to start.",
+      "note": "No application, no fee, no form that sells your details onward. Ask what you actually want to know and you get a straight answer from the owner."
+    }
+  ],
+  "footer_notes": [
+    "This page is published by the owner. It is not a brokerage listing, and no commission is being collected by anyone for showing it to you."
+  ],
+  "fine": "EVERY BLANK ON THIS PAGE IS DELIBERATE AND STAYS BLANK UNTIL THE OWNER FILLS IT.\nNO PRICE, MEASUREMENT OR DATE HERE IS ESTIMATED OR ASSUMED.\nRESIDENT SERVICES ARE OFFERED BY NEIGHBOURS AND ARE NOT INCLUDED IN RENT."
+}

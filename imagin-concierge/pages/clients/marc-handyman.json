@@ -1,0 +1,103 @@
+{
+  "title": "Marc Fixes Things",
+  "brand": "built by I.Magin · draft for Marc",
+  "headline": "The guy who fixes things <em>lives in the building.</em>",
+  "subhead": "507 homes, and the person who can hang the shelf, chase the leak and finish the job the contractor abandoned is already inside the gate. This is his page — his to approve, and empty until he does.",
+  "accent": {
+    "light": "#1F6A93",
+    "dark": "#5BA4CF",
+    "soft_light": "#D8E9F3",
+    "soft_dark": "#122C3C"
+  },
+  "sections": [
+    {
+      "kind": "facts",
+      "heading": "The basics",
+      "items": [
+        {
+          "label": "Trades",
+          "value": "",
+          "blank": "Marc to confirm"
+        },
+        {
+          "label": "Years doing it",
+          "value": "",
+          "blank": "Marc to confirm"
+        },
+        {
+          "label": "Licensed / insured",
+          "value": "",
+          "blank": "Marc to confirm"
+        },
+        {
+          "label": "Callout",
+          "value": "",
+          "blank": "Marc to set"
+        },
+        {
+          "label": "Hourly",
+          "value": "",
+          "blank": "Marc to set"
+        },
+        {
+          "label": "Hours",
+          "value": "",
+          "blank": "Marc to confirm"
+        }
+      ]
+    },
+    {
+      "kind": "frames",
+      "heading": "Work he's done",
+      "hero": true,
+      "items": [
+        "Hero — a finished job, wide",
+        "Before",
+        "After",
+        "Marc, at work",
+        "A detail he's proud of"
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Why in-building beats a search result",
+      "items": [
+        "A handyman found online quotes a callout, a drive, and a window between eleven and three. A handyman on the fourth floor is up in ten minutes and there is no drive to pay for.",
+        "That is not a small advantage. It is the whole business, and it only works if the people in this building know he exists — which today they mostly don't.",
+        "This page fixes exactly that, and the QR board downstairs does the rest. Nothing here states a licence, a rate or an insurance status: those are Marc's to give, and a handyman page that guesses at them is worse than no page at all."
+      ]
+    },
+    {
+      "kind": "items",
+      "heading": "What it costs him",
+      "items": [
+        {
+          "name": "This page, finished and live",
+          "price": "$99",
+          "note": "One page, his real work photographed, his number on it, and his slot on the resident board."
+        },
+        {
+          "name": "The full setup",
+          "price": "$499",
+          "note": "A proper site, a request form that reaches his phone, and a Google Business profile so he shows up on the map, not just in the elevator."
+        },
+        {
+          "name": "Kept current",
+          "price": "$299/mo",
+          "note": "New jobs photographed and posted, seasonal work promoted. Cancel any month."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Next step",
+      "href": "mailto:isaacmagin78@gmail.com?subject=Marc%27s%20page%20—%20let%27s%20fill%20the%20blanks",
+      "title": "Six answers and six photos.",
+      "note": "Trades, years, licence and insurance, callout, hourly, hours. Bring the photos from the last job you were proud of. Nothing goes public under Marc's name until Marc says yes."
+    }
+  ],
+  "footer_notes": [
+    "This is an unpublished draft made to show Marc what his page would look like. It makes no claim about his licensing, insurance, rates or availability."
+  ],
+  "fine": "DRAFT — NOT PUBLISHED ON MARC'S BEHALF.\nNO LICENCE, INSURANCE STATUS, RATE OR PHONE NUMBER HAS BEEN INVENTED.\nEVERY BLANK STAYS BLANK UNTIL MARC FILLS IT."
+}
