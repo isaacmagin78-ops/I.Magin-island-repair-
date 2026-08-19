@@ -1651,3 +1651,26 @@ here:
 **So: whatever these clips are about is still unknown to this repo.** The
 picture says walk-through; the words say something, and nobody has heard them.
 Do not infer the subject from the frames — ask him, or get the transcript.
+
+### 2026-08-19 — Isaac asked what separates concierge from consulting. Settled.
+
+**Consulting sells the thinking; concierge sells the doing.** Consulting ends
+when the answer is delivered and the client still has to execute it (the Thomas
+AC "Tactical Blueprint" in `DRIVE-FINDINGS.md` is exactly that). Concierge is
+paid to take the job off the client's plate — which is the half that recurs.
+
+**The tiers already exist and are live** — `imagin-concierge/index.html`,
+"Services & rates": **$99 Quick Win (one-off) · $499 Launch Kit (setup) ·
+$299/mo Autopilot (ongoing)**. He had forgotten where they were, not decided
+against them. Do not invent a new pricing ladder; this one is written, published
+and consistent with `REFERRAL-MESSAGE.md`.
+
+**New lead type he named (2026-08-19): airline pilots in his own building —
+three of them.** A pilot is away half the month with a home sitting empty. That
+is the Madison Moves buyer, not a marketing customer. Warm, in-person, no ad
+spend. Logged as a lead *type*; no names, units or building recorded here — the
+repo is public.
+
+**Unparsed:** the last line of his message came through voice-garbled
+("...find a way to make it feasible that we could end up dating"). Not guessed
+at, not acted on. Ask him before building anything on it.
