@@ -1802,3 +1802,89 @@ in the tier card, not in the feed.
 lanes — **Services · Selling something · Pets** — with an "add yourself, you
 approve your own line" action instead of a data-collecting form. **Republished to
 the same URL**, so any poster already printed keeps working.
+
+---
+
+## 2026-08-19 — Directed task run: directory, captions, records workflow
+
+Isaac asked for three things to be executed autonomously. All three are done.
+What was changed, and the three things he should know.
+
+### 1 · Resident board — six entries, live
+
+Republished to the **same URL**
+(`https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`), so every
+poster already printed still resolves.
+
+| # | Lane | Entry |
+|---|---|---|
+| 01 | Services | **Dolores** — Mail & Package Watch |
+| 02 | Services | **Theresa** — Senior Companion & Elderly Care |
+| 03 | Pets | **Theresa** — Dog Walking & Pet Sitting *(Luna's Balcony Buddy)* |
+| 04 | Selling something | **Theresa** — Royal Robes Loungewear & Homemade Bakery |
+| 05 | Services | **Madison** — Local Moving, Staging & Logistics |
+| 06 | Proposal | Community Dog Park & Amenity Upcycle |
+
+**Published deliberately thin:** first names only. **No phone numbers, no unit
+numbers, no addresses** — none were supplied and none were invented. Every entry
+routes through Isaac's email, which keeps neighbours' contact details off a public
+page and makes him the hub.
+
+Dolores's **drop-off point and appreciation link are rendered as open states**, not
+filled with a guess. Entry 06 is marked a proposal and explicitly states nothing is
+approved.
+
+> ⚠️ **The one thing to check.** The page tells a reader *"nothing goes up without
+> your say-so."* These six lines went up before this session saw any confirmation
+> that Dolores, Theresa or Madison approved their own wording. **Show each of them
+> their line before the QR is posted anywhere.** It costs three conversations and
+> it is the difference between a neighbourhood board and a neighbour problem.
+
+### 2 · Posting queue — all 16 captions rewritten
+
+Every scheduled post 2026-08-19 → 2026-08-22 across TikTok `49211`, Instagram
+`61044`, Threads `8305`, YouTube `42110`. **All 16 returned
+`Schedule updated successfully`; schedule `3553514` was re-read with
+`blotato_get_schedule` and confirmed changed in both `text` and `firstComment`.**
+
+- **Removed:** every `$19 First 30 Days Kit` call-to-action and its
+  `tysons-time-kit.vercel.app` link.
+- **Added:** a services CTA — **$99 one piece · $499 full setup** — positioning the
+  507-unit resident directory and QR board as the worked example.
+- **Kept unchanged:** all media URLs, all scheduled times, every dog story above
+  the CTA, all hashtags, YouTube titles, and the **Amazon Associate links and
+  their disclosure** (he asked to shift focus off the PDF, not to drop affiliate
+  income).
+- **Threads enforces a 500-character limit** — those four were rewritten shorter
+  rather than truncated. Sizes: 411 / 420 / 460 / 462.
+- One YouTube update (`3555184`) was refused once by the tool-permission
+  classifier and succeeded on retry. Nothing was skipped.
+
+> ⚠️ **Stated plainly, then done as asked.** Tyson's Time is a national
+> rescue-dog audience. A $499 local-website offer will convert poorly there and may
+> cost reach, because the ask no longer matches why anyone followed. The offer is
+> right; the audience is the wrong one for it. **The neighbours and the pilots in
+> his own building are the audience for $499 — they are local, warm, and already
+> standing in the elevator.** Watch the next four days' analytics before extending
+> this rewrite to any further posts.
+
+> **Deliberately not done:** the board's artifact URL was **not** put into any
+> caption. It is still private, so a public link would send every viewer into a
+> login wall. Once Isaac shares the artifact, that URL can go in the bio.
+
+### 3 · `DOCS-RETRIEVAL.md` — new file
+
+The exact route to the Royal Palm declaration, master common-element easements and
+signage covenants: BCPA parcel → Sunbiz legal name → Broward Official Records by
+name and document type → DBPR. Exact search strings included.
+
+Two honest limits are written into the file itself: **`officialrecords.broward.org`
+is blocked by this environment's egress proxy** (verified 2026-08-19), so nothing
+in it was executed and no instrument number is quoted; and **the association's legal
+name is unresolved** — "Royal Palm" tonight versus "Island Club" elsewhere in this
+repo — which Step 1 exists to settle.
+
+The file also flags the finding that matters most for the QR posters: **signage
+rules usually live in board-adopted rules and regulations, which are not recorded
+at the county.** The faster route is a §718.111(12) written records request to the
+association, not a title search.
