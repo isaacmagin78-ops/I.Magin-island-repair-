@@ -1947,3 +1947,41 @@ rather than advertising into their hallway.
 **Also still true:** the cleaned-up apartment photos went to Gemini, not here. This
 session has only the five "before" pictures from the morning, which is why the
 rental page ships with captioned empty frames rather than the wrong images.
+
+### 2026-08-19 (late) — Why the walkthrough failed. Two findings, both measured.
+
+Isaac told Gemini to keep his walkthrough real. It regenerated everything and
+returned about ten seconds. He is annoyed, and he is not the one who got it wrong.
+
+**Finding 1 — the file that reached this session was not the file he shot.**
+`ffmpeg -i` reports **480 × 360 at 723 kb/s**, while the clip's own metadata says
+`com.apple.quicktime.model: iPad mini (A17 Pro)`. **That device does not record
+480 × 360.** The footage was downscaled and re-encoded in transit — almost
+certainly by the app it was shared through. His original is probably fine. Before
+anyone concludes anything about his camera work again, **get the original**:
+AirDrop / Files / Drive at actual size, never a chat-thread attachment. A 3-minute
+1080p clip arriving at 19 MB has been compressed.
+
+**Finding 2 — the clip that did arrive contains no usable walkthrough.** Measured,
+not guessed: variance-of-Laplacian per second across all 181 seconds. **Only 26
+seconds (14%) clear a usable sharpness threshold**, and the sharpest run is six
+seconds of close-up glassware, plus a TV wall and a gallery wall. A stabilised
+20-second cut was actually built from the top-scoring window — `vidstabdetect` →
+`vidstabtransform`, cropped 9:16 and upscaled to 1080×1920 — and then **the frames
+were opened and looked at, which is the only reason the failure was caught.**
+
+> **Lesson worth keeping:** the sharpness metric picked a *close-up* as the best
+> window, because busy texture scores exactly like sharpness. **A number is not a
+> look.** The metric was confidently wrong and only the Read tool caught it. This
+> is the repo's "extract frames and actually look at them" rule earning its place.
+
+**And the plain explanation Isaac deserves:** a generative video model does not edit
+his video, it makes a new one. *"Keep it real"* is not a parameter it has. Handed
+footage it cannot use, generating is the only thing it can do. For his own footage
+the tool is one that **cuts** — ffmpeg, the same path that produced the five-photo
+film earlier tonight, where nothing can be invented because a cut cannot invent.
+
+**Written up as a reusable input spec:** `imagin-concierge/pages/SHOOTING-BRIEF.md`
+— send-the-original rule, AE/AF lock, hold five seconds per room, shoot it twice,
+and the room-by-room shot list. It is the input spec for the $99 page and for every
+client video, not just for his unit.
