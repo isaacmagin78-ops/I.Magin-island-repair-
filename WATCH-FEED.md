@@ -113,3 +113,17 @@ file exists.
 - **Sabrina Ramonov** — [8 Claude Code Skills I Use to Run Social Media](https://www.youtube.com/watch?v=KVtT1yu2DAo) · published 2026-08-18
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-19 07:52 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Young Mozi had the right plan. It was just early…](https://www.youtube.com/watch?v=xGm_ygDN-DA) · published 2026-08-19
+- **Alex Hormozi** — [What Types of Businesses Do I Like to Bet On?](https://www.youtube.com/watch?v=UXa0cRFrKCI) · published 2026-08-19
+- **Alex Hormozi** — [This was a neat moment from a clip I filmed back in June of 2016. The same message still applie](https://www.youtube.com/watch?v=bYpi6M7Yvtc) · published 2026-08-19
+- **Sabrina Ramonov** — [14 AI Income Paths for Beginners (Examples, Not Guarantees)](https://www.youtube.com/watch?v=VN-k-QNsqHQ) · published 2026-08-19
+- **Dan Martell** — [How to scale to $1M in revenue](https://www.youtube.com/watch?v=2nZ8SF6WgNc) · published 2026-08-19
+- **Dan Martell** — [Which AI tool is worth paying for?](https://www.youtube.com/watch?v=_zOzXfREAR4) · published 2026-08-18
+- *(+12 more held back to keep this readable.)*
+
