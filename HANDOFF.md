@@ -1888,3 +1888,62 @@ The file also flags the finding that matters most for the QR posters: **signage
 rules usually live in board-adopted rules and regulations, which are not recorded
 at the county.** The faster route is a §718.111(12) written records request to the
 association, not a title search.
+
+### 2026-08-19 (late) — Three client pages, a generator to stamp more, and the launch offer settled
+
+**The real deliverable is not three pages, it is `imagin-concierge/pages/build.py`.**
+One JSON brief in, one finished page out. A fourth client is a fourth JSON file,
+not an evening. That is what makes a $99 page profitable and a free tier survivable.
+
+| Page | URL | State |
+|---|---|---|
+| For-rent-by-owner (I.Magin Concierge mark) | `https://claude.ai/code/artifact/1f1021fa-38f8-4090-8e25-0028462fc4c9` | live, photo frames empty |
+| Ivan — used cars | `https://claude.ai/code/artifact/2a7d347a-1dfd-41c6-a387-cc3132fe4a8c` | **draft, not under his name** |
+| Marc — handyman | `https://claude.ai/code/artifact/ca8bb479-fb56-4a0d-ae0a-d6c2ebaf6fae` | **draft, not under his name** |
+
+QR cards generated for all three; **each decoded back to its exact URL with
+`cv2.QRCodeDetector`**, error-correction level H.
+
+**Verified by looking, not assuming.** Pages were rendered in the pre-installed
+headless Chromium and the screenshots read. Two real defects were found and fixed:
+the facts grid left an empty coloured cell when the item count didn't fill the last
+row (now hairline borders on the cells instead of gap-as-border), and the photo
+frames left an orphan tile (now hero + a clean 2×2). Note for the next session:
+**a screenshot taken without `--virtual-time-budget` comes out blank**, because the
+entry animation starts at `opacity:0` — that is a screenshot artefact, not a bug.
+Dark tokens were confirmed to apply (ground rendered `#0C1418` under
+`--force-dark-mode`); a full dark-theme screenshot was not obtained, since
+`headless_shell` ignored the flag on the run that rendered content.
+
+**No fact was invented on any of the three.** Every price, measurement, licence,
+phone number and address renders as a visible italic blank — `build.py` prints the
+blank count on every build so an unfinished page announces itself.
+
+### The launch offer — "free for the first hundred" was changed to ten
+
+Written up in `imagin-concierge/pages/README.md`. Short version: **a hundred free
+pages is a hundred units of his time at zero, and a scarcity offer that cannot fill
+is not scarcity — it reads as an empty room.** Ten, residents only, free only while
+listed on the resident board. The constraint pays for itself three ways: revisions
+are an elevator ride, ten filled slots is what makes the board worth scanning, and
+neighbours refer neighbours. The upgrade is inside the deliverable — the free page
+is the $99 Quick Win minus **their own phone number and a Google Business profile**,
+which is exactly what a business pays to stop being merely listed and start being
+found.
+
+**For realtors the offer is not a free tier at all:** *"Send me one listing's
+photos. I'll send back the page and a QR rider for the sign. $99 a listing."*
+**The yard-sign QR rider is the product** — a buyer at the curb scans it instead of
+finding an empty flyer box. `unit-rental` is the sample, and it is real work.
+
+### Still blocked, and it is the cheap one
+
+**The community-map QR cannot be built without the site plan.** No layout, building
+positions or amenity locations exist in this repo, and none will be invented. One
+photograph of the posted site map by the office unblocks it entirely — and Isaac is
+right that it is the QR management would welcome, because it solves their problem
+rather than advertising into their hallway.
+
+**Also still true:** the cleaned-up apartment photos went to Gemini, not here. This
+session has only the five "before" pictures from the morning, which is why the
+rental page ships with captioned empty frames rather than the wrong images.
