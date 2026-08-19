@@ -1716,3 +1716,30 @@ Three reasons, in order of what actually costs him:
 **The version that works:** ask them for it. An active brand that posts its own
 content is the easy yes for "I'll run the channel, you approve everything" — and
 that is the consulting-to-concierge conversion, not a workaround.
+
+### 2026-08-19 — "Why can't we get things operational on the other agents?" The answer is hands, not brains.
+
+He runs agents in several places and is tired of re-naming them. **He should not
+have to.** Here is the roster, by the only thing that decides whether an agent
+can finish a job: what it can actually reach.
+
+| Where an agent lives | Can it touch his accounts? | What it is good for |
+|---|---|---|
+| ChatGPT (several named agents) | **No.** Text out, nothing else. | thinking, drafting, shaping an idea |
+| Perplexity | **No.** Reading the web only. | sourcing, current facts |
+| Claude Code — this session | **Yes.** Stripe, Drive, Airtable, Blotato, Notion, Gmail, Calendar, Vercel, the repo itself | doing |
+| `.claude/skills/` — `market-read`, `room-read`, `show-it` | **Yes** — they run inside this session | **his three already-operational agents** |
+
+**Nothing over there is "not working."** An agent with no keys cannot post, pay,
+render, schedule or commit — it can only hand back words. That is the entire
+difference, and it is not a quality gap.
+
+**The bridge is one paste, once per agent, not once per conversation.** No
+session here can read a ChatGPT or Perplexity thread — that is a real, permanent
+gap, not a missing feature. The moment an agent's job lands in this repo as a
+file, every future session can run it. That is exactly how `room-read` and
+`market-read` became real.
+
+**Deliberately not recorded:** the agent/company names he listed. It was not
+clear whether they name AI agents or real businesses, and this repo is public.
+Ask him which, then write them down once — don't make him say them a third time.
