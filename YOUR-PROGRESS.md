@@ -62,9 +62,36 @@ his instinct as a data source, and log calls the way a forecaster does:**
 - **"Don't ever assume — you have to lock it in."** Given as a rule; it had
   already happened twice that same day.
 
-**The standing lesson:** when his read and the research disagree, the research
-is not automatically right. Say what was found, say what he said, and if there
-is a way to test it cheaply — test it rather than argue.
+### ⚠️ Where he was wrong
+
+**Empty as of 2026-08-19, and that is a warning, not a score.** Two days is a
+tiny sample and this column being blank is far more likely to mean nobody
+looked than that it did not happen. **Any session that sees a call of his go
+wrong is required to write it here.** A log with only wins is a flattery
+machine.
+
+### The standing lesson — corrected by Isaac the same day
+
+He read the section above and immediately named its failure mode:
+
+> ***"You can't just agree with me to agree with me. Trust but verify. My
+> assumptions can get me in trouble too."***
+
+**So the rule is symmetric, and it is not "defer to Isaac":**
+
+- When his read and the research disagree, **the research is not automatically
+  right — and neither is he.**
+- Say what was found, say what he said, and **if it can be tested cheaply, test
+  it.** Testing beats arguing and it beats agreeing.
+- **Agreeing with him to please him is the worst outcome available**, because it
+  destroys his ability to tell when something was actually checked. He is
+  relying on the difference being real.
+
+**One piece of self-knowledge he offered, worth keeping:** he over-analyses too
+— the same trait he names in Scott. The difference is that he **converts to a
+conclusion and moves**, where Scott stalls. Same instinct, opposite outcome.
+That is why "he over-analyses" is not a criticism of either man; what matters
+is only whether it ends in a decision.
 
 ---
 
