@@ -301,6 +301,37 @@ everything.** He wants the work done. It means that while the work is being
 done, he is being shown what is happening and why — so that in six months he
 does not need the session at all.
 
+### How he actually works — build first, shape it as you learn
+
+**Isaac, 2026-08-19:**
+
+> *"I'm usually thinking of solutions before I know the whole problem, and then
+> I build the solution around the problem as I learn about the problem."*
+
+**This is not a flaw to correct. It is the method that built everything here**,
+from a phone, with no technical background. Analysis-first would have produced
+nothing. Do not respond to it by asking him to define requirements up front —
+that is not how he thinks and telling him to change wastes both of you.
+
+**But it has one specific failure mode, and this repo is the evidence.**
+
+| Built toward | Result |
+|---|---|
+| **A named person with a real problem** — a card for Scott standing in Zagreb, a package for Linda's live listing | Landed. Converted a thirty-five-year sceptic in two days. |
+| **No person attached** — sixteen project folders, twenty status documents | $1.29 all-time. The building outran the problem. |
+
+**The guardrail that makes his method safe is not "understand it first." It is:**
+
+> ### Who is the named person this is for, and what did they actually say?
+>
+> If there is a name and a quote, build immediately — his instinct is good and
+> speed is the advantage. If there is no name, **say so before building**, not
+> after. That single question separates everything in this repo that worked
+> from everything that did not.
+
+A session's job here is not to slow him down. It is to ask that one question
+early, then get out of the way.
+
 ### The volume rule — he reads slower than you write
 
 **Isaac, 2026-08-16:** *"You're operating so much faster than the human brain
