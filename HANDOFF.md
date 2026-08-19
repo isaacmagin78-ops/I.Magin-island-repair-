@@ -1775,3 +1775,30 @@ number**) that lets whoever scans it "write their own destiny."
 The *page* identifies him as a neighbor in the first line on purpose — an
 anonymous QR in a residential building reads as a scam, and a scam in his own
 building costs more than it could ever return.
+
+### 2026-08-19 — Live queue check, and the honest answer to "how many agents do we have marketing?"
+
+**Verified live with `blotato_list_schedules` (2026-08-19, ~06:30 UTC): 16 posts
+scheduled, 2026-08-19 17:00 UTC through 2026-08-22 23:00 UTC.** Four channels on
+a fixed daily rhythm — TikTok `49211` 17:00, Instagram `61044` 21:00, Threads
+`8305` 22:30, YouTube `42110` 23:00 — every one with media already sitting in
+`database.blotato.io/storage/...`. **The queue is not dry.** Do not repeat an
+older "runs dry" date as current; this supersedes it.
+
+**Agents doing marketing: zero.** Nothing writes, renders, uploads or schedules
+on its own. Two scheduled jobs exist — the watcher (`watch.yml`) and the morning
+routine — and neither touches marketing. The queue is full through Saturday
+because a session filled it by hand, which is exactly the gap this file has
+described since 2026-08-17.
+
+**Why it has not made money is visible in the captions, not in the cadence.**
+All 16 posts monetize the same two ways: "link in bio" to the **$19** kit, and
+Amazon Associate links. That is the thinnest possible ask, placed off-platform,
+on channels that penalize sending people away. More posting does not move it.
+For scale: **one $499 Launch Kit equals twenty-six kit sales.** The leverage is
+in the tier card, not in the feed.
+
+**Also this session:** the resident QR page was rebuilt around a board with three
+lanes — **Services · Selling something · Pets** — with an "add yourself, you
+approve your own line" action instead of a data-collecting form. **Republished to
+the same URL**, so any poster already printed keeps working.
