@@ -25,6 +25,49 @@ existed and not one of them was about him.
 
 ---
 
+## 🧠 THE INTUITION LOG — added 2026-08-19 on his instruction
+
+> **Isaac: *"Start seeing my intuition, learning from it."***
+
+Fair, and it deserves the rigorous version rather than a compliment. **Treat
+his instinct as a data source, and log calls the way a forecaster does:**
+
+1. **Record the call when he makes it, before the outcome is known.** A
+   track record assembled afterwards is flattery, not evidence.
+2. **Record the sessions's position too**, especially when it disagreed. The
+   disagreements are the only entries that teach anything.
+3. **Come back and write what actually happened.** A call that turned out
+   wrong is worth more than one that was never checked.
+4. **Never smooth it.** If he is wrong, it goes in exactly the same way.
+
+### Where the record already stands — 2026-08-17 to 19
+
+**He was right and the session was wrong, five times in two days:**
+
+| His call | The session's position | Outcome |
+|---|---|---|
+| "Fix it properly, not one line" | A one-line branch fix was enough | The real defect was that the watcher read only YouTube creators and would never have caught Buzz. The one-liner would have shipped it broken. |
+| Refused to accept "I can't deploy" | Reported Vercel as blocked, as sessions had since 2026-07-20 | Pushing further found the cause: the connector was bound to an empty account, not his. Four weeks, several sessions, one wrong login. |
+| "I have a bad feeling about this" | Guessed it was one app opening its own panel | Something *had* acted without telling him — a session had authorized Inkbox on his GitHub hours earlier and recorded nothing. |
+| "It's very dark, you don't see a map" | Believed the page was fine | It was. He was opening a different artifact — and the map genuinely was too faint. Both halves of his complaint were true. |
+| "Has to be a real map, like the location screenshot" | Kept producing flat schematic drawings | He was right. The answer was a real satellite map on a real host, which is now `site/route.html`. |
+
+**And where his instinct produced something no analysis did:**
+
+- **"There's no Todd."** Answered cold, from memory, correctly — the shibboleth
+  in `THE-BOARD.md` that tests whether an assistant has read his system. He
+  passed it while a session was still catching up.
+- **"I was laying the seeds for him."** Converted a thirty-five-year sceptic in
+  two days after months of nothing. Written up as a method in `PROJECT-BRIEF.md`.
+- **"Don't ever assume — you have to lock it in."** Given as a rule; it had
+  already happened twice that same day.
+
+**The standing lesson:** when his read and the research disagree, the research
+is not automatically right. Say what was found, say what he said, and if there
+is a way to test it cheaply — test it rather than argue.
+
+---
+
 ## 2026-08-17
 
 **He refused a one-line fix, and that is the only reason the watcher works.**
