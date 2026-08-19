@@ -131,14 +131,14 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
    * that name (two unrelated Kukes entities exist; neither matches). It may be
    * informal, registered in another state, or not registered at all.
    *
-   * 🚫 STRENGTHENED 2026-08-18: do not put this name on anything at all.
-   * Isaac says Scott calls himself this but is **private about his business
-   * and may not have a registered one.** Branding a demo with a name a man
-   * holds close — and possibly does not hold at all — is worse than using no
-   * name. Use a neutral render, or ask him directly, and only ever use the
-   * name if he offers it himself.
+   * ✅ RESOLVED 2026-08-19: the business is real. Scott's own email address is
+   * on the kukesgroup.com domain, so "The Kukes Group" is a name he uses in
+   * public and owns. The earlier Sunbiz search found nothing because it is not
+   * a Florida registration, not because it does not exist.
    *
-   * The theme stays registered so the option exists. It is not a licence.
+   * Still worth one courtesy: he is private about his work. Confirm with him
+   * before putting the name on anything he will show other people. Using it in
+   * something made *for* him is fine.
    *
    * Palette reasoning: he is an angel investor in real estate and finance who
    * over-analyses and will not appear on camera. So — no warmth, no
