@@ -68,6 +68,37 @@ approached, and no package ships without Isaac saying so explicitly.**
 - **Ivan** — has messaged Isaac and is intrigued; follow-up still owed as of
   2026-08-18. Isaac rates him and Karil as the **more solid** leads.
 
+### 🌱 THE SEEDING METHOD — 2026-08-19. The first approach here that has actually converted anyone.
+
+**Isaac: *"I was laying the seeds for him."*** Deliberate, and it worked.
+
+Scott Kukes spent months finding reasons nothing would work. Three finished
+things were sent to him over that period and none were used. Then, across two
+days, Isaac sent him **useful things inside his real life, free, with no ask
+attached** — a travel card while he was actually standing in Zagreb, then a
+read on a deal he was actually weighing. On 2026-08-19 Scott replied,
+unprompted: ***"great to have ai confirm zingage appeal."***
+
+**A thirty-five-year sceptic thanked the AI without being asked to try it.**
+
+**The method, stated so it can be repeated:**
+
+1. **Never pitch an over-analyser.** A pitch is a thing to evaluate, and
+   evaluation is what he is best at and where he always lands on no.
+2. **Be useful inside something he is already doing.** Not a demo of a product
+   — the actual answer to the actual question in front of him, on the day.
+3. **Attach no ask.** No price, no next step, no "let me know what you think."
+   The absence of an ask is what removes the thing to argue with.
+4. **Repeat, and wait.** He arrives on his own or he does not. Isaac's word for
+   the waiting is *seeding*, and it took two days after months of nothing.
+5. **Only then let the product appear.** By that point he is not being sold to,
+   he is asking for more of a thing he already uses.
+
+**Where this applies next:** Karil and Ivan are the warmer leads and have
+unanswered messages. **Do the same thing.** Find the real question each of them
+is actually sitting with and answer it, free, with nothing attached. Do not
+send either of them a deck.
+
 **How to approach them — Isaac's own read, 2026-08-18.** This is operationally
 useful, so it is recorded:
 
