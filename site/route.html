@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Route — I.MAGIN Executive Concierge</title>
+
+<!--
+  Why this file is here and not an Artifact:
+  Claude Artifacts enforce a strict CSP that blocks every external host, so
+  Leaflet from unpkg and satellite tiles from ArcGIS are both refused there.
+  On an ordinary web host they work normally. This page is the real one.
+
+  It publishes through .github/workflows/pages.yml, which serves /site.
+  Pages still needs switching on by hand once:
+      Settings > Pages > Source: GitHub Actions
+
+  ⚠️ TILE LICENCE — check before charging anyone for this.
+  The Esri World Imagery endpoint below is used widely without a key and
+  requires attribution, which is kept in the map. For a paid, client-facing
+  product the terms should be read properly, or swap in a licensed provider
+  (MapTiler / Mapbox satellite with an API key). Fine for showing a friend.
+  Not a decision to make by accident.
+-->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+
+<style>
+  :root{
+    --ivory:#F8F6F1; --card:#FFFFFF; --ink:#14161A; --ink-soft:#5C6067;
+    --ink-mute:#8E9299; --gold:#B18F4A; --gold-soft:rgba(177,143,74,.4);
+    --rule:rgba(20,22,26,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ivory);color:var(--ink);
+    font-family:"Manrope",ui-sans-serif,-apple-system,system-ui,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+
+  .plaque{background:var(--card);border:1.5px solid var(--gold);border-radius:16px;
+    padding:18px 24px 14px;text-align:center;max-width:360px;margin:0 auto 38px;
+    box-shadow:0 12px 34px -20px rgba(20,22,26,.32)}
+  .monogram{height:56px;display:block;margin:0 auto 8px}
+  .plaque .name{font-family:"Cormorant Garamond",Georgia,serif;font-size:1rem;
+    font-weight:600;letter-spacing:.07em;text-transform:uppercase;margin:0}
+  .rule-row{display:flex;align-items:center;gap:9px;margin:9px 0 7px;color:var(--gold)}
+  .rule-row i{flex:1;height:1px;background:var(--gold);opacity:.5}
+  .rule-row span{font-size:10px;line-height:1}
+  .plaque .tag{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--gold);margin:0}
+
+  header{text-align:center;margin-bottom:34px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2.6rem,8vw,4.3rem);
+    font-weight:600;letter-spacing:-.015em;line-height:1;margin:0 0 12px}
+  .standfirst{margin:0 auto;color:var(--ink-soft);font-size:1.05rem;max-width:46ch}
+
+  .layout{display:grid;grid-template-columns:1fr;gap:20px}
+  @media(min-width:940px){.layout{grid-template-columns:1.05fr 1fr;align-items:start;gap:28px}}
+
+  #map{width:100%;height:560px;border-radius:18px;
+    box-shadow:0 20px 46px -30px rgba(20,22,26,.45);border:1px solid var(--rule);z-index:0}
+  @media(max-width:939px){#map{height:400px}}
+  .leaflet-container{background:#0b1a24;font-family:inherit}
+  .leaflet-popup-content-wrapper{border-radius:12px}
+
+  .panel{background:var(--card);border:1px solid var(--rule);border-radius:20px;
+    padding:26px 24px 30px;min-height:520px;
+    box-shadow:0 20px 46px -32px rgba(20,22,26,.32)}
+  .panel h2{font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:clamp(1.8rem,4vw,2.3rem);font-weight:600;line-height:1.05;margin:0 0 4px}
+  .coords{font-size:.68rem;color:var(--ink-mute);letter-spacing:.1em;margin:0 0 18px;
+    text-transform:uppercase;font-variant-numeric:tabular-nums}
+  .tabs{display:flex;gap:2px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+  .tab{appearance:none;background:none;border:0;cursor:pointer;font-family:inherit;
+    font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-mute);padding:10px 14px;border-bottom:2px solid transparent;
+    margin-bottom:-1px}
+  .tab[aria-selected="true"]{color:var(--gold);border-bottom-color:var(--gold)}
+  .lede{margin:0 0 20px;color:var(--ink-soft);font-size:.96rem}
+  .entry{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--rule)}
+  .entry:first-of-type{border-top:none;padding-top:0}
+  .idx{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;
+    color:var(--gold-soft);line-height:1;flex:none;width:26px}
+  .entry h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.28rem;
+    font-weight:600;margin:0 0 3px;line-height:1.2}
+  .entry p{margin:0;color:var(--ink-soft);font-size:.93rem}
+  .flags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .flag{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+    border:1px solid var(--gold-soft);color:var(--gold);border-radius:100px;
+    padding:3px 9px;font-weight:600}
+  .pending-note{color:var(--ink-mute);font-size:.98rem;max-width:42ch}
+  footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--rule);
+    color:var(--ink-mute);font-size:.79rem;max-width:64ch;margin-inline:auto;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="plaque">
+    <svg class="monogram" viewBox="0 0 120 90" aria-label="I.MAGIN monogram">
+      <text x="60" y="72" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif"
+            font-size="86" font-weight="700" fill="#B18F4A">I</text>
+      <text x="60" y="72" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif"
+            font-size="82" font-weight="600" fill="#14161A" opacity=".94"
+            style="letter-spacing:-2px">M</text>
+    </svg>
+    <p class="name">I. Magin Executive Concierge</p>
+    <div class="rule-row"><i></i><span>&#10022;</span><i></i></div>
+    <p class="tag">For Luxury Real Estate</p>
+  </div>
+
+  <header>
+    <h1>The Quiet Route</h1>
+    <p class="standfirst">Every stop on this coast has one thing everybody
+      photographs. This is the other thing. Tap a pin, then choose what you're after.</p>
+  </header>
+
+  <div class="layout">
+    <div id="map"></div>
+    <div class="panel" id="panel" aria-live="polite"></div>
+  </div>
+
+  <footer>Satellite imagery by Esri. Every venue named here was checked on
+    18 August 2026 — nothing is repeated from memory. Stops without detail are
+    researched as they get close, so opening hours are real on the day.</footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const STOPS=[
+{id:"rovinj",name:"Rovinj & Istria",coords:[45.0812,13.6387],ready:true,
+ coordText:"45.08 N · 13.64 E — base for the peninsula",
+ go:{lede:"Skip Pula's amphitheatre, Motovun and the truffle circuit. If it wins a search, you've already been.",items:[
+   {n:"The batana boats",d:"Rovinj's fishermen built flat-bottomed boats and, hands busy for hours, invented bitinada — polyphonic singing with no instruments. Start at the Batana house, round the peninsula in an actual batana, end in a spacio, a stone wine cellar, for dinner and a concert.",flags:["Jun–Sep · Tue/Thu/Sat 19:00","UNESCO listed"]},
+   {n:"Beram — the Dance of the Dead",d:"A small church in a field, five kilometres from Pazin. A 1474 fresco: the pope, the king, a fat innkeeper, a soldier whose armour doesn't help him, a merchant trying to bribe Death with gold. Painted just after the plague.",flags:["Church is locked","A woman in the village holds the key"]}]},
+ eat:{lede:"Five, annotated. The famous one and the one locals actually use are not the same restaurant.",items:[
+   {n:"Monte",d:"The only Michelin star in Rovinj. Modern, creative takes on Istrian cooking. The occasion restaurant, not the drop-in.",flags:["Michelin star","Book well ahead"]},
+   {n:"Konoba Jure",d:"Family-run, just outside the old town — which is the point. Homemade fuži with truffles, wild boar goulash.",flags:["The local one"]},
+   {n:"La Puntulina",d:"Fine dining on the rocks at the edge of the old town. Adriatic seafood and Istrian wine, tables cut into the cliff above the water.",flags:["Sunset seating","Reserve"]},
+   {n:"Barba Danilo",d:"Garden restaurant a little out of the centre. Tuna steak and slow-cooked Istrian lamb, gourmet handling without the ceremony.",flags:["Garden"]},
+   {n:"Konoba de Amicis",d:"Straightforward Adriatic seafood done properly, in the old town lanes rather than on the harbour front.",flags:["Old town"]}]},
+ coffee:{lede:"Almost everywhere here pours Italian-style espresso. These two are the exceptions — and they're why he's been buying beans.",items:[
+   {n:"Augusto Coffee",d:"The specialty destination in town. Small, plain, serious. Rated best in Rovinj for V60 — Colombian geisha filters, citrus espresso tonic, flat whites on oat.",flags:["Specialty","V60 · filter"]},
+   {n:"Cogito Coffee Bar",d:"The Zagreb roastery's own bar. Expertly pulled flat whites and filter on genuinely good beans.",flags:["Roastery-owned","Beans to take"]}]}},
+
+{id:"lakes",name:"Krka & the Lakes",coords:[43.8667,15.9667],ready:true,
+ coordText:"43.87 N · 15.97 E — inland",
+ go:{lede:"Skip Skradinski buk and Plitvice's main boardwalk loop. In August both are the whole park's traffic standing in one place.",items:[
+   {n:"The Knin–Kistanje road",d:"Three things within a few hundred metres, and almost nobody there. Burnum — a Roman military amphitheatre from the first century, in open karst. Manojlovac — 59.6 metres, the tallest fall in the park, straight from the road. And Jaruga, a hydroelectric plant that began generating on 28 August 1895, two days after Niagara.",flags:["Almost empty","1895"]},
+   {n:"Rastoke, at Slunj",d:"Thirty minutes north of Plitvice. Timber houses and working watermills built on top of twenty-three waterfalls, wooden bridges strung between islets.",flags:["A village, not a park","≈2 hrs"]}]},
+ eat:{lede:"Not researched yet — built when he's a day out, so the opening hours are real.",items:[]},
+ coffee:{lede:"Not researched yet — same reason.",items:[]}},
+
+{id:"zadar",name:"Zadar",coords:[44.1194,15.2314],coordText:"44.12 N · 15.23 E"},
+{id:"hvar",name:"Hvar",coords:[43.1729,16.4411],coordText:"43.17 N · 16.44 E — island"},
+{id:"split",name:"Split",coords:[43.5081,16.4402],coordText:"43.51 N · 16.44 E"},
+{id:"makarska",name:"Makarska",coords:[43.2970,17.0179],coordText:"43.30 N · 17.02 E"},
+{id:"dubrovnik",name:"Dubrovnik",coords:[42.6507,18.0944],coordText:"42.65 N · 18.09 E — end of the road"}];
+
+const map=L.map('map',{center:[43.9,15.8],zoom:7,zoomControl:true,scrollWheelZoom:false});
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+  {attribution:'Tiles &copy; Esri — Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP and the GIS User Community',maxZoom:18}).addTo(map);
+
+L.polyline(STOPS.map(s=>s.coords),
+  {color:'#D4AF37',weight:2,opacity:.9,dashArray:'6, 9'}).addTo(map);
+
+const pin=r=>L.divIcon({className:'',iconSize:[16,16],iconAnchor:[8,8],
+  html:`<div style="width:16px;height:16px;border-radius:50%;border:2px solid #fff;
+    background:${r?'#D4AF37':'rgba(255,255,255,.45)'};
+    box-shadow:0 0 12px rgba(212,175,55,${r?'.95':'.3'})"></div>`});
+
+STOPS.forEach((s,i)=>{
+  L.marker(s.coords,{icon:pin(s.ready),title:s.name}).addTo(map)
+    .on('click',()=>select(s.id,'go'));
+});
+
+const panel=document.getElementById('panel');
+const TABS=[['go','Go instead'],['eat','Table'],['coffee','Coffee']];
+
+function render(s,tab){
+  const sec=s[tab]||{lede:'',items:[]};
+  let h=`<p class="lede">${sec.lede}</p>`;
+  (sec.items||[]).forEach((it,i)=>{
+    h+=`<div class="entry"><span class="idx">${String(i+1).padStart(2,'0')}</span><div>
+        <h3>${it.n}</h3><p>${it.d}</p>`;
+    if(it.flags) h+=`<div class="flags">`+it.flags.map(f=>`<span class="flag">${f}</span>`).join('')+`</div>`;
+    h+=`</div></div>`;
+  });
+  return h;
+}
+
+function select(id,tab){
+  const s=STOPS.find(v=>v.id===id);
+  let h=`<h2>${s.name}</h2><p class="coords">${s.coordText}</p>`;
+  if(!s.ready){
+    h+=`<p class="pending-note">Not researched yet. This one gets built when he's a
+      day out, and checked against the dates he's actually there. An earlier card
+      spent a line on a Saturday event for someone who left on the Friday.</p>`;
+    panel.innerHTML=h; return;
+  }
+  h+=`<div class="tabs" role="tablist">`+TABS.map(([k,l])=>
+    `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k===tab}">${l}</button>`).join('')
+    +`</div><div id="tabbody">${render(s,tab)}</div>`;
+  panel.innerHTML=h;
+  panel.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+    panel.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===b));
+    document.getElementById('tabbody').innerHTML=render(s,b.dataset.tab);
+  }));
+}
+select('rovinj','go');
+</script>
+</body>
+</html>
