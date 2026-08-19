@@ -1611,3 +1611,43 @@ closed-palette rule is enforced in code** — light comes only from the brand's
 own primary/secondary over its background, and hue is never computed or cycled,
 so it structurally cannot produce a rainbow. Nothing existing was changed or
 removed; every diagnostic composition still stands.
+
+---
+
+## 2026-08-19 — Two clips arrived from his iPad. Audio could not be read in-session.
+
+**What he sent** (uploaded 2026-08-19 ~03:02 UTC, shot 2026-08-18 22:55 and
+22:59 local):
+
+| Clip | Length | Format |
+|---|---|---|
+| `3bba9167-video.MOV` | 10.4s | h264, 480×360, portrait (-90 displaymatrix), 24.9 fps, mono aac |
+| `6468c173-video.MOV` | 3:01 | h264, 480×360, portrait (-90 displaymatrix), 27.2 fps, mono aac |
+
+Both from an **iPad mini (A17 Pro), iPadOS 26.6**. Verified with `ffmpeg -i`
+(2026-08-19) — no `ffprobe` on this box; installed `imageio-ffmpeg` via pip to
+get a binary.
+
+**Verified by looking at frames:** a handheld interior walk-through — a unit
+door with a keypad lock, hallway, laundry pair, kitchen, closet, and a bench of
+glassware. Handheld, low light, motion-blurred. **Not a shot anyone framed** —
+raw capture, not footage.
+
+**Verified by listening: nothing.** There is a live mono voice track (mean
+−33.4 dB, peaks −1.8 dB — someone is talking), and it could not be transcribed
+here:
+
+- `huggingface.co` and `alphacephei.com` are **both blocked by this session's
+  egress policy** (curl → `000`), so faster-whisper / vosk cannot fetch a model.
+  Local transcription is not available in this environment. Do not retry — it
+  is a policy denial, not a flake.
+- The ElevenLabs MCP surface in this session exposes **no transcription tool**
+  (`creative_transcribe_audio` is not in the deferred list; speech generation
+  and agents only).
+- **Descript MCP is connected** (`import_media` → `export_transcript`) and is
+  the working path — but it uploads his footage to an external service, so it
+  needs his say-so first. Not done.
+
+**So: whatever these clips are about is still unknown to this repo.** The
+picture says walk-through; the words say something, and nobody has heard them.
+Do not infer the subject from the frames — ask him, or get the transcript.
