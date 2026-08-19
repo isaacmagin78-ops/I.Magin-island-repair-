@@ -127,3 +127,18 @@ file exists.
 - **Dan Martell** — [Which AI tool is worth paying for?](https://www.youtube.com/watch?v=_zOzXfREAR4) · published 2026-08-18
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-19 19:43 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Happy customers tell 3 people. Unhappy customers tell everyone. You’ll get more our of finding](https://www.youtube.com/watch?v=OumLNbOQn5k) · published 2026-08-19
+- **Alex Hormozi** — ["My Content Performs. Why Do My Ads Still Flop?"](https://www.youtube.com/watch?v=6GXyQjeYiPM) · published 2026-08-19
+- **Sabrina Ramonov** — [Why Humanoid Robots Struggle With Dishes and Laundry](https://www.youtube.com/watch?v=bgY6vnCoD1k) · published 2026-08-19
+- **Alex Hormozi** — [If You Want Someone to Treat You Differently](https://www.youtube.com/watch?v=WTnZnD-TLsc) · published 2026-08-19
+- **Dan Martell** — [10/10 Success Habits to Drastically Improve Your Life](https://www.youtube.com/watch?v=1yxirCHiLdQ) · published 2026-08-19
+- **Dan Martell** — [These AI Hacks Will Get You Ridiculously Ahead of Most People (Q&A)](https://www.youtube.com/watch?v=1MMqPTiWfSc) · published 2026-08-19
+- **Sabrina Ramonov** — [5 ChatGPT Prompt Fixes for Better Answers](https://www.youtube.com/watch?v=2zr6Ikv1bG8) · published 2026-08-19
+- *(+12 more held back to keep this readable.)*
+
