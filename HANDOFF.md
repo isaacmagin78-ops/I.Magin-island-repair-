@@ -1674,3 +1674,45 @@ repo is public.
 **Unparsed:** the last line of his message came through voice-garbled
 ("...find a way to make it feasible that we could end up dating"). Not guessed
 at, not acted on. Ask him before building anything on it.
+
+### 2026-08-19 — The resident QR board is not a new idea. It is built and sitting in Drive.
+
+**Verified live with `Google_Drive.search_files` on 2026-08-19** (not read from
+`DRIVE-FINDINGS.md` — re-checked against Drive itself):
+
+| File | Drive ID | Size |
+|---|---|---|
+| `resident-portal-airtable.html` | `1jVmeBBjYfO-8eSPEC9a5DPGfDO47NA2m` | 15,168 B |
+| `contractor-dashboard-airtable.html` | `1Rvn3rp9Z8aAM4rkp0mECHGsgT92xiySa` | 14,629 B |
+| `island-club-cuts-flyer.pdf` (Emilio, barber) | `1HWi8n82GRJucjDQFpf2PRkwzsAnGzW1i` | 65,967 B |
+| `island-club-cuts-site.html` | `1NOg0OG3t3lJPGjzp-7eACu_1tJDcUm92` | 367,863 B |
+
+Folder "Resident portal " (`19UJt4TSxqeQ5AnafoKB2rSgnkCQX5nQ1`), created
+2026-07-09. **Three blockers, all small:** create the Airtable base, fill
+`AIRTABLE_TOKEN`/`BASE_ID`, and host it — with the token behind a proxy or a
+write-only scoped key, never in client-side JS.
+
+**He also named a second resident vendor (2026-08-19): Marc, a handyman living
+in the building** — the natural first listing alongside Emilio. Lead type only;
+no contact details recorded, the repo is public.
+
+### ⛔ 2026-08-19 — He asked about a Legends Ranch "fan page" grown without their consent. The answer is no.
+
+**Verified from a screenshot he sent the same night:** Legends Ranch runs its own
+Facebook page (post 20w ago, `LongRangeLR.com` watermark) and **The Wildlife
+Center at Legends Ranch posted one day ago.** They are active operators of their
+own brand, not an absent one.
+
+Three reasons, in order of what actually costs him:
+
+1. **They would see it.** A client posting daily finds an unapproved page using
+   their name and logo, and that ends the account — worth more than the
+   followers.
+2. **One trademark complaint removes it.** The name and logo are theirs.
+3. **This repo holds no license for the Legends Ranch films.** `CLIP-LICENSING.md`
+   governs Tyson's Time footage only. Whether he may publish the ranch films on a
+   channel he controls **is not written down anywhere** — do not assume he can.
+
+**The version that works:** ask them for it. An active brand that posts its own
+content is the easy yes for "I'll run the channel, you approve everything" — and
+that is the consulting-to-concierge conversion, not a workaround.
