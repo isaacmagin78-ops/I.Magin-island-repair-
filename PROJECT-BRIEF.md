@@ -298,6 +298,32 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
   Intracoastal canals.
   *(The QR gate-map work from 2026-08-15 lives in the `-imagin-concierge`
   repo, not this one. Check there before rebuilding anything.)*
+
+  > **🔑 Island Club is FOUR PHASES, not one building — researched 2026-08-19.**
+  > Each phase has its own management and its own contact point. Phase 4 runs
+  > its own HOA site at `islandclubphase4.com` off a **gmail address**; the Rec
+  > Center's listed phone is the placeholder **777-777-7777**, i.e. never set.
+  >
+  > **Two things follow.** First: **nobody knows which phase Chloe manages, and
+  > that changes the whole job.** A gate map for one phase is a different
+  > product from one covering 508 units across four. Ask before building.
+  > Second: a gmail address and an unset phone number are what a thin digital
+  > operation looks like — which is precisely the opening, and also why "they
+  > might be a newer company" is plausible.
+  >
+  > **Not verified:** no named third-party management company appears in public
+  > sources. Isaac's on-site read — several younger women, possibly a newer
+  > firm — could not be confirmed either way and is recorded as *his
+  > observation*, not fact. Ask Chloe who she works for; it takes one question
+  > and decides whether this is a building relationship or a firm relationship
+  > worth many buildings.
+- **Evan Vernon** — Isaac's **neighbour**, a **builder**, and someone he
+  **trusts**. Recorded 2026-08-19 after Isaac said he had told sessions about
+  him before: a repo-wide search returned **zero hits**. He had. Nobody wrote
+  it down. Same failure as the creators and the Scott/Karil names.
+  ⚠️ The rest of that message was garbled by voice-to-text ("he has Moore and
+  he's don't trusted") and is **deliberately not guessed at**. What is certain:
+  neighbour, builder, trusted. Ask him for the rest rather than inventing it.
 - **Rich** — spotted 2026-08-19 with a **handwritten paper sign** offering rides
   to Fort Lauderdale airport, 8:30–5, "personal service". A real business with
   no marketing at all. Same shape as the Bill Thomas / Thomas AC package in
