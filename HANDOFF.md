@@ -2040,3 +2040,50 @@ him first**, and give him the monthly figure before he agrees, not after.
 hands-free conversation he already owns. Gemini Live and the Claude app's voice
 mode are the same shape. None of them can see this repo — which is exactly the gap
 the agent above would close.
+
+### 2026-08-19 — The building, finally identified, from a public listing
+
+Isaac sent Homes.com screenshots of his own building. This settles the name
+question flagged in `DOCS-RETRIEVAL.md`.
+
+**Island Club Condominiums** — *source: Homes.com building page, screenshotted
+2026-08-19. Not independently verified against county records.*
+
+| | |
+|---|---|
+| Address | **777 S Federal Hwy, Pompano Beach, FL 33062** (multiple addresses) |
+| Neighbourhood | Snug Harbor, on the Intracoastal canals |
+| Units | **508** |
+| Stories | 9 |
+| Year built | **1971** |
+| Value range | **$138K – $415K** |
+| Layouts | 630 sq ft 1BR → 1,144 sq ft 3BR; 1BR around **$210,000** |
+
+⚠️ **Unit-count conflict.** Isaac has said **507** all along; Homes.com says
+**508**. The resident board and the printed poster both currently say 507. The
+difference is trivial in conversation and not trivial in print — **the county
+record decides it**, not either of these. Until then, treat 507 as his figure and
+508 as the listing's, and do not silently overwrite one with the other.
+
+⚠️ **"Royal Palm" is still unexplained.** He used that name when asking for the
+declaration search. Every other source here, and this listing, says Island Club.
+`DOCS-RETRIEVAL.md` Step 1 still stands — ask him rather than assuming they are
+the same association.
+
+### 💡 The thing on that page worth more than the specs
+
+**A Serhant agent — Joann Madriz Farinas — is running paid placement on the Island
+Club building page**, badged *"agent experienced in this area,"* with a Contact
+button, over a building of 508 units.
+
+**That is an out-of-area brokerage paying a portal for the chance to look like a
+neighbour.** Isaac *is* the neighbour. He lives there, and he already has six
+residents listed on a board that portal cannot see.
+
+That asymmetry is the whole realtor pitch, and it is now evidenced rather than
+argued: the agent has an ad budget; Isaac has the front door, the elevator, and
+the mailroom. It also raises the value of the yard-sign QR rider idea — anyone
+paying Homes.com for these leads has an obvious reason to pay less for better ones.
+
+**Not recorded here:** the contact-card screenshot he also sent. It is personal and
+this repo is public.
