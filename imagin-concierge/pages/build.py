@@ -85,6 +85,8 @@ h2::after{{content:"";flex:1;height:1px;background:var(--line)}}
   font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6rem;
   letter-spacing:.1em;text-transform:uppercase;background:var(--surface)}}
 .frame.wide{{grid-column:1 / -1;aspect-ratio:16/9}}
+.frame.filled{{padding:0;border-style:solid;overflow:hidden}}
+.frame.filled img{{width:100%;height:100%;object-fit:cover;display:block}}
 .item{{background:var(--surface);border:1px solid var(--line);border-radius:2px;
   box-shadow:var(--shadow);padding:1.05rem 1.15rem;margin:0 0 .65rem}}
 .item h3{{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
@@ -142,10 +144,22 @@ def facts(block):
     return '  <div class="facts">\n' + "\n".join(cells) + "\n  </div>"
 
 def frames(block):
+    """A frame item is either a caption string (an honest empty slot) or
+    {"caption": ..., "file": ...} — a real photo, embedded as a data URI so the
+    published page stays self-contained."""
+    import base64, mimetypes
     out = []
-    for i, cap in enumerate(block["items"]):
+    for i, it in enumerate(block["items"]):
         cls = "frame wide" if (i == 0 and block.get("hero", True)) else "frame"
-        out.append(f'    <div class="{cls}">{esc(cap)}</div>')
+        if isinstance(it, dict) and it.get("file"):
+            path = ROOT / it["file"]
+            mime = mimetypes.guess_type(str(path))[0] or "image/jpeg"
+            b64 = base64.b64encode(path.read_bytes()).decode()
+            out.append(f'    <div class="{cls} filled">'
+                       f'<img src="data:{mime};base64,{b64}" alt="{esc(it["caption"])}" loading="lazy"></div>')
+        else:
+            cap = it["caption"] if isinstance(it, dict) else it
+            out.append(f'    <div class="{cls}">{esc(cap)}</div>')
     return '  <div class="frames">\n' + "\n".join(out) + "\n  </div>"
 
 def items(block):

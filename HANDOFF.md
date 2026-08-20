@@ -2087,3 +2087,43 @@ paying Homes.com for these leads has an obvious reason to pay less for better on
 
 **Not recorded here:** the contact-card screenshot he also sent. It is personal and
 this repo is public.
+
+### 2026-08-20 — The rental page has its first real photo, and a bug worth not repeating
+
+He sent four photos of the cleaned-up unit. They arrived looking sideways because
+they carry **EXIF orientation 6** and the preview did not honour it — the files are
+fine; run `ImageOps.exif_transpose` before touching them.
+
+**One is now the hero of the rental page** (`assets/unit-living.jpg`, cropped from
+`ec150c88`): the sofa, the floor lamp, the doorway through to the kitchen, the TV
+wall. `build.py` was extended so a `frames` item can be
+`{"caption": ..., "file": ...}` and gets embedded as a **data URI**, keeping the
+published page self-contained. The other four frames stay honest empty slots.
+
+**Deliberately left out of the page:**
+
+- `f75659b7` — the desk shot. Open mail, documents, and **an iPad displaying this
+  very Claude session** are legible in it.
+- `3adde8e8` / `6deb2b2b` — same room, but the near third is desk clutter.
+
+> ### 🐛 The bug that produced two confidently wrong crops
+>
+> Files were selected with `sorted(glob(...), key=os.path.getmtime)[-4:]` and
+> **all four photos share the same mtime second.** Ties made the ordering unstable
+> between runs, so "index 1" was a different picture each time. A crop measured on
+> one image was applied to another — twice — and one output was a close-up of his
+> iPad screen.
+>
+> **Address media by filename, never by position in an mtime-sorted glob.** And it
+> was only caught by opening the result and looking at it, which is the same lesson
+> the sharpness metric taught yesterday: *a number is not a look.*
+
+**The photographic note he can act on in sixty seconds:** every one of the four was
+shot **from the office corner, across the desk**. The room behind it photographs
+well — white walls, high ceiling, the fan, the gallery wall, light off the balcony.
+It is only ever the near third that fails. **Stand at the balcony and shoot back
+toward the entry** and the clutter is behind the camera instead of in front of it.
+
+**Still unresolved:** the page subhead says "507-home community" while the Homes.com
+listing says 508. Left as-is on purpose — he has not chosen, and the county record
+is what decides it.

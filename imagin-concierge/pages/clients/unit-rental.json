@@ -51,8 +51,11 @@
       "heading": "The home",
       "hero": true,
       "items": [
-        "Hero — living room toward the balcony, daylight",
-        "Kitchen",
+        {
+          "caption": "The living room, looking through to the kitchen",
+          "file": "assets/unit-living.jpg"
+        },
+        "Kitchen — daylight",
         "Primary bedroom",
         "Bath",
         "Balcony view"
