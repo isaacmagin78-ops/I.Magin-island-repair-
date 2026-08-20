@@ -317,6 +317,19 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
   > observation*, not fact. Ask Chloe who she works for; it takes one question
   > and decides whether this is a building relationship or a firm relationship
   > worth many buildings.
+- **Walter** — a contact Isaac treats as significant. **Nothing about him
+  exists in this repo.** His own contact note reads: *"ChatGPT should have a
+  whole file on him."*
+  🔴 **This is the cross-AI continuity problem in one line.** The knowledge is
+  real and it is stranded inside one assistant's memory, where no Claude
+  session, no Perplexity session, and no future Isaac can reach it. It is the
+  same shape as `Knowledge Asset — Cross-AI Continuity Loss` (Drive, Jul 29).
+  **The fix is one paste, not a project:** ask Kelly/ChatGPT to print
+  everything it holds on Walter, paste it into a session, and it gets filed
+  here where every assistant can read it. Until then he is a name with a
+  pointer to a room nobody else can enter.
+  *(Phone number visible in the screenshot and deliberately not recorded — this
+  repo is public.)*
 - **Evan Vernon** — Isaac's **neighbour**, a **builder**, and someone he
   **trusts**. Recorded 2026-08-19 after Isaac said he had told sessions about
   him before: a repo-wide search returned **zero hits**. He had. Nobody wrote
