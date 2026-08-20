@@ -1985,3 +1985,27 @@ film earlier tonight, where nothing can be invented because a cut cannot invent.
 — send-the-original rule, AE/AF lock, hold five seconds per room, shoot it twice,
 and the room-by-room shot list. It is the input spec for the $99 page and for every
 client video, not just for his unit.
+
+### 2026-08-19 — Three new people he met, recorded before they evaporate
+
+Said in passing while he was moving between things. Written down because a name in
+a chat message is gone the moment the session ends.
+
+| Who | What they do | Why it matters |
+|---|---|---|
+| **Rich** | Wants to drive people around the community | A resident service — the next slot on the board. He has photos and a recording of the conversation, currently sitting with ChatGPT. |
+| **Chloe** | Building manager; also runs a design company and is hiring | **Page already built** — `clients/chloe-design.json` → `https://claude.ai/code/artifact/2eea24fc-8b84-4f27-a01e-6bf3b21169c8`. Blanks are hers to fill: role, hours, where, start, pay, deadline, plus four or five images of the work. |
+| **(name not captured)** | Financial services / auto compliance; already uses AI in his work; travels internationally | Wants to use what we have. **He is the first person who has asked for the Context OS unprompted** — worth a real conversation rather than a $99 page. |
+
+**Isaac could not recall the third man's name.** It is not written anywhere in
+this repo, and it has not been guessed at here. Get it from him and fill this row
+in — do not infer it from anything.
+
+**Deliberately not recorded:** personal details about any of the three, including
+anything about their households or their animals. This repo is public; that
+material belongs in Notion if it is kept at all.
+
+**Still the one blocking action:** the resident board
+(`https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`) and
+Chloe's page are both **private until he shares them**. Every link he sends before
+that lands on a login wall.
