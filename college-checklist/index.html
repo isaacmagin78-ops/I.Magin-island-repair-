@@ -1,0 +1,279 @@
+<!--
+  COLLEGE CHECKLIST — $49 SALES PAGE
+  Recovered 2026-08-04 from the live page at college-checklist.vercel.app.
+
+  WHY THIS FILE EXISTS: the live page was not in any GitHub repo and is not in
+  the connected Vercel account (team c8j6sgyyh7-5024 lists zero projects). It
+  existed in exactly one place nobody could reach or edit. This is now the
+  version-controlled copy.
+
+  STATUS 2026-08-14: THE LIVE LINK IS NOW IN THIS FILE. Nothing to edit.
+
+  Isaac created a live $49 payment link around Aug 6. It was never put on the
+  page, so the deployed page has carried a TEST-MODE link since 2026-07-17 and
+  has never been able to take a payment. This file now has the real one,
+  verified against the Stripe API on 2026-08-14:
+
+    plink_1U1yrlFDa35si8Lwu4HwHYYa
+    "College Checklist" · $49.00 one-time · livemode: true · active
+    https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02
+
+  THE ONLY REMAINING STEP: deploy this file to college-checklist.vercel.app.
+  That deployment lives on a Vercel account this session cannot reach — the
+  connected team lists zero projects — so it must be done by Isaac.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>College Checklist — every deadline your family won't miss</title>
+<meta name="description" content="An interactive college-prep planner for families. 50+ tasks, 11 categories, parent and student dashboards. From IMagin Consulting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2440;
+  --ink-soft:#4B5478;
+  --manila:#EDE0C0;
+  --paper:#FBF9F4;
+  --rule:#C9B98E;
+  --red:#B23A2E;
+  --check:#3F6B4A;
+  --check-soft:#E4EDE3;
+  --mark:#C9D46B;
+  --maxw:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important;transition:none!important} }
+body{
+  margin:0;background:var(--manila);color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.display{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.98}
+.mono{font-family:'IBM Plex Mono',monospace}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+
+header{background:var(--ink);color:var(--manila);position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:14px;background:var(--ink);clip-path:polygon(0 0,100% 0,100% 100%,92% 0,84% 100%,76% 0,68% 100%,60% 0,52% 100%,44% 0,36% 100%,28% 0,20% 100%,12% 0,4% 100%,0 0);opacity:0}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand .tab{background:var(--red);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11px;letter-spacing:.1em;padding:3px 8px;border-radius:2px;text-transform:uppercase}
+.brand .name{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:14px;letter-spacing:.02em}
+nav{display:flex;gap:22px}
+nav a{color:var(--manila);text-decoration:none;font-size:13px;font-weight:600;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;opacity:.85}
+nav a:hover{opacity:1}
+@media(max-width:640px){nav{display:none}}
+
+.hero{padding:76px 0 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+@media(max-width:840px){.hero{grid-template-columns:1fr;gap:38px;padding:52px 0 40px}}
+.hero h1{font-size:clamp(38px,6vw,64px);margin:14px 0 22px}
+.hero h1 .hl{background:linear-gradient(180deg,transparent 58%,var(--mark) 58%,var(--mark) 92%,transparent 92%);padding:0 2px}
+.lede{color:var(--ink-soft);font-size:19px;margin:0 0 28px;max-width:46ch}
+.cta-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--red);color:var(--paper);text-decoration:none;font-weight:700;font-size:15px;padding:15px 26px;border-radius:3px;border:none;cursor:pointer;font-family:'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase}
+.btn:hover{background:#96301f}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--manila)}
+.fine{font-size:13px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace}
+
+.stamp{display:inline-block;border:3px solid var(--red);border-radius:6px;color:var(--red);font-family:'IBM Plex Mono',monospace;font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:12px;padding:7px 13px;transform:rotate(-6deg);position:relative;margin-bottom:18px}
+.stamp::after{content:"";position:absolute;inset:3px;border:1px solid var(--red);border-radius:4px;opacity:.55}
+
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:3px;box-shadow:0 2px 0 var(--rule),0 22px 44px -30px rgba(27,36,64,.5);position:relative}
+.card .hole{position:absolute;top:16px;left:16px;width:14px;height:14px;border-radius:50%;background:var(--manila);border:1.5px solid var(--rule)}
+.card .colortab{position:absolute;top:-9px;right:22px;width:46px;height:14px;background:var(--red);border-radius:2px 2px 0 0}
+.card-inner{padding:28px 24px 24px 44px}
+ul.check{list-style:none;margin:0;padding:0}
+ul.check li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px dashed var(--rule);font-size:15px}
+ul.check li:last-child{border-bottom:0}
+.box{flex:0 0 18px;width:18px;height:18px;border:1.5px solid var(--ink);border-radius:2px;margin-top:2px;position:relative;background:#fff}
+li.done .box{background:var(--check);border-color:var(--check)}
+li.done .box::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(43deg)}
+li.done .t{color:var(--ink-soft);text-decoration:line-through;text-decoration-thickness:1px}
+.when{margin-left:auto;font-size:11px;color:var(--ink-soft);white-space:nowrap;padding-left:10px;font-family:'IBM Plex Mono',monospace}
+
+section{padding:64px 0;border-top:2px solid var(--rule)}
+h2{font-size:clamp(28px,3.6vw,38px);margin:8px 0 8px}
+.sub{color:var(--ink-soft);margin:0 0 36px;font-size:16px}
+
+.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:820px){.catalog{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.catalog{grid-template-columns:1fr}}
+.rec{background:var(--paper);border:1px solid var(--rule);border-radius:2px;padding:20px 20px 22px;position:relative;border-top:4px solid var(--ink)}
+.rec .code{display:block;margin-bottom:10px}
+.rec h3{font-size:17px;margin:0 0 6px;font-family:Inter,sans-serif;font-weight:700}
+.rec p{margin:0;color:var(--ink-soft);font-size:14.5px;line-height:1.5}
+
+.report{background:var(--paper);border:1px solid var(--rule);border-radius:3px;overflow:hidden;max-width:520px}
+.report .head{background:var(--ink);color:var(--manila);padding:14px 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between}
+.report table{width:100%;border-collapse:collapse}
+.report td{padding:12px 22px;border-bottom:1px solid var(--rule);font-size:14.5px}
+.report tr:last-child td{border-bottom:none}
+.report td.chk{width:26px;color:var(--check);font-weight:700;text-align:center}
+.total{display:flex;justify-content:space-between;align-items:center;padding:22px;background:var(--manila)}
+.total .amt{font-family:Anton,sans-serif;font-size:40px;color:var(--ink)}
+.total .amt small{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;color:var(--ink-soft);text-transform:none;letter-spacing:0}
+.report-cta{padding:20px 22px 24px}
+
+.pass{background:var(--paper);border:1px dashed var(--ink);border-radius:3px;padding:26px 28px;max-width:520px;position:relative}
+.pass::before,.pass::after{content:"";position:absolute;width:16px;height:16px;border-radius:50%;background:var(--manila);top:50%;transform:translateY(-50%)}
+.pass::before{left:-9px}
+.pass::after{right:-9px}
+.pass dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:15px}
+.pass dt{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);align-self:center}
+.pass dd{margin:0}
+.pass a{color:var(--red);font-weight:600;text-decoration:none}
+.pass a:hover{text-decoration:underline}
+
+.legal{background:repeating-linear-gradient(var(--manila) 0 39px, var(--rule) 39px 40px);background-position:0 4px}
+.legal .sheet{background:linear-gradient(90deg,transparent 78px,rgba(178,58,46,.28) 78px,rgba(178,58,46,.28) 80px,transparent 80px),var(--paper);border:1px solid var(--rule);padding:36px 40px 36px 104px;max-width:760px;box-shadow:0 22px 44px -32px rgba(27,36,64,.45)}
+.legal h3{font-size:16px;margin:26px 0 6px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+.legal h3:first-child{margin-top:0}
+.legal p{font-size:14.5px;color:var(--ink-soft);margin:0 0 8px;max-width:64ch;line-height:1.6}
+
+footer{border-top:2px solid var(--rule);padding:30px 0 48px;font-size:13px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace}
+footer a{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand">
+      <span class="tab">File 002</span>
+      <span class="name">IMAGIN CONSULTING</span>
+    </div>
+    <nav>
+      <a href="#what">What's inside</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="#terms">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">College prep · Household file</span>
+      <h1 class="display">Every deadline your family is about to <span class="hl">miss.</span></h1>
+      <p class="lede">College Checklist turns four chaotic years into one shared file — parent and student, same list, same deadlines, no more guessing who forgot what.</p>
+      <div class="cta-row">
+        <a class="btn" href="#pricing">Get instant access — $49</a>
+        <span class="fine">One time. No subscription.</span>
+      </div>
+    </div>
+
+    <div class="card" aria-label="Example checklist">
+      <span class="colortab"></span>
+      <span class="hole"></span>
+      <div class="card-inner">
+        <span class="eyebrow">Junior year · 11 categories · 50+ tasks</span>
+        <ul class="check">
+          <li class="done"><span class="box"></span><span class="t">Build the college list</span><span class="when">Done</span></li>
+          <li class="done"><span class="box"></span><span class="t">Register for the SAT</span><span class="when">Done</span></li>
+          <li><span class="box"></span><span class="t">Ask two teachers for recommendations</span><span class="when">Sep 12</span></li>
+          <li><span class="box"></span><span class="t">Draft the personal essay</span><span class="when">Oct 1</span></li>
+          <li><span class="box"></span><span class="t">Submit the FAFSA</span><span class="when">Oct 1</span></li>
+          <li><span class="box"></span><span class="t">Book campus visits over break</span><span class="when">Nov 20</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="what">
+  <div class="wrap">
+    <span class="stamp">Status: In Progress</span>
+    <h2>What's in the file</h2>
+    <p class="sub">One purchase. Everything below, immediately.</p>
+    <div class="catalog">
+      <div class="rec"><span class="eyebrow code mono">Dashboards</span><h3>Two dashboards</h3><p>A parent view and a student view of the same plan, so nobody has to nag or guess what's been done.</p></div>
+      <div class="rec"><span class="eyebrow code mono">Task list</span><h3>50+ tasks, 11 categories</h3><p>Testing, essays, recommendations, financial aid, applications, visits, deadlines — already written for you.</p></div>
+      <div class="rec"><span class="eyebrow code mono">Timeline</span><h3>Timeline planning</h3><p>Tasks land on real dates by grade and season, so you always know what's due next.</p></div>
+      <div class="rec"><span class="eyebrow code mono">Budget</span><h3>Budget planner</h3><p>Track application fees, test fees, visits, and deposits before they surprise you.</p></div>
+      <div class="rec"><span class="eyebrow code mono">Documents</span><h3>Document tracker</h3><p>Transcripts, test scores, aid forms, letters — know what's requested, sent, and received.</p></div>
+      <div class="rec"><span class="eyebrow code mono">Family</span><h3>Assignments &amp; export</h3><p>Assign a task to a parent or the student, and export the whole plan whenever you want it on paper.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="sub">One price. No subscription, no upsell.</p>
+    <div class="report">
+      <div class="head"><span>Report card</span><span>College Checklist</span></div>
+      <table>
+        <tr><td class="chk">✓</td><td>Full access to College Checklist</td></tr>
+        <tr><td class="chk">✓</td><td>Parent and student dashboards</td></tr>
+        <tr><td class="chk">✓</td><td>All 50+ tasks and 11 categories</td></tr>
+        <tr><td class="chk">✓</td><td>Budget planner, document tracker, export</td></tr>
+        <tr><td class="chk">✓</td><td>Free updates as new features ship</td></tr>
+      </table>
+      <div class="total">
+        <div class="amt">$49 <small>one time</small></div>
+      </div>
+      <div class="report-cta">
+        <!-- LIVE payment link, verified against the Stripe API 2026-08-14:
+             plink_1U1yrlFDa35si8Lwu4HwHYYa · "College Checklist" · $49.00 one-time
+             · livemode true · active · redirects to college-checklist-app.vercel.app -->
+        <a class="btn" style="width:100%;text-align:center;display:block" href="https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02">Get instant access — $49</a>
+        <p class="fine" style="margin:12px 0 0">Paid securely by card. You get access right away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="sub">A real person answers. Usually same day.</p>
+    <div class="pass">
+      <span class="eyebrow">Contact slip</span>
+      <dl>
+        <dt>From</dt><dd>IMagin Consulting</dd>
+        <dt>Email</dt><dd><a href="mailto:isaacmagin78@gmail.com">isaacmagin78@gmail.com</a></dd>
+        <dt>Based in</dt><dd>Pompano Beach, Florida, United States</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="legal" id="terms">
+  <div class="wrap">
+    <div class="sheet">
+    <h2 style="border:none;padding:0">Terms, privacy &amp; refunds</h2>
+    <p class="sub" style="margin-bottom:20px">The short version, in plain language.</p>
+
+    <h3>Terms of service</h3>
+    <p>College Checklist is a digital planning tool sold by IMagin Consulting. When you buy it, you get a personal license to use it for your own family. Don't resell it or redistribute it. We may add or change features over time. We can suspend access if the product is used to break the law or abuse the service.</p>
+    <p>College Checklist is an organizational tool. It is not admissions advice, financial advice, or a guarantee of any admissions or financial-aid outcome.</p>
+
+    <h3>Privacy policy</h3>
+    <p>We collect only what we need to sell and support the product: your email address and your payment confirmation. Card payments are processed by Stripe — we never see or store your full card number. Your checklist data is stored locally in your own browser, not on our servers.</p>
+    <p>We don't sell your information to anyone. To have your information deleted, email us and we'll remove it.</p>
+
+    <h3>Refund policy</h3>
+    <p>If College Checklist isn't right for you, email us within 14 days of purchase and we'll refund you in full. No explanation required. Refunds are returned to the original card and typically appear within 5–10 business days.</p>
+
+    <h3>Delivery</h3>
+    <p>This is a digital product. Access is delivered by email immediately after payment. Nothing ships.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 IMagin Consulting · Pompano Beach, FL · <a href="mailto:isaacmagin78@gmail.com">isaacmagin78@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
