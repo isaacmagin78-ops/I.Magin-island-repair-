@@ -2238,3 +2238,32 @@ scratch directory before this.
 condominium roof are fine; *publishing* an invitation to go up there is not. Roofs
 are limited common elements with real liability attached. Use the pictures, never
 put "go to the roof" on a page any resident can scan.
+
+### 2026-08-20 (late) — The establishing shot, and four clips that are queue-ready
+
+**`ead12e5a` is the best photograph in the entire set** and is now the third frame
+in *The building*: yachts on the canal, palms, waterfront houses, the high-rise
+line and a strip of ocean behind. It replaced the weaker street shot. **That image
+is the South Florida establishing frame the video engine has never had** — use it
+for far more than a rental page.
+
+**Four Tyson clips are now in hand at full quality**, all `iPhone 17 Pro`,
+all vertical or convertible:
+
+| File | Length | Format | Content |
+|---|---|---|---|
+| `IMG_3292.MOV` | 15.4s | 1920×1080, 60 fps | Tyson meets a German Shepherd |
+| `IMG_3293.MOV` | 16.5s | 1920×1080, 60 fps, portrait | same, vertical |
+| `IMG_1100.mov` | 24.4s | 1920×1080, 30 fps, portrait | Tyson in a Dolphins jersey |
+| `IMG_1102.mov` | 23.3s | 1920×1080, 30 fps, portrait | Tyson at the slow-feeder bowl |
+
+**This is the first time real, uncompressed footage has reached a session.** The
+posting queue's media is all older material sitting in Blotato storage; these four
+are better and are the right shape already. Refreshing the queue with them is a
+real, bounded job — **but it uploads new media to a live posting system, so ask
+him before doing it.**
+
+**The roof frames** (`5011bb9b`, `a6e97423`, `285cde49`, `effe81a5`, `a9c618e0`)
+are a usable establishing library: parapet, AC units, the Intracoastal, the
+skyline at dusk. Same caution as before — use the pictures, never publish an
+invitation to go up there.
