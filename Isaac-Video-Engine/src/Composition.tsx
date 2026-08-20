@@ -31,6 +31,9 @@ import {
   SEA_MONARCH_611_PROPS,
   SEA_MONARCH_611_VERTICAL_PROPS,
 } from "./compositions/ListingFilm";
+import { PropertyFilm } from "./compositions/PropertyFilm";
+import { propertyFilmDuration } from "./lib/property-film";
+import { SEA_MONARCH_611 } from "./listings/sea-monarch-611";
 
 export const VIDEO_FPS = 30;
 export const VIDEO_WIDTH = 1080;
@@ -128,6 +131,33 @@ export const MyComposition = () => {
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
         defaultProps={{ orientation: "vertical" as const }}
+      />
+      {/* The same cut as SeaMonarchFilm above, driven by a listing spec
+          instead of frame constants. Every listing after this one registers
+          here as a spec pair and needs no new composition file. */}
+      <Composition
+        id="PropertyFilm-SeaMonarch611"
+        component={PropertyFilm}
+        durationInFrames={propertyFilmDuration(SEA_MONARCH_611)}
+        fps={VIDEO_FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          spec: SEA_MONARCH_611,
+          orientation: "landscape" as const,
+        }}
+      />
+      <Composition
+        id="PropertyFilm-SeaMonarch611Vertical"
+        component={PropertyFilm}
+        durationInFrames={propertyFilmDuration(SEA_MONARCH_611)}
+        fps={VIDEO_FPS}
+        width={VIDEO_WIDTH}
+        height={VIDEO_HEIGHT}
+        defaultProps={{
+          spec: SEA_MONARCH_611,
+          orientation: "vertical" as const,
+        }}
       />
     </>
   );

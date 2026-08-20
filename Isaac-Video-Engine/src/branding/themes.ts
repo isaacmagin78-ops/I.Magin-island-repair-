@@ -82,6 +82,26 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
     logo: "assets/logos/luxury-coastal.png",
     watermarkText: "Luxury Coastal Listings",
   },
+  /**
+   * IMagin, daylight. Same mark as `imagin-concierge`, but a sand-and-sea
+   * palette instead of the near-black one — for Florida listings shot in
+   * daylight, where the dark treatment reads as the wrong coast.
+   */
+  "imagin-coastal": {
+    id: "imagin-coastal",
+    displayName: "IMagin",
+    colors: {
+      background: "#f6f2ec",
+      primary: "#3f7f8c",
+      secondary: "#5d6b70",
+      accent: "#1f2b2f",
+      text: "#1f2b2f",
+      textMuted: "#87908f",
+    },
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    logo: "assets/logos/imagin-concierge.png",
+    watermarkText: "IMagin",
+  },
   "imagin-concierge": {
     id: "imagin-concierge",
     displayName: "IMagin Concierge",

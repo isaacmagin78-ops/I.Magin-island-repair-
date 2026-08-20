@@ -1,0 +1,37 @@
+{
+  "slug": "isaac-condo",
+  "address": "[ADDRESS — street and unit]",
+  "neighborhood": "[BUILDING NAME]",
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "price": "[$X,XXX / month]",
+  "beds": null,
+  "baths": null,
+  "sqft": "[SQFT]",
+  "lotOrWaterfrontage": "High-floor unit with a private screened balcony over the treeline",
+  "yearBuiltOrRenovated": "[CONFIRM]",
+  "headlineFeature": "High-floor Fort Lauderdale rental with a full wall of sliders, a private screened balcony, and keyless smart entry",
+  "features": [
+    "Floor-to-ceiling sliders across the main wall opening to a private screened balcony",
+    "High floor — outlook over the tree canopy to the skyline beyond",
+    "Open plan with large-format travertine-look tile and a ceiling fan",
+    "Keyless entry: keypad deadbolt plus a Ring video doorbell at the door",
+    "Two exposures — the slider wall plus a second window",
+    "Pet friendly",
+    "[KITCHEN — counter material and appliance finish, pending]",
+    "[BUILDING AMENITIES — pool, gym, parking, pet policy, pending]"
+  ],
+  "lifestyle": "[Pending — write this once the address and building are confirmed. Do not draft a lifestyle line off the photos alone.]",
+  "listingUrl": "[PENDING]",
+  "agentProfile": "imagin-demo",
+  "brand": "imagin-coastal",
+  "provenance": {
+    "status": "NOT LISTED. This is Isaac's own unit, being packaged as a rental demo.",
+    "mls": null,
+    "listedBy": "Nobody yet — the purpose of the package is to show Linda S. Hoyt the system on a real unit and let her decide whether she'd take the listing.",
+    "sources": [
+      "Five photographs taken by Isaac on 2026-08-20, archived under listings/assets/isaac-condo/source/"
+    ],
+    "note": "Every observable fact here is read off those five photos and nothing else. Bracketed fields are unknown and must come from Isaac before anything is generated for outside eyes. Specifically NOT claimed: water view (the horizon band in the photos may be haze), square footage, bedroom count, and any building amenity. The photos themselves are not usable for the film — see SHOT-LIST.md in the same folder."
+  }
+}
