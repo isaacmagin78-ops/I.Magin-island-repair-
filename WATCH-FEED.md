@@ -156,3 +156,18 @@ file exists.
 - **Dan Martell** — [What jobs are safe from AI?](https://www.youtube.com/watch?v=zpJC5IhQR14) · published 2026-08-19
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-20 19:44 UTC
+
+**Who posted**
+- **Alex Hormozi** — [What’s the most impactful thing you’ve learned at a mastermind or marketing event?](https://www.youtube.com/watch?v=uOnIF1hyZps) · published 2026-08-20
+- **Alex Hormozi** — [Why Can't I Make My Thing Make More Money?](https://www.youtube.com/watch?v=AOLCxk7eU4U) · published 2026-08-20
+- **Sabrina Ramonov** — [How I Built a $1M AI Business From an Ugly MVP](https://www.youtube.com/watch?v=ks51uA0lnzY) · published 2026-08-20
+- **Alex Hormozi** — [From Door Knocking to Selling Over the Phone](https://www.youtube.com/watch?v=MflQS2Wo8bI) · published 2026-08-20
+- **Sabrina Ramonov** — [Claude Just Changed YouTube Shorts Forever!](https://www.youtube.com/watch?v=tf-Ph-FN7a8) · published 2026-08-20
+- **Dan Martell** — [Ranking financial decisions to make in your 20s](https://www.youtube.com/watch?v=t4QvMbkGmEo) · published 2026-08-20
+- **Sabrina Ramonov** — [Which AI Tool Should You Use for Each Task?](https://www.youtube.com/watch?v=ioni7VijCdM) · published 2026-08-20
+- *(+12 more held back to keep this readable.)*
+
