@@ -2203,3 +2203,38 @@ Sources, by filename: `ec150c88` · `7cb012d5` · `1817e7aa` · `2d92e224` ·
 **Also received and not used on the page:** Tyson at the beach (a genuinely strong
 frame for the dog account) and Tyson on the sofa. Kept out of the rental listing
 on purpose — a dog in a listing photo narrows the audience.
+
+### 2026-08-20 — The resident board now shows the building, not just a list of names
+
+He photographed the common areas. **Three are now on the board** under *"What's
+actually in this building"* — **the laundry room** (`1a93516e`), **the storage
+cages** (`c5cb27ee`), and **the pool** (`890b1210`) — with a line saying they were
+shot this week by a resident and inviting corrections.
+
+**Why this matters more than it looks:** a directory of six names is a flyer. A
+directory that also shows a stranger what the laundry room and the storage cages
+actually look like is a **resource**, and a resource is what gets scanned, what
+gets forwarded, and what makes the association glad it exists rather than annoyed.
+It is also the honest version of the "community map" he asked for — no site plan
+required.
+
+Source of truth for the page is now committed at
+`imagin-concierge/pages/resident-board.html`; it had only ever existed in the
+scratch directory before this.
+
+### 🔎 Two things in these photos worth acting on
+
+1. **The elevator panel reads `PH`** (`7ed828d8`). If his unit is on the penthouse
+   floor, that is a listing fact and a pricing fact — and it is **not confirmed
+   anywhere in this repo.** Ask him; do not write it onto the rental page until he
+   says so.
+2. **The roof shots are the best skyline material he owns** (`bbf92ed4`,
+   `285cde49`, `f353a0e8`) — Intracoastal, boats, the high-rise line at dusk, shot
+   from above the parapet. Wasted on a rental listing. That is **video-engine
+   material**, and it is the establishing shot any Pompano/Fort Lauderdale piece
+   has been missing.
+
+**Roof access caution, said before rather than after:** photographs taken on a
+condominium roof are fine; *publishing* an invitation to go up there is not. Roofs
+are limited common elements with real liability attached. Use the pictures, never
+put "go to the roof" on a page any resident can scan.
