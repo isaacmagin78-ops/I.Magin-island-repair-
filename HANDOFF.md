@@ -2009,3 +2009,34 @@ material belongs in Notion if it is kept at all.
 (`https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`) and
 Chloe's page are both **private until he shares them**. Every link he sends before
 that lands on a login wall.
+
+### 2026-08-19 — Where Isaac actually thinks, and the voice gap
+
+**He said it plainly:** his best work happens **moving and away from a screen** —
+driving, walking Tyson, in the pool. Not at a desk. **Treat that as a working
+condition, not a preference.** The implication for every session: the most useful
+thing that can be handed to him is often something he can *hear and answer out
+loud*, not something he has to sit down and read.
+
+**What exists, checked live 2026-08-19 with `agents_list` and
+`agents_list_phone_numbers`:**
+
+| | |
+|---|---|
+| ElevenLabs agents in his workspace | **two** — `Isaac` (`agent_1901kq87dymefz7r6x0zxbzwej9b`, created 2026-04-27, **never called**) and `My Agent` (`agent_7101kpvtgb0tf5tr73p6nj1kxw5c`, one call, 2026-05-02) |
+| Phone numbers attached | **none** |
+| Knowledge base loaded with his context | not verified — assume empty until checked |
+
+**So the piece that is missing is small and specific:** a phone number on an
+agent, and this repo's context in its knowledge base. That turns "the Context OS"
+into a number he can call from the car — which is both the thing he keeps asking
+for and the most convincing demo the product could have.
+
+⚠️ **Costs money before it works.** A telephony number is a paid Twilio/SIP line
+and every call burns ElevenLabs credits. **Do not provision either without asking
+him first**, and give him the monthly figure before he agrees, not after.
+
+**Today, with zero setup and no new spend:** ChatGPT's live voice mode is the best
+hands-free conversation he already owns. Gemini Live and the Claude app's voice
+mode are the same shape. None of them can see this repo — which is exactly the gap
+the agent above would close.
