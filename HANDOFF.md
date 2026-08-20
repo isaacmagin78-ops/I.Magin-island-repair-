@@ -2170,3 +2170,36 @@ He also noted the building has its own web page that could be improved. Worth
 pairing with the Serhant paid-placement finding: **the association is being
 out-marketed on its own building by an out-of-area brokerage.** That is a pitch to
 the board, not just to a realtor.
+
+### 2026-08-20 — Exterior photos added, and the video-quality problem is solved
+
+**Seven real photos are now on the rental page**, in two sections:
+
+- **The home** — living room (hero), kitchen, bath, the balcony view, and the
+  still-honest empty bedroom slot.
+- **The building** — the pool from above (hero), the grounds, and the long look
+  out over the marina to the skyline.
+
+Sources, by filename: `ec150c88` · `7cb012d5` · `1817e7aa` · `2d92e224` ·
+`890b1210` · `46294396` · `e3548fe8`. All embedded as data URIs; the page is
+2.8 MB and self-contained, well inside the 16 MB artifact ceiling.
+
+> ### ✅ The camera problem from 2026-08-19 is fixed, and here is the proof
+>
+> Two clips arrived today: **`IMG_3292.MOV` and `IMG_3293.MOV` — 1920×1080 HEVC,
+> ~60 fps, ~13–14 Mb/s, `com.apple.quicktime.model: iPhone 17 Pro`.** One
+> landscape, one portrait (`displaymatrix -90`).
+>
+> **Compare with yesterday: 480×360 at 723 kb/s.** Same person, same building,
+> **~19× the bitrate.** This confirms the diagnosis in `SHOOTING-BRIEF.md` — his
+> camera was never the problem, the *transfer* was. Files that arrive through the
+> chat as originals are full quality. **Whatever route yesterday's clip took, do
+> not use it again.**
+>
+> Content note: both clips are Tyson meeting a German Shepherd on a brick
+> walkway — **Tyson's Time material, not property footage.** The portrait one is
+> already the right shape for a vertical post.
+
+**Also received and not used on the page:** Tyson at the beach (a genuinely strong
+frame for the dog account) and Tyson on the sofa. Kept out of the rental listing
+on purpose — a dog in a listing photo narrows the audience.

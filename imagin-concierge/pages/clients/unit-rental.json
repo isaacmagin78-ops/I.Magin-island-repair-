@@ -64,10 +64,29 @@
           "file": "assets/unit-bath.jpg"
         },
         {
-          "caption": "The view",
-          "file": "assets/unit-view.jpg"
+          "caption": "From the balcony",
+          "file": "assets/unit-balcony.jpg"
         },
         "Bedroom — to be re-shot in daylight"
+      ]
+    },
+    {
+      "kind": "frames",
+      "heading": "The building",
+      "hero": true,
+      "items": [
+        {
+          "caption": "The pool",
+          "file": "assets/unit-pool.jpg"
+        },
+        {
+          "caption": "The grounds",
+          "file": "assets/unit-building.jpg"
+        },
+        {
+          "caption": "Looking out over the marina",
+          "file": "assets/unit-street.jpg"
+        }
       ]
     },
     {
