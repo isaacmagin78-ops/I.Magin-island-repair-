@@ -282,6 +282,27 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
 >
 > **Scott Kukes is a 35-year friend.** That is the relationship. Osman is
 > reading material.
+- **Chloe** — property management at **Island Club**, Pompano Beach. On site
+  2026-08-19; she walked Isaac through the whole thing. **She is the named
+  person the QR-code project is for.** Management is currently **building their
+  own webpage**, which is the opening: Isaac already works in the building
+  (PH3 renovation, see `concierge-systems/`), so he is a known face rather than
+  a vendor cold-calling.
+  ⚠️ **Do not build a rival to the page they are already making.** Turning up
+  with "yours is bad, use mine" is the one move that closes this door. The QR
+  gate map is the specific thing she showed him and the thing their page will
+  handle worst — build that, free, no ask, per the seeding method above.
+  **Island Club, verified from the public listing 2026-08-19:** 777 S Federal
+  Hwy, Pompano Beach FL 33062, Snug Harbor. **508 units, 9 stories, built
+  1971.** Value range $138K–$415K; one-beds around $210K. Sits on the
+  Intracoastal canals.
+  *(The QR gate-map work from 2026-08-15 lives in the `-imagin-concierge`
+  repo, not this one. Check there before rebuilding anything.)*
+- **Rich** — spotted 2026-08-19 with a **handwritten paper sign** offering rides
+  to Fort Lauderdale airport, 8:30–5, "personal service". A real business with
+  no marketing at all. Same shape as the Bill Thomas / Thomas AC package in
+  `DRIVE-FINDINGS.md` that is finished and still unsent. Not approached; phone
+  number deliberately not recorded here.
 - **Isaac's contractor** — saw the work on 2026-08-18 and "sees the big
   picture." Punch list work is separate from this repo.
 
