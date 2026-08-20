@@ -37,6 +37,7 @@ All ten are kept in `source/`.
 | `living-dusk-wide.jpg` | Best frame of the lot. Blue hour, corner windows, ceiling fan, real sense of scale. Cropped to the upper two-thirds it already reads as a proper interior photo. | The whole foreground: sectional piled with clothes and bags, floor cushions, papers, the inflatable in the corner, desk chaos. Bike and cat house visible on the balcony. |
 | `bedroom.jpg` | Genuinely close. Good proportions, made bed, nice fixture, window light. | Duvet rumpled, red clothing pile on the right, clutter on both nightstands, lamps on (warm cast fighting the window), vertical blinds shut. |
 | `frosted-doors.jpg` | Clean wall, good subject, nothing to move. | Two beige tape/sticker marks on the glass panels, dog's head in the bottom of frame, slight tilt. Peel the tape and reshoot square and this one is done. |
+| `living-from-kitchen.jpg` | The reverse angle, and the right one — it's shot #2's position. Shows the kitchen peninsula, the open-plan relationship, the curved ceiling soffit and both window walls in one frame. First clear evidence of the counter. | Peninsula covered (spray bottle, cutting board, diffuser, plant), dog bowls and the playpen in the foreground, sectional still draped. Scuff on the painted side of the peninsula. |
 
 **Not usable**
 
@@ -86,9 +87,18 @@ the place.
 *Caption: "Frosted glass sliding doors."*
 
 ### 5. `condo-kitchen.png` — the kitchen
-Still no usable reference; only a counter edge appears in any photo. Shoot the
-run of counter and appliances at a slight angle, not head-on. **Tell me the
-counter material and appliance finish** — that caption is a placeholder.
+`living-from-kitchen.jpg` finally shows it: a peninsula in **white veined
+stone with a thick waterfall edge and a continuous LED strip under the
+overhang**, opening onto the living area. That is a real feature and the
+caption now says so.
+
+What's still needed: shoot the **working run** — counter, splashback and
+appliances — at a slight angle, not head-on, and clear the peninsula down to
+one object (the spray bottle, board and diffuser all have to go). The painted
+side panel of the peninsula is scuffed in the current photo; wipe it or shoot
+from the side that isn't. **Still tell me the counter material** (marble or
+quartz — I can't tell from a photo) **and the appliance finish**; no appliance
+has appeared in any frame yet.
 
 ### 6. `condo-balcony.png` — outside
 Step out and shoot back along the balcony with the view to one side. Sells the

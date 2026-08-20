@@ -68,7 +68,10 @@ export const ISAAC_CONDO: PropertyFilmSpec = {
       src: "assets/stills/condo-kitchen.png",
       anchor: "center",
       zoom: [1.05, 1.18],
-      caption: "[KITCHEN CAPTION — counters, appliances]",
+      // Counter and lighting are confirmed by the 21 Aug reverse angle.
+      // Appliances have still never appeared in a photo — if the shoot shows
+      // stainless, extend this line rather than replacing it.
+      caption: "Stone waterfall counter · under-counter lighting",
     },
     {
       src: "assets/stills/condo-balcony.png",
