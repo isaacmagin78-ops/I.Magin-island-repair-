@@ -1,0 +1,148 @@
+<title>Chloe Is Hiring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#EDF1F1; --surface:#FFFFFF; --surface-2:#E1E8E8;
+  --line:#C5D2D2; --text:#121D22; --muted:#5C6F76;
+  --accent:#A8456A; --accent-soft:#F6E1E8;
+  --shadow:0 1px 0 rgba(18,29,34,.06), 0 12px 30px -18px rgba(18,29,34,.5);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0C1418; --surface:#14232B; --surface-2:#1B2E37;
+    --line:#28414C; --text:#E6EEEE; --muted:#8AA3AC;
+    --accent:#E8879E; --accent-soft:#3A1B26;
+    --shadow:0 1px 0 rgba(255,255,255,.03), 0 16px 40px -22px #000;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0C1418; --surface:#14232B; --surface-2:#1B2E37;
+  --line:#28414C; --text:#E6EEEE; --muted:#8AA3AC;
+  --accent:#E8879E; --accent-soft:#3A1B26;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 16px 40px -22px #000;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--text);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:36rem;margin:0 auto;
+  padding:clamp(1.75rem,6vw,3.25rem) clamp(1.15rem,5vw,2rem) 4rem;
+  display:flex;flex-direction:column;gap:2.4rem}
+.brand{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.66rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);
+  display:flex;align-items:center;gap:.6rem}
+.brand::after{content:"";flex:1;height:1px;background:var(--line)}
+h1{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:800;font-size:clamp(2rem,9vw,2.9rem);line-height:1.03;
+  letter-spacing:-.025em;margin:.7rem 0 0;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.sub{margin:.9rem 0 0;color:var(--muted);font-size:1.06rem;max-width:34ch}
+h2{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.66rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  margin:0 0 .9rem;font-weight:600;display:flex;align-items:center;gap:.6rem}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));
+  background:var(--surface);border:1px solid var(--line);border-radius:2px;
+  overflow:hidden}
+.fact{padding:.9rem 1rem;border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.fact .k{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  display:block;margin-bottom:.3rem}
+.fact .v{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:600;font-size:1.15rem;letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums}
+.fact .v.blank{color:var(--muted);font-weight:400;font-size:.9rem;
+  font-family:"Newsreader",Georgia,serif;font-style:italic}
+.frames{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.frame{aspect-ratio:4/3;border:1px dashed var(--line);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:.8rem;color:var(--muted);
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6rem;
+  letter-spacing:.1em;text-transform:uppercase;background:var(--surface)}
+.frame.wide{grid-column:1 / -1;aspect-ratio:16/9}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:2px;
+  box-shadow:var(--shadow);padding:1.05rem 1.15rem;margin:0 0 .65rem}
+.item h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:600;font-size:1.04rem;line-height:1.25;letter-spacing:-.015em;
+  margin:0 0 .45rem;text-wrap:balance;
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.item h3 .p{font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.78rem;color:var(--accent);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.item p{margin:0;color:var(--muted);font-size:.98rem}
+.prose p{margin:0 0 .9rem;color:var(--muted)}
+.prose p:first-child{color:var(--text);font-size:1.08rem}
+.cta{display:block;padding:1.15rem 1.2rem;background:var(--accent-soft);
+  border:1px solid var(--accent);border-radius:2px;text-decoration:none;
+  color:var(--text)}
+.cta:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cta .t{display:block;font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:600;font-size:1.08rem;letter-spacing:-.012em;margin-bottom:.35rem}
+.cta .d{display:block;color:var(--muted);font-size:.94rem}
+footer{border-top:1px solid var(--line);padding-top:1.4rem;color:var(--muted);font-size:.9rem}
+footer p{margin:0 0 .7rem}
+.fine{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.66rem;
+  line-height:1.7;letter-spacing:.02em;color:var(--muted);opacity:.85}
+.rise{opacity:0;transform:translateY(10px);animation:rise .55s cubic-bezier(.22,.7,.3,1) forwards}
+.rise:nth-child(1){animation-delay:.05s} .rise:nth-child(2){animation-delay:.13s}
+.rise:nth-child(3){animation-delay:.21s} .rise:nth-child(4){animation-delay:.29s}
+.rise:nth-child(5){animation-delay:.37s} .rise:nth-child(6){animation-delay:.45s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.rise{animation:none;opacity:1;transform:none}}
+</style>
+
+<div class="wrap">
+  <header class="rise">
+    <p class="brand">built by I.Magin · draft for Chloe</p>
+    <h1>A design company is hiring. <em>You'd never find it on a job board.</em></h1>
+    <p class="sub">This is the page you send to somebody good instead of posting into a pile of five hundred applicants. It is already built — every blank on it is a question only Chloe can answer.</p>
+  </header>
+  <section class="rise">
+    <h2>The role</h2>
+  <div class="facts">
+    <div class="fact"><span class="k">Position</span><span class="v blank">Chloe to confirm</span></div>
+    <div class="fact"><span class="k">Full / part time</span><span class="v blank">Chloe to confirm</span></div>
+    <div class="fact"><span class="k">In person / remote</span><span class="v blank">Chloe to confirm</span></div>
+    <div class="fact"><span class="k">Start</span><span class="v blank">Chloe to confirm</span></div>
+    <div class="fact"><span class="k">Pay range</span><span class="v blank">Chloe to set</span></div>
+    <div class="fact"><span class="k">Apply by</span><span class="v blank">Chloe to set</span></div>
+  </div>
+  </section>
+  <section class="rise">
+    <h2>The work</h2>
+  <div class="frames">
+    <div class="frame wide">Hero — the best piece the studio has shipped</div>
+    <div class="frame">Project 2</div>
+    <div class="frame">Project 3</div>
+    <div class="frame">The studio / the desk</div>
+    <div class="frame">Chloe, at work</div>
+  </div>
+  </section>
+  <section class="rise">
+    <h2>Why a page beats a posting</h2>
+  <div class="prose">
+    <p>A job posting puts a small studio in a queue behind every company with a recruiting budget, and buys back a stack of applicants who applied to two hundred other places the same afternoon.</p>
+    <p>A link does the opposite. You text it to the one person you already have in mind, or hand it to someone at an event, and they see the actual work, the actual terms, and a way to reply — in about twenty seconds, on their phone, before the moment passes.</p>
+    <p>Nothing on this page claims anything about the studio. The role, the terms and the pay are Chloe's to fill, and until she does they stay visibly blank.</p>
+  </div>
+  </section>
+  <section class="rise">
+    <h2>What it costs</h2>
+  <article class="item"><h3>This page, finished and live<span class="p">$99</span></h3><p>One page, real work, real terms, a link she can text to a candidate today.</p></article>
+  <article class="item"><h3>The full setup<span class="p">$499</span></h3><p>A proper studio site with the portfolio, a contact form that reaches her phone, and Google, Instagram and Facebook set up to match.</p></article>
+  <article class="item"><h3>Kept current<span class="p">$299/mo</span></h3><p>New work posted as it ships, roles opened and closed as they change. Cancel any month.</p></article>
+  </section>
+  <section class="rise">
+    <h2>Next step</h2>
+  <a class="cta" href="mailto:isaacmagin78@gmail.com?subject=Chloe%27s%20hiring%20page%20—%20let%27s%20fill%20the%20blanks"><span class="t">Six answers and it's live today.</span><span class="d">Position, hours, where, start, pay range, deadline — plus four or five images of the work. That is the whole brief. Nothing goes public under her studio's name until she says yes.</span></a>
+  </section>
+  <footer class="rise">
+    <p>This is an unpublished draft made to show Chloe what her hiring page would look like. It makes no claim about her studio, its work, its terms or its pay.</p>
+    <p class="fine">DRAFT — NOT PUBLISHED ON CHLOE'S BEHALF.<br>
+      NO ROLE, RATE, DEADLINE OR PORTFOLIO CLAIM HAS BEEN INVENTED.<br>
+      EVERY BLANK STAYS BLANK UNTIL SHE FILLS IT.</p>
+  </footer>
+</div>
