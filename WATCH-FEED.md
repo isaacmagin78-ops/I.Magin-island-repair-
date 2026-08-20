@@ -142,3 +142,17 @@ file exists.
 - **Sabrina Ramonov** — [5 ChatGPT Prompt Fixes for Better Answers](https://www.youtube.com/watch?v=2zr6Ikv1bG8) · published 2026-08-19
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-20 07:55 UTC
+
+**Who posted**
+- **Alex Hormozi** — [He Has No Employees..](https://www.youtube.com/watch?v=qlo6MlEmlkw) · published 2026-08-20
+- **Alex Hormozi** — [Networking tip: Don’t ask someone “What value can I provide you?”. Instead…](https://www.youtube.com/watch?v=FqUe1oBt22M) · published 2026-08-20
+- **Alex Hormozi** — [This Changed How I Do Business](https://www.youtube.com/watch?v=6wZ78jMw5hM) · published 2026-08-20
+- **Sabrina Ramonov** — [14 Ways Women Are Making Money With AI Without a CS Degree](https://www.youtube.com/watch?v=gHUfLG_ozpM) · published 2026-08-20
+- **Dan Martell** — [Don't do this as an entrepreneur](https://www.youtube.com/watch?v=N7bZkITXCas) · published 2026-08-20
+- **Dan Martell** — [What jobs are safe from AI?](https://www.youtube.com/watch?v=zpJC5IhQR14) · published 2026-08-19
+- *(+12 more held back to keep this readable.)*
+
