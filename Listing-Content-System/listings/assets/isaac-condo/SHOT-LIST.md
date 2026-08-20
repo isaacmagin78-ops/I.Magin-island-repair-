@@ -1,98 +1,124 @@
 # Shot list — Isaac's condo (rental demo)
 
-Six frames. Shot on the iPhone you already have, in about twenty minutes, once
-the place is picked up. Drop them into
-`Isaac-Video-Engine/public/assets/stills/` under the exact filenames below and
-the film renders — the spec in `src/listings/isaac-condo.ts` is already
-waiting on them.
+Seven frames. Phone is fine, about half an hour once the place is picked up.
+Drop them into `Isaac-Video-Engine/public/assets/stills/` under the exact
+filenames below and the film renders — the spec in
+`src/listings/isaac-condo.ts` is already waiting on them.
 
-## Why the photos from 20 Aug don't work
+## Correction to the first version of this list
 
-Kept in `source/` for reference. Honest read on each:
+The first pass at this document was written off five photos taken on 20 Aug
+and read the unit as a **studio** — a bed in the living space, one room. The
+second set (21 Aug) shows that was wrong:
 
-| File | Problem |
-| --- | --- |
-| `living-wide.jpg` | Everything the film needs is in this frame and none of it is clear. Bed unmade, duffel bag on it, pet playpen, litter box, air purifier, dog bowls, bike on the balcony, counter covered. |
-| `living-tall.jpg` | Same room, better angle on the view, same clutter. Cat on the balcony perch. |
-| `entry-door.jpg` | The Ring and the smart lock are a real selling point, but the wall is scuffed, the lock is underexposed and soft, and the frame is mostly empty drywall. |
-| `floor-and-dog.jpg` | The tile is genuinely nice. The frame is dog legs, a pink mat and a rainbow cat tunnel. |
-| `building-corridor.jpg` | Dark green carpet and beige walls under sconces. This dates the building hard. Leave it out of the film entirely. |
+- What looked like a bed under a dark quilt in the living room is a **large
+  sectional sofa**.
+- There is a **separate bedroom** with its own window, dresser, nightstands
+  and a modern LED fan fixture.
+- The living room is **considerably larger** than the first photos suggested,
+  with a structural column, a **second window on the adjacent wall** (so a
+  corner exposure, not a single aspect), and a **desk / office zone**.
+- There are **frosted-glass sliding double doors** in dark wood — a genuine
+  architectural feature worth its own beat.
+- Two floor treatments: **wood** in the media zone, **large-format tile**
+  elsewhere.
 
-None of these can be cropped into shape — I tried six crops, including a tight
-one through the sliders. Blown up to 1920 wide, the glass haze, the screen
-texture and the cyan cast are all worse, not better. A phone photo of a clean
-room beats a rescued photo of a full one every time.
+The brief and the film spec have both been corrected. It is a materially
+better unit than the first set implied.
+
+## Where each photo currently stands
+
+All ten are kept in `source/`.
+
+**Closest to usable**
+
+| File | What's right | What's stopping it |
+| --- | --- | --- |
+| `living-dusk-wide.jpg` | Best frame of the lot. Blue hour, corner windows, ceiling fan, real sense of scale. Cropped to the upper two-thirds it already reads as a proper interior photo. | The whole foreground: sectional piled with clothes and bags, floor cushions, papers, the inflatable in the corner, desk chaos. Bike and cat house visible on the balcony. |
+| `bedroom.jpg` | Genuinely close. Good proportions, made bed, nice fixture, window light. | Duvet rumpled, red clothing pile on the right, clutter on both nightstands, lamps on (warm cast fighting the window), vertical blinds shut. |
+| `frosted-doors.jpg` | Clean wall, good subject, nothing to move. | Two beige tape/sticker marks on the glass panels, dog's head in the bottom of frame, slight tilt. Peel the tape and reshoot square and this one is done. |
+
+**Not usable**
+
+`living-wide.jpg`, `living-tall.jpg`, `living-from-sofa.jpg` (clutter, sofa
+back filling the frame), `tv-wall.jpg` (TV lit and showing an AirPlay screen,
+pet toys, tray in foreground), `floor-and-dog.jpg`, `entry-door.jpg` (scuffed
+wall, lock underexposed), `building-corridor.jpg` (dark green carpet under
+sconces — dates the building hard; leave it out of the film entirely).
 
 ## Before you shoot
 
-- Open every blind and slider. Turn every lamp **off** — mixed light is what
-  gave the last set the blue-green cast. Daylight only.
-- **Wipe the slider glass and, if it lifts out, the screen.** This is the
-  single biggest difference in the whole set — the view is the best thing this
-  unit has and right now it's photographed through a dirty screen.
-- Off the balcony: the bike, the bird-feeder bracket clamped to the glass, the
-  cat perch. Off the floor: playpen, litter box, air purifier, bowls, toys,
-  mats. Bed made, flat, one colour. Counters bare except one thing.
-- Screens off — a lit TV in shot reads as a phone snap, and the Samsung splash
-  screen dates the photo.
-- Shoot at **eye height or slightly below**, phone held level. Tilting up or
-  down is what bends the vertical lines in the last set.
+- **Shoot the living room at blue hour again.** The dusk frame proves it: this
+  room photographs better with the city lit than it does in flat daylight.
+  Roughly 20–30 minutes after sunset, with the interior lamps **on low**.
+- **The bedroom and the detail shots go in daylight**, blinds open, lamps off.
+  Mixed light is what put the green-blue cast on the first set.
+- **Wipe the slider glass**, inside and out if you can reach it.
+- Off the balcony: bike, cat house, bird-feeder bracket, the boards on the
+  railing. Off the floor and sofa: everything. The sectional wants to be bare
+  except two or three cushions.
+- Screens off. A lit TV reads as a phone snap.
+- Eye height or just below, phone level. Tilting is what bends the verticals.
 
-## The six frames
+## The seven frames
 
-### 1. `condo-balcony-view.png` — the hero
-Stand at the far wall, square to the sliders, shoot the window wall straight
-on. Fill the frame with glass and the view beyond; a little ceiling and floor
-at the edges is fine, clutter is not. This is also the blurred backdrop behind
-the whole vertical cut, so it has to be the cleanest frame in the set.
-*Caption in the film: "High floor · skyline and treetop views."*
+### 1. `condo-living-dusk.png` — the hero
+Same position as `living-dusk-wide.jpg`, which framed it correctly. Blue hour,
+lamps low, foreground clear. Keep the ceiling and the corner windows; that's
+what sells the scale. Also the blurred backdrop behind the whole vertical cut,
+so it has to be the cleanest frame in the set.
+*Caption: "Corner exposure · city and skyline views."*
 
-### 2. `condo-living.png` — the room
-From the entry corner, looking across the space toward the sliders. You want
-the ceiling fan, the tile, and the light coming in — depth, not a wall. Bed
-made and flat.
-*Caption: "Open plan · floor-to-ceiling sliders."*
+### 2. `condo-living-day.png` — the room in daylight
+Same room, from the opposite corner looking toward the sliders, in the
+morning. Buyers want to see it both ways and one dusk shot alone reads staged.
+*Caption: "Open living and dining · floor-to-ceiling sliders."*
 
-### 3. `condo-kitchen.png` — the kitchen
-The one frame I have no usable reference for; only the counter edge shows in
-your photos. Shoot the run of counter and appliances at a slight angle, not
-head-on. **Then tell me the counter material and whether the appliances are
-stainless** — the caption is a placeholder until you do.
+### 3. `condo-bedroom.png` — the bedroom
+Reshoot of `bedroom.jpg`. Blinds fully open, lamps off, duvet pulled flat and
+square, nightstands and dresser cleared to one object each, red pile gone.
+*Caption: "Separate bedroom · window with treetop outlook."*
 
-### 4. `condo-balcony.png` — outside
+### 4. `condo-doors.png` — the frosted doors
+Reshoot of `frosted-doors.jpg` square-on with the tape marks peeled off and
+the dog out of frame. Small detail, but it's the one piece of real joinery in
+the place.
+*Caption: "Frosted glass sliding doors."*
+
+### 5. `condo-kitchen.png` — the kitchen
+Still no usable reference; only a counter edge appears in any photo. Shoot the
+run of counter and appliances at a slight angle, not head-on. **Tell me the
+counter material and appliance finish** — that caption is a placeholder.
+
+### 6. `condo-balcony.png` — outside
 Step out and shoot back along the balcony with the view to one side. Sells the
-depth of the outdoor space, which the interior shots can't.
+depth of the outdoor space, which no interior frame can.
 *Caption: "Private screened balcony."*
 
-### 5. `condo-entry.png` — the smart entry
-Reshoot the door wall in daylight with the door open a crack so there's light
-on the lock. Get the Ring **and** the keypad deadbolt in one frame, closer than
-last time. For a rental this is a genuine feature — self-showing, no key
-handoff — and it's the one thing in these photos that most listings don't have.
+### 7. `condo-entry.png` — the smart entry
+Reshoot the door wall in daylight, door cracked so there's light on the lock.
+Ring **and** keypad deadbolt in one frame, closer than last time. For a rental
+this is a real feature — self-showing, no key handoff — and most listings
+don't have it.
 *Caption: "Keyless entry · Ring doorbell."*
-
-### 6. `condo-floor.png` — the tile
-Clear floor, shot down at roughly 45°, near the sliders so daylight rakes
-across it and picks up the texture. No feet, no paws, no rug edge.
-*Caption: "Large-format travertine-look tile throughout."*
 
 ## Three facts I still need
 
-The spec has these bracketed and the film won't read right until they're real:
+Bracketed in the spec; the film won't read right until they're real.
 
 1. **Address** — street and unit.
-2. **Monthly rent**, and whether that's furnished or unfurnished.
-3. **Beds / baths / square footage.** From the photos it reads as a studio or
-   an open one-bedroom; I'm not going to guess and put a wrong number under
-   your sister's eyes.
+2. **Monthly rent**, furnished or unfurnished.
+3. **Beds / baths / square footage.** One bedroom is confirmed by photo. I
+   don't know whether there's a second, and I'm not guessing a number that
+   goes under your sister's eyes.
 
-Plus, if you have them: the building's name and amenities (pool, gym, garage,
-pet policy), and the phone number to put on the closing card.
+Plus, if you have them: building name and amenities (pool, gym, garage, pet
+policy), and the phone number for the closing card.
 
 ## What not to claim
 
-The view shows low-rise rooftops, tree canopy and a distant skyline. There's a
-flat pale band on the horizon that could be water or could be haze — I can't
-tell from a photo through a screen. **Nothing in the film says "water view"
-until you confirm it from the balcony.** A rental listing that oversells the
-view is the one thing a broker will notice first.
+The view shows low-rise rooftops, a mid-rise across the way, tree canopy and a
+distant skyline. There's a flat pale band on the horizon that could be water
+or could be haze — I can't tell through glass at dusk. **Nothing in the film
+says "water view" until you confirm it standing on the balcony.** A rental
+listing that oversells the view is the first thing a broker notices.

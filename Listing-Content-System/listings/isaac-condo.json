@@ -5,18 +5,21 @@
   "city": "Fort Lauderdale",
   "state": "FL",
   "price": "[$X,XXX / month]",
-  "beds": null,
+  "beds": "1 confirmed by photo — CONFIRM whether there is a second",
   "baths": null,
   "sqft": "[SQFT]",
-  "lotOrWaterfrontage": "High-floor unit with a private screened balcony over the treeline",
+  "lotOrWaterfrontage": "High-floor corner unit with a private screened balcony over the treeline",
   "yearBuiltOrRenovated": "[CONFIRM]",
-  "headlineFeature": "High-floor Fort Lauderdale rental with a full wall of sliders, a private screened balcony, and keyless smart entry",
+  "headlineFeature": "High-floor Fort Lauderdale corner rental with a full wall of sliders, a separate bedroom, a private screened balcony, and keyless smart entry",
   "features": [
     "Floor-to-ceiling sliders across the main wall opening to a private screened balcony",
+    "Corner exposure — the slider wall plus a second window on the adjacent wall",
+    "Large open living and dining area with a structural column and a dedicated desk zone",
+    "Separate bedroom with its own window and a modern LED ceiling fixture",
+    "Frosted-glass sliding double doors in dark wood",
     "High floor — outlook over the tree canopy to the skyline beyond",
-    "Open plan with large-format travertine-look tile and a ceiling fan",
+    "Wood flooring in the media zone, large-format travertine-look tile elsewhere",
     "Keyless entry: keypad deadbolt plus a Ring video doorbell at the door",
-    "Two exposures — the slider wall plus a second window",
     "Pet friendly",
     "[KITCHEN — counter material and appliance finish, pending]",
     "[BUILDING AMENITIES — pool, gym, parking, pet policy, pending]"
@@ -30,8 +33,9 @@
     "mls": null,
     "listedBy": "Nobody yet — the purpose of the package is to show Linda S. Hoyt the system on a real unit and let her decide whether she'd take the listing.",
     "sources": [
-      "Five photographs taken by Isaac on 2026-08-20, archived under listings/assets/isaac-condo/source/"
+      "Five photographs taken by Isaac on 2026-08-20, archived under listings/assets/isaac-condo/source/",
+      "Five further photographs taken 2026-08-21, same folder — these corrected the layout read"
     ],
-    "note": "Every observable fact here is read off those five photos and nothing else. Bracketed fields are unknown and must come from Isaac before anything is generated for outside eyes. Specifically NOT claimed: water view (the horizon band in the photos may be haze), square footage, bedroom count, and any building amenity. The photos themselves are not usable for the film — see SHOT-LIST.md in the same folder."
+    "note": "Every observable fact here is read off those ten photos and nothing else. The first five were misread as a studio; the second set shows a separate bedroom, a much larger corner living room, and that the dark shape in the early frames is a sectional sofa, not a bed. Bracketed fields are unknown and must come from Isaac before anything is generated for outside eyes. Specifically NOT claimed: water view (the horizon band may be haze), square footage, total bedroom count, bathroom count, and any building amenity. None of the ten photos is usable for the film as shot — see SHOT-LIST.md in the same folder."
   }
 }

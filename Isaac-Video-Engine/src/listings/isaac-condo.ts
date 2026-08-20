@@ -7,8 +7,13 @@
  * it before the stills exist would produce a film that fails to render, and
  * registering it with the phone photos we have would produce a film that
  * renders and is worse than nothing. See SHOT-LIST.md in
- * `Listing-Content-System/listings/assets/isaac-condo/` for the six frames
+ * `Listing-Content-System/listings/assets/isaac-condo/` for the seven frames
  * this spec is waiting on and exactly how to shoot them.
+ *
+ * Revised after the 21 Aug photos: the unit is not a studio. There is a
+ * separate bedroom, the living room is much larger than the first set
+ * suggested and has a corner exposure, and the dark shape that read as a bed
+ * in the early frames is a sectional sofa.
  *
  * To finish: shoot the six frames, drop them in `public/assets/stills/` under
  * the filenames below, fill in the three bracketed facts, then add two
@@ -18,7 +23,7 @@
 import type { PropertyFilmSpec } from "../lib/property-film";
 
 /** The hero frame, also the blurred backdrop behind the vertical cut. */
-const PLATE = "assets/stills/condo-balcony-view.png";
+const PLATE = "assets/stills/condo-living-dusk.png";
 
 export const ISAAC_CONDO: PropertyFilmSpec = {
   // Light and warm rather than the navy/gold "luxury" default — a Florida
@@ -40,16 +45,24 @@ export const ISAAC_CONDO: PropertyFilmSpec = {
 
   stills: [
     {
+      // Blue hour, because the room demonstrably photographs better with the
+      // city lit than it does flat in daylight.
       src: PLATE,
       anchor: "center",
       zoom: [1.04, 1.16],
-      caption: "High floor · skyline and treetop views",
+      caption: "Corner exposure · city and skyline views",
     },
     {
-      src: "assets/stills/condo-living.png",
+      src: "assets/stills/condo-living-day.png",
       anchor: "center",
       zoom: [1.05, 1.18],
-      caption: "Open plan · floor-to-ceiling sliders",
+      caption: "Open living and dining · floor-to-ceiling sliders",
+    },
+    {
+      src: "assets/stills/condo-bedroom.png",
+      anchor: "center",
+      zoom: [1.05, 1.18],
+      caption: "Separate bedroom · window with treetop outlook",
     },
     {
       src: "assets/stills/condo-kitchen.png",
@@ -64,16 +77,16 @@ export const ISAAC_CONDO: PropertyFilmSpec = {
       caption: "Private screened balcony",
     },
     {
+      src: "assets/stills/condo-doors.png",
+      anchor: "center",
+      zoom: [1.06, 1.2],
+      caption: "Frosted glass sliding doors",
+    },
+    {
       src: "assets/stills/condo-entry.png",
       anchor: "center",
       zoom: [1.06, 1.2],
       caption: "Keyless entry · Ring doorbell",
-    },
-    {
-      src: "assets/stills/condo-floor.png",
-      anchor: "center",
-      zoom: [1.06, 1.2],
-      caption: "Large-format travertine-look tile throughout",
     },
   ],
   stillDurationInFrames: 140,
