@@ -2267,3 +2267,38 @@ him before doing it.**
 are a usable establishing library: parapet, AC units, the Intracoastal, the
 skyline at dusk. Same caution as before — use the pictures, never publish an
 invitation to go up there.
+
+### 2026-08-20 — The panorama, and a note about stopping
+
+**`a9c618e0-IMG_1104.jpeg` is an 8000 × 2723 rooftop panorama** — the full sweep
+west over the Intracoastal, the skyline catching sunset, framed by the curve of
+the parapet. It is now the opening banner of *The building* on the rental page,
+and `build.py` gained a `"pano": true` frame type to carry it at its own aspect
+ratio instead of cropping it to 4:3.
+
+**This is the single strongest image in the entire library** and should not stay
+on a rental page. It is the establishing frame for anything set in Pompano or
+Fort Lauderdale.
+
+### 📸 The library is now full. The bottleneck moved.
+
+Counting only what reached this session on 2026-08-19/20: **roughly forty
+photographs** — the unit room by room, the pool, the grounds, the laundry, the
+storage cages, the elevator lobby, the roof from every angle, two panoramas, the
+canal — **plus four full-quality iPhone 17 Pro clips.**
+
+**That is more than enough for every page and video currently planned.** Nothing
+downstream is waiting on another photograph.
+
+**What everything is now waiting on is small and human:**
+
+1. **Hit share** on the resident board and on Chloe's page. Until then both are
+   login walls.
+2. **Six answers each** from Chloe, Marc and Ivan, and the pages go live.
+3. **Ask Chloe for the condo docs** — she has them.
+4. **Confirm the `PH` floor** so the rental page can say it.
+5. **Say go** on refreshing the posting queue with the four new clips.
+
+**A future session should notice the pattern rather than repeat it:** collecting
+material is the comfortable part and it is now finished. **Do not ask him for more
+photographs.** Point at the five items above.

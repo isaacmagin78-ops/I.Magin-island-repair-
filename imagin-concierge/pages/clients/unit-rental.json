@@ -73,8 +73,13 @@
     {
       "kind": "frames",
       "heading": "The building",
-      "hero": true,
+      "hero": false,
       "items": [
+        {
+          "caption": "From the roof, looking west over the Intracoastal",
+          "file": "assets/unit-pano.jpg",
+          "pano": true
+        },
         {
           "caption": "The pool",
           "file": "assets/unit-pool.jpg"

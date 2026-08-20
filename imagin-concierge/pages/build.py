@@ -86,6 +86,8 @@ h2::after{{content:"";flex:1;height:1px;background:var(--line)}}
   letter-spacing:.1em;text-transform:uppercase;background:var(--surface)}}
 .frame.wide{{grid-column:1 / -1;aspect-ratio:16/9}}
 .frame.filled{{padding:0;border-style:solid;overflow:hidden}}
+.frame.pano{{grid-column:1 / -1;aspect-ratio:auto;padding:0;border-style:solid;overflow:hidden}}
+.frame.pano img{{width:100%;height:auto;object-fit:contain}}
 .frame.filled img{{width:100%;height:100%;object-fit:cover;display:block}}
 .item{{background:var(--surface);border:1px solid var(--line);border-radius:2px;
   box-shadow:var(--shadow);padding:1.05rem 1.15rem;margin:0 0 .65rem}}
@@ -152,6 +154,8 @@ def frames(block):
     for i, it in enumerate(block["items"]):
         cls = "frame wide" if (i == 0 and block.get("hero", True)) else "frame"
         if isinstance(it, dict) and it.get("file"):
+            if it.get("pano"):
+                cls = "frame pano"
             path = ROOT / it["file"]
             mime = mimetypes.guess_type(str(path))[0] or "image/jpeg"
             b64 = base64.b64encode(path.read_bytes()).decode()
