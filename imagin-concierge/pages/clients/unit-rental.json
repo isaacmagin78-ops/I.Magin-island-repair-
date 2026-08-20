@@ -55,10 +55,19 @@
           "caption": "The living room, looking through to the kitchen",
           "file": "assets/unit-living.jpg"
         },
-        "Kitchen — daylight",
-        "Primary bedroom",
-        "Bath",
-        "Balcony view"
+        {
+          "caption": "The kitchen",
+          "file": "assets/unit-kitchen.jpg"
+        },
+        {
+          "caption": "The bath",
+          "file": "assets/unit-bath.jpg"
+        },
+        {
+          "caption": "The view",
+          "file": "assets/unit-view.jpg"
+        },
+        "Bedroom — to be re-shot in daylight"
       ]
     },
     {

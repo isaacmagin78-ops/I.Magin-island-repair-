@@ -2127,3 +2127,46 @@ toward the entry** and the clutter is behind the camera instead of in front of i
 **Still unresolved:** the page subhead says "507-home community" while the Homes.com
 listing says 508. Left as-is on purpose — he has not chosen, and the county record
 is what decides it.
+
+### 2026-08-20 — The rental page is now a real listing page
+
+Eleven photos of the whole unit arrived. **Four are on the page**, cropped from the
+originals and embedded as data URIs (`imagin-concierge/pages/assets/`):
+
+| Frame | Source file | Why it made the cut |
+|---|---|---|
+| Hero — living room | `ec150c88` | sofa, floor lamp, through to the kitchen |
+| Kitchen | `7cb012d5` | galley, stainless, recessed light, the orchid |
+| Bath | `1817e7aa` | white tile, glass shower — the cleanest room in the set |
+| **The view** | `6c529ab9` | **high floor over the treetops to the high-rises — the actual selling point** |
+
+**One slot is deliberately still empty:** *"Bedroom — to be re-shot in daylight."*
+The bedroom frame exists (`a9f1a34e`) and was **left off on purpose** — the bed is
+unmade with laundry on it, and publishing that would cost more than an empty slot
+does. Say so rather than quietly shipping it.
+
+**Excluded, and the reason matters:** `2e542f1c` is a photograph of his MacBook
+displaying this Claude session; `a847edab` and `e62ac265` are storage and desk
+clutter; `a10abab3` is the second bedroom mid-use. None belong on a page he may
+share.
+
+### 🔑 The unlock, spotted in the corner of one screenshot
+
+His own typed note, visible on the laptop screen: **"Chloe had access to all the
+condo docs."**
+
+**Chloe is the building manager.** That means the declaration, the amendments, the
+easements and the rules — everything `DOCS-RETRIEVAL.md` lays out a county search
+for — **can most likely be had by asking her**, and he is already building her a
+hiring page for free.
+
+**This reorders that whole document.** The Broward Official Records route stays as
+the authoritative fallback, but **Step 0 is now: ask Chloe.** It costs one
+conversation with someone who already owes him a favour, and it answers the
+signage question — the one that decides whether the QR posters can hang in the
+common areas — faster than any title search.
+
+He also noted the building has its own web page that could be improved. Worth
+pairing with the Serhant paid-placement finding: **the association is being
+out-marketed on its own building by an out-of-area brokerage.** That is a pitch to
+the board, not just to a realtor.
