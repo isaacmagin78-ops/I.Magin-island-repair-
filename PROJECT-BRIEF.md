@@ -330,13 +330,21 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
   pointer to a room nobody else can enter.
   *(Phone number visible in the screenshot and deliberately not recorded — this
   repo is public.)*
-- **Evan Vernon** — Isaac's **neighbour**, a **builder**, and someone he
-  **trusts**. Recorded 2026-08-19 after Isaac said he had told sessions about
-  him before: a repo-wide search returned **zero hits**. He had. Nobody wrote
-  it down. Same failure as the creators and the Scott/Karil names.
-  ⚠️ The rest of that message was garbled by voice-to-text ("he has Moore and
-  he's don't trusted") and is **deliberately not guessed at**. What is certain:
-  neighbour, builder, trusted. Ask him for the rest rather than inventing it.
+- **Evan Berman** — ⚠️ **CORRECTED 2026-08-19.** An earlier entry today read
+  "Evan Vernon… someone he trusts." **Both halves were wrong.** The surname is
+  **Berman**, and Isaac's position is the opposite: **he does not trust him.**
+  The error came from guessing at a voice-to-text garble instead of asking —
+  exactly what this file warns against. Corrected within the hour.
+  **What is operationally true:** he is a **neighbour** and **sits on the
+  board** — which matters, because the Island Club work runs through that
+  board. **Do not share plans, pricing, client details or progress with him,
+  and do not assume board goodwill because Isaac is known in the building.**
+  🚫 **Isaac's fuller characterisation is deliberately not written here.** It
+  names conduct, it is his own read rather than established fact — he said so
+  himself — and this repository is **public**. Putting an unverified
+  allegation about a named private individual on a public GitHub is a real
+  exposure for *Isaac*, not for the person named. It belongs in Notion if
+  anywhere. The caution above carries everything a session actually needs.
 - **Rich** — spotted 2026-08-19 with a **handwritten paper sign** offering rides
   to Fort Lauderdale airport, 8:30–5, "personal service". A real business with
   no marketing at all. Same shape as the Bill Thomas / Thomas AC package in
