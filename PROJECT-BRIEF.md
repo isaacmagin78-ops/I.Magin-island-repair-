@@ -340,6 +340,35 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
   > is competing with the one person who could champion this. **Build the QR
   > gate map — a thing her page does not do — and build it so it makes her page
   > look better, not replaced.**
+  >
+  > ### Corrected again, 2026-08-19 — she is a potential collaborator, not a client
+  >
+  > **She is building that page for the management company *and for Evan
+  > Berman*** — the board member Isaac does not trust. **And she has told Isaac
+  > she is open to working with him.**
+  >
+  > **Isaac's play, in his words:** *"I'll build it, send it to her and let her
+  > take credit for it. I don't really care — the bigger picture's having her
+  > on our team."*
+  >
+  > **That instinct is right and it is the seeding method again:** deliver
+  > value, attach no ask, take no credit, play the long game. It is what
+  > converted Scott in two days after months of nothing.
+  >
+  > ⚠️ **One thing to see before doing it, not after.** If Isaac builds
+  > something and it goes out under her name, it lands with the management
+  > company **and with Evan Berman.** So the work reaches a man Isaac does not
+  > trust, with no credit, no contract and no leverage — and if it is good, it
+  > raises *Evan's* standing too. Giving up credit is Isaac's call and a fine
+  > one. **Giving it specifically to Evan is a different decision and should be
+  > made on purpose.**
+  >
+  > 🔒 **Deliberately not recorded here:** what Chloe said about her own
+  > employment plans. She is a private individual, this repository is public,
+  > and that information could cost her a job if it travelled. It belongs in
+  > Notion if anywhere. What a session needs is only this: **treat her as a
+  > potential collaborator, be useful, take no credit, and protect what she
+  > says in confidence.**
 - **Walter** — a contact Isaac treats as significant. **Nothing about him
   exists in this repo.** His own contact note reads: *"ChatGPT should have a
   whole file on him."*
