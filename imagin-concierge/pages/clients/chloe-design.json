@@ -1,0 +1,39 @@
+{
+  "title": "Chloe Is Hiring",
+  "brand": "built by I.Magin · draft for Chloe",
+  "headline": "A design company is hiring. <em>You'd never find it on a job board.</em>",
+  "subhead": "This is the page you send to somebody good instead of posting into a pile of five hundred applicants. It is already built — every blank on it is a question only Chloe can answer.",
+  "accent": {"light": "#A8456A", "dark": "#E8879E", "soft_light": "#F6E1E8", "soft_dark": "#3A1B26"},
+  "sections": [
+    {"kind": "facts", "heading": "The role", "items": [
+      {"label": "Position", "value": "", "blank": "Chloe to confirm"},
+      {"label": "Full / part time", "value": "", "blank": "Chloe to confirm"},
+      {"label": "In person / remote", "value": "", "blank": "Chloe to confirm"},
+      {"label": "Start", "value": "", "blank": "Chloe to confirm"},
+      {"label": "Pay range", "value": "", "blank": "Chloe to set"},
+      {"label": "Apply by", "value": "", "blank": "Chloe to set"}
+    ]},
+    {"kind": "frames", "heading": "The work", "hero": true, "items": [
+      "Hero — the best piece the studio has shipped",
+      "Project 2",
+      "Project 3",
+      "The studio / the desk",
+      "Chloe, at work"
+    ]},
+    {"kind": "prose", "heading": "Why a page beats a posting", "items": [
+      "A job posting puts a small studio in a queue behind every company with a recruiting budget, and buys back a stack of applicants who applied to two hundred other places the same afternoon.",
+      "A link does the opposite. You text it to the one person you already have in mind, or hand it to someone at an event, and they see the actual work, the actual terms, and a way to reply — in about twenty seconds, on their phone, before the moment passes.",
+      "Nothing on this page claims anything about the studio. The role, the terms and the pay are Chloe's to fill, and until she does they stay visibly blank."
+    ]},
+    {"kind": "items", "heading": "What it costs", "items": [
+      {"name": "This page, finished and live", "price": "$99", "note": "One page, real work, real terms, a link she can text to a candidate today."},
+      {"name": "The full setup", "price": "$499", "note": "A proper studio site with the portfolio, a contact form that reaches her phone, and Google, Instagram and Facebook set up to match."},
+      {"name": "Kept current", "price": "$299/mo", "note": "New work posted as it ships, roles opened and closed as they change. Cancel any month."}
+    ]},
+    {"kind": "cta", "heading": "Next step", "href": "mailto:isaacmagin78@gmail.com?subject=Chloe%27s%20hiring%20page%20—%20let%27s%20fill%20the%20blanks", "title": "Six answers and it's live today.", "note": "Position, hours, where, start, pay range, deadline — plus four or five images of the work. That is the whole brief. Nothing goes public under her studio's name until she says yes."}
+  ],
+  "footer_notes": [
+    "This is an unpublished draft made to show Chloe what her hiring page would look like. It makes no claim about her studio, its work, its terms or its pay."
+  ],
+  "fine": "DRAFT — NOT PUBLISHED ON CHLOE'S BEHALF.\nNO ROLE, RATE, DEADLINE OR PORTFOLIO CLAIM HAS BEEN INVENTED.\nEVERY BLANK STAYS BLANK UNTIL SHE FILLS IT."
+}

@@ -1611,3 +1611,751 @@ closed-palette rule is enforced in code** — light comes only from the brand's
 own primary/secondary over its background, and hue is never computed or cycled,
 so it structurally cannot produce a rainbow. Nothing existing was changed or
 removed; every diagnostic composition still stands.
+
+---
+
+## 2026-08-19 — Two clips arrived from his iPad. Audio could not be read in-session.
+
+**What he sent** (uploaded 2026-08-19 ~03:02 UTC, shot 2026-08-18 22:55 and
+22:59 local):
+
+| Clip | Length | Format |
+|---|---|---|
+| `3bba9167-video.MOV` | 10.4s | h264, 480×360, portrait (-90 displaymatrix), 24.9 fps, mono aac |
+| `6468c173-video.MOV` | 3:01 | h264, 480×360, portrait (-90 displaymatrix), 27.2 fps, mono aac |
+
+Both from an **iPad mini (A17 Pro), iPadOS 26.6**. Verified with `ffmpeg -i`
+(2026-08-19) — no `ffprobe` on this box; installed `imageio-ffmpeg` via pip to
+get a binary.
+
+**Verified by looking at frames:** a handheld interior walk-through — a unit
+door with a keypad lock, hallway, laundry pair, kitchen, closet, and a bench of
+glassware. Handheld, low light, motion-blurred. **Not a shot anyone framed** —
+raw capture, not footage.
+
+**Verified by listening: nothing.** There is a live mono voice track (mean
+−33.4 dB, peaks −1.8 dB — someone is talking), and it could not be transcribed
+here:
+
+- `huggingface.co` and `alphacephei.com` are **both blocked by this session's
+  egress policy** (curl → `000`), so faster-whisper / vosk cannot fetch a model.
+  Local transcription is not available in this environment. Do not retry — it
+  is a policy denial, not a flake.
+- The ElevenLabs MCP surface in this session exposes **no transcription tool**
+  (`creative_transcribe_audio` is not in the deferred list; speech generation
+  and agents only).
+- **Descript MCP is connected** (`import_media` → `export_transcript`) and is
+  the working path — but it uploads his footage to an external service, so it
+  needs his say-so first. Not done.
+
+**So: whatever these clips are about is still unknown to this repo.** The
+picture says walk-through; the words say something, and nobody has heard them.
+Do not infer the subject from the frames — ask him, or get the transcript.
+
+### 2026-08-19 — Isaac asked what separates concierge from consulting. Settled.
+
+**Consulting sells the thinking; concierge sells the doing.** Consulting ends
+when the answer is delivered and the client still has to execute it (the Thomas
+AC "Tactical Blueprint" in `DRIVE-FINDINGS.md` is exactly that). Concierge is
+paid to take the job off the client's plate — which is the half that recurs.
+
+**The tiers already exist and are live** — `imagin-concierge/index.html`,
+"Services & rates": **$99 Quick Win (one-off) · $499 Launch Kit (setup) ·
+$299/mo Autopilot (ongoing)**. He had forgotten where they were, not decided
+against them. Do not invent a new pricing ladder; this one is written, published
+and consistent with `REFERRAL-MESSAGE.md`.
+
+**New lead type he named (2026-08-19): airline pilots in his own building —
+three of them.** A pilot is away half the month with a home sitting empty. That
+is the Madison Moves buyer, not a marketing customer. Warm, in-person, no ad
+spend. Logged as a lead *type*; no names, units or building recorded here — the
+repo is public.
+
+**Unparsed:** the last line of his message came through voice-garbled
+("...find a way to make it feasible that we could end up dating"). Not guessed
+at, not acted on. Ask him before building anything on it.
+
+### 2026-08-19 — The resident QR board is not a new idea. It is built and sitting in Drive.
+
+**Verified live with `Google_Drive.search_files` on 2026-08-19** (not read from
+`DRIVE-FINDINGS.md` — re-checked against Drive itself):
+
+| File | Drive ID | Size |
+|---|---|---|
+| `resident-portal-airtable.html` | `1jVmeBBjYfO-8eSPEC9a5DPGfDO47NA2m` | 15,168 B |
+| `contractor-dashboard-airtable.html` | `1Rvn3rp9Z8aAM4rkp0mECHGsgT92xiySa` | 14,629 B |
+| `island-club-cuts-flyer.pdf` (Emilio, barber) | `1HWi8n82GRJucjDQFpf2PRkwzsAnGzW1i` | 65,967 B |
+| `island-club-cuts-site.html` | `1NOg0OG3t3lJPGjzp-7eACu_1tJDcUm92` | 367,863 B |
+
+Folder "Resident portal " (`19UJt4TSxqeQ5AnafoKB2rSgnkCQX5nQ1`), created
+2026-07-09. **Three blockers, all small:** create the Airtable base, fill
+`AIRTABLE_TOKEN`/`BASE_ID`, and host it — with the token behind a proxy or a
+write-only scoped key, never in client-side JS.
+
+**He also named a second resident vendor (2026-08-19): Marc, a handyman living
+in the building** — the natural first listing alongside Emilio. Lead type only;
+no contact details recorded, the repo is public.
+
+### ⛔ 2026-08-19 — He asked about a Legends Ranch "fan page" grown without their consent. The answer is no.
+
+**Verified from a screenshot he sent the same night:** Legends Ranch runs its own
+Facebook page (post 20w ago, `LongRangeLR.com` watermark) and **The Wildlife
+Center at Legends Ranch posted one day ago.** They are active operators of their
+own brand, not an absent one.
+
+Three reasons, in order of what actually costs him:
+
+1. **They would see it.** A client posting daily finds an unapproved page using
+   their name and logo, and that ends the account — worth more than the
+   followers.
+2. **One trademark complaint removes it.** The name and logo are theirs.
+3. **This repo holds no license for the Legends Ranch films.** `CLIP-LICENSING.md`
+   governs Tyson's Time footage only. Whether he may publish the ranch films on a
+   channel he controls **is not written down anywhere** — do not assume he can.
+
+**The version that works:** ask them for it. An active brand that posts its own
+content is the easy yes for "I'll run the channel, you approve everything" — and
+that is the consulting-to-concierge conversion, not a workaround.
+
+### 2026-08-19 — "Why can't we get things operational on the other agents?" The answer is hands, not brains.
+
+He runs agents in several places and is tired of re-naming them. **He should not
+have to.** Here is the roster, by the only thing that decides whether an agent
+can finish a job: what it can actually reach.
+
+| Where an agent lives | Can it touch his accounts? | What it is good for |
+|---|---|---|
+| ChatGPT (several named agents) | **No.** Text out, nothing else. | thinking, drafting, shaping an idea |
+| Perplexity | **No.** Reading the web only. | sourcing, current facts |
+| Claude Code — this session | **Yes.** Stripe, Drive, Airtable, Blotato, Notion, Gmail, Calendar, Vercel, the repo itself | doing |
+| `.claude/skills/` — `market-read`, `room-read`, `show-it` | **Yes** — they run inside this session | **his three already-operational agents** |
+
+**Nothing over there is "not working."** An agent with no keys cannot post, pay,
+render, schedule or commit — it can only hand back words. That is the entire
+difference, and it is not a quality gap.
+
+**The bridge is one paste, once per agent, not once per conversation.** No
+session here can read a ChatGPT or Perplexity thread — that is a real, permanent
+gap, not a missing feature. The moment an agent's job lands in this repo as a
+file, every future session can run it. That is exactly how `room-read` and
+`market-read` became real.
+
+**Deliberately not recorded:** the agent/company names he listed. It was not
+clear whether they name AI agents or real businesses, and this repo is public.
+Ask him which, then write them down once — don't make him say them a third time.
+
+### 2026-08-19 — The mystery QR exists. Built, published, and the code decodes.
+
+He asked for a code he could post anywhere in the building (**507 units, his
+number**) that lets whoever scans it "write their own destiny."
+
+**Built and verified 2026-08-19:**
+
+- **Landing page** — "Somebody Here Built This",
+  `https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`.
+  Four doors (a punch list, a film from a camera roll, a full setup, and one for
+  people who are only curious), each ending in a real price off the published
+  tier card — **$99 / $499 / $299 mo** — and `isaacmagin78@gmail.com`. No form,
+  no capture, no invented phone number, no fabricated results.
+- **Poster** (`qr-poster.png`, letter @ 300dpi) and a bare code
+  (`qr-code-only.png`), error-correction level **H** so it survives tape and
+  scuffing. **Both decoded back to the exact URL with `cv2.QRCodeDetector`** —
+  not assumed, read.
+
+**Two things gate it, and neither is code:**
+
+1. **The artifact is private until he shares it.** Unshared, every scan hits a
+   login wall and the whole walk is wasted. He shares it from the page's own
+   share menu — nothing here can do it for him.
+2. **Common-area posting is the association's call.** Taping flyers in a 507-unit
+   building without management's okay gets them torn down at best and puts a
+   resident in front of the board at worst. Ask first; it costs one conversation.
+
+**Design note for whoever touches this next:** the mystery lives on the *poster*.
+The *page* identifies him as a neighbor in the first line on purpose — an
+anonymous QR in a residential building reads as a scam, and a scam in his own
+building costs more than it could ever return.
+
+### 2026-08-19 — Live queue check, and the honest answer to "how many agents do we have marketing?"
+
+**Verified live with `blotato_list_schedules` (2026-08-19, ~06:30 UTC): 16 posts
+scheduled, 2026-08-19 17:00 UTC through 2026-08-22 23:00 UTC.** Four channels on
+a fixed daily rhythm — TikTok `49211` 17:00, Instagram `61044` 21:00, Threads
+`8305` 22:30, YouTube `42110` 23:00 — every one with media already sitting in
+`database.blotato.io/storage/...`. **The queue is not dry.** Do not repeat an
+older "runs dry" date as current; this supersedes it.
+
+**Agents doing marketing: zero.** Nothing writes, renders, uploads or schedules
+on its own. Two scheduled jobs exist — the watcher (`watch.yml`) and the morning
+routine — and neither touches marketing. The queue is full through Saturday
+because a session filled it by hand, which is exactly the gap this file has
+described since 2026-08-17.
+
+**Why it has not made money is visible in the captions, not in the cadence.**
+All 16 posts monetize the same two ways: "link in bio" to the **$19** kit, and
+Amazon Associate links. That is the thinnest possible ask, placed off-platform,
+on channels that penalize sending people away. More posting does not move it.
+For scale: **one $499 Launch Kit equals twenty-six kit sales.** The leverage is
+in the tier card, not in the feed.
+
+**Also this session:** the resident QR page was rebuilt around a board with three
+lanes — **Services · Selling something · Pets** — with an "add yourself, you
+approve your own line" action instead of a data-collecting form. **Republished to
+the same URL**, so any poster already printed keeps working.
+
+---
+
+## 2026-08-19 — Directed task run: directory, captions, records workflow
+
+Isaac asked for three things to be executed autonomously. All three are done.
+What was changed, and the three things he should know.
+
+### 1 · Resident board — six entries, live
+
+Republished to the **same URL**
+(`https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`), so every
+poster already printed still resolves.
+
+| # | Lane | Entry |
+|---|---|---|
+| 01 | Services | **Dolores** — Mail & Package Watch |
+| 02 | Services | **Theresa** — Senior Companion & Elderly Care |
+| 03 | Pets | **Theresa** — Dog Walking & Pet Sitting *(Luna's Balcony Buddy)* |
+| 04 | Selling something | **Theresa** — Royal Robes Loungewear & Homemade Bakery |
+| 05 | Services | **Madison** — Local Moving, Staging & Logistics |
+| 06 | Proposal | Community Dog Park & Amenity Upcycle |
+
+**Published deliberately thin:** first names only. **No phone numbers, no unit
+numbers, no addresses** — none were supplied and none were invented. Every entry
+routes through Isaac's email, which keeps neighbours' contact details off a public
+page and makes him the hub.
+
+Dolores's **drop-off point and appreciation link are rendered as open states**, not
+filled with a guess. Entry 06 is marked a proposal and explicitly states nothing is
+approved.
+
+> ⚠️ **The one thing to check.** The page tells a reader *"nothing goes up without
+> your say-so."* These six lines went up before this session saw any confirmation
+> that Dolores, Theresa or Madison approved their own wording. **Show each of them
+> their line before the QR is posted anywhere.** It costs three conversations and
+> it is the difference between a neighbourhood board and a neighbour problem.
+
+### 2 · Posting queue — all 16 captions rewritten
+
+Every scheduled post 2026-08-19 → 2026-08-22 across TikTok `49211`, Instagram
+`61044`, Threads `8305`, YouTube `42110`. **All 16 returned
+`Schedule updated successfully`; schedule `3553514` was re-read with
+`blotato_get_schedule` and confirmed changed in both `text` and `firstComment`.**
+
+- **Removed:** every `$19 First 30 Days Kit` call-to-action and its
+  `tysons-time-kit.vercel.app` link.
+- **Added:** a services CTA — **$99 one piece · $499 full setup** — positioning the
+  507-unit resident directory and QR board as the worked example.
+- **Kept unchanged:** all media URLs, all scheduled times, every dog story above
+  the CTA, all hashtags, YouTube titles, and the **Amazon Associate links and
+  their disclosure** (he asked to shift focus off the PDF, not to drop affiliate
+  income).
+- **Threads enforces a 500-character limit** — those four were rewritten shorter
+  rather than truncated. Sizes: 411 / 420 / 460 / 462.
+- One YouTube update (`3555184`) was refused once by the tool-permission
+  classifier and succeeded on retry. Nothing was skipped.
+
+> ⚠️ **Stated plainly, then done as asked.** Tyson's Time is a national
+> rescue-dog audience. A $499 local-website offer will convert poorly there and may
+> cost reach, because the ask no longer matches why anyone followed. The offer is
+> right; the audience is the wrong one for it. **The neighbours and the pilots in
+> his own building are the audience for $499 — they are local, warm, and already
+> standing in the elevator.** Watch the next four days' analytics before extending
+> this rewrite to any further posts.
+
+> **Deliberately not done:** the board's artifact URL was **not** put into any
+> caption. It is still private, so a public link would send every viewer into a
+> login wall. Once Isaac shares the artifact, that URL can go in the bio.
+
+### 3 · `DOCS-RETRIEVAL.md` — new file
+
+The exact route to the Royal Palm declaration, master common-element easements and
+signage covenants: BCPA parcel → Sunbiz legal name → Broward Official Records by
+name and document type → DBPR. Exact search strings included.
+
+Two honest limits are written into the file itself: **`officialrecords.broward.org`
+is blocked by this environment's egress proxy** (verified 2026-08-19), so nothing
+in it was executed and no instrument number is quoted; and **the association's legal
+name is unresolved** — "Royal Palm" tonight versus "Island Club" elsewhere in this
+repo — which Step 1 exists to settle.
+
+The file also flags the finding that matters most for the QR posters: **signage
+rules usually live in board-adopted rules and regulations, which are not recorded
+at the county.** The faster route is a §718.111(12) written records request to the
+association, not a title search.
+
+### 2026-08-19 (late) — Three client pages, a generator to stamp more, and the launch offer settled
+
+**The real deliverable is not three pages, it is `imagin-concierge/pages/build.py`.**
+One JSON brief in, one finished page out. A fourth client is a fourth JSON file,
+not an evening. That is what makes a $99 page profitable and a free tier survivable.
+
+| Page | URL | State |
+|---|---|---|
+| For-rent-by-owner (I.Magin Concierge mark) | `https://claude.ai/code/artifact/1f1021fa-38f8-4090-8e25-0028462fc4c9` | live, photo frames empty |
+| Ivan — used cars | `https://claude.ai/code/artifact/2a7d347a-1dfd-41c6-a387-cc3132fe4a8c` | **draft, not under his name** |
+| Marc — handyman | `https://claude.ai/code/artifact/ca8bb479-fb56-4a0d-ae0a-d6c2ebaf6fae` | **draft, not under his name** |
+
+QR cards generated for all three; **each decoded back to its exact URL with
+`cv2.QRCodeDetector`**, error-correction level H.
+
+**Verified by looking, not assuming.** Pages were rendered in the pre-installed
+headless Chromium and the screenshots read. Two real defects were found and fixed:
+the facts grid left an empty coloured cell when the item count didn't fill the last
+row (now hairline borders on the cells instead of gap-as-border), and the photo
+frames left an orphan tile (now hero + a clean 2×2). Note for the next session:
+**a screenshot taken without `--virtual-time-budget` comes out blank**, because the
+entry animation starts at `opacity:0` — that is a screenshot artefact, not a bug.
+Dark tokens were confirmed to apply (ground rendered `#0C1418` under
+`--force-dark-mode`); a full dark-theme screenshot was not obtained, since
+`headless_shell` ignored the flag on the run that rendered content.
+
+**No fact was invented on any of the three.** Every price, measurement, licence,
+phone number and address renders as a visible italic blank — `build.py` prints the
+blank count on every build so an unfinished page announces itself.
+
+### The launch offer — "free for the first hundred" was changed to ten
+
+Written up in `imagin-concierge/pages/README.md`. Short version: **a hundred free
+pages is a hundred units of his time at zero, and a scarcity offer that cannot fill
+is not scarcity — it reads as an empty room.** Ten, residents only, free only while
+listed on the resident board. The constraint pays for itself three ways: revisions
+are an elevator ride, ten filled slots is what makes the board worth scanning, and
+neighbours refer neighbours. The upgrade is inside the deliverable — the free page
+is the $99 Quick Win minus **their own phone number and a Google Business profile**,
+which is exactly what a business pays to stop being merely listed and start being
+found.
+
+**For realtors the offer is not a free tier at all:** *"Send me one listing's
+photos. I'll send back the page and a QR rider for the sign. $99 a listing."*
+**The yard-sign QR rider is the product** — a buyer at the curb scans it instead of
+finding an empty flyer box. `unit-rental` is the sample, and it is real work.
+
+### Still blocked, and it is the cheap one
+
+**The community-map QR cannot be built without the site plan.** No layout, building
+positions or amenity locations exist in this repo, and none will be invented. One
+photograph of the posted site map by the office unblocks it entirely — and Isaac is
+right that it is the QR management would welcome, because it solves their problem
+rather than advertising into their hallway.
+
+**Also still true:** the cleaned-up apartment photos went to Gemini, not here. This
+session has only the five "before" pictures from the morning, which is why the
+rental page ships with captioned empty frames rather than the wrong images.
+
+### 2026-08-19 (late) — Why the walkthrough failed. Two findings, both measured.
+
+Isaac told Gemini to keep his walkthrough real. It regenerated everything and
+returned about ten seconds. He is annoyed, and he is not the one who got it wrong.
+
+**Finding 1 — the file that reached this session was not the file he shot.**
+`ffmpeg -i` reports **480 × 360 at 723 kb/s**, while the clip's own metadata says
+`com.apple.quicktime.model: iPad mini (A17 Pro)`. **That device does not record
+480 × 360.** The footage was downscaled and re-encoded in transit — almost
+certainly by the app it was shared through. His original is probably fine. Before
+anyone concludes anything about his camera work again, **get the original**:
+AirDrop / Files / Drive at actual size, never a chat-thread attachment. A 3-minute
+1080p clip arriving at 19 MB has been compressed.
+
+**Finding 2 — the clip that did arrive contains no usable walkthrough.** Measured,
+not guessed: variance-of-Laplacian per second across all 181 seconds. **Only 26
+seconds (14%) clear a usable sharpness threshold**, and the sharpest run is six
+seconds of close-up glassware, plus a TV wall and a gallery wall. A stabilised
+20-second cut was actually built from the top-scoring window — `vidstabdetect` →
+`vidstabtransform`, cropped 9:16 and upscaled to 1080×1920 — and then **the frames
+were opened and looked at, which is the only reason the failure was caught.**
+
+> **Lesson worth keeping:** the sharpness metric picked a *close-up* as the best
+> window, because busy texture scores exactly like sharpness. **A number is not a
+> look.** The metric was confidently wrong and only the Read tool caught it. This
+> is the repo's "extract frames and actually look at them" rule earning its place.
+
+**And the plain explanation Isaac deserves:** a generative video model does not edit
+his video, it makes a new one. *"Keep it real"* is not a parameter it has. Handed
+footage it cannot use, generating is the only thing it can do. For his own footage
+the tool is one that **cuts** — ffmpeg, the same path that produced the five-photo
+film earlier tonight, where nothing can be invented because a cut cannot invent.
+
+**Written up as a reusable input spec:** `imagin-concierge/pages/SHOOTING-BRIEF.md`
+— send-the-original rule, AE/AF lock, hold five seconds per room, shoot it twice,
+and the room-by-room shot list. It is the input spec for the $99 page and for every
+client video, not just for his unit.
+
+### 2026-08-19 — Three new people he met, recorded before they evaporate
+
+Said in passing while he was moving between things. Written down because a name in
+a chat message is gone the moment the session ends.
+
+| Who | What they do | Why it matters |
+|---|---|---|
+| **Rich** | Wants to drive people around the community | A resident service — the next slot on the board. He has photos and a recording of the conversation, currently sitting with ChatGPT. |
+| **Chloe** | Building manager; also runs a design company and is hiring | **Page already built** — `clients/chloe-design.json` → `https://claude.ai/code/artifact/2eea24fc-8b84-4f27-a01e-6bf3b21169c8`. Blanks are hers to fill: role, hours, where, start, pay, deadline, plus four or five images of the work. |
+| **(name not captured)** | Financial services / auto compliance; already uses AI in his work; travels internationally | Wants to use what we have. **He is the first person who has asked for the Context OS unprompted** — worth a real conversation rather than a $99 page. |
+
+**Isaac could not recall the third man's name.** It is not written anywhere in
+this repo, and it has not been guessed at here. Get it from him and fill this row
+in — do not infer it from anything.
+
+**Deliberately not recorded:** personal details about any of the three, including
+anything about their households or their animals. This repo is public; that
+material belongs in Notion if it is kept at all.
+
+**Still the one blocking action:** the resident board
+(`https://claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`) and
+Chloe's page are both **private until he shares them**. Every link he sends before
+that lands on a login wall.
+
+### 2026-08-19 — Where Isaac actually thinks, and the voice gap
+
+**He said it plainly:** his best work happens **moving and away from a screen** —
+driving, walking Tyson, in the pool. Not at a desk. **Treat that as a working
+condition, not a preference.** The implication for every session: the most useful
+thing that can be handed to him is often something he can *hear and answer out
+loud*, not something he has to sit down and read.
+
+**What exists, checked live 2026-08-19 with `agents_list` and
+`agents_list_phone_numbers`:**
+
+| | |
+|---|---|
+| ElevenLabs agents in his workspace | **two** — `Isaac` (`agent_1901kq87dymefz7r6x0zxbzwej9b`, created 2026-04-27, **never called**) and `My Agent` (`agent_7101kpvtgb0tf5tr73p6nj1kxw5c`, one call, 2026-05-02) |
+| Phone numbers attached | **none** |
+| Knowledge base loaded with his context | not verified — assume empty until checked |
+
+**So the piece that is missing is small and specific:** a phone number on an
+agent, and this repo's context in its knowledge base. That turns "the Context OS"
+into a number he can call from the car — which is both the thing he keeps asking
+for and the most convincing demo the product could have.
+
+⚠️ **Costs money before it works.** A telephony number is a paid Twilio/SIP line
+and every call burns ElevenLabs credits. **Do not provision either without asking
+him first**, and give him the monthly figure before he agrees, not after.
+
+**Today, with zero setup and no new spend:** ChatGPT's live voice mode is the best
+hands-free conversation he already owns. Gemini Live and the Claude app's voice
+mode are the same shape. None of them can see this repo — which is exactly the gap
+the agent above would close.
+
+### 2026-08-19 — The building, finally identified, from a public listing
+
+Isaac sent Homes.com screenshots of his own building. This settles the name
+question flagged in `DOCS-RETRIEVAL.md`.
+
+**Island Club Condominiums** — *source: Homes.com building page, screenshotted
+2026-08-19. Not independently verified against county records.*
+
+| | |
+|---|---|
+| Address | **777 S Federal Hwy, Pompano Beach, FL 33062** (multiple addresses) |
+| Neighbourhood | Snug Harbor, on the Intracoastal canals |
+| Units | **508** |
+| Stories | 9 |
+| Year built | **1971** |
+| Value range | **$138K – $415K** |
+| Layouts | 630 sq ft 1BR → 1,144 sq ft 3BR; 1BR around **$210,000** |
+
+⚠️ **Unit-count conflict.** Isaac has said **507** all along; Homes.com says
+**508**. The resident board and the printed poster both currently say 507. The
+difference is trivial in conversation and not trivial in print — **the county
+record decides it**, not either of these. Until then, treat 507 as his figure and
+508 as the listing's, and do not silently overwrite one with the other.
+
+⚠️ **"Royal Palm" is still unexplained.** He used that name when asking for the
+declaration search. Every other source here, and this listing, says Island Club.
+`DOCS-RETRIEVAL.md` Step 1 still stands — ask him rather than assuming they are
+the same association.
+
+### 💡 The thing on that page worth more than the specs
+
+**A Serhant agent — Joann Madriz Farinas — is running paid placement on the Island
+Club building page**, badged *"agent experienced in this area,"* with a Contact
+button, over a building of 508 units.
+
+**That is an out-of-area brokerage paying a portal for the chance to look like a
+neighbour.** Isaac *is* the neighbour. He lives there, and he already has six
+residents listed on a board that portal cannot see.
+
+That asymmetry is the whole realtor pitch, and it is now evidenced rather than
+argued: the agent has an ad budget; Isaac has the front door, the elevator, and
+the mailroom. It also raises the value of the yard-sign QR rider idea — anyone
+paying Homes.com for these leads has an obvious reason to pay less for better ones.
+
+**Not recorded here:** the contact-card screenshot he also sent. It is personal and
+this repo is public.
+
+### 2026-08-20 — The rental page has its first real photo, and a bug worth not repeating
+
+He sent four photos of the cleaned-up unit. They arrived looking sideways because
+they carry **EXIF orientation 6** and the preview did not honour it — the files are
+fine; run `ImageOps.exif_transpose` before touching them.
+
+**One is now the hero of the rental page** (`assets/unit-living.jpg`, cropped from
+`ec150c88`): the sofa, the floor lamp, the doorway through to the kitchen, the TV
+wall. `build.py` was extended so a `frames` item can be
+`{"caption": ..., "file": ...}` and gets embedded as a **data URI**, keeping the
+published page self-contained. The other four frames stay honest empty slots.
+
+**Deliberately left out of the page:**
+
+- `f75659b7` — the desk shot. Open mail, documents, and **an iPad displaying this
+  very Claude session** are legible in it.
+- `3adde8e8` / `6deb2b2b` — same room, but the near third is desk clutter.
+
+> ### 🐛 The bug that produced two confidently wrong crops
+>
+> Files were selected with `sorted(glob(...), key=os.path.getmtime)[-4:]` and
+> **all four photos share the same mtime second.** Ties made the ordering unstable
+> between runs, so "index 1" was a different picture each time. A crop measured on
+> one image was applied to another — twice — and one output was a close-up of his
+> iPad screen.
+>
+> **Address media by filename, never by position in an mtime-sorted glob.** And it
+> was only caught by opening the result and looking at it, which is the same lesson
+> the sharpness metric taught yesterday: *a number is not a look.*
+
+**The photographic note he can act on in sixty seconds:** every one of the four was
+shot **from the office corner, across the desk**. The room behind it photographs
+well — white walls, high ceiling, the fan, the gallery wall, light off the balcony.
+It is only ever the near third that fails. **Stand at the balcony and shoot back
+toward the entry** and the clutter is behind the camera instead of in front of it.
+
+**Still unresolved:** the page subhead says "507-home community" while the Homes.com
+listing says 508. Left as-is on purpose — he has not chosen, and the county record
+is what decides it.
+
+### 2026-08-20 — The rental page is now a real listing page
+
+Eleven photos of the whole unit arrived. **Four are on the page**, cropped from the
+originals and embedded as data URIs (`imagin-concierge/pages/assets/`):
+
+| Frame | Source file | Why it made the cut |
+|---|---|---|
+| Hero — living room | `ec150c88` | sofa, floor lamp, through to the kitchen |
+| Kitchen | `7cb012d5` | galley, stainless, recessed light, the orchid |
+| Bath | `1817e7aa` | white tile, glass shower — the cleanest room in the set |
+| **The view** | `6c529ab9` | **high floor over the treetops to the high-rises — the actual selling point** |
+
+**One slot is deliberately still empty:** *"Bedroom — to be re-shot in daylight."*
+The bedroom frame exists (`a9f1a34e`) and was **left off on purpose** — the bed is
+unmade with laundry on it, and publishing that would cost more than an empty slot
+does. Say so rather than quietly shipping it.
+
+**Excluded, and the reason matters:** `2e542f1c` is a photograph of his MacBook
+displaying this Claude session; `a847edab` and `e62ac265` are storage and desk
+clutter; `a10abab3` is the second bedroom mid-use. None belong on a page he may
+share.
+
+### 🔑 The unlock, spotted in the corner of one screenshot
+
+His own typed note, visible on the laptop screen: **"Chloe had access to all the
+condo docs."**
+
+**Chloe is the building manager.** That means the declaration, the amendments, the
+easements and the rules — everything `DOCS-RETRIEVAL.md` lays out a county search
+for — **can most likely be had by asking her**, and he is already building her a
+hiring page for free.
+
+**This reorders that whole document.** The Broward Official Records route stays as
+the authoritative fallback, but **Step 0 is now: ask Chloe.** It costs one
+conversation with someone who already owes him a favour, and it answers the
+signage question — the one that decides whether the QR posters can hang in the
+common areas — faster than any title search.
+
+He also noted the building has its own web page that could be improved. Worth
+pairing with the Serhant paid-placement finding: **the association is being
+out-marketed on its own building by an out-of-area brokerage.** That is a pitch to
+the board, not just to a realtor.
+
+### 2026-08-20 — Exterior photos added, and the video-quality problem is solved
+
+**Seven real photos are now on the rental page**, in two sections:
+
+- **The home** — living room (hero), kitchen, bath, the balcony view, and the
+  still-honest empty bedroom slot.
+- **The building** — the pool from above (hero), the grounds, and the long look
+  out over the marina to the skyline.
+
+Sources, by filename: `ec150c88` · `7cb012d5` · `1817e7aa` · `2d92e224` ·
+`890b1210` · `46294396` · `e3548fe8`. All embedded as data URIs; the page is
+2.8 MB and self-contained, well inside the 16 MB artifact ceiling.
+
+> ### ✅ The camera problem from 2026-08-19 is fixed, and here is the proof
+>
+> Two clips arrived today: **`IMG_3292.MOV` and `IMG_3293.MOV` — 1920×1080 HEVC,
+> ~60 fps, ~13–14 Mb/s, `com.apple.quicktime.model: iPhone 17 Pro`.** One
+> landscape, one portrait (`displaymatrix -90`).
+>
+> **Compare with yesterday: 480×360 at 723 kb/s.** Same person, same building,
+> **~19× the bitrate.** This confirms the diagnosis in `SHOOTING-BRIEF.md` — his
+> camera was never the problem, the *transfer* was. Files that arrive through the
+> chat as originals are full quality. **Whatever route yesterday's clip took, do
+> not use it again.**
+>
+> Content note: both clips are Tyson meeting a German Shepherd on a brick
+> walkway — **Tyson's Time material, not property footage.** The portrait one is
+> already the right shape for a vertical post.
+
+**Also received and not used on the page:** Tyson at the beach (a genuinely strong
+frame for the dog account) and Tyson on the sofa. Kept out of the rental listing
+on purpose — a dog in a listing photo narrows the audience.
+
+### 2026-08-20 — The resident board now shows the building, not just a list of names
+
+He photographed the common areas. **Three are now on the board** under *"What's
+actually in this building"* — **the laundry room** (`1a93516e`), **the storage
+cages** (`c5cb27ee`), and **the pool** (`890b1210`) — with a line saying they were
+shot this week by a resident and inviting corrections.
+
+**Why this matters more than it looks:** a directory of six names is a flyer. A
+directory that also shows a stranger what the laundry room and the storage cages
+actually look like is a **resource**, and a resource is what gets scanned, what
+gets forwarded, and what makes the association glad it exists rather than annoyed.
+It is also the honest version of the "community map" he asked for — no site plan
+required.
+
+Source of truth for the page is now committed at
+`imagin-concierge/pages/resident-board.html`; it had only ever existed in the
+scratch directory before this.
+
+### 🔎 Two things in these photos worth acting on
+
+1. **The elevator panel reads `PH`** (`7ed828d8`). If his unit is on the penthouse
+   floor, that is a listing fact and a pricing fact — and it is **not confirmed
+   anywhere in this repo.** Ask him; do not write it onto the rental page until he
+   says so.
+2. **The roof shots are the best skyline material he owns** (`bbf92ed4`,
+   `285cde49`, `f353a0e8`) — Intracoastal, boats, the high-rise line at dusk, shot
+   from above the parapet. Wasted on a rental listing. That is **video-engine
+   material**, and it is the establishing shot any Pompano/Fort Lauderdale piece
+   has been missing.
+
+**Roof access caution, said before rather than after:** photographs taken on a
+condominium roof are fine; *publishing* an invitation to go up there is not. Roofs
+are limited common elements with real liability attached. Use the pictures, never
+put "go to the roof" on a page any resident can scan.
+
+### 2026-08-20 (late) — The establishing shot, and four clips that are queue-ready
+
+**`ead12e5a` is the best photograph in the entire set** and is now the third frame
+in *The building*: yachts on the canal, palms, waterfront houses, the high-rise
+line and a strip of ocean behind. It replaced the weaker street shot. **That image
+is the South Florida establishing frame the video engine has never had** — use it
+for far more than a rental page.
+
+**Four Tyson clips are now in hand at full quality**, all `iPhone 17 Pro`,
+all vertical or convertible:
+
+| File | Length | Format | Content |
+|---|---|---|---|
+| `IMG_3292.MOV` | 15.4s | 1920×1080, 60 fps | Tyson meets a German Shepherd |
+| `IMG_3293.MOV` | 16.5s | 1920×1080, 60 fps, portrait | same, vertical |
+| `IMG_1100.mov` | 24.4s | 1920×1080, 30 fps, portrait | Tyson in a Dolphins jersey |
+| `IMG_1102.mov` | 23.3s | 1920×1080, 30 fps, portrait | Tyson at the slow-feeder bowl |
+
+**This is the first time real, uncompressed footage has reached a session.** The
+posting queue's media is all older material sitting in Blotato storage; these four
+are better and are the right shape already. Refreshing the queue with them is a
+real, bounded job — **but it uploads new media to a live posting system, so ask
+him before doing it.**
+
+**The roof frames** (`5011bb9b`, `a6e97423`, `285cde49`, `effe81a5`, `a9c618e0`)
+are a usable establishing library: parapet, AC units, the Intracoastal, the
+skyline at dusk. Same caution as before — use the pictures, never publish an
+invitation to go up there.
+
+### 2026-08-20 — The panorama, and a note about stopping
+
+**`a9c618e0-IMG_1104.jpeg` is an 8000 × 2723 rooftop panorama** — the full sweep
+west over the Intracoastal, the skyline catching sunset, framed by the curve of
+the parapet. It is now the opening banner of *The building* on the rental page,
+and `build.py` gained a `"pano": true` frame type to carry it at its own aspect
+ratio instead of cropping it to 4:3.
+
+**This is the single strongest image in the entire library** and should not stay
+on a rental page. It is the establishing frame for anything set in Pompano or
+Fort Lauderdale.
+
+### 📸 The library is now full. The bottleneck moved.
+
+Counting only what reached this session on 2026-08-19/20: **roughly forty
+photographs** — the unit room by room, the pool, the grounds, the laundry, the
+storage cages, the elevator lobby, the roof from every angle, two panoramas, the
+canal — **plus four full-quality iPhone 17 Pro clips.**
+
+**That is more than enough for every page and video currently planned.** Nothing
+downstream is waiting on another photograph.
+
+**What everything is now waiting on is small and human:**
+
+1. **Hit share** on the resident board and on Chloe's page. Until then both are
+   login walls.
+2. **Six answers each** from Chloe, Marc and Ivan, and the pages go live.
+3. **Ask Chloe for the condo docs** — she has them.
+4. **Confirm the `PH` floor** so the rental page can say it.
+5. **Say go** on refreshing the posting queue with the four new clips.
+
+**A future session should notice the pattern rather than repeat it:** collecting
+material is the comfortable part and it is now finished. **Do not ask him for more
+photographs.** Point at the five items above.
+
+### 2026-08-20 — Laundry punch list, for tomorrow's install
+
+Washer and dryer arrive tomorrow. He needed something to send his mother and
+Jared tonight. **Built and published:**
+`https://claude.ai/code/artifact/0c3dc0eb-8f86-4f39-873a-0e34cda693fc`
+(source committed at `imagin-concierge/pages/laundry-punch-list.html`).
+
+Four sections, every item tickable, ticks saved to `localStorage` on the reader's
+own device: **check tonight** (Isaac), **delivery day** (Jared & Mom), **laundry
+area organised** (Madison), and **still open from Joe's punch**.
+
+> ### ⚠️ Two flags raised from the photographs, and they are the point of the page
+>
+> 1. **The receptacle in the closet appears to be a standard 120-volt duplex.** A
+>    conventional electric dryer needs a **240 V / 30 A** outlet. If tomorrow's
+>    dryer is a normal electric one, it cannot be plugged in — a wasted delivery
+>    plus an electrician. If it is a **ventless combo or gas**, 120 V is right.
+> 2. **No dryer vent is visible anywhere in either photograph.** A vented dryer
+>    needs a 4-inch duct to outside. Either the unit is ventless, or a duct exists
+>    out of frame.
+>
+> **Both are checkable tonight from a model number and neither has been assumed
+> here.** These are the two failures that most often turn an install day into a
+> second install day.
+
+**What the photos confirm is already done:** plywood-lined alcove, white drain pan
+seated, recessed supply box with hot and cold valves, standpipe, upper shelf
+stocked, cabinet doors hung.
+
+**From Joe's punch:** the grout and caulk along the wall-to-floor line is done and
+looks continuous. **Still open — a dark unfinished gap where the wall meets the
+cabinet run**, visible in the second photo he sent; it is the only thing in frame
+that still reads unfinished.
+
+**Not assumed anywhere on the page:** no measurement, model number, price or date.
+Every one of those is a tick box for a human to fill.
+
+**Update, same evening — the machines are Miele, ventless.** That resolves both
+flags above and the punch list was rewritten around it (same URL):
+
+- **120 V is correct.** Miele compacts run on a standard outlet; the receptacle in
+  the closet is right, not a problem.
+- **Nothing to vent.** The T1 is a heat-pump dryer.
+- **The replacement gotcha, and it is the real one: condensate.** A heat-pump
+  dryer pulls water out of the load and either drains it to the standpipe or
+  fills an internal tank somebody has to empty every few loads. **Plumbing it is
+  five minutes while the installer is standing there and nobody thinks of it
+  until they have gone.**
+- **Transit bolts** — Miele washers ship with drum-locking bolts that must come
+  out before the first run **and be kept** for any future move.
+- Added checks for the **stacking kit** being on the delivery rather than ordered
+  after, and for whether the W1 model is **cold-fill only**.
+
+⚠️ **Miele specifics here are general to the compact W1 / T1 line, not read off
+these machines' spec sheet** — the page says so in its own footer. Isaac is
+sending the model information; check it against that when it arrives.

@@ -1,0 +1,103 @@
+{
+  "title": "Ivan Sells Cars",
+  "brand": "built by I.Magin · draft for Ivan",
+  "headline": "Ivan has been selling cars for years. <em>Online, he doesn't exist.</em>",
+  "subhead": "This is that page, already built. Every blank on it is a question only Ivan can answer — and the whole thing goes live the same day he answers them.",
+  "accent": {
+    "light": "#9A5B12",
+    "dark": "#F0A868",
+    "soft_light": "#F6E6D3",
+    "soft_dark": "#3A2716"
+  },
+  "sections": [
+    {
+      "kind": "facts",
+      "heading": "The lot",
+      "items": [
+        {
+          "label": "Cars in stock",
+          "value": "",
+          "blank": "Ivan to confirm"
+        },
+        {
+          "label": "Years selling",
+          "value": "",
+          "blank": "Ivan to confirm"
+        },
+        {
+          "label": "Financing",
+          "value": "",
+          "blank": "Ivan to confirm"
+        },
+        {
+          "label": "Trade-ins",
+          "value": "",
+          "blank": "Ivan to confirm"
+        },
+        {
+          "label": "Warranty",
+          "value": "",
+          "blank": "Ivan to confirm"
+        },
+        {
+          "label": "Where",
+          "value": "",
+          "blank": "Ivan to confirm"
+        }
+      ]
+    },
+    {
+      "kind": "frames",
+      "heading": "The inventory",
+      "hero": true,
+      "items": [
+        "Hero — the lot, or the best car on it",
+        "Vehicle 1 — front three-quarter",
+        "Vehicle 1 — interior",
+        "Vehicle 2 — front three-quarter",
+        "Ivan, at work"
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What this page does for him",
+      "items": [
+        "A used car is bought by someone sitting in a parking lot on their phone, deciding whether the seller is real. That decision takes about four seconds and it happens before anyone picks up a call.",
+        "Right now that search returns nothing, so the buyer scrolls to a dealership with a website and a photo of a building. The car was never the problem.",
+        "This page is the four seconds. A face, a lot, a number, and stock that looks photographed rather than snapped. Nothing here is a claim about Ivan's business — every figure above is his to give, and until he does it stays visibly empty."
+      ]
+    },
+    {
+      "kind": "items",
+      "heading": "What it costs him",
+      "items": [
+        {
+          "name": "This page, finished and live",
+          "price": "$99",
+          "note": "One page, real photos, his phone number, found on his name in a search. Done in a day."
+        },
+        {
+          "name": "The full setup",
+          "price": "$499",
+          "note": "Multi-page site with the inventory, a form that reaches his phone, and Google, Instagram and Facebook set up to match so the lot shows up on a map."
+        },
+        {
+          "name": "Kept current",
+          "price": "$299/mo",
+          "note": "Stock swapped as it sells, posts written and scheduled. Cancel any month, no contract."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Next step",
+      "href": "mailto:isaacmagin78@gmail.com?subject=Ivan%27s%20page%20—%20let%27s%20fill%20the%20blanks",
+      "title": "Ten answers and it's live.",
+      "note": "Stock count, years, financing, trade-ins, warranty, address, phone, and six photos. That is the entire brief. Nothing goes public under Ivan's name until Ivan says yes."
+    }
+  ],
+  "footer_notes": [
+    "This is an unpublished draft made to show Ivan what his page would look like. It carries no claims about his business and is not live anywhere under his name."
+  ],
+  "fine": "DRAFT — NOT PUBLISHED ON IVAN'S BEHALF.\nNO INVENTORY, PRICE, PHONE NUMBER OR ADDRESS HAS BEEN INVENTED.\nEVERY BLANK STAYS BLANK UNTIL IVAN FILLS IT."
+}

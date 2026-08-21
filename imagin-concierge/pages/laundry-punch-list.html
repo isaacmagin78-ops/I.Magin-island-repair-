@@ -1,0 +1,177 @@
+<title>Laundry Punch List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Newsreader:opsz,wght@6..72,300;6..72,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--ground:#EDF1F1;--surface:#FFF;--surface-2:#E1E8E8;--line:#C5D2D2;--text:#121D22;
+--muted:#5C6F76;--accent:#0E8C86;--accent-soft:#D3ECEA;--flag:#A8410F;--flag-soft:#FBE7DC;
+--shadow:0 1px 0 rgba(18,29,34,.06),0 12px 30px -18px rgba(18,29,34,.5)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#0C1418;--surface:#14232B;
+--surface-2:#1B2E37;--line:#28414C;--text:#E6EEEE;--muted:#8AA3AC;--accent:#3FC8C2;
+--accent-soft:#12343A;--flag:#F0A868;--flag-soft:#3A2716;--shadow:0 16px 40px -22px #000}}
+:root[data-theme="dark"]{--ground:#0C1418;--surface:#14232B;--surface-2:#1B2E37;--line:#28414C;
+--text:#E6EEEE;--muted:#8AA3AC;--accent:#3FC8C2;--accent-soft:#12343A;--flag:#F0A868;
+--flag-soft:#3A2716;--shadow:0 16px 40px -22px #000}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--text);font-family:"Newsreader",Georgia,serif;
+font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:36rem;margin:0 auto;padding:clamp(1.6rem,6vw,3rem) clamp(1.1rem,5vw,2rem) 4rem;
+display:flex;flex-direction:column;gap:2.2rem}
+.mast{border-bottom:2px solid var(--text);padding-bottom:1.4rem}
+.mark{display:flex;align-items:center;gap:.7rem;margin:0 0 1.1rem}
+.wordmark{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;font-size:1.05rem;
+letter-spacing:.06em;color:var(--text)}
+.mark .rule{flex:none;width:1.6rem;height:2px;background:var(--accent)}
+.disc{font-family:"Newsreader",Georgia,serif;font-style:italic;font-size:1rem;color:var(--muted)}
+.stamp{font-family:"JetBrains Mono",monospace;font-size:.63rem;letter-spacing:.1em;
+text-transform:uppercase;color:var(--muted);margin:1.1rem 0 0}
+.stamp b{color:var(--text);font-weight:400}
+.kick{font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.18em;
+text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.6rem;margin:0}
+.kick::after{content:"";flex:1;height:1px;background:var(--line)}
+h1{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;
+font-size:clamp(1.9rem,8.5vw,2.7rem);line-height:1.05;letter-spacing:-.025em;margin:.6rem 0 0;
+text-wrap:balance}
+.sub{margin:.8rem 0 0;color:var(--muted);max-width:34ch}
+h2{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:600;font-size:1.15rem;
+letter-spacing:-.015em;margin:0 0 .3rem}
+.who{font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.14em;
+text-transform:uppercase;color:var(--accent);margin:0 0 .9rem;display:inline-block;
+border:1px solid var(--accent);border-radius:2px;padding:.2rem .5rem}
+.flag{background:var(--flag-soft);border:1px solid var(--flag);border-radius:2px;
+padding:1rem 1.1rem;margin:0 0 .8rem}
+.flag.ok{background:var(--accent-soft);border-color:var(--accent)}
+.flag.ok h3{color:var(--accent)}
+.flag h3{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:600;font-size:1rem;
+margin:0 0 .4rem;color:var(--flag)}
+.flag p{margin:0;color:var(--text);font-size:.96rem}
+ul.list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.45rem}
+ul.list li{background:var(--surface);border:1px solid var(--line);border-radius:2px;
+box-shadow:var(--shadow)}
+label{display:flex;gap:.8rem;align-items:flex-start;padding:.8rem .95rem;cursor:pointer}
+input[type=checkbox]{flex:none;width:1.15rem;height:1.15rem;margin:.15rem 0 0;
+accent-color:var(--accent);cursor:pointer}
+.txt{font-size:.99rem;line-height:1.45}
+.txt b{font-weight:400;color:var(--text)}
+.txt span{display:block;color:var(--muted);font-size:.88rem;margin-top:.2rem}
+input:checked + .txt{opacity:.45;text-decoration:line-through}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:0 0 1rem}
+.pics figure{margin:0;border:1px solid var(--line);border-radius:2px;overflow:hidden;
+background:var(--surface)}
+.pics img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.pics figcaption{padding:.5rem .7rem;font-family:"JetBrains Mono",monospace;font-size:.6rem;
+letter-spacing:.06em;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);font-size:.88rem}
+.fine{font-family:"JetBrains Mono",monospace;font-size:.64rem;line-height:1.7;opacity:.85}
+code{font-family:"JetBrains Mono",monospace;font-size:.85em;background:var(--surface-2);
+padding:.1rem .3rem;border-radius:2px}
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="mark">
+    <span class="wordmark">I.MAGIN</span>
+    <span class="rule"></span>
+    <span class="disc">Concierge</span>
+  </div>
+  <p class="kick">PH3 &middot; Island Club &middot; 777 S Federal Hwy</p>
+  <h1>Laundry &mdash; install day.</h1>
+  <p class="sub">Miele ventless pair going in this morning. The closet is finished: pan seated, valves and standpipe in, shelf stocked. Below is what still needs a pair of eyes, who it belongs to, and the one Miele detail that gets missed once the truck pulls away.</p>
+  <p class="stamp">Prepared for <b>Jared</b> and <b>Mom</b> &middot; on site: Fernando</p>
+</header>
+
+<section>
+  <h2>Right now, while they are still here</h2>
+  <p class="who">Isaac</p>
+
+  <div class="flag ok">
+    <h3>Resolved &mdash; it's a Miele ventless pair.</h3>
+    <p>That answers both of the things that would have wrecked tomorrow. Miele's compact machines run on a <b>standard 120-volt outlet</b>, so the plug in the closet is right. And the dryer is a <b>heat pump</b>, so there is nothing to vent &mdash; no duct needed. The rough-in already in that closet matches what the machines want.</p>
+  </div>
+
+  <div class="flag">
+    <h3>The one Miele thing that catches people: the condensate.</h3>
+    <p>A heat-pump dryer pulls water out of the clothes and has to put it somewhere. There are two ways: <b>plumb the condensate hose into the standpipe</b>, or leave it collecting in the internal tank and <b>empty that tank by hand every couple of loads</b>. Plumbing it is a five-minute job for the installer <em>while they are already there</em>, and nobody thinks about it until they are gone. Decide before they leave.</p>
+  </div>
+
+  <ul class="list">
+    <li><label><input type="checkbox"><span class="txt"><b>Write down both Miele model numbers</b><span>W1 washer and T1 dryer numbers. Everything below gets checked against their spec sheet, not against a guess.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Measure the opening against the spec</b><span>Miele compacts are about 24 inches wide. Measure the closet width, the depth, and the height under that shelf &mdash; and check depth again with the door open.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Stacked or side by side?</b><span>If stacked, the Miele stacking kit is a specific part &mdash; confirm it is on the delivery, not something to order after.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Check whether the washer wants hot and cold, or cold only</b><span>Some Miele W1 models are cold-fill. Both valves are there either way, but it changes what gets hooked up.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Measure the path in</b><span>Front door, hallway corners, service elevator. A machine that fits the closet can still fail the turn.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Book the service elevator</b><span>Most buildings require it, plus a certificate of insurance from the installer. Chloe can confirm what this one wants.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Turn both valves on and off</b><span>Watch the stems for weeping. Far easier to fix today than with a washer in front of them.</span></span></label></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Delivery day</h2>
+  <p class="who">Jared &amp; Mom &middot; while the installers are here</p>
+  <ul class="list">
+    <li><label><input type="checkbox"><span class="txt"><b>Transit bolts out &mdash; and kept</b><span>Miele washers ship with bolts through the back that lock the drum. Running it with them in destroys the machine. They also need to go back in if it is ever moved, so put them on the shelf, don't bin them.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Condensate handled &mdash; decide before they leave</b><span>Either the dryer's condensate hose goes into the standpipe, or somebody empties the tank every few loads. Ask them to plumb it while they are here.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Machine sits fully inside the drain pan</b><span>Not half on the lip. That pan is the only thing between a leak and the ceiling below.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Drain hose secured into the standpipe</b><span>Hooked and tied so it cannot jump out mid-cycle. Do not let it just rest in the pipe.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Steel braided supply hoses, not rubber</b><span>Rubber hoses are the most common cause of condo flood claims there is. If they hand you black rubber, ask for braided.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Both machines levelled</b><span>Push each corner. Any rock at all and a spin cycle walks the machine across the closet.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Stacking bracket fitted, if stacked</b><span>A dryer stacked on a washer without the kit is genuinely dangerous.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Doors clear the cabinet and the fridge</b><span>Open both fully before the installers leave.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Run a rinse-and-spin before they go</b><span>Fifteen minutes. Then put a hand behind and underneath and feel for water. This is the entire reason somebody is standing there.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Photograph the back before it is pushed in</b><span>Hoses, plug, condensate line. Worth having if anything ever leaks.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Manuals and receipt onto the shelf</b><span>Not into a drawer.</span></span></label></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Laundry area, organised</h2>
+  <p class="who">Madison &middot; once the machines are in</p>
+  <ul class="list">
+    <li><label><input type="checkbox"><span class="txt"><b>Shelf sorted into wash / dry / clean-up</b><span>Detergent and softener together, dryer sheets together, paper towels at the end.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Keep the original bottles</b><span>Nothing decanted, nothing labelled. This is a working closet behind a door, not a display.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Heavy jugs back from the shelf edge</b><span>That Clorox jug is right at the front. One knock and it is on the machine.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>A hamper that fits with the door shut</b><span>Measure before buying anything.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Everyday things at hand height</b><span>Dryer sheets and stain stick within reach of the machine, not on the high shelf.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Before and after photo</b><span>It is a real portfolio piece for her.</span></span></label></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Still open from Joe's punch</h2>
+  <p class="who">Joe &middot; confirm before sign-off</p>
+  <ul class="list">
+    <li><label><input type="checkbox" checked><span class="txt"><b>Grout line crack &mdash; closed</b><span>Confirmed gone by Isaac, 21 Aug. Caulk and grout along the wall-to-floor line reads clean and continuous.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Crack at the vent &mdash; still open, needs an answer</b><span>Reported by Isaac and not yet resolved. Nobody has photographed it for this list, so it is recorded as reported, not as inspected. <b>Fernando: which vent, where exactly, and is it the tile, the grout, or the vent housing itself?</b> One photo settles it.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Open gap at the top of the wall</b><span>A dark unfinished gap where the wall meets the cabinet run. It needs closing or trimming out &mdash; the one thing that still reads unfinished.</span></span></label></li>
+  </ul>
+</section>
+
+<footer>
+  <p><b>The rest of the home punch list.</b> The full room-by-room list &mdash; laundry, both baths, both bedrooms, kitchen and bar, living, entry, balcony, building access &mdash; lives in the punch list tool at <code>concierge-systems/punchlist.html</code>. <b>The items typed into it are saved in the browser they were entered on, not in a file</b>, so they are not visible from here. Open it on that device and the list is still there; send me a screenshot and it comes into this one.</p>
+  <p><b>The short version:</b> transit bolts out and kept, condensate plumbed into the standpipe before anyone leaves, machine fully inside the pan on braided hoses, and a full rinse-and-spin run dry while there is still somebody here to fix it.</p>
+  <p class="fine">PREPARED BY I.MAGIN CONCIERGE &middot; PH3, ISLAND CLUB<br>
+    TICKS SAVE ON THIS DEVICE ONLY &mdash; THEY ARE NOT SHARED BETWEEN PHONES.<br>
+    NO MEASUREMENT, MODEL OR PRICE ON THIS PAGE HAS BEEN ASSUMED.<br>
+    WRITTEN FROM PHOTOGRAPHS OF THE CLOSET, NOT FROM AN INSPECTION.<br>
+    MIELE DETAILS ARE GENERAL TO THE COMPACT W1 / T1 LINE &mdash; CHECK THE SPEC SHEET FOR THESE MODELS.
+  </p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var KEY = "laundry-punch-v1";
+  var boxes = [].slice.call(document.querySelectorAll('input[type=checkbox]'));
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || "[]");
+    boxes.forEach(function(b, i){ b.checked = !!saved[i]; });
+  } catch (e) {}
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){
+      try {
+        localStorage.setItem(KEY, JSON.stringify(boxes.map(function(x){ return x.checked; })));
+      } catch (e) {}
+    });
+  });
+})();
+</script>
