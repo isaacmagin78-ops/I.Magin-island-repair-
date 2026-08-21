@@ -2397,3 +2397,44 @@ and every person recorded this week.
 > **The lesson, for whoever reads this next:** writing it down is only half. **A
 > file on an unmerged branch is as invisible as a chat message.** Merge before the
 > session ends, or the work did not happen.
+
+### 2026-08-21 — The PH3 punch list is live, and one number on it needs deciding
+
+**It was never lost.** It is deployed at **`ph3-punchlist.vercel.app`** — rooms,
+per-item owners (JARED / IKE / BUILDING), before-and-finished photo slots. Isaac
+screenshotted it today. Items visible include: island pop-up outlet cutout and
+patch, laminate patch by the bar (donor-plank swap), bar lights will not dim,
+second-bedroom outlet with no cover plate, dead top plug in the primary bedroom,
+open plumbing hole behind the tub, baseboard stopping short, and a tub crack to
+be photographed before anyone touches it.
+
+> ### 📐 The elevator: the panels do not fit, and here is the arithmetic
+>
+> The list carries two linked items — *"The door wall — four panel over five
+> panel"* marked **BLOCKED BY ELEVATOR CLEARANCE**, and *"Cab interior and clear
+> door opening"*, which calls a **91″ panel against a ~36″ × 84″ opening "razor
+> thin."**
+>
+> **Computed, not estimated:**
+>
+> | | |
+> |---|---|
+> | Panel | 27″ × 91″ |
+> | Clear door opening | 36″ × 84″ |
+> | Upright | **7″ too tall** |
+> | Rotated flat, every angle 0–90° | **does not fit at any angle** |
+> | Opening's corner-to-corner diagonal | **91.39″** vs a 91″ panel |
+> | Margin on the diagonal | **0.39″** — and that treats the panel as having *zero thickness* |
+>
+> **So the panel only goes in tipped in three dimensions, with under four-tenths
+> of an inch of theoretical margin before panel thickness is counted at all.**
+> Anything thicker than about ⅜″ consumes the entire margin. **The instinct on the
+> list — ask the building whether the cab has a removable ceiling hatch — is
+> exactly right, and it is not optional.** It is the only route that is not a
+> stair carry or a re-fabrication.
+>
+> `renovation-dashboard.csv` already names this as the project's top risk:
+> *"oversized panels may not clear the elevator car, forcing a stair carry or
+> re-fabrication."* **This confirms it arithmetically.** Settle the hatch question
+> **before the panels are ordered**, not when the truck arrives — the dashboard
+> puts $95K–$130K of contract behind it and panels set in September.
