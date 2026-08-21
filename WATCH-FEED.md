@@ -184,3 +184,17 @@ file exists.
 - **Dan Martell** — [Should you skip, read, or study these books if you're a young entrepreneur?](https://www.youtube.com/watch?v=72DxhqI_50I) · published 2026-08-21
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-21 19:35 UTC
+
+**Who posted**
+- **Alex Hormozi** — [The work for free cheat sheet:](https://www.youtube.com/watch?v=fwF_G78FgIo) · published 2026-08-21
+- **Alex Hormozi** — [How Do I Know I've Made the Right Call?](https://www.youtube.com/watch?v=770GoqqMOos) · published 2026-08-21
+- **Sabrina Ramonov** — [The Fastest AI Service to Sell as a Beginner](https://www.youtube.com/watch?v=fNEqKgIBi6E) · published 2026-08-21
+- **Alex Hormozi** — [What to do if a customer says they have to talk to their wife first...](https://www.youtube.com/watch?v=CL__a6raVjA) · published 2026-08-21
+- **Dan Martell** — [Which of these things are ASSETS or LIABILITIES?](https://www.youtube.com/watch?v=fPrFyP9DIas) · published 2026-08-21
+- **Sabrina Ramonov** — [5 ChatGPT Privacy Settings You Should Review](https://www.youtube.com/watch?v=O-xjgY58YfE) · published 2026-08-21
+- *(+12 more held back to keep this readable.)*
+
