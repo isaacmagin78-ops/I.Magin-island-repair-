@@ -2302,3 +2302,40 @@ downstream is waiting on another photograph.
 **A future session should notice the pattern rather than repeat it:** collecting
 material is the comfortable part and it is now finished. **Do not ask him for more
 photographs.** Point at the five items above.
+
+### 2026-08-20 — Laundry punch list, for tomorrow's install
+
+Washer and dryer arrive tomorrow. He needed something to send his mother and
+Jared tonight. **Built and published:**
+`https://claude.ai/code/artifact/0c3dc0eb-8f86-4f39-873a-0e34cda693fc`
+(source committed at `imagin-concierge/pages/laundry-punch-list.html`).
+
+Four sections, every item tickable, ticks saved to `localStorage` on the reader's
+own device: **check tonight** (Isaac), **delivery day** (Jared & Mom), **laundry
+area organised** (Madison), and **still open from Joe's punch**.
+
+> ### ⚠️ Two flags raised from the photographs, and they are the point of the page
+>
+> 1. **The receptacle in the closet appears to be a standard 120-volt duplex.** A
+>    conventional electric dryer needs a **240 V / 30 A** outlet. If tomorrow's
+>    dryer is a normal electric one, it cannot be plugged in — a wasted delivery
+>    plus an electrician. If it is a **ventless combo or gas**, 120 V is right.
+> 2. **No dryer vent is visible anywhere in either photograph.** A vented dryer
+>    needs a 4-inch duct to outside. Either the unit is ventless, or a duct exists
+>    out of frame.
+>
+> **Both are checkable tonight from a model number and neither has been assumed
+> here.** These are the two failures that most often turn an install day into a
+> second install day.
+
+**What the photos confirm is already done:** plywood-lined alcove, white drain pan
+seated, recessed supply box with hot and cold valves, standpipe, upper shelf
+stocked, cabinet doors hung.
+
+**From Joe's punch:** the grout and caulk along the wall-to-floor line is done and
+looks continuous. **Still open — a dark unfinished gap where the wall meets the
+cabinet run**, visible in the second photo he sent; it is the only thing in frame
+that still reads unfinished.
+
+**Not assumed anywhere on the page:** no measurement, model number, price or date.
+Every one of those is a tick box for a human to fill.
