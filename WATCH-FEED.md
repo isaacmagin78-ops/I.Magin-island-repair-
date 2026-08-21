@@ -171,3 +171,16 @@ file exists.
 - **Sabrina Ramonov** — [Which AI Tool Should You Use for Each Task?](https://www.youtube.com/watch?v=ioni7VijCdM) · published 2026-08-20
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-21 07:55 UTC
+
+**Who posted**
+- **Alex Hormozi** — [This Was My Rock Bottom](https://www.youtube.com/watch?v=kURcPswRtRM) · published 2026-08-21
+- **Alex Hormozi** — [Motivation comes from deprivation.](https://www.youtube.com/watch?v=tUhyd-7QcWI) · published 2026-08-21
+- **Alex Hormozi** — [You have to build the base first](https://www.youtube.com/watch?v=XEv7Rk7KRuM) · published 2026-08-21
+- **Sabrina Ramonov** — [5 ChatGPT Prompts for Brutally Honest Self-Reflection](https://www.youtube.com/watch?v=-QyHiflCxJs) · published 2026-08-21
+- **Dan Martell** — [Should you skip, read, or study these books if you're a young entrepreneur?](https://www.youtube.com/watch?v=72DxhqI_50I) · published 2026-08-21
+- *(+12 more held back to keep this readable.)*
+
