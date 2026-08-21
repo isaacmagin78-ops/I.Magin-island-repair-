@@ -2359,3 +2359,41 @@ flags above and the punch list was rewritten around it (same URL):
 ⚠️ **Miele specifics here are general to the compact W1 / T1 line, not read off
 these machines' spec sheet** — the page says so in its own footer. Isaac is
 sending the model information; check it against that when it arrives.
+
+---
+
+## 2026-08-21 (Friday) — Merged to main, and verified from a clean clone
+
+Isaac was angry that things keep getting lost, and he was right to be. **Twenty-six
+commits from 2026-08-19/20 were sitting on `claude/open-ended-exploration-whw2pf`
+and `main` had never seen them** — the exact failure `WORKSPACE-MAP.md` describes:
+*"It is not a memory problem. It is a merge problem."*
+
+**On his say-so, merged and pushed: `main` is now `0e2a2b7`.**
+
+`main` had also moved on its own while this session ran (another session recorded
+Chloe, Rich, Evan Vernon, Walter, Skyline and the four-phase structure of Island
+Club). **The merge was a real merge, not a fast-forward, and it came through with
+no conflicts** — both sides only ever appended to `HANDOFF.md`.
+
+### The verification, run rather than assumed
+
+**Cloned `main` fresh into a temp directory — what a new session actually sees —
+and checked:**
+
+| Check | Result |
+|---|---|
+| All twelve key deliverables present | **pass** |
+| `build.py` runs from the clean clone | **pass** — rebuilt all four client pages |
+| Rich · Chloe · PH3 · Miele · condensate · Sabrina · 508 · Serhant · Context OS findable in `HANDOFF.md` | **pass** — every one |
+| Conflict markers anywhere in the tree | **none** |
+| Commits left unmerged on the branch | **zero** |
+
+**So a session that opens tomorrow and runs step zero now sees all of it** — the
+resident board, the four client pages and the generator, the punch list, the
+Context OS thesis, the shooting brief, the records workflow, the building facts,
+and every person recorded this week.
+
+> **The lesson, for whoever reads this next:** writing it down is only half. **A
+> file on an unmerged branch is as invisible as a chat message.** Merge before the
+> session ends, or the work did not happen.
