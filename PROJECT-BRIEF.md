@@ -311,12 +311,35 @@ embarrass him and hurt the person named. It belongs in Notion if anywhere.)*
   > operation looks like — which is precisely the opening, and also why "they
   > might be a newer company" is plausible.
   >
-  > **Not verified:** no named third-party management company appears in public
-  > sources. Isaac's on-site read — several younger women, possibly a newer
-  > firm — could not be confirmed either way and is recorded as *his
-  > observation*, not fact. Ask Chloe who she works for; it takes one question
-  > and decides whether this is a building relationship or a firm relationship
-  > worth many buildings.
+  > **✅ ANSWERED 2026-08-19 — the firm is Skyline, and it is not what it looked
+  > like.** Isaac asked and Chloe told him: she works for **Skyline Property
+  > Management**, and **she is their designer**, not admin staff. Isaac's read
+  > was that they might be a newer company because they only took the building
+  > on this year. **Researched, and that is new-to-the-building, not a new
+  > company:**
+  >
+  > - **Florida Skyline Management Inc.** lists its address as **777 S Federal
+  >   Highway, Pompano Beach FL 33062 — the same address as Island Club.** They
+  >   are physically on site.
+  > - Offices in **West Palm Beach, Boca Raton, Deerfield Beach, Hillsboro
+  >   Beach, Parkland and Miramar**, plus **Pendleton SC and Moultrie GA**.
+  >   They manage across **Dade, Broward and Palm Beach** counties.
+  > - Services span condo and HOA management, residential, apartment buildings
+  >   and commercial.
+  > - *(Unconfirmed: a LinkedIn profile lists Diane Magid as President at
+  >   "Skyline Management." Same-name risk — do not treat as established.)*
+  >
+  > **What this changes.** Chloe is not one building's admin. **She is the
+  > designer at a multi-office firm managing property across three states, and
+  > it is her first year on this building** — the exact moment a manager is
+  > looking for things that make them look good. Doing one thing well here is a
+  > doorway to a portfolio, not a favour for a neighbour.
+  >
+  > 🚫 **And she is the designer, so the "build them a better webpage" idea is
+  > now definitively dead.** That page is *her work*. Turning up with a rival
+  > is competing with the one person who could champion this. **Build the QR
+  > gate map — a thing her page does not do — and build it so it makes her page
+  > look better, not replaced.**
 - **Walter** — a contact Isaac treats as significant. **Nothing about him
   exists in this repo.** His own contact note reads: *"ChatGPT should have a
   whole file on him."*
