@@ -2438,3 +2438,40 @@ be photographed before anyone touches it.
 > re-fabrication."* **This confirms it arithmetically.** Settle the hatch question
 > **before the panels are ordered**, not when the truck arrives — the dashboard
 > puts $95K–$130K of contract behind it and panels set in September.
+
+### 2026-08-21 (Friday afternoon) — Tub closed, and a realtor walked in the door
+
+**Closed:** the Kohler technician came and **repaired the crack and the scratch in
+the tub.** That was an open item on `ph3-punchlist.vercel.app` carrying the note
+*"photograph it before it gets touched and say which one it is."* It is now
+resolved — get a finished photo onto that item.
+
+**New lead, and it came to him:** the technician is **James**, and **his daughter
+is a realtor.** Isaac has already passed information along and wants a QR code and
+a page for her. Surname deliberately not recorded — this repo is public and she has
+not been asked.
+
+**This is the warm-lead pattern the repo keeps proving:** he did not go looking for
+a realtor. One came to fix a bathtub, and left as an introduction. Every deal in
+this repo that worked started exactly like that — a named person, physically
+present, with a reason to talk.
+
+**The page for her is a JSON file, not a build.** `imagin-concierge/pages/clients/`
+already carries the realtor pitch: *"send me one listing's photos, I'll send back
+the page and a QR rider for the sign — $99 a listing."* Nothing new needs writing;
+it needs her name and her permission.
+
+### What actually needs him — Friday, 21 Aug
+
+Ordered by what costs money if it slips, not by what is loudest:
+
+1. **Call the building office about the elevator ceiling hatch — before they close
+   today.** It is the only open item with a deadline and a number behind it:
+   panels set in September, **$95K–$130K of contract**, and the arithmetic above
+   says a 91″ panel does not pass a 36″ × 84″ opening at any angle.
+2. **Check the dryer condensate** — one look behind the machine.
+3. **Share the resident board and Chloe's page** — one tap each; both are login
+   walls until then.
+4. James's daughter — a weekend conversation, not a Friday-afternoon one.
+
+**Everything else on this file is done, merged, and verified.** Nothing is on fire.
