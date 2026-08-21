@@ -30,6 +30,8 @@ letter-spacing:-.015em;margin:0 0 .3rem}
 text-transform:uppercase;color:var(--muted);margin:0 0 .9rem}
 .flag{background:var(--flag-soft);border:1px solid var(--flag);border-radius:2px;
 padding:1rem 1.1rem;margin:0 0 .8rem}
+.flag.ok{background:var(--accent-soft);border-color:var(--accent)}
+.flag.ok h3{color:var(--accent)}
 .flag h3{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:600;font-size:1rem;
 margin:0 0 .4rem;color:var(--flag)}
 .flag p{margin:0;color:var(--text);font-size:.96rem}
@@ -57,7 +59,7 @@ footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);fo
 <header>
   <p class="kick">777 S Federal Hwy &middot; laundry</p>
   <h1>Washer &amp; dryer land tomorrow.</h1>
-  <p class="sub">The closet is built, the valves and drain are in, the shelf is stocked. This is what's left &mdash; and the two things worth checking <em>tonight</em>, before anyone drives over.</p>
+  <p class="sub">Miele ventless pair, going into a closet that is already built &mdash; pan in, valves in, standpipe in, shelf stocked. This is what is left, and the one Miele detail that gets forgotten until the installers have gone.</p>
 </header>
 
 <section>
@@ -71,19 +73,21 @@ footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);fo
   <h2>Check tonight &mdash; before anyone drives over</h2>
   <p class="who">Isaac &middot; ten minutes</p>
 
-  <div class="flag">
-    <h3>That outlet looks like a standard 120-volt plug.</h3>
-    <p>A normal electric dryer needs a <b>240-volt, 30-amp</b> outlet with a big three or four-prong face. If tomorrow's dryer is a regular electric one, it will not plug into what is on that wall &mdash; that is a wasted delivery and an electrician. If it is a <b>ventless combo or a gas dryer</b>, 120V is correct and you are fine. Check the model tonight.</p>
+  <div class="flag ok">
+    <h3>Resolved &mdash; it's a Miele ventless pair.</h3>
+    <p>That answers both of the things that would have wrecked tomorrow. Miele's compact machines run on a <b>standard 120-volt outlet</b>, so the plug in the closet is right. And the dryer is a <b>heat pump</b>, so there is nothing to vent &mdash; no duct needed. The rough-in in these photos matches what the machines want.</p>
   </div>
 
   <div class="flag">
-    <h3>There is no dryer vent in either photo.</h3>
-    <p>A conventional dryer has to vent outside through a four-inch duct. Nothing like that is visible in the closet. Either the dryer is <b>ventless</b> &mdash; heat pump or condenser &mdash; or a duct exists somewhere out of frame. A vented dryer with nowhere to vent does not get installed.</p>
+    <h3>The one Miele thing that catches people: the condensate.</h3>
+    <p>A heat-pump dryer pulls water out of the clothes and has to put it somewhere. There are two ways: <b>plumb the condensate hose into the standpipe</b>, or leave it collecting in the internal tank and <b>empty that tank by hand every couple of loads</b>. Plumbing it is a five-minute job for the installer <em>while they are already there</em>, and nobody thinks about it until they are gone. Decide before they leave.</p>
   </div>
 
   <ul class="list">
-    <li><label><input type="checkbox"><span class="txt"><b>Find both model numbers</b><span>Washer and dryer. Everything below depends on them.</span></span></label></li>
-    <li><label><input type="checkbox"><span class="txt"><b>Measure the opening</b><span>Width, depth, and height under that shelf &mdash; then check the spec sheet, including depth with the door open.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Write down both Miele model numbers</b><span>W1 washer and T1 dryer numbers. Everything below gets checked against their spec sheet, not against a guess.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Measure the opening against the spec</b><span>Miele compacts are about 24 inches wide. Measure the closet width, the depth, and the height under that shelf &mdash; and check depth again with the door open.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Stacked or side by side?</b><span>If stacked, the Miele stacking kit is a specific part &mdash; confirm it is on the delivery, not something to order after.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Check whether the washer wants hot and cold, or cold only</b><span>Some Miele W1 models are cold-fill. Both valves are there either way, but it changes what gets hooked up.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Measure the path in</b><span>Front door, hallway corners, service elevator. A machine that fits the closet can still fail the turn.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Book the service elevator</b><span>Most buildings require it, plus a certificate of insurance from the installer. Chloe can confirm what this one wants.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Turn both valves on and off</b><span>Watch the stems for weeping. Far easier to fix today than with a washer in front of them.</span></span></label></li>
@@ -94,7 +98,8 @@ footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);fo
   <h2>Delivery day</h2>
   <p class="who">Jared &amp; Mom &middot; while the installers are here</p>
   <ul class="list">
-    <li><label><input type="checkbox"><span class="txt"><b>Shipping bolts out of the washer</b><span>Three or four bolts in the back. Running a washer with them still in wrecks it. Installers usually pull them &mdash; watch that they did.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Transit bolts out &mdash; and kept</b><span>Miele washers ship with bolts through the back that lock the drum. Running it with them in destroys the machine. They also need to go back in if it is ever moved, so put them on the shelf, don't bin them.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Condensate handled &mdash; decide before they leave</b><span>Either the dryer's condensate hose goes into the standpipe, or somebody empties the tank every few loads. Ask them to plumb it while they are here.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Machine sits fully inside the drain pan</b><span>Not half on the lip. That pan is the only thing between a leak and the ceiling below.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Drain hose secured into the standpipe</b><span>Hooked and tied so it cannot jump out mid-cycle. Do not let it just rest in the pipe.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Steel braided supply hoses, not rubber</b><span>Rubber hoses are the most common cause of condo flood claims there is. If they hand you black rubber, ask for braided.</span></span></label></li>
@@ -102,7 +107,7 @@ footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);fo
     <li><label><input type="checkbox"><span class="txt"><b>Stacking bracket fitted, if stacked</b><span>A dryer stacked on a washer without the kit is genuinely dangerous.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Doors clear the cabinet and the fridge</b><span>Open both fully before the installers leave.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Run a rinse-and-spin before they go</b><span>Fifteen minutes. Then put a hand behind and underneath and feel for water. This is the entire reason somebody is standing there.</span></span></label></li>
-    <li><label><input type="checkbox"><span class="txt"><b>Photograph the back before it is pushed in</b><span>Hoses, plug, vent. Worth having if anything ever leaks.</span></span></label></li>
+    <li><label><input type="checkbox"><span class="txt"><b>Photograph the back before it is pushed in</b><span>Hoses, plug, condensate line. Worth having if anything ever leaks.</span></span></label></li>
     <li><label><input type="checkbox"><span class="txt"><b>Manuals and receipt onto the shelf</b><span>Not into a drawer.</span></span></label></li>
   </ul>
 </section>
@@ -130,11 +135,12 @@ footer{border-top:1px solid var(--line);padding-top:1.3rem;color:var(--muted);fo
 </section>
 
 <footer>
-  <p><b>The short version:</b> confirm the voltage and the venting tonight, make sure the machine ends up inside the pan on braided hoses, and let nobody leave before a full rinse-and-spin has run dry.</p>
+  <p><b>The short version:</b> transit bolts out and kept, condensate plumbed into the standpipe before anyone leaves, machine fully inside the pan on braided hoses, and a full rinse-and-spin run dry while there is still somebody here to fix it.</p>
   <p class="fine">
     TICKS SAVE ON THIS DEVICE ONLY &mdash; THEY ARE NOT SHARED BETWEEN PHONES.<br>
     NO MEASUREMENT, MODEL OR PRICE ON THIS PAGE HAS BEEN ASSUMED.<br>
-    WRITTEN FROM PHOTOGRAPHS OF THE CLOSET, NOT FROM AN INSPECTION.
+    WRITTEN FROM PHOTOGRAPHS OF THE CLOSET, NOT FROM AN INSPECTION.<br>
+    MIELE DETAILS ARE GENERAL TO THE COMPACT W1 / T1 LINE &mdash; CHECK THE SPEC SHEET FOR THESE MODELS.
   </p>
 </footer>
 </div>

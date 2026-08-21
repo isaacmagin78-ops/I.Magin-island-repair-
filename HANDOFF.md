@@ -2339,3 +2339,23 @@ that still reads unfinished.
 
 **Not assumed anywhere on the page:** no measurement, model number, price or date.
 Every one of those is a tick box for a human to fill.
+
+**Update, same evening — the machines are Miele, ventless.** That resolves both
+flags above and the punch list was rewritten around it (same URL):
+
+- **120 V is correct.** Miele compacts run on a standard outlet; the receptacle in
+  the closet is right, not a problem.
+- **Nothing to vent.** The T1 is a heat-pump dryer.
+- **The replacement gotcha, and it is the real one: condensate.** A heat-pump
+  dryer pulls water out of the load and either drains it to the standpipe or
+  fills an internal tank somebody has to empty every few loads. **Plumbing it is
+  five minutes while the installer is standing there and nobody thinks of it
+  until they have gone.**
+- **Transit bolts** — Miele washers ship with drum-locking bolts that must come
+  out before the first run **and be kept** for any future move.
+- Added checks for the **stacking kit** being on the delivery rather than ordered
+  after, and for whether the W1 model is **cold-fill only**.
+
+⚠️ **Miele specifics here are general to the compact W1 / T1 line, not read off
+these machines' spec sheet** — the page says so in its own footer. Isaac is
+sending the model information; check it against that when it arrives.
