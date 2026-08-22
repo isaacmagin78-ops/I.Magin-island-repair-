@@ -277,3 +277,58 @@ Everything that shows the apartment arrived in a form that cannot be used.**
 The unit interiors — kitchen, living room, master bath, guest bath, master
 bedroom, entry hall — are all still chat-only. **One handover of those same files
 and the rental page can be built.** Nothing else is blocking it.
+
+## 🔑 THE FILENAME LAW — ten videos, no exceptions
+
+Every video delivered this session, probed 2026-08-22:
+
+| File as delivered | Resolution | Bitrate | Codec |
+|---|---|---|---|
+| `IMG_3292.MOV` | **1920×1080** | 13,303 kb/s | hevc |
+| `IMG_3293.MOV` | **1920×1080** | 13,176 kb/s | hevc |
+| `IMG_1100.mov` | **1920×1080** | 8,448 kb/s | hevc |
+| `IMG_1102.mov` | **1920×1080** | 8,644 kb/s | hevc |
+| `IMG_1102.mov` *(dupe)* | **1920×1080** | 8,644 kb/s | hevc |
+| `80911613213__49C9460F….MOV` | 480×360 | 767 kb/s | h264 |
+| `80913229352__E2B64EA4….MOV` | 480×360 | 756 kb/s | h264 |
+| `80913233735__B84638B3….MOV` | 480×360 | 765 kb/s | h264 |
+| `video.MOV` | 480×360 | 723 kb/s | h264 |
+| `video.MOV` | 480×360 | 708 kb/s | h264 |
+
+**Five perfect. Five ruined. The split is exactly the filename, with no overlap and
+no borderline case.**
+
+> ### `IMG_####` = the original from Photos. Anything else = already re-encoded.
+>
+> A long-digit name with a GUID (`80913229352__B846…`) is an iOS **Messages**
+> attachment. A bare `video.MOV` is a share-sheet export. Both have already been
+> downscaled to 480×360 before they ever left the phone, and **there is no undo** —
+> the quality is gone, not hidden.
+
+**He can check this himself in one second, without any session's help: look at the
+name.** If it does not start `IMG_`, the good version is still in Photos and this
+copy should be thrown away rather than sent.
+
+### And the water question is ANSWERED — from his own balcony
+
+Four frames settle it, and one of them is unambiguous: shot **on his balcony**,
+with his own living room and kitchen visible through the slider, Tyson and the cat
+on the tile. From that same recess the outward frame shows **the marina, boats on
+the Intracoastal, the tower line beyond, and the pool directly below.**
+
+⚠️ **Correction, second time on this point.** Earlier this session the balcony was
+recorded as *"west-facing over South Federal, not a water view,"* read off the
+**ruined 480×360 clip**. These frames show water from the balcony. Either that clip
+was shot from a different vantage or in a different direction — **it was 360 px on
+its long edge and should not have carried that much weight.**
+
+**What is now established from the unit itself:**
+
+- The balcony **overlooks the marina and the Intracoastal**, with the oceanfront
+  tower line on the horizon.
+- The **pool is directly below** the balcony.
+- The balcony is a **recessed, covered** terrace — shade, and rain cover.
+
+**Honest copy this supports:** *a covered balcony over the marina — boats on the
+Intracoastal, the tower line beyond, and the pool directly below.* Still **not**
+"oceanfront" and still not "ocean view": the Atlantic sits behind that tower line.
