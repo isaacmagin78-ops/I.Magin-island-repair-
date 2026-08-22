@@ -198,3 +198,16 @@ file exists.
 - **Sabrina Ramonov** — [5 ChatGPT Privacy Settings You Should Review](https://www.youtube.com/watch?v=O-xjgY58YfE) · published 2026-08-21
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-22 07:44 UTC
+
+**Who posted**
+- **Alex Hormozi** — [My Current Sleep Routine:](https://www.youtube.com/watch?v=vLsU7fOYl9U) · published 2026-08-22
+- **Alex Hormozi** — [Do the Thing 10,000 Times](https://www.youtube.com/watch?v=I3d9i_MO_Lo) · published 2026-08-22
+- **Alex Hormozi** — [No matter how rich someone is, “expensive” always means expensive.](https://www.youtube.com/watch?v=uN4dxeX6qaE) · published 2026-08-22
+- **Sabrina Ramonov** — [5 ChatGPT Prompts for Honest Self-Reflection](https://www.youtube.com/watch?v=XlJiN1_UJe8) · published 2026-08-22
+- **Dan Martell** — [How to ACTUALLY grow your business](https://www.youtube.com/watch?v=5Me4iOf0b5U) · published 2026-08-22
+- *(+12 more held back to keep this readable.)*
+
