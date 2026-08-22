@@ -49,3 +49,50 @@ Phone at **chest height, level** — not tilted up. Every light on, blinds open,
 daylight. Wipe the lens. **Clear horizontal surfaces** — counters and floor;
 vertical things like art and shelves can stay, they read as lived-in. Name each
 file as it is sent.
+
+
+## 2026-08-22 — the Google Drive route WORKS, and the four "Balcony" files do not
+
+✅ **Pipeline verified end to end, 2026-08-22.** Drive `search_files` →
+`download_file_content` → base64 decode → `pillow-heif` → JPEG. Files arrive at
+**3213 × 5712 HEIF, full resolution, not re-encoded.** This is the transfer path
+the shooting brief asks for and it is now proven, not assumed.
+
+**Use it. It is the only route that actually delivers files.**
+
+⚠️ **Photos sent as chat attachments cannot be used to build a page.** They are
+visible to a session but are not written to disk, so they cannot be embedded,
+cropped, or measured. Every interior shot Isaac sent on 2026-08-22 — kitchen,
+living room, master bath, master bedroom, closets, entry hall — arrived this way.
+**Seen, not held.** They must be re-sent through Drive before any page can use them.
+
+### What is actually in Drive (opened and looked at, not trusted by name)
+
+| Drive title | What it really is |
+|---|---|
+| Balcony 1 | Tyson and the cat at the sliding glass door |
+| Balcony 3 | same subject, seconds apart |
+| Balcony 3 *(a second file, same name)* | near-identical duplicate |
+| Balcony 4 | same subject again |
+
+**All four are the same photograph of the dog and the cat pressed against the
+glass, shot from the balcony side looking IN.** Not one is a balcony, and not one
+is a view. Two separate files share the title "Balcony 3."
+
+**This is the manifest rule proving itself in both directions.** Addressing by
+label would have put a dog behind glass into a rental listing; addressing by
+position would have been no better. **The only thing that worked was opening the
+frames and looking** — the same lesson the variance-of-Laplacian miss taught:
+*a number is not a look, and neither is a filename.*
+
+### Where these photos DO belong
+
+They are good pictures of Tyson and the cat at the glass. `balcony-buddies/` exists,
+and the resident board already carries **Slot 03 — "Luna's Balcony Buddy."** Route
+them there. **Not to the rental page.**
+
+### Still owed, through Drive, not chat
+
+1. Living room cleared, from the spot in frame #5
+2. **The balcony shot facing OUT** — camera on the balcony, back to the glass
+3. Re-send of kitchen corridor, master bath, master bedroom, entry hall
