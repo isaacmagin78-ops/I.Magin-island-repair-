@@ -150,3 +150,31 @@ side.* Nothing more.
 
 **Action:** the full-resolution original is still in his Photos. Send **that** to
 Drive. Do not re-share the clip that already arrived.
+
+### Added 2026-08-22 — the water aspect is real
+
+A frame shot **through insect screen** (mesh clearly visible across the whole
+image) showing the **Atlantic on the horizon**: open blue water behind a band of
+low-rise rooftops and heavy palm canopy, with two residential towers in the middle
+distance and a tile-roofed house in the near foreground.
+
+**This does not contradict the balcony finding — it completes it.** The balcony
+clip faces **west** over South Federal. This frame faces **east to the ocean**. The
+unit evidently has both aspects.
+
+⚠️ **Unresolved and it changes the copy: was this taken from the balcony or from a
+window?** Nobody has established it, and the honest wording differs —
+
+- from a **window** → *"ocean on the horizon from the east-facing windows"*
+- from the **balcony** → the balcony sees both ways, and the west-facing line
+  written earlier is incomplete
+
+**What is defensible from the frame either way:** the ocean is visible **over the
+treetops, past low-rise rooftops** — a real water view, and plainly **not
+beachfront**. Write it that way. A tenant checks this on day one, and "ocean view"
+that turns out to be a horizon stripe is the kind of thing that ends a lease
+before it starts.
+
+**Also note the screen.** Shooting through insect mesh softens everything and lays
+a grid over the image. For the page, the same view has to be shot with the screen
+slid open or from the balcony side.
