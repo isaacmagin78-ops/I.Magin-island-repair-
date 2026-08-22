@@ -178,3 +178,49 @@ before it starts.
 **Also note the screen.** Shooting through insect mesh softens everything and lays
 a grid over the image. For the page, the same view has to be shot with the screen
 slid open or from the balcony side.
+
+### Added 2026-08-22 — the water shots are from the COMMON HALLWAY, not the unit
+
+**Isaac: *"That from end of hallway."*** That answers the balcony-or-window
+question asked above: **neither.**
+
+🔴 **This is the single most consequential note in this file.**
+
+The wide frame is the best photograph taken all day — sharp, level, no screen,
+good light. It shows the **Atlantic on the horizon**, the **Intracoastal on the
+right** with private docks and moored boats, waterfront houses under palms, a row
+of oceanfront towers, and a neighbouring rooftop of HVAC units in the foreground.
+
+**And it was taken from a common-area hallway window, so it CANNOT be used as the
+view from the unit.** Putting a hallway view on a rental page as if it were the
+apartment's is the most ordinary lie in real-estate marketing and the fastest way
+to lose a tenant at the first showing. `build.py` exists to prevent exactly this
+class of thing. **It does not go in the unit's `frames` block.**
+
+⚠️ **Correction to an earlier note in this session.** The living-room hero frame
+was described as showing "the city out to the water." **That was my reading of a
+compressed chat image and it may be wrong.** Nothing has established that any
+water is visible from inside Isaac's apartment. Treat the earlier phrasing as
+unverified and do not build copy on it.
+
+**Open, and it decides the headline of the page:**
+
+> **From inside the unit — not the hallway — is any water visible from any window,
+> and which room?**
+
+Until that is answered from a photograph taken inside the apartment, the page says
+nothing about water. The one aspect actually established from inside is the
+**west-facing balcony over South Federal — the sunset side.**
+
+### Where the hallway frame DOES belong
+
+It is a genuinely excellent photograph of **the setting**, and the setting is a
+real selling point that costs nobody a lie:
+
+- the **resident board** — this is what the building's own site does not show
+- the **I.Magin Concierge** page, as neighbourhood context
+- the rental page, **only** in a clearly-labelled building/neighbourhood block —
+  never in the unit's own frames, and captioned as the view from the building
+
+It also establishes a neighbourhood fact worth keeping: **the property sits between
+the ocean and the Intracoastal**, with both visible from the building.
