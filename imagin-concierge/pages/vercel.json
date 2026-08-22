@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/resident-board.html" },
+    { "source": "/board", "destination": "/resident-board.html" },
+    { "source": "/marc", "destination": "/out/marc-handyman.html" },
+    { "source": "/ivan", "destination": "/out/ivan-auto.html" },
+    { "source": "/chloe", "destination": "/out/chloe-design.html" },
+    { "source": "/rental", "destination": "/out/unit-rental.html" }
+  ]
+}
