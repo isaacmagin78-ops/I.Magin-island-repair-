@@ -2522,3 +2522,40 @@ permitted by the platform. **The fix is a notification path, not a catch-up.**
    look answered to everyone else reading it.
 3. Turn on Meta message notifications, or connect the **Page** (not the profile)
    to Blotato so a session can see the inbox next time.
+
+### 2026-08-22 — The morning brief is now a push, not a place you have to go
+
+Isaac, at the end of a day he described as a blur: *"I never looked at morning
+brief. Can't that be out in reminders?"*
+
+**Diagnosed, then fixed.** There was exactly **one** Routine on the account —
+`trig_01M2M5sru4XxR6ivGNNsyuxh`, "Daily unattended session," 12:00 UTC — and its
+own prompt ends with: *"Any message to Isaac: a few sentences at most, and only if
+something is genuinely on fire."* ✅ VERIFIED by reading the stored trigger.
+
+**So he was never going to get a morning brief.** That routine does real
+maintenance — watcher health, HANDOFF hygiene, TREND-WATCH — and was deliberately
+built to stay quiet. It has been doing its job in silence for five days. Nothing
+was broken; nothing was ever addressed to him.
+
+**Added `trig_01DTf93AwkGBU8224VRvHqDb` — "Morning brief — push to Isaac's phone."**
+
+| | |
+|---|---|
+| Fires | `30 12 * * *` — **12:30 UTC = 8:30 a.m. ET, daily** |
+| Why 8:30 | thirty minutes **after** the maintenance run, so the brief reads a freshly-updated `HANDOFF.md` |
+| Delivery | fresh session per fire, **push + email**, so it lands on the phone |
+| Length | **hard-capped at three sentences** — state, the one thing that needs him, why |
+| When nothing needs him | it must say *"Nothing needs you today"* and stop. Manufacturing a task to fill the space is explicitly forbidden. |
+
+**Known limit, recorded so nobody re-derives it wrong:** the create-trigger call
+returned a warning — **the Routine stores no MCP connectors**, so its sessions run
+with the repo, a shell and the web only. It **cannot** check Stripe, Vercel,
+Blotato, Gmail, Notion or any ad account, and its prompt forbids it from claiming
+otherwise. To give the brief live connectors, the Routine has to be created from a
+session that holds them, or from the claude.ai Routines UI.
+
+**The lesson, and it is the same one as the Facebook inbox earlier today:** twice in
+one day the failure was *nothing told him*. Not a missing build — a missing
+notification path. Both are now closed on the repo side; the Meta one still needs
+his hands.
