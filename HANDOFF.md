@@ -2682,3 +2682,54 @@ Coffee** (old town). Split — **Kava37**, founded by photographers Ivana Čirja
 Marko Marinković, among the first specialty roasters on the coast; **kava.family**,
 roasting in Split; **D16 Coffee**, inside Diocletian's Palace — good beans, worst
 square in Dalmatia to sit in.
+
+### 2026-08-22 — The convertible door may BE the panel that does not fit the elevator
+
+**Isaac, describing the second bed / office, 2026-08-22:**
+
+> *"will have a convertible door that's contemporary for five panels with a new
+> system that hangs from the ceiling, but it's still long enough if it doesn't need
+> tracks."*
+
+**Recorded as spec:** the second bedroom / office gets a **five-panel convertible
+partition, ceiling-hung, no floor track.** That is a real feature and a good line
+for the rental page — *a second room that actually closes, with nothing to trip
+over in the doorway.*
+
+⚠️ **But look at what is already in `concierge-systems/renovation-dashboard.csv`:**
+
+| Field | Value |
+|---|---|
+| Phase | Wrap-up — final installs and punch list |
+| Remaining | **$95K–$130K on contract** |
+| Timing | **panels set September** · closeout October |
+| Vendors | **Millwork fabricator (wall panels)**; rigging and freight; building management (cargo elevator + COI) |
+| Top risk | *"oversized panels may not clear the elevator car, forcing a stair carry or re-fabrication"* |
+
+**And the arithmetic already done in this file:** a **27″ × 91″** panel against a
+**36″ × 84″** elevator opening is **7″ too tall upright**, fits at **no** in-plane
+angle, and its 91.39″ diagonal leaves **0.39″** at zero thickness.
+
+**A floor-to-ceiling ceiling-hung partition panel is roughly 91″ tall.** That is the
+same number.
+
+🔴 **Open question, NOT a claim: is the convertible door part of the September
+millwork delivery?** Nobody has established that. If it is, the partition is the
+oversized item, and the fix is decided at the fabricator — not on receiving day.
+
+**The one question to put to the fabricator, before September:**
+
+> *How tall is each panel, and does it ship in one piece?*
+
+If a panel ships taller than **84″ in one piece**, it does not enter that elevator
+car and the options are a stair carry, a ceiling hatch, or re-fabrication in
+segments. **Deciding that now costs a phone call. Deciding it on the truck costs a
+re-crate and a slipped install**, and the dashboard already flags *"who absorbs
+re-crate cost"* as unresolved.
+
+This also raises the priority of the item already standing open: **ask the building
+office whether the cab has a removable ceiling hatch.**
+
+**Note the pattern:** he mentioned this as a design detail about a photo. It is
+actually the top financial risk on the project. Casual asides are load-bearing here
+— write them down.
