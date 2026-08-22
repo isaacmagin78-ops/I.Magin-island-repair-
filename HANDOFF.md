@@ -2625,3 +2625,60 @@ get regenerated against it and re-decoded before anything is printed.
 
 **Nothing may be printed or posted until a scan from a signed-out phone lands on a
 real page.** That test has not passed yet.
+
+### 2026-08-22 — Linda is not on any live page, and Scott is overseas
+
+**Isaac's worry, and it was the right instinct:** *"She didn't approve us to have a
+live page featuring her name… I don't want her to get in trouble."*
+
+✅ **CHECKED, not remembered.** `linda` / `hoyt` / `sotheby` appear **zero times**
+in `imagin-concierge/pages/out/unit-rental.html` and **zero times** in
+`resident-board.html`. (An earlier grep appeared to hit — those were false
+positives inside base64 image data. Strip `base64,[A-Za-z0-9+/=]*` before grepping
+these files or every search lies to you.)
+
+The rental page is what he actually asked for: **"I.Magin Concierge · for rent by
+owner,"** his mark, no agent, no brokerage, and this in print:
+
+> *"This page is published by the owner. It is not a brokerage listing, and no
+> commission is being collected by anyone for showing it to you."*
+
+**Nothing on it can put a licensed agent at risk.** His instinct was right to check
+and wrong about the facts — a good trade.
+
+⚠️ **What IS real and unresolved:** `Listing-Content-System/pitch/linda-hoyt-pitch.html`
+and the whole `out/111-pompano-beach-611/` package carry her name, and **this repo
+is public on GitHub**. 111 is a closed listing used as a system demo, not a live
+campaign — but the exposure is real, it predates today, and **it is his call.**
+Flagged, not decided.
+
+### Scott — he is OVERSEAS, not Detroit
+
+**Isaac, 2026-08-22: *"hes overseas you have his location."*** ✅ This settles the
+fork recorded earlier today between the Croatian route and the Detroit stretch:
+**Croatia is current.** Route on file (as of 2026-08-18): Rovinj / Istria → the
+Lakes → Zadar → Hvar → Split → Makarska → ending Dubrovnik.
+
+⚠️ **The route is not a pin.** Nothing in this repo says which stop he is at on any
+given day, and that is exactly what killed the Zagreb card — a day-specific
+recommendation arriving after he had left.
+
+**Isaac then named the product himself: *"thats why the location sharing was
+importabt."*** He is right, and it is the same conclusion `room-read` reached from
+Scott's own feature request:
+
+> *"Real time highly rated coffee shops notifications popping up on my phone as I'm
+> within reasonable distance would be very valuable."* — Scott, 2026-08-18
+
+**The missing half is not the recommendations. It is the pin and the push channel.**
+Everything else already works. Record any location Scott shares with a date, and
+build the card for the stop he is approaching — never the one he is leaving.
+
+**Live coffee research done 2026-08-22 by web search** (⚠️ **not** verified by
+opening any site — this container's egress blocks most domains; no hours are
+claimed anywhere in the card):
+Zadar — **KAVI** (rotating European roasters, espresso + V60), **D16 Specialty
+Coffee** (old town). Split — **Kava37**, founded by photographers Ivana Čirjak and
+Marko Marinković, among the first specialty roasters on the coast; **kava.family**,
+roasting in Split; **D16 Coffee**, inside Diocletian's Palace — good beans, worst
+square in Dalmatia to sit in.
