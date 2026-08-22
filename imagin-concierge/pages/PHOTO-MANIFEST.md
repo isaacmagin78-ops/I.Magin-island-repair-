@@ -224,3 +224,56 @@ real selling point that costs nobody a lie:
 
 It also establishes a neighbourhood fact worth keeping: **the property sits between
 the ocean and the Intracoastal**, with both visible from the building.
+
+### 2026-08-22 — a video finally arrived INTACT, and here is exactly why
+
+`IMG_1102.mov` — ✅ probed, frames tonemapped and **looked at**.
+
+| | ruined clip (earlier today) | **IMG_1102.mov** |
+|---|---|---|
+| Resolution | 480 × 360 | **1920 × 1080** |
+| Codec | h264 Baseline | **HEVC Main 10, 10-bit** |
+| Colour | SDR | **HDR — bt2020nc / HLG** |
+| Bitrate | 767 kb/s | **8,644 kb/s** |
+| Size | 947 KB / 5.5 s | 27 MB / 23.3 s |
+
+**~11× the bitrate. Same phone, same day, same person.**
+
+🟢 **The difference is how it was handed over.** The ruined clip came through a
+share sheet, which re-encodes by default. **IMG_1102.mov was attached as a file
+path.** That is the entire fix, and it is now proven twice in both directions —
+this clip intact, the Drive HEIFs intact at 3213 × 5712, and everything sent
+through chat or a share sheet degraded or unusable.
+
+> ### The rule, settled: hand over a FILE — a path, or Drive. Never a share sheet.
+
+### The four panoramas — real files, enormous
+
+| Saved as | Original |
+|---|---|
+| `assets/setting/roof-pano-federal-and-intracoastal.jpg` | **8000 × 3454** |
+| `assets/setting/roof-pano-wide-dusk.jpg` | **8000 × 2938** |
+| `assets/setting/roof-pano-federal-corridor.jpg` | **7472 × 3870** |
+| `assets/setting/intracoastal-docks-to-ocean.jpg` | 4032 × 2268 |
+| `assets/setting/roof-still-pool-deck.jpg` | frame from the HDR clip |
+
+Committed at web size (≤2600 px). **Named by content, never by position** — the
+standing rule in this file. EXIF was stripped in transit on all four, so there is
+no camera or timestamp metadata to lean on; the names are the only index.
+
+⚠️ **All of them are shot from the ROOF** — parapet coping, tile roof edge and
+rooftop HVAC are visible in frame. The clip is a roof walk: it pans the property's
+**own pool deck**, the neighbouring building, South Federal, and the Intracoastal.
+
+**Same rule as the hallway: this is the BUILDING, not the unit.** It is honest and
+valuable as *setting* — it is not the view from the apartment and must never be
+captioned as one.
+
+### 🔴 The pattern, stated plainly
+
+**Everything that has arrived as a usable file shows the building.
+Everything that shows the apartment arrived in a form that cannot be used.**
+
+The unit interiors — kitchen, living room, master bath, guest bath, master
+bedroom, entry hall — are all still chat-only. **One handover of those same files
+and the rental page can be built.** Nothing else is blocking it.
