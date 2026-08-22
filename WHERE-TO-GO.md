@@ -89,9 +89,62 @@ phone · visual diff review · app previews · PR monitoring · connectors.
 
 ⚠️ **"Computer use" is on that list**, which bears directly on a question Isaac has
 asked repeatedly — why a session cannot drive his MacBook. **A cloud session like
-this one cannot.** Whether the desktop app's computer use does what he remembers
-from the night it "took over" is **not verified here** — read the docs and try it
-before promising him anything.
+this one cannot.** The desktop app's computer use can — see the next section,
+which was read from the docs rather than remembered.
+
+### Dispatch and computer use — what he stumbled on, read from the docs 2026-08-22
+
+**Isaac, 2026-08-22:** *"I could've sworn... there was something where we were —
+or was it Dispatch, Cowork — some feature I stumbled on in Dispatch."*
+
+**He did stumble on something real, and it is two separate features.**
+
+**1. Dispatch — messaging Claude from his phone and having it work on the Mac.**
+
+- Dispatch is *a persistent conversation with Claude that lives in the Cowork
+  tab* of the desktop app. He messages it a task and **it decides how to handle
+  it.**
+- If the task is development work it **spawns a Claude Code session on his Mac
+  by itself** — bug fixes, dependency updates, tests, pull requests. Research,
+  documents and spreadsheets stay in Cowork.
+- That session shows in the Code tab sidebar with a **Dispatch badge**, and he
+  gets **a push notification on his phone when it finishes or needs approval.**
+- **Pro or Max only.** Not on Team or Enterprise.
+
+**2. Computer use — Claude opening his apps and controlling his screen.**
+
+- Docs, verbatim: *"lets Claude open your apps, control your screen, and work
+  directly on your machine the way you would"* — for GUI-only tools with no CLI.
+- **Research preview, macOS and Windows, Pro or Max, and the desktop app must be
+  running.** Off by default.
+- Turning it on: **Settings → General (under Desktop app) → Computer use**, then
+  on macOS grant **Accessibility** and **Screen Recording**.
+- Claude tries the precise tool first and falls back to screen control last.
+  Per-app caps: **browsers are view-only, terminals and IDEs are click-only.**
+- Dispatch-spawned sessions can use it too, but **app approvals there expire
+  after 30 minutes** instead of lasting the session.
+
+> ### 🚨 The warning that goes with it — say this before he enables anything
+>
+> The docs say it plainly: unlike the sandboxed Bash tool, **computer use runs on
+> his actual desktop with access to whatever he approves**, and the trust
+> boundary is different. Claude flags possible prompt injection from what is on
+> screen, but this is the one Claude feature where a bad instruction on a web
+> page is looking at his real machine.
+>
+> **His standing rule still applies: a permission prompt gets "Later" by
+> default.** Accessibility and Screen Recording are exactly what this feature
+> needs — so grant them *at the moment he actually tries it*, not in advance, and
+> revoke them in System Settings if he stops using it.
+
+**Unverified, and label it that way if it comes up:** whether computer use could
+read a Ring camera feed open on his Mac screen. It controls the screen, not a
+camera — so a Ring window already open is the only plausible route, and nobody
+has tested it. Do not promise it.
+
+**Sources (2026-08-22):**
+[Desktop app — computer use](https://code.claude.com/docs/en/desktop#let-claude-use-your-computer) ·
+[Desktop app — sessions from Dispatch](https://code.claude.com/docs/en/desktop#sessions-from-dispatch)
 
 **Sources (2026-08-22):**
 [Voice dictation](https://code.claude.com/docs/en/voice-dictation) ·
