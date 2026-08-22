@@ -96,3 +96,18 @@ them there. **Not to the rental page.**
 1. Living room cleared, from the spot in frame #5
 2. **The balcony shot facing OUT** — camera on the balcony, back to the glass
 3. Re-send of kitchen corridor, master bath, master bedroom, entry hall
+
+### Added 2026-08-22 — guest bath
+
+**The unit has TWO bathrooms.** Master (tub/shower, frameless sliding glass,
+full-height veined porcelain) and a **guest bath** — floating wood-front vanity
+with integrated basin, brushed nickel fixtures, full-width mirror, large-format
+tile floor. ⚠️ Sent by chat, so **seen, not held** — still needs to come through
+Drive before it can go on a page.
+
+The guest bath frame is the **tidiest room Isaac has photographed**: nothing to
+clear, nothing to move. It is close to final as shot.
+
+**"2 baths" is now a known fact about the unit** — but it stays in the `facts`
+grid as a blank until Isaac confirms it in writing, per the no-fabrication rule
+that `build.py` enforces structurally.
