@@ -211,3 +211,17 @@ file exists.
 - **Dan Martell** — [How to ACTUALLY grow your business](https://www.youtube.com/watch?v=5Me4iOf0b5U) · published 2026-08-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-22 19:33 UTC
+
+**Who posted**
+- **Alex Hormozi** — [The Frozen Yogurt Secret](https://www.youtube.com/watch?v=ZRoEEAhz6i4) · published 2026-08-22
+- **Alex Hormozi** — ["Am I Really Consistent, or Do I Just Think So?"](https://www.youtube.com/watch?v=sbV8OhcwXrM) · published 2026-08-22
+- **Sabrina Ramonov** — [5 Secret ChatGPT Prompt Codes for Better Answers](https://www.youtube.com/watch?v=JVVhCYYls80) · published 2026-08-22
+- **Alex Hormozi** — [While they’re measuring in days, you’re measuring in decades.](https://www.youtube.com/watch?v=Qox3pvokHaA) · published 2026-08-22
+- **Dan Martell** — [10/10 skills to teach the kids](https://www.youtube.com/watch?v=zOQf2HGaBTE) · published 2026-08-22
+- **Sabrina Ramonov** — [ChatGPT Erased My Digital Identity 🤯](https://www.youtube.com/watch?v=NFT-r8au2ho) · published 2026-08-22
+- *(+12 more held back to keep this readable.)*
+
