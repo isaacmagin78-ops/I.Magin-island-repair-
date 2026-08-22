@@ -1,0 +1,39 @@
+# Publishes the I.Magin Concierge pages — the resident board and the client
+# landing pages — at real URLs. They existed only as Claude artifacts before
+# 2026-08-22, which meant every QR code in the building resolved to claude.ai
+# and asked a neighbor to sign in. A flyer gets one scan; this is what makes
+# that scan land somewhere.
+
+[build]
+  publish = "imagin-concierge/pages"
+  command = ""
+
+[[redirects]]
+  from = "/"
+  to = "/resident-board.html"
+  status = 200
+
+[[redirects]]
+  from = "/board"
+  to = "/resident-board.html"
+  status = 200
+
+[[redirects]]
+  from = "/marc"
+  to = "/out/marc-handyman.html"
+  status = 200
+
+[[redirects]]
+  from = "/ivan"
+  to = "/out/ivan-auto.html"
+  status = 200
+
+[[redirects]]
+  from = "/chloe"
+  to = "/out/chloe-design.html"
+  status = 200
+
+[[redirects]]
+  from = "/rental"
+  to = "/out/unit-rental.html"
+  status = 200
