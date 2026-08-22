@@ -2559,3 +2559,27 @@ session that holds them, or from the claude.ai Routines UI.
 one day the failure was *nothing told him*. Not a missing build — a missing
 notification path. Both are now closed on the repo side; the Meta one still needs
 his hands.
+
+### 2026-08-22 — MarToni Pizza Lounge added to the resident board
+
+Isaac asked for the pizza place he was sitting in to go on the board. Added as a
+new **"Off property"** section — deliberately **not** a numbered slot, because
+slots 01–06 are residents and a bar is not a resident. Mixing them would have made
+the board claim something untrue.
+
+**Verified by web search, 2026-08-22** (spelling was wrong in his message):
+**MarToni Pizza Lounge**, **555 S Federal Hwy, Pompano Beach FL 33062** — full bar,
+pool tables, live music, thin-crust and Sicilian by the slice or the pie. Listings
+show open late and **closed Tuesdays**. ⚠️ Hours came from aggregator listings, not
+the restaurant, so the board says *"call before you drive, hours move"* rather than
+printing them as fact.
+
+The entry states plainly: **"Neighborhood pick · nobody paid for this"** and
+**"Not a client and not a partner."** That line is doing real work — the rest of
+the page sells his services, so an unlabeled business would read as a paid listing
+and put words in a stranger's mouth.
+
+**Republished to the same URL** — `claude.ai/code/artifact/aa5db7a7-bcab-4092-84fd-3c01c95e2fbc`.
+The publish was refused twice first (the live version had to be read before it
+would accept a merge); ✅ diffed the live copy against the committed source and
+confirmed **nobody else had edited it**, so nothing was lost.
