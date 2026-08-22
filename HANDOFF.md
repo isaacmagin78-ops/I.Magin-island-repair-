@@ -92,16 +92,49 @@ but TikTok costs nothing to cross-post to.
 anything about the queue. This section exists because the figures above were
 two days stale and would have sent a session refilling a queue that was fine.
 
+## VERIFIED LIVE 2026-08-22 (supersedes every queue figure above)
+
+Checked with `blotato_list_schedules` and `blotato_list_posts`.
+
+**Posting has been running daily and healthy Aug 8–22** across Instagram,
+TikTok, Threads and YouTube — roughly 3–4 posts/day, no gap. Any earlier note in
+this file suggesting the queue went dark is stale and wrong.
+
+**But the queue empties tonight.** Only 3 posts remain, all Aug 22:
+
+| When (UTC) | Channel | Post |
+|---|---|---|
+| Aug 22 21:00 | Instagram | kitten/pit bull introduction reel |
+| Aug 22 22:30 | Threads | "My name was Titan" |
+| Aug 22 23:00 | YouTube | "We Brought Home a Kitten" |
+
+After 23:00Z there is nothing scheduled on any channel.
+
+**TikTok is again absent from the queue** — it published today at 17:00Z and has
+nothing after. Same gap flagged in July; it keeps recurring.
+
+### Changes since the last handoff entry
+
+- **The link-in-bio page exists and is live**: `tysons-links.vercel.app`, used in
+  Threads captions. Blocked item #2 below is at least partly resolved.
+- **Captions now carry a local-services offer** that isn't documented anywhere
+  above — site + Google profile + QR board, "$99 one piece · $499 full setup,"
+  currently referencing a 507-unit resident directory build. This is a second
+  revenue line running alongside the $19 Kit and Amazon Associates.
+- **A kitten joined the household** and cat + pit bull content now dominates the
+  feed. Relevant to `balcony-buddies/PLAN.md`: that format is not a hypothesis,
+  it is already what the account runs on.
+
 ## Blocked — needs Isaac (cannot be done by any session)
 
 1. **Facebook Page not linked** in Blotato → Accounts. Zero FB posts ever; whole channel dark.
 2. **Bios** — no tool can read or edit social bios. Confirm the Amazon Associates link is actually in the TikTok/IG/YouTube bios, or every "link in bio" CTA goes nowhere. Isaac was offered a single link-in-bio page (Kit + Amazon picks, deployed to Vercel) — awaiting his Amazon storefront/affiliate link to build it.
 
-## PARKED 2026-08-05: Scott idea-intake (explored, not built)
+## PARKED 2026-08-22: Scott idea-intake (explored, not built)
 
 Scott Kukes (`S Kukes`) sends Isaac a steady stream of ideas by text and phone.
 Explored giving him a repurposed iPad Air as an intake point. **Nothing built —
-Scott leaves for North Carolina Friday Aug 7 and Isaac parked it.** Findings kept
+Scott leaves for North Carolina this Friday and Isaac parked it.** Findings kept
 because the problem recurs:
 
 - **Real problem is interrupts, not storage.** Isaac wants the stream to land

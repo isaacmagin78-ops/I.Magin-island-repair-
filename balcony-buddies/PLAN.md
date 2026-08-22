@@ -1,12 +1,12 @@
 # Balcony Buddies — multi-camera expansion
 
-**Status:** un-archived 2026-08-05. Concept existed in Drive (`03 Balcony Buddies`,
+**Status:** un-archived 2026-08-22. Concept existed in Drive (`03 Balcony Buddies`,
 folder `1zb7NVvPd2yBlfPSxkZ0BEFKod3ed38Ga`) and was marked "archived for future
 execution." Isaac is buying additional cameras; this plan is what to do with them.
 
 ## The bar this is judged against
 
-Isaac's stated criterion (2026-08-05): **"as long as it's something that helps"** —
+Isaac's stated criterion (2026-08-22): **"as long as it's something that helps"** —
 helping animals, not getting a hit. Reach is a means here, not the goal. Every
 decision below is judged against that.
 
