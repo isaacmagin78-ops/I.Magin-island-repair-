@@ -2583,3 +2583,45 @@ and put words in a stranger's mouth.
 The publish was refused twice first (the live version had to be read before it
 would accept a merge); ✅ diffed the live copy against the committed source and
 confirmed **nobody else had edited it**, so nothing was lost.
+
+### 2026-08-22 (late) — He scanned the QR and it took him to claude.ai
+
+Isaac: *"I scanned it. It took me to Claude.AI I thought we had a landing page."*
+
+**He is right, and the earlier answer in this session was incomplete.** A session
+told him the blocker was one share tap. Sharing does make the page open — but the
+URL is still `claude.ai/code/artifact/…`, because **a Claude artifact is not a
+website.** It is hosted on claude.ai, it carries Claude's chrome, and it is private
+until shared. For a flyer in a 507-unit building that is wrong three ways: the URL
+isn't his, it can ask a neighbor to sign in, and it reads as a Claude thing rather
+than an I.Magin thing.
+
+**What was done tonight so the deploy is one step, not a project:**
+
+- `imagin-concierge/pages/vercel.json` — clean routes committed: `/` and `/board`
+  → the resident board, plus `/marc`, `/ivan`, `/chloe`, `/rental`.
+- `netlify.toml` at repo root — same routes, `publish = "imagin-concierge/pages"`.
+
+Both are in git. Whoever can reach a host just deploys; no rebuild needed.
+
+**What blocked it, verified tonight — not guessed:**
+
+| Attempt | Result |
+|---|---|
+| Vercel `create_git_project` (repo → project) | ❌ Vercel API 400: *"You need to add a Login Connection to your GitHub account first."* |
+| Vercel account reachable? | ✅ yes — team `c8j6sgyyh7-5024s-projects`, Hobby, **zero projects**. Note this is **not** the account hosting `ph3-punchlist.vercel.app`. |
+| Netlify `create-new-project` | ✅ created `imagin-board` (`da5f39ad-…`), no password protection |
+| Netlify deploy (its own CLI command) | ❌ **403 Forbidden** on upload |
+| `curl` to `*.netlify.app` / `*.github.io` | ❌ **CONNECT tunnel failed, 403** — this container's egress policy blocks both |
+
+⚠️ **`imagin-board.netlify.app` exists but has NO deploy.** It is an empty site.
+Do not scan it, share it, or point a QR at it until something is actually pushed.
+
+**The single unblock:** add a **GitHub login connection to the Vercel account**
+(Vercel → Settings → Login Connections). That is the literal error Vercel returned.
+Once connected, a git-linked project builds from `imagin-concierge/pages` on every
+push and the routes above come up on a real `.vercel.app` URL — then the QR codes
+get regenerated against it and re-decoded before anything is printed.
+
+**Nothing may be printed or posted until a scan from a signed-out phone lands on a
+real page.** That test has not passed yet.
