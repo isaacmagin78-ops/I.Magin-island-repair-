@@ -44,3 +44,57 @@ Claude Code remembers, but so any tool can be handed the truth in one message.
 
 **When two assistants disagree, the one that can see the live system wins.**
 Check the tool, not the opinion.
+
+---
+
+## 🎙️ What Claude Code can actually do — verified 2026-08-22 from the official docs
+
+**Why this section exists.** Isaac, 2026-08-22: *"I can't go through two different
+codes and them having different knowledges. That doesn't make sense."* He is
+right, and the cause is mechanical: **every session's training has a cutoff, and
+different sessions have different ones.** A session answering a "can Claude do X"
+question from memory will be wrong sooner or later, and two sessions will
+contradict each other.
+
+> ### The rule: never answer a Claude-feature question from memory. Look it up.
+> `code.claude.com/docs` is public and current. Check it, answer from it, and
+> **update this section with the date** so the next session does not re-derive it.
+
+### Voice — he already has it, and nobody told him
+
+- **Speaking TO Claude Code works today.** Voice dictation is built in and is
+  available to all users, **including Claude Code Desktop and Cowork.**
+  - **Hold mode (default):** hold **Space** to record, speech appears as you
+    talk, release to finalise.
+  - **Tap mode:** tap once to start, tap again to send.
+  - Anthropic's own note: most of the Claude Code team codes by speaking, and
+    **speech is roughly 3× faster than typing.**
+  - **This matters more for Isaac than for most people.** He works by voice on a
+    phone constantly, and his dictation arrives badly garbled — which has already
+    produced two wrong entries in this repo (an invented surname, and "trusted"
+    recorded for a man he does not trust). Native dictation in the tool is likely
+    cleaner than whatever is transcribing him now.
+- **Claude speaking BACK is not a Claude Code feature.** Voice mode — the
+  two-way spoken conversation — is a **Claude chat / mobile app** feature. Same
+  trade as everything else in this file: the surface that talks cannot see the
+  repo, Stripe or the queue.
+- **Workaround to get both:** keep the session that has access and have the Mac
+  read it aloud — macOS **System Settings → Accessibility → Spoken Content**.
+
+### Claude Code Desktop — features worth knowing
+
+Parallel sessions with git isolation · integrated terminal and file editor ·
+drag-and-drop panes · side chats · **computer use** · Dispatch sessions from his
+phone · visual diff review · app previews · PR monitoring · connectors.
+
+⚠️ **"Computer use" is on that list**, which bears directly on a question Isaac has
+asked repeatedly — why a session cannot drive his MacBook. **A cloud session like
+this one cannot.** Whether the desktop app's computer use does what he remembers
+from the night it "took over" is **not verified here** — read the docs and try it
+before promising him anything.
+
+**Sources (2026-08-22):**
+[Voice dictation](https://code.claude.com/docs/en/voice-dictation) ·
+[Desktop app](https://code.claude.com/docs/en/desktop) ·
+[Voice mode](https://support.claude.com/en/articles/11101966-use-voice-mode) ·
+[What's new](https://code.claude.com/docs/en/whats-new)
