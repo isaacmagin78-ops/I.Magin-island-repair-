@@ -111,3 +111,42 @@ clear, nothing to move. It is close to final as shot.
 **"2 baths" is now a known fact about the unit** — but it stays in the `facts`
 grid as a blank until Isaac confirms it in writing, per the no-fabrication rule
 that `build.py` enforces structurally.
+
+### Added 2026-08-22 — balcony video: 480 × 360 AGAIN
+
+`3e7bcb03-…MOV`, "View from balcony". ✅ Probed with `ffprobe`, frames extracted
+and **looked at**, not judged from metadata alone.
+
+| | |
+|---|---|
+| Video | **480 × 360**, h264 Baseline, **767 kb/s** |
+| Duration | 5.5 s, 29.97 fps |
+| Rotation | −90° display matrix |
+| Audio | AAC stereo **plus an `apac` 4.0 spatial track**, and four Apple `mebx` Core Media Metadata streams |
+
+🔴 **480 × 360 at 767 kb/s is the exact signature of the failed clip in
+`SHOOTING-BRIEF.md`** — same dimensions, near-identical bitrate. The Apple spatial
+audio and Core Media metadata streams survive, so the container is still the
+phone's; **the video track was downscaled somewhere in transit.** The original on
+his phone is almost certainly fine. **This has now happened twice.**
+
+**Unusable for a page.** The hero frame needs ~1500 px across; this is 360 px on
+its long edge before rotation.
+
+### What the frames do tell us — and it changes the copy
+
+The view faces **west, over South Federal Highway**: parking, a line of palms,
+low-rise rooftops, a distant skyline, and a very large sky. Handsome, and it is
+plainly the **sunset side**.
+
+⚠️ **It is NOT a water view, and the page must not imply one.** Other frames from
+this unit do show water from different windows — so the unit has both aspects, and
+each has to be described from the window it actually belongs to. Writing "ocean
+view" off this balcony would be exactly the kind of fabrication `build.py` was
+built to prevent.
+
+**Honest copy this supports:** *west-facing balcony over the treetops — the sunset
+side.* Nothing more.
+
+**Action:** the full-resolution original is still in his Photos. Send **that** to
+Drive. Do not re-share the clip that already arrived.
