@@ -2475,3 +2475,50 @@ Ordered by what costs money if it slips, not by what is loudest:
 4. James's daughter — a weekend conversation, not a Friday-afternoon one.
 
 **Everything else on this file is done, merged, and verified.** Nothing is on fire.
+
+### 2026-08-22 (Saturday) — Five paid leads sat unanswered for 27 days
+
+Isaac sent a screenshot of his **Meta Business Suite inbox**, "Unread" filter on:
+**5 unread Messages and 2 unread Comments, all dated Jul 26**, every one tagged
+with the same paid ad — **`ad_id.120252770046540655`**.
+
+| Name | What they wrote |
+|---|---|
+| Mary Bandur | "Just looking, thanks" |
+| Erin Thompson | "Can you tell me more about yo…" |
+| Sally Montana-Rose | "Just browsing" |
+| Gianna Lozada | "Is anyone available to chat?" |
+| Heidi Standeven | "I dont have a home right now,…" |
+
+Three of the five are buying signals. **He paid Meta to produce them and nobody
+replied.** This is the concrete answer to his own standing question — *"I'm pissed
+that we're not making money"* — and it is not a build problem.
+
+**What I verified, 2026-08-22, and what I could not:**
+
+- **Blotato holds his Facebook account (`id 43069`) but with `subaccounts: []`** —
+  no Facebook **Page** is connected to it. `blotato_list_conversations
+  (platform: facebook)` returns **zero items**. ✅ VERIFIED — so no session can
+  read or answer that inbox from here. It has to be done in Business Suite.
+- **Supermetrics Facebook Ads (`FA`) is `NOT_AUTHENTICATED`, and the Supermetrics
+  trial has expired.** ✅ VERIFIED — so **whether that ad is still running and
+  still spending is UNKNOWN from this side.** Only he can see it.
+- **Meta's messaging window** (platform rule, not a repo finding): a Page may DM a
+  person only within **24 hours** of their last message, or send **one** private
+  reply to a comment within **7 days**. These are **27 days** old. ⚠️ So the five
+  DMs are almost certainly unreplyable now. **Public replies to the two comments
+  have no time limit** — those are still live.
+
+**The lesson to write down, because the backlog is not the point:** nothing alerts
+him when a paid lead arrives. A reply on day one converts; a reply on day 27 is not
+permitted by the platform. **The fix is a notification path, not a catch-up.**
+
+**Open — needs him, nobody else can:**
+
+1. **Open Meta Ads Manager and check whether `120252770046540655` is still
+   spending.** If it is, money is going out daily for leads that reach an inbox
+   nobody watches. That is the only item here that is still costing him.
+2. **Reply publicly to the two comments** — free, no window, and it makes the ad
+   look answered to everyone else reading it.
+3. Turn on Meta message notifications, or connect the **Page** (not the profile)
+   to Blotato so a session can see the inbox next time.
