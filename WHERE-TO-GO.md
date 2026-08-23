@@ -272,3 +272,49 @@ the transcript into the Code session.** No app to build, no tool to buy.
 
 *(Researched 2026-08-23. Voice models move fast — re-check before repeating after
 roughly November.)*
+
+---
+
+## 📱 His phone — verified 2026-08-23
+
+> **Isaac:** *"Maybe my phone's set up wrong… I look at it and I don't even know
+> where to look. I found the morning brief by pulling down my notifications —
+> shouldn't that be on my screen in the morning somewhere?"*
+
+**He is not set up wrong. Two different things are being confused.**
+
+**1. A scheduled brief arrives as a push notification. That is how it works.**
+Notifications are the delivery van, not the shelf. Nothing he can configure will
+make a scheduled AI brief sit permanently on a home screen — the notification is a
+pointer to a conversation.
+
+**2. What CAN sit on his home screen: the Claude iOS widget.** ✅ Verified at
+support.claude.com, 2026-08-23. Press and hold an empty spot → **+** → Claude →
+pick the square or rectangular widget. It carries three buttons:
+
+| Button | What it does |
+|---|---|
+| 💬 | New chat |
+| 🎤 | **Opens straight into dictation** |
+| 📷 | Take a photo and hand it to Claude |
+
+**The microphone button is the one that matters for him.** He is voice-first with
+limited mobility and garbled third-party dictation. One tap from the home screen
+into Claude's own dictation removes both the typing and the transcription layer
+that has already put two wrong facts into this repo.
+
+Claude also sits on the **Lock Screen, Control Center, Spotlight and the Action
+button** if he wants it closer than the home screen.
+
+⚠️ **Still open, and it needs the phone in his hand:** he says he cannot find
+things on his own home screen. That is a layout problem no session can fix blind.
+**Ask for a screenshot of his home screen before proposing any arrangement** — do
+not design one from imagination.
+
+**And the thing worth naming out loud:** he has *two* morning briefs — one from
+ChatGPT that arrives by notification, and this repo's own state. **Two sources is
+why he cannot find either.** Picking one is a decision he has not been offered yet.
+
+**Sources (2026-08-23):**
+[Claude iOS widgets and shortcuts](https://support.claude.com/en/articles/10263469-use-claude-app-intents-shortcuts-and-widgets-on-ios) ·
+[Lock Screen, Control Center, Action button](https://support.claude.com/en/articles/10302511-access-claude-for-ios-on-your-lock-screen-control-center-and-action-button)
