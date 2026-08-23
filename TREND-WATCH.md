@@ -475,3 +475,35 @@ collecting more, which is the failure mode this workspace already has on record.
 
 *(Sourced 2026-08-23 from her published notes. Re-verify before repeating — tool
 picks in this lane go stale in weeks.)*
+
+---
+
+## ✅ RESOLVED 2026-08-23 — the Perplexity trend watch ran, and it worked
+
+The section above ended with an open instruction: *"Next session: check whether the
+Aug 17 run landed."* **It landed.** Isaac sent screenshots of the runs themselves.
+
+**Schedule, read off the task's own header:** `0 12 * * 1,4` UTC — **Mondays and
+Thursdays, 8:00 AM ET**, exactly as recorded on 2026-08-16.
+
+| Run | When | Result |
+|---|---|---|
+| **#1** | Mon 2026-08-17, 8:21 AM EDT | 1 fresh item found, **appended to Ike OS**, in-app notification sent |
+| **#2** | Thu 2026-08-20, 8:00 AM EDT | Window Aug 18–20 complete, **3 items added to Ike OS** and notified |
+
+**Both runs wrote into Ike OS rather than only into a chat — which was the exact
+test this file set.** A silent watcher and a broken one look identical; this one is
+demonstrably not broken.
+
+**What run #1 actually found, worth reading twice:**
+
+> **2026-08-16 — Sabrina Ramonov** shared an AI-tool map by task, said she
+> **switched her main driver from Claude Code to ChatGPT Work**, and named
+> **Base44** the winner of a six-tool beginner app test.
+
+Recorded straight, including the part that is unflattering to the tool writing this
+file. A trend log that filters out inconvenient findings is worthless.
+
+**So Isaac now has two independent watchers running:** the GitHub Actions one in
+this repo (twice daily, creators + Hacker News → `WATCH-FEED.md`) and this
+Perplexity one (Mon/Thu → Ike OS). **They do not overlap and neither is redundant.**

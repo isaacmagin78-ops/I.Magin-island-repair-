@@ -2740,3 +2740,37 @@ re-check instruction — do not quote them as current.)*
 Project's Instructions field so the Project stops running on the unanchored
 version. This is a concrete instance of his own complaint — two Claudes holding
 different knowledge — with a fix that is a copy and paste.
+
+### 2026-08-23 — Ike OS and this repo reached the same conclusions independently
+
+Isaac sent screenshots of the **"Founder execution override — August 20, 2026"**
+page inside Ike OS. It is a governance document written on the Perplexity/Notion
+side, with no knowledge of this repository. **It says almost exactly what this repo
+worked out on its own.** Quoting it:
+
+| Ike OS says | This repo already learned |
+|---|---|
+| *"One canonical execution repository/memory path. **Branches are implementation history, not competing memories.**"* | Work stranded on a branch is invisible; `main` is the only durable channel. |
+| *"**Do not create another operating system.** Repair and extend Ike OS and the existing execution stack."* | Sixteen project folders and twenty status documents produced $1.29. |
+| *"Ideas without a built artifact and a working purchase/delivery path **do not count as production**."* | "Definition of done: a stranger can pay and receive it while I am asleep." |
+| *"Do not rebuild working components merely because they are hard to find."* | The July "lost month" was a stale checkout, not lost work. |
+| *"Report only (a) what was fixed, (b) what remains blocked and why, (c) the smallest founder-only action. Do not give a recap of facts already in Ike OS."* | The volume rule. |
+| *"Ask Ike only when a credential, payment, public-account authorization, destructive action, or genuinely irreversible decision requires him."* | A permission prompt gets "Later"; verify before asking him to act. |
+
+**Why this matters more than it looks.** Isaac has been treating his two systems as
+a mess he has to reconcile. **They are not in conflict — they converged.** Ike OS is
+the governance layer; it asks for *one canonical execution repository*, and this
+repo is the only thing that qualifies. Nothing needs merging. The two already
+agree, and neither should be rebuilt to look like the other.
+
+**Its stated repair order, for reference:** (1) restore the persistent
+production/scheduling loop, (2) restore monetization wiring across existing
+channels, (3) connect live Tyson + Miss T capture into the content engine,
+(4) resume digital-product output, (5) verify automatic monitoring and
+replenishment so the system keeps running when he leaves the device.
+
+⚠️ **Open, and he raised it himself:** a session once "took over the computer,"
+audited Perplexity end to end and set it up working, and that setup was lost around
+the time he bought the Pro subscription. **Which surface did that has not been
+established** — Claude Code with computer use, Remote Control, and Perplexity's own
+desktop agent are all candidates. Do not tell him which it was until it is checked.
