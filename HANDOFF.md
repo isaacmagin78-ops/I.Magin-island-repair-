@@ -2733,3 +2733,61 @@ office whether the cab has a removable ceiling hatch.**
 **Note the pattern:** he mentioned this as a design detail about a photo. It is
 actually the top financial risk on the project. Casual asides are load-bearing here
 — write them down.
+
+### 2026-08-23 — "Results" means something visible, and Scott already said yes
+
+**Isaac clarified what he has been asking for all along, and it is not money:**
+
+> *"When I say results, I don't mean money, I mean just having a website, a call…
+> I thought we were gonna have some website, a QR code and a phone so people can
+> see something. And then Scott — concierge — he said he would buy that now if it
+> was something that could operate right."*
+
+**Three things named. Scored honestly, 2026-08-23:**
+
+| | State |
+|---|---|
+| **QR code** | ✅ **Done.** Six codes, each decode-verified with a real decoder, committed at `imagin-concierge/pages/qr/`. |
+| **Website** | 🟡 **Built, not reachable.** Every page exists and works; they live at `claude.ai/code/artifact/…` and are private until shared. Routing for a real host is committed (`vercel.json`, `netlify.toml`). ⚠️ Blocked on **one Vercel setting** — a GitHub login connection — which is the literal error Vercel returned. |
+| **Phone** | 🔴 **Not built — but closer than anyone knew.** |
+
+### 🟢 The find: two voice agents already exist and nobody finished them
+
+✅ **VERIFIED 2026-08-23** via `agents_list` on his own ElevenLabs workspace:
+
+| Agent | id | Created | Calls |
+|---|---|---|---|
+| **Isaac** | `agent_1901kq87dymefz7r6x0zxbzwej9b` | ~Apr 2026 | **never called** |
+| **My Agent** | `agent_7101kpvtgb0tf5tr73p6nj1kxw5c` | ~Apr 2026 | **one call, then nothing** |
+
+`agents_list_phone_numbers` returns **`[]`** — **no number is attached to either.**
+That is why nothing has ever happened with them. They can talk; nobody can reach them.
+
+### What "operate right" actually means — and it is one specific thing
+
+`room-read` already diagnosed this months ago, in the product's own words:
+
+> *"Isaac is currently the transport layer. Scott types → Isaac pastes → the agent
+> answers → Isaac pastes back… **That is the whole product spec: remove Isaac from
+> the loop.**"*
+
+**Scott is not waiting on better recommendations. The cards already impressed him
+— he thanked the AI unprompted.** He is waiting to be able to **reach it himself.**
+
+**So the shortest line to a thing Scott could buy is: give one of those two agents
+a phone number, and hand Scott the number.** Not a new build. A number, and a
+prompt written from what Scott himself said — *"I prefer the smaller town over
+these bigger cities"* and the coffee-notification request.
+
+**Order of work, and it is short:**
+
+1. Attach a phone number to one agent (needs a Twilio number imported into the
+   ElevenLabs workspace).
+2. Load it with what the repo already knows about Scott — his filter, his route,
+   the Zagreb miss and why it missed.
+3. Send Scott the number. He tests it in his own life, on his own trip, with
+   Isaac out of the loop.
+
+⚠️ **Do not spend a day on the website first.** The website is one settings toggle
+away and has no buyer waiting. **The phone has a named buyer who has already said
+yes.** That is the whole lesson of this repo applied to its own backlog.
