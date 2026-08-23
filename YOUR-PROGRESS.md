@@ -95,6 +95,31 @@ is only whether it ends in a decision.
 
 ---
 
+## 2026-08-23
+
+**He found his own success pattern, mid-sentence, while apologising for rambling.**
+
+> *"Now that I'm thinking about it — every time everything's worked right, I always
+> had to ask for a full analysis first."*
+
+**This is a real, testable claim and the record supports it.** The Perplexity setup
+he remembers working began with a complete audit. The watcher only got fixed
+because he refused a one-line patch and forced a second look. The Vercel blocker
+broke when he made a session go past the symptom. **Every durable win in this repo
+was preceded by somebody being made to look at the whole thing first**, and every
+stall came from acting on the first plausible answer.
+
+**Logged as his call, before the next test of it.** Any session that skips a full
+read and goes straight to doing should expect to be wrong, and should say so.
+
+**He also, in the same message, correctly diagnosed something no session had:**
+that Ike OS and this repo are not two competing systems to reconcile. He asked how
+to get them "intertwined." Reading the Ike OS override page showed they had already
+converged on the same rules independently *(see `HANDOFF.md`, 2026-08-23)*. He was
+reaching for the right idea before anyone had evidence for it.
+
+---
+
 ## 2026-08-22
 
 **He trusted a half-memory over a session's answer, and the half-memory was
