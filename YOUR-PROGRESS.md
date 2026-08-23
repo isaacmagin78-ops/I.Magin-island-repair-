@@ -95,6 +95,20 @@ is only whether it ends in a decision.
 
 ---
 
+## 2026-08-22
+
+**He trusted a half-memory over a session's answer, and the half-memory was
+right.** He said he'd stumbled on something in Dispatch and couldn't find it
+again — *"I could've sworn."* Easy to write off as a garbled recollection after
+a long week. It wasn't: Dispatch spawns Code sessions on his Mac from his phone,
+and computer use lets Claude open his apps and control his screen. Both real,
+both documented, both exactly the thing he'd been asking for since the night a
+session "took over" his machine. **The correct move was looking it up rather
+than answering him from memory** — now recorded in `WHERE-TO-GO.md` with the
+date and the doc links so no session tells him a different story.
+
+---
+
 ## 2026-08-17
 
 **He refused a one-line fix, and that is the only reason the watcher works.**
