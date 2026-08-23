@@ -2682,3 +2682,35 @@ Coffee** (old town). Split — **Kava37**, founded by photographers Ivana Čirja
 Marko Marinković, among the first specialty roasters on the coast; **kava.family**,
 roasting in Split; **D16 Coffee**, inside Diocletian's Palace — good beans, worst
 square in Dalmatia to sit in.
+
+### 2026-08-23 — The Stripe "sync failure" is an expired connection, not a payments problem
+
+**Verified in Notion, 2026-08-23.** The Daily Briefing Log in Ike OS has logged a
+Stripe failure every morning since **2026-08-18** — at least five consecutive
+days. The log's own wording:
+
+> *"Balance snapshot unavailable: Stripe connector authentication is required.
+> Do not carry forward a prior balance."*
+
+**What this is and is not:**
+
+| | |
+|---|---|
+| ❌ **Not** broken checkout | Payment links are hosted by Stripe and are unaffected. Nobody has been unable to pay. |
+| ✅ **A broken read** | The morning brief cannot see the balance. It correctly refuses to reprint a stale figure rather than guess. |
+
+**Corroborated independently:** a Stripe MCP call from this session on 2026-08-23
+also returned *"requires approval."* **Two separate systems cannot reach Stripe
+without him re-authorising** — that is consistent with an expired connection, not
+with anything wrong inside the Stripe account.
+
+**The fix is his and it is one action:** reconnect / re-authenticate the Stripe
+connector in whichever app runs the morning sync — the same app that sends him the
+morning notification. ⚠️ **Which app that is has not been confirmed** and should be
+identified before he is told where to click. Do not guess it for him.
+
+**Also visible in the same brief, and worth knowing:** nine open P1/urgent items,
+including four **Send Off College** tasks overdue since 2026-07-19 to 07-22, plus
+"Convert Linda pilot to paying arrangement" and "Complete Blotato MCP connector
+setup." Personal items in that brief stay in Notion and are deliberately not
+repeated here.
