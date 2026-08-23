@@ -2774,3 +2774,22 @@ audited Perplexity end to end and set it up working, and that setup was lost aro
 the time he bought the Pro subscription. **Which surface did that has not been
 established** — Claude Code with computer use, Remote Control, and Perplexity's own
 desktop agent are all candidates. Do not tell him which it was until it is checked.
+
+### 2026-08-23 — Two things visible on his desktop that nobody had flagged
+
+**1. 🚨 iCloud is at 399.01 GB of 400 GB.** Read off his own screen. At the cap,
+**photo and video backup stops silently** — and his phone footage is the raw
+material for every video this workspace renders. This is a quiet failure that
+looks like nothing until footage is missing. Cheapest fixes in order: clear the
+Photos "Recently Deleted" album (it counts against the total for 30 days), then
+review iPhone/iPad device backups for devices he no longer uses, then upgrade the
+plan. **Do not delete anything for him — read the screen with him first.**
+
+**2. The GitHub watcher costs him nothing.** He typed, unsent: *"I think that
+watcher runs too often because I keep running out of credits with it."*
+`.github/workflows/watch.yml` runs on **GitHub Actions on a public repository with
+no API key** — Actions minutes are free on public repos and it calls no paid model.
+**Whatever is consuming credits, it is not this.** The likely candidates are the
+Perplexity scheduled task or Claude usage limits; ⚠️ neither has been checked, so do
+not tell him which until one is. **Do not reduce the watcher's cadence to solve a
+cost it is not causing.**
