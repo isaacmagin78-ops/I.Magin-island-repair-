@@ -347,3 +347,27 @@ mirrored — personal ones may not.
 
 *(Verified 2026-08-23 with the Notion connector: database
 `Daily Briefing Log`, under `Ike's Venture HQ`.)*
+
+### Who runs which brief — from Isaac, 2026-08-23
+
+> *"ChatGPT runs that one, and then I think Perplexity runs one on his own for
+> personal stuff."*
+
+| Brief | Run by | Lands in |
+|---|---|---|
+| **Ike OS Daily Briefing Log** | **ChatGPT** | The Notion database under Ike's Venture HQ, ~6:32 AM ET daily |
+| A separate personal brief | **Perplexity** | Not located yet — ask him where it arrives before assuming |
+
+**⚠️ This closes an open question and changes who has to fix the Stripe failure.**
+The morning sync is ChatGPT's, so **the expired Stripe connector is a ChatGPT
+connector** — nothing about it can be repaired from a Claude session, and no
+Claude surface should claim otherwise. The brief's own sync note says it sends an
+in-app broken-sync notification carrying a link; that notification, or asking
+ChatGPT directly, is the shortest route.
+
+**Also raised, not yet worked:** he mentioned a topic Perplexity surfaced that he
+rated highly — his words were garbled but they cluster clearly on **geoarbitrage**
+(travelling while earning income, and the tax questions that come with it).
+**Recorded as an open thread, not acted on.** ⚠️ Two words in that message could
+not be transcribed and were deliberately not guessed at — the last session that
+filled in a garble invented a person's surname. Ask him rather than reconstructing.
