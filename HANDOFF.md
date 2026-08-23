@@ -2791,3 +2791,64 @@ these bigger cities"* and the coffee-notification request.
 ⚠️ **Do not spend a day on the website first.** The website is one settings toggle
 away and has no buyer waiting. **The phone has a named buyer who has already said
 yes.** That is the whole lesson of this repo applied to its own backlog.
+
+### 2026-08-23 (1 a.m.) — "I need to know what I can sell"
+
+Isaac, the clearest question he has asked all week:
+
+> *"I could tell 10 girls that I can make them social media stores. I just need to
+> be able to prove it."* · *"I think clearer when I don't have to worry that things
+> are missing… now I can get creative and start selling, but I need to know what I
+> can sell."*
+
+**And a fact recorded at intake:** the ElevenLabs voice agents were *"one of the
+first things I ever did"* — he remembered they existed and could not find them.
+They are named above (`agent_1901kq87…`, `agent_7101kpvt…`). **He was right.**
+
+### The social layer — VERIFIED 2026-08-23, and half of it is empty
+
+`blotato_list_accounts` — **five platforms connected, all under the Tyson brand:**
+
+| Platform | Handle |
+|---|---|
+| YouTube | I "Imagin" Magin (Tyson's Time Pit Bull Rescue) — 6 playlists incl. *Tyson time*, *Tysons new roommate*, *AI*, *Vending* |
+| Instagram | `tysonstime` |
+| TikTok | `tysons_time` |
+| Threads | `tysontravels_rescuepitslife` |
+| Facebook | Isaac Magin — ⚠️ profile only, **no Page connected** |
+
+🔴 **`blotato_list_schedules` returns ZERO scheduled posts.** The distribution pipe
+is built and connected to five platforms and **nothing is queued in it.**
+
+**So he must not sell "I run social media" yet — he cannot prove a running system.**
+What is provable is the thing he actually does: *he made pages.*
+
+### What he can sell tonight, and the proof for each
+
+| Offer | The proof he shows on his phone |
+|---|---|
+| **A page for your business, from photos you already have** | Marc, Ivan, Chloe, the rental, and the rebuilt College Checklist |
+| **A punch list that a contractor, an owner and a spouse read from one screen** | `ph3-punchlist.vercel.app` — his own live renovation |
+| **A concierge that answers a real person on a real trip** | Scott, in Croatia, who asked for it unprompted |
+
+🔴 **The proof is unshowable tonight because every page is private.** One tap on
+each artifact's share menu turns his phone into a portfolio. **That is a five-minute
+job and it is the difference between having work and being able to show it.**
+
+### College Checklist — rebuilt 2026-08-23
+
+> *"I was impressed because I actually created something for the first time… but
+> visually it's embarrassing."*
+
+His taste outgrew the page — which is progress, not failure. Rebuilt to
+`DESIGN-DIRECTION.md`: Apple restraint, Miami on a deep near-black ground, closed
+amber → ember → coral run with aqua as the single cool counterpoint, **no
+yellow-green band**. Figtree + IBM Plex Mono.
+
+**Written to `college-checklist/index-v2.html` — the verified deployable
+`index.html` was NOT touched.** Same live Stripe link
+(`buy.stripe.com/00w6oH1z16lHcwS9y2g7e02`), same $49, same 11 categories / 50+
+tasks. Nothing invented.
+
+⚠️ **Still never deployed, and its window is NOW** — college move-in is late August.
+Same single blocker as everything else: the Vercel GitHub connection.

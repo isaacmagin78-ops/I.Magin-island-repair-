@@ -1,0 +1,296 @@
+<title>College Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+/* ---------------------------------------------------------------
+   Palette: Miami on a deep near-black ground, per DESIGN-DIRECTION.md.
+   Closed run — amber → ember → coral — with aqua as the one cool
+   counterpoint. No yellow-green band, so nothing reads as a spectrum.
+   --------------------------------------------------------------- */
+:root{
+  --ground:#FFFFFF; --panel:#F4F6FA; --sunk:#EAEEF5;
+  --line:#DDE3ED; --hair:#EAEFF6;
+  --text:#0A0D14; --muted:#5A6579; --faint:#8A94A8;
+  --amber:#B57200; --ember:#D2451A; --coral:#C22A57; --aqua:#0E7EA0;
+  --glow:rgba(255,176,32,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#07090E; --panel:#10141C; --sunk:#0B0F16;
+    --line:#222A38; --hair:#1A212C;
+    --text:#F2F4F8; --muted:#98A3B8; --faint:#6C7789;
+    --amber:#FFB020; --ember:#FF6B35; --coral:#FF5787; --aqua:#33C7EB;
+    --glow:rgba(255,176,32,.16);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#07090E; --panel:#10141C; --sunk:#0B0F16;
+  --line:#222A38; --hair:#1A212C;
+  --text:#F2F4F8; --muted:#98A3B8; --faint:#6C7789;
+  --amber:#FFB020; --ember:#FF6B35; --coral:#FF5787; --aqua:#33C7EB;
+  --glow:rgba(255,176,32,.16);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ground); color:var(--text);
+  font-family:Figtree,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:17px; font-weight:400; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:60rem; margin:0 auto; padding:0 clamp(1.15rem,5vw,2.5rem)}
+
+/* ---- masthead ---- */
+.top{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem; padding:1.4rem 0; border-bottom:1px solid var(--hair);
+}
+.mark{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.7rem;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--text);
+}
+.file{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.7rem;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--faint);
+}
+
+/* ---- hero ---- */
+.hero{position:relative; padding:clamp(3.5rem,11vw,7rem) 0 clamp(2.5rem,7vw,4rem); overflow:hidden}
+.hero::before{
+  content:""; position:absolute; inset:-30% -20% auto -20%; height:70%;
+  background:radial-gradient(60% 100% at 30% 0%, var(--glow), transparent 70%);
+  pointer-events:none; animation:sweep 14s ease-in-out infinite alternate;
+}
+@keyframes sweep{from{transform:translateX(-6%)}to{transform:translateX(6%)}}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.7rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--amber); margin:0 0 1.4rem;
+}
+h1{
+  margin:0; font-weight:900; font-size:clamp(2.6rem,7.6vw,5rem);
+  line-height:.98; letter-spacing:-.035em; text-wrap:balance; max-width:16ch;
+}
+h1 em{font-style:normal; color:var(--muted)}
+.sell{margin:1.6rem 0 0; font-size:clamp(1.05rem,2.4vw,1.3rem); color:var(--muted); max-width:46ch; font-weight:300; line-height:1.5}
+.sell b{color:var(--text); font-weight:500}
+
+.cta{
+  display:inline-flex; align-items:center; gap:.7rem; margin-top:2.2rem;
+  background:var(--amber); color:#07090E; text-decoration:none;
+  font-weight:700; font-size:1.02rem; letter-spacing:-.01em;
+  padding:.95rem 1.6rem; border-radius:999px;
+  transition:transform .25s cubic-bezier(.22,.7,.3,1), filter .25s ease;
+}
+.cta:hover{transform:translateY(-1px); filter:brightness(1.06)}
+.cta:focus-visible{outline:2px solid var(--aqua); outline-offset:3px}
+.cta .amt{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.94rem}
+.terms{margin:.85rem 0 0; font-size:.86rem; color:var(--faint)}
+
+/* ---- the planner: the thesis object ---- */
+.planner{
+  margin-top:clamp(3rem,8vw,5rem); background:var(--panel);
+  border:1px solid var(--line); border-radius:14px; overflow:hidden;
+}
+.planner-head{
+  display:flex; align-items:baseline; justify-content:space-between; gap:1rem;
+  padding:1.1rem 1.3rem; border-bottom:1px solid var(--line); flex-wrap:wrap;
+}
+.planner-head .t{font-weight:700; letter-spacing:-.02em; font-size:1.05rem}
+.planner-head .m{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.7rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--faint);
+}
+.rows{display:flex; flex-direction:column}
+.row{
+  display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:center;
+  padding:.95rem 1.3rem; border-top:1px solid var(--hair);
+}
+.rows .row:first-child{border-top:none}
+.row .task{display:flex; align-items:center; gap:.8rem; min-width:0}
+.tick{
+  flex:none; width:1.05rem; height:1.05rem; border-radius:50%;
+  border:1.5px solid var(--faint); position:relative;
+}
+.row.done .tick{background:var(--aqua); border-color:var(--aqua)}
+.row.done .tick::after{
+  content:""; position:absolute; left:.32rem; top:.14rem;
+  width:.24rem; height:.46rem; border:solid #07090E;
+  border-width:0 2px 2px 0; transform:rotate(45deg);
+}
+.row.done .label{color:var(--faint); text-decoration:line-through; text-decoration-thickness:1px}
+.label{font-size:.99rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.due{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.8rem;
+  font-variant-numeric:tabular-nums; letter-spacing:.04em;
+  padding:.22rem .6rem; border-radius:999px; white-space:nowrap;
+}
+.due.soon{color:var(--ember); background:color-mix(in srgb, var(--ember) 12%, transparent)}
+.due.next{color:var(--amber); background:color-mix(in srgb, var(--amber) 14%, transparent)}
+.due.later{color:var(--muted); background:color-mix(in srgb, var(--muted) 12%, transparent)}
+.due.ok{color:var(--aqua); background:color-mix(in srgb, var(--aqua) 12%, transparent)}
+.planner-foot{
+  padding:.85rem 1.3rem; border-top:1px solid var(--line); background:var(--sunk);
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.72rem;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--faint);
+}
+
+/* ---- sections ---- */
+section{padding:clamp(3.5rem,9vw,6rem) 0}
+.h2{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.7rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--faint);
+  margin:0 0 1.6rem; display:flex; align-items:center; gap:.8rem;
+}
+.h2::after{content:""; flex:1; height:1px; background:var(--hair)}
+h2.big{
+  font-size:clamp(1.8rem,4.4vw,2.6rem); font-weight:800; letter-spacing:-.03em;
+  line-height:1.08; margin:0 0 1.2rem; text-wrap:balance; max-width:20ch;
+}
+.lede{color:var(--muted); font-size:1.05rem; font-weight:300; max-width:48ch; margin:0}
+
+.grid{display:grid; grid-template-columns:1fr; gap:1px; background:var(--line);
+  border:1px solid var(--line); border-radius:14px; overflow:hidden; margin-top:2.4rem}
+@media (min-width:44rem){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:64rem){.grid{grid-template-columns:repeat(3,1fr)}}
+.cell{background:var(--ground); padding:1.5rem 1.4rem; display:flex; flex-direction:column; gap:.55rem}
+.cell .k{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.66rem;
+  letter-spacing:.15em; text-transform:uppercase; color:var(--amber);
+}
+.cell h3{margin:0; font-size:1.08rem; font-weight:700; letter-spacing:-.02em}
+.cell p{margin:0; color:var(--muted); font-size:.95rem; font-weight:300; line-height:1.55}
+
+/* ---- price ---- */
+.price{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:clamp(1.8rem,5vw,2.8rem); display:grid; gap:1.8rem;
+}
+@media (min-width:48rem){.price{grid-template-columns:1fr auto; align-items:center; gap:3rem}}
+.price ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.6rem}
+.price li{display:flex; gap:.7rem; align-items:baseline; font-size:.98rem; color:var(--muted); font-weight:300}
+.price li::before{content:"✓"; color:var(--aqua); font-weight:700; flex:none}
+.tag{text-align:left}
+@media (min-width:48rem){.tag{text-align:right}}
+.tag .n{
+  font-size:clamp(3rem,9vw,4.4rem); font-weight:900; letter-spacing:-.045em;
+  line-height:1; display:block; font-variant-numeric:tabular-nums;
+}
+.tag .once{
+  display:block; font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.72rem; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--faint); margin-top:.5rem;
+}
+
+/* ---- foot ---- */
+footer{border-top:1px solid var(--hair); padding:2.4rem 0 3.5rem; display:flex;
+  flex-wrap:wrap; gap:1rem 2rem; align-items:baseline; justify-content:space-between}
+footer a{color:var(--aqua); text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer p{margin:0; color:var(--faint); font-size:.88rem}
+
+@media (prefers-reduced-motion: reduce){
+  .hero::before{animation:none}
+  *{transition:none !important}
+}
+</style>
+
+<div class="wrap">
+
+  <div class="top">
+    <span class="mark">I.Magin Consulting</span>
+    <span class="file">File 002</span>
+  </div>
+
+  <div class="hero">
+    <p class="eyebrow">College prep · household file</p>
+    <h1>Every deadline your family is about&nbsp;to <em>miss.</em></h1>
+    <p class="sell">Four years of college prep is roughly two hundred small decisions and about a dozen dates that cannot move. <b>College Checklist puts all of them on one list your parent and your student both see</b> — so nobody nags, nobody guesses, and nothing quietly passes.</p>
+    <a class="cta" href="https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02">Get instant access <span class="amt">$49</span></a>
+    <p class="terms">One time. No subscription. Access opens the moment you pay.</p>
+
+    <div class="planner">
+      <div class="planner-head">
+        <span class="t">Junior year</span>
+        <span class="m">11 categories · 50+ tasks</span>
+      </div>
+      <div class="rows">
+        <div class="row done"><div class="task"><span class="tick"></span><span class="label">Build the college list</span></div><span class="due ok">Done</span></div>
+        <div class="row done"><div class="task"><span class="tick"></span><span class="label">Register for the SAT</span></div><span class="due ok">Done</span></div>
+        <div class="row"><div class="task"><span class="tick"></span><span class="label">Ask two teachers for recommendations</span></div><span class="due soon">Sep 12</span></div>
+        <div class="row"><div class="task"><span class="tick"></span><span class="label">Draft the personal essay</span></div><span class="due next">Oct 1</span></div>
+        <div class="row"><div class="task"><span class="tick"></span><span class="label">Submit the FAFSA</span></div><span class="due next">Oct 1</span></div>
+        <div class="row"><div class="task"><span class="tick"></span><span class="label">Book campus visits over break</span></div><span class="due later">Nov 20</span></div>
+      </div>
+      <div class="planner-foot">Parent view and student view · same list, same dates</div>
+    </div>
+  </div>
+
+  <section>
+    <p class="h2">What's inside</p>
+    <h2 class="big">One purchase. Everything below, immediately.</h2>
+    <p class="lede">No setup call, no onboarding, no account to configure. You buy the file and it is already written.</p>
+
+    <div class="grid">
+      <div class="cell">
+        <span class="k">Dashboards</span>
+        <h3>Two views of one plan</h3>
+        <p>A parent view and a student view of the same list, so nobody has to ask what's been done.</p>
+      </div>
+      <div class="cell">
+        <span class="k">Task list</span>
+        <h3>50+ tasks, 11 categories</h3>
+        <p>Testing, essays, recommendations, financial aid, applications, visits, deadlines — already written for you.</p>
+      </div>
+      <div class="cell">
+        <span class="k">Timeline</span>
+        <h3>Dates, by grade and season</h3>
+        <p>Tasks land on real dates, so what's due next is never a question anyone has to research.</p>
+      </div>
+      <div class="cell">
+        <span class="k">Budget</span>
+        <h3>Before it surprises you</h3>
+        <p>Application fees, test fees, campus visits, deposits — tracked while there is still time to plan for them.</p>
+      </div>
+      <div class="cell">
+        <span class="k">Documents</span>
+        <h3>Requested, sent, received</h3>
+        <p>Transcripts, test scores, aid forms, letters. Know which of the three each one is, at any moment.</p>
+      </div>
+      <div class="cell">
+        <span class="k">Family</span>
+        <h3>Assign it and export it</h3>
+        <p>Hand a task to a parent or the student, and print the whole plan whenever someone wants it on paper.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="h2">Price</p>
+    <div class="price">
+      <div>
+        <h2 class="big" style="margin-bottom:1.4rem">One price. No subscription, no upsell.</h2>
+        <ul>
+          <li>Full access to College Checklist</li>
+          <li>Parent and student dashboards</li>
+          <li>All 50+ tasks across 11 categories</li>
+          <li>Budget planner, document tracker, export</li>
+          <li>Free updates as new features ship</li>
+        </ul>
+      </div>
+      <div class="tag">
+        <span class="n">$49</span>
+        <span class="once">One time</span>
+        <a class="cta" style="margin-top:1.6rem" href="https://buy.stripe.com/00w6oH1z16lHcwS9y2g7e02">Get instant access</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>I.Magin Consulting · File 002 · College Checklist</p>
+    <p>A real person answers: <a href="mailto:isaacmagin78@gmail.com">isaacmagin78@gmail.com</a></p>
+  </footer>
+
+</div>
