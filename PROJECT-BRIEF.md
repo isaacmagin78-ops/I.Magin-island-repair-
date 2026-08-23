@@ -40,6 +40,12 @@ this from a phone.
 Limited mobility: **work has to be low-effort, repeatable, and automatable.**
 A long setup instruction is a failure, not a plan.
 
+**Device preference, his own words, 2026-08-23:** *"I just found my iPad is
+easier to navigate for some reason."* Said while working from the jacuzzi. Worth
+holding onto — most of his sessions are assumed to be phone, and a session
+tailoring its output for a phone screen may be aiming at the wrong device. **Ask
+or watch for which one he is on before assuming.**
+
 ### People in play — recorded 2026-08-18, work facts only
 
 **Nobody below has authorized anything. No name publishes, no one is
