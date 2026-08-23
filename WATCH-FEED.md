@@ -225,3 +225,17 @@ file exists.
 - **Sabrina Ramonov** — [ChatGPT Erased My Digital Identity 🤯](https://www.youtube.com/watch?v=NFT-r8au2ho) · published 2026-08-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-23 07:45 UTC
+
+**Who posted**
+- **Alex Hormozi** — [You Just Need 1 Skill](https://www.youtube.com/watch?v=yNl4vB38Qjg) · published 2026-08-23
+- **Alex Hormozi** — [My One Law](https://www.youtube.com/watch?v=SEYcOnPb6tA) · published 2026-08-23
+- **Alex Hormozi** — [These are the 3 most common traits of hyper successful people.](https://www.youtube.com/watch?v=ubTkqg8IHZs) · published 2026-08-23
+- **Sabrina Ramonov** — [Best AI Tools for Every Task in 2026](https://www.youtube.com/watch?v=dPBVJxEUrjg) · published 2026-08-23
+- **Dan Martell** — [7 metrics you NEED to know as a CEO](https://www.youtube.com/watch?v=RAmWmLrPXiY) · published 2026-08-23
+- **Dan Martell** — [How to be a great leader](https://www.youtube.com/watch?v=Sc1lPi-LD1Q) · published 2026-08-22
+- *(+12 more held back to keep this readable.)*
+
