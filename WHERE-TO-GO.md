@@ -223,3 +223,52 @@ phone-in-the-jacuzzi task; hand it to him when he is at the desk.**
 [Desktop app](https://code.claude.com/docs/en/desktop) ·
 [Voice mode](https://support.claude.com/en/articles/11101966-use-voice-mode) ·
 [What's new](https://code.claude.com/docs/en/whats-new)
+
+---
+
+## 🎧 The walking assistant — researched 2026-08-23 on his question
+
+> **Isaac:** *"Which chat do I use when I walk Tyson? Perplexity seems good sometimes
+> but it gets confusing. Gemini seemed really good and then I stopped using it — I
+> don't know why."*
+
+**Sabrina has no published pick for this.** Her list covers writing, research,
+coding, marketing, slides, resumes — nothing about talking hands-free. Checked
+2026-08-23; do not invent one for her.
+
+### The answer: ChatGPT Advanced Voice, and Gemini Live as the free one
+
+| | For walking and talking |
+|---|---|
+| **ChatGPT Advanced Voice** | ✅ **The pick.** Sub-500ms replies, you can interrupt it mid-sentence, built as a conversation rather than a search. |
+| **Gemini Live** | ✅ Genuinely good, **free tier**, 40+ languages, deep Google integration. |
+| **Claude mobile voice mode** | ✅ Exists (verified 2026-08-22 at support.claude.com) — ⚠️ note several 2026 articles wrongly claim Claude has no voice at all. It does. |
+| **Perplexity** | ❌ **Not this, and his instinct was right.** |
+
+### Why Perplexity "gets confusing" — this is mechanical, not him
+
+**Perplexity is a search engine that answers in sentences.** It is built to return
+sourced results, so it hands back a briefing with citations. That is excellent at a
+desk and wrong in an ear: he is walking, thinking out loud, and gets a footnoted
+report. **Nothing is broken. It is the wrong instrument for the moment**, exactly
+the way `room-read` says the value is the right thing at the right moment.
+
+### ⚠️ The rule that matters more than the pick
+
+**The assistant that can talk cannot see his business.** ChatGPT Advanced Voice and
+Gemini Live have no wire to his repo, Stripe, Blotato or Drive. Asking them where
+things stand produces a confident guess — the exact failure this whole file exists
+to prevent.
+
+> **So: use voice to think, not to check.** Talk it out on the walk, then bring the
+> conclusion back to the session that can see the live system.
+
+### The best use of a walk, for him specifically
+
+**Capture, not query.** His standing problem is that facts he states out loud
+evaporate before anyone writes them down — the intake rule in `CLAUDE.md` exists
+because of it. A walk with voice is the cheapest fix available: **talk, then paste
+the transcript into the Code session.** No app to build, no tool to buy.
+
+*(Researched 2026-08-23. Voice models move fast — re-check before repeating after
+roughly November.)*
