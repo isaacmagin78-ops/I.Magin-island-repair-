@@ -1,5 +1,46 @@
 # Where to go for what
 
+## 🚪 THE ONE DOOR — decided 2026-08-23, because he asked and deserved an answer
+
+> **Isaac:** *"Is this the conversation I should come to, just be like my top
+> conversation, or what do I do from now on? The last month or two has got me so
+> confused where to go — this whole time, ten months."*
+
+**The answer is one door and one word.**
+
+### The door: the starred session
+
+In the Claude app → **Code** tab, the session pinned at the top with a star:
+
+> ⭐ **HOME BASE — Aug 17 recovery (repo found, watcher live)**
+
+**That is the address. He goes there. Nowhere else needs to be remembered.**
+
+### The word: "catch up"
+
+**And here is why he cannot get lost again even if he lands somewhere else.**
+Sessions do not share memory — that is the shape of the tool and it will not
+change. But every session opened on this repo reads `CLAUDE.md`, and `CLAUDE.md`
+makes **"catch up"** a standing command: verify current, read `HANDOFF.md`,
+`THE-BOARD.md`, `TREND-WATCH.md`, `YOUR-PROGRESS.md`, check `WATCH-FEED.md`,
+re-verify live, answer in three sentences.
+
+> **So the rule for him is: go to the starred session. If you ever find yourself
+> in a strange one, type "catch up" and it becomes the right one.**
+
+**Why ten months went wrong, stated plainly so no session repeats it:** the
+problem was never that he picked the wrong conversation. It was that work lived
+in sessions instead of in files, so every new conversation genuinely was blind
+and he was right to feel lost. **That is fixed — the repo is the memory now, and
+`main` is where it lives.** Any session that reads the files starts where the
+last one stopped.
+
+**For any session reading this: do not offer him a menu of places to go.** He has
+been handed options for ten months and it is the thing that broke him. One door.
+
+---
+
+
 Isaac runs four assistants — Claude (Code and chat), Kelly (GPT), Flex
 (Perplexity), and Gemini. **None of them can see each other.** Each starts from
 zero every session. That is not a bug to fix; it is the shape of the thing, and
