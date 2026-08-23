@@ -318,3 +318,32 @@ why he cannot find either.** Picking one is a decision he has not been offered y
 **Sources (2026-08-23):**
 [Claude iOS widgets and shortcuts](https://support.claude.com/en/articles/10263469-use-claude-app-intents-shortcuts-and-widgets-on-ios) ·
 [Lock Screen, Control Center, Action button](https://support.claude.com/en/articles/10302511-access-claude-for-ios-on-your-lock-screen-control-center-and-action-button)
+
+### ✅ He was right — the shared brief exists and it is alive
+
+> **Isaac, 2026-08-23:** *"I thought that's in Notion or something where you guys
+> all can see it but you're the only one that can change it."*
+
+**Verified live 2026-08-23.** Inside **Ike's Venture HQ → Ike OS** there is a
+**Daily Briefing Log** database that writes itself **every morning around 10:32
+UTC (6:32 AM ET)**. It has run daily and unbroken; the most recent entry is
+**2026-08-22**. Fields: Briefing Date · Top Priority Today · Business Pulse ·
+Calendar Summary · Urgent Tasks · At-Risk Projects · Reviewed.
+
+**So the thing he could not find is not missing and never was.** It is a Notion
+database, which is why pulling down a phone notification felt like the only way in
+— the notification is a separate ChatGPT delivery, not this.
+
+**One correction to his belief:** it is not true that only Claude Code can change
+it. **Any assistant holding the Notion connector can read and write it** — that is
+what makes it the shared layer. What is true is that most surfaces do not have the
+connector, so most of them cannot.
+
+🔒 **Its contents are personal and stay in Notion.** The recurring top-priority
+item is a medical/legal matter and **must never be copied into this repository,
+which is public.** Read it there; do not mirror it here. Business items from the
+brief (e.g. a Stripe sync failure logged across several days in August) may be
+mirrored — personal ones may not.
+
+*(Verified 2026-08-23 with the Notion connector: database
+`Daily Briefing Log`, under `Ike's Venture HQ`.)*
