@@ -2852,3 +2852,41 @@ tasks. Nothing invented.
 
 ⚠️ **Still never deployed, and its window is NOW** — college move-in is late August.
 Same single blocker as everything else: the Vercel GitHub connection.
+
+### 2026-08-23 — the background is alive now, and it came from his own shader
+
+> *"What do we have to do to get graphics and something to make it look lively?
+> There's gotta be some new way to make the background interesting."*
+
+**He was right that everything built for him lately has been quiet and
+typographic.** Fixed.
+
+`site/front-door.html` — a one-screen front door for I.Magin with the
+**`miami()` shader running live in WebGL behind the type.** Not a video, not an
+image: a field computed on his phone's graphics chip every frame.
+
+🟢 **The shader was already his.** Lifted verbatim from `site/holo.html`, which
+`DESIGN-DIRECTION.md` names as the working reference. Closed four-stop —
+peach `#FFB78C` → coral `#FF5787` → violet `#A159FF` → aqua `#33C7EB`. **No yellow
+and no green anywhere in the run**, which is precisely why it cannot read as a
+spectrum. That is the hard rule, honoured by construction rather than by taste.
+
+✅ **Verified, not assumed.** Rendered headless with software WebGL and the frames
+were opened and looked at. First pass came back too dark to call lively — amplitude
+raised on four values (`depth` floor and gain, sweep width and strength, veil
+opacity) and re-rendered. Second pass reads as violet, coral and aqua light moving
+under dark glass, with the type still clean on top.
+
+⚠️ In the render harness the Google Fonts request is blocked by the egress proxy,
+so the screenshot shows system fallbacks. **On a real device Figtree loads and it
+looks better than the proof shot.**
+
+### What else is available for visuals — verified connected 2026-08-23
+
+Canva · Figma · Adobe · Gamma · ElevenLabs (image and video generation) ·
+Descript. **So "hand it to another one of the team" is a real option.**
+
+**But the shader is the differentiated thing.** Generated stock imagery makes his
+pages look like everyone else's; a field computed live from his own closed palette
+does not exist anywhere else. **Reach for the generators for content, not for
+atmosphere.**
