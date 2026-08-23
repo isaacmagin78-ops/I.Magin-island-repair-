@@ -2714,3 +2714,29 @@ including four **Send Off College** tasks overdue since 2026-07-19 to 07-22, plu
 "Convert Linda pilot to paying arrangement" and "Complete Blotato MCP connector
 setup." Personal items in that brief stay in Notion and are deliberately not
 repeated here.
+
+### 2026-08-23 — The Money Engine Project and its instructions had drifted apart
+
+Isaac found the Claude **Project** "Money Engine OS: AI-Automated Digital Product…"
+and asked whether any session had seen it. **No session can** — Projects live on
+the Chat surface and no Code session, connector or tool reaches them.
+
+**But the repo holds the instructions written for that exact Project.**
+`money-engine/INSTRUCTIONS.md` opens with *"Paste this into the Claude project's
+Instructions field."* It has been sitting there since 2026-08-17, unpasted.
+
+**The two versions disagree, and the difference is the whole lesson of this repo:**
+
+| | |
+|---|---|
+| **The Project's current instructions** | A reusable system to *"design and launch profitable, automated digital-product funnels in **any niche** using the same core blueprint."* No person, no numbers, no proof. |
+| **`money-engine/INSTRUCTIONS.md`** | The same ambition, anchored: named channels with measured reach, the live offer and its Stripe rails, an explicit statement that the offer is **not proven**, and a definition of done. |
+
+**The repo version is the honest one** because it carries the uncomfortable figures
+rather than around them. *(Its numbers were verified 2026-08-15 and carry their own
+re-check instruction — do not quote them as current.)*
+
+**One action, five minutes:** paste `money-engine/INSTRUCTIONS.md` into that
+Project's Instructions field so the Project stops running on the unanchored
+version. This is a concrete instance of his own complaint — two Claudes holding
+different knowledge — with a fix that is a copy and paste.
