@@ -48,6 +48,15 @@ session immediately theorised about screen size and he corrected it in the next
 message. The usable fact is only this: **he moves between phone, small iPad and
 MacBook, and no session should assume which one he is on.**
 
+**The Claude app beats Chrome for him, 2026-08-23:** *"it seems like the app is
+more up to date than the Chrome now in terms of speed."* Context worth keeping —
+**he never chose Chrome.** His own words, 2026-08-19: *"I don't use Chrome
+before except for when original Claude Code had me set it up."* A session put it
+there. So do not route him through a browser out of habit: the app has Dispatch
+and Cowork in the sidebar, Chrome does not, and he signs in with **Continue with
+Apple** (his account is an Apple sign-in — tapping Google lands him in an empty
+new account, the same failure mode that cost four weeks on Vercel).
+
 ### People in play — recorded 2026-08-18, work facts only
 
 **Nobody below has authorized anything. No name publishes, no one is
