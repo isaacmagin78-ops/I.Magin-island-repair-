@@ -1,0 +1,70 @@
+{
+  "title": "The Page Is the Pitch",
+  "brand": "I.MAGIN · sample page",
+  "headline": "You're looking at <em>the demo.</em>",
+  "subhead": "This page took one afternoon. Yours would look like this, say your name, and be live at a link you can put on a menu, a window, or a receipt. Nothing here is a mock-up of a mock-up — the page you are reading is the product.",
+  "accent": {
+    "light": "#8C3A2B",
+    "dark": "#E08267",
+    "soft_light": "#F5E2DC",
+    "soft_dark": "#33170F"
+  },
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why a restaurant needs one",
+      "items": [
+        "Most places send people to an Instagram grid or a PDF menu that loads sideways on a phone. Neither one answers the two questions a person actually has standing on the sidewalk: is this place open, and what does it cost.",
+        "A single page fixes that. One link, works on any phone, loads in under a second, and reads the same at midnight as it does at noon."
+      ]
+    },
+    {
+      "kind": "items",
+      "heading": "What it costs",
+      "items": [
+        {
+          "name": "Quick Win",
+          "price": "$99",
+          "note": "One page like this one, built from what you already have — your photos, your menu, your hours. Live at a link within a couple of days. Yours to keep."
+        },
+        {
+          "name": "Launch Kit",
+          "price": "$499",
+          "note": "The page, plus short vertical videos cut from your own photos and footage, plus the posting set up so it actually goes out instead of sitting in a folder."
+        },
+        {
+          "name": "The part nobody does",
+          "note": "Posting on a schedule after the first week. Most of this work dies because someone has to remember to do it on a Tuesday. That part gets automated, which is the only reason it survives."
+        }
+      ]
+    },
+    {
+      "kind": "facts",
+      "heading": "What I'd need from you",
+      "items": [
+        { "label": "Photos you already have", "value": "", "blank": "phone photos are fine" },
+        { "label": "Your hours", "value": "", "blank": "including the day you're closed" },
+        { "label": "The menu", "value": "", "blank": "a photo of the printed one works" },
+        { "label": "One thing you're known for", "value": "", "blank": "in your own words" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The one rule",
+      "items": [
+        "Nothing goes on your page that you did not say. No invented reviews, no made-up numbers, no stock photos of somebody else's food. If a fact is missing it shows as a blank until you fill it in — the blanks above are real, and that is deliberate.",
+        "That rule costs a little polish up front. It is also why nothing on your page will ever embarrass you in front of a regular."
+      ]
+    },
+    {
+      "kind": "cta",
+      "title": "Start with the $99 page",
+      "note": "Reply and tell me the name of the place. That's the whole first step.",
+      "href": "mailto:isaacmagin78@gmail.com?subject=Page%20for%20my%20restaurant"
+    }
+  ],
+  "footer_notes": [
+    "This is a sample page. The restaurant is not real and no business is named on purpose — it exists to show the format, not to imitate anyone."
+  ],
+  "fine": "I.MAGIN · Pompano Beach, Florida\nBuilt with the same one-page stamp used for every client here."
+}
