@@ -434,3 +434,44 @@ this is a plan, not a watcher.
 produced something that never made it into Ike OS, say so out loud — a silent
 watcher and a broken one look identical, and that ambiguity is the whole reason
 this file exists.
+
+---
+
+## 2026-08-23 — Sabrina's tool stack, and the one name Isaac does not have
+
+Isaac sent a screenshot of **@sabrina_ramonov, "Best AI Tools for Every Task in
+2026"** — the bad / good / great format. The logos in his frame were motion-blurred
+and unreadable, so **the picks below come from her own published posts, not from
+guessing at the screenshot.**
+
+| Task | Her pick | Isaac's status |
+|---|---|---|
+| Writing | **Claude** | ✅ has it |
+| Coding | **Claude** | ✅ has it |
+| Research | **Perplexity** | ✅ has it (Flex) |
+| Content / marketing | **Blotato** | ✅ has it, connected |
+| Slide decks | **Gamma** | ✅ has it, connected |
+| Resume | **Gemini** | ✅ has it |
+| Scraping leads/posts | **Apify** | ❌ not connected |
+| **Building apps and websites** | **Emergent** | ❌ **the only real gap** |
+
+### Two things worth saying out loud
+
+**1. He is not behind — he already runs six of her eight.** This matters more
+than the tool list. His standing wound is *"I've lost a month, I don't know
+what's relevant anymore."* Measured against the creator he actually follows, his
+stack is current. `WHERE-TO-GO.md` already routes work almost exactly the way she
+does.
+
+**2. The one gap points straight at his live blocker.** Her pick for *building
+apps and websites* is **Emergent**, and websites are the thing that has been
+stuck for four weeks behind a Vercel connector bound to an empty account.
+⚠️ **Unverified — nobody in this repo has used Emergent or checked its pricing.**
+Do not recommend it as a fix until someone has. It is a lead, not an answer.
+
+Her own framing, worth keeping: *"people think you need 50 tools — you don't. You
+need 8 you trust and the reps to use them daily."* That is the opposite of
+collecting more, which is the failure mode this workspace already has on record.
+
+*(Sourced 2026-08-23 from her published notes. Re-verify before repeating — tool
+picks in this lane go stale in weeks.)*
