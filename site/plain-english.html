@@ -1,0 +1,236 @@
+<title>Plain English</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Newsreader:opsz,wght@6..72,300;6..72,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --ground:#EEF1F2; --surface:#FFFFFF; --tint:#E2EAEB;
+  --line:#C7D3D5; --text:#111C20; --muted:#5B6D73;
+  --accent:#0F6B72; --accent-ink:#0B4A4F;
+  --shadow:0 1px 0 rgba(17,28,32,.05), 0 14px 34px -22px rgba(17,28,32,.55);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A1316; --surface:#132227; --tint:#1A2E34;
+    --line:#26424A; --text:#E7EFEF; --muted:#8CA5AB;
+    --accent:#5FBFC4; --accent-ink:#9BD8DB;
+    --shadow:0 1px 0 rgba(255,255,255,.03), 0 18px 44px -24px #000;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A1316; --surface:#132227; --tint:#1A2E34;
+  --line:#26424A; --text:#E7EFEF; --muted:#8CA5AB;
+  --accent:#5FBFC4; --accent-ink:#9BD8DB;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 18px 44px -24px #000;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--text);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:18px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:38rem; margin:0 auto;
+  padding:clamp(2rem,7vw,3.5rem) clamp(1.15rem,5vw,2rem) 5rem;
+  display:flex; flex-direction:column; gap:2.75rem;
+}
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.66rem;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--accent);
+  display:flex; align-items:center; gap:.7rem; margin:0 0 1rem;
+}
+.eyebrow::after{content:""; flex:1; height:1px; background:var(--line)}
+h1{
+  font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:800; font-size:clamp(2.1rem,9vw,3rem); line-height:1.02;
+  margin:0 0 1rem; text-wrap:balance; letter-spacing:-.02em;
+}
+.lede{font-size:1.08rem; color:var(--muted); margin:0}
+.lede strong{color:var(--text); font-weight:400}
+h2{
+  font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:600; font-size:1.05rem; letter-spacing:-.01em;
+  margin:0 0 1.25rem; text-wrap:balance;
+}
+h2 .n{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.7rem;
+  color:var(--accent); margin-right:.6rem; letter-spacing:.06em;
+}
+.terms{display:flex; flex-direction:column; gap:1.15rem}
+.term{
+  background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:1.05rem 1.15rem; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:.5rem;
+}
+.w{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-weight:700;
+  font-size:.86rem; letter-spacing:.02em; color:var(--accent-ink);
+}
+.d{margin:0; font-size:1rem}
+.y{
+  margin:0; font-size:.92rem; color:var(--muted);
+  background:var(--tint); border-radius:8px; padding:.55rem .7rem;
+}
+.y b{color:var(--text); font-weight:400}
+.close{
+  border-top:1px solid var(--line); padding-top:1.75rem;
+  display:flex; flex-direction:column; gap:1rem;
+}
+.close p{margin:0}
+.big{
+  font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  font-weight:600; font-size:1.15rem; line-height:1.35; text-wrap:balance;
+}
+.fine{font-size:.85rem; color:var(--muted)}
+code{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.85em; background:var(--tint); padding:.1em .35em; border-radius:4px;
+}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">I.MAGIN · for Isaac only</p>
+    <h1>Plain English</h1>
+    <p class="lede">Every word that gets used at you, in one sentence each — and what yours actually is. <strong>You learned this from videos once and stopped watching for two months. This is the same list, written down, so you never have to re-learn it from a video again.</strong></p>
+  </header>
+
+  <section>
+    <h2><span class="n">01</span>Where your work lives</h2>
+    <div class="terms">
+
+      <div class="term">
+        <span class="w">repo</span>
+        <p class="d">A folder of your work that remembers every version of every file, forever. Nothing in it is ever really deleted.</p>
+        <p class="y">Yours is <b>I.Magin-island-repair-</b>. The name is left over from an app that was never built. Ignore the name.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">git</span>
+        <p class="d">The machine that does the remembering. When people say "it's in git," they mean it cannot be lost.</p>
+        <p class="y">This is why nothing you built is actually gone, even on the days it felt gone.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">GitHub</span>
+        <p class="d">The website where a copy of your repo lives, so it isn't only on one computer.</p>
+        <p class="y">Your account is <b>isaacmagin78-ops</b>.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">main</span>
+        <p class="d">The one official copy. The real version.</p>
+        <p class="y"><b>If something isn't on main, no future session will ever see it.</b> This one sentence explains most of the last two months.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">branch</span>
+        <p class="d">A side copy for work in progress, so unfinished work doesn't disturb the real version.</p>
+        <p class="y">Work left on a branch and never merged is invisible. <b>That is exactly how a month "disappeared" — it was sitting on a branch nobody looked at.</b></p>
+      </div>
+
+      <div class="term">
+        <span class="w">commit</span>
+        <p class="d">Saving a snapshot, with a note saying what changed and why.</p>
+        <p class="y">Every note I write is aimed at whoever reads it in six months — often you.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">push</span>
+        <p class="d">Sending your saved snapshots up to GitHub. Until you push, they only exist locally.</p>
+        <p class="y">When I say "pushed," it means it's safe and everyone can see it.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span>What I am, and why we keep contradicting each other</h2>
+    <div class="terms">
+
+      <div class="term">
+        <span class="w">session</span>
+        <p class="d">One conversation with Claude Code. It starts knowing nothing about any other conversation.</p>
+        <p class="y">Sessions cannot see each other. Ever. <b>That is the shape of the tool, not a bug and not a memory problem.</b></p>
+      </div>
+
+      <div class="term">
+        <span class="w">the files are the memory</span>
+        <p class="d">Not a technical term — the workaround. Because sessions forget, everything important gets written into the repo instead of said in chat.</p>
+        <p class="y">This is why I keep saying "written down and pushed." That's me handing the next session what I know.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">connector / MCP</span>
+        <p class="d">A wire from Claude to another company's service. With the wire, I can see your real account. Without it, I'm guessing.</p>
+        <p class="y"><b>This is why one Claude can do something another Claude can't.</b> Not one lying — different wires plugged in.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">cloud session vs. device</span>
+        <p class="d">A cloud session runs on Anthropic's computers with a copy of your repo. A device is your actual MacBook.</p>
+        <p class="y">Everything you've talked to has been the cloud kind. That's why nobody could touch your Mac.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span>Getting something in front of a person</h2>
+    <div class="terms">
+
+      <div class="term">
+        <span class="w">artifact</span>
+        <p class="d">A web page Claude publishes for you at a <code>claude.ai</code> link. Fast, free, and <b>private until you share it from the page's own share menu.</b></p>
+        <p class="y">The restaurant sample page and the Croatia route page are both artifacts.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">deploy</span>
+        <p class="d">Putting a page on the open internet at an address you own, that works whether or not anyone is signed into anything.</p>
+        <p class="y">This is the part that's been stuck. Not because it's hard — because of one wrong login.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">Vercel</span>
+        <p class="d">A company that hosts websites. You point it at your repo and it puts the pages online.</p>
+        <p class="y">Your real account is under <b>isaacmagin78@gmail.com</b>. The connector was pointed at a different, empty one for four weeks.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">QR code</span>
+        <p class="d">A picture of a link. Nothing more. A phone camera reads the picture and opens the link.</p>
+        <p class="y">A QR pointing at a private page shows a stranger a login wall — which is why every one of yours gets scanned on a second phone before it's printed.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span>Things that run without you</h2>
+    <div class="terms">
+
+      <div class="term">
+        <span class="w">the watcher</span>
+        <p class="d">A small program that runs on a timer on GitHub's computers, with nobody logged in and nothing open.</p>
+        <p class="y">Yours checks your creators and Hacker News twice a day and writes what's new into <b>WATCH-FEED.md</b>. It exists because Buzz reached you through a friend three weeks late.</p>
+      </div>
+
+      <div class="term">
+        <span class="w">agent</span>
+        <p class="d">Any program that does several steps on its own instead of waiting for you at each one.</p>
+        <p class="y">The watcher is one. The two ElevenLabs voices you set up in April are two more — they can talk, but no phone number reaches them.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="close">
+    <p class="big">None of this is intelligence. It's vocabulary.</p>
+    <p>You built everything here for six or seven months on a phone, with none of these words. The words came later, from other people, faster than anyone could absorb them — and then everyone kept using them as if you'd agreed to.</p>
+    <p>You don't have to remember this page. It stays in your repo. Ask for it by name and any session will bring it back.</p>
+    <p class="fine">Written 2026-08-23 · lives at <code>site/plain-english.html</code> · if a word gets used at you that isn't here, say so and it gets added.</p>
+  </section>
+
+</div>
