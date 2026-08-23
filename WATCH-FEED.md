@@ -239,3 +239,15 @@ file exists.
 - **Dan Martell** — [How to be a great leader](https://www.youtube.com/watch?v=Sc1lPi-LD1Q) · published 2026-08-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-23 19:32 UTC
+
+**Who posted**
+- **Alex Hormozi** — [I dress a little differently than most people expect.](https://www.youtube.com/watch?v=PrVN5HgkkCY) · published 2026-08-23
+- **Alex Hormozi** — [I'm in My 20s and Want to Make Millions. What Should I Do?](https://www.youtube.com/watch?v=KlXlTUN9T1k) · published 2026-08-23
+- **Alex Hormozi** — [If you’re brand new to business, and don’t know how to divide your time, consider a 4-4-4 split](https://www.youtube.com/watch?v=k64he_8_m3s) · published 2026-08-23
+- **Sabrina Ramonov** — [5 Secret ChatGPT Study Commands for Students](https://www.youtube.com/watch?v=r6KYcJbK1Q4) · published 2026-08-23
+- *(+12 more held back to keep this readable.)*
+
