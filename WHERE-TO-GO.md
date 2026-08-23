@@ -142,9 +142,40 @@ read a Ring camera feed open on his Mac screen. It controls the screen, not a
 camera — so a Ring window already open is the only plausible route, and nobody
 has tested it. Do not promise it.
 
-**Sources (2026-08-22):**
+**3. Remote Control — the third one, and the one he found himself 2026-08-23.**
+
+He tapped **Add device** in the Code tab and got a dialog reading *"Set up remote
+control — in a terminal, open the project you want Claude to work in and run this
+command to connect your device: `claude rc`."* Read from the docs, not guessed:
+
+- **What a "device" is:** his own machine. Every session in his list today shows a
+  **cloud icon** — those run on Anthropic's computers, not his. Adding a device
+  connects the MacBook so a session runs *there*.
+- **The code stays on his machine.** Docs: *"Claude keeps running locally the
+  entire time, so your code execution and filesystem access stay on your
+  machine."* His filesystem, his MCP servers, his project config.
+- **Both surfaces stay in sync** — he can type in the terminal, the iPad and the
+  browser interchangeably, in the same session.
+- **Available on all plans.** No Pro/Max gate, unlike Dispatch and computer use.
+- Traffic is TLS through the Anthropic API, with short-lived scoped credentials.
+
+**The three are different things — do not conflate them for him:**
+
+| | What it is |
+|---|---|
+| **Dispatch** | He messages from the phone; Claude *starts* work on the desktop by itself. |
+| **Computer use** | Claude opens apps and controls the *screen*. |
+| **Remote Control** | One session running on his Mac that he can drive from any device. |
+
+**Remote Control is the closest match to what he has actually been asking for** —
+a session that can see his real files rather than a cloud clone. It needs the
+MacBook, a terminal, and one command typed in the project folder. **Not a
+phone-in-the-jacuzzi task; hand it to him when he is at the desk.**
+
+**Sources (2026-08-22, Remote Control added 2026-08-23):**
 [Desktop app — computer use](https://code.claude.com/docs/en/desktop#let-claude-use-your-computer) ·
-[Desktop app — sessions from Dispatch](https://code.claude.com/docs/en/desktop#sessions-from-dispatch)
+[Desktop app — sessions from Dispatch](https://code.claude.com/docs/en/desktop#sessions-from-dispatch) ·
+[Remote Control](https://code.claude.com/docs/en/remote-control)
 
 **Sources (2026-08-22):**
 [Voice dictation](https://code.claude.com/docs/en/voice-dictation) ·
