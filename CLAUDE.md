@@ -266,6 +266,13 @@ Two practical consequences:
 - **The repo is public.** Health, legal, financial-personal or family details
   about real people go to **Notion**, never to a file here. Work facts get
   mirrored into `PROJECT-BRIEF.md`. Sort it at intake, not later.
+- **🔑 Credentials are the one thing that never gets written down, anywhere.**
+  Passwords, one-time codes, API keys, recovery phrases — not into this repo, not
+  into Notion, not repeated back in chat. **No session can log into anything on his
+  behalf, so a password in a message buys nothing and costs everything.** If one
+  arrives, say so immediately, tell him to change it, and do not store it. Isaac
+  has said plainly that he does not have technical instincts and is trusting this
+  judgment — this is the case where that trust matters most.
 
 ### The teaching rule — warn him before, not after
 
