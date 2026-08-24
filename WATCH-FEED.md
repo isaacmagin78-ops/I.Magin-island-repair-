@@ -265,3 +265,18 @@ file exists.
 - **Dan Martell** — [Broke vs Wealthy Couples](https://www.youtube.com/watch?v=-gYEL75U_r0) · published 2026-08-23
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-24 19:42 UTC
+
+**Who posted**
+- **Alex Hormozi** — [When you sell services, if you do a good job, you can mark your progress by your ability to rai](https://www.youtube.com/watch?v=bXigYsG123I) · published 2026-08-24
+- **Alex Hormozi** — [Q&A 02 I Was Never Going To Stop](https://www.youtube.com/watch?v=_S7i37KRGVk) · published 2026-08-24
+- **Alex Hormozi** — ["Why Do I Keep Waiting Until the Last Minute?"](https://www.youtube.com/watch?v=TRs2MDigFtw) · published 2026-08-24
+- **Sabrina Ramonov** — [Claude's Invisible AI Watermark Has a Big Limitation](https://www.youtube.com/watch?v=TNnfb87mHw8) · published 2026-08-24
+- **Sabrina Ramonov** — [How I'd Start a 1-Person Business + Personal Brand with AI in 30 Days](https://www.youtube.com/watch?v=TePQevG_Dgc) · published 2026-08-24
+- **Dan Martell** — [How much do you ACTUALLY know about AI?](https://www.youtube.com/watch?v=2lWarkDqRTA) · published 2026-08-24
+- **Sabrina Ramonov** — [The Blotato DM Automation Behind My $120K ARR Reel](https://www.youtube.com/watch?v=KdWdEq9rnIc) · published 2026-08-24
+- *(+12 more held back to keep this readable.)*
+
