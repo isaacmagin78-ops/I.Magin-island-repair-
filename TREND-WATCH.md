@@ -507,3 +507,33 @@ file. A trend log that filters out inconvenient findings is worthless.
 **So Isaac now has two independent watchers running:** the GitHub Actions one in
 this repo (twice daily, creators + Hacker News → `WATCH-FEED.md`) and this
 Perplexity one (Mon/Thu → Ike OS). **They do not overlap and neither is redundant.**
+
+## 2026-08-23 — AI SEO: real, and deliberately not his next move
+
+He surfaced **Sabrina Ramonov, "SEO in 2026: Get Customers From ChatGPT and Claude
+AI"** (published 2026-07-31, 12.8K views, 596 likes; full write-up at
+`sabrina.dev/p/ai-seo-for-beginners-full-…`).
+
+**The trend is real.** Being cited inside AI answers is becoming its own discovery
+channel, and it is not hype.
+
+**It is still the wrong thing for him to start this month, for two specific
+reasons:**
+
+1. **There is nothing of his for an AI to cite.** The concierge and client pages
+   live at `claude.ai/code/artifact/…` and are private until shared — uncrawlable
+   by design. What is public is a couple of `*.vercel.app` subdomains with no
+   custom domain and no depth. ⚠️ *Not re-verified live on 2026-08-23; the Vercel
+   connector was unavailable this session.* AI answers cite sources that look
+   authoritative, and a bare preview subdomain does not.
+2. **It is stranger-discovery, which is the opposite of his edge.** His entire
+   conversion record comes from named people who already trust him. AI SEO is the
+   no-named-person pattern with a new label on it.
+
+> **⚠️ Standing warning for any session:** if he comes back wanting to *build* an
+> AI SEO system, that is the tutorial trap again. Say so **before** the build, not
+> after. The prerequisite is one real page on a real domain — which is the same
+> deploy blocker already open, not a new project.
+
+**File it as a six-to-twelve-month play.** Re-check when he owns a domain with
+something worth citing on it.
