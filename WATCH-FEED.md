@@ -251,3 +251,17 @@ file exists.
 - **Sabrina Ramonov** — [5 Secret ChatGPT Study Commands for Students](https://www.youtube.com/watch?v=r6KYcJbK1Q4) · published 2026-08-23
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-24 08:03 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Advice For 20-Year-Old Me](https://www.youtube.com/watch?v=__kC32RXFaE) · published 2026-08-24
+- **Alex Hormozi** — [I made 20x more money when I put all my effort into the first 5 seconds of my videos.](https://www.youtube.com/watch?v=Wr6zCMUW1vc) · published 2026-08-24
+- **Alex Hormozi** — [The Right Thing At The Wrong Time](https://www.youtube.com/watch?v=_xGnpdidzoU) · published 2026-08-24
+- **Sabrina Ramonov** — [Build an Interactive ROI Calculator With Claude for Sales Calls](https://www.youtube.com/watch?v=6i3NfB-8Zoc) · published 2026-08-24
+- **Dan Martell** — [How to hire quality people on your team](https://www.youtube.com/watch?v=uKwQ5C9MDeU) · published 2026-08-24
+- **Dan Martell** — [Broke vs Wealthy Couples](https://www.youtube.com/watch?v=-gYEL75U_r0) · published 2026-08-23
+- *(+12 more held back to keep this readable.)*
+
