@@ -2826,3 +2826,36 @@ the other way round.
 why it did not work, do not help him execute the video harder. **Ask which name it
 would go to.** If there is no name, that is the answer, and it is the same answer
 every time.
+
+### 2026-08-23 — Measured: why his usage burns faster than a content creator's
+
+He compared himself unfavourably to a creator who runs a business on Max without
+hitting limits. **The workloads are not comparable, and the gap is measurable.**
+
+**Measured 2026-08-23 with `wc -w`:**
+
+| File | Words | When it loads |
+|---|---|---|
+| `CLAUDE.md` | **4,343** | **Automatically, into every single session, before any work happens** |
+| `HANDOFF.md` | **24,288** | On every "catch up" |
+| The full catch-up set | **~42,000** | On every "catch up" |
+
+**Roughly 55–60k tokens are spent orienting before a session does anything**, and
+he runs many sessions in parallel. A creator writing posts and running one or two
+automations is not paying that. **This is a workload difference, not a discipline
+failure on his part.**
+
+**Three causes, in order of size:**
+
+1. **`HANDOFF.md` has never been trimmed.** It is a running log with months of
+   resolved entries still inline. **Splitting current state from an archive would
+   cut the catch-up cost by more than half** and is the single biggest lever.
+   ⚠️ Sessions — this one included — have appended to it a dozen times in a day
+   without ever removing anything. The growth is our doing, not his.
+2. **Model choice.** He was on **Opus 5 High** for ordinary chat at 1 AM; the app
+   itself warns that Opus consumes limits fastest. Reserve it for genuinely hard
+   work.
+3. **Parallel sessions.** Each one pays the orientation cost separately.
+
+**Not verified:** his actual billing or overage charges. No session has read them,
+and none should claim to know what he is being charged.
