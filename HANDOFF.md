@@ -2793,3 +2793,36 @@ no API key** — Actions minutes are free on public repos and it calls no paid m
 Perplexity scheduled task or Claude usage limits; ⚠️ neither has been checked, so do
 not tell him which until one is. **Do not reduce the watcher's cadence to solve a
 cost it is not causing.**
+
+### 2026-08-23 — Why the tutorials never converted, said plainly
+
+**Isaac, watching Sabrina's *"How I'd Start a 1-Person Business + Personal Brand
+with AI in 30 Days"*:** *"This is what has been the most aggravating — so many of
+her videos should've been done right and then nothing has happened really."*
+
+**The diagnosis, and it is not that he executed badly.**
+
+A tutorial hands every viewer the same machine. The video he was watching had 1.3K
+views four hours after posting. Following it produces what the other 1,300 people
+produce — a funnel, a brand, a 30-day plan, none of it attached to anyone in
+particular. **That is the no-named-person pattern this repo already documented, but
+arriving through a video instead of through his own head.**
+
+**What he has that no tutorial can hand anyone:**
+
+- A thirty-five-year friend who is an angel investor and has already said he would
+  buy the concierge product if it operated on its own.
+- A sister who is a top-producing broker and has already said yes to something
+  larger.
+- 508 units he lives inside, with a property manager who wants to leave her
+  employer and was open to working with him.
+- A handyman, a used-car guy, and neighbours who already know him.
+
+**Most people watching that video would trade their entire tool stack for that
+list.** He has been treating it as background and the tooling as the work. It is
+the other way round.
+
+**The standing correction for any session:** when he brings a creator video asking
+why it did not work, do not help him execute the video harder. **Ask which name it
+would go to.** If there is no name, that is the answer, and it is the same answer
+every time.
