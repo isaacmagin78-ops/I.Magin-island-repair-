@@ -294,3 +294,17 @@ file exists.
 - **Dan Martell** — [The intersection of kind and warrior](https://www.youtube.com/watch?v=haPuQQ5gf34) · published 2026-08-24
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-25 19:53 UTC
+
+**Who posted**
+- **Alex Hormozi** — [You cannot heal in the same environment that got you sick. If you can’t change your environment](https://www.youtube.com/watch?v=eVhA48fIGCg) · published 2026-08-25
+- **Alex Hormozi** — [The Simplest Way To Convert More Leads](https://www.youtube.com/watch?v=CvsNORqAnF4) · published 2026-08-25
+- **Alex Hormozi** — ["If You Went Broke Tomorrow, How Would You Make $100K Again?"](https://www.youtube.com/watch?v=yjZTp6jhaRw) · published 2026-08-25
+- **Sabrina Ramonov** — [7 Skills to Learn Before You Turn 18](https://www.youtube.com/watch?v=33SAqhxke1s) · published 2026-08-25
+- **Dan Martell** — [Which leader do you have?](https://www.youtube.com/watch?v=V8C0S7CcEc8) · published 2026-08-25
+- **Sabrina Ramonov** — [How to Install DeepSeek Harness Step by Step](https://www.youtube.com/watch?v=l5lpce5EvXg) · published 2026-08-25
+- *(+12 more held back to keep this readable.)*
+
