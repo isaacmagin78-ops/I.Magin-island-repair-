@@ -2890,3 +2890,35 @@ Descript. **So "hand it to another one of the team" is a real option.**
 pages look like everyone else's; a field computed live from his own closed palette
 does not exist anywhere else. **Reach for the generators for content, not for
 atmosphere.**
+
+---
+
+## 2026-08-25 — verified state (session: Tyson voiceover video)
+
+**Posting queue is EMPTY — verified live 2026-08-25 via `blotato_list_schedules`
+(returned 0 items).** HANDOFF predicted it would run dry 2026-08-18 23:00 UTC;
+it has. This is the one item actually waiting on Isaac.
+
+**Watcher alive.** `origin/main` head is `ce51a58` "Watch feed: 2026-08-24 19:42
+UTC" — the GitHub workflow is still firing unattended, twice daily, as designed.
+
+**In flight — Tyson's Time "standoff" voiceover video (branch
+`claude/tyson-voiceover-video-6adyy5`):**
+- All six VO lines generated via the ElevenLabs connector and verified with
+  `ffprobe`. Casting: KITTEN = Laura `FGY2WhTYpPnrIDTdsKH5`; TYSON = Brian
+  `nPczCjzI2devNBz1zQrb`. Chosen from the standard premade library — the
+  connector exposes no list-voices tool and `api.elevenlabs.io` is blocked by
+  this environment's egress policy (403 on CONNECT), so the account's own
+  library could not be enumerated.
+- Line 6 overran the 21s end by 0.76s; fixed by starting it at 17.2s instead of
+  18s. No lines overlap. VO track normalized to −16 LUFS, true peak −1.5 dBFS.
+- **Blocked on the source video.** `IMG_9061.mov` is not in Google Drive under
+  that name — searched by filename, by "9061", and across every video file in
+  the account. `drive.google.com` is also blocked by the egress policy, so the
+  clip must be committed to the repo or supplied on a reachable host.
+- Mix/mux script staged and filter-graph tested: `build_mix.sh` (ducks camera
+  audio to 15%, copies the video stream, refuses to run on any overrun).
+
+**Note for the next session:** ElevenLabs and Google Drive connectors both
+flapped repeatedly during this session — dropping mid-task and returning minutes
+later. Retry before concluding a capability is missing.
