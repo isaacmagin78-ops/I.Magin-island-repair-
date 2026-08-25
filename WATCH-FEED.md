@@ -280,3 +280,17 @@ file exists.
 - **Sabrina Ramonov** — [The Blotato DM Automation Behind My $120K ARR Reel](https://www.youtube.com/watch?v=KdWdEq9rnIc) · published 2026-08-24
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-25 07:56 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Success is being able to sacrifice short term discomfort for long term benefit.](https://www.youtube.com/watch?v=VwgA149_V0c) · published 2026-08-25
+- **Alex Hormozi** — [Should I Marryher](https://www.youtube.com/watch?v=KFLE0zyzWhA) · published 2026-08-25
+- **Alex Hormozi** — [I Want To End My Partnership](https://www.youtube.com/watch?v=KhKCLL7ihtE) · published 2026-08-25
+- **Dan Martell** — [Entrepreneurship sucks](https://www.youtube.com/watch?v=jvppBw08Q30) · published 2026-08-25
+- **Sabrina Ramonov** — [AI Agent Reportedly Used Fake GitHub Accounts in UK Safety Test](https://www.youtube.com/watch?v=8XNQUzw_7zE) · published 2026-08-25
+- **Dan Martell** — [The intersection of kind and warrior](https://www.youtube.com/watch?v=haPuQQ5gf34) · published 2026-08-24
+- *(+12 more held back to keep this readable.)*
+
