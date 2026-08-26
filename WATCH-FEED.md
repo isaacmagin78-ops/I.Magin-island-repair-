@@ -325,3 +325,19 @@ file exists.
 - **Dan Martell** — [Letting a kid rev my SVJ](https://www.youtube.com/watch?v=pEZ0Rl3Hpew) · published 2026-08-25
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-26 21:49 UTC
+
+**Who posted**
+- **Alex Hormozi** — [My Dream Car..](https://www.youtube.com/watch?v=-GrzN81LF9E) · published 2026-08-26
+- **Alex Hormozi** — [I’m calling it. The next big industry is humanoid robots.](https://www.youtube.com/watch?v=_S3SpZzssn8) · published 2026-08-26
+- **Alex Hormozi** — [Most Games Aren't Worth Playing](https://www.youtube.com/watch?v=PgGbW47w1Js) · published 2026-08-26
+- **Sabrina Ramonov** — [10 Secret ChatGPT Codes to Change How It Answers](https://www.youtube.com/watch?v=op9FGktTyw4) · published 2026-08-26
+- **Dan Martell** — [You only need 1 hit to actually be successful, so keep swinging](https://www.youtube.com/watch?v=zi38l7wV3ic) · published 2026-08-26
+- **Sabrina Ramonov** — [How I Made $120,000 with AI](https://www.youtube.com/watch?v=mVd6PIKY-P0) · published 2026-08-26
+- **Sabrina Ramonov** — [What Is a Neural Network? A Mathematical Explanation](https://www.youtube.com/watch?v=8SeD0Rj9Pik) · published 2026-08-26
+- **Dan Martell** — [How to start a 1-person business with AI (ask these 3 questions)](https://www.youtube.com/watch?v=1BApLicRt1w) · published 2026-08-26
+- *(+12 more held back to keep this readable.)*
+
