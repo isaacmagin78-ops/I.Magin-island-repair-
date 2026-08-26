@@ -308,3 +308,20 @@ file exists.
 - **Sabrina Ramonov** — [How to Install DeepSeek Harness Step by Step](https://www.youtube.com/watch?v=l5lpce5EvXg) · published 2026-08-25
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-26 07:57 UTC
+
+**What shipped**
+- [Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM](https://github.com/swimmingbrain/texbrain) · 86 points · 2026-08-25
+
+**Who posted**
+- **Alex Hormozi** — [I’ll send you our scaling roadmap just comment “map” to see at what level you need help scaling](https://www.youtube.com/watch?v=knnQT0FCIBE) · published 2026-08-26
+- **Alex Hormozi** — [During my hardest days, I repeated the same phrase to myself:](https://www.youtube.com/watch?v=GlZGRQ4nd-0) · published 2026-08-26
+- **Alex Hormozi** — [The only thing crazier than chasing your goals is expecting other people to understand it.](https://www.youtube.com/watch?v=YMKs95tnpl0) · published 2026-08-26
+- **Dan Martell** — [The Most Dangerous People: Specialized Knowledge](https://www.youtube.com/watch?v=I_-P_SozNK4) · published 2026-08-26
+- **Sabrina Ramonov** — [The Blotato DM Automation Behind My $120K ARR Reel](https://www.youtube.com/watch?v=qdn3dGUASvw) · published 2026-08-26
+- **Dan Martell** — [Letting a kid rev my SVJ](https://www.youtube.com/watch?v=pEZ0Rl3Hpew) · published 2026-08-25
+- *(+12 more held back to keep this readable.)*
+
