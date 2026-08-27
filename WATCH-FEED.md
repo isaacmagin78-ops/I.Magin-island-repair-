@@ -341,3 +341,18 @@ file exists.
 - **Dan Martell** — [How to start a 1-person business with AI (ask these 3 questions)](https://www.youtube.com/watch?v=1BApLicRt1w) · published 2026-08-26
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-27 18:16 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Alex Hormozi - Peace Or Power | Episode 158 PART 1 Out Now!! 🎙️🔥 alexhormozi podcast newepisode](https://www.youtube.com/watch?v=682G00qb4FQ) · published 2026-08-27
+- **Alex Hormozi** — [You can read 100 books on sales but the first 1000 cold calls you do, you’ll learn more than al](https://www.youtube.com/watch?v=_2yT1EdBW3s) · published 2026-08-27
+- **Alex Hormozi** — [Am I Just Making Excuses?](https://www.youtube.com/watch?v=EV8_ZstGcoA) · published 2026-08-27
+- **Dan Martell** — [These 4 books changed the trajectory of my life](https://www.youtube.com/watch?v=WLI9qJXl3bw) · published 2026-08-27
+- **Sabrina Ramonov** — [10 ChatGPT Prompts to Learn Anything Faster](https://www.youtube.com/watch?v=gROULfx6gSw) · published 2026-08-27
+- **Sabrina Ramonov** — [10 ChatGPT Prompts to Learn Anything Faster](https://www.youtube.com/watch?v=-uIA27SgL-A) · published 2026-08-27
+- **Dan Martell** — [Don't say these words](https://www.youtube.com/watch?v=2wc7f14Svok) · published 2026-08-26
+- *(+12 more held back to keep this readable.)*
+
