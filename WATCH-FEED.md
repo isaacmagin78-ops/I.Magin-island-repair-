@@ -368,3 +368,20 @@ file exists.
 - ⚠️ **Feed error** — Sabrina Ramonov: HTTP Error 404: Not Found
 - ⚠️ **Feed error** — Dan Martell: HTTP Error 404: Not Found
 - ⚠️ **Feed error** — Alex Hormozi: HTTP Error 404: Not Found
+
+---
+
+## 2026-08-28 19:25 UTC
+
+**Who posted**
+- **Alex Hormozi** — [The only reason you fire someone is because you think they will repeate the mistake in the futu](https://www.youtube.com/watch?v=FjrF05lyxaA) · published 2026-08-28
+- **Alex Hormozi** — ["How Do I Know If This Deal Is a 10x?"](https://www.youtube.com/watch?v=5iujqCyPbw0) · published 2026-08-28
+- **Alex Hormozi** — [Sales Hack](https://www.youtube.com/watch?v=f5uBsICE24k) · published 2026-08-28
+- **Sabrina Ramonov** — [10 AI Skills to Learn Outside the Classroom](https://www.youtube.com/watch?v=iO93XJioMos) · published 2026-08-28
+- **Sabrina Ramonov** — [How to Make Your First $1000 (3 Claude Prompts)](https://www.youtube.com/watch?v=NO4u4PiHC5o) · published 2026-08-28
+- **Dan Martell** — [Should you stay or quit your job?](https://www.youtube.com/watch?v=qEVgkCfwqqo) · published 2026-08-28
+- **Sabrina Ramonov** — [The Coolest ChatGPT Shortcuts: /cutaway, /schematic, /time-lapse](https://www.youtube.com/watch?v=poK2-OSBRLM) · published 2026-08-28
+- **Dan Martell** — [Build a brand](https://www.youtube.com/watch?v=Qi0dVlS3QG0) · published 2026-08-28
+- **Dan Martell** — [6 unpopular truths for your 20s](https://www.youtube.com/watch?v=sT3RQEnC3TE) · published 2026-08-27
+- *(+14 more held back to keep this readable.)*
+
