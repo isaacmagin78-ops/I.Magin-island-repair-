@@ -356,3 +356,15 @@ file exists.
 - **Dan Martell** — [Don't say these words](https://www.youtube.com/watch?v=2wc7f14Svok) · published 2026-08-26
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-28 03:34 UTC
+
+**What shipped**
+- [Show HN: We built open OpenRouter that turns usage into a better model](https://github.com/experientiallabs/experiential) · 122 points · 2026-08-27
+
+
+- ⚠️ **Feed error** — Sabrina Ramonov: HTTP Error 404: Not Found
+- ⚠️ **Feed error** — Dan Martell: HTTP Error 404: Not Found
+- ⚠️ **Feed error** — Alex Hormozi: HTTP Error 404: Not Found
