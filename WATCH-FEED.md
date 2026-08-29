@@ -400,3 +400,17 @@ file exists.
 - **Dan Martell** — [Teaching a kid how to sell ANYTHING](https://www.youtube.com/watch?v=YVMiVct33fk) · published 2026-08-28
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-29 21:42 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Divide your annual income by:](https://www.youtube.com/watch?v=uMENkUbsjMA) · published 2026-08-29
+- **Alex Hormozi** — [Do you think Nas has what it takes to scale?](https://www.youtube.com/watch?v=jHlvyIUMDic) · published 2026-08-29
+- **Dan Martell** — [4 traits you need to be a successful entrepreneur](https://www.youtube.com/watch?v=Hto_Z69Mk-U) · published 2026-08-29
+- **Alex Hormozi** — [There’s a moment when every boy realizes no one is coming to save him.](https://www.youtube.com/watch?v=gkS_glfouJA) · published 2026-08-29
+- **Sabrina Ramonov** — [10 Skills to Become Unreplaceable in the Age of AI](https://www.youtube.com/watch?v=IZ1Cy4dWYmo) · published 2026-08-29
+- **Dan Martell** — [You need to try GrokBot (new AI tool)](https://www.youtube.com/watch?v=_8CUgzsdi9U) · published 2026-08-29
+- *(+12 more held back to keep this readable.)*
+
