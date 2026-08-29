@@ -385,3 +385,18 @@ file exists.
 - **Dan Martell** — [6 unpopular truths for your 20s](https://www.youtube.com/watch?v=sT3RQEnC3TE) · published 2026-08-27
 - *(+14 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-29 13:08 UTC
+
+**Who posted**
+- **Sabrina Ramonov** — [4 Brutally Honest ChatGPT Journaling Prompts](https://www.youtube.com/watch?v=TfILNOlzo7E) · published 2026-08-29
+- **Alex Hormozi** — ["When Is It Safe to Quit My Job for My Business?"](https://www.youtube.com/watch?v=ZqzEodZQbec) · published 2026-08-29
+- **Alex Hormozi** — [Reacting to people's bank accounts](https://www.youtube.com/watch?v=1o1T9GWNCDU) · published 2026-08-29
+- **Alex Hormozi** — [How to get someone to behave differently.](https://www.youtube.com/watch?v=LYrB5DxHB0E) · published 2026-08-29
+- **Dan Martell** — [Your bank account cannot surpass your self belief](https://www.youtube.com/watch?v=3Q6TCIEwHiA) · published 2026-08-29
+- **Sabrina Ramonov** — [5 ChatGPT Study Commands to Learn Anything Faster](https://www.youtube.com/watch?v=aj_n6fcTOSU) · published 2026-08-29
+- **Dan Martell** — [Teaching a kid how to sell ANYTHING](https://www.youtube.com/watch?v=YVMiVct33fk) · published 2026-08-28
+- *(+12 more held back to keep this readable.)*
+
