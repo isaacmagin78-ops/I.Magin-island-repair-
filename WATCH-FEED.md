@@ -414,3 +414,16 @@ file exists.
 - **Dan Martell** — [You need to try GrokBot (new AI tool)](https://www.youtube.com/watch?v=_8CUgzsdi9U) · published 2026-08-29
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-30 12:50 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Everyone wants to outsource growing a company and stick with the seating and strategy, but it j](https://www.youtube.com/watch?v=8jG-aHgyo0M) · published 2026-08-30
+- **Alex Hormozi** — [Paid Ads vs Organic Content](https://www.youtube.com/watch?v=gbuUFzmImb4) · published 2026-08-30
+- **Alex Hormozi** — [13 years of business advice in 60 seconds](https://www.youtube.com/watch?v=ik7MxpXCYH4) · published 2026-08-30
+- **Dan Martell** — [Are you a $10 CEO or $100M CEO?](https://www.youtube.com/watch?v=UzqHuuQw0rQ) · published 2026-08-30
+- **Sabrina Ramonov** — [10 Habits to Build Extreme Discipline](https://www.youtube.com/watch?v=1-7uiHKki0g) · published 2026-08-30
+- *(+12 more held back to keep this readable.)*
+
