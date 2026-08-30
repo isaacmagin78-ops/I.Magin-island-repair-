@@ -427,3 +427,16 @@ file exists.
 - **Sabrina Ramonov** — [10 Habits to Build Extreme Discipline](https://www.youtube.com/watch?v=1-7uiHKki0g) · published 2026-08-30
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-30 21:54 UTC
+
+**Who posted**
+- **Alex Hormozi** — [When I was 20, I wanted to be a millionaire. Once I was a millionaire, I wanted to be in my 20s](https://www.youtube.com/watch?v=Ci1hyn7oi9E) · published 2026-08-30
+- **Alex Hormozi** — [What We Pay Our Employees](https://www.youtube.com/watch?v=6gUitblfBbI) · published 2026-08-30
+- **Dan Martell** — [How to create an AI brain](https://www.youtube.com/watch?v=8ER6koqRjKM) · published 2026-08-30
+- **Alex Hormozi** — [I highly recommend you buy your car in cash.](https://www.youtube.com/watch?v=9GYe63ckL0Q) · published 2026-08-30
+- **Dan Martell** — [Which AI tools should you be using as of August 2026?](https://www.youtube.com/watch?v=UeTjH7wFWUY) · published 2026-08-30
+- *(+12 more held back to keep this readable.)*
+
