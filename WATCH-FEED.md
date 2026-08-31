@@ -440,3 +440,15 @@ file exists.
 - **Dan Martell** — [Which AI tools should you be using as of August 2026?](https://www.youtube.com/watch?v=UeTjH7wFWUY) · published 2026-08-30
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-08-31 15:03 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Buying a Business With 50K](https://www.youtube.com/watch?v=6totMgkvId0) · published 2026-08-31
+- **Alex Hormozi** — ["What Am I Willing to Give Up to Make My First Million?"](https://www.youtube.com/watch?v=sg-sj75-n6Y) · published 2026-08-31
+- **Alex Hormozi** — ["Am I the Only Thing Holding My Business Back?"](https://www.youtube.com/watch?v=PjCYEC0gJWo) · published 2026-08-31
+- **Dan Martell** — [Best bang for your buck marketing strategy](https://www.youtube.com/watch?v=0rkUYeyUjzQ) · published 2026-08-31
+- *(+12 more held back to keep this readable.)*
+
