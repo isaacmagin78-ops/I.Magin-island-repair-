@@ -467,3 +467,15 @@ file exists.
 - **Dan Martell** — ["What was your best investment?"](https://www.youtube.com/watch?v=f5aDPccdHHw) · published 2026-08-31
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-01 12:33 UTC
+
+**Who posted**
+- **Alex Hormozi** — [If you keep at it long enough, luck becomes skill.](https://www.youtube.com/watch?v=-i94lg-TRNs) · published 2026-09-01
+- **Alex Hormozi** — [If you don’t like where you’re at, try one.](https://www.youtube.com/watch?v=eYm-zezNvD4) · published 2026-09-01
+- **Alex Hormozi** — [A Piece Of Advice Worth Remembering](https://www.youtube.com/watch?v=C9yx0qLcXs0) · published 2026-09-01
+- **Dan Martell** — [Coaches should have coaches](https://www.youtube.com/watch?v=Ygxcji5oX2Y) · published 2026-09-01
+- *(+12 more held back to keep this readable.)*
+
