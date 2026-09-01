@@ -479,3 +479,18 @@ file exists.
 - **Dan Martell** — [Coaches should have coaches](https://www.youtube.com/watch?v=Ygxcji5oX2Y) · published 2026-09-01
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-01 21:44 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Most of the times these “negative situations” become wins on a long enough time horizon.](https://www.youtube.com/watch?v=6cYXA_1AcV8) · published 2026-09-01
+- **Alex Hormozi** — [The fastest way to become confident is to build evidence.](https://www.youtube.com/watch?v=z3o6hEdpkD4) · published 2026-09-01
+- **Dan Martell** — [Which AI user are you?](https://www.youtube.com/watch?v=lIEoMIs3bRU) · published 2026-09-01
+- **Alex Hormozi** — ["I Played World of Warcraft for 1 Week Straight"](https://www.youtube.com/watch?v=HByk2IimasA) · published 2026-09-01
+- **Sabrina Ramonov** — [My Favorite ChatGPT Interview Cheat Code](https://www.youtube.com/watch?v=aTiF_U49zjg) · published 2026-09-01
+- **Sabrina Ramonov** — [10 Signs of Dangerous Intelligence](https://www.youtube.com/watch?v=7FGEEKXK_aQ) · published 2026-09-01
+- **Dan Martell** — [How to sell websites to local businesses](https://www.youtube.com/watch?v=ycw9PAdAcbM) · published 2026-09-01
+- *(+12 more held back to keep this readable.)*
+
