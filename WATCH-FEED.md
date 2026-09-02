@@ -494,3 +494,15 @@ file exists.
 - **Dan Martell** — [How to sell websites to local businesses](https://www.youtube.com/watch?v=ycw9PAdAcbM) · published 2026-09-01
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-02 12:05 UTC
+
+**Who posted**
+- **Alex Hormozi** — [These Things Don't Matter to Make Money](https://www.youtube.com/watch?v=fSs5l-k9SVc) · published 2026-09-02
+- **Alex Hormozi** — [You want to keep the latency between when they do something you don’t like, and when you tell t](https://www.youtube.com/watch?v=R5M_YZTi_BM) · published 2026-09-02
+- **Alex Hormozi** — [Life is like a casino.](https://www.youtube.com/watch?v=nNjW_nOvLQo) · published 2026-09-02
+- **Dan Martell** — [Bookkeepers are obsolete](https://www.youtube.com/watch?v=1xeigjBZkBI) · published 2026-09-02
+- *(+12 more held back to keep this readable.)*
+
