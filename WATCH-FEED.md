@@ -506,3 +506,19 @@ file exists.
 - **Dan Martell** — [Bookkeepers are obsolete](https://www.youtube.com/watch?v=1xeigjBZkBI) · published 2026-09-02
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-02 21:47 UTC
+
+**Who posted**
+- **Alex Hormozi** — [If your goal is to make $100M or less, almost any business has the potential to get you there.](https://www.youtube.com/watch?v=xWhmopgqez8) · published 2026-09-02
+- **Dan Martell** — [What AI tools should you be using in September?](https://www.youtube.com/watch?v=cOqiHwwPwlU) · published 2026-09-02
+- **Alex Hormozi** — ["Why Did My Closing Rate Crash After I Raised My Price?"](https://www.youtube.com/watch?v=tNXGfZTrysQ) · published 2026-09-02
+- **Alex Hormozi** — [I will do enough work that there is nothing left to be done.](https://www.youtube.com/watch?v=-Xtsd_raEeQ) · published 2026-09-02
+- **Sabrina Ramonov** — [5 YouTube Channels for Dangerous Intelligence](https://www.youtube.com/watch?v=TsNTM_Tt1D4) · published 2026-09-02
+- **Sabrina Ramonov** — [Prepare for Any Interview in Under 1 Hour With ChatGPT](https://www.youtube.com/watch?v=hA3P2EclStI) · published 2026-09-02
+- **Dan Martell** — [Tell me how you'd handle these sales objections](https://www.youtube.com/watch?v=FYemADqAzAQ) · published 2026-09-02
+- **Dan Martell** — [Once You Make Money, Upgrade These 7 Things ASAP](https://www.youtube.com/watch?v=DlQyXhjH2jE) · published 2026-09-02
+- *(+12 more held back to keep this readable.)*
+
