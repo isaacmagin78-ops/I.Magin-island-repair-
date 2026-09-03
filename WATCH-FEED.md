@@ -534,3 +534,18 @@ file exists.
 - **Dan Martell** — [Leaders need to set the standard](https://www.youtube.com/watch?v=EUbgVImN-uw) · published 2026-09-03
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-03 21:41 UTC
+
+**Who posted**
+- **Alex Hormozi** — [166 K To400 K Stop Hiring Devin](https://www.youtube.com/watch?v=YdiW3AlVEkA) · published 2026-09-03
+- **Dan Martell** — [No one who's accomplished anything impressive had work life balance](https://www.youtube.com/watch?v=KUhHcjV3NSw) · published 2026-09-03
+- **Alex Hormozi** — ["Can My Business Really Hit $100K a Month?"](https://www.youtube.com/watch?v=eWEoSnS5bIE) · published 2026-09-03
+- **Alex Hormozi** — [You’ll get a lot further once you realize:](https://www.youtube.com/watch?v=xTOuGhXhti4) · published 2026-09-03
+- **Sabrina Ramonov** — [Why AI Companies Changed Their Story About Jobs](https://www.youtube.com/watch?v=yPa2w7kQf58) · published 2026-09-03
+- **Sabrina Ramonov** — [Why I'm Switching From Claude Back to ChatGPT](https://www.youtube.com/watch?v=zsICfRA0N2Y) · published 2026-09-03
+- **Dan Martell** — [Which books should you be reading as an entrepreneur?](https://www.youtube.com/watch?v=7lbjqkR7mVg) · published 2026-09-03
+- *(+12 more held back to keep this readable.)*
+
