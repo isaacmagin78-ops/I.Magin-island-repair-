@@ -522,3 +522,15 @@ file exists.
 - **Dan Martell** — [Once You Make Money, Upgrade These 7 Things ASAP](https://www.youtube.com/watch?v=DlQyXhjH2jE) · published 2026-09-02
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-03 12:05 UTC
+
+**Who posted**
+- **Alex Hormozi** — [One of the truest laws in business:](https://www.youtube.com/watch?v=_ZggBfcy0Zg) · published 2026-09-03
+- **Alex Hormozi** — [Partnership Structure](https://www.youtube.com/watch?v=bjZEZyjSrrs) · published 2026-09-03
+- **Alex Hormozi** — [Make it as easy as possible to work as hard as you can.](https://www.youtube.com/watch?v=vJJHGLKw-y8) · published 2026-09-03
+- **Dan Martell** — [Leaders need to set the standard](https://www.youtube.com/watch?v=EUbgVImN-uw) · published 2026-09-03
+- *(+12 more held back to keep this readable.)*
+
