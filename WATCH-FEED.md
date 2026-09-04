@@ -549,3 +549,15 @@ file exists.
 - **Dan Martell** — [Which books should you be reading as an entrepreneur?](https://www.youtube.com/watch?v=7lbjqkR7mVg) · published 2026-09-03
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-04 12:06 UTC
+
+**Who posted**
+- **Alex Hormozi** — [It’s less about pushing hard and more about finding ways to making continuing easy.](https://www.youtube.com/watch?v=qG-e3cEkC6M) · published 2026-09-04
+- **Alex Hormozi** — [DTC Sadness Vs Anxiety](https://www.youtube.com/watch?v=7ntZp8fCaQ4) · published 2026-09-04
+- **Alex Hormozi** — [In some ways, @leilanhormozi sold me on me.](https://www.youtube.com/watch?v=yUjgXiwEqLQ) · published 2026-09-04
+- **Dan Martell** — [Why is my watch $500,000?](https://www.youtube.com/watch?v=GtYo0XYzfNo) · published 2026-09-04
+- *(+12 more held back to keep this readable.)*
+
