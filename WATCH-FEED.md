@@ -561,3 +561,18 @@ file exists.
 - **Dan Martell** — [Why is my watch $500,000?](https://www.youtube.com/watch?v=GtYo0XYzfNo) · published 2026-09-04
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-04 21:26 UTC
+
+**Who posted**
+- **Alex Hormozi** — [L3 How Fast Are You Devin](https://www.youtube.com/watch?v=RsOsvlqebL0) · published 2026-09-04
+- **Dan Martell** — [Should You Start These Businesses?](https://www.youtube.com/watch?v=YMBZ0o8JBBU) · published 2026-09-04
+- **Alex Hormozi** — ["My Ad Returns Crashed. Am I Losing My Business?"](https://www.youtube.com/watch?v=gXON-wBzQ-A) · published 2026-09-04
+- **Alex Hormozi** — [The Menu Upsell](https://www.youtube.com/watch?v=Z4iW5BU8qoU) · published 2026-09-04
+- **Sabrina Ramonov** — [This Claude Skill Replaces a Higgsfield Subscription](https://www.youtube.com/watch?v=rJSpQljDN4k) · published 2026-09-04
+- **Sabrina Ramonov** — [How I Built a Profitable Multimillion-Dollar AI Business in Public](https://www.youtube.com/watch?v=fSKEd5-hG44) · published 2026-09-04
+- **Dan Martell** — [What makes a successful entrepreneur?](https://www.youtube.com/watch?v=ueiMqbFBYgU) · published 2026-09-04
+- *(+12 more held back to keep this readable.)*
+
