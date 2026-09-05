@@ -589,3 +589,17 @@ file exists.
 - **Dan Martell** — ["What's the best morning routine?"](https://www.youtube.com/watch?v=3AqzFuqv2VM) · published 2026-09-05
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-05 21:12 UTC
+
+**Who posted**
+- **Alex Hormozi** — ["Why Am I Not Growing No Matter What I Do?"](https://www.youtube.com/watch?v=Wc_G98EAu9M) · published 2026-09-05
+- **Alex Hormozi** — ["I Love My Product, But I Can't Sell It. What Do I Do?"](https://www.youtube.com/watch?v=gZP-5NUZsJ0) · published 2026-09-05
+- **Alex Hormozi** — [This is what I use as my gym bag.](https://www.youtube.com/watch?v=pxpe5jvc_kw) · published 2026-09-05
+- **Sabrina Ramonov** — [ChatGPT Erased My Digital Shadow](https://www.youtube.com/watch?v=g99h8VaY7ts) · published 2026-09-05
+- **Sabrina Ramonov** — [How I Got 41.9M Views Using Claude and Blotato](https://www.youtube.com/watch?v=N1iXbwVpqQA) · published 2026-09-05
+- **Dan Martell** — [Are you going to be a broke or a wealthy entrepreneur?](https://www.youtube.com/watch?v=k7jPY6Iq0xY) · published 2026-09-05
+- *(+12 more held back to keep this readable.)*
+
