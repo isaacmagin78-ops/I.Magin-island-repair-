@@ -576,3 +576,16 @@ file exists.
 - **Dan Martell** — [What makes a successful entrepreneur?](https://www.youtube.com/watch?v=ueiMqbFBYgU) · published 2026-09-04
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-05 11:15 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Real Estate Broker](https://www.youtube.com/watch?v=96zuuQgyEX4) · published 2026-09-05
+- **Alex Hormozi** — [Eminem’s Persuasion Hack To Close More Sales AKA Damaging Admissions ➡️ Great Way To Build Trus](https://www.youtube.com/watch?v=MNP2NU9kA9E) · published 2026-09-05
+- **Alex Hormozi** — [Friends root for you to win and make you better.](https://www.youtube.com/watch?v=ZVUbW0Ytvxw) · published 2026-09-05
+- **Sabrina Ramonov** — [10 ChatGPT Prompts to Learn Anything 10x Faster](https://www.youtube.com/watch?v=ipwsLu_pB5I) · published 2026-09-05
+- **Dan Martell** — ["What's the best morning routine?"](https://www.youtube.com/watch?v=3AqzFuqv2VM) · published 2026-09-05
+- *(+12 more held back to keep this readable.)*
+
