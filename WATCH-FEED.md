@@ -616,3 +616,19 @@ file exists.
 - **Dan Martell** — [You have to dream so big that you're embarrassed to share it](https://www.youtube.com/watch?v=_yWYnI7RxQQ) · published 2026-09-05
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-06 21:18 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Surgery Course](https://www.youtube.com/watch?v=HmUMDFAS-sY) · published 2026-09-06
+- **Dan Martell** — [Mythbusting businesses](https://www.youtube.com/watch?v=vZdwws8fblk) · published 2026-09-06
+- **Alex Hormozi** — ["Am I Trapped Where I Live?"](https://www.youtube.com/watch?v=M8MgYvHjpXg) · published 2026-09-06
+- **Alex Hormozi** — [This is why you should always have a very expensive thing to sell.](https://www.youtube.com/watch?v=XdYR-nEJJWE) · published 2026-09-06
+- **Sabrina Ramonov** — [The Rise and Fall of AI Agent Civilizations](https://www.youtube.com/watch?v=inw33Y-O1YM) · published 2026-09-06
+- **Sabrina Ramonov** — [ChatGPT Erased My Privacy Leaks](https://www.youtube.com/watch?v=zA1SVvlrTnU) · published 2026-09-06
+- **Dan Martell** — [10 things to avoid if you want to be wealthy](https://www.youtube.com/watch?v=5_AVEz5K-6o) · published 2026-09-06
+- **Sabrina Ramonov** — [AI SEO for Beginners (AEO Tutorial!)](https://www.youtube.com/watch?v=X0lQ97XtLvo) · published 2026-09-06
+- *(+12 more held back to keep this readable.)*
+
