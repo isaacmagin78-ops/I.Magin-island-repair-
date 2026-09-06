@@ -603,3 +603,16 @@ file exists.
 - **Dan Martell** — [Are you going to be a broke or a wealthy entrepreneur?](https://www.youtube.com/watch?v=k7jPY6Iq0xY) · published 2026-09-05
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-06 11:38 UTC
+
+**Who posted**
+- **Alex Hormozi** — [My Business Is Seasonal](https://www.youtube.com/watch?v=1cVbCqXwM28) · published 2026-09-06
+- **Alex Hormozi** — [Try structuring your price points like this to increase sales!](https://www.youtube.com/watch?v=kk2E0fSDEt0) · published 2026-09-06
+- **Alex Hormozi** — [I Cant Pay My Employees](https://www.youtube.com/watch?v=-SH3PxsfGNc) · published 2026-09-06
+- **Dan Martell** — [You need CLARITY to be a leader](https://www.youtube.com/watch?v=6qdbJtLf6No) · published 2026-09-06
+- **Dan Martell** — [You have to dream so big that you're embarrassed to share it](https://www.youtube.com/watch?v=_yWYnI7RxQQ) · published 2026-09-05
+- *(+12 more held back to keep this readable.)*
+
