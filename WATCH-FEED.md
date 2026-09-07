@@ -644,3 +644,18 @@ file exists.
 - **Dan Martell** — [Stop charging by the hour](https://www.youtube.com/watch?v=2s1fEbXbQcU) · published 2026-09-07
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-07 22:00 UTC
+
+**Who posted**
+- **Alex Hormozi** — [You only have to get rich once.](https://www.youtube.com/watch?v=QvfjFXi9OWc) · published 2026-09-07
+- **Alex Hormozi** — [AIHOTLINE v2 Large Corp Stealing My Product Devin](https://www.youtube.com/watch?v=akGSj6OOgvE) · published 2026-09-07
+- **Dan Martell** — [Are these MYTHS or FACTS? (Business Edition)](https://www.youtube.com/watch?v=C4fsOf9M4UQ) · published 2026-09-07
+- **Alex Hormozi** — ["Should I Sue the Person Who Screwed Me Over?"](https://www.youtube.com/watch?v=3t7OyxonVoU) · published 2026-09-07
+- **Sabrina Ramonov** — [10/10 ai skills making you intellectually dangerous](https://www.youtube.com/watch?v=VEPL_Sdxw-Y) · published 2026-09-07
+- **Dan Martell** — [What will the future look like with AI?](https://www.youtube.com/watch?v=URlMUQRY8PA) · published 2026-09-07
+- **Sabrina Ramonov** — [GPT-6 Astra Built GTA 6 Graphics](https://www.youtube.com/watch?v=J_zY464FmQQ) · published 2026-09-07
+- *(+12 more held back to keep this readable.)*
+
