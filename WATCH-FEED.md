@@ -632,3 +632,15 @@ file exists.
 - **Sabrina Ramonov** — [AI SEO for Beginners (AEO Tutorial!)](https://www.youtube.com/watch?v=X0lQ97XtLvo) · published 2026-09-06
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-07 13:29 UTC
+
+**Who posted**
+- **Alex Hormozi** — [HOTLINE 03 Stop Accepting Any Client Devin](https://www.youtube.com/watch?v=b2AXPR5hmt0) · published 2026-09-07
+- **Alex Hormozi** — ["Why Do People Use Me for Free, Then Buy It Cheaper?"](https://www.youtube.com/watch?v=TU5ne0GNju8) · published 2026-09-07
+- **Alex Hormozi** — [It costs less to learn how to make $100,000 per year than it does to not know how to make $100,](https://www.youtube.com/watch?v=J22d8O--R5A) · published 2026-09-07
+- **Dan Martell** — [Stop charging by the hour](https://www.youtube.com/watch?v=2s1fEbXbQcU) · published 2026-09-07
+- *(+12 more held back to keep this readable.)*
+
