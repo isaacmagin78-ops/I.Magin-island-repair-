@@ -659,3 +659,15 @@ file exists.
 - **Sabrina Ramonov** — [GPT-6 Astra Built GTA 6 Graphics](https://www.youtube.com/watch?v=J_zY464FmQQ) · published 2026-09-07
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-08 12:07 UTC
+
+**Who posted**
+- **Alex Hormozi** — [More money saving advice:](https://www.youtube.com/watch?v=sRrL8PlILCI) · published 2026-09-08
+- **Alex Hormozi** — [DTC Make The Jump](https://www.youtube.com/watch?v=qIZG4z05ffY) · published 2026-09-08
+- **Alex Hormozi** — [What makes hard things hard is the hard path you take to get there, the realization that once y](https://www.youtube.com/watch?v=ZJYmu2UuIzQ) · published 2026-09-08
+- **Dan Martell** — ["What would you do if 4 male masseuses walked into your office?"](https://www.youtube.com/watch?v=2_5zH1TKG78) · published 2026-09-08
+- *(+12 more held back to keep this readable.)*
+
