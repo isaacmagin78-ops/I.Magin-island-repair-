@@ -671,3 +671,21 @@ file exists.
 - **Dan Martell** — ["What would you do if 4 male masseuses walked into your office?"](https://www.youtube.com/watch?v=2_5zH1TKG78) · published 2026-09-08
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-08 21:49 UTC
+
+**What shipped**
+- [Muse: Meta's personal AI agent, features and capabilities](https://ai.meta.com/muse/) · 177 points · 2026-09-08
+
+**Who posted**
+- **Alex Hormozi** — [Not everyone who wants your time is worth the investment.](https://www.youtube.com/watch?v=OmMhPIkCgeA) · published 2026-09-08
+- **Alex Hormozi** — [Your Future Depends on Having Hard Conversations Now](https://www.youtube.com/watch?v=7n3j4Y2zgGM) · published 2026-09-08
+- **Dan Martell** — [Are these AI tools all HYPE or are they actually VALUABLE?](https://www.youtube.com/watch?v=7muPpLuwGiM) · published 2026-09-08
+- **Alex Hormozi** — ["How Do I Stop Losing the Sale When They Say They'll Think About It?"](https://www.youtube.com/watch?v=Vu7l6IwZFhc) · published 2026-09-08
+- **Sabrina Ramonov** — [10/10 AI concepts you must understand](https://www.youtube.com/watch?v=0oo79CZoW8k) · published 2026-09-08
+- **Dan Martell** — [Solving all your problems with books](https://www.youtube.com/watch?v=DAfgD85ewDg) · published 2026-09-08
+- **Sabrina Ramonov** — [GPT-6 Astra Controls Blender](https://www.youtube.com/watch?v=EiqBzim5NIg) · published 2026-09-08
+- *(+12 more held back to keep this readable.)*
+
