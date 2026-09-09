@@ -689,3 +689,15 @@ file exists.
 - **Sabrina Ramonov** — [GPT-6 Astra Controls Blender](https://www.youtube.com/watch?v=EiqBzim5NIg) · published 2026-09-08
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-09 12:19 UTC
+
+**Who posted**
+- **Alex Hormozi** — [It’s amazing what you can endure when you have no choice.](https://www.youtube.com/watch?v=QM7UTADIVPU) · published 2026-09-09
+- **Alex Hormozi** — [Why Skills Are the Only Inflation‑Proof Asset You Can Own](https://www.youtube.com/watch?v=dErS7YT6e4U) · published 2026-09-09
+- **Alex Hormozi** — [What makes entrepreneurship hard isn’t the work, it’s not knowing whether it’ll work.](https://www.youtube.com/watch?v=qdX5HILygDI) · published 2026-09-09
+- **Dan Martell** — [You need to be doing leadership training for your team](https://www.youtube.com/watch?v=4KNt6Bdzt5Q) · published 2026-09-09
+- *(+12 more held back to keep this readable.)*
+
