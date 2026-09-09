@@ -701,3 +701,19 @@ file exists.
 - **Dan Martell** — [You need to be doing leadership training for your team](https://www.youtube.com/watch?v=4KNt6Bdzt5Q) · published 2026-09-09
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-09 21:40 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Oftentimes you’re doing the right thing.](https://www.youtube.com/watch?v=hUDijwL7JRI) · published 2026-09-09
+- **Alex Hormozi** — [Why Blaming Others Gives Them Power and How Saying 'My Fault' Starts Change](https://www.youtube.com/watch?v=uRfSrnHdOtU) · published 2026-09-09
+- **Dan Martell** — [Date your wife before someone else does](https://www.youtube.com/watch?v=oicirb4WNI8) · published 2026-09-09
+- **Alex Hormozi** — ["Why Can't I Scale If My Numbers Are Good?"](https://www.youtube.com/watch?v=k4v9-LR7eHk) · published 2026-09-09
+- **Sabrina Ramonov** — [I Dropped Claude for ChatGPT](https://www.youtube.com/watch?v=lB9ghJRNzeU) · published 2026-09-09
+- **Dan Martell** — [These ADHD traits will make you rich as f*ck](https://www.youtube.com/watch?v=wP_MRxsho8c) · published 2026-09-09
+- **Sabrina Ramonov** — [Secret Codes for Interviews](https://www.youtube.com/watch?v=Z_aYp6r2faY) · published 2026-09-09
+- **Dan Martell** — [How to Use AI to Change Your Life (for the Better)](https://www.youtube.com/watch?v=gfSVNJZgbOo) · published 2026-09-09
+- *(+12 more held back to keep this readable.)*
+
