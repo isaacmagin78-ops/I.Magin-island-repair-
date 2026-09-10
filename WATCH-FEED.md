@@ -717,3 +717,18 @@ file exists.
 - **Dan Martell** — [How to Use AI to Change Your Life (for the Better)](https://www.youtube.com/watch?v=gfSVNJZgbOo) · published 2026-09-09
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-10 12:12 UTC
+
+**What shipped**
+- [Muse, the band, lost its social media handles to Muse, Meta's new AI agent](https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/) · 181 points · 2026-09-09
+
+**Who posted**
+- **Alex Hormozi** — [I spoke to a business owner who gets to 100% of leads within 60 seconds.](https://www.youtube.com/watch?v=z6lmb1N00ls) · published 2026-09-10
+- **Alex Hormozi** — [Shorter Scripts](https://www.youtube.com/watch?v=StaHCZ7RsJQ) · published 2026-09-10
+- **Alex Hormozi** — [To improve your product, talk to the people who bought](https://www.youtube.com/watch?v=2_Y61ZiXwWg) · published 2026-09-10
+- **Dan Martell** — [How long does it take to build a media empire?](https://www.youtube.com/watch?v=ujUXCxwQDGU) · published 2026-09-10
+- *(+12 more held back to keep this readable.)*
+
