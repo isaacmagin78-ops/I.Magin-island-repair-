@@ -760,3 +760,18 @@ file exists.
 - **Dan Martell** — [Why are you making your business so complicated?](https://www.youtube.com/watch?v=u-vg-fnb3lc) · published 2026-09-11
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-11 21:41 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Tax "Loopholes" Are NOT Worth It](https://www.youtube.com/watch?v=TFiw2UFOzRM) · published 2026-09-11
+- **Dan Martell** — [You have to learn this skill to be successful](https://www.youtube.com/watch?v=igNZKrKHCW8) · published 2026-09-11
+- **Alex Hormozi** — ["What Would You Do to Build Followers?"](https://www.youtube.com/watch?v=O8bcLN6e8ic) · published 2026-09-11
+- **Alex Hormozi** — [The person you spend the rest of your life with will have the largest impact on who you become,](https://www.youtube.com/watch?v=W4On1h1wQ8I) · published 2026-09-11
+- **Sabrina Ramonov** — [10 ChatGPT Power Words 😳](https://www.youtube.com/watch?v=Oyo-ENg7Y5M) · published 2026-09-11
+- **Dan Martell** — [Whats the best AI tool right now?](https://www.youtube.com/watch?v=mk1zJd9Rm4c) · published 2026-09-11
+- **Sabrina Ramonov** — [How I Turn Social Media Views Into Revenue](https://www.youtube.com/watch?v=XvuKerNEhzQ) · published 2026-09-11
+- *(+12 more held back to keep this readable.)*
+
