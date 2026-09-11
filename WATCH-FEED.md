@@ -748,3 +748,15 @@ file exists.
 - **Sabrina Ramonov** — [Someone Turned Claude Into an Unfair Hack](https://www.youtube.com/watch?v=uIFu5Qmwni8) · published 2026-09-10
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-11 12:11 UTC
+
+**Who posted**
+- **Alex Hormozi** — [How will you measure your life?](https://www.youtube.com/watch?v=uN13GgVG38o) · published 2026-09-11
+- **Alex Hormozi** — [Do This If You Aren't Making $100K](https://www.youtube.com/watch?v=H2LqHou7ecg) · published 2026-09-11
+- **Alex Hormozi** — [Once you realize just how much more work it takes to go from good to great…you realize you can](https://www.youtube.com/watch?v=XPhXM_A9h90) · published 2026-09-11
+- **Dan Martell** — [Why are you making your business so complicated?](https://www.youtube.com/watch?v=u-vg-fnb3lc) · published 2026-09-11
+- *(+12 more held back to keep this readable.)*
+
