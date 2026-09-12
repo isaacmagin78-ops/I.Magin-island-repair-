@@ -775,3 +775,18 @@ file exists.
 - **Sabrina Ramonov** — [How I Turn Social Media Views Into Revenue](https://www.youtube.com/watch?v=XvuKerNEhzQ) · published 2026-09-11
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-12 11:35 UTC
+
+**What shipped**
+- [OpenAI agents carried out an undisclosed attack on RubyGems](https://www.rubyhack.ai/) · 742 points · 2026-09-11
+
+**Who posted**
+- **Alex Hormozi** — [How to start a frozen yogurt business](https://www.youtube.com/watch?v=nSbuB0tWQkE) · published 2026-09-12
+- **Alex Hormozi** — [Try This Hook For Cold Calls](https://www.youtube.com/watch?v=f4x6dIvDo2Q) · published 2026-09-12
+- **Alex Hormozi** — [Get More To Buy Without Changing Price](https://www.youtube.com/watch?v=PSm7T0hBgTc) · published 2026-09-12
+- **Dan Martell** — [You should take a 2 week vacation as an entrepreneur](https://www.youtube.com/watch?v=PwbVyFTHbr4) · published 2026-09-12
+- *(+12 more held back to keep this readable.)*
+
