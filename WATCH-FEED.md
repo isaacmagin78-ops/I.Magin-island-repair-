@@ -790,3 +790,19 @@ file exists.
 - **Dan Martell** — [You should take a 2 week vacation as an entrepreneur](https://www.youtube.com/watch?v=PwbVyFTHbr4) · published 2026-09-12
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-12 21:25 UTC
+
+**Who posted**
+- **Alex Hormozi** — [How I Get Back 52 Workdays A Year](https://www.youtube.com/watch?v=bTdaQVoKi1Q) · published 2026-09-12
+- **Dan Martell** — [How well do you ACTUALLY know business?](https://www.youtube.com/watch?v=y9hDis4rRPY) · published 2026-09-12
+- **Alex Hormozi** — ["Personal Brand or Business First?"](https://www.youtube.com/watch?v=hHlDtwjQ-dE) · published 2026-09-12
+- **Alex Hormozi** — [The only 3 actions to get customers: talk one‑on‑one, create content, or run ads](https://www.youtube.com/watch?v=8JAD3Afuibc) · published 2026-09-12
+- **Sabrina Ramonov** — [10/10 build cult-like personal brand and AUTHORITY](https://www.youtube.com/watch?v=a_4gxZSnreY) · published 2026-09-12
+- **Dan Martell** — [AI tools for every task](https://www.youtube.com/watch?v=djnMdw6DuFI) · published 2026-09-12
+- **Sabrina Ramonov** — [ChatGPT 6 Astra is WILD!](https://www.youtube.com/watch?v=LNFGf5w99Gs) · published 2026-09-12
+- **Sabrina Ramonov** — [ChatGPT erased my digital identity 🤯](https://www.youtube.com/watch?v=amyI1KobC8Q) · published 2026-09-12
+- *(+12 more held back to keep this readable.)*
+
