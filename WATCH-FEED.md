@@ -821,3 +821,18 @@ file exists.
 - **Dan Martell** — [Should you use AI, an Assistant, or yourself for these tasks?](https://www.youtube.com/watch?v=cJAnjEiSCb0) · published 2026-09-13
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-13 21:25 UTC
+
+**Who posted**
+- **Alex Hormozi** — [How to Network with People Above You](https://www.youtube.com/watch?v=uMqvK9mCnPw) · published 2026-09-13
+- **Dan Martell** — [How to set up an AI agent](https://www.youtube.com/watch?v=0AcoA21fu6A) · published 2026-09-13
+- **Alex Hormozi** — ["I'm Doing Everything Right. Why Do I Have Zero Sales?"](https://www.youtube.com/watch?v=lZDmVDKFgJU) · published 2026-09-13
+- **Alex Hormozi** — ["Am I Just Unlucky?"](https://www.youtube.com/watch?v=wCXFeKPpdN0) · published 2026-09-13
+- **Sabrina Ramonov** — [Erase your private data](https://www.youtube.com/watch?v=DWHR0P_Yr-o) · published 2026-09-13
+- **Dan Martell** — [What are the best ways to get more clients? (RANKED)](https://www.youtube.com/watch?v=5J5k27C0FGc) · published 2026-09-13
+- **Sabrina Ramonov** — [ChatGPT Built My Job Search System](https://www.youtube.com/watch?v=vK_WOgoEDWA) · published 2026-09-13
+- *(+12 more held back to keep this readable.)*
+
