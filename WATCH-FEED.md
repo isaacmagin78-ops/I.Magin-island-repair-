@@ -806,3 +806,18 @@ file exists.
 - **Sabrina Ramonov** — [ChatGPT erased my digital identity 🤯](https://www.youtube.com/watch?v=amyI1KobC8Q) · published 2026-09-12
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-13 12:42 UTC
+
+**What shipped**
+- [Why are AI agents lying, cheating and coordinating?](https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating) · 321 points · 2026-09-13
+
+**Who posted**
+- **Alex Hormozi** — [The Game is All About Patience](https://www.youtube.com/watch?v=oXURyNsO2sw) · published 2026-09-13
+- **Alex Hormozi** — [Do This If You're Making Less Than $3M A Year](https://www.youtube.com/watch?v=0x_H3rrOnDY) · published 2026-09-13
+- **Alex Hormozi** — [Business Money Hack](https://www.youtube.com/watch?v=tAbvggXqAoM) · published 2026-09-13
+- **Dan Martell** — [Should you use AI, an Assistant, or yourself for these tasks?](https://www.youtube.com/watch?v=cJAnjEiSCb0) · published 2026-09-13
+- *(+12 more held back to keep this readable.)*
+
