@@ -836,3 +836,16 @@ file exists.
 - **Sabrina Ramonov** — [ChatGPT Built My Job Search System](https://www.youtube.com/watch?v=vK_WOgoEDWA) · published 2026-09-13
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-14 13:59 UTC
+
+**Who posted**
+- **Alex Hormozi** — [If you could do 100× more, what resources and obstacles would matter?](https://www.youtube.com/watch?v=fwn9bbiLsUs) · published 2026-09-14
+- **Alex Hormozi** — [How a last‑minute call got us ice cream before the shop closed](https://www.youtube.com/watch?v=uoS9w3WiX3o) · published 2026-09-14
+- **Alex Hormozi** — ["Why Do I Charge Less Than the Guys I'm Better Than?"](https://www.youtube.com/watch?v=pKnja76x1WU) · published 2026-09-14
+- **Sabrina Ramonov** — [ChatGPT Astra Made GTA 6](https://www.youtube.com/watch?v=UhN3hj6PKvE) · published 2026-09-14
+- **Dan Martell** — [My rules for a successful life - the last one is my fav ;)](https://www.youtube.com/watch?v=siZTT8TwwHU) · published 2026-09-14
+- *(+12 more held back to keep this readable.)*
+
