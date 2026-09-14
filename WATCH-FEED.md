@@ -849,3 +849,17 @@ file exists.
 - **Dan Martell** — [My rules for a successful life - the last one is my fav ;)](https://www.youtube.com/watch?v=siZTT8TwwHU) · published 2026-09-14
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-14 22:28 UTC
+
+**Who posted**
+- **Alex Hormozi** — ["I Have No Money. How Do I Get More Sales?"](https://www.youtube.com/watch?v=QOUiCqHRY5I) · published 2026-09-14
+- **Alex Hormozi** — [Imagine It's Your Last Day on Earth](https://www.youtube.com/watch?v=TLS1G9SCIF8) · published 2026-09-14
+- **Alex Hormozi** — ["I'm 22, should I start a business or work at one?"](https://www.youtube.com/watch?v=w_YC0d7Lwio) · published 2026-09-14
+- **Dan Martell** — [Jobs ranked by the emotional damage they cause](https://www.youtube.com/watch?v=qLSp0fvNRsE) · published 2026-09-14
+- **Sabrina Ramonov** — [ChatGPT Astra Built Minecraft](https://www.youtube.com/watch?v=VnrmtiWrRSA) · published 2026-09-14
+- **Dan Martell** — [Difference between being a boss and being a leader](https://www.youtube.com/watch?v=SfssXCW2esU) · published 2026-09-14
+- *(+12 more held back to keep this readable.)*
+
