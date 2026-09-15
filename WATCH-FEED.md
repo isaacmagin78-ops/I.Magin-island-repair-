@@ -876,3 +876,22 @@ file exists.
 - **Sabrina Ramonov** — [I Made ChatGPT Astra Build GTA 6](https://www.youtube.com/watch?v=cWXsw3xprEM) · published 2026-09-15
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-15 22:12 UTC
+
+**What shipped**
+- [There's a 100% Chance AI Agents Are Ruining the Internet](https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/) · 199 points · 2026-09-15
+
+**Who posted**
+- **Alex Hormozi** — [Trade Your Skills](https://www.youtube.com/watch?v=3OCtyb9ezDo) · published 2026-09-15
+- **Alex Hormozi** — ["How Long Does It Actually Take To Get Good At Anything?"](https://www.youtube.com/watch?v=evBbc41LuH0) · published 2026-09-15
+- **Alex Hormozi** — [Profit Is Unnatural](https://www.youtube.com/watch?v=tjfb8bQMS-8) · published 2026-09-15
+- **Dan Martell** — [5 books to read if you're done settling](https://www.youtube.com/watch?v=bYa0fUuEefY) · published 2026-09-15
+- **Sabrina Ramonov** — [10/10 YouTube Videos For Life Skills](https://www.youtube.com/watch?v=BD65BFXMmlk) · published 2026-09-15
+- **Dan Martell** — [Are you keeping or cutting these AI tools in 2027?](https://www.youtube.com/watch?v=ykXm4wnqR5E) · published 2026-09-15
+- **Sabrina Ramonov** — [Why I Switched From Claude to ChatGPT (without losing anything)](https://www.youtube.com/watch?v=s9OC9_FWQ-4) · published 2026-09-15
+- **Sabrina Ramonov** — [5 Books To Educate Yourself Like The Top 1%](https://www.youtube.com/watch?v=zQr25AYK89Q) · published 2026-09-15
+- *(+12 more held back to keep this readable.)*
+
