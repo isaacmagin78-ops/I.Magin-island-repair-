@@ -863,3 +863,16 @@ file exists.
 - **Dan Martell** — [Difference between being a boss and being a leader](https://www.youtube.com/watch?v=SfssXCW2esU) · published 2026-09-14
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-15 12:38 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Pricing as a Service-Based Business](https://www.youtube.com/watch?v=hlvCaJpa1u8) · published 2026-09-15
+- **Alex Hormozi** — [Why You Should Start Learning a Skill Now Instead of Waiting Years](https://www.youtube.com/watch?v=04N6lteAuek) · published 2026-09-15
+- **Alex Hormozi** — [3 Life Hacks](https://www.youtube.com/watch?v=hXKQjdCPxhY) · published 2026-09-15
+- **Dan Martell** — [How do you make money with AI?](https://www.youtube.com/watch?v=zgOJ0ZMU-lM) · published 2026-09-15
+- **Sabrina Ramonov** — [I Made ChatGPT Astra Build GTA 6](https://www.youtube.com/watch?v=cWXsw3xprEM) · published 2026-09-15
+- *(+12 more held back to keep this readable.)*
+
