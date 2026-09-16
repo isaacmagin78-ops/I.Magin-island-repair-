@@ -895,3 +895,16 @@ file exists.
 - **Sabrina Ramonov** — [5 Books To Educate Yourself Like The Top 1%](https://www.youtube.com/watch?v=zQr25AYK89Q) · published 2026-09-15
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-16 12:35 UTC
+
+**Who posted**
+- **Alex Hormozi** — [The Best Way to Get Good: Do It 1,000 Times Then Take a Real Hit](https://www.youtube.com/watch?v=O9WVkJO-8Qs) · published 2026-09-16
+- **Alex Hormozi** — [You’re Not Learning Because You Keep Repeating the Same Condition](https://www.youtube.com/watch?v=9NT36JJrM-Y) · published 2026-09-16
+- **Alex Hormozi** — [Just released my new YouTube video, ‘How to Build a LEGIT Online Course (2023)’ live now.](https://www.youtube.com/watch?v=oC7Pl5e0vYQ) · published 2026-09-16
+- **Dan Martell** — [AI Freedom Summit - Comment SUMMIT if you want the details](https://www.youtube.com/watch?v=IXOBiKejuGw) · published 2026-09-16
+- **Sabrina Ramonov** — [6 Videos Teaching Lifelong Skills](https://www.youtube.com/watch?v=eOiipqFY8qY) · published 2026-09-16
+- *(+12 more held back to keep this readable.)*
+
