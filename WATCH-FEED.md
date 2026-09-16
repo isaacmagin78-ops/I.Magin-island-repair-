@@ -908,3 +908,22 @@ file exists.
 - **Sabrina Ramonov** — [6 Videos Teaching Lifelong Skills](https://www.youtube.com/watch?v=eOiipqFY8qY) · published 2026-09-16
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-16 22:08 UTC
+
+**What shipped**
+- [OpenAI expands ChatGPT ads with Sponsored Agents](https://openai.com/index/reimagining-advertising-with-ai/) · 148 points · 2026-09-16
+
+**Who posted**
+- **Alex Hormozi** — [Try Telling the Truth](https://www.youtube.com/watch?v=zLWMEBUUdcY) · published 2026-09-16
+- **Alex Hormozi** — [Do what works, toss the rest.](https://www.youtube.com/watch?v=aHiSVi9EFio) · published 2026-09-16
+- **Dan Martell** — [These AI tool could make you $100K a year](https://www.youtube.com/watch?v=EKM-gIpug3U) · published 2026-09-16
+- **Alex Hormozi** — ["What Actually Makes People Trust You Enough to Buy?"](https://www.youtube.com/watch?v=gdu6BAgNiAM) · published 2026-09-16
+- **Sabrina Ramonov** — [Instagram DM Strategy For Leads And Sales](https://www.youtube.com/watch?v=pwh24LZJNEs) · published 2026-09-16
+- **Dan Martell** — [What AI tools are the pros using in September?](https://www.youtube.com/watch?v=B5GcL7z2mQU) · published 2026-09-16
+- **Sabrina Ramonov** — [Free Claude And ChatGPT Watermark Remover](https://www.youtube.com/watch?v=EZEm8lz6WcE) · published 2026-09-16
+- **Dan Martell** — [Modern Life is a Disease](https://www.youtube.com/watch?v=_rBsOP658YA) · published 2026-09-16
+- *(+12 more held back to keep this readable.)*
+
