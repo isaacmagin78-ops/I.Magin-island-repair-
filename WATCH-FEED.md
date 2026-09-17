@@ -927,3 +927,15 @@ file exists.
 - **Dan Martell** — [Modern Life is a Disease](https://www.youtube.com/watch?v=_rBsOP658YA) · published 2026-09-16
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-17 12:34 UTC
+
+**Who posted**
+- **Alex Hormozi** — [I’ve spent about 1,300 hours in total writing my next book. And I’ll be giving it away for 99 c](https://www.youtube.com/watch?v=w8OcvBltdxA) · published 2026-09-17
+- **Alex Hormozi** — [Most People Never Change](https://www.youtube.com/watch?v=NCG_bO703aQ) · published 2026-09-17
+- **Alex Hormozi** — [Whenever I want to learn how to do anything...](https://www.youtube.com/watch?v=fpsgX5F2sR4) · published 2026-09-17
+- **Sabrina Ramonov** — [20 Ways To Get Business Ideas](https://www.youtube.com/watch?v=wKhzdmeAtRE) · published 2026-09-17
+- *(+12 more held back to keep this readable.)*
+
