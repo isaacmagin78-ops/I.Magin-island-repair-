@@ -939,3 +939,21 @@ file exists.
 - **Sabrina Ramonov** — [20 Ways To Get Business Ideas](https://www.youtube.com/watch?v=wKhzdmeAtRE) · published 2026-09-17
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-17 22:07 UTC
+
+**What shipped**
+- [Show HN: Share your AI Setup, Learn from others](https://mysetup.ai/) · 157 points · 2026-09-17
+
+**Who posted**
+- **Alex Hormozi** — [How The Ultra Wealthy Don’t Pay Taxes](https://www.youtube.com/watch?v=B8E8YM9ctU4) · published 2026-09-17
+- **Alex Hormozi** — [I still don’t have a morning routine.](https://www.youtube.com/watch?v=emyu38schbY) · published 2026-09-17
+- **Dan Martell** — [What are the valid reasons to NOT use AI?](https://www.youtube.com/watch?v=ENuYXDI6DAM) · published 2026-09-17
+- **Alex Hormozi** — ["Once I Solve Their Problem, Will They Leave?"](https://www.youtube.com/watch?v=kQNw8EhUZds) · published 2026-09-17
+- **Sabrina Ramonov** — [ChatGPT Reveals Your Secrets](https://www.youtube.com/watch?v=12UrsiPtVsQ) · published 2026-09-17
+- **Dan Martell** — [Screenshot this and give it to your AI](https://www.youtube.com/watch?v=hRdxDtdz6RA) · published 2026-09-17
+- **Sabrina Ramonov** — [5 Power Words For ChatGPT](https://www.youtube.com/watch?v=EPiyaZ2MLic) · published 2026-09-17
+- *(+12 more held back to keep this readable.)*
+
