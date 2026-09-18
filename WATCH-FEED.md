@@ -972,3 +972,18 @@ file exists.
 - **Sabrina Ramonov** — [10 AI Skills To Become Irreplaceable](https://www.youtube.com/watch?v=EieJpQjX_Vk) · published 2026-09-18
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-18 21:39 UTC
+
+**Who posted**
+- **Alex Hormozi** — [I Love To Work](https://www.youtube.com/watch?v=Zej14mVIdoI) · published 2026-09-18
+- **Alex Hormozi** — ["Is Entrepreneurship Ever Actually Fun?"](https://www.youtube.com/watch?v=pc_SYMpy4CE) · published 2026-09-18
+- **Alex Hormozi** — [Make the action the goal, not the outcome.](https://www.youtube.com/watch?v=vea6BWRDmMc) · published 2026-09-18
+- **Dan Martell** — [Should you SKIP, READ, or STUDY these books if you're a young entrepreneur?](https://www.youtube.com/watch?v=qFKGIVwgeh4) · published 2026-09-18
+- **Sabrina Ramonov** — [5 Free AI Tools I Use To Run My Business](https://www.youtube.com/watch?v=wyA5sgjhmTk) · published 2026-09-18
+- **Dan Martell** — [1 trick for every AI tool](https://www.youtube.com/watch?v=Dm0awLjQHcc) · published 2026-09-18
+- **Sabrina Ramonov** — [Secret ChatGPT Codes For Studying](https://www.youtube.com/watch?v=bJCR8yrm2Qg) · published 2026-09-18
+- *(+12 more held back to keep this readable.)*
+
