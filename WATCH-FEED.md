@@ -957,3 +957,18 @@ file exists.
 - **Sabrina Ramonov** — [5 Power Words For ChatGPT](https://www.youtube.com/watch?v=EPiyaZ2MLic) · published 2026-09-17
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-18 12:13 UTC
+
+**What shipped**
+- [ZCode, the GLM coding agent, silently uploads your Git history](https://tokenstead.ai/guides/zcode-silent-git-history-upload) · 88 points · 2026-09-18
+
+**Who posted**
+- **Alex Hormozi** — [How we optimize our spending.](https://www.youtube.com/watch?v=almvCujVn68) · published 2026-09-18
+- **Alex Hormozi** — [Foolproof Plan To Stay Poor](https://www.youtube.com/watch?v=eZf-6fWG17A) · published 2026-09-18
+- **Alex Hormozi** — [POV: A Prospect Ghosted You](https://www.youtube.com/watch?v=s4_HTw3Hf8I) · published 2026-09-18
+- **Sabrina Ramonov** — [10 AI Skills To Become Irreplaceable](https://www.youtube.com/watch?v=EieJpQjX_Vk) · published 2026-09-18
+- *(+12 more held back to keep this readable.)*
+
