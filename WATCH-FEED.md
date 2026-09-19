@@ -1000,3 +1000,19 @@ file exists.
 - **Dan Martell** — [Getting asked about my watch in prison](https://www.youtube.com/watch?v=Lkcf2wSlgH4) · published 2026-09-18
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-19 21:27 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Just released today’s YouTube video, ‘How to go ALL IN on your side hustle...’, live now.](https://www.youtube.com/watch?v=ViN4hBPxXVc) · published 2026-09-19
+- **Alex Hormozi** — ["Should I Be Mysterious or Just Show Up More?"](https://www.youtube.com/watch?v=gr7gRcnZhUo) · published 2026-09-19
+- **Sabrina Ramonov** — [Most People Are Still New To AI](https://www.youtube.com/watch?v=avGSp-xVvSA) · published 2026-09-19
+- **Alex Hormozi** — [Drop Any Business Questions Below!](https://www.youtube.com/watch?v=tKXAdshgwQM) · published 2026-09-19
+- **Sabrina Ramonov** — [Stop Feeling Behind On AI News](https://www.youtube.com/watch?v=mlYFZfu_qO0) · published 2026-09-19
+- **Dan Martell** — [Stop letting your AI be your Yes Man. Follow + Comment "YES MAN" for the guide](https://www.youtube.com/watch?v=xaPNJjGg3wI) · published 2026-09-19
+- **Sabrina Ramonov** — [The ONLY 10 Ways to Make Money with AI in 2026 (Ranked List)](https://www.youtube.com/watch?v=Fgutvd4-F_0) · published 2026-09-19
+- **Dan Martell** — [Give me 57 sec... I'll DELETE your need for perfection](https://www.youtube.com/watch?v=4_urJ17Rx8s) · published 2026-09-19
+- *(+12 more held back to keep this readable.)*
+
