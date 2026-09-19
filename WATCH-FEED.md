@@ -987,3 +987,16 @@ file exists.
 - **Sabrina Ramonov** — [Secret ChatGPT Codes For Studying](https://www.youtube.com/watch?v=bJCR8yrm2Qg) · published 2026-09-18
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-19 11:55 UTC
+
+**Who posted**
+- **Alex Hormozi** — [If you need to make money tomorrow, this would be my first leads list.](https://www.youtube.com/watch?v=3uaKBLf7bKY) · published 2026-09-19
+- **Alex Hormozi** — [Most people underestimate the things they have to say no to when building.](https://www.youtube.com/watch?v=Tbw0BX3fg8U) · published 2026-09-19
+- **Alex Hormozi** — [Normalize saying thank you for the same thing everyday.](https://www.youtube.com/watch?v=tTa0wrqOzvo) · published 2026-09-19
+- **Sabrina Ramonov** — [Claude Changed YouTube Shorts Forever](https://www.youtube.com/watch?v=awlFsPTkWNg) · published 2026-09-19
+- **Dan Martell** — [Getting asked about my watch in prison](https://www.youtube.com/watch?v=Lkcf2wSlgH4) · published 2026-09-18
+- *(+12 more held back to keep this readable.)*
+
