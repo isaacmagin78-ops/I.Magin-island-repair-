@@ -1029,3 +1029,17 @@ file exists.
 - **Dan Martell** — ["What was the most important thing you ever did?"](https://www.youtube.com/watch?v=AzYgk_5wnU4) · published 2026-09-19
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-20 21:30 UTC
+
+**Who posted**
+- **Alex Hormozi** — [How I Broke a Genius World Record](https://www.youtube.com/watch?v=jZ6uyXVOIQA) · published 2026-09-20
+- **Sabrina Ramonov** — [Should You Switch From Claude To ChatGPT?](https://www.youtube.com/watch?v=VzG2sBheKvs) · published 2026-09-20
+- **Alex Hormozi** — ["What If My Idea Already Exists for Free?"](https://www.youtube.com/watch?v=AfKBHOAKREs) · published 2026-09-20
+- **Alex Hormozi** — [This is how AI will change your workflow.](https://www.youtube.com/watch?v=Bxkjmk2Pcm8) · published 2026-09-20
+- **Sabrina Ramonov** — [How To Get Your First AI Consulting Clients](https://www.youtube.com/watch?v=l21mEqccbr0) · published 2026-09-20
+- **Dan Martell** — [How to switch from CLAUDE to CHATGPT](https://www.youtube.com/watch?v=sieAUnU1XBE) · published 2026-09-20
+- *(+12 more held back to keep this readable.)*
+
