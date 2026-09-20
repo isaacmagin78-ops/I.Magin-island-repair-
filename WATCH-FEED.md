@@ -1016,3 +1016,16 @@ file exists.
 - **Dan Martell** — [Give me 57 sec... I'll DELETE your need for perfection](https://www.youtube.com/watch?v=4_urJ17Rx8s) · published 2026-09-19
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-20 12:18 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Entrepreneurship in a nutshell:](https://www.youtube.com/watch?v=jDSr08qhn_E) · published 2026-09-20
+- **Alex Hormozi** — [How to Compete When the Market Leader Is Alex Hormozi](https://www.youtube.com/watch?v=7yyV-ir08Uc) · published 2026-09-20
+- **Alex Hormozi** — [If you want to build an amazing hot dog business, you want to put your hot dog stand on the bes](https://www.youtube.com/watch?v=tEbIVD1In-E) · published 2026-09-20
+- **Dan Martell** — [AI tools for every task in September 2026](https://www.youtube.com/watch?v=J_jdqZULPEE) · published 2026-09-20
+- **Dan Martell** — ["What was the most important thing you ever did?"](https://www.youtube.com/watch?v=AzYgk_5wnU4) · published 2026-09-19
+- *(+12 more held back to keep this readable.)*
+
