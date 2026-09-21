@@ -1043,3 +1043,16 @@ file exists.
 - **Dan Martell** — [How to switch from CLAUDE to CHATGPT](https://www.youtube.com/watch?v=sieAUnU1XBE) · published 2026-09-20
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-21 14:04 UTC
+
+**Who posted**
+- **Alex Hormozi** — [The biggest difference between experts and beginners is how much they prepare.](https://www.youtube.com/watch?v=k0nxkHwLHI4) · published 2026-09-21
+- **Alex Hormozi** — [The more you say in a sale the less you sell.](https://www.youtube.com/watch?v=DaUB-2Vd-T0) · published 2026-09-21
+- **Alex Hormozi** — ["I Have 150K Followers. Why Am I Still Broke?"](https://www.youtube.com/watch?v=cqb7V9nGV1A) · published 2026-09-21
+- **Dan Martell** — [I gave my brother $173,000](https://www.youtube.com/watch?v=CkFP7fz769w) · published 2026-09-21
+- **Dan Martell** — [These are the best AI tools for every task TODAY](https://www.youtube.com/watch?v=8gOWy6F0HPo) · published 2026-09-20
+- *(+12 more held back to keep this readable.)*
+
