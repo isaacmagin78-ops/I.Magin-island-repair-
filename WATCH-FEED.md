@@ -1056,3 +1056,22 @@ file exists.
 - **Dan Martell** — [These are the best AI tools for every task TODAY](https://www.youtube.com/watch?v=8gOWy6F0HPo) · published 2026-09-20
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-21 22:34 UTC
+
+**What shipped**
+- [Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com](https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/) · 136 points · 2026-09-21
+
+**Who posted**
+- **Alex Hormozi** — [How Do You Know a Pain Point Is Strong Enough to Build On?](https://www.youtube.com/watch?v=savSLq_wyLE) · published 2026-09-21
+- **Alex Hormozi** — [Sell Cheap Or Expensive Things?](https://www.youtube.com/watch?v=IeF05ghPtyg) · published 2026-09-21
+- **Dan Martell** — [Yes, you can still use Claude Code to get rich](https://www.youtube.com/watch?v=leVK6Nyy4Ac) · published 2026-09-21
+- **Alex Hormozi** — ["How Do I Make Money Teaching What I Know?"](https://www.youtube.com/watch?v=VHIFaRCkFfM) · published 2026-09-21
+- **Sabrina Ramonov** — [Jev Beat ChatGPT Luna 5.6 at AI Classification](https://www.youtube.com/watch?v=_fa1S2CmONs) · published 2026-09-21
+- **Sabrina Ramonov** — [AI Advantage 2025 - Sabrina Ramonov  🍄](https://www.youtube.com/watch?v=063ufyVdq4E) · published 2026-09-21
+- **Sabrina Ramonov** — [7 Tiny-Team AI Apps Making $40K+ MRR](https://www.youtube.com/watch?v=gWMpqNAgyFY) · published 2026-09-21
+- **Dan Martell** — [Are you an AI PRO or just an AI BRO?](https://www.youtube.com/watch?v=narpLqAekbA) · published 2026-09-21
+- *(+12 more held back to keep this readable.)*
+
