@@ -1075,3 +1075,16 @@ file exists.
 - **Dan Martell** — [Are you an AI PRO or just an AI BRO?](https://www.youtube.com/watch?v=narpLqAekbA) · published 2026-09-21
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-22 12:34 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Its a better use of time to ask successful people what they gave up in order to be successful r](https://www.youtube.com/watch?v=JvTrQZWYP2Y) · published 2026-09-22
+- **Alex Hormozi** — [Delay gratification.](https://www.youtube.com/watch?v=VHCyGxpz6R8) · published 2026-09-22
+- **Alex Hormozi** — [We broke the internet.](https://www.youtube.com/watch?v=2I9u3_dbfWI) · published 2026-09-22
+- **Dan Martell** — [How to sell to every niche...](https://www.youtube.com/watch?v=oOGiomgAHVo) · published 2026-09-22
+- **Dan Martell** — [How to create a 10/10 schedule](https://www.youtube.com/watch?v=q6LavdUfSrc) · published 2026-09-22
+- *(+12 more held back to keep this readable.)*
+
