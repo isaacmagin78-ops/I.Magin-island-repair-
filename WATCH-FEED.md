@@ -1088,3 +1088,20 @@ file exists.
 - **Dan Martell** — [How to create a 10/10 schedule](https://www.youtube.com/watch?v=q6LavdUfSrc) · published 2026-09-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-22 22:05 UTC
+
+**What shipped**
+- [Unreal Agent](https://unreallabs.ai/blog/unreal-agent/) · 77 points · 2026-09-22
+
+**Who posted**
+- **Alex Hormozi** — ["Why Do I Start From Zero Every Month?"](https://www.youtube.com/watch?v=KE5_9O_k-l0) · published 2026-09-22
+- **Alex Hormozi** — [When Leila needs ice cream, the world bends.](https://www.youtube.com/watch?v=MQa_Pf25SnY) · published 2026-09-22
+- **Alex Hormozi** — [How to get engaged leads.](https://www.youtube.com/watch?v=GeEZyMq_WH4) · published 2026-09-22
+- **Sabrina Ramonov** — [Build ManyChat-Style DM Automations With ChatGPT, Claude, and Blotato](https://www.youtube.com/watch?v=9AnqXBmq3ZY) · published 2026-09-22
+- **Dan Martell** — [What ACTUALLY matters when you're using AI?](https://www.youtube.com/watch?v=LR18LzCEUq8) · published 2026-09-22
+- **Sabrina Ramonov** — [7 AI Apps Making $40K+ Per Month](https://www.youtube.com/watch?v=HlqSFY9dLOY) · published 2026-09-22
+- *(+12 more held back to keep this readable.)*
+
