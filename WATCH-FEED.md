@@ -1105,3 +1105,16 @@ file exists.
 - **Sabrina Ramonov** — [7 AI Apps Making $40K+ Per Month](https://www.youtube.com/watch?v=HlqSFY9dLOY) · published 2026-09-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-23 12:44 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Everyone's Favorite Word](https://www.youtube.com/watch?v=KD6s5yBxmSk) · published 2026-09-23
+- **Alex Hormozi** — [The @leilanhormozi & Alex Love Story](https://www.youtube.com/watch?v=PnxjJgodZ-k) · published 2026-09-23
+- **Alex Hormozi** — [Hot take:](https://www.youtube.com/watch?v=J33tLDyUHVI) · published 2026-09-23
+- **Dan Martell** — [Do you care about grades? I've been saying this since day one.](https://www.youtube.com/watch?v=EHjOglk55S4) · published 2026-09-23
+- **Dan Martell** — [What would you do with $500? (How to invest)](https://www.youtube.com/watch?v=IjOQUzOmSm4) · published 2026-09-22
+- *(+12 more held back to keep this readable.)*
+
