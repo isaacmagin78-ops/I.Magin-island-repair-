@@ -1118,3 +1118,19 @@ file exists.
 - **Dan Martell** — [What would you do with $500? (How to invest)](https://www.youtube.com/watch?v=IjOQUzOmSm4) · published 2026-09-22
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-23 22:15 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Can You Be Friends With Employees?](https://www.youtube.com/watch?v=UbUP-j4hTZk) · published 2026-09-23
+- **Dan Martell** — ["Why do you wear a $500,000 watch?" It's not what you think.](https://www.youtube.com/watch?v=VBPzzpwYh0I) · published 2026-09-23
+- **Alex Hormozi** — ["Why Isn't Anyone Buying What I'm Selling?"](https://www.youtube.com/watch?v=asZC_MOdSoc) · published 2026-09-23
+- **Alex Hormozi** — [How to stay a millionaire…](https://www.youtube.com/watch?v=tOiiEgzjplI) · published 2026-09-23
+- **Sabrina Ramonov** — [The Fastest Way to Find Your First AI Client](https://www.youtube.com/watch?v=v90cPnwnCjA) · published 2026-09-23
+- **Dan Martell** — [POV: your calendars finally line up @renee_warren](https://www.youtube.com/watch?v=XZrOR3k9Wd4) · published 2026-09-23
+- **Dan Martell** — [Your language matters in marketing/sales](https://www.youtube.com/watch?v=Tx0Nvvxg2lI) · published 2026-09-23
+- **Sabrina Ramonov** — [7 Videos To Learn The 7 Skills You Need To Succeed](https://www.youtube.com/watch?v=Kx-4XbLAyKM) · published 2026-09-23
+- *(+13 more held back to keep this readable.)*
+
