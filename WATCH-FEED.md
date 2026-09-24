@@ -1134,3 +1134,20 @@ file exists.
 - **Sabrina Ramonov** — [7 Videos To Learn The 7 Skills You Need To Succeed](https://www.youtube.com/watch?v=Kx-4XbLAyKM) · published 2026-09-23
 - *(+13 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-24 12:42 UTC
+
+**What shipped**
+- [Linux support is coming to Snapdragon X2 Series](https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux) · 473 points · 2026-09-23
+- [Feds Target AI Critics as "Foreign Agents"](https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign) · 311 points · 2026-09-24
+- [Early rogue AI agent activity and attempts to hack found on urlquery.net](https://transluce.org/agent-activity) · 161 points · 2026-09-24
+
+**Who posted**
+- **Alex Hormozi** — ["What's My Price?"](https://www.youtube.com/watch?v=VVMa8F4CwVI) · published 2026-09-24
+- **Alex Hormozi** — [Is It Worth $100,000?](https://www.youtube.com/watch?v=vXx6uReedzA) · published 2026-09-24
+- **Alex Hormozi** — [There’s nothing I’ve ever invested money into that’s gotten me a higher ROI than increasing my](https://www.youtube.com/watch?v=XAB3lY2OUCs) · published 2026-09-24
+- **Dan Martell** — [If you want these things, you need to do the following:](https://www.youtube.com/watch?v=pjCJBDCKRR4) · published 2026-09-24
+- *(+12 more held back to keep this readable.)*
+
