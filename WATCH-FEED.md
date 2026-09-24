@@ -1151,3 +1151,21 @@ file exists.
 - **Dan Martell** — [If you want these things, you need to do the following:](https://www.youtube.com/watch?v=pjCJBDCKRR4) · published 2026-09-24
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-24 22:21 UTC
+
+**What shipped**
+- [Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design](https://github.com/devdotfast/whiteboard) · 151 points · 2026-09-24
+
+**Who posted**
+- **Alex Hormozi** — [Should You Find a Business Partner?](https://www.youtube.com/watch?v=05hx47QAlOQ) · published 2026-09-24
+- **Dan Martell** — [Are you going to SKIP READ or STUDY these books?](https://www.youtube.com/watch?v=uDlkDd3kRDs) · published 2026-09-24
+- **Alex Hormozi** — ["Am I Approaching My Business All Wrong?"](https://www.youtube.com/watch?v=zfnZDGA-ZSo) · published 2026-09-24
+- **Alex Hormozi** — [New entrepreneurs spend so much time trying to make their offer scalable, they forget to make i](https://www.youtube.com/watch?v=kt_a2XYuKgE) · published 2026-09-24
+- **Sabrina Ramonov** — [How to Connect GPT-6 Astra to DaVinci Resolve With MCP](https://www.youtube.com/watch?v=BVAv7PAsWBs) · published 2026-09-24
+- **Dan Martell** — [This kid wants to start a detailing business](https://www.youtube.com/watch?v=4uzFw5qCVKI) · published 2026-09-24
+- **Sabrina Ramonov** — [5 Videos to Learn 5 AI Skills](https://www.youtube.com/watch?v=WD9EoyRQbEY) · published 2026-09-24
+- *(+12 more held back to keep this readable.)*
+
