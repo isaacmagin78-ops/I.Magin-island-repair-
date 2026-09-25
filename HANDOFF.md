@@ -2922,3 +2922,42 @@ UTC" — the GitHub workflow is still firing unattended, twice daily, as designe
 **Note for the next session:** ElevenLabs and Google Drive connectors both
 flapped repeatedly during this session — dropping mid-task and returning minutes
 later. Retry before concluding a capability is missing.
+
+### 2026-09-25 — the Drive→container pipe is closed, and why
+
+Isaac identified the source clip: **"Tyson kitchen living room again"**, Drive id
+`1s5qUgHF_3LQCrYasR5RvZkxTMFYWiXVL`, 38.8 MB, in `02 Raw Tyson Videos`. He
+authorized link-sharing that one file.
+
+**Sharing it would not have helped, and the share tool cannot do it anyway.**
+Verified 2026-09-25:
+
+- `mcp__Google_Drive__share_file` only grants access to a **named email address**.
+  There is no "anyone with the link" option in the tool. The offer made to Isaac
+  was wrong; corrected to him in the same turn.
+- Every Google host that actually serves file bytes is blocked by this
+  environment's egress policy (`curl` → CONNECT rejected): `drive.google.com`,
+  `drive.usercontent.google.com`, `docs.google.com`,
+  `lh3.googleusercontent.com`. Only the API hosts answer
+  (`www.googleapis.com`, `content.googleapis.com`), and those need an OAuth
+  token this session does not hold.
+- Candidate relay hosts also blocked: `cc-api-storage.adobe.io`,
+  `assets.adobe.com`, `api.blotato.com`.
+- Reachable: `storage.googleapis.com` (this is why ElevenLabs audio downloads
+  work), `github.com`, `raw.githubusercontent.com`,
+  `objects.githubusercontent.com`.
+
+**Consequence:** no session in this environment can pull footage out of Google
+Drive, for this video or any future one. The MCP download tool returns base64
+into the conversation, which for a 38.8 MB clip is ~13M tokens — not usable.
+GitHub's web uploader caps at 25 MB, so that is not a workaround for this file
+either.
+
+**The durable fix (needs Isaac once, in claude.ai/code environment settings →
+network access):** allow `drive.usercontent.google.com` and `drive.google.com`.
+After that this whole job runs end to end with no hand-off.
+
+**Already finished and waiting on that:** the complete 21-second voiceover,
+`tysons_time_VOICEOVER.mp3` (six lines, both voices, timed, −16 LUFS). It can be
+dropped straight onto the clip in any phone editor as-is if the network fix does
+not happen.
