@@ -1169,3 +1169,15 @@ file exists.
 - **Sabrina Ramonov** — [5 Videos to Learn 5 AI Skills](https://www.youtube.com/watch?v=WD9EoyRQbEY) · published 2026-09-24
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-25 12:44 UTC
+
+**Who posted**
+- **Alex Hormozi** — ["How Do I Get A-Players?](https://www.youtube.com/watch?v=psLnNOqgnJk) · published 2026-09-25
+- **Alex Hormozi** — [What is LEVERAGE?](https://www.youtube.com/watch?v=m2httqRwFiw) · published 2026-09-25
+- **Alex Hormozi** — [Costco is one of the most successful subscriptions ever. The membership is the money.](https://www.youtube.com/watch?v=8MBrRLdBbiA) · published 2026-09-25
+- **Dan Martell** — [When do you know it's time to quit your 9-5 job?](https://www.youtube.com/watch?v=7-xRZ67KZmI) · published 2026-09-25
+- *(+12 more held back to keep this readable.)*
+
