@@ -1181,3 +1181,19 @@ file exists.
 - **Dan Martell** — [When do you know it's time to quit your 9-5 job?](https://www.youtube.com/watch?v=7-xRZ67KZmI) · published 2026-09-25
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-25 22:17 UTC
+
+**Who posted**
+- **Alex Hormozi** — [Should you take on investors or business loans when growing your first business?](https://www.youtube.com/watch?v=F7S8z3mxIIc) · published 2026-09-25
+- **Dan Martell** — [Make it exist, then make it great](https://www.youtube.com/watch?v=lXK0QNbCgiw) · published 2026-09-25
+- **Alex Hormozi** — ["Why Can't I Just Do What I Already Know?"](https://www.youtube.com/watch?v=S-c5Wu9K0TA) · published 2026-09-25
+- **Alex Hormozi** — [17 lessons you must learn if you want to be a top 1% salesperson:](https://www.youtube.com/watch?v=ZeRyzX0OVHY) · published 2026-09-25
+- **Sabrina Ramonov** — [Jev vs ChatGPT Luna: 5 to 18x Faster Classification Results](https://www.youtube.com/watch?v=6xHf9biSyaM) · published 2026-09-25
+- **Dan Martell** — [Who is statistically destined to be a millionaire?](https://www.youtube.com/watch?v=4RIaCDr5nQg) · published 2026-09-25
+- **Dan Martell** — [What AI tools are best for each task? (multiple choice)](https://www.youtube.com/watch?v=yZ7UrB1tScY) · published 2026-09-25
+- **Sabrina Ramonov** — [GPT-6 Astra Edited This Video in DaVinci Resolve](https://www.youtube.com/watch?v=gssp9qs-Ug8) · published 2026-09-25
+- *(+12 more held back to keep this readable.)*
+
