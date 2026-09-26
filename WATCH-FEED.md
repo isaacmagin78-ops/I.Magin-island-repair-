@@ -1197,3 +1197,15 @@ file exists.
 - **Sabrina Ramonov** — [GPT-6 Astra Edited This Video in DaVinci Resolve](https://www.youtube.com/watch?v=gssp9qs-Ug8) · published 2026-09-25
 - *(+12 more held back to keep this readable.)*
 
+
+---
+
+## 2026-09-26 12:12 UTC
+
+**Who posted**
+- **Alex Hormozi** — [1 secret to never breaking up](https://www.youtube.com/watch?v=_VR5UZ2z6T0) · published 2026-09-26
+- **Alex Hormozi** — [You underestimate the amount of times you need to say ‘no’ to build something great.](https://www.youtube.com/watch?v=OQuurRL9Lt8) · published 2026-09-26
+- **Dan Martell** — [No one needs to change for you to succeed in life](https://www.youtube.com/watch?v=Q5pXAp4IY4o) · published 2026-09-26
+- **Alex Hormozi** — [Marketing works even if you’re single.](https://www.youtube.com/watch?v=fCnV_-t67Po) · published 2026-09-26
+- *(+12 more held back to keep this readable.)*
+
